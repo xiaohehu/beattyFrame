@@ -465,6 +465,7 @@
 		824D2B111B61671600E5F5A5 /* phase_d_color_00070.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D29611B61671600E5F5A5 /* phase_d_color_00070.jpg */; };
 		824D2B121B61671600E5F5A5 /* phase_d_color_00071.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D29621B61671600E5F5A5 /* phase_d_color_00071.jpg */; };
 		824D2B151B6169AB00E5F5A5 /* ImageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B141B6169AB00E5F5A5 /* ImageData.plist */; };
+		824D2B181B616DCD00E5F5A5 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B171B616DCD00E5F5A5 /* GalleryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -945,6 +946,8 @@
 		824D29611B61671600E5F5A5 /* phase_d_color_00070.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phase_d_color_00070.jpg; sourceTree = "<group>"; };
 		824D29621B61671600E5F5A5 /* phase_d_color_00071.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phase_d_color_00071.jpg; sourceTree = "<group>"; };
 		824D2B141B6169AB00E5F5A5 /* ImageData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageData.plist; sourceTree = "<group>"; };
+		824D2B161B616DCD00E5F5A5 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		824D2B171B616DCD00E5F5A5 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -998,6 +1001,8 @@
 				824D27811B5EE77E00E5F5A5 /* SummaryViewController.m */,
 				824D279B1B613EC500E5F5A5 /* Site360ViewController.h */,
 				824D279C1B613EC500E5F5A5 /* Site360ViewController.m */,
+				824D2B161B616DCD00E5F5A5 /* GalleryViewController.h */,
+				824D2B171B616DCD00E5F5A5 /* GalleryViewController.m */,
 				824D272F1B5D7E6700E5F5A5 /* Main.storyboard */,
 				824D27A11B61467700E5F5A5 /* utiliites */,
 				824D2B131B6169AB00E5F5A5 /* DataSource */,
@@ -2120,6 +2125,7 @@
 				824D272B1B5D7E6700E5F5A5 /* AppDelegate.m in Sources */,
 				824D279D1B613EC500E5F5A5 /* Site360ViewController.m in Sources */,
 				824D27281B5D7E6700E5F5A5 /* main.m in Sources */,
+				824D2B181B616DCD00E5F5A5 /* GalleryViewController.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
