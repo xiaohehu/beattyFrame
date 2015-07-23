@@ -467,6 +467,17 @@
 		824D2B151B6169AB00E5F5A5 /* ImageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B141B6169AB00E5F5A5 /* ImageData.plist */; };
 		824D2B181B616DCD00E5F5A5 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B171B616DCD00E5F5A5 /* GalleryViewController.m */; };
 		824D2B1B1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B1A1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m */; };
+		824D2B1D1B617FBE00E5F5A5 /* XHGalleryUIControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824D2B1C1B617FBE00E5F5A5 /* XHGalleryUIControls.framework */; };
+		824D2B1F1B61857E00E5F5A5 /* photoData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B1E1B61857E00E5F5A5 /* photoData.plist */; };
+		824D2B2A1B6186FA00E5F5A5 /* Lobby Entry and Restuarant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B211B6186FA00E5F5A5 /* Lobby Entry and Restuarant.jpg */; };
+		824D2B2B1B6186FA00E5F5A5 /* Lobby View.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B221B6186FA00E5F5A5 /* Lobby View.jpg */; };
+		824D2B2C1B6186FA00E5F5A5 /* Southeast View of Victory Center.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B231B6186FA00E5F5A5 /* Southeast View of Victory Center.jpg */; };
+		824D2B2D1B6186FA00E5F5A5 /* Soutwest View of Victory Center.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B241B6186FA00E5F5A5 /* Soutwest View of Victory Center.jpg */; };
+		824D2B2E1B6186FA00E5F5A5 /* Victory Center 02 W Hotel View.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B251B6186FA00E5F5A5 /* Victory Center 02 W Hotel View.jpg */; };
+		824D2B2F1B6186FA00E5F5A5 /* Victory Center_Highway View.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B261B6186FA00E5F5A5 /* Victory Center_Highway View.jpg */; };
+		824D2B301B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B271B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg */; };
+		824D2B311B6186FA00E5F5A5 /* View 04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B281B6186FA00E5F5A5 /* View 04.jpg */; };
+		824D2B321B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B291B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -951,6 +962,17 @@
 		824D2B171B616DCD00E5F5A5 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
 		824D2B191B6179AF00E5F5A5 /* GalleryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionViewCell.h; sourceTree = "<group>"; };
 		824D2B1A1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionViewCell.m; sourceTree = "<group>"; };
+		824D2B1C1B617FBE00E5F5A5 /* XHGalleryUIControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XHGalleryUIControls.framework; sourceTree = "<group>"; };
+		824D2B1E1B61857E00E5F5A5 /* photoData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = photoData.plist; sourceTree = "<group>"; };
+		824D2B211B6186FA00E5F5A5 /* Lobby Entry and Restuarant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lobby Entry and Restuarant.jpg"; sourceTree = "<group>"; };
+		824D2B221B6186FA00E5F5A5 /* Lobby View.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lobby View.jpg"; sourceTree = "<group>"; };
+		824D2B231B6186FA00E5F5A5 /* Southeast View of Victory Center.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Southeast View of Victory Center.jpg"; sourceTree = "<group>"; };
+		824D2B241B6186FA00E5F5A5 /* Soutwest View of Victory Center.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Soutwest View of Victory Center.jpg"; sourceTree = "<group>"; };
+		824D2B251B6186FA00E5F5A5 /* Victory Center 02 W Hotel View.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Victory Center 02 W Hotel View.jpg"; sourceTree = "<group>"; };
+		824D2B261B6186FA00E5F5A5 /* Victory Center_Highway View.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Victory Center_Highway View.jpg"; sourceTree = "<group>"; };
+		824D2B271B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Victory Center_Street View-1.jpg"; sourceTree = "<group>"; };
+		824D2B281B6186FA00E5F5A5 /* View 04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 04.jpg"; sourceTree = "<group>"; };
+		824D2B291B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View of Victory Center and Dart Transit System.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -960,6 +982,7 @@
 			files = (
 				824D27A91B61616D00E5F5A5 /* QuartzCore.framework in Frameworks */,
 				824D27A71B61616100E5F5A5 /* CoreGraphics.framework in Frameworks */,
+				824D2B1D1B617FBE00E5F5A5 /* XHGalleryUIControls.framework in Frameworks */,
 				824D27A51B61612200E5F5A5 /* UIKit.framework in Frameworks */,
 				824D27A31B61611A00E5F5A5 /* Foundation.framework in Frameworks */,
 			);
@@ -1020,6 +1043,11 @@
 		824D27251B5D7E6700E5F5A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				824D27A81B61616D00E5F5A5 /* QuartzCore.framework */,
+				824D27A61B61616100E5F5A5 /* CoreGraphics.framework */,
+				824D27A41B61612200E5F5A5 /* UIKit.framework */,
+				824D27A21B61611A00E5F5A5 /* Foundation.framework */,
+				824D2B1C1B617FBE00E5F5A5 /* XHGalleryUIControls.framework */,
 				824D27261B5D7E6700E5F5A5 /* Info.plist */,
 				824D27271B5D7E6700E5F5A5 /* main.m */,
 			);
@@ -1038,10 +1066,6 @@
 		824D273F1B5D7E6700E5F5A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				824D27A81B61616D00E5F5A5 /* QuartzCore.framework */,
-				824D27A61B61616100E5F5A5 /* CoreGraphics.framework */,
-				824D27A41B61612200E5F5A5 /* UIKit.framework */,
-				824D27A21B61611A00E5F5A5 /* Foundation.framework */,
 				824D27401B5D7E6700E5F5A5 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -1050,6 +1074,7 @@
 		824D27871B5FE0D300E5F5A5 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				824D2B201B6186F900E5F5A5 /* tmp_photo */,
 				824D27AC1B61671500E5F5A5 /* phasesframes */,
 				824D27881B5FE0DD00E5F5A5 /* grfx */,
 			);
@@ -1576,9 +1601,27 @@
 		824D2B131B6169AB00E5F5A5 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				824D2B1E1B61857E00E5F5A5 /* photoData.plist */,
 				824D2B141B6169AB00E5F5A5 /* ImageData.plist */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		824D2B201B6186F900E5F5A5 /* tmp_photo */ = {
+			isa = PBXGroup;
+			children = (
+				824D2B211B6186FA00E5F5A5 /* Lobby Entry and Restuarant.jpg */,
+				824D2B221B6186FA00E5F5A5 /* Lobby View.jpg */,
+				824D2B231B6186FA00E5F5A5 /* Southeast View of Victory Center.jpg */,
+				824D2B241B6186FA00E5F5A5 /* Soutwest View of Victory Center.jpg */,
+				824D2B251B6186FA00E5F5A5 /* Victory Center 02 W Hotel View.jpg */,
+				824D2B261B6186FA00E5F5A5 /* Victory Center_Highway View.jpg */,
+				824D2B271B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg */,
+				824D2B281B6186FA00E5F5A5 /* View 04.jpg */,
+				824D2B291B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg */,
+			);
+			name = tmp_photo;
+			path = src/tmp_photo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1678,6 +1721,7 @@
 				824D2A1B1B61671600E5F5A5 /* phase_b_base_00040.jpg in Resources */,
 				824D2A361B61671600E5F5A5 /* phase_b_base_00067.jpg in Resources */,
 				824D299C1B61671600E5F5A5 /* phase_a_base_00057.jpg in Resources */,
+				824D2B311B6186FA00E5F5A5 /* View 04.jpg in Resources */,
 				824D2A3D1B61671600E5F5A5 /* phase_b_color_00002.jpg in Resources */,
 				824D2A861B61671600E5F5A5 /* phase_d_base_00003.jpg in Resources */,
 				824D2A0C1B61671600E5F5A5 /* phase_b_base_00025.jpg in Resources */,
@@ -1805,6 +1849,7 @@
 				824D2A9F1B61671600E5F5A5 /* phase_d_base_00028.jpg in Resources */,
 				824D2A6C1B61671600E5F5A5 /* phase_b_color_00049.jpg in Resources */,
 				824D2AEC1B61671600E5F5A5 /* phase_d_color_00033.jpg in Resources */,
+				824D2B2B1B6186FA00E5F5A5 /* Lobby View.jpg in Resources */,
 				824D2AD51B61671600E5F5A5 /* phase_d_color_00010.jpg in Resources */,
 				824D2ABB1B61671600E5F5A5 /* phase_d_base_00056.jpg in Resources */,
 				824D29E51B61671600E5F5A5 /* phase_a_color_00058.jpg in Resources */,
@@ -1866,6 +1911,7 @@
 				824D2A511B61671600E5F5A5 /* phase_b_color_00022.jpg in Resources */,
 				824D27951B60331600E5F5A5 /* retail.png in Resources */,
 				824D2AE61B61671600E5F5A5 /* phase_d_color_00027.jpg in Resources */,
+				824D2B1F1B61857E00E5F5A5 /* photoData.plist in Resources */,
 				824D2A091B61671600E5F5A5 /* phase_b_base_00022.jpg in Resources */,
 				824D2AE11B61671600E5F5A5 /* phase_d_color_00022.jpg in Resources */,
 				824D29A01B61671600E5F5A5 /* phase_a_base_00061.jpg in Resources */,
@@ -1912,6 +1958,7 @@
 				824D2AA71B61671600E5F5A5 /* phase_d_base_00036.jpg in Resources */,
 				824D2A561B61671600E5F5A5 /* phase_b_color_00027.jpg in Resources */,
 				824D2A7B1B61671600E5F5A5 /* phase_b_color_00064.jpg in Resources */,
+				824D2B2A1B6186FA00E5F5A5 /* Lobby Entry and Restuarant.jpg in Resources */,
 				824D2B041B61671600E5F5A5 /* phase_d_color_00057.jpg in Resources */,
 				824D2A311B61671600E5F5A5 /* phase_b_base_00062.jpg in Resources */,
 				824D29721B61671600E5F5A5 /* phase_a_base_00015.jpg in Resources */,
@@ -1920,6 +1967,7 @@
 				824D2ACE1B61671600E5F5A5 /* phase_d_color_00003.jpg in Resources */,
 				824D297E1B61671600E5F5A5 /* phase_a_base_00027.jpg in Resources */,
 				824D2B091B61671600E5F5A5 /* phase_d_color_00062.jpg in Resources */,
+				824D2B301B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg in Resources */,
 				824D2A921B61671600E5F5A5 /* phase_d_base_00015.jpg in Resources */,
 				824D2A5C1B61671600E5F5A5 /* phase_b_color_00033.jpg in Resources */,
 				824D2AB41B61671600E5F5A5 /* phase_d_base_00049.jpg in Resources */,
@@ -1955,6 +2003,7 @@
 				824D29931B61671600E5F5A5 /* phase_a_base_00048.jpg in Resources */,
 				824D2AB31B61671600E5F5A5 /* phase_d_base_00048.jpg in Resources */,
 				824D2A6E1B61671600E5F5A5 /* phase_b_color_00051.jpg in Resources */,
+				824D2B2C1B6186FA00E5F5A5 /* Southeast View of Victory Center.jpg in Resources */,
 				824D29F51B61671600E5F5A5 /* phase_b_base_00002.jpg in Resources */,
 				824D2A901B61671600E5F5A5 /* phase_d_base_00013.jpg in Resources */,
 				824D2AAA1B61671600E5F5A5 /* phase_d_base_00039.jpg in Resources */,
@@ -1983,6 +2032,7 @@
 				824D2A7F1B61671600E5F5A5 /* phase_b_color_00068.jpg in Resources */,
 				824D2ADD1B61671600E5F5A5 /* phase_d_color_00018.jpg in Resources */,
 				824D2A961B61671600E5F5A5 /* phase_d_base_00019.jpg in Resources */,
+				824D2B2E1B6186FA00E5F5A5 /* Victory Center 02 W Hotel View.jpg in Resources */,
 				824D299B1B61671600E5F5A5 /* phase_a_base_00056.jpg in Resources */,
 				824D2AC61B61671600E5F5A5 /* phase_d_base_00067.jpg in Resources */,
 				824D2A3B1B61671600E5F5A5 /* phase_b_color_00000.jpg in Resources */,
@@ -2030,6 +2080,7 @@
 				824D2A0B1B61671600E5F5A5 /* phase_b_base_00024.jpg in Resources */,
 				824D2A0F1B61671600E5F5A5 /* phase_b_base_00028.jpg in Resources */,
 				824D2AFE1B61671600E5F5A5 /* phase_d_color_00051.jpg in Resources */,
+				824D2B2F1B6186FA00E5F5A5 /* Victory Center_Highway View.jpg in Resources */,
 				824D29B81B61671600E5F5A5 /* phase_a_color_00013.jpg in Resources */,
 				824D29FC1B61671600E5F5A5 /* phase_b_base_00009.jpg in Resources */,
 				824D2A471B61671600E5F5A5 /* phase_b_color_00012.jpg in Resources */,
@@ -2074,6 +2125,7 @@
 				824D29821B61671600E5F5A5 /* phase_a_base_00031.jpg in Resources */,
 				824D27921B60331600E5F5A5 /* greenspace.png in Resources */,
 				824D2ADA1B61671600E5F5A5 /* phase_d_color_00015.jpg in Resources */,
+				824D2B2D1B6186FA00E5F5A5 /* Soutwest View of Victory Center.jpg in Resources */,
 				824D29861B61671600E5F5A5 /* phase_a_base_00035.jpg in Resources */,
 				824D2A2B1B61671600E5F5A5 /* phase_b_base_00056.jpg in Resources */,
 				824D2A781B61671600E5F5A5 /* phase_b_color_00061.jpg in Resources */,
@@ -2107,6 +2159,7 @@
 				824D2A201B61671600E5F5A5 /* phase_b_base_00045.jpg in Resources */,
 				824D2A1A1B61671600E5F5A5 /* phase_b_base_00039.jpg in Resources */,
 				824D2ACA1B61671600E5F5A5 /* phase_d_base_00071.jpg in Resources */,
+				824D2B321B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg in Resources */,
 				824D29981B61671600E5F5A5 /* phase_a_base_00053.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2260,6 +2313,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/beattyFrame",
+				);
 				INFOPLIST_FILE = beattyFrame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2271,6 +2328,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/beattyFrame",
+				);
 				INFOPLIST_FILE = beattyFrame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
