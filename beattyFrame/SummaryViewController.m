@@ -97,19 +97,26 @@ static float topButtonHeight = 38.0;
 - (void)createSummaryContent {
     uiiv_leftSummary = [UIImageView new];
     uiiv_rightSummary = [UIImageView new];
+    float scale = 1.0;
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]
+        && [[UIScreen mainScreen] scale] == 2.0) {
+        // Retina
+        scale = 2.0;
+    }
     
     UIImage *summary = [UIImage imageNamed:@"grfx_summary.jpg"];
     CGImageRef tmpImageRef = summary.CGImage;
-    CGImageRef left_summaryRef = CGImageCreateWithImageInRect(tmpImageRef, CGRectMake(0.0, 0.0, summary.size.width/2, summary.size.height));
-    CGImageRef right_summaryRef = CGImageCreateWithImageInRect(tmpImageRef, CGRectMake(summary.size.width/2, 0.0, summary.size.width/2, summary.size.height));
+    CGImageRef left_summaryRef = CGImageCreateWithImageInRect(tmpImageRef, CGRectMake(0.0, 0.0, summary.size.width/2 * scale, summary.size.height*scale));
+    CGImageRef right_summaryRef = CGImageCreateWithImageInRect(tmpImageRef, CGRectMake(summary.size.width/2*scale, 0.0, summary.size.width/2*scale, summary.size.height*scale));
     
-    UIImage *left_summary = [UIImage imageWithCGImage:left_summaryRef];
+    UIImage *left_summary = [UIImage imageWithCGImage:left_summaryRef scale:scale orientation:UIImageOrientationUp];
     UIImage *right_summary = [UIImage imageWithCGImage:right_summaryRef];
+    NSLog(@"The size of image is %@", NSStringFromCGSize(summary.size));
     
     [uiiv_leftSummary setImage: left_summary];
-    uiiv_leftSummary.frame = CGRectMake(0.0, uib_summary.frame.size.height, left_summary.size.width, left_summary.size.height);
+    uiiv_leftSummary.frame = CGRectMake(0.0, topButtonHeight, containerWidth/2, (containerHeight-topButtonHeight));
     [uiiv_rightSummary setImage: right_summary];
-    uiiv_rightSummary.frame = CGRectMake(left_summary.size.width, topButtonHeight, right_summary.size.width, right_summary.size.height);
+    uiiv_rightSummary.frame = CGRectMake(containerWidth/2, topButtonHeight, containerWidth/2, (containerHeight-topButtonHeight));
     [uiv_container addSubview: uiiv_leftSummary];
     [uiv_container addSubview: uiiv_rightSummary];
 }
@@ -137,10 +144,10 @@ static float topButtonHeight = 38.0;
                            @"Hotel",
                            @"Green Space"];
     arr_optionColors = @[[UIColor redColor],
-                            [UIColor greenColor],
-                            [UIColor blueColor],
-                            [UIColor yellowColor],
-                            [UIColor brownColor]];
+                         [UIColor greenColor],
+                         [UIColor blueColor],
+                         [UIColor yellowColor],
+                         [UIColor brownColor]];
     NSArray *overlayImageNames = @[@"office.png",
                                    @"retail.png",
                                    @"residential.png",
