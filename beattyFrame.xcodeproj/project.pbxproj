@@ -466,6 +466,7 @@
 		824D2B121B61671600E5F5A5 /* phase_d_color_00071.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D29621B61671600E5F5A5 /* phase_d_color_00071.jpg */; };
 		824D2B151B6169AB00E5F5A5 /* ImageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B141B6169AB00E5F5A5 /* ImageData.plist */; };
 		824D2B181B616DCD00E5F5A5 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B171B616DCD00E5F5A5 /* GalleryViewController.m */; };
+		824D2B1B1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B1A1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -948,6 +949,8 @@
 		824D2B141B6169AB00E5F5A5 /* ImageData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageData.plist; sourceTree = "<group>"; };
 		824D2B161B616DCD00E5F5A5 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
 		824D2B171B616DCD00E5F5A5 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		824D2B191B6179AF00E5F5A5 /* GalleryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionViewCell.h; sourceTree = "<group>"; };
+		824D2B1A1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1076,6 +1079,8 @@
 			children = (
 				824D279E1B61467400E5F5A5 /* ColorPickerImageView.h */,
 				824D279F1B61467400E5F5A5 /* ColorPickerImageView.m */,
+				824D2B191B6179AF00E5F5A5 /* GalleryCollectionViewCell.h */,
+				824D2B1A1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m */,
 			);
 			name = utiliites;
 			sourceTree = "<group>";
@@ -2125,6 +2130,7 @@
 				824D272B1B5D7E6700E5F5A5 /* AppDelegate.m in Sources */,
 				824D279D1B613EC500E5F5A5 /* Site360ViewController.m in Sources */,
 				824D27281B5D7E6700E5F5A5 /* main.m in Sources */,
+				824D2B1B1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m in Sources */,
 				824D2B181B616DCD00E5F5A5 /* GalleryViewController.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
 			);
