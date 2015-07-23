@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ColorPickerImageView.h"
 
-@interface Site360ViewController : UIViewController
-
+@interface Site360ViewController : UIViewController <UIGestureRecognizerDelegate, UIScrollViewDelegate, UIAlertViewDelegate>
+{
+    // image array ints
+    NSArray     *namesArray;
+    NSUInteger  currentFrame;
+    NSUInteger  numberOfFrames;
+    NSUInteger  finalEndFrame;
+    NSUInteger  phaseIndex;
+}
+@property (weak, nonatomic) IBOutlet UIScrollView *uis_scrollView;
+@property (weak, nonatomic) IBOutlet UIView *uiv_container;
+@property (weak, nonatomic) IBOutlet UIImageView *uiiv_imageView;
+@property (strong, nonatomic) IBOutlet ColorPickerImageView *colorWheel;
 @end

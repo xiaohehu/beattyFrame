@@ -14,15 +14,315 @@
 
 @implementation Site360ViewController
 
+@synthesize uis_scrollView, uiiv_imageView, colorWheel, uiv_container;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor redColor];
+    [self appInit];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)appInit {
+    
+    colorWheel.pickedColorDelegate = self;
+    
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
+    [uiv_container addGestureRecognizer:panGesture];
+    panGesture.delegate = self;
+    
+    currentFrame = 3;
+    
+    numberOfFrames = [self imageCount]-1;
+    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+    uiiv_imageView.alpha = 1.0;
+    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+    
+    // setup scrollview
+    self.uis_scrollView.minimumZoomScale=1.0;
+    self.uis_scrollView.maximumZoomScale=2.0;
+    self.uis_scrollView.contentSize=CGSizeMake(1024, 768);
+    [uis_scrollView setDelegate:self];
+    
+    UITapGestureRecognizer *tap2Recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(zoomPlan:)];
+   	[tap2Recognizer setNumberOfTapsRequired:2];
+    [tap2Recognizer setDelegate:self];
+    [uis_scrollView addGestureRecognizer:tap2Recognizer];
+    
+    // makes it so that only two finger scrolls go
+    for (id gestureRecognizer in uis_scrollView.gestureRecognizers) {
+        if ([gestureRecognizer  isKindOfClass:[UIPanGestureRecognizer class]])
+        {
+            UIPanGestureRecognizer *panGR = gestureRecognizer;
+            panGR.minimumNumberOfTouches = 2;
+            panGR.maximumNumberOfTouches = 2;
+        }
+    }
+    
+    NSArray *colorsArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"colors" ofType:@"plist"]];
+    
+    for(NSDictionary* dict in colorsArray)
+    {
+        NSString* innerDict = dict[@"os"];
+        if([innerDict isEqualToString:[[self deviceInfo] objectForKey:@"EMBOSValue"]])
+        {
+            namesArray = [[dict valueForKey:@"devices"]objectForKey:[[self deviceInfo] objectForKey:@"EMBDeviceType"]];
+        }
+    }
+    
+    NSLog(@"namesArray %@",[namesArray description]);
+}
+
+#pragma mark - controls/gestures on BG
+#pragma mark Pan Gesture
+-(IBAction) handlePanGesture:(UIPanGestureRecognizer *) sender {
+    
+    [self.view setUserInteractionEnabled:NO];
+    
+    UIView *myView = [sender view];
+    
+    if (sender.state == UIGestureRecognizerStateChanged)
+    {
+        CGPoint translation = [(UIPanGestureRecognizer *) sender translationInView:(sender.view)];
+        
+        if (translation.x > 5) {
+            
+            if (currentFrame > 1) {
+                currentFrame--;
+            }
+            else {
+                currentFrame = numberOfFrames;
+            }
+            
+            if (phaseIndex == 0) {
+                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+                colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+            } else if (phaseIndex == 1) {
+                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_b_base"];
+                colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_b_color"];
+            }
+            [sender setTranslation:CGPointZero inView:[myView superview]];
+            
+        }else {
+            
+            if (translation.x < -5){
+                
+                if (currentFrame < numberOfFrames) {
+                    currentFrame++;
+                }else {
+                    currentFrame = 0;
+                }
+                if (phaseIndex == 0) {
+                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+                    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+                } else if (phaseIndex == 1) {
+                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_b_base"];
+                    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_b_color"];
+                }
+                [sender setTranslation:CGPointZero inView:[myView superview]];
+            }
+        }
+        
+    }
+    [self.view setUserInteractionEnabled:YES];
+}
+
+#pragma mark Zoom BG Scroll
+-(void)zoomPlan:(UITapGestureRecognizer *)sender {
+    
+    // 1
+    CGPoint pointInView = [sender locationInView:self.uiiv_imageView];
+    
+    // 2
+    CGFloat newZoomScale = self.uis_scrollView.zoomScale * 2.0f;
+    newZoomScale = MIN(newZoomScale, self.uis_scrollView.maximumZoomScale);
+    
+    // 3
+    CGSize scrollViewSize = self.uis_scrollView.bounds.size;
+    
+    CGFloat w = scrollViewSize.width / newZoomScale;
+    CGFloat h = scrollViewSize.height / newZoomScale;
+    CGFloat x = pointInView.x - (w / 2.0f);
+    CGFloat y = pointInView.y - (h / 2.0f);
+    CGRect rectToZoomTo = CGRectMake(x, y, w, h);
+    // 4
+    
+    if (uis_scrollView.zoomScale > 1.9) {
+        [uis_scrollView setZoomScale: 1.0 animated:YES];
+    } else if (uis_scrollView.zoomScale < 2) {
+        [self.uis_scrollView zoomToRect:rectToZoomTo animated:YES];
+    }
+}
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+    return uiv_container;
+}
+
+- (void)zoomToRect:(CGRect)rect animated:(BOOL)animated
+{
+    [UIView animateWithDuration:(animated?0.3f:0.0f)
+                          delay:0
+                        options:UIViewAnimationOptionBeginFromCurrentState
+                     animations:^{
+                         [uis_scrollView zoomToRect:rect animated:NO];
+                     }
+                     completion:nil];
+}
+
+#pragma mark - Utilities
+#pragma mark Device Info
+-(NSDictionary*)deviceInfo
+{
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+    
+    BOOL isSimulator;
+    
+#if TARGET_IPHONE_SIMULATOR
+    isSimulator = YES;
+#else
+    isSimulator = NO;
+#endif
+    //	NSLog(@"BOOL = %@\n", (isSimulator ? @"YES" : @"NO"));
+    
+    NSString* osValue;
+    NSString* deviceType;
+    NSArray* arr_deviceTypes = @[@"simulator",@"ipad_3",@"ipad_4"];
+    // check system version
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8")) {
+        
+        osValue = @"8";
+        
+        NSLog(@"great 8");
+        if(isSimulator) {
+            NSLog(@"sim 8");
+            deviceType = arr_deviceTypes[0];
+        } else {
+            NSLog(@"not sim 8");
+            deviceType = arr_deviceTypes[2];
+        }
+        
+    } else if (SYSTEM_VERSION_LESS_THAN(@"8")) {
+        
+        osValue = @"7";
+        
+        if(isSimulator) {
+            NSLog(@"sim 7");
+            deviceType = arr_deviceTypes[0];
+        } else {
+            NSLog(@"not sim 7");
+            deviceType = arr_deviceTypes[1];
+        }
+    }
+    
+    NSDictionary* embDeviceDictionary = @{
+                                          @"EMBOSValue": osValue,
+                                          @"EMBDeviceType": deviceType,
+                                          };
+    
+    return embDeviceDictionary;
+}
+
+
+#pragma mark - Images Array for PHASES
+
+- (NSArray *)imageData {
+    static NSArray *__imageData = nil; // only load the imageData array once
+    
+    if (__imageData == nil) {
+        // read the filenames/sizes out of a plist in the app bundle
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"ImageData" ofType:@"plist"];
+        NSData *plistData = [NSData dataWithContentsOfFile:path];
+        NSString *error; NSPropertyListFormat format;
+        __imageData = [NSPropertyListSerialization propertyListFromData:plistData
+                                                       mutabilityOption:NSPropertyListImmutable
+                                                                 format:&format
+                                                       errorDescription:&error]
+        ;
+        if (!__imageData) {
+        }
+    }
+    
+    return __imageData;
+}
+
+- (UIImage *)maskAtIndex:(NSUInteger)index maskType:(NSString*)maskName {
+    // use "imageWithContentsOfFile:" instead of "imageNamed:" here to avoid caching our images
+    NSString *maskkName = [self maskNameAtIndex:index maskType:maskName];
+    NSString *path = [[NSBundle mainBundle] pathForResource:maskkName ofType:@"jpg"];
+    return [UIImage imageWithContentsOfFile:path];
+}
+
+- (UIImage *)imageAtIndex:(NSUInteger)index phaseType:(NSString*)phaseName {
+    // use "imageWithContentsOfFile:" instead of "imageNamed:" here to avoid caching our images
+    NSString *imageName = [self imageNameAtIndex:index phaseType:phaseName];
+    NSString *path = [[NSBundle mainBundle] pathForResource:imageName ofType:@"jpg"];
+    return [UIImage imageWithContentsOfFile:path];
+}
+
+- (UIImage *)phaseaAtIndex:(NSUInteger)index {
+    // use "imageWithContentsOfFile:" instead of "imageNamed:" here to avoid caching our images
+    NSString *phaseaName = [self phaseaNameAtIndex:index];
+    NSString *path = [[NSBundle mainBundle] pathForResource:phaseaName ofType:@"jpg"];
+    return [UIImage imageWithContentsOfFile:path];
+    //NSLog(@"phasea: %@", path);
+}
+
+- (NSString *)imageNameAtIndex:(NSUInteger)index phaseType:(NSString*)phaseName {
+    NSString *name = nil;
+    if (index < [self imageCount]) {
+        NSDictionary *data = [[self imageData] objectAtIndex:index];
+        name = [data valueForKey:phaseName];
+    }
+    return name;
+}
+
+- (NSString *)maskNameAtIndex:(NSUInteger)index maskType:(NSString*)maskName{
+    NSString *mask = nil;
+    if (index < [self imageCount]) {
+        NSDictionary *data = [[self imageData] objectAtIndex:index];
+        mask = [data valueForKey:maskName];
+    }
+    return mask;
+}
+
+- (NSString *)phaseaNameAtIndex:(NSUInteger)index {
+    NSString *phasea = nil;
+    if (index < [self imageCount]) {
+        NSDictionary *data = [[self imageData] objectAtIndex:index];
+        phasea = [data valueForKey:@"phasea"];
+    }
+    return phasea;
+}
+
+// works both ways
+- (CGSize)imageSizeAtIndex:(NSUInteger)index {
+    CGSize size = CGSizeZero;
+    if (index < [self imageCount]) {
+        NSDictionary *data = [[self imageData] objectAtIndex:index];
+        size.width = [[data valueForKey:@"width"] floatValue];
+        size.height = [[data valueForKey:@"height"] floatValue];
+    }
+    return size;
+}
+
+// works both ways
+- (NSUInteger)imageCount {
+    static NSUInteger __count = NSNotFound;  // only count the images once
+    if (__count == NSNotFound) {
+        __count = [[self imageData] count];
+    }
+    return __count;
+}
+
 
 /*
 #pragma mark - Navigation
