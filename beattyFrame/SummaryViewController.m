@@ -52,6 +52,9 @@ static float topButtonHeight = 38.0;
 
 #pragma mark - Create UI elements
 - (void)createContainer {
+    /*
+     * Contianer of all centent
+     */
     uiv_container = [UIView new];
     uiv_container.frame = CGRectMake((self.view.frame.size.width-containerWidth)/2, (self.view.frame.size.height-containerHeight)/2, containerWidth, containerHeight);
     uiv_container.backgroundColor = [UIColor clearColor];
@@ -97,6 +100,9 @@ static float topButtonHeight = 38.0;
 - (void)createSummaryContent {
     uiiv_leftSummary = [UIImageView new];
     uiiv_rightSummary = [UIImageView new];
+    /*
+     * Change scale according device is retina or not
+     */
     float scale = 1.0;
     if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]
         && [[UIScreen mainScreen] scale] == 2.0) {
@@ -104,6 +110,10 @@ static float topButtonHeight = 38.0;
         scale = 2.0;
     }
     
+    /*
+     * Split the summary image vertically
+     * 2 UIImageView added to view
+     */
     UIImage *summary = [UIImage imageNamed:@"grfx_summary.jpg"];
     CGImageRef tmpImageRef = summary.CGImage;
     CGImageRef left_summaryRef = CGImageCreateWithImageInRect(tmpImageRef, CGRectMake(0.0, 0.0, summary.size.width/2 * scale, summary.size.height*scale));
@@ -138,6 +148,9 @@ static float topButtonHeight = 38.0;
     uiv_buttonPanel.layer.borderWidth = 2.0;
     uiv_buttonPanel.layer.borderColor = [UIColor whiteColor].CGColor;
     [uiv_sitePlanContainer addSubview: uiv_buttonPanel];
+    /*
+     * Needed data to create site plan's control panel
+     */
     NSArray *arr_names = @[@"Office",
                            @"Retail",
                            @"Residential",
@@ -153,6 +166,7 @@ static float topButtonHeight = 38.0;
                                    @"residential.png",
                                    @"hotel.png",
                                    @"greenspace.png"];
+    
     arr_siteOverlay = [[NSMutableArray alloc] init];
     for (int i = 0; i < overlayImageNames.count; i++) {
         UIImageView *uiiv_overlay = [[UIImageView alloc] initWithImage:[UIImage imageNamed:overlayImageNames[i]]];
@@ -165,6 +179,7 @@ static float topButtonHeight = 38.0;
 
 - (void)createSitePlanButtons:(NSArray *)arr_names andColors:(NSArray *)arr_colors {
     for (int i = 0; i < 5; i++) {
+        // UIButton create
         UIButton *button = [UIButton buttonWithType: UIButtonTypeCustom];
         button.frame = CGRectMake(0.0, i * 37.0+ 1, uiv_buttonPanel.frame.size.width, 37.0);
         button.backgroundColor = [UIColor whiteColor];
@@ -177,11 +192,13 @@ static float topButtonHeight = 38.0;
         [button.titleLabel setFont:[UIFont systemFontOfSize:15.0]];
         button.contentEdgeInsets = UIEdgeInsetsMake(0, 35, 0, 0);
         button.tag = i;
+        // Left bar
         UIView *uiv_bar = [[UIView alloc] initWithFrame:CGRectMake(2.0, 0.0, 5.0, button.frame.size.height)];
         uiv_bar.backgroundColor = arr_colors[i];
         uiv_bar.tag = 10;
         uiv_bar.alpha = 0.7;
         [button addSubview: uiv_bar];
+        // Dot next to button title
         UIView *uiv_dot = [[UIView alloc] initWithFrame:CGRectMake(15.0, (button.frame.size.height-5)/2, 5, 5)];
         uiv_dot.layer.cornerRadius = 2.5;
         uiv_dot.backgroundColor = arr_colors[i];

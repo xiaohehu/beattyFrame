@@ -26,6 +26,7 @@
 		824D27961B60331600E5F5A5 /* office.png in Resources */ = {isa = PBXBuildFile; fileRef = 824D27911B60331600E5F5A5 /* office.png */; };
 		824D27991B6039C300E5F5A5 /* main_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D27971B6039C300E5F5A5 /* main_bg.jpg */; };
 		824D279A1B6039C300E5F5A5 /* main_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D27981B6039C300E5F5A5 /* main_bg@2x.jpg */; };
+		824D279D1B613EC500E5F5A5 /* Site360ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D279C1B613EC500E5F5A5 /* Site360ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		824D27911B60331600E5F5A5 /* office.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = office.png; path = src/grfx/office.png; sourceTree = "<group>"; };
 		824D27971B6039C300E5F5A5 /* main_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = main_bg.jpg; path = src/grfx/main_bg.jpg; sourceTree = "<group>"; };
 		824D27981B6039C300E5F5A5 /* main_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "main_bg@2x.jpg"; path = "src/grfx/main_bg@2x.jpg"; sourceTree = "<group>"; };
+		824D279B1B613EC500E5F5A5 /* Site360ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Site360ViewController.h; sourceTree = "<group>"; };
+		824D279C1B613EC500E5F5A5 /* Site360ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Site360ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				824D272D1B5D7E6700E5F5A5 /* ViewController.m */,
 				824D27801B5EE77E00E5F5A5 /* SummaryViewController.h */,
 				824D27811B5EE77E00E5F5A5 /* SummaryViewController.m */,
+				824D279B1B613EC500E5F5A5 /* Site360ViewController.h */,
+				824D279C1B613EC500E5F5A5 /* Site360ViewController.m */,
 				824D27871B5FE0D300E5F5A5 /* src */,
 				824D272F1B5D7E6700E5F5A5 /* Main.storyboard */,
 				824D27321B5D7E6700E5F5A5 /* Images.xcassets */,
@@ -286,6 +291,7 @@
 			files = (
 				824D272E1B5D7E6700E5F5A5 /* ViewController.m in Sources */,
 				824D272B1B5D7E6700E5F5A5 /* AppDelegate.m in Sources */,
+				824D279D1B613EC500E5F5A5 /* Site360ViewController.m in Sources */,
 				824D27281B5D7E6700E5F5A5 /* main.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
 			);
@@ -486,6 +492,7 @@
 				824D27471B5D7E6700E5F5A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		824D27481B5D7E6700E5F5A5 /* Build configuration list for PBXNativeTarget "beattyFrameTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +501,7 @@
 				824D274A1B5D7E6700E5F5A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
