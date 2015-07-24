@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="397.5" y="400.5"/>
+            <point key="canvasLocation" x="471.75" y="1055.25"/>
         </scene>
         <!--Site360 View Controller-->
         <scene sceneID="T5r-Nr-59v">
@@ -195,23 +195,97 @@
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 </variation>
                             </collectionView>
+                            <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKE-fL-O8K">
+                                <rect key="frame" x="709" y="713" width="66" height="33"/>
+                                <state key="normal" backgroundImage="share_but_pdf.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="share_but_pdf_roll.png"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="699" y="717" width="66" height="33"/>
+                                </variation>
+                                <connections>
+                                    <action selector="finishedSelectingItemsForEmail:" destination="CeG-kc-ZJW" eventType="touchUpInside" id="eVh-U8-FqI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rio-YF-3np">
+                                <rect key="frame" x="801" y="713" width="66" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="share_but_email.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="share_but_email_roll.png"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="791" y="717" width="66" height="32"/>
+                                </variation>
+                                <connections>
+                                    <action selector="finishedSelectingItemsForEmail:" destination="CeG-kc-ZJW" eventType="touchUpInside" id="RAU-ZQ-h28"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G76-Dd-JV9">
+                                <rect key="frame" x="880" y="718" width="128" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                <state key="normal" title="Send Blank Email">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="870" y="722" width="128" height="21"/>
+                                </variation>
+                                <connections>
+                                    <action selector="sendBlankEmail" destination="CeG-kc-ZJW" eventType="touchUpInside" id="efW-Za-HZa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10MBs" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJm-Df-bBb">
+                                <rect key="frame" x="327" y="708" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="317" y="712" width="123" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zms-Jx-ytQ">
+                                <rect key="frame" x="20" y="708" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="712" width="143" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="EZb-sG-4uK"/>
+                                <exclude reference="fKE-fL-O8K"/>
+                                <exclude reference="rio-YF-3np"/>
+                                <exclude reference="G76-Dd-JV9"/>
+                                <exclude reference="CJm-Df-bBb"/>
+                                <exclude reference="zms-Jx-ytQ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
                                 <include reference="EZb-sG-4uK"/>
+                                <include reference="fKE-fL-O8K"/>
+                                <include reference="rio-YF-3np"/>
+                                <include reference="G76-Dd-JV9"/>
+                                <include reference="CJm-Df-bBb"/>
+                                <include reference="zms-Jx-ytQ"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="uib_Email" destination="rio-YF-3np" id="cNK-2i-KXB"/>
+                        <outlet property="uib_PDF" destination="fKE-fL-O8K" id="2Ie-jS-4mT"/>
                         <outlet property="uic_collectionView" destination="EZb-sG-4uK" id="IS1-9A-sSo"/>
+                        <outlet property="uil_totalSize" destination="zms-Jx-ytQ" id="hYQ-ND-kZd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQy-23-0Ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -220,5 +294,9 @@
     </scenes>
     <resources>
         <image name="main_bg.jpg" width="1024" height="768"/>
+        <image name="share_but_email.png" width="66" height="33"/>
+        <image name="share_but_email_roll.png" width="149" height="762"/>
+        <image name="share_but_pdf.png" width="66" height="33"/>
+        <image name="share_but_pdf_roll.png" width="33" height="33"/>
     </resources>
 </document>

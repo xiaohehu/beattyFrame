@@ -478,6 +478,20 @@
 		824D2B301B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B271B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg */; };
 		824D2B311B6186FA00E5F5A5 /* View 04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B281B6186FA00E5F5A5 /* View 04.jpg */; };
 		824D2B321B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B291B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg */; };
+		824D2B351B6286AA00E5F5A5 /* embEmailData.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B341B6286AA00E5F5A5 /* embEmailData.m */; };
+		824D2B3A1B62B57D00E5F5A5 /* TLSpringFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B371B62B57D00E5F5A5 /* TLSpringFlowLayout.m */; };
+		824D2B3B1B62B57D00E5F5A5 /* UIImage+ScaleToFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B391B62B57D00E5F5A5 /* UIImage+ScaleToFit.m */; };
+		824D2B441B62B5C600E5F5A5 /* EMBSPCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B3D1B62B5C600E5F5A5 /* EMBSPCell.m */; };
+		824D2B451B62B5C600E5F5A5 /* EMBSPCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B3E1B62B5C600E5F5A5 /* EMBSPCell.xib */; };
+		824D2B461B62B5C600E5F5A5 /* EMBSPSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B401B62B5C600E5F5A5 /* EMBSPSectionHeader.m */; };
+		824D2B471B62B5C600E5F5A5 /* EMBSPSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B411B62B5C600E5F5A5 /* EMBSPSectionHeader.xib */; };
+		824D2B481B62B5C600E5F5A5 /* EMBSPSupplementaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B431B62B5C600E5F5A5 /* EMBSPSupplementaryView.m */; };
+		824D2B4D1B62B92500E5F5A5 /* share_but_email.png in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B491B62B92500E5F5A5 /* share_but_email.png */; };
+		824D2B4E1B62B92500E5F5A5 /* share_but_pdf.png in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B4A1B62B92500E5F5A5 /* share_but_pdf.png */; };
+		824D2B4F1B62B92500E5F5A5 /* share_but_pdf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B4B1B62B92500E5F5A5 /* share_but_pdf@2x.png */; };
+		824D2B501B62B92500E5F5A5 /* share_but_email@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B4C1B62B92500E5F5A5 /* share_but_email@2x.png */; };
+		824D2B521B62BEB200E5F5A5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824D2B511B62BEB200E5F5A5 /* MessageUI.framework */; };
+		824D2B541B62BF4400E5F5A5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824D2B531B62BF4400E5F5A5 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -973,6 +987,26 @@
 		824D2B271B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Victory Center_Street View-1.jpg"; sourceTree = "<group>"; };
 		824D2B281B6186FA00E5F5A5 /* View 04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 04.jpg"; sourceTree = "<group>"; };
 		824D2B291B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View of Victory Center and Dart Transit System.jpg"; sourceTree = "<group>"; };
+		824D2B331B6286AA00E5F5A5 /* embEmailData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = embEmailData.h; path = utilities/embEmailData.h; sourceTree = "<group>"; };
+		824D2B341B6286AA00E5F5A5 /* embEmailData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = embEmailData.m; path = utilities/embEmailData.m; sourceTree = "<group>"; };
+		824D2B361B62B57D00E5F5A5 /* TLSpringFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLSpringFlowLayout.h; path = utilities/TLSpringFlowLayout.h; sourceTree = "<group>"; };
+		824D2B371B62B57D00E5F5A5 /* TLSpringFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLSpringFlowLayout.m; path = utilities/TLSpringFlowLayout.m; sourceTree = "<group>"; };
+		824D2B381B62B57D00E5F5A5 /* UIImage+ScaleToFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ScaleToFit.h"; path = "utilities/UIImage+ScaleToFit.h"; sourceTree = "<group>"; };
+		824D2B391B62B57D00E5F5A5 /* UIImage+ScaleToFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ScaleToFit.m"; path = "utilities/UIImage+ScaleToFit.m"; sourceTree = "<group>"; };
+		824D2B3C1B62B5C600E5F5A5 /* EMBSPCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMBSPCell.h; path = utilities/EMBSPCell.h; sourceTree = "<group>"; };
+		824D2B3D1B62B5C600E5F5A5 /* EMBSPCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMBSPCell.m; path = utilities/EMBSPCell.m; sourceTree = "<group>"; };
+		824D2B3E1B62B5C600E5F5A5 /* EMBSPCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EMBSPCell.xib; path = utilities/EMBSPCell.xib; sourceTree = "<group>"; };
+		824D2B3F1B62B5C600E5F5A5 /* EMBSPSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMBSPSectionHeader.h; path = utilities/EMBSPSectionHeader.h; sourceTree = "<group>"; };
+		824D2B401B62B5C600E5F5A5 /* EMBSPSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMBSPSectionHeader.m; path = utilities/EMBSPSectionHeader.m; sourceTree = "<group>"; };
+		824D2B411B62B5C600E5F5A5 /* EMBSPSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EMBSPSectionHeader.xib; path = utilities/EMBSPSectionHeader.xib; sourceTree = "<group>"; };
+		824D2B421B62B5C600E5F5A5 /* EMBSPSupplementaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMBSPSupplementaryView.h; path = utilities/EMBSPSupplementaryView.h; sourceTree = "<group>"; };
+		824D2B431B62B5C600E5F5A5 /* EMBSPSupplementaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMBSPSupplementaryView.m; path = utilities/EMBSPSupplementaryView.m; sourceTree = "<group>"; };
+		824D2B491B62B92500E5F5A5 /* share_but_email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share_but_email.png; path = src/grfx/share_but_email.png; sourceTree = "<group>"; };
+		824D2B4A1B62B92500E5F5A5 /* share_but_pdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share_but_pdf.png; path = src/grfx/share_but_pdf.png; sourceTree = "<group>"; };
+		824D2B4B1B62B92500E5F5A5 /* share_but_pdf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share_but_pdf@2x.png"; path = "src/grfx/share_but_pdf@2x.png"; sourceTree = "<group>"; };
+		824D2B4C1B62B92500E5F5A5 /* share_but_email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share_but_email@2x.png"; path = "src/grfx/share_but_email@2x.png"; sourceTree = "<group>"; };
+		824D2B511B62BEB200E5F5A5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		824D2B531B62BF4400E5F5A5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -980,6 +1014,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824D2B541B62BF4400E5F5A5 /* SystemConfiguration.framework in Frameworks */,
+				824D2B521B62BEB200E5F5A5 /* MessageUI.framework in Frameworks */,
 				824D27A91B61616D00E5F5A5 /* QuartzCore.framework in Frameworks */,
 				824D27A71B61616100E5F5A5 /* CoreGraphics.framework in Frameworks */,
 				824D2B1D1B617FBE00E5F5A5 /* XHGalleryUIControls.framework in Frameworks */,
@@ -1043,6 +1079,8 @@
 		824D27251B5D7E6700E5F5A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				824D2B531B62BF4400E5F5A5 /* SystemConfiguration.framework */,
+				824D2B511B62BEB200E5F5A5 /* MessageUI.framework */,
 				824D27A81B61616D00E5F5A5 /* QuartzCore.framework */,
 				824D27A61B61616100E5F5A5 /* CoreGraphics.framework */,
 				824D27A41B61612200E5F5A5 /* UIKit.framework */,
@@ -1095,6 +1133,10 @@
 				824D278F1B60331600E5F5A5 /* residential.png */,
 				824D27901B60331600E5F5A5 /* retail.png */,
 				824D27911B60331600E5F5A5 /* office.png */,
+				824D2B491B62B92500E5F5A5 /* share_but_email.png */,
+				824D2B4A1B62B92500E5F5A5 /* share_but_pdf.png */,
+				824D2B4B1B62B92500E5F5A5 /* share_but_pdf@2x.png */,
+				824D2B4C1B62B92500E5F5A5 /* share_but_email@2x.png */,
 			);
 			name = grfx;
 			sourceTree = "<group>";
@@ -1102,6 +1144,20 @@
 		824D27A11B61467700E5F5A5 /* utiliites */ = {
 			isa = PBXGroup;
 			children = (
+				824D2B3C1B62B5C600E5F5A5 /* EMBSPCell.h */,
+				824D2B3D1B62B5C600E5F5A5 /* EMBSPCell.m */,
+				824D2B3E1B62B5C600E5F5A5 /* EMBSPCell.xib */,
+				824D2B3F1B62B5C600E5F5A5 /* EMBSPSectionHeader.h */,
+				824D2B401B62B5C600E5F5A5 /* EMBSPSectionHeader.m */,
+				824D2B411B62B5C600E5F5A5 /* EMBSPSectionHeader.xib */,
+				824D2B421B62B5C600E5F5A5 /* EMBSPSupplementaryView.h */,
+				824D2B431B62B5C600E5F5A5 /* EMBSPSupplementaryView.m */,
+				824D2B361B62B57D00E5F5A5 /* TLSpringFlowLayout.h */,
+				824D2B371B62B57D00E5F5A5 /* TLSpringFlowLayout.m */,
+				824D2B381B62B57D00E5F5A5 /* UIImage+ScaleToFit.h */,
+				824D2B391B62B57D00E5F5A5 /* UIImage+ScaleToFit.m */,
+				824D2B331B6286AA00E5F5A5 /* embEmailData.h */,
+				824D2B341B6286AA00E5F5A5 /* embEmailData.m */,
 				824D279E1B61467400E5F5A5 /* ColorPickerImageView.h */,
 				824D279F1B61467400E5F5A5 /* ColorPickerImageView.m */,
 				824D2B191B6179AF00E5F5A5 /* GalleryCollectionViewCell.h */,
@@ -1730,6 +1786,8 @@
 				824D2A6F1B61671600E5F5A5 /* phase_b_color_00052.jpg in Resources */,
 				824D2AF31B61671600E5F5A5 /* phase_d_color_00040.jpg in Resources */,
 				824D2A841B61671600E5F5A5 /* phase_d_base_00001.jpg in Resources */,
+				824D2B471B62B5C600E5F5A5 /* EMBSPSectionHeader.xib in Resources */,
+				824D2B4F1B62B92500E5F5A5 /* share_but_pdf@2x.png in Resources */,
 				824D2A981B61671600E5F5A5 /* phase_d_base_00021.jpg in Resources */,
 				824D2A341B61671600E5F5A5 /* phase_b_base_00065.jpg in Resources */,
 				824D29831B61671600E5F5A5 /* phase_a_base_00032.jpg in Resources */,
@@ -1811,12 +1869,14 @@
 				824D29B01B61671600E5F5A5 /* phase_a_color_00005.jpg in Resources */,
 				824D2AFF1B61671600E5F5A5 /* phase_d_color_00052.jpg in Resources */,
 				824D2A4C1B61671600E5F5A5 /* phase_b_color_00017.jpg in Resources */,
+				824D2B4E1B62B92500E5F5A5 /* share_but_pdf.png in Resources */,
 				824D29D51B61671600E5F5A5 /* phase_a_color_00042.jpg in Resources */,
 				824D27931B60331600E5F5A5 /* hotel.png in Resources */,
 				824D29761B61671600E5F5A5 /* phase_a_base_00019.jpg in Resources */,
 				824D29901B61671600E5F5A5 /* phase_a_base_00045.jpg in Resources */,
 				824D2A371B61671600E5F5A5 /* phase_b_base_00068.jpg in Resources */,
 				824D29CE1B61671600E5F5A5 /* phase_a_color_00035.jpg in Resources */,
+				824D2B4D1B62B92500E5F5A5 /* share_but_email.png in Resources */,
 				824D2A291B61671600E5F5A5 /* phase_b_base_00054.jpg in Resources */,
 				824D2A281B61671600E5F5A5 /* phase_b_base_00053.jpg in Resources */,
 				824D2ABE1B61671600E5F5A5 /* phase_d_base_00059.jpg in Resources */,
@@ -2109,6 +2169,7 @@
 				824D2A141B61671600E5F5A5 /* phase_b_base_00033.jpg in Resources */,
 				824D2A011B61671600E5F5A5 /* phase_b_base_00014.jpg in Resources */,
 				824D29FD1B61671600E5F5A5 /* phase_b_base_00010.jpg in Resources */,
+				824D2B501B62B92500E5F5A5 /* share_but_email@2x.png in Resources */,
 				824D2A791B61671600E5F5A5 /* phase_b_color_00062.jpg in Resources */,
 				824D29991B61671600E5F5A5 /* phase_a_base_00054.jpg in Resources */,
 				824D2B061B61671600E5F5A5 /* phase_d_color_00059.jpg in Resources */,
@@ -2141,6 +2202,7 @@
 				824D2A711B61671600E5F5A5 /* phase_b_color_00054.jpg in Resources */,
 				824D2ACB1B61671600E5F5A5 /* phase_d_color_00000.jpg in Resources */,
 				824D29C01B61671600E5F5A5 /* phase_a_color_00021.jpg in Resources */,
+				824D2B451B62B5C600E5F5A5 /* EMBSPCell.xib in Resources */,
 				824D2A671B61671600E5F5A5 /* phase_b_color_00044.jpg in Resources */,
 				824D29891B61671600E5F5A5 /* phase_a_base_00038.jpg in Resources */,
 				824D2A071B61671600E5F5A5 /* phase_b_base_00020.jpg in Resources */,
@@ -2178,13 +2240,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824D2B461B62B5C600E5F5A5 /* EMBSPSectionHeader.m in Sources */,
 				824D27A01B61467400E5F5A5 /* ColorPickerImageView.m in Sources */,
+				824D2B441B62B5C600E5F5A5 /* EMBSPCell.m in Sources */,
 				824D272E1B5D7E6700E5F5A5 /* ViewController.m in Sources */,
+				824D2B351B6286AA00E5F5A5 /* embEmailData.m in Sources */,
 				824D272B1B5D7E6700E5F5A5 /* AppDelegate.m in Sources */,
 				824D279D1B613EC500E5F5A5 /* Site360ViewController.m in Sources */,
 				824D27281B5D7E6700E5F5A5 /* main.m in Sources */,
 				824D2B1B1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m in Sources */,
+				824D2B3B1B62B57D00E5F5A5 /* UIImage+ScaleToFit.m in Sources */,
 				824D2B181B616DCD00E5F5A5 /* GalleryViewController.m in Sources */,
+				824D2B3A1B62B57D00E5F5A5 /* TLSpringFlowLayout.m in Sources */,
+				824D2B481B62B5C600E5F5A5 /* EMBSPSupplementaryView.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@class User;
 
 @interface GalleryViewController : UIViewController
-
+@property (nonatomic, copy) NSString *plistName;
+@property (nonatomic) User *user;
 @end
