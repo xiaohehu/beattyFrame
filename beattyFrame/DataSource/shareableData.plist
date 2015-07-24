@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>SectionName</key>
+		<string>3D ILLUSTRATIONS</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_3D.jpg</string>
+				<key>albumcaption</key>
+				<string>AAC Visitors Profile</string>
+				<key>assets</key>
+				<array>
+					<string>BallstonCommon_LivingRenderingStills_Shot07.jpg</string>
+					<string>BallstonCommon_LivingRenderingStills_Shot08.jpg</string>
+					<string>BallstonCommon_LivingRenderingStills_Shot01.jpg</string>
+					<string>BallstonCommon_LivingRenderingStills_Shot02.jpg</string>
+					<string>BallstonCommon_LivingRenderingStills_Shot04.jpg</string>
+					<string>BallstonCommon_LivingRenderingStills_Shot03.jpg</string>
+					<string>BallstonCommon_LivingRenderingStills_Shot05.jpg</string>
+					<string>BallstonCommon_LivingRenderingStills_Shot06.jpg</string>
+					<string>market_interior01.jpg</string>
+					<string>market_interior02.jpg</string>
+					<string>market_interior03.jpg</string>
+					<string>market_exterior01.jpg</string>
+					<string>market_exterior02.jpg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>share_BallstonCommon_LivingRenderingStills_Shot07.jpg.jpg</string>
+					<string>share_BallstonCommon_LivingRenderingStills_Shot08.jpg.jpg</string>
+					<string>share_BallstonCommon_LivingRenderingStills_Shot01.jpg.jpg</string>
+					<string>share_BallstonCommon_LivingRenderingStills_Shot02.jpg.jpg</string>
+					<string>share_BallstonCommon_LivingRenderingStills_Shot04.jpg.jpg</string>
+					<string>share_BallstonCommon_LivingRenderingStills_Shot03.jpg.jpg</string>
+					<string>share_BallstonCommon_LivingRenderingStills_Shot05.jpg.jpg</string>
+					<string>share_BallstonCommon_LivingRenderingStills_Shot06.jpg.jpg</string>
+					<string>share_market_interior01.jpg.jpg</string>
+					<string>share_market_interior02.jpg.jpg</string>
+					<string>share_market_interior03.jpg.jpg</string>
+					<string>share_market_exterior01.jpg.jpg</string>
+					<string>share_market_exterior02.jpg.jpg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>Plaza from Wilson Boulevard</string>
+					<string>Plaza Level Looking South</string>
+					<string>Mews from Wilson Boulevard</string>
+					<string>Mews Level 2 Looking Northwest</string>
+					<string>Mews Level 1 Looking West</string>
+					<string>Mews Level 2 Looking West</string>
+					<string>Mews Level 1 Looking East</string>
+					<string>Interior - Level 2 Looking West</string>
+					<string>Market Interior 1</string>
+					<string>Market Interior 2</string>
+					<string>Market Interior 3</string>
+					<string>Market Exterior/Plaza 1</string>
+					<string>Market Exterior/Plaza 2</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Architectural Renderings</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_architecture.jpg</string>
+				<key>albumcaption</key>
+				<string>Architectural Renderings</string>
+				<key>assets</key>
+				<array>
+					<string>View 7 - N Stuart - no bridge.jpg</string>
+					<string>View 6 - no bridge.jpg</string>
+					<string>View 5 - Plaza - no bridge.jpg</string>
+					<string>final\BallstonCommon_LivingRendering_View07_050715.jpg</string>
+					<string>final\BallstonCommon_LivingRendering_View08_050715.jpg</string>
+					<string>View 1 - Corner.jpg</string>
+					<string>final\BallstonCommon_LivingRendering_View01_051215.jpg</string>
+					<string>final\BallstonCommon_LivingRendering_View02_051215.jpg</string>
+					<string>final\BallstonCommon_LivingRendering_View04_051215.jpg</string>
+					<string>final\BallstonCommon_LivingRendering_View03_051215.jpg</string>
+					<string>final\BallstonCommon_LivingRendering_View05_051215.jpg</string>
+					<string>final\BallstonCommon_LivingRendering_View06_051215.jpg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>share_View 7 - N Stuart - no bridge.jpg.jpg</string>
+					<string>share_View 6 - no bridge.jpg.jpg</string>
+					<string>share_View 5 - Plaza - no bridge.jpg.jpg</string>
+					<string>share_final\BallstonCommon_LivingRendering_View07_050715.jpg.jpg</string>
+					<string>share_final\BallstonCommon_LivingRendering_View08_050715.jpg.jpg</string>
+					<string>share_View 1 - Corner.jpg.jpg</string>
+					<string>share_final\BallstonCommon_LivingRendering_View01_051215.jpg.jpg</string>
+					<string>share_final\BallstonCommon_LivingRendering_View02_051215.jpg.jpg</string>
+					<string>share_final\BallstonCommon_LivingRendering_View04_051215.jpg.jpg</string>
+					<string>share_final\BallstonCommon_LivingRendering_View03_051215.jpg.jpg</string>
+					<string>share_final\BallstonCommon_LivingRendering_View05_051215.jpg.jpg</string>
+					<string>share_final\BallstonCommon_LivingRendering_View06_051215.jpg.jpg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>N. Stuart Street</string>
+					<string>Wilson Blvd</string>
+					<string>The Plaza</string>
+					<string>Plaza from Wilson Boulevard</string>
+					<string>Plaza Level Looking South</string>
+					<string>Wilson Blvd and N. Randolph Street Corner</string>
+					<string>Mews from Wilson Boulevard</string>
+					<string>Mews Level 2 Looking Northwest</string>
+					<string>Mews Level 1 Looking West</string>
+					<string>Mews Level 2 Looking West</string>
+					<string>Mews Level 1 Looking East</string>
+					<string>Interior - Level 2 Looking West</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Photos - Aerials</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>Ballston aerial01.jpg</string>
+					<string>Ballston Aerial02.jpg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>thumb_photo.jpg</string>
+					<string>thumb_photo.jpg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string></string>
+					<string></string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Interior</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_david.jpg</string>
+				<key>albumcaption</key>
+				<string>Photos 1</string>
+				<key>assets</key>
+				<array>
+					<string>Picture 041.jpg</string>
+					<string>0005 BCM (c) 2014 David Galen.jpg</string>
+					<string>0027 BCM (c) 2014 David Galen.jpg</string>
+					<string>0099 BCM (c) 2014 David Galen.jpg</string>
+					<string>Pg 7D  0075 BCM (c) 2014 David Galen.jpg</string>
+					<string>Picture 024.jpg</string>
+					<string>Picture 030.jpg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>share_Picture 041.jpg.jpg</string>
+					<string>share_0005 BCM (c) 2014 David Galen.jpg.jpg</string>
+					<string>share_0027 BCM (c) 2014 David Galen.jpg.jpg</string>
+					<string>share_0099 BCM (c) 2014 David Galen.jpg.jpg</string>
+					<string>share_Pg 7D  0075 BCM (c) 2014 David Galen.jpg.jpg</string>
+					<string>share_Picture 024.jpg.jpg</string>
+					<string>share_Picture 030.jpg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Exterior</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo2.jpg</string>
+				<key>albumcaption</key>
+				<string>Exterior Photos</string>
+				<key>assets</key>
+				<array>
+					<string>Pg 9  0251 BCM (c) 2014 David Galen.jpg</string>
+					<string>0160 BCM (c) 2014 David Galen.jpg</string>
+					<string>0336 BCM (c) 2014 David Galen.jpg</string>
+					<string>0364 BCM (c) 2014 David Galen.jpg</string>
+					<string>Pg 2A  0225 BCM (c) 2014 David Galen.jpg</string>
+					<string>Pg 5B  0420 BCM (c) 2014 David Galen.jpg</string>
+					<string>Picture 031.jpg</string>
+					<string>Picture 035.jpg</string>
+					<string>Picture 036.jpg</string>
+					<string>Picture 038.jpg</string>
+					<string>Picture 049.jpg</string>
+					<string>Picture 050.jpg</string>
+					<string>Picture 051.jpg</string>
+					<string>Picture 056.jpg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>share_Pg 9  0251 BCM (c) 2014 David Galen.jpg.jpg</string>
+					<string>share_0160 BCM (c) 2014 David Galen.jpg.jpg</string>
+					<string>share_0336 BCM (c) 2014 David Galen.jpg.jpg</string>
+					<string>share_0364 BCM (c) 2014 David Galen.jpg.jpg</string>
+					<string>share_Pg 2A  0225 BCM (c) 2014 David Galen.jpg.jpg</string>
+					<string>share_Pg 5B  0420 BCM (c) 2014 David Galen.jpg.jpg</string>
+					<string>share_Picture 031.jpg.jpg</string>
+					<string>share_Picture 035.jpg.jpg</string>
+					<string>share_Picture 036.jpg.jpg</string>
+					<string>share_Picture 038.jpg.jpg</string>
+					<string>share_Picture 049.jpg.jpg</string>
+					<string>share_Picture 050.jpg.jpg</string>
+					<string>share_Picture 051.jpg.jpg</string>
+					<string>share_Picture 056.jpg.jpg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>DOCUMENTS</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>pdf</string>
+				<key>albumthumb</key>
+				<string></string>
+				<key>albumcaption</key>
+				<string></string>
+				<key>assets</key>
+				<array>
+					<string>BCLP DEV_ 07-09-2015.pdf</string>
+					<string>Ballston Center Mall Permanent 11x17.pdf</string>
+					<string>ballston leasing book with cards-2.pdf</string>
+					<string>150512_BC_PresTemplate_ProgressR3_LR 2.pdf</string>
+					<string>150604_BallstonQuarter_DiningGallery_R4.pdf</string>
+					<string>Design Update.pdf</string>
+					<string>2015_04_06-ESCALATORS AXON .pdf</string>
+					<string>Ballston_Presentation_072414-low res.pdf</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>Leasing Plan</string>
+					<string>Existing Lease Plan</string>
+					<string>2015 Leasing Brochure</string>
+					<string>Market</string>
+					<string>Dining Gallery</string>
+					<string>Design Update</string>
+					<string>Escalator Axon</string>
+					<string>Ballston Presentation</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>thumb_leasing.jpg</string>
+					<string>thumb_existing.jpg</string>
+					<string>thumb_vegas.jpg</string>
+					<string>thumb_market.jpg</string>
+					<string>thumb_dining_gallery.jpg</string>
+					<string>thumb_design.jpg</string>
+					<string>thumb_escalator.jpg</string>
+					<string>thumb_presentation.jpg</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

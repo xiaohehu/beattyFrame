@@ -35,6 +35,8 @@
     NSMutableArray		*bytesInPDF;
     CGFloat totalBhytes;
     
+    __weak IBOutlet UIView *uiv_sharePanel;
+    __weak IBOutlet UIButton *uib_shareSwitch;
     IBOutlet UIButton	*uib_Email;
     IBOutlet UIButton	*uib_PDF;
     __weak IBOutlet UITextView *uitv_sharedList;
@@ -49,6 +51,8 @@
     UIView *lowerRect;
     
     __weak IBOutlet UIView *uiv_preparedFor;
+    
+    BOOL                isShare;
 }
 @property (weak, nonatomic) IBOutlet UICollectionView *uic_collectionView;
 @property (strong, nonatomic)   XHGalleryViewController *gallery;
@@ -86,7 +90,7 @@
     
     // grab plist of data & Build the array
     NSString *path = [[NSBundle mainBundle] pathForResource:
-                      self.plistName ofType:@"plist"];
+                      @"shareableData" ofType:@"plist"];
     NSMutableArray *array = [[NSMutableArray alloc] initWithContentsOfFile:path];
     arr_AlbumData = array;
     albumSections = arr_AlbumData;
@@ -101,6 +105,9 @@
     
     upperRect = [[UIView alloc] init];
     lowerRect = [[UIView alloc] init];
+    
+    [self setShareSwitchButton];
+    uiv_sharePanel.transform = CGAffineTransformMakeTranslation(0, uiv_sharePanel.frame.size.height);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -113,6 +120,27 @@
     NSString *url = [[NSBundle mainBundle] pathForResource:@"photoData" ofType:@"plist"];
     arr_rawData = [[NSArray alloc] initWithContentsOfFile:url];
     NSLog(@"%@", arr_rawData);
+}
+
+- (void)setShareSwitchButton {
+    [uib_shareSwitch setTitle:@"Share" forState:UIControlStateNormal];
+    [uib_shareSwitch setTitle:@"Cancel" forState:UIControlStateSelected];
+    [uib_shareSwitch addTarget:self action:@selector(shareSwitch:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)shareSwitch:(id)sender {
+    uib_shareSwitch.selected = !uib_shareSwitch.selected;
+    isShare = uib_shareSwitch.selected;
+    if (isShare) {
+        [UIView animateWithDuration:0.33 animations:^(void){
+            uiv_sharePanel.transform = CGAffineTransformIdentity;
+        }];
+        
+    } else {
+        [UIView animateWithDuration:0.33 animations:^(void){
+            uiv_sharePanel.transform = CGAffineTransformMakeTranslation(0, uiv_sharePanel.frame.size.height);
+        }];
+    }
 }
 
 #pragma mark - Collection View
@@ -220,61 +248,71 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    NSNumber *selSection = [NSNumber numberWithInt:(int)indexPath.section];
-    NSNumber *selRow = [NSNumber numberWithInt:(int)indexPath.row];
-    
-    NSString *selKeyName = [NSString stringWithFormat:@"%@-%@",[selSection stringValue], [selRow stringValue]];
-    NSString *selValue = [NSString stringWithFormat:@"%@,%@",[selSection stringValue], [selRow stringValue]];
-    
-    // item caption for text view
-    NSString *itemCaption;
-    
-    // check for previously selected cell dictionaries
-    NSDictionary *selectedCellsDict = [self findDictionaryWithValue:selKeyName forKey:selValue];
-    
-    // cells dictionary is not in selectedIndexPaths
-    // so add it now
-    if (selectedCellsDict==nil) {
+    if (isShare) {
+        NSNumber *selSection = [NSNumber numberWithInt:(int)indexPath.section];
+        NSNumber *selRow = [NSNumber numberWithInt:(int)indexPath.row];
         
-        NSDictionary *ggallDict = [arr_AlbumData objectAtIndex:indexPath.section];
-        NSArray *ggalleryArray = [ggallDict objectForKey:@"sectioninfo"];
+        NSString *selKeyName = [NSString stringWithFormat:@"%@-%@",[selSection stringValue], [selRow stringValue]];
+        NSString *selValue = [NSString stringWithFormat:@"%@,%@",[selSection stringValue], [selRow stringValue]];
         
-        for (int i = 0; i < [ggalleryArray count]; i++) {
-            NSDictionary *itemDic = [[NSDictionary alloc] initWithDictionary:ggalleryArray[i]];
+        // item caption for text view
+        NSString *itemCaption;
+        
+        // check for previously selected cell dictionaries
+        NSDictionary *selectedCellsDict = [self findDictionaryWithValue:selKeyName forKey:selValue];
+        
+        // cells dictionary is not in selectedIndexPaths
+        // so add it now
+        if (selectedCellsDict==nil) {
             
-            //Add all items' names into this array
-            NSArray *t = [itemDic objectForKey:@"assets"];
-            assetName = [t objectAtIndex:indexPath.row];
+            NSDictionary *ggallDict = [arr_AlbumData objectAtIndex:indexPath.section];
+            NSArray *ggalleryArray = [ggallDict objectForKey:@"sectioninfo"];
             
-            NSArray *g = [itemDic objectForKey:@"captions"];
-            itemCaption = [g objectAtIndex:indexPath.row];
+            for (int i = 0; i < [ggalleryArray count]; i++) {
+                NSDictionary *itemDic = [[NSDictionary alloc] initWithDictionary:ggalleryArray[i]];
+                
+                //Add all items' names into this array
+                NSArray *t = [itemDic objectForKey:@"assets"];
+                assetName = [t objectAtIndex:indexPath.row];
+                
+                NSArray *g = [itemDic objectForKey:@"captions"];
+                itemCaption = [g objectAtIndex:indexPath.row];
+            }
+            
+            // get bytes and add to the array
+            //CGFloat totBytes = [self byteSizeOfFile];
+            
+            NSNumber *byt = [NSNumber numberWithFloat:[self byteSizeOfFile]];
+            
+            NSDictionary *dictSelIndexPaths = [[NSDictionary alloc] initWithObjectsAndKeys:
+                                               selKeyName, [NSString stringWithFormat:@"%@,%@",[selSection stringValue], [selRow stringValue]],
+                                               assetName, @"fileName",
+                                               itemCaption, @"caption",
+                                               byt, @"bytes",
+                                               nil];
+            
+            [selectedIndexPaths addObject:dictSelIndexPaths];
+            
+        } else {
+            
+            [selectedIndexPaths removeObject:selectedCellsDict];
         }
         
-        // get bytes and add to the array
-        //CGFloat totBytes = [self byteSizeOfFile];
+        [self updateSelectedText];
+        [self updateTotalBytes];
         
-        NSNumber *byt = [NSNumber numberWithFloat:[self byteSizeOfFile]];
-        
-        NSDictionary *dictSelIndexPaths = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                           selKeyName, [NSString stringWithFormat:@"%@,%@",[selSection stringValue], [selRow stringValue]],
-                                           assetName, @"fileName",
-                                           itemCaption, @"caption",
-                                           byt, @"bytes",
-                                           nil];
-        
-        [selectedIndexPaths addObject:dictSelIndexPaths];
-        
+        // and now reload only the cells that need updating
+        [collectionView reloadData];
+
     } else {
-        
-        [selectedIndexPaths removeObject:selectedCellsDict];
+        _gallery = [[XHGalleryViewController alloc] init];
+        _gallery.delegate = self;
+        _gallery.startIndex = 0; 		// Change this value to start with different page
+        _gallery.view.frame = self.view.bounds; 	// Change to load different frame
+        _gallery.arr_rawData = arr_rawData[0];
+        [self addChildViewController: _gallery];
+        [self.view addSubview: _gallery.view];
     }
-    
-    [self updateSelectedText];
-    [self updateTotalBytes];
-    
-    // and now reload only the cells that need updating
-    [collectionView reloadData];
 }
 
 -(CGFloat)byteSizeOfFile
