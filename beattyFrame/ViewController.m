@@ -40,20 +40,20 @@
 
 - (IBAction)loadSummary:(id)sender {
     
-//    summary = [[SummaryViewController alloc] init];
-//    summary.view.frame = self.view.bounds;
-//    [self addChildViewController: summary];
-//    [self.view addSubview: summary.view];
+    summary = [[SummaryViewController alloc] init];
+    summary.view.frame = self.view.bounds;
+    [self addChildViewController: summary];
+    [self.view addSubview: summary.view];
     
 //    Site360ViewController *site360 = [self.storyboard instantiateViewControllerWithIdentifier:@"Site360ViewController"];
 //    site360.view.frame = self.view.bounds;
 //    [self addChildViewController: site360];
 //    [self.view addSubview: site360.view];
     
-    GalleryViewController *gallery = [self.storyboard instantiateViewControllerWithIdentifier:@"GalleryViewController"];
-    gallery.view.frame = self.view.bounds;
-    [self addChildViewController:gallery];
-    [self.view addSubview: gallery.view];
+//    GalleryViewController *gallery = [self.storyboard instantiateViewControllerWithIdentifier:@"GalleryViewController"];
+//    gallery.view.frame = self.view.bounds;
+//    [self addChildViewController:gallery];
+//    [self.view addSubview: gallery.view];
 }
 
 - (void)removeSummary:(NSNotification *)notification {
