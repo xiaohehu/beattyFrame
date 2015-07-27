@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ce9-Mf-HLa">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ce9-Mf-HLa">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
@@ -65,6 +65,7 @@
                         <viewControllerLayoutGuide type="bottom" id="saD-Mm-tNd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xv9-lO-DqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFp-Uy-dgE">
@@ -148,6 +149,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2KO-di-LkK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vbt-nr-sJM">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EZb-sG-4uK">
