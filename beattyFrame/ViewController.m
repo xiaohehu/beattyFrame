@@ -12,7 +12,7 @@
 #import "GalleryViewController.h"
 #import "embEmailData.h"
 
-static float    sideMenuWidth = 275.0;
+static float    sideMenuWidth = 235.0;
 static float    menuButtonSize = 50.0;
 
 @import MessageUI;
@@ -20,8 +20,9 @@ static float    menuButtonSize = 50.0;
 @interface ViewController () <MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>{
 
     SummaryViewController   *summary;
-    UIView                  *uiv_vcBigContainer;
-    UIView                  *uiv_menuContainer;
+    IBOutlet UIView         *uiv_vcBigContainer;
+    IBOutlet UIView         *uiv_sideMenuContainer;
+    IBOutlet UIView         *uiv_vcCover;
     UIButton                *uib_menuButton;
 }
 
@@ -47,18 +48,23 @@ static float    menuButtonSize = 50.0;
 
 - (void)prepareViewContainer {
     
-    uiv_vcBigContainer = [[UIView alloc] initWithFrame:self.view.bounds];
     uiv_vcBigContainer.backgroundColor = [UIColor redColor];
     UIImageView *uiiv_bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"main_bg.jpg"]];
     uiiv_bg.frame = self.view.bounds;
     [uiv_vcBigContainer addSubview: uiiv_bg];
-    [self.view addSubview: uiv_vcBigContainer];
+    [self.view addSubview:uiv_vcBigContainer];
     
-    uiv_menuContainer = [[UIView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - sideMenuWidth, 0.0, sideMenuWidth, self.view.bounds.size.height)];
-    uiv_menuContainer.backgroundColor = [UIColor whiteColor];
-    uiv_menuContainer.alpha = 0.6;
-    [self.view addSubview: uiv_menuContainer];
-    uiv_menuContainer.transform = CGAffineTransformMakeTranslation(sideMenuWidth, 0);
+    uiv_vcCover.backgroundColor = [UIColor clearColor];
+    UITapGestureRecognizer *tapCover = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapMenuButtonClose:)];
+    uiv_vcCover.userInteractionEnabled = YES;
+    [uiv_vcCover addGestureRecognizer: tapCover];
+    [self.view addSubview:uiv_vcCover];
+    uiv_vcCover.alpha = 0.0;
+    
+    uiv_sideMenuContainer.backgroundColor = [UIColor whiteColor];
+    uiv_sideMenuContainer.alpha = 1.0;
+    [self.view insertSubview:uiv_sideMenuContainer aboveSubview:uiv_vcCover];
+    uiv_sideMenuContainer.transform = CGAffineTransformMakeTranslation(sideMenuWidth, 0);
     
     uib_menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
     uib_menuButton.frame = CGRectMake(self.view.bounds.size.width - 14 - menuButtonSize, (self.view.bounds.size.height - menuButtonSize)/2, menuButtonSize, menuButtonSize);
@@ -70,28 +76,37 @@ static float    menuButtonSize = 50.0;
 
 - (void)tapMenuButtonOpen:(id)sender {
     
+    uiv_vcBigContainer.layer.borderColor = [UIColor grayColor].CGColor;
+    uiv_vcBigContainer.layer.borderWidth = 3.0;
+    uiv_vcCover.alpha = 1.0;
+    
     [UIView animateWithDuration:0.33 animations:^(void){
         uib_menuButton.transform = CGAffineTransformTranslate(uib_menuButton.transform, -sideMenuWidth+14+menuButtonSize/2, 0.0);
         uib_menuButton.transform = CGAffineTransformRotate(uib_menuButton.transform, M_PI_4);
-        uiv_menuContainer.transform = CGAffineTransformIdentity;
+        uiv_sideMenuContainer.transform = CGAffineTransformIdentity;
         
-        uiv_vcBigContainer.transform = CGAffineTransformScale(uiv_vcBigContainer.transform, 0.8, 0.8);
-        uiv_vcBigContainer.transform = CGAffineTransformTranslate(uiv_vcBigContainer.transform, -1024*0.1, 0.0);
+        uiv_vcBigContainer.transform = CGAffineTransformScale(uiv_vcBigContainer.transform, 0.77, 0.77);
+        uiv_vcBigContainer.transform = CGAffineTransformTranslate(uiv_vcBigContainer.transform, -1024*0.148, 0.0);
         
     } completion:^(BOOL finished){
         [uib_menuButton removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
         [uib_menuButton addTarget:self action:@selector(tapMenuButtonClose:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view insertSubview:uiv_sideMenuContainer aboveSubview:uiv_vcCover];
     }];
 }
 
 - (void)tapMenuButtonClose:(id)sender {
+    
+    uiv_vcBigContainer.layer.borderWidth = 0.0;
+    
     [UIView animateWithDuration:0.33 animations:^(void){
         uib_menuButton.transform = CGAffineTransformIdentity;
         uiv_vcBigContainer.transform = CGAffineTransformIdentity;
-        uiv_menuContainer.transform = CGAffineTransformMakeTranslation(sideMenuWidth, 0.0);
+        uiv_sideMenuContainer.transform = CGAffineTransformMakeTranslation(sideMenuWidth, 0.0);
     } completion:^(BOOL finshied){
         [uib_menuButton removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
         [uib_menuButton addTarget:self action:@selector(tapMenuButtonOpen:) forControlEvents:UIControlEventTouchUpInside];
+        uiv_vcCover.alpha = 0.0;
     }];
 }
 
