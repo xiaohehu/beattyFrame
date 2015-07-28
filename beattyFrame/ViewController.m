@@ -176,6 +176,7 @@ static float    menuButtonSize = 50.0;
 - (IBAction)tapSideMenuButton:(id)sender {
     UIButton *tappedButton = sender;
     [self highlightTheButton:tappedButton withAnimation:YES];
+    [self buttonAction:tappedButton];
 }
 
 - (void)highlightTheButton:(UIButton *)theButton withAnimation:(BOOL)animation{
@@ -189,11 +190,21 @@ static float    menuButtonSize = 50.0;
     if (animation) {
         [UIView animateWithDuration:0.33 animations:^(void){
             uiv_buutonHighlight.frame = frame;
+        } completion:^(BOOL finished){
             [theButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         }];
     } else {
         uiv_buutonHighlight.frame = frame;
         [theButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    }
+}
+
+- (void)buttonAction:(UIButton *)theButton {
+    if (theButton.superview.tag == 0 && theButton.tag == 2) {
+        summary = [[SummaryViewController alloc] init];
+        summary.view.frame = self.view.bounds;
+        [self addChildViewController: summary];
+        [self.view addSubview: summary.view];
     }
 }
 
