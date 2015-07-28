@@ -79,7 +79,6 @@ static float    menuButtonSize = 50.0;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    NSLog(@"the button is %@", NSStringFromCGRect(uib_site360.frame));
     [self highlightTheButton:uib_site360 withAnimation:NO];
 }
 
@@ -174,7 +173,7 @@ static float    menuButtonSize = 50.0;
     }];
 }
 
-- (IBAction)updateHighLightView:(id)sender {
+- (IBAction)tapSideMenuButton:(id)sender {
     UIButton *tappedButton = sender;
     [self highlightTheButton:tappedButton withAnimation:YES];
 }
