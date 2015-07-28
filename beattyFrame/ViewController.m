@@ -24,6 +24,37 @@ static float    menuButtonSize = 50.0;
     IBOutlet UIView         *uiv_sideMenuContainer;
     IBOutlet UIView         *uiv_vcCover;
     UIButton                *uib_menuButton;
+    
+    // Side menu content button
+    __weak IBOutlet UIView *uiv_buutonHighlight;
+    // Button containers
+    __weak IBOutlet UIView *uiv_harbor;
+    __weak IBOutlet UIView *uiv_location;
+    __weak IBOutlet UIView *uiv_supporting;
+    __weak IBOutlet UIView *uiv_sponsorship;
+    
+    // Harbor Point
+    __weak IBOutlet UIButton *uib_site360;
+    __weak IBOutlet UIButton *uib_summary;
+    __weak IBOutlet UIButton *uib_masterPlan;
+    __weak IBOutlet UIButton *uib_development;
+    
+    // Location & Access
+    __weak IBOutlet UIButton *uib_location;
+    
+    // Supporting Stories
+    __weak IBOutlet UIButton *uib_history;
+    __weak IBOutlet UIButton *uib_trends;
+    __weak IBOutlet UIButton *uib_lifestyle;
+    __weak IBOutlet UIButton *uib_factsFigures;
+    __weak IBOutlet UIButton *uib_ecoDistrict;
+    
+    // Sponsorship
+    __weak IBOutlet UIButton *uib_developGroup;
+    __weak IBOutlet UIButton *uib_financial;
+    __weak IBOutlet UIButton *uib_currentFutureTrends;
+    
+    NSArray                  *arr_sideMenuBttuons;
 }
 
 @property (nonatomic, strong)       embEmailData            *receivedData;
@@ -31,7 +62,7 @@ static float    menuButtonSize = 50.0;
 @end
 
 @implementation ViewController
-
+#pragma mark - View Controller Life-cycle
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
@@ -44,7 +75,20 @@ static float    menuButtonSize = 50.0;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setEmailDataObject:) name:@"emailData" object:nil];
     
     [self prepareViewContainer];
+    [self groupSideMenuButtons];
 }
+
+- (void)viewDidAppear:(BOOL)animated {
+    NSLog(@"the button is %@", NSStringFromCGRect(uib_site360.frame));
+    [self highlightTheButton:uib_site360 withAnimation:NO];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Create/Style UI elements
 
 - (void)prepareViewContainer {
     
@@ -73,6 +117,26 @@ static float    menuButtonSize = 50.0;
     [self.view addSubview: uib_menuButton];
     
 }
+
+- (void)groupSideMenuButtons {
+    arr_sideMenuBttuons = @[
+                            uib_site360,
+                            uib_summary,
+                            uib_masterPlan,
+                            uib_development,
+                            uib_location,
+                            uib_history,
+                            uib_trends,
+                            uib_lifestyle,
+                            uib_factsFigures,
+                            uib_ecoDistrict,
+                            uib_developGroup,
+                            uib_financial,
+                            uib_currentFutureTrends
+                            ];
+}
+
+#pragma mark - UI element interaction
 
 - (void)tapMenuButtonOpen:(id)sender {
     
@@ -110,6 +174,30 @@ static float    menuButtonSize = 50.0;
     }];
 }
 
+- (IBAction)updateHighLightView:(id)sender {
+    UIButton *tappedButton = sender;
+    [self highlightTheButton:tappedButton withAnimation:YES];
+}
+
+- (void)highlightTheButton:(UIButton *)theButton withAnimation:(BOOL)animation{
+    for (UIButton *btn in arr_sideMenuBttuons) {
+        [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    }
+    CGRect frame = [theButton.superview convertRect:theButton.frame toView:uiv_sideMenuContainer];
+    frame.origin.x -= 3;
+    frame.size.width += 6;
+    uiv_buutonHighlight.backgroundColor = [UIColor redColor];
+    if (animation) {
+        [UIView animateWithDuration:0.33 animations:^(void){
+            uiv_buutonHighlight.frame = frame;
+            [theButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        }];
+    } else {
+        uiv_buutonHighlight.frame = frame;
+        [theButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    }
+}
+
 - (IBAction)loadSummary:(id)sender {
     
     summary = [[SummaryViewController alloc] init];
@@ -133,11 +221,6 @@ static float    menuButtonSize = 50.0;
     summary.view = nil;
     [summary removeFromParentViewController];
     summary = nil;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
