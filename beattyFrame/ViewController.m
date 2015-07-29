@@ -141,8 +141,8 @@ static float    menuButtonSize = 50.0;
 
 - (void)tapMenuButtonOpen:(id)sender {
     
-    uiv_vcBigContainer.layer.borderColor = [UIColor grayColor].CGColor;
-    uiv_vcBigContainer.layer.borderWidth = 3.0;
+    uiv_vcBigContainer.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    uiv_vcBigContainer.layer.borderWidth = 5.0;
     uiv_vcCover.alpha = 1.0;
     
     [UIView animateWithDuration:0.33 animations:^(void){
@@ -151,7 +151,7 @@ static float    menuButtonSize = 50.0;
         uiv_sideMenuContainer.transform = CGAffineTransformIdentity;
         
         uiv_vcBigContainer.transform = CGAffineTransformScale(uiv_vcBigContainer.transform, 0.77, 0.77);
-        uiv_vcBigContainer.transform = CGAffineTransformTranslate(uiv_vcBigContainer.transform, -1024*0.148, 0.0);
+        uiv_vcBigContainer.transform = CGAffineTransformTranslate(uiv_vcBigContainer.transform, -1024*0.149, 0.0);
         
     } completion:^(BOOL finished){
         [uib_menuButton removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
@@ -238,6 +238,7 @@ static float    menuButtonSize = 50.0;
     if (theButton.superview.tag == 2) {
         SupportingViewController *supporting = [self.storyboard instantiateViewControllerWithIdentifier:@"SupportingViewController"];;
         supporting.view.frame = uiv_vcBigContainer.bounds;
+        supporting.pageIndex = theButton.tag%10 - 1;
         [self addChildViewController:supporting];
         [uiv_vcBigContainer addSubview:supporting.view];
     }

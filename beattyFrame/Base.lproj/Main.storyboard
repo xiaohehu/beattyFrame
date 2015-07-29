@@ -49,7 +49,7 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="0.0" width="127" height="31"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="127" height="31"/>
                                                 </variation>
                                             </label>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LG-p9-6Bv">
@@ -61,7 +61,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="45" width="51" height="25"/>
+                                                    <rect key="frame" x="0.0" y="45" width="51" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOJ-Bm-KnR"/>
@@ -76,7 +76,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="70" width="61" height="25"/>
+                                                    <rect key="frame" x="0.0" y="70" width="61" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nk2-hB-Nbz"/>
@@ -91,7 +91,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="95" width="76" height="25"/>
+                                                    <rect key="frame" x="0.0" y="95" width="76" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNd-GB-xAL"/>
@@ -106,7 +106,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="120" width="158" height="25"/>
+                                                    <rect key="frame" x="0.0" y="120" width="158" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqy-Ba-Rsi"/>
@@ -152,7 +152,7 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="0.0" width="158" height="31"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="31"/>
                                                 </variation>
                                             </label>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5U-fo-QOb">
@@ -164,7 +164,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="39" width="83" height="25"/>
+                                                    <rect key="frame" x="0.0" y="39" width="83" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j0C-v3-dlK"/>
@@ -204,7 +204,7 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="0.0" width="158" height="31"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="31"/>
                                                 </variation>
                                             </label>
                                             <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86P-iB-lbU">
@@ -216,7 +216,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="47" width="44" height="25"/>
+                                                    <rect key="frame" x="0.0" y="47" width="44" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QbM-kV-XCv"/>
@@ -231,7 +231,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="72" width="44" height="25"/>
+                                                    <rect key="frame" x="0.0" y="72" width="44" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xdH-9o-u2w"/>
@@ -246,7 +246,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="97" width="113" height="25"/>
+                                                    <rect key="frame" x="0.0" y="97" width="113" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K5o-98-c0I"/>
@@ -261,7 +261,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="122" width="90" height="25"/>
+                                                    <rect key="frame" x="0.0" y="122" width="90" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dji-2I-LUW"/>
@@ -276,7 +276,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="147" width="71" height="25"/>
+                                                    <rect key="frame" x="0.0" y="147" width="71" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Az-PW-Ugh"/>
@@ -324,7 +324,7 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="0.0" width="158" height="31"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="31"/>
                                                 </variation>
                                             </label>
                                             <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zS-go-uEd">
@@ -336,7 +336,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="64" width="115" height="25"/>
+                                                    <rect key="frame" x="0.0" y="64" width="115" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nm1-pr-Htp"/>
@@ -351,7 +351,7 @@
                                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="89" width="150" height="25"/>
+                                                    <rect key="frame" x="0.0" y="89" width="150" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9nh-gs-OKs"/>
@@ -373,7 +373,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="16" y="39" width="158" height="25"/>
+                                                    <rect key="frame" x="0.0" y="39" width="158" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IPC-1o-ygC"/>
@@ -469,7 +469,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="471.75" y="1055.25"/>
+            <point key="canvasLocation" x="267" y="1053"/>
         </scene>
         <!--Site360 View Controller-->
         <scene sceneID="T5r-Nr-59v">

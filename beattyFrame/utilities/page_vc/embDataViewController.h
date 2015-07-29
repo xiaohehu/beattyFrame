@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface embDataViewController : UIViewController
-@property (strong, nonatomic) id dataObject;
-
+@property (strong, nonatomic) id        dataObject;
+@property (readwrite, nonatomic) int    vcIndex;
 @end

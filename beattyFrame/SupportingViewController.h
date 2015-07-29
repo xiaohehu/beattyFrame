@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SupportingViewController : UIViewController
-
+@property (readwrite, nonatomic)    int     pageIndex;
 @end

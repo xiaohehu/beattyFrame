@@ -9,6 +9,8 @@
 #import "SupportingViewController.h"
 #import "embModelController.h"
 #import "embDataViewController.h"
+#import "UIColor+Extensions.h"
+
 static CGFloat  bottomMenuWidth = 570;
 static CGFloat  bottomMenuHeight = 37;
 @interface SupportingViewController ()<UIPageViewControllerDelegate>
@@ -26,6 +28,7 @@ static CGFloat  bottomMenuHeight = 37;
 @implementation SupportingViewController
 
 @synthesize modelController = _modelController;
+@synthesize pageIndex;
 
 # pragma mark - View Controller Lift-cycle
 - (void)viewDidLoad {
@@ -34,7 +37,10 @@ static CGFloat  bottomMenuHeight = 37;
     
     _modelController = [[embModelController alloc] init];
     [self prepareData];
-    [self initPageView:0];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self initPageView:pageIndex];
     [self createBottomMenu];
 }
 
@@ -66,7 +72,7 @@ static CGFloat  bottomMenuHeight = 37;
     [self.pageViewController didMoveToParentViewController:self];
     [self addChildViewController:self.pageViewController];
     [self.view addSubview: self.pageViewController.view];
-    [self.pageViewController.view setBackgroundColor:[UIColor redColor]];
+    [self.pageViewController.view setBackgroundColor:[UIColor whiteColor]];
     
     [self loadPage:(int)index];
 }
@@ -95,7 +101,7 @@ static CGFloat  bottomMenuHeight = 37;
 - (void)createBottomMenu {
     uiv_bottomMenu = [[UIView alloc] initWithFrame:CGRectMake((self.view.bounds.size.width - bottomMenuWidth)/2, self.view.bounds.size.height - 22 - bottomMenuHeight, bottomMenuWidth, bottomMenuHeight)];
     uiv_bottomMenu.clipsToBounds = YES;
-    uiv_bottomMenu.backgroundColor = [UIColor redColor];
+    uiv_bottomMenu.backgroundColor = [UIColor whiteColor];
     [self.view addSubview: uiv_bottomMenu];
     
     for (int i = 0 ; i < arr_menuTitles.count; i++) {
@@ -105,15 +111,14 @@ static CGFloat  bottomMenuHeight = 37;
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
         [button.titleLabel setFont:[UIFont systemFontOfSize:12.0]];
-        if (i%2 == 0) {
-            button.backgroundColor = [UIColor whiteColor];
-        }
+        button.backgroundColor = [UIColor whiteColor];
         CGRect frame = button.frame;
         frame.size.width += 19;
         frame.size.height = bottomMenuHeight;
         button.frame = frame;
         [button setContentEdgeInsets:UIEdgeInsetsMake(0, 3, 0, 0)];
         button.tag = i;
+        [button addTarget:self action:@selector(tapBottomButton:) forControlEvents:UIControlEventTouchUpInside];
         [arr_menuButton addObject: button];
     }
     for (int i = 0; i < arr_menuButton.count; i++) {
@@ -128,6 +133,17 @@ static CGFloat  bottomMenuHeight = 37;
     }
     
 }
+
+- (void)tapBottomButton:(id)sender {
+    UIButton *tappedButton = sender;
+    for (UIButton *btn in arr_menuButton) {
+        btn.selected = NO;
+        btn.backgroundColor = [UIColor whiteColor];
+    }
+    tappedButton.selected = YES;
+    tappedButton.backgroundColor = [UIColor themeRed];
+}
+
 /*
 #pragma mark - Navigation
 

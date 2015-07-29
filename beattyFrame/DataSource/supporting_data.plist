@@ -10,6 +10,12 @@
 	</dict>
 	<dict>
 		<key>image</key>
+		<string>main_bg.jpg</string>
+		<key>title</key>
+		<string>Eco-District</string>
+	</dict>
+	<dict>
+		<key>image</key>
 		<string>residential.png</string>
 		<key>title</key>
 		<string>Trends</string>

@@ -22,7 +22,7 @@
 @end
 
 @implementation embDataViewController
-
+@synthesize vcIndex;
 - (void)viewDidLoad
 {
     [super viewDidLoad];

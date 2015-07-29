@@ -30,6 +30,7 @@
     if (self) {
 		// Create the data model.
 		_pageData = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"supporting_data" ofType:@"plist"]] copy];
+        NSLog(@"the page data is %@",_pageData);
     }
     return self;
 }
