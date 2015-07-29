@@ -10,6 +10,7 @@
 #import "SummaryViewController.h"
 #import "Site360ViewController.h"
 #import "GalleryViewController.h"
+#import "SupportingViewController.h"
 #import "embEmailData.h"
 #import "UIColor+Extensions.h"
 
@@ -232,6 +233,13 @@ static float    menuButtonSize = 50.0;
                 break;
         }
         
+    }
+
+    if (theButton.superview.tag == 2) {
+        SupportingViewController *supporting = [self.storyboard instantiateViewControllerWithIdentifier:@"SupportingViewController"];;
+        supporting.view.frame = uiv_vcBigContainer.bounds;
+        [self addChildViewController:supporting];
+        [uiv_vcBigContainer addSubview:supporting.view];
     }
 }
 

@@ -16,7 +16,7 @@
 }
 
 @property (nonatomic, strong) ebZoomingScrollView			*zoomingScroll;
-
+@property (nonatomic, strong) NSDictionary                  *dict;
 
 
 @end
@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    _dict = self.dataObject;
+    NSLog(@"\n\naaaaaa%@", _dict);
     [self loadDataAndView];
 }
 
@@ -35,19 +37,17 @@
 {
 	if (!_zoomingScroll) {
         CGRect theFrame = self.view.bounds;
-        theFrame.origin.x = 35;
-        theFrame.origin.y = 64;
-        theFrame.size.width = 900;
-        theFrame.size.height = 682;
 		_zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
         [self.view addSubview:_zoomingScroll];
         _zoomingScroll.backgroundColor = [UIColor clearColor];
 		_zoomingScroll.delegate=self;
-	}    
+	}
+    [self loadInImge:_dict[@"image"]];
 }
 
 -(void)loadInImge:(NSString *)imageName
 {
+    NSLog(@"image name is %@", imageName);
     [UIView animateWithDuration:0.0 animations:^{
         _zoomingScroll.blurView.alpha = 0.0;
     } completion:^(BOOL finished){

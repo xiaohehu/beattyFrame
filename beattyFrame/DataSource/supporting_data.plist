@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>hotel.png</string>
+		<key>title</key>
+		<string>History</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>residential.png</string>
+		<key>title</key>
+		<string>Trends</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>retail.png</string>
+		<key>title</key>
+		<string>Lifestyle &amp; Culture</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>office.png</string>
+		<key>title</key>
+		<string>Facts &amp; Figures</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>residential.png</string>
+		<key>title</key>
+		<string>Eco-District</string>
+	</dict>
+</array>
+</plist>

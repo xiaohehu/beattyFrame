@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8243874E1B6929A1003AC214 /* SupportingViewController.m */; };
+		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
 		824D27281B5D7E6700E5F5A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D27271B5D7E6700E5F5A5 /* main.m */; };
 		824D272B1B5D7E6700E5F5A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D272A1B5D7E6700E5F5A5 /* AppDelegate.m */; };
 		824D272E1B5D7E6700E5F5A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D272D1B5D7E6700E5F5A5 /* ViewController.m */; };
@@ -634,6 +636,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8243874D1B6929A1003AC214 /* SupportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportingViewController.h; sourceTree = "<group>"; };
+		8243874E1B6929A1003AC214 /* SupportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportingViewController.m; sourceTree = "<group>"; };
+		824387501B69414D003AC214 /* supporting_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = supporting_data.plist; sourceTree = "<group>"; };
 		824D27221B5D7E6700E5F5A5 /* beattyFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beattyFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824D27261B5D7E6700E5F5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		824D27271B5D7E6700E5F5A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1328,6 +1333,8 @@
 				824D279C1B613EC500E5F5A5 /* Site360ViewController.m */,
 				824D2B161B616DCD00E5F5A5 /* GalleryViewController.h */,
 				824D2B171B616DCD00E5F5A5 /* GalleryViewController.m */,
+				8243874D1B6929A1003AC214 /* SupportingViewController.h */,
+				8243874E1B6929A1003AC214 /* SupportingViewController.m */,
 				824D272F1B5D7E6700E5F5A5 /* Main.storyboard */,
 				824D27A11B61467700E5F5A5 /* utiliites */,
 				824D2B131B6169AB00E5F5A5 /* DataSource */,
@@ -1932,6 +1939,7 @@
 				824D2B551B62CF7F00E5F5A5 /* shareableData.plist */,
 				824D2B1E1B61857E00E5F5A5 /* photoData.plist */,
 				824D2B141B6169AB00E5F5A5 /* ImageData.plist */,
+				824387501B69414D003AC214 /* supporting_data.plist */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -2503,6 +2511,7 @@
 				824D29AC1B61671600E5F5A5 /* phase_a_color_00001.jpg in Resources */,
 				824D2BB91B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot05.jpg.jpg in Resources */,
 				824D2AB71B61671600E5F5A5 /* phase_d_base_00052.jpg in Resources */,
+				824387511B69414D003AC214 /* supporting_data.plist in Resources */,
 				824D29C21B61671600E5F5A5 /* phase_a_color_00023.jpg in Resources */,
 				824D2A801B61671600E5F5A5 /* phase_b_color_00069.jpg in Resources */,
 				824D29F81B61671600E5F5A5 /* phase_b_base_00005.jpg in Resources */,
@@ -2807,6 +2816,7 @@
 				82A128301B66657C00564266 /* animationView.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
 				82A128B81B69164100564266 /* embDataViewController.m in Sources */,
+				8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

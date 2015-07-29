@@ -29,7 +29,7 @@
     self = [super init];
     if (self) {
 		// Create the data model.
-		_pageData = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"floorplanData" ofType:@"plist"]] copy];
+		_pageData = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"supporting_data" ofType:@"plist"]] copy];
     }
     return self;
 }
