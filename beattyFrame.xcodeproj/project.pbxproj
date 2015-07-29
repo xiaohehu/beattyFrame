@@ -617,6 +617,10 @@
 		82A128851B66668800564266 /* grfx-arrow-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A1285B1B66668800564266 /* grfx-arrow-right@2x.png */; };
 		82A128B11B66CA6B00564266 /* grfx_menuOpen.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A128AF1B66CA6B00564266 /* grfx_menuOpen.png */; };
 		82A128B21B66CA6B00564266 /* grfx_menuOpen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A128B01B66CA6B00564266 /* grfx_menuOpen@2x.png */; };
+		82A128B81B69164100564266 /* embDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A128B51B69164100564266 /* embDataViewController.m */; };
+		82A128B91B69164100564266 /* embModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A128B71B69164100564266 /* embModelController.m */; };
+		82A128BC1B6916BF00564266 /* ebZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A128BB1B6916BF00564266 /* ebZoomingScrollView.m */; };
+		82A128BF1B6916EE00564266 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A128BE1B6916EE00564266 /* UIColor+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1258,6 +1262,14 @@
 		82A1285B1B66668800564266 /* grfx-arrow-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-arrow-right@2x.png"; sourceTree = "<group>"; };
 		82A128AF1B66CA6B00564266 /* grfx_menuOpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_menuOpen.png; path = src/grfx/grfx_menuOpen.png; sourceTree = "<group>"; };
 		82A128B01B66CA6B00564266 /* grfx_menuOpen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_menuOpen@2x.png"; path = "src/grfx/grfx_menuOpen@2x.png"; sourceTree = "<group>"; };
+		82A128B41B69164100564266 /* embDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = embDataViewController.h; sourceTree = "<group>"; };
+		82A128B51B69164100564266 /* embDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = embDataViewController.m; sourceTree = "<group>"; };
+		82A128B61B69164100564266 /* embModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = embModelController.h; sourceTree = "<group>"; };
+		82A128B71B69164100564266 /* embModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = embModelController.m; sourceTree = "<group>"; };
+		82A128BA1B6916BF00564266 /* ebZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebZoomingScrollView.h; sourceTree = "<group>"; };
+		82A128BB1B6916BF00564266 /* ebZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ebZoomingScrollView.m; sourceTree = "<group>"; };
+		82A128BD1B6916EE00564266 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Extensions.h"; path = "utilities/UIColor+Extensions.h"; sourceTree = "<group>"; };
+		82A128BE1B6916EE00564266 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Extensions.m"; path = "utilities/UIColor+Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1399,6 +1411,7 @@
 		824D27A11B61467700E5F5A5 /* utiliites */ = {
 			isa = PBXGroup;
 			children = (
+				82A128B31B69164100564266 /* page_vc */,
 				82A1282E1B66657B00564266 /* animationView.h */,
 				82A1282F1B66657C00564266 /* animationView.m */,
 				824D2B3C1B62B5C600E5F5A5 /* EMBSPCell.h */,
@@ -1413,6 +1426,8 @@
 				824D2B371B62B57D00E5F5A5 /* TLSpringFlowLayout.m */,
 				824D2B381B62B57D00E5F5A5 /* UIImage+ScaleToFit.h */,
 				824D2B391B62B57D00E5F5A5 /* UIImage+ScaleToFit.m */,
+				82A128BD1B6916EE00564266 /* UIColor+Extensions.h */,
+				82A128BE1B6916EE00564266 /* UIColor+Extensions.m */,
 				824D2B331B6286AA00E5F5A5 /* embEmailData.h */,
 				824D2B341B6286AA00E5F5A5 /* embEmailData.m */,
 				824D279E1B61467400E5F5A5 /* ColorPickerImageView.h */,
@@ -2073,6 +2088,20 @@
 			);
 			name = marketplace_ecosystem;
 			path = src/grfx/marketplace_ecosystem;
+			sourceTree = "<group>";
+		};
+		82A128B31B69164100564266 /* page_vc */ = {
+			isa = PBXGroup;
+			children = (
+				82A128B41B69164100564266 /* embDataViewController.h */,
+				82A128B51B69164100564266 /* embDataViewController.m */,
+				82A128B61B69164100564266 /* embModelController.h */,
+				82A128B71B69164100564266 /* embModelController.m */,
+				82A128BA1B6916BF00564266 /* ebZoomingScrollView.h */,
+				82A128BB1B6916BF00564266 /* ebZoomingScrollView.m */,
+			);
+			name = page_vc;
+			path = utilities/page_vc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2768,12 +2797,16 @@
 				824D279D1B613EC500E5F5A5 /* Site360ViewController.m in Sources */,
 				824D27281B5D7E6700E5F5A5 /* main.m in Sources */,
 				824D2B1B1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m in Sources */,
+				82A128B91B69164100564266 /* embModelController.m in Sources */,
+				82A128BC1B6916BF00564266 /* ebZoomingScrollView.m in Sources */,
 				824D2B3B1B62B57D00E5F5A5 /* UIImage+ScaleToFit.m in Sources */,
 				824D2B181B616DCD00E5F5A5 /* GalleryViewController.m in Sources */,
 				824D2B3A1B62B57D00E5F5A5 /* TLSpringFlowLayout.m in Sources */,
 				824D2B481B62B5C600E5F5A5 /* EMBSPSupplementaryView.m in Sources */,
+				82A128BF1B6916EE00564266 /* UIColor+Extensions.m in Sources */,
 				82A128301B66657C00564266 /* animationView.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
+				82A128B81B69164100564266 /* embDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

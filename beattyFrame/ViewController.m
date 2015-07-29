@@ -11,6 +11,7 @@
 #import "Site360ViewController.h"
 #import "GalleryViewController.h"
 #import "embEmailData.h"
+#import "UIColor+Extensions.h"
 
 static float    sideMenuWidth = 235.0;
 static float    menuButtonSize = 50.0;
@@ -91,7 +92,7 @@ static float    menuButtonSize = 50.0;
 
 - (void)prepareViewContainer {
     
-    uiv_vcBigContainer.backgroundColor = [UIColor redColor];
+    uiv_vcBigContainer.backgroundColor = [UIColor whiteColor];
     UIImageView *uiiv_bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"main_bg.jpg"]];
     uiiv_bg.frame = self.view.bounds;
     [uiv_vcBigContainer addSubview: uiiv_bg];
@@ -187,7 +188,7 @@ static float    menuButtonSize = 50.0;
     CGRect frame = [theButton.superview convertRect:theButton.frame toView:uiv_sideMenuContainer];
     frame.origin.x -= 3;
     frame.size.width += 6;
-    uiv_buutonHighlight.backgroundColor = [UIColor redColor];
+    uiv_buutonHighlight.backgroundColor = [UIColor themeRed];
     if (animation) {
         [UIView animateWithDuration:0.33 animations:^(void){
             uiv_buutonHighlight.frame = frame;
