@@ -10,4 +10,6 @@
 
 @interface SummaryViewController : UIViewController
 
+@property (nonatomic, readwrite) BOOL preloadSitePlan;
+
 @end

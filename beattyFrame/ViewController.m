@@ -177,6 +177,7 @@ static float    menuButtonSize = 50.0;
     UIButton *tappedButton = sender;
     [self highlightTheButton:tappedButton withAnimation:YES];
     [self buttonAction:tappedButton];
+    [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
 }
 
 - (void)highlightTheButton:(UIButton *)theButton withAnimation:(BOOL)animation{
@@ -200,11 +201,36 @@ static float    menuButtonSize = 50.0;
 }
 
 - (void)buttonAction:(UIButton *)theButton {
-    if (theButton.superview.tag == 0 && theButton.tag == 2) {
-        summary = [[SummaryViewController alloc] init];
-        summary.view.frame = self.view.bounds;
-        [self addChildViewController: summary];
-        [self.view addSubview: summary.view];
+    if (theButton.superview.tag == 0) {
+        switch (theButton.tag) {
+            case 1: {
+                
+                break;
+            }
+            case 2: {
+                summary = [[SummaryViewController alloc] init];
+                summary.view.frame = self.view.bounds;
+                [self addChildViewController: summary];
+                [self.view addSubview: summary.view];
+                break;
+            }
+            case 3: {
+                summary = [[SummaryViewController alloc] init];
+                summary.view.frame = self.view.bounds;
+                summary.preloadSitePlan = YES;
+                [self addChildViewController: summary];
+                [self.view addSubview: summary.view];
+                break;
+            }
+            case 4: {
+                
+                break;
+            }
+                
+            default:
+                break;
+        }
+        
     }
 }
 

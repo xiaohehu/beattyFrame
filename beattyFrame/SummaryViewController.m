@@ -34,6 +34,9 @@ static float topButtonHeight = 38.0;
 @end
 
 @implementation SummaryViewController
+
+@synthesize preloadSitePlan;
+
 #pragma mark - View controller life-cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,6 +46,15 @@ static float topButtonHeight = 38.0;
     [self createTopButtons];
     [self createSummaryContent];
     [self createSitePlanView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"if is site plan %i", preloadSitePlan);
+    if (preloadSitePlan) {
+        uiv_buttonHighlight.transform = CGAffineTransformMakeTranslation(containerWidth/2, 0.0);
+        uiiv_leftSummary.transform = CGAffineTransformMakeTranslation(-uiiv_leftSummary.frame.size.width, 0.0);
+        uiiv_rightSummary.transform = CGAffineTransformMakeTranslation(uiiv_rightSummary.frame.size.width, 0.0);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
