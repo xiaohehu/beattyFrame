@@ -26,6 +26,7 @@ static float    menuButtonSize = 50.0;
     IBOutlet UIView         *uiv_sideMenuContainer;
     IBOutlet UIView         *uiv_vcCover;
     UIButton                *uib_menuButton;
+    UIViewController        *currentViewController;
     
     // Side menu content button
     __weak IBOutlet UIView *uiv_buutonHighlight;
@@ -75,7 +76,7 @@ static float    menuButtonSize = 50.0;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeSummary:) name:@"RemoveSummeary" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setEmailDataObject:) name:@"emailData" object:nil];
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateHighlightedButton:) name:@"updatedSupportingSideMenu" object:nil];
     [self prepareViewContainer];
     [self groupSideMenuButtons];
 }
@@ -202,6 +203,18 @@ static float    menuButtonSize = 50.0;
     }
 }
 
+- (IBAction)loadSupporting:(id)sender {
+    UIButton *tappedButton = sender;
+    [self highlightTheButton:tappedButton withAnimation:YES];
+    SupportingViewController *supporting = [self.storyboard instantiateViewControllerWithIdentifier:@"SupportingViewController"];
+    currentViewController = supporting;
+    supporting.view.frame = uiv_vcBigContainer.bounds;
+    supporting.pageIndex = tappedButton.tag%10;
+    [self addChildViewController:supporting];
+    [uiv_vcBigContainer addSubview:supporting.view];
+    [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
+}
+
 - (void)buttonAction:(UIButton *)theButton {
     if (theButton.superview.tag == 0) {
         switch (theButton.tag) {
@@ -234,14 +247,6 @@ static float    menuButtonSize = 50.0;
         }
         
     }
-
-    if (theButton.superview.tag == 2) {
-        SupportingViewController *supporting = [self.storyboard instantiateViewControllerWithIdentifier:@"SupportingViewController"];;
-        supporting.view.frame = uiv_vcBigContainer.bounds;
-        supporting.pageIndex = theButton.tag%10 - 1;
-        [self addChildViewController:supporting];
-        [uiv_vcBigContainer addSubview:supporting.view];
-    }
 }
 
 - (IBAction)loadSummary:(id)sender {
@@ -269,6 +274,15 @@ static float    menuButtonSize = 50.0;
     summary = nil;
 }
 
+- (void)updateHighlightedButton:(NSNotification *)notification {
+    int buttonTag = [[notification.userInfo objectForKey:@"index"] integerValue]+20;
+    for (UIButton *button in arr_sideMenuBttuons) {
+        if (button.tag == buttonTag) {
+            [self highlightTheButton:button withAnimation:NO];
+            return;
+        }
+    }
+}
 
 #pragma mark - Mail Sending
 -(void)setEmailDataObject:(NSNotification *)pNotification

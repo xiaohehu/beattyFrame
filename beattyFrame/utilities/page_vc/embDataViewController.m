@@ -46,7 +46,6 @@
 
 -(void)loadInImge:(NSString *)imageName
 {
-    NSLog(@"image name is %@", imageName);
     [UIView animateWithDuration:0.0 animations:^{
         _zoomingScroll.blurView.alpha = 0.0;
     } completion:^(BOOL finished){

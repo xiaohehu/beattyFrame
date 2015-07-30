@@ -207,7 +207,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="158" height="31"/>
                                                 </variation>
                                             </label>
-                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86P-iB-lbU">
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86P-iB-lbU">
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -219,7 +219,7 @@
                                                     <rect key="frame" x="0.0" y="47" width="44" height="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QbM-kV-XCv"/>
+                                                    <action selector="loadSupporting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNp-ub-0bs"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UR-r7-2Su">
@@ -234,7 +234,7 @@
                                                     <rect key="frame" x="0.0" y="72" width="44" height="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xdH-9o-u2w"/>
+                                                    <action selector="loadSupporting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IwE-a1-YS3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27L-c7-stm">
@@ -249,7 +249,7 @@
                                                     <rect key="frame" x="0.0" y="97" width="113" height="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K5o-98-c0I"/>
+                                                    <action selector="loadSupporting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GME-zC-aia"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waS-0t-cP4">
@@ -264,7 +264,7 @@
                                                     <rect key="frame" x="0.0" y="122" width="90" height="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dji-2I-LUW"/>
+                                                    <action selector="loadSupporting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lJX-AW-oPY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldP-57-Nno">
@@ -279,7 +279,7 @@
                                                     <rect key="frame" x="0.0" y="147" width="71" height="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Az-PW-Ugh"/>
+                                                    <action selector="loadSupporting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4z-bz-KB5"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecP-zZ-Zpd" userLabel="Bottom_bar">

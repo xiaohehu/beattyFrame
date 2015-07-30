@@ -18,6 +18,9 @@ static CGFloat  bottomMenuHeight = 37;
     UIView          *uiv_bottomMenu;
     NSArray         *arr_menuTitles;
     NSMutableArray  *arr_menuButton;
+    NSArray         *arr_lastIndex;
+    NSArray         *arr_firstIndex;
+    int             currentPageIndex;
 }
 
 @property (readonly, strong, nonatomic) embModelController		*modelController;
@@ -42,6 +45,7 @@ static CGFloat  bottomMenuHeight = 37;
 - (void)viewWillAppear:(BOOL)animated {
     [self initPageView:pageIndex];
     [self createBottomMenu];
+    [self checkCurrentIndexPosition];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,6 +63,20 @@ static CGFloat  bottomMenuHeight = 37;
                        @"Lifestyle & Culture",
                        @"Facts & Figures",
                        @"Eco-District"
+                       ];
+    arr_lastIndex = @[
+                      @1,
+                      @2,
+                      @3,
+                      @4,
+                      @5
+                      ];
+    arr_firstIndex = @[
+                       @0,
+                       @2,
+                       @3,
+                       @4,
+                       @5
                        ];
 }
 # pragma mark - Create UI elements
@@ -80,12 +98,46 @@ static CGFloat  bottomMenuHeight = 37;
 -(void)loadPage:(int)page {
     
     embDataViewController *startingViewController = [self.modelController viewControllerAtIndex:page storyboard:self.storyboard];
-    
+    currentPageIndex = page;
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers
                                       direction:UIPageViewControllerNavigationDirectionForward
                                        animated:NO
                                      completion:nil];
+}
+
+#pragma mark - PageViewController
+#pragma mark update page index
+- (void)pageViewController:(UIPageViewController *)pvc didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed
+{
+    // If the page did not turn
+    if (!completed)
+    {
+        // You do nothing because whatever page you thought you were on
+        // before the gesture started is still the correct page
+        NSLog(@"same page");
+        return;
+    }
+    // This is where you would know the page number changed and handle it appropriately
+    //    NSLog(@"new page");
+    [self setpageIndex];
+}
+
+- (void) setpageIndex {
+    embDataViewController *theCurrentViewController = [self.pageViewController.viewControllers objectAtIndex:0];
+    currentPageIndex = (int)[self.modelController indexOfViewController:theCurrentViewController];
+    [self checkCurrentIndexPosition];
+}
+
+- (void)checkCurrentIndexPosition {
+    int arrayIndex = 0;
+    for (int i = 0; i < arr_lastIndex.count; i++) {
+        if (currentPageIndex <= [arr_lastIndex[i] integerValue]) {
+            arrayIndex = i;
+            break;
+        }
+    }
+    [self highlightButton:arr_menuButton[arrayIndex]];
 }
 
 - (embModelController *)modelController
@@ -131,10 +183,9 @@ static CGFloat  bottomMenuHeight = 37;
         }
         [uiv_bottomMenu addSubview: uib_cur];
     }
-    
 }
 
-- (void)tapBottomButton:(id)sender {
+- (void)highlightButton:(id)sender {
     UIButton *tappedButton = sender;
     for (UIButton *btn in arr_menuButton) {
         btn.selected = NO;
@@ -142,6 +193,30 @@ static CGFloat  bottomMenuHeight = 37;
     }
     tappedButton.selected = YES;
     tappedButton.backgroundColor = [UIColor themeRed];
+    [self updateMainMenuHighlightButton];
+}
+
+- (void)tapBottomButton:(id)sender {
+    [self highlightButton:sender];
+    UIButton *tappedButton = sender;
+    currentPageIndex = [arr_firstIndex[tappedButton.tag] integerValue];
+    [self loadPage: currentPageIndex];
+}
+
+- (void)updateMainMenuHighlightButton {
+    int selectedButton = -1;
+    for (UIButton *button in arr_menuButton) {
+        if (button.selected) {
+            selectedButton = (int)button.tag;
+            break;
+        }
+    }
+    
+    NSDictionary *userInfo = @{
+                               @"index": arr_firstIndex[selectedButton]
+                               };
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"updatedSupportingSideMenu" object:nil userInfo:userInfo];
 }
 
 /*
