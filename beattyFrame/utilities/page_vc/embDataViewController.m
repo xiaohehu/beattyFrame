@@ -9,6 +9,7 @@
 #import "embDataViewController.h"
 #import "ebZoomingScrollView.h"
 #import "UIColor+Extensions.h"
+#import "animationView.h"
 //#import "motionImageViewController.h"
 
 @interface embDataViewController () {
@@ -34,14 +35,22 @@
 #pragma mark - LAYOUT FLOOR PLAN DATA
 -(void)loadDataAndView
 {
-	if (!_zoomingScroll) {
-        CGRect theFrame = self.view.bounds;
-		_zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
-        [self.view addSubview:_zoomingScroll];
-        _zoomingScroll.backgroundColor = [UIColor clearColor];
-		_zoomingScroll.delegate=self;
-	}
-    [self loadInImge:_dict[@"image"]];
+    if (vcIndex == 3) { // Load the animated grids view
+        animationView *animation = [[animationView alloc] initWithFrame:self.view.bounds];
+        [self.view addSubview: animation];
+    } else {
+        
+        if (!_zoomingScroll) {
+            CGRect theFrame = self.view.bounds;
+            _zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
+            [self.view addSubview:_zoomingScroll];
+            _zoomingScroll.backgroundColor = [UIColor clearColor];
+            _zoomingScroll.delegate=self;
+        }
+        [self loadInImge:_dict[@"image"]];
+        
+    }
+
 }
 
 -(void)loadInImge:(NSString *)imageName

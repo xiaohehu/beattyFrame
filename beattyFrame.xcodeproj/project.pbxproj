@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8243874E1B6929A1003AC214 /* SupportingViewController.m */; };
 		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
+		824387541B6A9874003AC214 /* lifeStyle_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824387521B6A9874003AC214 /* lifeStyle_bg.jpg */; };
+		824387551B6A9874003AC214 /* lifeStyle_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824387531B6A9874003AC214 /* lifeStyle_bg@2x.jpg */; };
 		824D27281B5D7E6700E5F5A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D27271B5D7E6700E5F5A5 /* main.m */; };
 		824D272B1B5D7E6700E5F5A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D272A1B5D7E6700E5F5A5 /* AppDelegate.m */; };
 		824D272E1B5D7E6700E5F5A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D272D1B5D7E6700E5F5A5 /* ViewController.m */; };
@@ -639,6 +641,8 @@
 		8243874D1B6929A1003AC214 /* SupportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportingViewController.h; sourceTree = "<group>"; };
 		8243874E1B6929A1003AC214 /* SupportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportingViewController.m; sourceTree = "<group>"; };
 		824387501B69414D003AC214 /* supporting_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = supporting_data.plist; sourceTree = "<group>"; };
+		824387521B6A9874003AC214 /* lifeStyle_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lifeStyle_bg.jpg; path = src/grfx/lifeStyle_bg.jpg; sourceTree = "<group>"; };
+		824387531B6A9874003AC214 /* lifeStyle_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "lifeStyle_bg@2x.jpg"; path = "src/grfx/lifeStyle_bg@2x.jpg"; sourceTree = "<group>"; };
 		824D27221B5D7E6700E5F5A5 /* beattyFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beattyFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824D27261B5D7E6700E5F5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		824D27271B5D7E6700E5F5A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1402,6 +1406,8 @@
 				824D278A1B60179A00E5F5A5 /* grfx_siteplan@2x.jpg */,
 				824D278D1B60331600E5F5A5 /* greenspace.png */,
 				824D278E1B60331600E5F5A5 /* hotel.png */,
+				824387521B6A9874003AC214 /* lifeStyle_bg.jpg */,
+				824387531B6A9874003AC214 /* lifeStyle_bg@2x.jpg */,
 				824D278F1B60331600E5F5A5 /* residential.png */,
 				824D27901B60331600E5F5A5 /* retail.png */,
 				824D27911B60331600E5F5A5 /* office.png */,
@@ -2435,6 +2441,7 @@
 				824D2B051B61671600E5F5A5 /* phase_d_color_00058.jpg in Resources */,
 				824D2BD51B62D02100E5F5A5 /* share_Picture 024.jpg.jpg in Resources */,
 				824D2A751B61671600E5F5A5 /* phase_b_color_00058.jpg in Resources */,
+				824387551B6A9874003AC214 /* lifeStyle_bg@2x.jpg in Resources */,
 				824D2A231B61671600E5F5A5 /* phase_b_base_00048.jpg in Resources */,
 				824D2A9B1B61671600E5F5A5 /* phase_d_base_00024.jpg in Resources */,
 				824D2BDF1B62D02100E5F5A5 /* share_Picture 051.jpg.jpg in Resources */,
@@ -2642,6 +2649,7 @@
 				824D2AC21B61671600E5F5A5 /* phase_d_base_00063.jpg in Resources */,
 				82A1285F1B66668800564266 /* fact-copy-01@2x.png in Resources */,
 				824D2A9E1B61671600E5F5A5 /* phase_d_base_00027.jpg in Resources */,
+				824387541B6A9874003AC214 /* lifeStyle_bg.jpg in Resources */,
 				824D2A4A1B61671600E5F5A5 /* phase_b_color_00015.jpg in Resources */,
 				824D2A211B61671600E5F5A5 /* phase_b_base_00046.jpg in Resources */,
 				824D29C61B61671600E5F5A5 /* phase_a_color_00027.jpg in Resources */,

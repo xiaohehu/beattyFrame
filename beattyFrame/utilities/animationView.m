@@ -41,6 +41,10 @@ static float    largeGridSize = 360.0;
     self = [super initWithFrame:frame];
     if (self)
     {
+        UIImageView *uiiv_bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lifeStyle_bg.jpg"]];
+        uiiv_bg.frame = self.bounds;
+        [self addSubview: uiiv_bg];
+        
         [self createGridArray];
         [self setupHierarchy];
     }
@@ -52,10 +56,18 @@ static float    largeGridSize = 360.0;
     self = [super initWithCoder:coder];
     if (self)
     {
+        UIImageView *uiiv_bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lifeStyle_bg.jpg"]];
+        uiiv_bg.frame = self.bounds;
+        [self addSubview: uiiv_bg];
+        
         [self createGridArray];
         [self setupHierarchy];
     }
     return self;
+}
+
+- (void)willMoveToSuperview:(UIView *)newSuperview {
+
 }
 
 - (void)didMoveToSuperview {
@@ -336,6 +348,7 @@ static float    largeGridSize = 360.0;
 #pragma mark Tap Small Grid to expand
 - (void)expandGrid:(UIGestureRecognizer *)gesture {
     
+    uib_arrow.alpha = 0.0;
     uib_arrow.hidden = NO;
     
     currentIndex = (int)[gesture.view tag];
@@ -361,6 +374,7 @@ static float    largeGridSize = 360.0;
      {
          
          [UIView animateWithDuration:0.5 animations:^(void){
+             
              [gesture view].frame = uiv_gridContainer.bounds;
              
              // bring the selected one to the front
@@ -377,10 +391,12 @@ static float    largeGridSize = 360.0;
              
          } completion:^(BOOL finished){
              
+             uib_arrow.alpha = 1.0;
+             uiv_indicatorContainer.alpha = 0.0;
              uiv_indicatorContainer.hidden = NO;
              
              [UIView animateWithDuration:0.5 animations:^(void){
-                 
+//                 uiv_indicatorContainer.hidden = NO;
                  uib_arrow.frame = CGRectMake(expandButtonX + 60, expandButtonY, expandButtonSize, expandButtonSize);
                  
              } completion:^(BOOL finished){
@@ -389,6 +405,7 @@ static float    largeGridSize = 360.0;
                  [self bringSubviewToFront:uib_arrow];
                  
                  [UIView animateWithDuration:0.3 animations:^(void){
+                     uiv_indicatorContainer.alpha = 1.0;
                      uib_arrow.frame = CGRectMake(expandButtonX + 20, expandButtonY, expandButtonSize, expandButtonSize);
                  }];
                  /*

@@ -44,6 +44,7 @@
     // Create a new view controller and pass suitable data.
     embDataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"embDataViewController"];
     dataViewController.dataObject = self.pageData[index];
+    dataViewController.vcIndex = index;
     return dataViewController;
 }
 
