@@ -26,7 +26,6 @@ static float    menuButtonSize = 50.0;
     IBOutlet UIView         *uiv_sideMenuContainer;
     IBOutlet UIView         *uiv_vcCover;
     UIButton                *uib_menuButton;
-    UIViewController        *currentViewController;
     
     // Side menu content button
     __weak IBOutlet UIView *uiv_buutonHighlight;
@@ -207,7 +206,6 @@ static float    menuButtonSize = 50.0;
     UIButton *tappedButton = sender;
     [self highlightTheButton:tappedButton withAnimation:YES];
     SupportingViewController *supporting = [self.storyboard instantiateViewControllerWithIdentifier:@"SupportingViewController"];
-    currentViewController = supporting;
     supporting.view.frame = uiv_vcBigContainer.bounds;
     supporting.pageIndex = tappedButton.tag%10;
     [self addChildViewController:supporting];
@@ -251,20 +249,17 @@ static float    menuButtonSize = 50.0;
 
 - (IBAction)loadSummary:(id)sender {
     
+    [self tapMenuButtonClose:nil];
     summary = [[SummaryViewController alloc] init];
     summary.view.frame = self.view.bounds;
+    if ([sender tag]%2 != 0) {
+        summary.preloadSitePlan = YES;
+    }
+    summary.loadWithAnimation = YES;
     [self addChildViewController: summary];
-    [self.view addSubview: summary.view];
-    
-//    Site360ViewController *site360 = [self.storyboard instantiateViewControllerWithIdentifier:@"Site360ViewController"];
-//    site360.view.frame = self.view.bounds;
-//    [self addChildViewController: site360];
-//    [self.view addSubview: site360.view];
-    
-//    GalleryViewController *gallery = [self.storyboard instantiateViewControllerWithIdentifier:@"GalleryViewController"];
-//    gallery.view.frame = self.view.bounds;
-//    [self addChildViewController:gallery];
-//    [self.view addSubview: gallery.view];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.33 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [self.view addSubview: summary.view];
+    });
 }
 
 - (void)removeSummary:(NSNotification *)notification {

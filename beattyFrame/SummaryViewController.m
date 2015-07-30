@@ -35,7 +35,7 @@ static float topButtonHeight = 38.0;
 
 @implementation SummaryViewController
 
-@synthesize preloadSitePlan;
+@synthesize preloadSitePlan, loadWithAnimation;
 
 #pragma mark - View controller life-cycle
 - (void)viewDidLoad {
@@ -49,11 +49,34 @@ static float topButtonHeight = 38.0;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"if is site plan %i", preloadSitePlan);
     if (preloadSitePlan) {
         uiv_buttonHighlight.transform = CGAffineTransformMakeTranslation(containerWidth/2, 0.0);
         uiiv_leftSummary.transform = CGAffineTransformMakeTranslation(-uiiv_leftSummary.frame.size.width, 0.0);
         uiiv_rightSummary.transform = CGAffineTransformMakeTranslation(uiiv_rightSummary.frame.size.width, 0.0);
+    }
+    if (loadWithAnimation) {
+        self.view.backgroundColor = [UIColor clearColor];
+        uiv_container.transform = CGAffineTransformMakeTranslation(0, self.view.bounds.size.height);
+        uib_close.transform = CGAffineTransformMakeTranslation(0, self.view.bounds.size.height);
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    if (loadWithAnimation) {
+        CGFloat duration = 0.8f;
+        CGFloat damping = 0.75;
+        CGFloat velocity = 0.5;
+        [UIView animateWithDuration:0.2 animations:^(void){
+            self.view.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.7];
+        } completion:^(BOOL finished){
+            
+            [UIView animateWithDuration:duration delay:0.5 usingSpringWithDamping:damping initialSpringVelocity:velocity options:0 animations:^{
+                uiv_container.transform = CGAffineTransformIdentity;
+                uib_close.transform = CGAffineTransformIdentity;
+            } completion:^(BOOL finished){
+                
+            }];
+        }];
     }
 }
 
@@ -133,7 +156,6 @@ static float topButtonHeight = 38.0;
     
     UIImage *left_summary = [UIImage imageWithCGImage:left_summaryRef scale:scale orientation:UIImageOrientationUp];
     UIImage *right_summary = [UIImage imageWithCGImage:right_summaryRef];
-    NSLog(@"The size of image is %@", NSStringFromCGSize(summary.size));
     
     [uiiv_leftSummary setImage: left_summary];
     uiiv_leftSummary.frame = CGRectMake(0.0, topButtonHeight, containerWidth/2, (containerHeight-topButtonHeight));

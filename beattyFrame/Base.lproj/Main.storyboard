@@ -79,7 +79,7 @@
                                                     <rect key="frame" x="0.0" y="70" width="61" height="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nk2-hB-Nbz"/>
+                                                    <action selector="loadSummary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KZ7-u5-sKH"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqe-Ok-DM7">
@@ -94,7 +94,7 @@
                                                     <rect key="frame" x="0.0" y="95" width="76" height="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNd-GB-xAL"/>
+                                                    <action selector="loadSummary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKQ-6W-W83"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yih-w3-nqm">
