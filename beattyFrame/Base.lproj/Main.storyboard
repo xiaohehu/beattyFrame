@@ -64,7 +64,7 @@
                                                     <rect key="frame" x="0.0" y="45" width="51" height="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOJ-Bm-KnR"/>
+                                                    <action selector="loadSite360:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPj-tg-LOF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gh-43-0kz">
@@ -167,7 +167,7 @@
                                                     <rect key="frame" x="0.0" y="39" width="83" height="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j0C-v3-dlK"/>
+                                                    <action selector="loadLoaction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gvv-77-WUQ"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iv2-X5-PNu" userLabel="Bottom_bar">
@@ -469,7 +469,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="267" y="1053"/>
+            <point key="canvasLocation" x="455.25" y="1055.25"/>
         </scene>
         <!--Site360 View Controller-->
         <scene sceneID="T5r-Nr-59v">
@@ -760,7 +760,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CfE-KR-wXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436.5" y="1055.25"/>
+            <point key="canvasLocation" x="-346.5" y="1055.25"/>
         </scene>
         <!--Supporting View Controller-->
         <scene sceneID="PYk-Va-9Qe">
@@ -771,12 +771,33 @@
                         <viewControllerLayoutGuide type="bottom" id="EMa-ed-dTS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XTl-kU-ZoR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GF3-Ud-htb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="WMU-pY-Awd">
+            <objects>
+                <viewController storyboardIdentifier="LocationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aH8-aO-6yG" customClass="LocationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="17x-vQ-NS4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ua8-8X-Qcm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c5d-qp-8QI">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tq7-eS-UKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="1827"/>
         </scene>
     </scenes>
     <resources>

@@ -13,6 +13,7 @@
 #import "SupportingViewController.h"
 #import "embEmailData.h"
 #import "UIColor+Extensions.h"
+#import "LocationViewController.h"
 
 static float    sideMenuWidth = 235.0;
 static float    menuButtonSize = 50.0;
@@ -26,6 +27,7 @@ static float    menuButtonSize = 50.0;
     IBOutlet UIView         *uiv_sideMenuContainer;
     IBOutlet UIView         *uiv_vcCover;
     UIButton                *uib_menuButton;
+    UIViewController        *currentViewController;
     
     // Side menu content button
     __weak IBOutlet UIView *uiv_buutonHighlight;
@@ -78,6 +80,10 @@ static float    menuButtonSize = 50.0;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateHighlightedButton:) name:@"updatedSupportingSideMenu" object:nil];
     [self prepareViewContainer];
     [self groupSideMenuButtons];
+    
+    //Init with Site 360 View controller
+    Site360ViewController *site360 = [self.storyboard instantiateViewControllerWithIdentifier:@"Site360ViewController"];
+    [self fadeInNewViewController:site360];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -94,11 +100,9 @@ static float    menuButtonSize = 50.0;
 - (void)prepareViewContainer {
     
     uiv_vcBigContainer.backgroundColor = [UIColor whiteColor];
-    UIImageView *uiiv_bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"main_bg.jpg"]];
-    uiiv_bg.frame = self.view.bounds;
-    [uiv_vcBigContainer addSubview: uiiv_bg];
     [self.view addSubview:uiv_vcBigContainer];
     
+    // UiView used to tap close side menu
     uiv_vcCover.backgroundColor = [UIColor clearColor];
     UITapGestureRecognizer *tapCover = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapMenuButtonClose:)];
     uiv_vcCover.userInteractionEnabled = YES;
@@ -111,6 +115,7 @@ static float    menuButtonSize = 50.0;
     [self.view insertSubview:uiv_sideMenuContainer aboveSubview:uiv_vcCover];
     uiv_sideMenuContainer.transform = CGAffineTransformMakeTranslation(sideMenuWidth, 0);
     
+    // UIButton control open/close side menu
     uib_menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
     uib_menuButton.frame = CGRectMake(self.view.bounds.size.width - 14 - menuButtonSize, (self.view.bounds.size.height - menuButtonSize)/2, menuButtonSize, menuButtonSize);
     [uib_menuButton setImage:[UIImage imageNamed:@"grfx_menuOpen.png"] forState:UIControlStateNormal];
@@ -138,7 +143,11 @@ static float    menuButtonSize = 50.0;
 }
 
 #pragma mark - UI element interaction
-
+#pragma mark Side menu control
+/*
+ * Scale down the current view
+ * Open side menu
+ */
 - (void)tapMenuButtonOpen:(id)sender {
     
     uiv_vcBigContainer.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -160,6 +169,10 @@ static float    menuButtonSize = 50.0;
     }];
 }
 
+/*
+ * Close side menu
+ * Make current view full screen
+ */
 - (void)tapMenuButtonClose:(id)sender {
     
     uiv_vcBigContainer.layer.borderWidth = 0.0;
@@ -175,17 +188,18 @@ static float    menuButtonSize = 50.0;
     }];
 }
 
-- (IBAction)tapSideMenuButton:(id)sender {
-    UIButton *tappedButton = sender;
-    [self highlightTheButton:tappedButton withAnimation:YES];
-    [self buttonAction:tappedButton];
-    [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
-}
-
+#pragma mark Highlight selected side menu buttons
+/*
+ * High light the button selected on side menu w/o animation
+ * "Summary" & "Master Plan" no need to be highlighted
+ */
 - (void)highlightTheButton:(UIButton *)theButton withAnimation:(BOOL)animation{
     for (UIButton *btn in arr_sideMenuBttuons) {
         [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     }
+    /*
+     * Get the selected button's frame to move the highlight view
+     */
     CGRect frame = [theButton.superview convertRect:theButton.frame toView:uiv_sideMenuContainer];
     frame.origin.x -= 3;
     frame.size.width += 6;
@@ -202,51 +216,89 @@ static float    menuButtonSize = 50.0;
     }
 }
 
-- (IBAction)loadSupporting:(id)sender {
-    UIButton *tappedButton = sender;
-    [self highlightTheButton:tappedButton withAnimation:YES];
-    SupportingViewController *supporting = [self.storyboard instantiateViewControllerWithIdentifier:@"SupportingViewController"];
-    supporting.view.frame = uiv_vcBigContainer.bounds;
-    supporting.pageIndex = tappedButton.tag%10;
-    [self addChildViewController:supporting];
-    [uiv_vcBigContainer addSubview:supporting.view];
-    [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
-}
-
-- (void)buttonAction:(UIButton *)theButton {
-    if (theButton.superview.tag == 0) {
-        switch (theButton.tag) {
-            case 1: {
-                
-                break;
-            }
-            case 2: {
-                summary = [[SummaryViewController alloc] init];
-                summary.view.frame = self.view.bounds;
-                [self addChildViewController: summary];
-                [self.view addSubview: summary.view];
-                break;
-            }
-            case 3: {
-                summary = [[SummaryViewController alloc] init];
-                summary.view.frame = self.view.bounds;
-                summary.preloadSitePlan = YES;
-                [self addChildViewController: summary];
-                [self.view addSubview: summary.view];
-                break;
-            }
-            case 4: {
-                
-                break;
-            }
-                
-            default:
-                break;
+/*
+ * Highlight side menu's button by receiving notification from page view controller
+ */
+- (void)updateHighlightedButton:(NSNotification *)notification {
+    int buttonTag = [[notification.userInfo objectForKey:@"index"] integerValue]+20;
+    for (UIButton *button in arr_sideMenuBttuons) {
+        if (button.tag == buttonTag) {
+            [self highlightTheButton:button withAnimation:NO];
+            return;
         }
-        
     }
 }
 
+#pragma mark Load/Remove view controller
+
+- (IBAction)tapSideMenuButton:(id)sender {
+    UIButton *tappedButton = sender;
+    [self highlightTheButton:tappedButton withAnimation:YES];
+    [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
+}
+
+- (IBAction)loadSite360:(id)sender {
+    UIButton *tappedButton = sender;
+    [self highlightTheButton:tappedButton withAnimation:YES];
+    Site360ViewController *site360 = [self.storyboard instantiateViewControllerWithIdentifier:@"Site360ViewController"];
+    [self fadeInNewViewController:site360];
+    [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
+}
+
+/*
+ * Load Supporting page view controller
+ * Accroding to selected button's tag load correct page
+ */
+- (IBAction)loadSupporting:(id)sender {
+    
+    UIButton *tappedButton = sender;
+    [self highlightTheButton:tappedButton withAnimation:YES];
+    SupportingViewController *supporting = [self.storyboard instantiateViewControllerWithIdentifier:@"SupportingViewController"];
+    supporting.pageIndex = tappedButton.tag%10;
+    [self fadeInNewViewController:supporting];
+    [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
+}
+
+- (IBAction)loadLoaction:(id)sender {
+    UIButton *tappedButton = sender;
+    [self highlightTheButton:tappedButton withAnimation:YES];
+    LocationViewController *location = [self.storyboard instantiateViewControllerWithIdentifier:@"LocationViewController"];;
+    [self fadeInNewViewController:location];
+    [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
+}
+
+- (void)fadeInNewViewController:(UIViewController *)viewController {
+    viewController.view.frame = self.view.bounds;
+    [self addChildViewController:viewController];
+    viewController.view.alpha = 0.0;
+    [uiv_vcBigContainer addSubview: viewController.view];
+    /*
+     * Check current view controller
+     * Do the fade out/in animation
+     */
+    if (currentViewController != nil) {
+        [UIView animateWithDuration:0.33 animations:^(void){
+            currentViewController.view.alpha = 0.0;
+            viewController.view.alpha = 1.0;
+        } completion:^(BOOL finished){
+            [currentViewController.view removeFromSuperview];
+            [currentViewController removeFromParentViewController];
+            currentViewController = nil;
+            currentViewController = viewController;
+        }];
+    } else {
+        [UIView animateWithDuration:0.33 animations:^(void){
+            viewController.view.alpha = 1.0;
+        } completion:^(BOOL finished){
+            currentViewController = viewController;
+        }];
+    }
+}
+
+/*
+ * Pop up Summary/Master_Plan view controller
+ * Accroding to selected button's tag to set the initial loaded view
+ */
 - (IBAction)loadSummary:(id)sender {
     
     [self tapMenuButtonClose:nil];
@@ -262,21 +314,14 @@ static float    menuButtonSize = 50.0;
     });
 }
 
+/*
+ * Remove Summary/Master_Plan view controller by recveiving the NSNotification
+ */
 - (void)removeSummary:(NSNotification *)notification {
     [summary.view removeFromSuperview];
     summary.view = nil;
     [summary removeFromParentViewController];
     summary = nil;
-}
-
-- (void)updateHighlightedButton:(NSNotification *)notification {
-    int buttonTag = [[notification.userInfo objectForKey:@"index"] integerValue]+20;
-    for (UIButton *button in arr_sideMenuBttuons) {
-        if (button.tag == buttonTag) {
-            [self highlightTheButton:button withAnimation:NO];
-            return;
-        }
-    }
 }
 
 #pragma mark - Mail Sending

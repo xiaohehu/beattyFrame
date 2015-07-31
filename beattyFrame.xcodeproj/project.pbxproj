@@ -626,6 +626,9 @@
 		82A128B91B69164100564266 /* embModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A128B71B69164100564266 /* embModelController.m */; };
 		82A128BC1B6916BF00564266 /* ebZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A128BB1B6916BF00564266 /* ebZoomingScrollView.m */; };
 		82A128BF1B6916EE00564266 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A128BE1B6916EE00564266 /* UIColor+Extensions.m */; };
+		82CA34211B6BE2960065E31E /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CA34201B6BE2960065E31E /* LocationViewController.m */; };
+		82CA34251B6BEB950065E31E /* grfx_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82CA34231B6BEB950065E31E /* grfx_map.jpg */; };
+		82CA34261B6BEB950065E31E /* grfx_map@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82CA34241B6BEB950065E31E /* grfx_map@2x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1282,6 +1285,10 @@
 		82A128BB1B6916BF00564266 /* ebZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ebZoomingScrollView.m; sourceTree = "<group>"; };
 		82A128BD1B6916EE00564266 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Extensions.h"; path = "utilities/UIColor+Extensions.h"; sourceTree = "<group>"; };
 		82A128BE1B6916EE00564266 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Extensions.m"; path = "utilities/UIColor+Extensions.m"; sourceTree = "<group>"; };
+		82CA341F1B6BE2960065E31E /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		82CA34201B6BE2960065E31E /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		82CA34231B6BEB950065E31E /* grfx_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grfx_map.jpg; sourceTree = "<group>"; };
+		82CA34241B6BEB950065E31E /* grfx_map@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx_map@2x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1342,6 +1349,8 @@
 				824D2B171B616DCD00E5F5A5 /* GalleryViewController.m */,
 				8243874D1B6929A1003AC214 /* SupportingViewController.h */,
 				8243874E1B6929A1003AC214 /* SupportingViewController.m */,
+				82CA341F1B6BE2960065E31E /* LocationViewController.h */,
+				82CA34201B6BE2960065E31E /* LocationViewController.m */,
 				824D272F1B5D7E6700E5F5A5 /* Main.storyboard */,
 				824D27A11B61467700E5F5A5 /* utiliites */,
 				824D2B131B6169AB00E5F5A5 /* DataSource */,
@@ -1400,6 +1409,7 @@
 		824D27881B5FE0DD00E5F5A5 /* grfx */ = {
 			isa = PBXGroup;
 			children = (
+				82CA34221B6BEB950065E31E /* Location */,
 				82A128311B66668800564266 /* marketplace_ecosystem */,
 				824D27971B6039C300E5F5A5 /* main_bg.jpg */,
 				824D27981B6039C300E5F5A5 /* main_bg@2x.jpg */,
@@ -2123,6 +2133,16 @@
 			path = utilities/page_vc;
 			sourceTree = "<group>";
 		};
+		82CA34221B6BEB950065E31E /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				82CA34231B6BEB950065E31E /* grfx_map.jpg */,
+				82CA34241B6BEB950065E31E /* grfx_map@2x.jpg */,
+			);
+			name = Location;
+			path = src/grfx/Location;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2535,6 +2555,7 @@
 				824D2A311B61671600E5F5A5 /* phase_b_base_00062.jpg in Resources */,
 				824D29721B61671600E5F5A5 /* phase_a_base_00015.jpg in Resources */,
 				824D2BBC1B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot08.jpg.jpg in Resources */,
+				82CA34251B6BEB950065E31E /* grfx_map.jpg in Resources */,
 				824D2BCB1B62D02100E5F5A5 /* share_lifestyle01.jpg.jpg in Resources */,
 				824D29EE1B61671600E5F5A5 /* phase_a_color_00067.jpg in Resources */,
 				824D29D81B61671600E5F5A5 /* phase_a_color_00045.jpg in Resources */,
@@ -2790,6 +2811,7 @@
 				824D2A201B61671600E5F5A5 /* phase_b_base_00045.jpg in Resources */,
 				824D2A1A1B61671600E5F5A5 /* phase_b_base_00039.jpg in Resources */,
 				824D2ACA1B61671600E5F5A5 /* phase_d_base_00071.jpg in Resources */,
+				82CA34261B6BEB950065E31E /* grfx_map@2x.jpg in Resources */,
 				824D2B321B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg in Resources */,
 				824D29981B61671600E5F5A5 /* phase_a_base_00053.jpg in Resources */,
 				824D2BCE1B62D02100E5F5A5 /* share_market_interior01.jpg.jpg in Resources */,
@@ -2813,6 +2835,7 @@
 				824D2B461B62B5C600E5F5A5 /* EMBSPSectionHeader.m in Sources */,
 				824D27A01B61467400E5F5A5 /* ColorPickerImageView.m in Sources */,
 				824D2B441B62B5C600E5F5A5 /* EMBSPCell.m in Sources */,
+				82CA34211B6BE2960065E31E /* LocationViewController.m in Sources */,
 				824D272E1B5D7E6700E5F5A5 /* ViewController.m in Sources */,
 				824D2B351B6286AA00E5F5A5 /* embEmailData.m in Sources */,
 				824D272B1B5D7E6700E5F5A5 /* AppDelegate.m in Sources */,
