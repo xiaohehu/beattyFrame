@@ -11,6 +11,7 @@
 		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
 		824387541B6A9874003AC214 /* lifeStyle_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824387521B6A9874003AC214 /* lifeStyle_bg.jpg */; };
 		824387551B6A9874003AC214 /* lifeStyle_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824387531B6A9874003AC214 /* lifeStyle_bg@2x.jpg */; };
+		824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824387571B6BAA14003AC214 /* xhPageViewController.m */; };
 		824D27281B5D7E6700E5F5A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D27271B5D7E6700E5F5A5 /* main.m */; };
 		824D272B1B5D7E6700E5F5A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D272A1B5D7E6700E5F5A5 /* AppDelegate.m */; };
 		824D272E1B5D7E6700E5F5A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D272D1B5D7E6700E5F5A5 /* ViewController.m */; };
@@ -643,6 +644,8 @@
 		824387501B69414D003AC214 /* supporting_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = supporting_data.plist; sourceTree = "<group>"; };
 		824387521B6A9874003AC214 /* lifeStyle_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lifeStyle_bg.jpg; path = src/grfx/lifeStyle_bg.jpg; sourceTree = "<group>"; };
 		824387531B6A9874003AC214 /* lifeStyle_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "lifeStyle_bg@2x.jpg"; path = "src/grfx/lifeStyle_bg@2x.jpg"; sourceTree = "<group>"; };
+		824387561B6BAA14003AC214 /* xhPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xhPageViewController.h; sourceTree = "<group>"; };
+		824387571B6BAA14003AC214 /* xhPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xhPageViewController.m; sourceTree = "<group>"; };
 		824D27221B5D7E6700E5F5A5 /* beattyFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beattyFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824D27261B5D7E6700E5F5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		824D27271B5D7E6700E5F5A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -2113,6 +2116,8 @@
 				82A128B71B69164100564266 /* embModelController.m */,
 				82A128BA1B6916BF00564266 /* ebZoomingScrollView.h */,
 				82A128BB1B6916BF00564266 /* ebZoomingScrollView.m */,
+				824387561B6BAA14003AC214 /* xhPageViewController.h */,
+				824387571B6BAA14003AC214 /* xhPageViewController.m */,
 			);
 			name = page_vc;
 			path = utilities/page_vc;
@@ -2825,6 +2830,7 @@
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
 				82A128B81B69164100564266 /* embDataViewController.m in Sources */,
 				8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */,
+				824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

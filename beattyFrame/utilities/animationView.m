@@ -14,6 +14,7 @@ static float    largeGridSize = 360.0;
 @interface animationView() {
     
     BOOL            expanded;
+    BOOL            largeGrid;
     int             currentIndex;
     UIView          *uiv_gridContainer;
     UIView          *uiv_textContent;
@@ -72,6 +73,8 @@ static float    largeGridSize = 360.0;
 
 - (void)didMoveToSuperview {
     [self performSelector:@selector(loadInAnimaiton) withObject:nil afterDelay:1.0];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(swipeLeftGrib:) name:@"swipeLeft" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(swipeRightGrib:) name:@"swipeRight" object:nil];
 }
 
 #pragma mark - Init all UI elements
@@ -230,6 +233,7 @@ static float    largeGridSize = 360.0;
         [self resetToGrids];
         uiv_indicatorContainer.hidden = YES;
     }
+    largeGrid = NO;
 }
 
 - (void)resetToGrids {
@@ -350,6 +354,7 @@ static float    largeGridSize = 360.0;
     
     uib_arrow.alpha = 0.0;
     uib_arrow.hidden = NO;
+    largeGrid = YES;
     
     currentIndex = (int)[gesture.view tag];
     
@@ -439,6 +444,10 @@ static float    largeGridSize = 360.0;
     /*
      * If detail text view is expanded, close it first then load next gird
      */
+    if (!largeGrid) {
+        return;
+    }
+    
     if (expanded) {
         [self tapArrowButtonClose:nil];
         [self performSelector:@selector(loadGrid:) withObject:[NSNumber numberWithInt:1] afterDelay:0.5];
@@ -452,6 +461,10 @@ static float    largeGridSize = 360.0;
     /*
      * If detail text view is expanded, close it first then load previous gird
      */
+    if (!largeGrid) {
+        return;
+    }
+    
     if (expanded) {
         [self tapArrowButtonClose:nil];
         [self performSelector:@selector(loadGrid:) withObject:[NSNumber numberWithInt:-1] afterDelay:0.5];

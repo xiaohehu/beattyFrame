@@ -10,10 +10,11 @@
 #import "embModelController.h"
 #import "embDataViewController.h"
 #import "UIColor+Extensions.h"
-
+#import "animationView.h"
+#import "xhPageViewController.h"
 static CGFloat  bottomMenuWidth = 570;
 static CGFloat  bottomMenuHeight = 37;
-@interface SupportingViewController ()<UIPageViewControllerDelegate>
+@interface SupportingViewController ()<UIPageViewControllerDelegate, UIGestureRecognizerDelegate>
 {
     UIView          *uiv_bottomMenu;
     NSArray         *arr_menuTitles;
@@ -24,8 +25,8 @@ static CGFloat  bottomMenuHeight = 37;
 }
 
 @property (readonly, strong, nonatomic) embModelController		*modelController;
-@property (strong, nonatomic)           UIPageViewController	*pageViewController;
-
+//@property (strong, nonatomic)           UIPageViewController	*pageViewController;
+@property (strong, nonatomic)           xhPageViewController	*pageViewController;
 @end
 
 @implementation SupportingViewController
@@ -40,12 +41,23 @@ static CGFloat  bottomMenuHeight = 37;
     
     _modelController = [[embModelController alloc] init];
     [self prepareData];
+    
+    for (UIGestureRecognizer *gesture in self.view.gestureRecognizers) {
+        gesture.delegate = self;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [self initPageView:pageIndex];
     [self createBottomMenu];
     [self checkCurrentIndexPosition];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+//    for (UIGestureRecognizer *gesture in self.view.gestureRecognizers) {
+//        gesture.delegate = self;
+//    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,8 +92,27 @@ static CGFloat  bottomMenuHeight = 37;
                        ];
 }
 # pragma mark - Create UI elements
+//-(void)initPageView:(NSInteger)index {
+//    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+//    self.pageViewController.delegate = self;
+//    self.pageViewController.dataSource = self.modelController;
+//    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//    self.view.autoresizesSubviews =YES;
+//    self.pageViewController.view.frame = self.view.bounds;
+//    [self.pageViewController didMoveToParentViewController:self];
+//    [self addChildViewController:self.pageViewController];
+//    [self.view addSubview: self.pageViewController.view];
+//    [self.pageViewController.view setBackgroundColor:[UIColor whiteColor]];
+//    
+//    [self loadPage:(int)index];
+////    self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
+////    for (UIGestureRecognizer *gesture in self.view.gestureRecognizers) {
+////        gesture.delegate = self;
+////    }
+//}
+
 -(void)initPageView:(NSInteger)index {
-    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    self.pageViewController = [[xhPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
     self.pageViewController.dataSource = self.modelController;
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -93,7 +124,12 @@ static CGFloat  bottomMenuHeight = 37;
     [self.pageViewController.view setBackgroundColor:[UIColor whiteColor]];
     
     [self loadPage:(int)index];
+    //    self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
+    //    for (UIGestureRecognizer *gesture in self.view.gestureRecognizers) {
+    //        gesture.delegate = self;
+    //    }
 }
+
 
 -(void)loadPage:(int)page {
     
@@ -104,10 +140,17 @@ static CGFloat  bottomMenuHeight = 37;
                                       direction:UIPageViewControllerNavigationDirectionForward
                                        animated:NO
                                      completion:nil];
+    
+    if (currentPageIndex == 3) {
+        self.pageViewController.swipeArea = CGRectMake(22, 204, 360, 360);
+    } else {
+        self.pageViewController.swipeArea = CGRectZero;
+    }
 }
 
 #pragma mark - PageViewController
 #pragma mark update page index
+
 - (void)pageViewController:(UIPageViewController *)pvc didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed
 {
     // If the page did not turn
@@ -127,6 +170,12 @@ static CGFloat  bottomMenuHeight = 37;
     embDataViewController *theCurrentViewController = [self.pageViewController.viewControllers objectAtIndex:0];
     currentPageIndex = (int)[self.modelController indexOfViewController:theCurrentViewController];
     [self checkCurrentIndexPosition];
+    
+    if (currentPageIndex == 3) {
+        self.pageViewController.swipeArea = CGRectMake(22, 204, 360, 360);
+    } else {
+        self.pageViewController.swipeArea = CGRectZero;
+    }
 }
 
 - (void)checkCurrentIndexPosition {
@@ -217,6 +266,24 @@ static CGFloat  bottomMenuHeight = 37;
                                };
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"updatedSupportingSideMenu" object:nil userInfo:userInfo];
+}
+
+
+#pragma mark - UIGesture delegate method
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    CGPoint touchPoint = [touch locationInView:self.view];
+    if (touchPoint.x > 22 && touchPoint.x < 380) {
+        for (UIScrollView *view in self.pageViewController.view.subviews) {
+            
+            if ([view isKindOfClass:[UIScrollView class]]) {
+                
+                view.scrollEnabled = NO;
+                return NO;
+            }
+        }
+    }
+    
+    return NO;
 }
 
 /*
