@@ -39,7 +39,7 @@ static float    bottomHeight = 37;
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Create UI elements
+#pragma mark - Create UI elements and UI data
 
 - (void)prepareData {
     arr_mapImageNames = @[
@@ -80,6 +80,8 @@ static float    bottomHeight = 37;
                                 ];
     [self createBottomButtons:arr_menuTitles];
 }
+
+#pragma mark - UI interation methods
 
 - (void)createBottomButtons:(NSArray *)titles {
     
