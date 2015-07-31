@@ -16,6 +16,7 @@ static float    bottomHeight = 37;
 {
     UIView              *uiv_bottomMenu;
     UIView              *uiv_menuIndicator;
+    UIImageView         *uiiv_tmpMap;
     NSArray             *arr_mapImageNames;
 }
 
@@ -58,6 +59,11 @@ static float    bottomHeight = 37;
         _zoomingScroll.delegate=self;
         _zoomingScroll.blurView.image = [UIImage imageNamed:@"grfx_areaMap.jpg"];
     }
+    
+    uiiv_tmpMap = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"grfx_areaMap.jpg"]];;
+    uiiv_tmpMap.frame = self.view.bounds;
+    uiiv_tmpMap.alpha = 0.0;
+    [self.view addSubview: uiiv_tmpMap];
 }
 
 - (void)createBottomMenu {
@@ -98,14 +104,16 @@ static float    bottomHeight = 37;
 - (void)tapBottomMenu:(id)sender {
     UIButton *tappedButton = sender;
     CGRect frame = uiv_menuIndicator.frame;
-    [UIView animateWithDuration:0.2 animations:^(void){
+    uiiv_tmpMap.image = [UIImage imageNamed:arr_mapImageNames[tappedButton.tag]];
+    [UIView animateWithDuration:0.33 animations:^(void){
         uiv_menuIndicator.frame = CGRectMake(tappedButton.frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
         _zoomingScroll.blurView.alpha = 0.0;
+        uiiv_tmpMap.alpha = 1.0;
     } completion:^(BOOL finished){
+        [_zoomingScroll resetScroll];
         _zoomingScroll.blurView.image = [UIImage imageNamed:arr_mapImageNames[tappedButton.tag]];
-        [UIView animateWithDuration:0.2 animations:^(void){
-            _zoomingScroll.blurView.alpha = 1.0;
-        }];
+        _zoomingScroll.blurView.alpha = 1.0;
+        uiiv_tmpMap.alpha = 0.0;
     }];
 }
 
