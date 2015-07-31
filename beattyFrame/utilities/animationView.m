@@ -354,7 +354,6 @@ static float    largeGridSize = 360.0;
     
     uib_arrow.alpha = 0.0;
     uib_arrow.hidden = NO;
-    largeGrid = YES;
     
     currentIndex = (int)[gesture.view tag];
     
@@ -405,6 +404,8 @@ static float    largeGridSize = 360.0;
                  uib_arrow.frame = CGRectMake(expandButtonX + 60, expandButtonY, expandButtonSize, expandButtonSize);
                  
              } completion:^(BOOL finished){
+                 
+                 largeGrid = YES;
                  // now set it to the back again so the text view appears over the top
                  [gesture view].layer.zPosition = 0;
                  [self bringSubviewToFront:uib_arrow];
