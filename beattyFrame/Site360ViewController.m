@@ -7,7 +7,7 @@
 //
 
 #import "Site360ViewController.h"
-
+#import "BuildingViewController.h"
 @interface Site360ViewController ()
 
 @end
@@ -76,6 +76,63 @@
     }
     
     NSLog(@"namesArray %@",[namesArray description]);
+}
+
+#pragma mark - METHODS FOR PICKING BUILDING
+#pragma mark picked color from color
+
+- (void) pickedColor:(UIColor*)color {
+    
+    if (isColorPicked==YES) {
+        return;
+    }
+    
+    [self.view setNeedsDisplay];
+    
+    const CGFloat* components = CGColorGetComponents(color.CGColor);
+    
+    CGFloat r = components[0];
+    CGFloat g = components[1];
+    CGFloat b = components[2];
+    CGFloat a = CGColorGetAlpha(color.CGColor);
+    
+    int red = floor(r == 1.0 ? 255 : r * 256.0);
+    int green = floor(g == 1.0 ? 255 : g * 256.0);
+    int blue = floor(b == 1.0 ? 255 : b * 256.0);
+    int alpha = floor(a == 1.0 ? 255 : a * 256.0);
+    
+    NSLog(@"\nRGB A %i %i %i  %i",red,green,blue,alpha);
+    incomingColor = [NSString stringWithFormat:@"RGB A %i %i %i  %i",red,green,blue,alpha];
+    NSLog(@"\n\nincomingColor %@", incomingColor);
+    
+    //	UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Get The Color Value"
+    //													  message:incomingColor
+    //													 delegate:nil
+    //											cancelButtonTitle:@"OK"
+    //											otherButtonTitles:nil];
+    //	[message show];
+    
+    // namesarray is created in viewdidload
+    
+    NSString *answer = nil;
+    NSUInteger index = [namesArray indexOfObject:incomingColor];
+    if (index != NSNotFound) {
+        isColorEligible = YES;
+        answer = [namesArray objectAtIndex:index];
+        currentIndex = index;
+        isColorPicked=YES;
+        
+        BuildingViewController *buildingVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BuildingViewController"];
+        buildingVC.view.frame = self.view.bounds;
+        [self presentViewController:buildingVC animated:YES completion:^(void){
+            isColorEligible = NO;
+            isColorPicked=NO;
+        }];
+        
+    } else {
+        isColorEligible = NO;
+        isColorPicked=NO;
+    }
 }
 
 #pragma mark - controls/gestures on BG

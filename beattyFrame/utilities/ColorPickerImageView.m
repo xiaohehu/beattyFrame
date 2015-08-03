@@ -9,6 +9,7 @@
 #import "ColorPickerImageView.h"
 #import <CoreGraphics/CoreGraphics.h>
 #import <QuartzCore/CoreAnimation.h>
+#import "Site360ViewController.h"
 
 @implementation ColorPickerImageView
 
@@ -38,8 +39,8 @@
     
     self.lastColor = [self getPixelColorAtLocation:point];
     lastPoint = point;
-    //	NSLog(@"color %@",lastColor);
-//    [pickedColorDelegate pickedColor:(UIColor*)self.lastColor];
+//    NSLog(@"color %@",lastColor);
+    [pickedColorDelegate pickedColor:(UIColor*)self.lastColor];
 }
 
 

@@ -11,13 +11,21 @@
 
 @interface Site360ViewController : UIViewController <UIGestureRecognizerDelegate, UIScrollViewDelegate, UIAlertViewDelegate>
 {
+    BOOL isColorPicked;
+    BOOL isColorEligible;
+    
     // image array ints
+    NSUInteger  currentIndex;
     NSArray     *namesArray;
     NSUInteger  currentFrame;
     NSUInteger  numberOfFrames;
     NSUInteger  finalEndFrame;
     NSUInteger  phaseIndex;
+    NSString    *incomingColor;
 }
+
+- (void) pickedColor:(UIColor*)color;
+
 @property (weak, nonatomic) IBOutlet UIScrollView *uis_scrollView;
 @property (weak, nonatomic) IBOutlet UIView *uiv_container;
 @property (weak, nonatomic) IBOutlet UIImageView *uiiv_imageView;

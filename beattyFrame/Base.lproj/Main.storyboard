@@ -489,7 +489,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gY6-51-LWV">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ogj-oa-04s" userLabel="Color Picker Image" customClass="ColorPickerImageView">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ogj-oa-04s" userLabel="Color Picker Image" customClass="ColorPickerImageView">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
@@ -788,6 +788,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Ua8-8X-Qcm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c5d-qp-8QI">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -799,8 +800,46 @@
             </objects>
             <point key="canvasLocation" x="234" y="1827"/>
         </scene>
+        <!--Building View Controller-->
+        <scene sceneID="C8j-pZ-Jyc">
+            <objects>
+                <viewController storyboardIdentifier="BuildingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A9H-hM-v0d" customClass="BuildingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MDo-z8-DwI"/>
+                        <viewControllerLayoutGuide type="bottom" id="D0l-pk-nac"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s6B-GP-Zl5">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grfx_building.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="u2C-Yz-hb4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="u2C-Yz-hb4"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="u2C-Yz-hb4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0X-a6-sJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
+        <image name="grfx_building.jpg" width="1024" height="768"/>
         <image name="share_but_email.png" width="66" height="33"/>
         <image name="share_but_email_roll.png" width="149" height="762"/>
         <image name="share_but_pdf.png" width="66" height="33"/>

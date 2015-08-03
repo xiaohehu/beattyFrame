@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>os</key>
+		<string>7</string>
+		<key>devices</key>
+		<dict>
+			<key>simulator</key>
+			<array>
+				<string>RGB A 0 136 1 255</string>
+				<string>RGB A 2 0 137 255</string>
+				<string>RGB A 0 136 0  255</string>
+				<string>RGB A 255 35 35  255</string>
+				<string>RGB A 0 82 238  255</string>
+				<string>RGB A 1 255 255  255</string>
+				<string>RGB A 221 1 189  255</string>
+				<string>RGB A 150 0 255  255</string>
+				<string>RGB A 35 255 35  255</string>
+				<string>RGB A 104 216 130  255</string>
+				<string>RGB A 0 79 50  255</string>
+				<string>RGB A 0 138 122  255</string>
+			</array>
+			<key>ipad_3</key>
+			<array>
+				<string>RGB A 0 136 1  255</string>
+				<string>RGB A 255 255 1  255</string>
+				<string>RGB A 2 0 137  255</string>
+				<string>RGB A 150 0 255  255</string>
+				<string>RGB A 35 255 35  255</string>
+				<string>RGB A 137 0 0  255</string>
+				<string>RGB A 0 138 122  255</string>
+				<string>RGB A 219 169 213  255</string>
+				<string>RGB A 0 91 171  255</string>
+				<string>RGB A 1 255 255  255</string>
+				<string>RGB A 105 216 131  255</string>
+				<string>RGB A 0 78 50  255</string>
+				<string>RGB A 255 34 36  255</string>
+				<string>RGB A 1 81 239  255</string>
+			</array>
+			<key>ipad_4</key>
+			<array>
+				<string>RGB A 0 136 0  255</string>
+				<string>RGB A 255 255 1  255</string>
+				<string>RGB A 2 0 137  255</string>
+				<string>RGB A 150 0 255  255</string>
+				<string>RGB A 35 255 35  255</string>
+				<string>RGB A 136 0 0  255</string>
+				<string>RGB A 0 138 122  255</string>
+				<string>RGB A 218 170 212  255</string>
+				<string>RGB A 0 91 171  255</string>
+				<string>RGB A 1 255 255  255</string>
+				<string>RGB A 104 216 130  255</string>
+				<string>RGB A 0 79 50  255</string>
+				<string>RGB A 255 35 35  255</string>
+				<string>RGB A 1 81 238  255</string>
+			</array>
+		</dict>
+	</dict>
+	<dict>
+		<key>os</key>
+		<string>8</string>
+		<key>devices</key>
+		<dict>
+			<key>simulator</key>
+			<array>
+				<string>RGB A 2 0 136  255</string>
+				<string>RGB A 255 255 1  255</string>
+				<string>RGB A 0 136 0  255</string>
+				<string>RGB A 255 35 35  255</string>
+				<string>RGB A 0 82 238  255</string>
+				<string>RGB A 1 255 255  255</string>
+				<string>RGB A 221 1 189  255</string>
+				<string>RGB A 150 0 255  255</string>
+				<string>RGB A 35 255 35  255</string>
+				<string>RGB A 104 216 130  255</string>
+				<string>RGB A 0 79 50  255</string>
+				<string>RGB A 0 138 122  255</string>
+			</array>
+			<key>ipad_3</key>
+			<array>
+				<string>RGB A 0 136 1  255</string>
+				<string>RGB A 255 255 1  255</string>
+				<string>RGB A 2 0 137  255</string>
+				<string>RGB A 255 34 36  255</string>
+				<string>RGB A 1 81 239  255</string>
+				<string>RGB A 1 255 255  255</string>
+				<string>RGB A 222 0 190  255</string>
+				<string>RGB A 150 0 255  255</string>
+				<string>RGB A 35 255 35  255</string>
+				<string>RGB A 105 216 131  255</string>
+				<string>RGB A 0 78 50  255</string>
+				<string>RGB A 0 138 122  255</string>
+			</array>
+			<key>ipad_4</key>
+			<array>
+				<string>RGB A 0 136 0  255</string>
+				<string>RGB A 255 255 1  255</string>
+				<string>RGB A 2 0 137  255</string>
+				<string>RGB A 150 0 255  255</string>
+				<string>RGB A 35 255 35  255</string>
+				<string>RGB A 136 0 0  255</string>
+				<string>RGB A 0 138 122  255</string>
+				<string>RGB A 218 170 212  255</string>
+				<string>RGB A 0 91 171  255</string>
+				<string>RGB A 1 255 255  255</string>
+				<string>RGB A 104 216 130  255</string>
+				<string>RGB A 0 79 50  255</string>
+				<string>RGB A 255 35 35  255</string>
+				<string>RGB A 1 81 238  255</string>
+			</array>
+		</dict>
+	</dict>
+</array>
+</plist>

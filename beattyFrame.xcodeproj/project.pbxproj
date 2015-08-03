@@ -16,6 +16,10 @@
 		82115DE81B6FB14400A36684 /* GoodPro-WideBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82115DDF1B6FB14400A36684 /* GoodPro-WideBlack.otf */; };
 		82115DE91B6FB14400A36684 /* GoodPro-WideBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82115DE01B6FB14400A36684 /* GoodPro-WideBook.otf */; };
 		82115DEA1B6FB14400A36684 /* GoodPro-WideLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82115DE11B6FB14400A36684 /* GoodPro-WideLight.otf */; };
+		82115DED1B70036100A36684 /* BuildingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82115DEC1B70036100A36684 /* BuildingViewController.m */; };
+		82115DEF1B7004A300A36684 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82115DEE1B7004A300A36684 /* colors.plist */; };
+		82115DF31B7012A600A36684 /* grfx_building.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82115DF11B7012A600A36684 /* grfx_building.jpg */; };
+		82115DF41B7012A600A36684 /* grfx_building@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82115DF21B7012A600A36684 /* grfx_building@2x.jpg */; };
 		8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8243874E1B6929A1003AC214 /* SupportingViewController.m */; };
 		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
 		824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824387571B6BAA14003AC214 /* xhPageViewController.m */; };
@@ -666,6 +670,11 @@
 		82115DDF1B6FB14400A36684 /* GoodPro-WideBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GoodPro-WideBlack.otf"; sourceTree = "<group>"; };
 		82115DE01B6FB14400A36684 /* GoodPro-WideBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GoodPro-WideBook.otf"; sourceTree = "<group>"; };
 		82115DE11B6FB14400A36684 /* GoodPro-WideLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GoodPro-WideLight.otf"; sourceTree = "<group>"; };
+		82115DEB1B70036100A36684 /* BuildingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingViewController.h; sourceTree = "<group>"; };
+		82115DEC1B70036100A36684 /* BuildingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingViewController.m; sourceTree = "<group>"; };
+		82115DEE1B7004A300A36684 /* colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
+		82115DF11B7012A600A36684 /* grfx_building.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grfx_building.jpg; sourceTree = "<group>"; };
+		82115DF21B7012A600A36684 /* grfx_building@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx_building@2x.jpg"; sourceTree = "<group>"; };
 		8243874D1B6929A1003AC214 /* SupportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportingViewController.h; sourceTree = "<group>"; };
 		8243874E1B6929A1003AC214 /* SupportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportingViewController.m; sourceTree = "<group>"; };
 		824387501B69414D003AC214 /* supporting_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = supporting_data.plist; sourceTree = "<group>"; };
@@ -1363,6 +1372,16 @@
 			path = src/fonts;
 			sourceTree = "<group>";
 		};
+		82115DF01B7012A600A36684 /* building */ = {
+			isa = PBXGroup;
+			children = (
+				82115DF11B7012A600A36684 /* grfx_building.jpg */,
+				82115DF21B7012A600A36684 /* grfx_building@2x.jpg */,
+			);
+			name = building;
+			path = src/building;
+			sourceTree = "<group>";
+		};
 		824D27191B5D7E6700E5F5A5 = {
 			isa = PBXGroup;
 			children = (
@@ -1398,6 +1417,8 @@
 				8243874E1B6929A1003AC214 /* SupportingViewController.m */,
 				82CA341F1B6BE2960065E31E /* LocationViewController.h */,
 				82CA34201B6BE2960065E31E /* LocationViewController.m */,
+				82115DEB1B70036100A36684 /* BuildingViewController.h */,
+				82115DEC1B70036100A36684 /* BuildingViewController.m */,
 				824D272F1B5D7E6700E5F5A5 /* Main.storyboard */,
 				824D27A11B61467700E5F5A5 /* utiliites */,
 				824D2B131B6169AB00E5F5A5 /* DataSource */,
@@ -1445,6 +1466,7 @@
 		824D27871B5FE0D300E5F5A5 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				82115DF01B7012A600A36684 /* building */,
 				82115DD81B6FB14400A36684 /* fonts */,
 				824D2B571B62D02100E5F5A5 /* share_thumb */,
 				824D2B201B6186F900E5F5A5 /* tmp_photo */,
@@ -2006,6 +2028,7 @@
 				824D2B1E1B61857E00E5F5A5 /* photoData.plist */,
 				824D2B141B6169AB00E5F5A5 /* ImageData.plist */,
 				824387501B69414D003AC214 /* supporting_data.plist */,
+				82115DEE1B7004A300A36684 /* colors.plist */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -2255,6 +2278,7 @@
 				TargetAttributes = {
 					824D27211B5D7E6700E5F5A5 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 97VHU5A6BJ;
 					};
 					824D273A1B5D7E6700E5F5A5 = {
 						CreatedOnToolsVersion = 6.4;
@@ -2502,6 +2526,7 @@
 				824D2AE51B61671600E5F5A5 /* phase_d_color_00026.jpg in Resources */,
 				824D27361B5D7E6700E5F5A5 /* LaunchScreen.xib in Resources */,
 				824D29F01B61671600E5F5A5 /* phase_a_color_00069.jpg in Resources */,
+				82115DEF1B7004A300A36684 /* colors.plist in Resources */,
 				824D29A41B61671600E5F5A5 /* phase_a_base_00065.jpg in Resources */,
 				82115DE41B6FB14400A36684 /* GoodPro-CondBlack.otf in Resources */,
 				824D29FA1B61671600E5F5A5 /* phase_b_base_00007.jpg in Resources */,
@@ -2604,6 +2629,7 @@
 				824D2AFD1B61671600E5F5A5 /* phase_d_color_00050.jpg in Resources */,
 				824D29C81B61671600E5F5A5 /* phase_a_color_00029.jpg in Resources */,
 				824D2A2D1B61671600E5F5A5 /* phase_b_base_00058.jpg in Resources */,
+				82115DF31B7012A600A36684 /* grfx_building.jpg in Resources */,
 				824D2A3F1B61671600E5F5A5 /* phase_b_color_00004.jpg in Resources */,
 				824D2BC31B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View07_050715.jpg.jpg in Resources */,
 				824D2A6A1B61671600E5F5A5 /* phase_b_color_00047.jpg in Resources */,
@@ -2845,6 +2871,7 @@
 				824D2BEF1B62D02100E5F5A5 /* share_View 2 - Wilson.jpg.jpg in Resources */,
 				824D27921B60331600E5F5A5 /* greenspace.png in Resources */,
 				824D2ADA1B61671600E5F5A5 /* phase_d_color_00015.jpg in Resources */,
+				82115DF41B7012A600A36684 /* grfx_building@2x.jpg in Resources */,
 				824D2B2D1B6186FA00E5F5A5 /* Soutwest View of Victory Center.jpg in Resources */,
 				82A128761B66668800564266 /* fact-grid-06-sm.png in Resources */,
 				824D29861B61671600E5F5A5 /* phase_a_base_00035.jpg in Resources */,
@@ -2926,6 +2953,7 @@
 				824D2B181B616DCD00E5F5A5 /* GalleryViewController.m in Sources */,
 				824D2B3A1B62B57D00E5F5A5 /* TLSpringFlowLayout.m in Sources */,
 				824D2B481B62B5C600E5F5A5 /* EMBSPSupplementaryView.m in Sources */,
+				82115DED1B70036100A36684 /* BuildingViewController.m in Sources */,
 				82A128BF1B6916EE00564266 /* UIColor+Extensions.m in Sources */,
 				82A128301B66657C00564266 /* animationView.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
@@ -3059,11 +3087,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/beattyFrame",
 				);
 				INFOPLIST_FILE = beattyFrame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -3074,11 +3104,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/beattyFrame",
 				);
 				INFOPLIST_FILE = beattyFrame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
