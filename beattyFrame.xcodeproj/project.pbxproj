@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82115DE21B6FB14400A36684 /* GoodPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82115DD91B6FB14400A36684 /* GoodPro-Black.otf */; };
+		82115DE31B6FB14400A36684 /* GoodPro-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82115DDA1B6FB14400A36684 /* GoodPro-Book.otf */; };
+		82115DE41B6FB14400A36684 /* GoodPro-CondBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82115DDB1B6FB14400A36684 /* GoodPro-CondBlack.otf */; };
+		82115DE51B6FB14400A36684 /* GoodPro-CondBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82115DDC1B6FB14400A36684 /* GoodPro-CondBook.otf */; };
+		82115DE61B6FB14400A36684 /* GoodPro-CondLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82115DDD1B6FB14400A36684 /* GoodPro-CondLight.otf */; };
+		82115DE71B6FB14400A36684 /* GoodPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82115DDE1B6FB14400A36684 /* GoodPro-Light.otf */; };
+		82115DE81B6FB14400A36684 /* GoodPro-WideBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82115DDF1B6FB14400A36684 /* GoodPro-WideBlack.otf */; };
+		82115DE91B6FB14400A36684 /* GoodPro-WideBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82115DE01B6FB14400A36684 /* GoodPro-WideBook.otf */; };
+		82115DEA1B6FB14400A36684 /* GoodPro-WideLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82115DE11B6FB14400A36684 /* GoodPro-WideLight.otf */; };
 		8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8243874E1B6929A1003AC214 /* SupportingViewController.m */; };
 		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
 		824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824387571B6BAA14003AC214 /* xhPageViewController.m */; };
@@ -648,6 +657,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82115DD91B6FB14400A36684 /* GoodPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GoodPro-Black.otf"; sourceTree = "<group>"; };
+		82115DDA1B6FB14400A36684 /* GoodPro-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GoodPro-Book.otf"; sourceTree = "<group>"; };
+		82115DDB1B6FB14400A36684 /* GoodPro-CondBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GoodPro-CondBlack.otf"; sourceTree = "<group>"; };
+		82115DDC1B6FB14400A36684 /* GoodPro-CondBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GoodPro-CondBook.otf"; sourceTree = "<group>"; };
+		82115DDD1B6FB14400A36684 /* GoodPro-CondLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GoodPro-CondLight.otf"; sourceTree = "<group>"; };
+		82115DDE1B6FB14400A36684 /* GoodPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GoodPro-Light.otf"; sourceTree = "<group>"; };
+		82115DDF1B6FB14400A36684 /* GoodPro-WideBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GoodPro-WideBlack.otf"; sourceTree = "<group>"; };
+		82115DE01B6FB14400A36684 /* GoodPro-WideBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GoodPro-WideBook.otf"; sourceTree = "<group>"; };
+		82115DE11B6FB14400A36684 /* GoodPro-WideLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GoodPro-WideLight.otf"; sourceTree = "<group>"; };
 		8243874D1B6929A1003AC214 /* SupportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportingViewController.h; sourceTree = "<group>"; };
 		8243874E1B6929A1003AC214 /* SupportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportingViewController.m; sourceTree = "<group>"; };
 		824387501B69414D003AC214 /* supporting_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = supporting_data.plist; sourceTree = "<group>"; };
@@ -1328,6 +1346,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82115DD81B6FB14400A36684 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				82115DD91B6FB14400A36684 /* GoodPro-Black.otf */,
+				82115DDA1B6FB14400A36684 /* GoodPro-Book.otf */,
+				82115DDB1B6FB14400A36684 /* GoodPro-CondBlack.otf */,
+				82115DDC1B6FB14400A36684 /* GoodPro-CondBook.otf */,
+				82115DDD1B6FB14400A36684 /* GoodPro-CondLight.otf */,
+				82115DDE1B6FB14400A36684 /* GoodPro-Light.otf */,
+				82115DDF1B6FB14400A36684 /* GoodPro-WideBlack.otf */,
+				82115DE01B6FB14400A36684 /* GoodPro-WideBook.otf */,
+				82115DE11B6FB14400A36684 /* GoodPro-WideLight.otf */,
+			);
+			name = fonts;
+			path = src/fonts;
+			sourceTree = "<group>";
+		};
 		824D27191B5D7E6700E5F5A5 = {
 			isa = PBXGroup;
 			children = (
@@ -1410,6 +1445,7 @@
 		824D27871B5FE0D300E5F5A5 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				82115DD81B6FB14400A36684 /* fonts */,
 				824D2B571B62D02100E5F5A5 /* share_thumb */,
 				824D2B201B6186F900E5F5A5 /* tmp_photo */,
 				824D27AC1B61671500E5F5A5 /* phasesframes */,
@@ -2346,6 +2382,7 @@
 				824D29AA1B61671600E5F5A5 /* phase_a_base_00071.jpg in Resources */,
 				82A128821B66668800564266 /* fact-grid-09-sm.png in Resources */,
 				824D2A831B61671600E5F5A5 /* phase_d_base_00000.jpg in Resources */,
+				82115DEA1B6FB14400A36684 /* GoodPro-WideLight.otf in Resources */,
 				824D2BEA1B62D02100E5F5A5 /* share_street03.jpg.jpg in Resources */,
 				824D2AE41B61671600E5F5A5 /* phase_d_color_00025.jpg in Resources */,
 				824D29EB1B61671600E5F5A5 /* phase_a_color_00064.jpg in Resources */,
@@ -2362,6 +2399,7 @@
 				824D299F1B61671600E5F5A5 /* phase_a_base_00060.jpg in Resources */,
 				824D2AAB1B61671600E5F5A5 /* phase_d_base_00040.jpg in Resources */,
 				824D29AF1B61671600E5F5A5 /* phase_a_color_00004.jpg in Resources */,
+				82115DE91B6FB14400A36684 /* GoodPro-WideBook.otf in Resources */,
 				824D29801B61671600E5F5A5 /* phase_a_base_00029.jpg in Resources */,
 				824D2BB51B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot01.jpg.jpg in Resources */,
 				824D2A7E1B61671600E5F5A5 /* phase_b_color_00067.jpg in Resources */,
@@ -2408,6 +2446,7 @@
 				824D2A3E1B61671600E5F5A5 /* phase_b_color_00003.jpg in Resources */,
 				824D29A51B61671600E5F5A5 /* phase_a_base_00066.jpg in Resources */,
 				824D2A111B61671600E5F5A5 /* phase_b_base_00030.jpg in Resources */,
+				82115DE21B6FB14400A36684 /* GoodPro-Black.otf in Resources */,
 				824D2ACC1B61671600E5F5A5 /* phase_d_color_00001.jpg in Resources */,
 				824D279A1B6039C300E5F5A5 /* main_bg@2x.jpg in Resources */,
 				824D2A3A1B61671600E5F5A5 /* phase_b_base_00071.jpg in Resources */,
@@ -2422,6 +2461,7 @@
 				824D2A521B61671600E5F5A5 /* phase_b_color_00023.jpg in Resources */,
 				824D2BCF1B62D02100E5F5A5 /* share_market_interior02.jpg.jpg in Resources */,
 				824D2A191B61671600E5F5A5 /* phase_b_base_00038.jpg in Resources */,
+				82115DE81B6FB14400A36684 /* GoodPro-WideBlack.otf in Resources */,
 				82A128841B66668800564266 /* grfx-arrow-right.png in Resources */,
 				824D2AF21B61671600E5F5A5 /* phase_d_color_00039.jpg in Resources */,
 				824D29E11B61671600E5F5A5 /* phase_a_color_00054.jpg in Resources */,
@@ -2463,6 +2503,7 @@
 				824D27361B5D7E6700E5F5A5 /* LaunchScreen.xib in Resources */,
 				824D29F01B61671600E5F5A5 /* phase_a_color_00069.jpg in Resources */,
 				824D29A41B61671600E5F5A5 /* phase_a_base_00065.jpg in Resources */,
+				82115DE41B6FB14400A36684 /* GoodPro-CondBlack.otf in Resources */,
 				824D29FA1B61671600E5F5A5 /* phase_b_base_00007.jpg in Resources */,
 				824D2A821B61671600E5F5A5 /* phase_b_color_00071.jpg in Resources */,
 				824D2A761B61671600E5F5A5 /* phase_b_color_00059.jpg in Resources */,
@@ -2489,6 +2530,7 @@
 				824D2AED1B61671600E5F5A5 /* phase_d_color_00034.jpg in Resources */,
 				824D29F61B61671600E5F5A5 /* phase_b_base_00003.jpg in Resources */,
 				824D2AA01B61671600E5F5A5 /* phase_d_base_00029.jpg in Resources */,
+				82115DE51B6FB14400A36684 /* GoodPro-CondBook.otf in Resources */,
 				824D29FB1B61671600E5F5A5 /* phase_b_base_00008.jpg in Resources */,
 				824D2AC41B61671600E5F5A5 /* phase_d_base_00065.jpg in Resources */,
 				824D2A931B61671600E5F5A5 /* phase_d_base_00016.jpg in Resources */,
@@ -2615,6 +2657,7 @@
 				82CA34361B6C02C40065E31E /* lifeStyle_bg.jpg in Resources */,
 				824D297C1B61671600E5F5A5 /* phase_a_base_00025.jpg in Resources */,
 				824D29B91B61671600E5F5A5 /* phase_a_color_00014.jpg in Resources */,
+				82115DE61B6FB14400A36684 /* GoodPro-CondLight.otf in Resources */,
 				824D2AEA1B61671600E5F5A5 /* phase_d_color_00031.jpg in Resources */,
 				824D29791B61671600E5F5A5 /* phase_a_base_00022.jpg in Resources */,
 				82A128741B66668800564266 /* fact-grid-06-lg.png in Resources */,
@@ -2730,6 +2773,7 @@
 				82A128601B66668800564266 /* fact-grid-01-lg.png in Resources */,
 				82A128621B66668800564266 /* fact-grid-01-sm.png in Resources */,
 				82A1287C1B66668800564266 /* fact-grid-08-lg.png in Resources */,
+				82115DE31B6FB14400A36684 /* GoodPro-Book.otf in Resources */,
 				824D2A641B61671600E5F5A5 /* phase_b_color_00041.jpg in Resources */,
 				824D29B21B61671600E5F5A5 /* phase_a_color_00007.jpg in Resources */,
 				824D2AFA1B61671600E5F5A5 /* phase_d_color_00047.jpg in Resources */,
@@ -2772,6 +2816,7 @@
 				824D29631B61671600E5F5A5 /* phase_a_base_00000.jpg in Resources */,
 				824D2A141B61671600E5F5A5 /* phase_b_base_00033.jpg in Resources */,
 				82A128B21B66CA6B00564266 /* grfx_menuOpen@2x.png in Resources */,
+				82115DE71B6FB14400A36684 /* GoodPro-Light.otf in Resources */,
 				824D2A011B61671600E5F5A5 /* phase_b_base_00014.jpg in Resources */,
 				824D29FD1B61671600E5F5A5 /* phase_b_base_00010.jpg in Resources */,
 				824D2B501B62B92500E5F5A5 /* share_but_email@2x.png in Resources */,
