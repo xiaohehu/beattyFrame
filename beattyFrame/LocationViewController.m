@@ -25,6 +25,10 @@ static float    bottomHeight = 37;
 @end
 
 @implementation LocationViewController
+
+#warning Make sure the hotspot's tag > 100 to keep their size while the map is zoomed!!!!!!
+
+
 #pragma mark - View Controller life-cycle
 - (void)viewDidLoad {
     [super viewDidLoad];

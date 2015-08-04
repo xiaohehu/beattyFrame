@@ -26,7 +26,6 @@ static float topButtonHeight = 38.0;
     UIView                  *uiv_sitePlanContainer;
     UIView                  *uiv_buttonPanel;
     ebZoomingScrollView     *uis_zoomSitePlan;
-    UIImageView             *uiiv_sitePlanBg;
     NSArray                 *arr_optionColors;
     NSMutableArray          *arr_siteOptions;
     NSMutableArray          *arr_siteOverlay;
@@ -177,16 +176,11 @@ static float topButtonHeight = 38.0;
     uis_zoomSitePlan.backgroundColor = [UIColor whiteColor];
     [uiv_sitePlanContainer addSubview: uis_zoomSitePlan];
     
-//    uiiv_sitePlanBg = [UIImageView new];
-//    [uiiv_sitePlanBg setImage:[UIImage imageNamed:@"grfx_siteplan.jpg"]];
-//    uiiv_sitePlanBg.frame = uiv_sitePlanContainer.bounds;
-//    [uiv_sitePlanContainer addSubview: uiiv_sitePlanBg];
-    
     uiv_buttonPanel = [UIView new];
-    uiv_buttonPanel.frame = CGRectMake(16, 266, 136, 186);
+    uiv_buttonPanel.frame = CGRectMake(19, 228, 200, 186);
     uiv_buttonPanel.backgroundColor = [UIColor clearColor];
     uiv_buttonPanel.layer.borderWidth = 2.0;
-    uiv_buttonPanel.layer.borderColor = [UIColor whiteColor].CGColor;
+    uiv_buttonPanel.layer.borderColor = [UIColor lightGrayColor].CGColor;
     [uiv_sitePlanContainer addSubview: uiv_buttonPanel];
     /*
      * Needed data to create site plan's control panel
@@ -221,7 +215,7 @@ static float topButtonHeight = 38.0;
     for (int i = 0; i < 5; i++) {
         // UIButton create
         UIButton *button = [UIButton buttonWithType: UIButtonTypeCustom];
-        button.frame = CGRectMake(0.0, i * 37.0+ 1, uiv_buttonPanel.frame.size.width, 37.0);
+        button.frame = CGRectMake(0.0, i * 37.0, uiv_buttonPanel.frame.size.width, 37.0);
         button.backgroundColor = [UIColor whiteColor];
         button.layer.borderColor = [UIColor whiteColor].CGColor;
         button.layer.borderWidth = 1.0;
@@ -299,7 +293,7 @@ static float topButtonHeight = 38.0;
         [tappedButton viewWithTag:20].backgroundColor = [UIColor whiteColor];
         tappedButton.backgroundColor = arr_optionColors[tappedButton.tag];
         UIImageView *overlay = arr_siteOverlay[tappedButton.tag];
-        [uiv_sitePlanContainer addSubview: overlay];
+        [uis_zoomSitePlan.blurView addSubview: overlay];
     }
 }
 

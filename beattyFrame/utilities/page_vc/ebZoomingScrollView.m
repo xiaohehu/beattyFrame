@@ -215,14 +215,11 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     for (UIView *dropPinView in _blurView.subviews) {
-        CGRect oldFrame = dropPinView.frame;
-        // 0.5 means the anchor is centered on the x axis. 1 means the anchor is at the bottom of the view. If you comment out this line, the pin's center will stay where it is regardless of how much you zoom. I have it so that the bottom of the pin stays fixed. This should help user RomeoF.
-        //[dropPinView.layer setAnchorPoint:CGPointMake(0.5, 1)];
-//        [dropPinView.layer setAnchorPoint:CGPointMake(0.5, 0.5)];
-        dropPinView.frame = oldFrame;
-        // When you zoom in on scrollView, it gets a larger zoom scale value.
-        // You transform the pin by scaling it by the inverse of this value.
-        dropPinView.transform = CGAffineTransformMakeScale(1.0/_scrollView.zoomScale, 1.0/_scrollView.zoomScale);
+        if (dropPinView.tag > 100) {
+            CGRect oldFrame = dropPinView.frame;
+            dropPinView.frame = oldFrame;
+            dropPinView.transform = CGAffineTransformMakeScale(1.0/_scrollView.zoomScale, 1.0/_scrollView.zoomScale);
+        }
     }
 }
 
