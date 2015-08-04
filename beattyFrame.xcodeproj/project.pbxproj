@@ -22,6 +22,10 @@
 		82115DF41B7012A600A36684 /* grfx_building@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82115DF21B7012A600A36684 /* grfx_building@2x.jpg */; };
 		82115DF71B713D1C00A36684 /* grfx_closeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 82115DF51B713D1C00A36684 /* grfx_closeBtn.png */; };
 		82115DF81B713D1C00A36684 /* grfx_closeBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82115DF61B713D1C00A36684 /* grfx_closeBtn@2x.png */; };
+		82115DFB1B7143D800A36684 /* grfx_resartBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 82115DF91B7143D800A36684 /* grfx_resartBtn.png */; };
+		82115DFC1B7143D800A36684 /* grfx_resartBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82115DFA1B7143D800A36684 /* grfx_resartBtn@2x.png */; };
+		82115DFF1B7144C200A36684 /* grfx_initImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82115DFD1B7144C200A36684 /* grfx_initImage.jpg */; };
+		82115E001B7144C200A36684 /* grfx_initImage@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82115DFE1B7144C200A36684 /* grfx_initImage@2x.jpg */; };
 		8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8243874E1B6929A1003AC214 /* SupportingViewController.m */; };
 		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
 		824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824387571B6BAA14003AC214 /* xhPageViewController.m */; };
@@ -679,6 +683,10 @@
 		82115DF21B7012A600A36684 /* grfx_building@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx_building@2x.jpg"; sourceTree = "<group>"; };
 		82115DF51B713D1C00A36684 /* grfx_closeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_closeBtn.png; path = src/grfx/grfx_closeBtn.png; sourceTree = "<group>"; };
 		82115DF61B713D1C00A36684 /* grfx_closeBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_closeBtn@2x.png"; path = "src/grfx/grfx_closeBtn@2x.png"; sourceTree = "<group>"; };
+		82115DF91B7143D800A36684 /* grfx_resartBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_resartBtn.png; path = src/grfx/grfx_resartBtn.png; sourceTree = "<group>"; };
+		82115DFA1B7143D800A36684 /* grfx_resartBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_resartBtn@2x.png"; path = "src/grfx/grfx_resartBtn@2x.png"; sourceTree = "<group>"; };
+		82115DFD1B7144C200A36684 /* grfx_initImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grfx_initImage.jpg; path = src/grfx/grfx_initImage.jpg; sourceTree = "<group>"; };
+		82115DFE1B7144C200A36684 /* grfx_initImage@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "grfx_initImage@2x.jpg"; path = "src/grfx/grfx_initImage@2x.jpg"; sourceTree = "<group>"; };
 		8243874D1B6929A1003AC214 /* SupportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportingViewController.h; sourceTree = "<group>"; };
 		8243874E1B6929A1003AC214 /* SupportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportingViewController.m; sourceTree = "<group>"; };
 		824387501B69414D003AC214 /* supporting_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = supporting_data.plist; sourceTree = "<group>"; };
@@ -1505,6 +1513,10 @@
 				82A128B01B66CA6B00564266 /* grfx_menuOpen@2x.png */,
 				82115DF51B713D1C00A36684 /* grfx_closeBtn.png */,
 				82115DF61B713D1C00A36684 /* grfx_closeBtn@2x.png */,
+				82115DF91B7143D800A36684 /* grfx_resartBtn.png */,
+				82115DFA1B7143D800A36684 /* grfx_resartBtn@2x.png */,
+				82115DFD1B7144C200A36684 /* grfx_initImage.jpg */,
+				82115DFE1B7144C200A36684 /* grfx_initImage@2x.jpg */,
 			);
 			name = grfx;
 			sourceTree = "<group>";
@@ -2446,6 +2458,7 @@
 				824D2AB11B61671600E5F5A5 /* phase_d_base_00046.jpg in Resources */,
 				824D2A041B61671600E5F5A5 /* phase_b_base_00017.jpg in Resources */,
 				824D2A7A1B61671600E5F5A5 /* phase_b_color_00063.jpg in Resources */,
+				82115DFB1B7143D800A36684 /* grfx_resartBtn.png in Resources */,
 				824D2A161B61671600E5F5A5 /* phase_b_base_00035.jpg in Resources */,
 				824D2AA11B61671600E5F5A5 /* phase_d_base_00030.jpg in Resources */,
 				824D29741B61671600E5F5A5 /* phase_a_base_00017.jpg in Resources */,
@@ -2632,6 +2645,7 @@
 				82CA342D1B6BF46F0065E31E /* grfx_regionalMap.jpg in Resources */,
 				824D2ACD1B61671600E5F5A5 /* phase_d_color_00002.jpg in Resources */,
 				824D2A261B61671600E5F5A5 /* phase_b_base_00051.jpg in Resources */,
+				82115DFF1B7144C200A36684 /* grfx_initImage.jpg in Resources */,
 				824D2A221B61671600E5F5A5 /* phase_b_base_00047.jpg in Resources */,
 				824D2AA81B61671600E5F5A5 /* phase_d_base_00037.jpg in Resources */,
 				824D2AFD1B61671600E5F5A5 /* phase_d_color_00050.jpg in Resources */,
@@ -2813,6 +2827,7 @@
 				824D2AFA1B61671600E5F5A5 /* phase_d_color_00047.jpg in Resources */,
 				824D2B021B61671600E5F5A5 /* phase_d_color_00055.jpg in Resources */,
 				824D2AEF1B61671600E5F5A5 /* phase_d_color_00036.jpg in Resources */,
+				82115E001B7144C200A36684 /* grfx_initImage@2x.jpg in Resources */,
 				824D2A0D1B61671600E5F5A5 /* phase_b_base_00026.jpg in Resources */,
 				824D2BA71B62D02100E5F5A5 /* share_0005 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				824D2A0B1B61671600E5F5A5 /* phase_b_base_00024.jpg in Resources */,
@@ -2848,6 +2863,7 @@
 				824D2AF61B61671600E5F5A5 /* phase_d_color_00043.jpg in Resources */,
 				824D29CB1B61671600E5F5A5 /* phase_a_color_00032.jpg in Resources */,
 				824D29631B61671600E5F5A5 /* phase_a_base_00000.jpg in Resources */,
+				82115DFC1B7143D800A36684 /* grfx_resartBtn@2x.png in Resources */,
 				824D2A141B61671600E5F5A5 /* phase_b_base_00033.jpg in Resources */,
 				82A128B21B66CA6B00564266 /* grfx_menuOpen@2x.png in Resources */,
 				82115DE71B6FB14400A36684 /* GoodPro-Light.otf in Resources */,

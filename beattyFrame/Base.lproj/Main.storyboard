@@ -450,6 +450,18 @@
                                             <rect key="frame" x="161" y="681" width="45" height="30"/>
                                         </variation>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGt-74-4wg" userLabel="Reset">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="grfx_resartBtn.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="28" y="38" width="45" height="22"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="tapResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UTf-vO-JJ3"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.018931817279999999" blue="0.0036962686020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="default">
@@ -461,6 +473,7 @@
                                         <exclude reference="hgm-z0-noT"/>
                                         <exclude reference="eia-ph-AoR"/>
                                         <exclude reference="nLc-d3-yrK"/>
+                                        <exclude reference="vGt-74-4wg"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
@@ -473,6 +486,7 @@
                                         <include reference="hgm-z0-noT"/>
                                         <include reference="eia-ph-AoR"/>
                                         <include reference="nLc-d3-yrK"/>
+                                        <include reference="vGt-74-4wg"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -926,6 +940,7 @@
     <resources>
         <image name="grfx_building.jpg" width="1024" height="768"/>
         <image name="grfx_closeBtn.png" width="25" height="25"/>
+        <image name="grfx_resartBtn.png" width="17" height="22"/>
         <image name="share_but_email.png" width="66" height="33"/>
         <image name="share_but_email_roll.png" width="149" height="762"/>
         <image name="share_but_pdf.png" width="66" height="33"/>

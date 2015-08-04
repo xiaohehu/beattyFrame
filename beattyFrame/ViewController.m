@@ -30,7 +30,7 @@ static float    menuButtonSize = 50.0;
     IBOutlet UIView         *uiv_vcCover;
     UIButton                *uib_menuButton;
     UIViewController        *currentViewController;
-    
+    UIImageView             *uiiv_initImage;
     // Side menu content button
     __weak IBOutlet UIView *uiv_buutonHighlight;
     // Button containers
@@ -82,6 +82,7 @@ static float    menuButtonSize = 50.0;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateHighlightedButton:) name:@"updatedSupportingSideMenu" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadBuildingVC:) name:@"loadBuilding" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeBuildingVC:) name:@"removeBuilding" object:nil];
+    [self createInitImage];
     [self prepareViewContainer];
     [self groupSideMenuButtons];
     
@@ -90,9 +91,17 @@ static float    menuButtonSize = 50.0;
     [self fadeInNewViewController:site360];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self.view addSubview: uiiv_initImage];
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     [self highlightTheButton:uib_site360 withAnimation:NO];
+    [UIView animateWithDuration:0.5 delay:2.0 options:0 animations:^(void){
+        uiiv_initImage.alpha = 0.0;
+    } completion:^(BOOL finished){
     
+    }];
 //    NSArray *fontFamilies = [UIFont familyNames];
 //    
 //    for (int i = 0; i < [fontFamilies count]; i++)
@@ -109,6 +118,11 @@ static float    menuButtonSize = 50.0;
 }
 
 #pragma mark - Create/Style UI elements
+
+- (void)createInitImage {
+    uiiv_initImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"grfx_initImage.jpg"]];
+    uiiv_initImage.frame = self.view.bounds;
+}
 
 - (void)prepareViewContainer {
     
@@ -198,6 +212,22 @@ static float    menuButtonSize = 50.0;
         [uib_menuButton removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
         [uib_menuButton addTarget:self action:@selector(tapMenuButtonOpen:) forControlEvents:UIControlEventTouchUpInside];
         uiv_vcCover.alpha = 0.0;
+    }];
+}
+- (IBAction)tapResetButton:(id)sender {
+
+    [self tapMenuButtonClose:nil];
+    
+    [UIView animateWithDuration:0.33 delay:0.33 options:0 animations:^(void){
+        uiiv_initImage.alpha = 1.0;
+    } completion:^(BOOL finished){
+        [self loadSite360:uib_site360];
+        [UIView animateWithDuration:0.5 delay:2.0 options:0 animations:^(void){
+            uiiv_initImage.alpha = 0.0;
+        } completion:^(BOOL finished){
+            
+        }];
+        
     }];
 }
 
