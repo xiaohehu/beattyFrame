@@ -146,6 +146,11 @@
         }];
     }
 }
+- (IBAction)tapCloseButton:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^(void){
+    
+    }];
+}
 
 #pragma mark - Collection View
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
