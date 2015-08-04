@@ -28,6 +28,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)tapCloseButton:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"removeBuilding" object:nil];
+}
+
 /*
 #pragma mark - Navigation
 

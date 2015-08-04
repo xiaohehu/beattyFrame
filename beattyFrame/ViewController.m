@@ -14,6 +14,7 @@
 #import "embEmailData.h"
 #import "UIColor+Extensions.h"
 #import "LocationViewController.h"
+#import "BuildingViewController.h"
 
 static float    sideMenuWidth = 235.0;
 static float    menuButtonSize = 50.0;
@@ -23,6 +24,7 @@ static float    menuButtonSize = 50.0;
 @interface ViewController () <MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>{
 
     SummaryViewController   *summary;
+    BuildingViewController  *buildingVC;
     IBOutlet UIView         *uiv_vcBigContainer;
     IBOutlet UIView         *uiv_sideMenuContainer;
     IBOutlet UIView         *uiv_vcCover;
@@ -78,6 +80,8 @@ static float    menuButtonSize = 50.0;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeSummary:) name:@"RemoveSummeary" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setEmailDataObject:) name:@"emailData" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateHighlightedButton:) name:@"updatedSupportingSideMenu" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadBuildingVC:) name:@"loadBuilding" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeBuildingVC:) name:@"removeBuilding" object:nil];
     [self prepareViewContainer];
     [self groupSideMenuButtons];
     
@@ -230,6 +234,30 @@ static float    menuButtonSize = 50.0;
 }
 
 #pragma mark Load/Remove view controller
+
+- (void)loadBuildingVC:(NSNotification *)notification {
+    buildingVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BuildingViewController"];
+    buildingVC.view.frame = self.view.bounds;
+    buildingVC.view.transform = CGAffineTransformMakeTranslation(0, buildingVC.view.frame.size.height);
+    [self addChildViewController:buildingVC];
+    [uiv_vcBigContainer insertSubview:buildingVC.view aboveSubview:currentViewController.view];
+    [UIView animateWithDuration:0.33 animations:^(void){
+        buildingVC.view.transform = CGAffineTransformIdentity;
+    } completion:^(BOOL finished){
+        currentViewController = buildingVC;
+    }];
+}
+
+- (void)removeBuildingVC:(NSNotification *)notification {
+    [UIView animateWithDuration:0.33 animations:^(void){
+        buildingVC.view.transform = CGAffineTransformMakeTranslation(0, self.view.bounds.size.height);
+    } completion:^(BOOL finished){
+        [buildingVC removeFromParentViewController];
+        [buildingVC.view removeFromSuperview];
+        buildingVC = nil;
+        buildingVC.view = nil;
+    }];
+}
 
 - (IBAction)tapSideMenuButton:(id)sender {
     UIButton *tappedButton = sender;

@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeBuilding:) name:@"removeBuilding" object:nil];
     self.view.backgroundColor = [UIColor whiteColor];
     [self appInit];
 }
@@ -26,6 +27,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)removeBuilding:(NSNotification *)notification {
+    isColorPicked = NO;
 }
 
 -(void)appInit {
@@ -122,12 +127,8 @@
         currentIndex = index;
         isColorPicked=YES;
         
-        BuildingViewController *buildingVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BuildingViewController"];
-        buildingVC.view.frame = self.view.bounds;
-        [self presentViewController:buildingVC animated:YES completion:^(void){
-            isColorEligible = NO;
-            isColorPicked=NO;
-        }];
+        // Need to add userInfo to trach the index of building
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"loadBuilding" object:nil userInfo:nil];
         
     } else {
         isColorEligible = NO;
