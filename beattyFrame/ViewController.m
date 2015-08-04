@@ -370,6 +370,13 @@ static float    menuButtonSize = 50.0;
     summary = nil;
 }
 
+- (IBAction)loadGallery:(id)sender {
+    GalleryViewController *gallery = [self.storyboard instantiateViewControllerWithIdentifier:@"GalleryViewController"];
+    [self presentViewController:gallery animated:YES completion:^(void){
+    
+    }];
+}
+
 #pragma mark - Mail Sending
 -(void)setEmailDataObject:(NSNotification *)pNotification
 {

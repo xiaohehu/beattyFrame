@@ -20,6 +20,8 @@
 		82115DEF1B7004A300A36684 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82115DEE1B7004A300A36684 /* colors.plist */; };
 		82115DF31B7012A600A36684 /* grfx_building.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82115DF11B7012A600A36684 /* grfx_building.jpg */; };
 		82115DF41B7012A600A36684 /* grfx_building@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82115DF21B7012A600A36684 /* grfx_building@2x.jpg */; };
+		82115DF71B713D1C00A36684 /* grfx_closeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 82115DF51B713D1C00A36684 /* grfx_closeBtn.png */; };
+		82115DF81B713D1C00A36684 /* grfx_closeBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82115DF61B713D1C00A36684 /* grfx_closeBtn@2x.png */; };
 		8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8243874E1B6929A1003AC214 /* SupportingViewController.m */; };
 		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
 		824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824387571B6BAA14003AC214 /* xhPageViewController.m */; };
@@ -675,6 +677,8 @@
 		82115DEE1B7004A300A36684 /* colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
 		82115DF11B7012A600A36684 /* grfx_building.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grfx_building.jpg; sourceTree = "<group>"; };
 		82115DF21B7012A600A36684 /* grfx_building@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx_building@2x.jpg"; sourceTree = "<group>"; };
+		82115DF51B713D1C00A36684 /* grfx_closeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_closeBtn.png; path = src/grfx/grfx_closeBtn.png; sourceTree = "<group>"; };
+		82115DF61B713D1C00A36684 /* grfx_closeBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_closeBtn@2x.png"; path = "src/grfx/grfx_closeBtn@2x.png"; sourceTree = "<group>"; };
 		8243874D1B6929A1003AC214 /* SupportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportingViewController.h; sourceTree = "<group>"; };
 		8243874E1B6929A1003AC214 /* SupportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportingViewController.m; sourceTree = "<group>"; };
 		824387501B69414D003AC214 /* supporting_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = supporting_data.plist; sourceTree = "<group>"; };
@@ -1499,6 +1503,8 @@
 				824D2B4C1B62B92500E5F5A5 /* share_but_email@2x.png */,
 				82A128AF1B66CA6B00564266 /* grfx_menuOpen.png */,
 				82A128B01B66CA6B00564266 /* grfx_menuOpen@2x.png */,
+				82115DF51B713D1C00A36684 /* grfx_closeBtn.png */,
+				82115DF61B713D1C00A36684 /* grfx_closeBtn@2x.png */,
 			);
 			name = grfx;
 			sourceTree = "<group>";
@@ -2435,6 +2441,7 @@
 				824D2A4E1B61671600E5F5A5 /* phase_b_color_00019.jpg in Resources */,
 				824D2A131B61671600E5F5A5 /* phase_b_base_00032.jpg in Resources */,
 				824D29A21B61671600E5F5A5 /* phase_a_base_00063.jpg in Resources */,
+				82115DF81B713D1C00A36684 /* grfx_closeBtn@2x.png in Resources */,
 				824D29651B61671600E5F5A5 /* phase_a_base_00002.jpg in Resources */,
 				824D2AB11B61671600E5F5A5 /* phase_d_base_00046.jpg in Resources */,
 				824D2A041B61671600E5F5A5 /* phase_b_base_00017.jpg in Resources */,
@@ -2606,6 +2613,7 @@
 				824D2A741B61671600E5F5A5 /* phase_b_color_00057.jpg in Resources */,
 				824D2AAF1B61671600E5F5A5 /* phase_d_base_00044.jpg in Resources */,
 				824D2A601B61671600E5F5A5 /* phase_b_color_00037.jpg in Resources */,
+				82115DF71B713D1C00A36684 /* grfx_closeBtn.png in Resources */,
 				824D2A181B61671600E5F5A5 /* phase_b_base_00037.jpg in Resources */,
 				824D29841B61671600E5F5A5 /* phase_a_base_00033.jpg in Resources */,
 				824D2B121B61671600E5F5A5 /* phase_d_color_00071.jpg in Resources */,

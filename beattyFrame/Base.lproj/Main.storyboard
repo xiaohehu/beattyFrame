@@ -22,6 +22,9 @@
             <string>GoodPro-Book</string>
             <string>GoodPro-Book</string>
             <string>GoodPro-Book</string>
+            <string>GoodPro-Book</string>
+            <string>GoodPro-Book</string>
+            <string>GoodPro-Book</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -422,6 +425,31 @@
                                             </mask>
                                         </variation>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eia-ph-AoR">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="14"/>
+                                        <state key="normal" title="Gallery">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="28" y="681" width="45" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="loadGallery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHr-Rp-hbt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLc-d3-yrK">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="14"/>
+                                        <state key="normal" title="Setting">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="161" y="681" width="45" height="30"/>
+                                        </variation>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.018931817279999999" blue="0.0036962686020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="default">
@@ -431,6 +459,8 @@
                                         <exclude reference="KS4-O9-3ZR"/>
                                         <exclude reference="DIM-73-9Be"/>
                                         <exclude reference="hgm-z0-noT"/>
+                                        <exclude reference="eia-ph-AoR"/>
+                                        <exclude reference="nLc-d3-yrK"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
@@ -441,6 +471,8 @@
                                         <include reference="KS4-O9-3ZR"/>
                                         <include reference="DIM-73-9Be"/>
                                         <include reference="hgm-z0-noT"/>
+                                        <include reference="eia-ph-AoR"/>
+                                        <include reference="nLc-d3-yrK"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -631,7 +663,7 @@
                                     </collectionViewCell>
                                 </cells>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <rect key="frame" x="0.0" y="50" width="1024" height="718"/>
                                 </variation>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ES-9P-SOc">
@@ -720,14 +752,25 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kir-5o-03v">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nz-60-J8z">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="grfx_closeBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="881" y="20" width="87" height="30"/>
+                                    <rect key="frame" x="962" y="8" width="46" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kir-5o-03v">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="16"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.84705882352941175" green="0.13725490196078433" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="887" y="8" width="67" height="30"/>
                                 </variation>
                             </button>
                         </subviews>
@@ -736,6 +779,7 @@
                             <mask key="subviews">
                                 <exclude reference="EZb-sG-4uK"/>
                                 <exclude reference="3ES-9P-SOc"/>
+                                <exclude reference="7nz-60-J8z"/>
                                 <exclude reference="Kir-5o-03v"/>
                             </mask>
                         </variation>
@@ -743,6 +787,7 @@
                             <mask key="subviews">
                                 <include reference="EZb-sG-4uK"/>
                                 <include reference="3ES-9P-SOc"/>
+                                <include reference="7nz-60-J8z"/>
                                 <include reference="Kir-5o-03v"/>
                             </mask>
                         </variation>
@@ -877,6 +922,7 @@
     </scenes>
     <resources>
         <image name="grfx_building.jpg" width="1024" height="768"/>
+        <image name="grfx_closeBtn.png" width="25" height="25"/>
         <image name="share_but_email.png" width="66" height="33"/>
         <image name="share_but_email_roll.png" width="149" height="762"/>
         <image name="share_but_pdf.png" width="66" height="33"/>
