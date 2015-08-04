@@ -7,28 +7,29 @@
 //
 
 #import "SummaryViewController.h"
-
+#import "ebZoomingScrollView.h"
 static float containerWidth = 896.0;
 static float containerHeight = 709.0;
 static float topButtonHeight = 38.0;
 
 @interface SummaryViewController () {
     // Basic UI elements
-    UIView          *uiv_container;
-    UIButton        *uib_summary;
-    UIButton        *uib_sitePlan;
-    UIView          *uiv_buttonHighlight;
-    UIButton        *uib_close;
+    UIView                  *uiv_container;
+    UIButton                *uib_summary;
+    UIButton                *uib_sitePlan;
+    UIView                  *uiv_buttonHighlight;
+    UIButton                *uib_close;
     // Summary view UI elements
-    UIImageView     *uiiv_leftSummary;
-    UIImageView     *uiiv_rightSummary;
+    UIImageView             *uiiv_leftSummary;
+    UIImageView             *uiiv_rightSummary;
     // Site Plan view UI elements
-    UIView          *uiv_sitePlanContainer;
-    UIView          *uiv_buttonPanel;
-    UIImageView     *uiiv_sitePlanBg;
-    NSArray         *arr_optionColors;
-    NSMutableArray  *arr_siteOptions;
-    NSMutableArray  *arr_siteOverlay;
+    UIView                  *uiv_sitePlanContainer;
+    UIView                  *uiv_buttonPanel;
+    ebZoomingScrollView     *uis_zoomSitePlan;
+    UIImageView             *uiiv_sitePlanBg;
+    NSArray                 *arr_optionColors;
+    NSMutableArray          *arr_siteOptions;
+    NSMutableArray          *arr_siteOverlay;
 }
 
 @end
@@ -171,10 +172,15 @@ static float topButtonHeight = 38.0;
     uiv_sitePlanContainer.backgroundColor = [UIColor clearColor];
     [uiv_container insertSubview:uiv_sitePlanContainer belowSubview:uiiv_leftSummary];
     
-    uiiv_sitePlanBg = [UIImageView new];
-    [uiiv_sitePlanBg setImage:[UIImage imageNamed:@"grfx_siteplan.jpg"]];
-    uiiv_sitePlanBg.frame = uiv_sitePlanContainer.bounds;
-    [uiv_sitePlanContainer addSubview: uiiv_sitePlanBg];
+    
+    uis_zoomSitePlan = [[ebZoomingScrollView alloc] initWithFrame:uiv_sitePlanContainer.bounds image:[UIImage imageNamed:@"grfx_siteplan.jpg"] shouldZoom:YES];
+    uis_zoomSitePlan.backgroundColor = [UIColor whiteColor];
+    [uiv_sitePlanContainer addSubview: uis_zoomSitePlan];
+    
+//    uiiv_sitePlanBg = [UIImageView new];
+//    [uiiv_sitePlanBg setImage:[UIImage imageNamed:@"grfx_siteplan.jpg"]];
+//    uiiv_sitePlanBg.frame = uiv_sitePlanContainer.bounds;
+//    [uiv_sitePlanContainer addSubview: uiiv_sitePlanBg];
     
     uiv_buttonPanel = [UIView new];
     uiv_buttonPanel.frame = CGRectMake(16, 266, 136, 186);
@@ -264,6 +270,7 @@ static float topButtonHeight = 38.0;
     
     uiv_sitePlanContainer.alpha = 0.0;
     uiv_sitePlanContainer.transform = CGAffineTransformMakeScale(0.7, 0.7);
+    [uis_zoomSitePlan resetScroll];
     [UIView animateWithDuration:0.33 animations:^(void){
         uiv_buttonHighlight.transform = CGAffineTransformMakeTranslation(containerWidth/2, 0.0);
         uiiv_leftSummary.transform = CGAffineTransformMakeTranslation(-uiiv_leftSummary.frame.size.width, 0.0);
