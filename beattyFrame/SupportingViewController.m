@@ -12,11 +12,12 @@
 #import "UIColor+Extensions.h"
 #import "animationView.h"
 #import "xhPageViewController.h"
-static CGFloat  bottomMenuWidth = 570;
+static CGFloat  bottomMenuWidth = 572;
 static CGFloat  bottomMenuHeight = 37;
 @interface SupportingViewController ()<UIPageViewControllerDelegate, UIGestureRecognizerDelegate>
 {
     UIView          *uiv_bottomMenu;
+    UIView          *uiv_bottomHighlightView;
     NSArray         *arr_menuTitles;
     NSMutableArray  *arr_menuButton;
     NSArray         *arr_lastIndex;
@@ -185,6 +186,10 @@ static CGFloat  bottomMenuHeight = 37;
     uiv_bottomMenu.backgroundColor = [UIColor whiteColor];
     [self.view addSubview: uiv_bottomMenu];
     
+    uiv_bottomHighlightView = [[UIView alloc] initWithFrame:CGRectZero];
+    uiv_bottomHighlightView.backgroundColor = [UIColor themeRed];
+    [uiv_bottomMenu addSubview: uiv_bottomHighlightView];
+    
     for (int i = 0 ; i < arr_menuTitles.count; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setTitle:arr_menuTitles[i] forState:UIControlStateNormal];
@@ -200,6 +205,7 @@ static CGFloat  bottomMenuHeight = 37;
         [button setContentEdgeInsets:UIEdgeInsetsMake(0, 3, 0, 0)];
         button.tag = i;
         [button addTarget:self action:@selector(tapBottomButton:) forControlEvents:UIControlEventTouchUpInside];
+        NSLog(@"\n\n The button's frame is %@\n", NSStringFromCGRect(button.frame));
         [arr_menuButton addObject: button];
     }
     for (int i = 0; i < arr_menuButton.count; i++) {
@@ -218,10 +224,14 @@ static CGFloat  bottomMenuHeight = 37;
     UIButton *tappedButton = sender;
     for (UIButton *btn in arr_menuButton) {
         btn.selected = NO;
-        btn.backgroundColor = [UIColor whiteColor];
+        btn.backgroundColor = [UIColor clearColor];
     }
     tappedButton.selected = YES;
-    tappedButton.backgroundColor = [UIColor themeRed];
+//    tappedButton.backgroundColor = [UIColor themeRed];
+    uiv_bottomHighlightView.backgroundColor = [UIColor themeRed];
+    [UIView animateWithDuration:0.33 animations:^(void){
+        uiv_bottomHighlightView.frame = tappedButton.frame;
+    }];
     [self updateMainMenuHighlightButton];
 }
 

@@ -109,7 +109,7 @@
                                                     <rect key="frame" x="0.0" y="120" width="158" height="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="tapSideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqy-Ba-Rsi"/>
+                                                    <action selector="loadOpportunities:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l5u-UR-df3"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0x-vH-IoR" userLabel="Bottom_bar">

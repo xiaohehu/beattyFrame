@@ -272,6 +272,15 @@ static float    menuButtonSize = 50.0;
     [self fadeInNewViewController:site360];
     [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
 }
+- (IBAction)loadOpportunities:(id)sender {
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:nil
+                                                      message:@"The content is coming soon"
+                                                     delegate:nil
+                                            cancelButtonTitle:@"OK"
+                                            otherButtonTitles:nil];
+    [message show];
+
+}
 
 /*
  * Load Supporting page view controller
