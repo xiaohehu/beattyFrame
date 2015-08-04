@@ -82,7 +82,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="Site 360">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="45" width="51" height="25"/>
@@ -97,7 +97,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="Summary">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="70" width="51" height="25"/>
@@ -112,7 +112,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="Master Plan">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="95" width="66" height="25"/>
@@ -127,7 +127,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="Development Opportunities">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="120" width="144" height="25"/>
@@ -185,7 +185,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="Location Map">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="39" width="71" height="25"/>
@@ -237,7 +237,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="History">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="47" width="43" height="25"/>
@@ -252,7 +252,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="Trends">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="72" width="38" height="25"/>
@@ -267,7 +267,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="Lifestyle &amp; Culture">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="97" width="99" height="25"/>
@@ -282,7 +282,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="Facts &amp;Figures">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="122" width="77" height="25"/>
@@ -297,7 +297,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="Eco-District">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="147" width="61" height="25"/>
@@ -357,7 +357,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="Financial Parteners">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="64" width="102" height="25"/>
@@ -372,7 +372,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="Current &amp; Future Tenants">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="89" width="132" height="25"/>
@@ -394,7 +394,7 @@
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
                                                 <state key="normal" title="Beatty Development Group">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                     <rect key="frame" x="0.0" y="39" width="141" height="25"/>
@@ -430,7 +430,7 @@
                                         <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="14"/>
                                         <state key="normal" title="Gallery">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                             <rect key="frame" x="28" y="681" width="45" height="30"/>
@@ -444,7 +444,7 @@
                                         <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="14"/>
                                         <state key="normal" title="Setting">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                             <rect key="frame" x="161" y="681" width="45" height="30"/>
