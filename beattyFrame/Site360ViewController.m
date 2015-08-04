@@ -80,7 +80,7 @@
         }
     }
     
-    NSLog(@"namesArray %@",[namesArray description]);
+//    NSLog(@"namesArray %@",[namesArray description]);
 }
 
 #pragma mark - METHODS FOR PICKING BUILDING

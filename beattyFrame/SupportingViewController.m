@@ -190,6 +190,7 @@ static int      animationViewIndex = 3;
     [uil_pageNum setText:@"of"];
     [uil_pageNum setTextColor:[UIColor whiteColor]];
     [uil_pageNum setTextAlignment:NSTextAlignmentCenter];
+    [uil_pageNum setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
     [self.view addSubview: uil_pageNum];
 }
 
@@ -205,7 +206,7 @@ static int      animationViewIndex = 3;
     int totalPage = [arr_lastIndex[arrayIndex] integerValue] - [arr_firstIndex[arrayIndex] integerValue] + 1;
     int currPage = totalPage - ([arr_lastIndex[arrayIndex] integerValue] - currentPageIndex);
     NSString *label_text = [NSString stringWithFormat:@"%i of %i", currPage, totalPage];
-    [uil_pageNum setText:label_text];   
+    [uil_pageNum setText:label_text];
 }
 
 - (void)createBottomMenu {
@@ -224,7 +225,7 @@ static int      animationViewIndex = 3;
         [button sizeToFit];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-        [button.titleLabel setFont:[UIFont systemFontOfSize:12.0]];
+        [button.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
         button.backgroundColor = [UIColor whiteColor];
         CGRect frame = button.frame;
         frame.size.width += 19;

@@ -96,7 +96,7 @@ static float    bottomHeight = 37;
         button.frame = CGRectMake(1 + i * buttonWidth, 0, buttonWidth, bottomHeight);
         [button setTitle:titles[i] forState: UIControlStateNormal];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [button.titleLabel setFont:[UIFont systemFontOfSize:12.0]];
+        [button.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:13.0]];
         button.tag = i;
         [button addTarget:self action:@selector(tapBottomMenu:) forControlEvents:UIControlEventTouchUpInside];
         [uiv_bottomMenu addSubview: button];
