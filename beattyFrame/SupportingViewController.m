@@ -205,7 +205,7 @@ static int      animationViewIndex = 3;
     int totalPage = [arr_lastIndex[arrayIndex] integerValue] - [arr_firstIndex[arrayIndex] integerValue] + 1;
     int currPage = totalPage - ([arr_lastIndex[arrayIndex] integerValue] - currentPageIndex);
     NSString *label_text = [NSString stringWithFormat:@"%i of %i", currPage, totalPage];
-    [uil_pageNum setText:label_text];
+    [uil_pageNum setText:label_text];   
 }
 
 - (void)createBottomMenu {
