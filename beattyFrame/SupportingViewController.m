@@ -14,10 +14,12 @@
 #import "xhPageViewController.h"
 static CGFloat  bottomMenuWidth = 572;
 static CGFloat  bottomMenuHeight = 37;
+static int      animationViewIndex = 3;
 @interface SupportingViewController ()<UIPageViewControllerDelegate, UIGestureRecognizerDelegate>
 {
     UIView          *uiv_bottomMenu;
     UIView          *uiv_bottomHighlightView;
+    UILabel         *uil_pageNum;
     NSArray         *arr_menuTitles;
     NSMutableArray  *arr_menuButton;
     NSArray         *arr_lastIndex;
@@ -51,6 +53,7 @@ static CGFloat  bottomMenuHeight = 37;
 - (void)viewWillAppear:(BOOL)animated {
     [self initPageView:pageIndex];
     [self createBottomMenu];
+    [self createPageNumLabel];
     [self checkCurrentIndexPosition];
 }
 
@@ -121,7 +124,7 @@ static CGFloat  bottomMenuHeight = 37;
                                        animated:NO
                                      completion:nil];
     
-    if (currentPageIndex == 3) {
+    if (currentPageIndex == animationViewIndex) {
         self.pageViewController.swipeArea = CGRectMake(22, 204, 360, 360);
     } else {
         self.pageViewController.swipeArea = CGRectZero;
@@ -166,6 +169,7 @@ static CGFloat  bottomMenuHeight = 37;
         }
     }
     [self highlightButton:arr_menuButton[arrayIndex]];
+    [self updatePageNumLabelText];
 }
 
 - (embModelController *)modelController
@@ -179,6 +183,30 @@ static CGFloat  bottomMenuHeight = 37;
 }
 
 #pragma mark - Bottom Menu
+
+- (void)createPageNumLabel {
+    uil_pageNum = [[UILabel alloc] initWithFrame:CGRectMake(50.0, 709, 100, 37)];
+    uil_pageNum.backgroundColor = [UIColor themeRed];
+    [uil_pageNum setText:@"of"];
+    [uil_pageNum setTextColor:[UIColor whiteColor]];
+    [uil_pageNum setTextAlignment:NSTextAlignmentCenter];
+    [self.view addSubview: uil_pageNum];
+}
+
+- (void)updatePageNumLabelText {
+    int arrayIndex = 0;
+    for (int i = 0; i < arr_lastIndex.count; i++) {
+        if (currentPageIndex <= [arr_lastIndex[i] integerValue]) {
+            arrayIndex = i;
+            break;
+        }
+    }
+    
+    int totalPage = [arr_lastIndex[arrayIndex] integerValue] - [arr_firstIndex[arrayIndex] integerValue] + 1;
+    int currPage = totalPage - ([arr_lastIndex[arrayIndex] integerValue] - currentPageIndex);
+    NSString *label_text = [NSString stringWithFormat:@"%i of %i", currPage, totalPage];
+    [uil_pageNum setText:label_text];
+}
 
 - (void)createBottomMenu {
     uiv_bottomMenu = [[UIView alloc] initWithFrame:CGRectMake((self.view.bounds.size.width - bottomMenuWidth)/2, self.view.bounds.size.height - 22 - bottomMenuHeight, bottomMenuWidth, bottomMenuHeight)];
@@ -205,7 +233,6 @@ static CGFloat  bottomMenuHeight = 37;
         [button setContentEdgeInsets:UIEdgeInsetsMake(0, 3, 0, 0)];
         button.tag = i;
         [button addTarget:self action:@selector(tapBottomButton:) forControlEvents:UIControlEventTouchUpInside];
-        NSLog(@"\n\n The button's frame is %@\n", NSStringFromCGRect(button.frame));
         [arr_menuButton addObject: button];
     }
     for (int i = 0; i < arr_menuButton.count; i++) {
@@ -240,6 +267,7 @@ static CGFloat  bottomMenuHeight = 37;
     UIButton *tappedButton = sender;
     currentPageIndex = [arr_firstIndex[tappedButton.tag] integerValue];
     [self loadPage: currentPageIndex];
+    [self updatePageNumLabelText];
 }
 
 - (void)updateMainMenuHighlightButton {
