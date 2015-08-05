@@ -604,18 +604,33 @@
                                     <rect key="frame" x="598" y="709" width="340" height="37"/>
                                 </variation>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmM-DY-bBI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Summary">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="496" y="709" width="94" height="37"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tapSummaryButton:" destination="ejP-5U-I7s" eventType="touchUpInside" id="Qnx-k0-I30"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="LFp-Uy-dgE"/>
                                 <exclude reference="6Cr-rw-WHX"/>
+                                <exclude reference="rmM-DY-bBI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
                                 <include reference="LFp-Uy-dgE"/>
                                 <include reference="6Cr-rw-WHX"/>
+                                <include reference="rmM-DY-bBI"/>
                             </mask>
                         </variation>
                     </view>
@@ -624,6 +639,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="colorWheel" destination="Ogj-oa-04s" id="aHH-fP-z7U"/>
+                        <outlet property="uib_summary" destination="rmM-DY-bBI" id="8lk-rm-sgJ"/>
                         <outlet property="uiiv_imageView" destination="gys-LT-fGw" id="yrc-Ji-Y0d"/>
                         <outlet property="uis_scrollView" destination="LFp-Uy-dgE" id="YXf-2R-JMt"/>
                         <outlet property="uiv_bottomContainer" destination="6Cr-rw-WHX" id="dko-Ap-9jJ"/>

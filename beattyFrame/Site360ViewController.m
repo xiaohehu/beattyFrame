@@ -15,7 +15,7 @@ static float bottomMenuHeight  = 37.0;
 {
     IBOutlet UIView     *uiv_bottomContainer;
     UIView              *uiv_buttonIndicator;
-    UIButton            *uib_summary;
+    IBOutlet UIButton   *uib_summary;
     NSMutableArray      *arr_menuButton;
 }
 @end
@@ -126,6 +126,13 @@ static float bottomMenuHeight  = 37.0;
     uiv_buttonIndicator = [[UIView alloc] initWithFrame:CGRectMake(0.0, bottomMenuHeight - 4.0, buttonFrame.size.width, 4.0)];
     uiv_buttonIndicator.backgroundColor = [UIColor themeRed];
     [uiv_bottomContainer addSubview: uiv_buttonIndicator];
+    NSLog(@"%@", uiv_bottomContainer);
+
+    uib_summary.backgroundColor = [UIColor whiteColor];
+    [uib_summary setTitle:@"Summary" forState:UIControlStateNormal];
+    [uib_summary setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [uib_summary.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
+    
 }
 
 - (void)tapBottomButton:(id)sender {
@@ -160,6 +167,11 @@ static float bottomMenuHeight  = 37.0;
             break;
     }
 }
+
+- (IBAction)tapSummaryButton:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"loadSummary" object:nil];
+}
+
 
 #pragma mark - METHODS FOR PICKING BUILDING
 #pragma mark picked color from color

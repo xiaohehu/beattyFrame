@@ -78,6 +78,7 @@ static float    menuButtonSize = 50.0;
     // Do any additional setup after loading the view, typically from a nib.
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeSummary:) name:@"RemoveSummeary" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadSummaryInSite360:) name:@"loadSummary" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setEmailDataObject:) name:@"emailData" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateHighlightedButton:) name:@"updatedSupportingSideMenu" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadBuildingVC:) name:@"loadBuilding" object:nil];
@@ -375,6 +376,15 @@ static float    menuButtonSize = 50.0;
  * Pop up Summary/Master_Plan view controller
  * Accroding to selected button's tag to set the initial loaded view
  */
+- (void)loadSummaryInSite360:(NSNotification *)notification {
+    summary = [[SummaryViewController alloc] init];
+    summary.view.frame = self.view.bounds;
+    summary.preloadSitePlan = NO;
+    summary.loadWithAnimation = YES;
+    [self addChildViewController: summary];
+    [self.view addSubview: summary.view];
+}
+
 - (IBAction)loadSummary:(id)sender {
     
     [self tapMenuButtonClose:nil];
