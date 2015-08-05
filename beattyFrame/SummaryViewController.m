@@ -127,9 +127,8 @@ static float topButtonHeight = 38.0;
     
     uib_close = [UIButton buttonWithType:UIButtonTypeCustom];
     uib_close.frame = CGRectMake(uiv_container.frame.origin.x+uiv_container.frame.size.width - 15, uiv_container.frame.origin.y - 15, 30, 30);
-    [uib_close setTitle:@"X" forState:UIControlStateNormal];
-    uib_close.backgroundColor = [UIColor redColor];
-    uib_close.layer.cornerRadius = 15;
+    [uib_close setImage:[UIImage imageNamed:@"grfx_closeBtn.png"] forState:UIControlStateNormal];
+    uib_close.backgroundColor = [UIColor clearColor];
     [uib_close addTarget:self action:@selector(closeThisView:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:uib_close];
 }
