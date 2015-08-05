@@ -92,7 +92,7 @@ static float topButtonHeight = 38.0;
      */
     uiv_container = [UIView new];
     uiv_container.frame = CGRectMake((self.view.frame.size.width-containerWidth)/2, (self.view.frame.size.height-containerHeight)/2, containerWidth, containerHeight);
-    uiv_container.backgroundColor = [UIColor clearColor];
+    uiv_container.backgroundColor = [UIColor whiteColor];
     uiv_container.layer.borderWidth = 1.0;
     uiv_container.layer.borderColor = [UIColor whiteColor].CGColor;
     uiv_container.clipsToBounds = YES;

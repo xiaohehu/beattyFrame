@@ -29,8 +29,12 @@ static float    menuButtonSize = 50.0;
     IBOutlet UIView         *uiv_sideMenuContainer;
     IBOutlet UIView         *uiv_vcCover;
     UIButton                *uib_menuButton;
+    UIButton                *uib_sectionTitle;
+    UIButton                *uib_subTitle;
     UIViewController        *currentViewController;
     UIImageView             *uiiv_initImage;
+    NSString                *currentSectionTitle;
+    NSString                *currentSubTitle;
     // Side menu content button
     __weak IBOutlet UIView *uiv_buutonHighlight;
     // Button containers
@@ -150,6 +154,31 @@ static float    menuButtonSize = 50.0;
     [uib_menuButton addTarget:self action:@selector(tapMenuButtonOpen:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: uib_menuButton];
     
+    uib_sectionTitle = [UIButton buttonWithType:UIButtonTypeCustom];
+    uib_sectionTitle.backgroundColor = [UIColor themeRed];
+    [uib_sectionTitle setTitle:@"Harbor Point" forState:UIControlStateNormal];
+    [uib_sectionTitle setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [uib_sectionTitle.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:25.0]];
+    [uib_sectionTitle sizeToFit];
+    uib_sectionTitle.userInteractionEnabled = NO;
+    CGRect frame = uib_sectionTitle.frame;
+    frame.size.width += 38;
+    uib_sectionTitle.frame = frame;
+    [uiv_vcBigContainer addSubview:uib_sectionTitle];
+    NSLog(@"%@", uib_sectionTitle);
+    
+    uib_subTitle = [UIButton buttonWithType:UIButtonTypeCustom];
+    uib_subTitle.frame = CGRectMake(0.0, uib_sectionTitle.frame.size.height + 2, 50, 32);
+    uib_subTitle.backgroundColor = [UIColor themeRed];
+    [uib_subTitle setTitle:@"Site 360" forState:UIControlStateNormal];
+    [uib_subTitle setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [uib_subTitle.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:18.0]];
+    [uib_subTitle sizeToFit];
+    uib_subTitle.userInteractionEnabled = NO;
+    CGRect frameSub = uib_subTitle.frame;
+    frameSub.size.width += 38;
+    uib_subTitle.frame = frameSub;
+    [uiv_vcBigContainer addSubview:uib_subTitle];
 }
 
 - (void)groupSideMenuButtons {
@@ -168,6 +197,19 @@ static float    menuButtonSize = 50.0;
                             uib_financial,
                             uib_currentFutureTrends
                             ];
+}
+
+#pragma mark - Update Titles
+- (void)updateSectionTitle:(NSString *)sectionTitle {
+    [uib_sectionTitle setTitle:sectionTitle forState:UIControlStateNormal];
+}
+
+- (void)updateSubTitle:(NSString *)subTitle {
+    [uib_subTitle setTitle:subTitle forState:UIControlStateNormal];
+    [uib_subTitle sizeToFit];
+    CGRect frame = uib_subTitle.frame;
+    frame.size.width += 38;
+    uib_subTitle.frame = frame;
 }
 
 #pragma mark - UI element interaction
@@ -280,15 +322,21 @@ static float    menuButtonSize = 50.0;
     buildingVC.view.frame = self.view.bounds;
     buildingVC.view.transform = CGAffineTransformMakeTranslation(0, buildingVC.view.frame.size.height);
     [self addChildViewController:buildingVC];
+    
+    [self updateSubTitle:@"Site 360 - Parcel Detail"];
+    
     [uiv_vcBigContainer insertSubview:buildingVC.view aboveSubview:currentViewController.view];
     [UIView animateWithDuration:0.33 animations:^(void){
         buildingVC.view.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished){
-        currentViewController = buildingVC;
+//        currentViewController = buildingVC;
     }];
 }
 
 - (void)removeBuildingVC:(NSNotification *)notification {
+    
+    [self updateSubTitle:@"Site 360"];
+    
     [UIView animateWithDuration:0.33 animations:^(void){
         buildingVC.view.transform = CGAffineTransformMakeTranslation(0, self.view.bounds.size.height);
     } completion:^(BOOL finished){
@@ -348,7 +396,8 @@ static float    menuButtonSize = 50.0;
     viewController.view.frame = self.view.bounds;
     [self addChildViewController:viewController];
     viewController.view.alpha = 0.0;
-    [uiv_vcBigContainer addSubview: viewController.view];
+//    [uiv_vcBigContainer addSubview: viewController.view];
+    [uiv_vcBigContainer insertSubview:viewController.view belowSubview:uib_sectionTitle];
     /*
      * Check current view controller
      * Do the fade out/in animation

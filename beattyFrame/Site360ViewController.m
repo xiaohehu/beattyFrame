@@ -126,7 +126,6 @@ static float bottomMenuHeight  = 37.0;
     uiv_buttonIndicator = [[UIView alloc] initWithFrame:CGRectMake(0.0, bottomMenuHeight - 4.0, buttonFrame.size.width, 4.0)];
     uiv_buttonIndicator.backgroundColor = [UIColor themeRed];
     [uiv_bottomContainer addSubview: uiv_buttonIndicator];
-    NSLog(@"%@", uiv_bottomContainer);
 
     uib_summary.backgroundColor = [UIColor whiteColor];
     [uib_summary setTitle:@"Summary" forState:UIControlStateNormal];
