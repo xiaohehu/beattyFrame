@@ -202,6 +202,10 @@ static float    menuButtonSize = 50.0;
 #pragma mark - Update Titles
 - (void)updateSectionTitle:(NSString *)sectionTitle {
     [uib_sectionTitle setTitle:sectionTitle forState:UIControlStateNormal];
+    [uib_sectionTitle sizeToFit];
+    CGRect frame = uib_sectionTitle.frame;
+    frame.size.width += 38;
+    uib_sectionTitle.frame = frame;
 }
 
 - (void)updateSubTitle:(NSString *)subTitle {
@@ -310,6 +314,7 @@ static float    menuButtonSize = 50.0;
     for (UIButton *button in arr_sideMenuBttuons) {
         if (button.tag == buttonTag) {
             [self highlightTheButton:button withAnimation:NO];
+            [self updateSubTitle:button.titleLabel.text];
             return;
         }
     }
@@ -376,6 +381,8 @@ static float    menuButtonSize = 50.0;
  */
 - (IBAction)loadSupporting:(id)sender {
     
+    [self updateSectionTitle:@"Supporting Stories"];
+    
     UIButton *tappedButton = sender;
     [self highlightTheButton:tappedButton withAnimation:YES];
     SupportingViewController *supporting = [self.storyboard instantiateViewControllerWithIdentifier:@"SupportingViewController"];
@@ -385,6 +392,10 @@ static float    menuButtonSize = 50.0;
 }
 
 - (IBAction)loadLoaction:(id)sender {
+    
+    [self updateSectionTitle:@"Location & Access"];
+    [self updateSubTitle:@"Location Map"];
+    
     UIButton *tappedButton = sender;
     [self highlightTheButton:tappedButton withAnimation:YES];
     LocationViewController *location = [self.storyboard instantiateViewControllerWithIdentifier:@"LocationViewController"];;
@@ -426,6 +437,10 @@ static float    menuButtonSize = 50.0;
  * Accroding to selected button's tag to set the initial loaded view
  */
 - (void)loadSummaryInSite360:(NSNotification *)notification {
+    
+    [self updateSectionTitle:@"Harbor Point"];
+    [self updateSubTitle:@"Site 360"];
+    
     summary = [[SummaryViewController alloc] init];
     summary.view.frame = self.view.bounds;
     summary.preloadSitePlan = NO;
@@ -435,7 +450,6 @@ static float    menuButtonSize = 50.0;
 }
 
 - (IBAction)loadSummary:(id)sender {
-    
     [self tapMenuButtonClose:nil];
     summary = [[SummaryViewController alloc] init];
     summary.view.frame = self.view.bounds;
