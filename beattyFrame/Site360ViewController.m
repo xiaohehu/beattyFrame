@@ -8,8 +8,16 @@
 
 #import "Site360ViewController.h"
 #import "BuildingViewController.h"
+#import "UIColor+Extensions.h"
+static int  phaseNumber = 4;
+static float bottomMenuHeight  = 37.0;
 @interface Site360ViewController ()
-
+{
+    IBOutlet UIView     *uiv_bottomContainer;
+    UIView              *uiv_buttonIndicator;
+    UIButton            *uib_summary;
+    NSMutableArray      *arr_menuButton;
+}
 @end
 
 @implementation Site360ViewController
@@ -22,6 +30,10 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeBuilding:) name:@"removeBuilding" object:nil];
     self.view.backgroundColor = [UIColor whiteColor];
     [self appInit];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self createBottomMenu];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,8 +91,74 @@
             namesArray = [[dict valueForKey:@"devices"]objectForKey:[[self deviceInfo] objectForKey:@"EMBDeviceType"]];
         }
     }
+}
+
+- (void)createBottomMenu {
+    arr_menuButton = [[NSMutableArray alloc] init];
+    CGRect buttonFrame = CGRectZero;
+    for (int i = 0 ; i < phaseNumber; i++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        NSString *title = [NSString stringWithFormat:@"Phase %i",i+1];
+        [button setTitle:title forState:UIControlStateNormal];
+        [button sizeToFit];
+        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [button.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
+        button.backgroundColor = [UIColor whiteColor];
+        CGRect frame = button.frame;
+        frame.size.width += 19;
+        frame.size.height = bottomMenuHeight;
+        button.frame = frame;
+        [button setContentEdgeInsets:UIEdgeInsetsMake(0, 3, 0, 0)];
+        button.tag = i;
+        buttonFrame = button.frame;
+        [button addTarget:self action:@selector(tapBottomButton:) forControlEvents:UIControlEventTouchUpInside];
+        [arr_menuButton addObject: button];
+    }
+    CGFloat menuWidth = buttonFrame.size.width * phaseNumber;
+    uiv_bottomContainer.frame = CGRectMake(self.view.bounds.size.width - 86 - menuWidth, self.view.bounds.size.height - 22 - bottomMenuHeight, menuWidth, bottomMenuHeight);
+    uiv_bottomContainer.backgroundColor = [UIColor whiteColor];
+    for (int i = 0; i < arr_menuButton.count; i++) {
+        UIButton *button = arr_menuButton[i];
+        button.frame = CGRectMake(buttonFrame.size.width*i, 0, buttonFrame.size.width, bottomMenuHeight);
+        [uiv_bottomContainer addSubview:button];
+    }
     
-//    NSLog(@"namesArray %@",[namesArray description]);
+    uiv_buttonIndicator = [[UIView alloc] initWithFrame:CGRectMake(0.0, bottomMenuHeight - 4.0, buttonFrame.size.width, 4.0)];
+    uiv_buttonIndicator.backgroundColor = [UIColor themeRed];
+    [uiv_bottomContainer addSubview: uiv_buttonIndicator];
+}
+
+- (void)tapBottomButton:(id)sender {
+    UIButton *tappedButton = sender;
+    CGRect indicatorFrame = uiv_buttonIndicator.frame;
+    phaseIndex = tappedButton.tag;
+    [UIView animateWithDuration:0.33 animations:^(void){
+        uiv_buttonIndicator.frame = CGRectMake(tappedButton.frame.origin.x, indicatorFrame.origin.y, indicatorFrame.size.width, indicatorFrame.size.height);
+    }];
+    switch (tappedButton.tag) {
+        case 0: {
+            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+            colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+            break;
+        }
+        case 1: {
+            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_b_base"];
+            colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_b_color"];
+            break;
+        }
+        case 2: {
+            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_d_base"];
+            colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_d_color"];
+            break;
+        }
+        case 3: {
+            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+            colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+            break;
+        }
+        default:
+            break;
+    }
 }
 
 #pragma mark - METHODS FOR PICKING BUILDING
@@ -163,6 +241,12 @@
             } else if (phaseIndex == 1) {
                 uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_b_base"];
                 colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_b_color"];
+            } else if (phaseIndex == 2) {
+                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_d_base"];
+                colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_d_color"];
+            } else if (phaseIndex == 3) {
+                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+                colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
             }
             [sender setTranslation:CGPointZero inView:[myView superview]];
             
@@ -181,6 +265,12 @@
                 } else if (phaseIndex == 1) {
                     uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_b_base"];
                     colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_b_color"];
+                } else if (phaseIndex == 2) {
+                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_d_base"];
+                    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_d_color"];
+                } else if (phaseIndex == 3) {
+                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+                    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
                 }
                 [sender setTranslation:CGPointZero inView:[myView superview]];
             }

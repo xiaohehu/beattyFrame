@@ -456,7 +456,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="28" y="38" width="45" height="22"/>
+                                            <rect key="frame" x="95" y="685" width="45" height="22"/>
                                         </variation>
                                         <connections>
                                             <action selector="tapResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UTf-vO-JJ3"/>
@@ -597,16 +597,25 @@
                                     </mask>
                                 </variation>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cr-rw-WHX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="598" y="709" width="340" height="37"/>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="LFp-Uy-dgE"/>
+                                <exclude reference="6Cr-rw-WHX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
                                 <include reference="LFp-Uy-dgE"/>
+                                <include reference="6Cr-rw-WHX"/>
                             </mask>
                         </variation>
                     </view>
@@ -617,6 +626,7 @@
                         <outlet property="colorWheel" destination="Ogj-oa-04s" id="aHH-fP-z7U"/>
                         <outlet property="uiiv_imageView" destination="gys-LT-fGw" id="yrc-Ji-Y0d"/>
                         <outlet property="uis_scrollView" destination="LFp-Uy-dgE" id="YXf-2R-JMt"/>
+                        <outlet property="uiv_bottomContainer" destination="6Cr-rw-WHX" id="dko-Ap-9jJ"/>
                         <outlet property="uiv_container" destination="gY6-51-LWV" id="ENh-TZ-Fxb"/>
                     </connections>
                 </viewController>
