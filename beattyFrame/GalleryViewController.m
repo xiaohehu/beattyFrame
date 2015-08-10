@@ -14,11 +14,14 @@
 #import "EMBSPSupplementaryView.h"
 #import "UIImage+ScaleToFit.h"
 #import "TLSpringFlowLayout.h"
+#import "UIColor+Extensions.h"
 //#import "UIColor+Extensions.h"
 
 @interface GalleryViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, XHGalleryDelegate>
 {
-    NSArray                     *arr_rawData;
+    UIButton            *uib_sectionTitle;
+   
+    NSArray             *arr_rawData;
     
     UICollectionView	*_collectionView;
     NSString			*secTitle;
@@ -33,7 +36,7 @@
     NSMutableString		*totalBytesString;
     NSMutableArray		*filesInPDF;
     NSMutableArray		*bytesInPDF;
-    CGFloat totalBhytes;
+    CGFloat             totalBhytes;
     
     __weak IBOutlet UIView *uiv_sharePanel;
     __weak IBOutlet UIButton *uib_shareSwitch;
@@ -112,6 +115,8 @@
     
     [self setShareSwitchButton];
     uiv_sharePanel.transform = CGAffineTransformMakeTranslation(0, uiv_sharePanel.frame.size.height);
+    
+    [self createTitleLabel];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -135,6 +140,7 @@
 - (void)shareSwitch:(id)sender {
     uib_shareSwitch.selected = !uib_shareSwitch.selected;
     isShare = uib_shareSwitch.selected;
+    [self updateTitleLabel];
     if (isShare) {
         [UIView animateWithDuration:0.33 animations:^(void){
             uiv_sharePanel.transform = CGAffineTransformIdentity;
@@ -150,6 +156,34 @@
     [self dismissViewControllerAnimated:YES completion:^(void){
     
     }];
+}
+
+- (void)createTitleLabel {
+    
+    uib_sectionTitle = [UIButton buttonWithType:UIButtonTypeCustom];
+    uib_sectionTitle.backgroundColor = [UIColor themeRed];
+    [uib_sectionTitle setTitle:@"Gallery" forState:UIControlStateNormal];
+    [uib_sectionTitle setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [uib_sectionTitle.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:25.0]];
+    [uib_sectionTitle sizeToFit];
+    uib_sectionTitle.userInteractionEnabled = NO;
+    CGRect frame = uib_sectionTitle.frame;
+    frame.size.width += 38;
+    uib_sectionTitle.frame = frame;
+    [self.view addSubview:uib_sectionTitle];
+    NSLog(@"%@", uib_sectionTitle);
+}
+
+- (void)updateTitleLabel {
+    if (isShare) {
+        [uib_sectionTitle setTitle:@"Share" forState:UIControlStateNormal];
+    } else {
+        [uib_sectionTitle setTitle:@"Gallery" forState:UIControlStateNormal];
+    }
+    [uib_sectionTitle sizeToFit];
+    CGRect frame = uib_sectionTitle.frame;
+    frame.size.width += 38;
+    uib_sectionTitle.frame = frame;
 }
 
 #pragma mark - Collection View

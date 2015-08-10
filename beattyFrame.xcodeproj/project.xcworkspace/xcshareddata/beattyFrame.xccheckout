@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>7A7012E7-B6E4-4E47-B2A2-AD7658E6CF8A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>beattyFrame</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>63B687531FA4E04DAA492050323585BC7CAE45C9</key>
 		<string>https://github.com/xiaohehu/beattyFrame.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>beattyFrame.xcodeproj/project.xcworkspace</string>
+	<string>beattyFrame.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>63B687531FA4E04DAA492050323585BC7CAE45C9</key>

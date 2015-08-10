@@ -165,7 +165,6 @@ static float    menuButtonSize = 50.0;
     frame.size.width += 38;
     uib_sectionTitle.frame = frame;
     [uiv_vcBigContainer addSubview:uib_sectionTitle];
-    NSLog(@"%@", uib_sectionTitle);
     
     uib_subTitle = [UIButton buttonWithType:UIButtonTypeCustom];
     uib_subTitle.frame = CGRectMake(0.0, uib_sectionTitle.frame.size.height + 2, 50, 32);
