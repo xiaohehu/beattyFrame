@@ -4,19 +4,19 @@
 <array>
 	<dict>
 		<key>image</key>
-		<string>hotel.png</string>
+		<string>supporting_story_1.jpg</string>
 		<key>title</key>
 		<string>History</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>main_bg.jpg</string>
+		<string>supporting_story_2.jpg</string>
 		<key>title</key>
-		<string>Eco-District</string>
+		<string>History</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>residential.png</string>
+		<string>supporting_story_3.jpg</string>
 		<key>title</key>
 		<string>Trends</string>
 	</dict>
@@ -28,7 +28,7 @@
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>office.png</string>
+		<string>supporting_story_4.jpg</string>
 		<key>title</key>
 		<string>Facts &amp; Figures</string>
 	</dict>
