@@ -12,6 +12,8 @@
 #import "animationView.h"
 //#import "motionImageViewController.h"
 
+#define animationIndex  2
+
 @interface embDataViewController () {
 
 }
@@ -35,7 +37,7 @@
 #pragma mark - LAYOUT FLOOR PLAN DATA
 -(void)loadDataAndView
 {
-    if (vcIndex == 3) { // Load the animated grids view
+    if (vcIndex == animationIndex) { // Load the animated grids view
         animationView *animation = [[animationView alloc] initWithFrame:self.view.bounds];
         [self.view addSubview: animation];
     } else {

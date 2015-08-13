@@ -4,19 +4,13 @@
 <array>
 	<dict>
 		<key>image</key>
-		<string>supporting_story_1.jpg</string>
+		<string>tbd_1.jpg</string>
 		<key>title</key>
 		<string>History</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>supporting_story_2.jpg</string>
-		<key>title</key>
-		<string>History</string>
-	</dict>
-	<dict>
-		<key>image</key>
-		<string>supporting_story_3.jpg</string>
+		<string>tbd_2.jpg</string>
 		<key>title</key>
 		<string>Trends</string>
 	</dict>
@@ -28,7 +22,31 @@
 	</dict>
 	<dict>
 		<key>image</key>
+		<string>supporting_story_1.jpg</string>
+		<key>title</key>
+		<string>Lifestyle &amp; Culture</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>supporting_story_2.jpg</string>
+		<key>title</key>
+		<string>Lifestyle &amp; Culture</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>supporting_story_3.jpg</string>
+		<key>title</key>
+		<string>Lifestyle &amp; Culture</string>
+	</dict>
+	<dict>
+		<key>image</key>
 		<string>supporting_story_4.jpg</string>
+		<key>title</key>
+		<string>Lifestyle &amp; Culture</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tbd_3.jpg</string>
 		<key>title</key>
 		<string>Facts &amp; Figures</string>
 	</dict>

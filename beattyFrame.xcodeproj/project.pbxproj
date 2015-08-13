@@ -598,6 +598,9 @@
 		8251FE641B7BB2470021C1BA /* supporting_story_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FE601B7BB2470021C1BA /* supporting_story_2.jpg */; };
 		8251FE651B7BB2470021C1BA /* supporting_story_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FE611B7BB2470021C1BA /* supporting_story_3.jpg */; };
 		8251FE661B7BB2470021C1BA /* supporting_story_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FE621B7BB2470021C1BA /* supporting_story_4.jpg */; };
+		8251FE6A1B7CCB110021C1BA /* tbd_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FE671B7CCB110021C1BA /* tbd_1.jpg */; };
+		8251FE6B1B7CCB110021C1BA /* tbd_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FE681B7CCB110021C1BA /* tbd_2.jpg */; };
+		8251FE6C1B7CCB110021C1BA /* tbd_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FE691B7CCB110021C1BA /* tbd_3.jpg */; };
 		82A128301B66657C00564266 /* animationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A1282F1B66657C00564266 /* animationView.m */; };
 		82A1285C1B66668800564266 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82A128321B66668800564266 /* bg.jpg */; };
 		82A1285D1B66668800564266 /* bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82A128331B66668800564266 /* bg@2x.jpg */; };
@@ -1282,6 +1285,9 @@
 		8251FE601B7BB2470021C1BA /* supporting_story_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = supporting_story_2.jpg; sourceTree = "<group>"; };
 		8251FE611B7BB2470021C1BA /* supporting_story_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = supporting_story_3.jpg; sourceTree = "<group>"; };
 		8251FE621B7BB2470021C1BA /* supporting_story_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = supporting_story_4.jpg; sourceTree = "<group>"; };
+		8251FE671B7CCB110021C1BA /* tbd_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tbd_1.jpg; sourceTree = "<group>"; };
+		8251FE681B7CCB110021C1BA /* tbd_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tbd_2.jpg; sourceTree = "<group>"; };
+		8251FE691B7CCB110021C1BA /* tbd_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tbd_3.jpg; sourceTree = "<group>"; };
 		82A1282E1B66657B00564266 /* animationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = animationView.h; path = utilities/animationView.h; sourceTree = "<group>"; };
 		82A1282F1B66657C00564266 /* animationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = animationView.m; path = utilities/animationView.m; sourceTree = "<group>"; };
 		82A128321B66668800564266 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
@@ -2254,6 +2260,9 @@
 				8251FE601B7BB2470021C1BA /* supporting_story_2.jpg */,
 				8251FE611B7BB2470021C1BA /* supporting_story_3.jpg */,
 				8251FE621B7BB2470021C1BA /* supporting_story_4.jpg */,
+				8251FE671B7CCB110021C1BA /* tbd_1.jpg */,
+				8251FE681B7CCB110021C1BA /* tbd_2.jpg */,
+				8251FE691B7CCB110021C1BA /* tbd_3.jpg */,
 			);
 			name = supporting_stories;
 			path = src/grfx/supporting_stories;
@@ -2357,6 +2366,7 @@
 				82A1286B1B66668800564266 /* fact-grid-03-sm@2x.png in Resources */,
 				824D2A531B61671600E5F5A5 /* phase_b_color_00024.jpg in Resources */,
 				824D2A1B1B61671600E5F5A5 /* phase_b_base_00040.jpg in Resources */,
+				8251FE6C1B7CCB110021C1BA /* tbd_3.jpg in Resources */,
 				824D2BEE1B62D02100E5F5A5 /* share_View 12 - N Randolph.jpg.jpg in Resources */,
 				824D2A361B61671600E5F5A5 /* phase_b_base_00067.jpg in Resources */,
 				824D299C1B61671600E5F5A5 /* phase_a_base_00057.jpg in Resources */,
@@ -2375,6 +2385,7 @@
 				824D2BF41B62D02100E5F5A5 /* share_View 8 - Plaza.jpg.jpg in Resources */,
 				824D2B471B62B5C600E5F5A5 /* EMBSPSectionHeader.xib in Resources */,
 				824D2B4F1B62B92500E5F5A5 /* share_but_pdf@2x.png in Resources */,
+				8251FE6A1B7CCB110021C1BA /* tbd_1.jpg in Resources */,
 				82A128811B66668800564266 /* fact-grid-09-lg@2x.png in Resources */,
 				824D2A981B61671600E5F5A5 /* phase_d_base_00021.jpg in Resources */,
 				824D2BEB1B62D02100E5F5A5 /* share_View 1 - Corner.jpg.jpg in Resources */,
@@ -2804,6 +2815,7 @@
 				824D2B0D1B61671600E5F5A5 /* phase_d_color_00066.jpg in Resources */,
 				824D2ABC1B61671600E5F5A5 /* phase_d_base_00057.jpg in Resources */,
 				824D2A021B61671600E5F5A5 /* phase_b_base_00015.jpg in Resources */,
+				8251FE6B1B7CCB110021C1BA /* tbd_2.jpg in Resources */,
 				824D29F11B61671600E5F5A5 /* phase_a_color_00070.jpg in Resources */,
 				824D2A5B1B61671600E5F5A5 /* phase_b_color_00032.jpg in Resources */,
 				824D2A911B61671600E5F5A5 /* phase_d_base_00014.jpg in Resources */,
