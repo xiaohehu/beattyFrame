@@ -14,7 +14,7 @@
 #import "xhPageViewController.h"
 static CGFloat  bottomMenuWidth = 572;
 static CGFloat  bottomMenuHeight = 37;
-static int      animationViewIndex = 3;
+static int      animationViewIndex = 6;
 @interface SupportingViewController ()<UIPageViewControllerDelegate, UIGestureRecognizerDelegate>
 {
     UIView          *uiv_bottomMenu;
@@ -83,16 +83,16 @@ static int      animationViewIndex = 3;
     arr_lastIndex = @[
                       @0,
                       @1,
+                      @5,
                       @6,
-                      @7,
-                      @8
+                      @7
                       ];
     arr_firstIndex = @[
                        @0,
                        @1,
                        @2,
-                       @7,
-                       @8
+                       @6,
+                       @7
                        ];
 }
 # pragma mark - UIPageView Controller
@@ -153,7 +153,7 @@ static int      animationViewIndex = 3;
     currentPageIndex = (int)[self.modelController indexOfViewController:theCurrentViewController];
     [self checkCurrentIndexPosition];
     
-    if (currentPageIndex == 3) {
+    if (currentPageIndex == animationViewIndex) {
         self.pageViewController.swipeArea = CGRectMake(22, 204, 360, 360);
     } else {
         self.pageViewController.swipeArea = CGRectZero;

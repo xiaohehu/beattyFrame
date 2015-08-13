@@ -12,7 +12,7 @@
 #import "animationView.h"
 //#import "motionImageViewController.h"
 
-#define animationIndex  2
+#define animationIndex  6
 
 @interface embDataViewController () {
 
