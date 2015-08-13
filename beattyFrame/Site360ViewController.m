@@ -148,13 +148,13 @@ static float bottomMenuHeight  = 37.0;
             break;
         }
         case 1: {
-            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_b_base"];
-            colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_b_color"];
+            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+            colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
             break;
         }
         case 2: {
-            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_d_base"];
-            colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_d_color"];
+            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+            colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
             break;
         }
         case 3: {
@@ -250,11 +250,11 @@ static float bottomMenuHeight  = 37.0;
                 uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
                 colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
             } else if (phaseIndex == 1) {
-                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_b_base"];
-                colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_b_color"];
+                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+                colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
             } else if (phaseIndex == 2) {
-                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_d_base"];
-                colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_d_color"];
+                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+                colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
             } else if (phaseIndex == 3) {
                 uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
                 colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
@@ -274,11 +274,11 @@ static float bottomMenuHeight  = 37.0;
                     uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
                     colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
                 } else if (phaseIndex == 1) {
-                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_b_base"];
-                    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_b_color"];
+                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+                    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
                 } else if (phaseIndex == 2) {
-                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_d_base"];
-                    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_d_color"];
+                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+                    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
                 } else if (phaseIndex == 3) {
                     uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
                     colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
@@ -416,21 +416,21 @@ static float bottomMenuHeight  = 37.0;
 - (UIImage *)maskAtIndex:(NSUInteger)index maskType:(NSString*)maskName {
     // use "imageWithContentsOfFile:" instead of "imageNamed:" here to avoid caching our images
     NSString *maskkName = [self maskNameAtIndex:index maskType:maskName];
-    NSString *path = [[NSBundle mainBundle] pathForResource:maskkName ofType:@"jpg"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:maskkName ofType:@"png"];
     return [UIImage imageWithContentsOfFile:path];
 }
 
 - (UIImage *)imageAtIndex:(NSUInteger)index phaseType:(NSString*)phaseName {
     // use "imageWithContentsOfFile:" instead of "imageNamed:" here to avoid caching our images
     NSString *imageName = [self imageNameAtIndex:index phaseType:phaseName];
-    NSString *path = [[NSBundle mainBundle] pathForResource:imageName ofType:@"jpg"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:imageName ofType:@"png"];
     return [UIImage imageWithContentsOfFile:path];
 }
 
 - (UIImage *)phaseaAtIndex:(NSUInteger)index {
     // use "imageWithContentsOfFile:" instead of "imageNamed:" here to avoid caching our images
     NSString *phaseaName = [self phaseaNameAtIndex:index];
-    NSString *path = [[NSBundle mainBundle] pathForResource:phaseaName ofType:@"jpg"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:phaseaName ofType:@"png"];
     return [UIImage imageWithContentsOfFile:path];
     //NSLog(@"phasea: %@", path);
 }
