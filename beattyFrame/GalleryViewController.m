@@ -212,23 +212,23 @@
     return sumOfImg;
 }
 
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
-{
-    if (section >= 1) {
-        return UIEdgeInsetsMake(0, 0, 0, 0);
-    }
-    else {
-        return UIEdgeInsetsMake(10, 0, 0, 0);
-    }
-}
+//- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+//{
+//    if (section >= 1) {
+//        return UIEdgeInsetsMake(0, 0, 0, 0);
+//    }
+//    else {
+//        return UIEdgeInsetsMake(10, 0, 0, 0);
+//    }
+//}
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    if (section >= 1) {
+//    if (section >= 1) {
         return CGSizeMake(500, 60);
-    }
-    else {
-        return CGSizeMake(500, 20);
-    }
+//    }
+//    else {
+//        return CGSizeMake(500, 20);
+//    }
 }
 
 -(UICollectionReusableView *)collectionView:(UICollectionView *)ccollectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
@@ -238,16 +238,11 @@
     if(kind == UICollectionElementKindSectionHeader){
         supplementaryView = [ccollectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"cvSectionHeader" forIndexPath:indexPath];
         supplementaryView.backgroundColor = [UIColor clearColor];
-//        NSDictionary *gallDictionary = self.arr_AlbumData[indexPath.section]; // grab dict
-        secTitle = @"hahahahaha";//[[gallDictionary objectForKey:@"SectionName"] uppercaseString];
+        NSDictionary *gallDictionary = arr_AlbumData[indexPath.section]; // grab dict
+        secTitle = [[gallDictionary objectForKey:@"SectionName"] uppercaseString];
         supplementaryView.label.text = secTitle;
         supplementaryView.label.autoresizesSubviews = YES;
-        if (indexPath.section >= 1) {
-            supplementaryView.label.transform = CGAffineTransformMakeTranslation(0 , 20);
-        }
-        else {
-            supplementaryView.label.transform = CGAffineTransformMakeTranslation(0 , 0);
-        }
+        supplementaryView.label.transform = CGAffineTransformMakeTranslation(0 , 15);
     }
     
     
