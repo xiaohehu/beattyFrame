@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface EMBSPSupplementaryView : UICollectionReusableView
-@property (nonatomic, strong) UILabel *label;
+
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end

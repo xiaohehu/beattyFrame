@@ -15,6 +15,7 @@
 #import "UIImage+ScaleToFit.h"
 #import "TLSpringFlowLayout.h"
 #import "UIColor+Extensions.h"
+
 //#import "UIColor+Extensions.h"
 
 @interface GalleryViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, XHGalleryDelegate>
@@ -89,9 +90,10 @@
     [_collectionView setDataSource:self];
     [_collectionView setDelegate:self];
     _collectionView.frame = CGRectMake(20, 60, 990, 630);
-    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellIdentifier"];
+//    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellIdentifier"];
     [_collectionView registerClass:[EMBSPCell class] forCellWithReuseIdentifier:@"EMBSPCell"];
-    [_collectionView registerClass:[EMBSPSupplementaryView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"EMBSPSupplementaryView"];
+    [_collectionView registerClass:[EMBSPSupplementaryView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"cvSectionHeader"];
+    [_collectionView reloadData];
     [_collectionView setBackgroundColor:[UIColor clearColor]];
     [self.view insertSubview:_collectionView belowSubview:uitv_sharedList];
     
@@ -128,7 +130,7 @@
 {
     NSString *url = [[NSBundle mainBundle] pathForResource:@"photoData" ofType:@"plist"];
     arr_rawData = [[NSArray alloc] initWithContentsOfFile:url];
-    NSLog(@"%@", arr_rawData);
+//    NSLog(@"%@", arr_rawData);
 }
 
 - (void)setShareSwitchButton {
@@ -171,7 +173,7 @@
     frame.size.width += 38;
     uib_sectionTitle.frame = frame;
     [self.view addSubview:uib_sectionTitle];
-    NSLog(@"%@", uib_sectionTitle);
+//    NSLog(@"%@", uib_sectionTitle);
 }
 
 - (void)updateTitleLabel {
@@ -190,6 +192,7 @@
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     NSUInteger numGallSections = [albumSections count];
+    NSLog(@"%i", numGallSections);
     return numGallSections;
 }
 
@@ -209,24 +212,46 @@
     return sumOfImg;
 }
 
-//-(UICollectionReusableView *)collectionView:(UICollectionView *)ccollectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
-
-//    EMBSPSupplementaryView *supplementaryView = [_collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"EMBSPSupplementaryView" forIndexPath:indexPath];
-//    
-//    if(kind == UICollectionElementKindSectionHeader){
-//        supplementaryView.backgroundColor = [UIColor clearColor];
-//        NSDictionary *gallDictionary = albumSections[indexPath.section]; // grab dict
-//        secTitle = [[gallDictionary objectForKey:@"SectionName"] uppercaseString];
-//        supplementaryView.label.text = secTitle;
-//        supplementaryView.label.textColor = [UIColor darkGrayColor];
-//        supplementaryView.label.font = [UIFont fontWithName:@"JosefinSans-SemiBold" size:20];
-//    }
-//    
-//    return supplementaryView;
-//}
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    if (section >= 1) {
+        return UIEdgeInsetsMake(0, 0, 0, 0);
+    }
+    else {
+        return UIEdgeInsetsMake(10, 0, 0, 0);
+    }
+}
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    return CGSizeMake(500, 25);
+    if (section >= 1) {
+        return CGSizeMake(500, 60);
+    }
+    else {
+        return CGSizeMake(500, 20);
+    }
+}
+
+-(UICollectionReusableView *)collectionView:(UICollectionView *)ccollectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+
+    EMBSPSupplementaryView *supplementaryView = [[EMBSPSupplementaryView alloc] init];
+    
+    if(kind == UICollectionElementKindSectionHeader){
+        supplementaryView = [ccollectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"cvSectionHeader" forIndexPath:indexPath];
+        supplementaryView.backgroundColor = [UIColor clearColor];
+//        NSDictionary *gallDictionary = self.arr_AlbumData[indexPath.section]; // grab dict
+        secTitle = @"hahahahaha";//[[gallDictionary objectForKey:@"SectionName"] uppercaseString];
+        supplementaryView.label.text = secTitle;
+        supplementaryView.label.autoresizesSubviews = YES;
+        if (indexPath.section >= 1) {
+            supplementaryView.label.transform = CGAffineTransformMakeTranslation(0 , 20);
+        }
+        else {
+            supplementaryView.label.transform = CGAffineTransformMakeTranslation(0 , 0);
+        }
+    }
+    
+    
+    return supplementaryView;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -247,7 +272,6 @@
         
         NSMutableArray *imgArray = [[NSMutableArray alloc] initWithArray:[itemDic objectForKey:@"thumbs"]];
         NSMutableArray *capArray = [[NSMutableArray alloc] initWithArray:[itemDic objectForKey:@"captions"]];
-        NSLog(@"%@", capArray);
         [totalImg addObjectsFromArray:imgArray];
         [totalCap addObjectsFromArray:capArray];
     }
