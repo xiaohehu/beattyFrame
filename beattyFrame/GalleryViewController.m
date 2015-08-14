@@ -81,7 +81,7 @@
     uib_Email.enabled = NO;
     uib_PDF.enabled = NO;
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    [flowLayout setItemSize:CGSizeMake(175, 175)];
+    [flowLayout setItemSize:CGSizeMake(137, 103)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     flowLayout.sectionInset = UIEdgeInsetsMake(15, 0, 40, 0);
     
@@ -247,10 +247,11 @@
         
         NSMutableArray *imgArray = [[NSMutableArray alloc] initWithArray:[itemDic objectForKey:@"thumbs"]];
         NSMutableArray *capArray = [[NSMutableArray alloc] initWithArray:[itemDic objectForKey:@"captions"]];
+        NSLog(@"%@", capArray);
         [totalImg addObjectsFromArray:imgArray];
         [totalCap addObjectsFromArray:capArray];
     }
-    
+    cell.backgroundColor = [UIColor redColor];
     [cell.titleLabel setText:[totalCap objectAtIndex:indexPath.row]];
     cell.titleLabel.font = [UIFont fontWithName:@"JosefinSans-SemiBold" size:13];
     
@@ -287,7 +288,7 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(105, 117);
+    return CGSizeMake(137, 130);
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {

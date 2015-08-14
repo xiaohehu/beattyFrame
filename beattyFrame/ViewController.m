@@ -307,6 +307,8 @@ static float    menuButtonSize = 50.0;
 
 /*
  * Highlight side menu's button by receiving notification from page view controller
+ *
+ *!!!!!! If the start page index is changed, update buttons tag in storyboard !!!!!!!
  */
 - (void)updateHighlightedButton:(NSNotification *)notification {
     int buttonTag = [[notification.userInfo objectForKey:@"index"] integerValue]+20;
