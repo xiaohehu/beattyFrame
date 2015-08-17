@@ -26,6 +26,10 @@
 		82115DFC1B7143D800A36684 /* grfx_resartBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82115DFA1B7143D800A36684 /* grfx_resartBtn@2x.png */; };
 		82115DFF1B7144C200A36684 /* grfx_initImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82115DFD1B7144C200A36684 /* grfx_initImage.jpg */; };
 		82115E001B7144C200A36684 /* grfx_initImage@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82115DFE1B7144C200A36684 /* grfx_initImage@2x.jpg */; };
+		8228227D1B822134004154E7 /* sponsorshipModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8228227C1B822134004154E7 /* sponsorshipModelController.m */; };
+		822822801B822243004154E7 /* sponsorDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8228227F1B822243004154E7 /* sponsorDataViewController.m */; };
+		822822831B82290C004154E7 /* SponsorshipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822822821B82290C004154E7 /* SponsorshipViewController.m */; };
+		822822851B824339004154E7 /* sponsorship_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 822822841B824339004154E7 /* sponsorship_data.plist */; };
 		8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8243874E1B6929A1003AC214 /* SupportingViewController.m */; };
 		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
 		824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824387571B6BAA14003AC214 /* xhPageViewController.m */; };
@@ -706,6 +710,13 @@
 		82115DFA1B7143D800A36684 /* grfx_resartBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_resartBtn@2x.png"; path = "src/grfx/grfx_resartBtn@2x.png"; sourceTree = "<group>"; };
 		82115DFD1B7144C200A36684 /* grfx_initImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grfx_initImage.jpg; path = src/grfx/grfx_initImage.jpg; sourceTree = "<group>"; };
 		82115DFE1B7144C200A36684 /* grfx_initImage@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "grfx_initImage@2x.jpg"; path = "src/grfx/grfx_initImage@2x.jpg"; sourceTree = "<group>"; };
+		8228227B1B822134004154E7 /* sponsorshipModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sponsorshipModelController.h; sourceTree = "<group>"; };
+		8228227C1B822134004154E7 /* sponsorshipModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorshipModelController.m; sourceTree = "<group>"; };
+		8228227E1B822243004154E7 /* sponsorDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sponsorDataViewController.h; sourceTree = "<group>"; };
+		8228227F1B822243004154E7 /* sponsorDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorDataViewController.m; sourceTree = "<group>"; };
+		822822811B82290C004154E7 /* SponsorshipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SponsorshipViewController.h; sourceTree = "<group>"; };
+		822822821B82290C004154E7 /* SponsorshipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SponsorshipViewController.m; sourceTree = "<group>"; };
+		822822841B824339004154E7 /* sponsorship_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sponsorship_data.plist; sourceTree = "<group>"; };
 		8243874D1B6929A1003AC214 /* SupportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportingViewController.h; sourceTree = "<group>"; };
 		8243874E1B6929A1003AC214 /* SupportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportingViewController.m; sourceTree = "<group>"; };
 		824387501B69414D003AC214 /* supporting_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = supporting_data.plist; sourceTree = "<group>"; };
@@ -1434,6 +1445,28 @@
 			path = src/building;
 			sourceTree = "<group>";
 		};
+		822822791B8220E8004154E7 /* Supporting_stories */ = {
+			isa = PBXGroup;
+			children = (
+				82A128B41B69164100564266 /* embDataViewController.h */,
+				82A128B51B69164100564266 /* embDataViewController.m */,
+				82A128B61B69164100564266 /* embModelController.h */,
+				82A128B71B69164100564266 /* embModelController.m */,
+			);
+			name = Supporting_stories;
+			sourceTree = "<group>";
+		};
+		8228227A1B822100004154E7 /* Sponsorship */ = {
+			isa = PBXGroup;
+			children = (
+				8228227E1B822243004154E7 /* sponsorDataViewController.h */,
+				8228227F1B822243004154E7 /* sponsorDataViewController.m */,
+				8228227B1B822134004154E7 /* sponsorshipModelController.h */,
+				8228227C1B822134004154E7 /* sponsorshipModelController.m */,
+			);
+			name = Sponsorship;
+			sourceTree = "<group>";
+		};
 		824D27191B5D7E6700E5F5A5 = {
 			isa = PBXGroup;
 			children = (
@@ -1467,6 +1500,8 @@
 				824D2B171B616DCD00E5F5A5 /* GalleryViewController.m */,
 				8243874D1B6929A1003AC214 /* SupportingViewController.h */,
 				8243874E1B6929A1003AC214 /* SupportingViewController.m */,
+				822822811B82290C004154E7 /* SponsorshipViewController.h */,
+				822822821B82290C004154E7 /* SponsorshipViewController.m */,
 				82CA341F1B6BE2960065E31E /* LocationViewController.h */,
 				82CA34201B6BE2960065E31E /* LocationViewController.m */,
 				82115DEB1B70036100A36684 /* BuildingViewController.h */,
@@ -2100,6 +2135,7 @@
 				824D2B1E1B61857E00E5F5A5 /* photoData.plist */,
 				824D2B141B6169AB00E5F5A5 /* ImageData.plist */,
 				824387501B69414D003AC214 /* supporting_data.plist */,
+				822822841B824339004154E7 /* sponsorship_data.plist */,
 				82115DEE1B7004A300A36684 /* colors.plist */,
 			);
 			path = DataSource;
@@ -2262,10 +2298,8 @@
 		82A128B31B69164100564266 /* page_vc */ = {
 			isa = PBXGroup;
 			children = (
-				82A128B41B69164100564266 /* embDataViewController.h */,
-				82A128B51B69164100564266 /* embDataViewController.m */,
-				82A128B61B69164100564266 /* embModelController.h */,
-				82A128B71B69164100564266 /* embModelController.m */,
+				8228227A1B822100004154E7 /* Sponsorship */,
+				822822791B8220E8004154E7 /* Supporting_stories */,
 				82A128BA1B6916BF00564266 /* ebZoomingScrollView.h */,
 				82A128BB1B6916BF00564266 /* ebZoomingScrollView.m */,
 				824387561B6BAA14003AC214 /* xhPageViewController.h */,
@@ -2468,6 +2502,7 @@
 				824D2AD41B61671600E5F5A5 /* phase_d_color_00009.jpg in Resources */,
 				824D2B011B61671600E5F5A5 /* phase_d_color_00054.jpg in Resources */,
 				8251FEC51B7D0D880021C1BA /* phase_a_color_00013.png in Resources */,
+				822822851B824339004154E7 /* sponsorship_data.plist in Resources */,
 				824D2A001B61671600E5F5A5 /* phase_b_base_00013.jpg in Resources */,
 				8251FF7B1B7D0DE80021C1BA /* phase_a_base_00049.png in Resources */,
 				8251FF681B7D0DE80021C1BA /* phase_a_base_00030.png in Resources */,
@@ -3039,6 +3074,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8228227D1B822134004154E7 /* sponsorshipModelController.m in Sources */,
+				822822831B82290C004154E7 /* SponsorshipViewController.m in Sources */,
 				824D2B461B62B5C600E5F5A5 /* EMBSPSectionHeader.m in Sources */,
 				824D27A01B61467400E5F5A5 /* ColorPickerImageView.m in Sources */,
 				824D2B441B62B5C600E5F5A5 /* EMBSPCell.m in Sources */,
@@ -3051,6 +3088,7 @@
 				824D27281B5D7E6700E5F5A5 /* main.m in Sources */,
 				824D2B1B1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m in Sources */,
 				82A128B91B69164100564266 /* embModelController.m in Sources */,
+				822822801B822243004154E7 /* sponsorDataViewController.m in Sources */,
 				82A128BC1B6916BF00564266 /* ebZoomingScrollView.m in Sources */,
 				824D2B3B1B62B57D00E5F5A5 /* UIImage+ScaleToFit.m in Sources */,
 				824D2B181B616DCD00E5F5A5 /* GalleryViewController.m in Sources */,

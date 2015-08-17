@@ -1,48 +1,44 @@
 //
-//  SupportingViewController.m
+//  SponsorshipViewController.m
 //  beattyFrame
 //
-//  Created by Xiaohe Hu on 7/29/15.
+//  Created by Xiaohe Hu on 8/17/15.
 //  Copyright (c) 2015 Xiaohe Hu. All rights reserved.
 //
 
-#import "SupportingViewController.h"
-#import "embModelController.h"
-#import "embDataViewController.h"
+#import "SponsorshipViewController.h"
 #import "UIColor+Extensions.h"
-#import "animationView.h"
-#import "xhPageViewController.h"
-static CGFloat  bottomMenuWidth = 572;
+#import "sponsorshipModelController.h"
+#import "sponsorDataViewController.h"
+static CGFloat  bottomMenuWidth = 632;
 static CGFloat  bottomMenuHeight = 37;
-static int      animationViewIndex = 6;
-@interface SupportingViewController () <UIPageViewControllerDelegate, UIGestureRecognizerDelegate>
+@interface SponsorshipViewController () <UIPageViewControllerDelegate, UIGestureRecognizerDelegate>
 {
     UIView          *uiv_bottomMenu;
     UIView          *uiv_bottomHighlightView;
     UILabel         *uil_pageNum;
     NSArray         *arr_menuTitles;
-    NSMutableArray  *arr_menuButton;
     NSArray         *arr_lastIndex;
     NSArray         *arr_firstIndex;
+    NSMutableArray  *arr_menuButton;
     int             currentPageIndex;
 }
 
-@property (readonly, strong, nonatomic) embModelController		*modelController;
-//@property (strong, nonatomic)           UIPageViewController	*pageViewController;
-@property (strong, nonatomic)           xhPageViewController	*pageViewController;
+@property (readonly, strong, nonatomic) sponsorshipModelController		*modelController;
+@property (strong, nonatomic)           UIPageViewController            *pageViewController;
 @end
 
-@implementation SupportingViewController
+@implementation SponsorshipViewController
 
 @synthesize modelController = _modelController;
 @synthesize pageIndex;
 
-# pragma mark - View Controller Lift-cycle
+#pragma mark - ViewController Life-cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _modelController = [[embModelController alloc] init];
+    _modelController = [[sponsorshipModelController alloc] init];
     [self prepareData];
 }
 
@@ -51,13 +47,6 @@ static int      animationViewIndex = 6;
     [self createBottomMenu];
     [self createPageNumLabel];
     [self checkCurrentIndexPosition];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    
-//    for (UIGestureRecognizer *gesture in self.view.gestureRecognizers) {
-//        gesture.delegate = self;
-//    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,33 +59,28 @@ static int      animationViewIndex = 6;
     arr_menuButton = [[NSMutableArray alloc] init];
     
     arr_menuTitles = @[
-                       @"History",
-                       @"Trends",
-                       @"Lifestyle & Culture",
-                       @"Facts & Figures",
-                       @"Eco-District"
+                       @"Beatty Development Group",
+                       @"Financial Parteners",
+                       @"Current & Future Tenants"
                        ];
     arr_lastIndex = @[
                       @0,
                       @1,
-                      @5,
-                      @6,
-                      @7
+                      @2
                       ];
     arr_firstIndex = @[
                        @0,
                        @1,
-                       @2,
-                       @6,
-                       @7
+                       @2
                        ];
 }
+
 # pragma mark - UIPageView Controller
 /*
  * Init page view controller
  */
 - (void)initPageView:(NSInteger)index {
-    self.pageViewController = [[xhPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
     self.pageViewController.dataSource = self.modelController;
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -112,19 +96,13 @@ static int      animationViewIndex = 6;
 
 - (void)loadPage:(int)page {
     
-    embDataViewController *startingViewController = [self.modelController viewControllerAtIndex:page storyboard:self.storyboard];
+    sponsorDataViewController *startingViewController = [self.modelController viewControllerAtIndex:page storyboard:self.storyboard];
     currentPageIndex = page;
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers
                                       direction:UIPageViewControllerNavigationDirectionForward
                                        animated:NO
                                      completion:nil];
-    
-    if (currentPageIndex == animationViewIndex) {
-        self.pageViewController.swipeArea = CGRectMake(22, 204, 360, 360);
-    } else {
-        self.pageViewController.swipeArea = CGRectZero;
-    }
 }
 
 #pragma mark update page index
@@ -145,15 +123,9 @@ static int      animationViewIndex = 6;
 }
 
 - (void) setpageIndex {
-    embDataViewController *theCurrentViewController = [self.pageViewController.viewControllers objectAtIndex:0];
+    sponsorDataViewController *theCurrentViewController = [self.pageViewController.viewControllers objectAtIndex:0];
     currentPageIndex = (int)[self.modelController indexOfViewController:theCurrentViewController];
     [self checkCurrentIndexPosition];
-    
-    if (currentPageIndex == animationViewIndex) {
-        self.pageViewController.swipeArea = CGRectMake(22, 204, 360, 360);
-    } else {
-        self.pageViewController.swipeArea = CGRectZero;
-    }
 }
 
 - (void)checkCurrentIndexPosition {
@@ -168,12 +140,12 @@ static int      animationViewIndex = 6;
     [self updatePageNumLabelText];
 }
 
-- (embModelController *)modelController
+- (sponsorshipModelController *)modelController
 {
     // Return the model controller object, creating it if necessary.
     // In more complex implementations, the model controller may be passed to the view controller.
     if (!_modelController) {
-        _modelController = [[embModelController alloc] init];
+        _modelController = [[sponsorshipModelController alloc] init];
     }
     return _modelController;
 }
@@ -231,6 +203,7 @@ static int      animationViewIndex = 6;
         button.tag = i;
         [button addTarget:self action:@selector(tapBottomButton:) forControlEvents:UIControlEventTouchUpInside];
         [arr_menuButton addObject: button];
+        NSLog(@"\n\n %@ \n\n", NSStringFromCGRect(button.frame));
     }
     for (int i = 0; i < arr_menuButton.count; i++) {
         UIButton *uib_cur = arr_menuButton[i];
@@ -251,7 +224,7 @@ static int      animationViewIndex = 6;
         btn.backgroundColor = [UIColor clearColor];
     }
     tappedButton.selected = YES;
-//    tappedButton.backgroundColor = [UIColor themeRed];
+    //    tappedButton.backgroundColor = [UIColor themeRed];
     uiv_bottomHighlightView.backgroundColor = [UIColor themeRed];
     [UIView animateWithDuration:0.33 animations:^(void){
         uiv_bottomHighlightView.frame = tappedButton.frame;

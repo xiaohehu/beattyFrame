@@ -15,6 +15,7 @@
 #import "UIColor+Extensions.h"
 #import "LocationViewController.h"
 #import "BuildingViewController.h"
+#import "sponsorDataViewController.h"
 
 static float    sideMenuWidth = 235.0;
 static float    menuButtonSize = 50.0;
@@ -35,6 +36,7 @@ static float    menuButtonSize = 50.0;
     UIImageView             *uiiv_initImage;
     NSString                *currentSectionTitle;
     NSString                *currentSubTitle;
+    int                     sectionIndex;
     // Side menu content button
     __weak IBOutlet UIView *uiv_buutonHighlight;
     // Button containers
@@ -311,7 +313,7 @@ static float    menuButtonSize = 50.0;
  *!!!!!! If the start page index is changed, update buttons tag in storyboard !!!!!!!
  */
 - (void)updateHighlightedButton:(NSNotification *)notification {
-    int buttonTag = [[notification.userInfo objectForKey:@"index"] integerValue]+20;
+    int buttonTag = [[notification.userInfo objectForKey:@"index"] integerValue] + sectionIndex;
     for (UIButton *button in arr_sideMenuBttuons) {
         if (button.tag == buttonTag) {
             [self highlightTheButton:button withAnimation:NO];
@@ -382,6 +384,8 @@ static float    menuButtonSize = 50.0;
  */
 - (IBAction)loadSupporting:(id)sender {
     
+    sectionIndex = 20;
+    
     [self updateSectionTitle:@"Supporting Stories"];
     
     UIButton *tappedButton = sender;
@@ -389,6 +393,20 @@ static float    menuButtonSize = 50.0;
     SupportingViewController *supporting = [self.storyboard instantiateViewControllerWithIdentifier:@"SupportingViewController"];
     supporting.pageIndex = tappedButton.tag%10;
     [self fadeInNewViewController:supporting];
+    [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
+}
+
+- (IBAction)loadSponsorship:(id)sender {
+    
+    sectionIndex = 30;
+    
+    [self updateSectionTitle:@"Sponsorship"];
+    
+    UIButton *tappedButton = sender;
+    [self highlightTheButton:tappedButton withAnimation:YES];
+    SupportingViewController *sponsorship = [self.storyboard instantiateViewControllerWithIdentifier:@"SponsorshipViewController"];
+    sponsorship.pageIndex = tappedButton.tag%10;
+    [self fadeInNewViewController:sponsorship];
     [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
 }
 
