@@ -603,6 +603,16 @@
 		8251FF901B7D0DE80021C1BA /* phase_a_base_00070.png in Resources */ = {isa = PBXBuildFile; fileRef = 8251FF471B7D0DE80021C1BA /* phase_a_base_00070.png */; };
 		8251FF911B7D0DE80021C1BA /* phase_a_base_00071.png in Resources */ = {isa = PBXBuildFile; fileRef = 8251FF481B7D0DE80021C1BA /* phase_a_base_00071.png */; };
 		8251FF921B7D0DE80021C1BA /* phase_a_base_00072.png in Resources */ = {isa = PBXBuildFile; fileRef = 8251FF491B7D0DE80021C1BA /* phase_a_base_00072.png */; };
+		8251FF9B1B7E7C9C0021C1BA /* xhWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8251FF9A1B7E7C9C0021C1BA /* xhWebViewController.m */; };
+		8251FFA41B7E817B0021C1BA /* grfx_menuGallery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FF9C1B7E817B0021C1BA /* grfx_menuGallery.jpg */; };
+		8251FFA51B7E817B0021C1BA /* grfx_menuRestart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FF9D1B7E817B0021C1BA /* grfx_menuRestart.jpg */; };
+		8251FFA61B7E817B0021C1BA /* grfx_menuSettings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FF9E1B7E817B0021C1BA /* grfx_menuSettings.jpg */; };
+		8251FFA71B7E817B0021C1BA /* grfx_menuWebcam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FF9F1B7E817B0021C1BA /* grfx_menuWebcam.jpg */; };
+		8251FFA81B7E817B0021C1BA /* grfx_menuRestart@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FFA01B7E817B0021C1BA /* grfx_menuRestart@2x.jpg */; };
+		8251FFA91B7E817B0021C1BA /* grfx_menuSettings@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FFA11B7E817B0021C1BA /* grfx_menuSettings@2x.jpg */; };
+		8251FFAA1B7E817B0021C1BA /* grfx_menuWebcam@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FFA21B7E817B0021C1BA /* grfx_menuWebcam@2x.jpg */; };
+		8251FFAB1B7E817B0021C1BA /* grfx_menuGallery@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8251FFA31B7E817B0021C1BA /* grfx_menuGallery@2x.jpg */; };
+		8251FFAE1B7E845C0021C1BA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8251FFAD1B7E845C0021C1BA /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		82A128301B66657C00564266 /* animationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A1282F1B66657C00564266 /* animationView.m */; };
 		82A1285C1B66668800564266 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82A128321B66668800564266 /* bg.jpg */; };
 		82A1285D1B66668800564266 /* bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82A128331B66668800564266 /* bg@2x.jpg */; };
@@ -1292,6 +1302,18 @@
 		8251FF471B7D0DE80021C1BA /* phase_a_base_00070.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phase_a_base_00070.png; sourceTree = "<group>"; };
 		8251FF481B7D0DE80021C1BA /* phase_a_base_00071.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phase_a_base_00071.png; sourceTree = "<group>"; };
 		8251FF491B7D0DE80021C1BA /* phase_a_base_00072.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phase_a_base_00072.png; sourceTree = "<group>"; };
+		8251FF991B7E7C9C0021C1BA /* xhWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xhWebViewController.h; sourceTree = "<group>"; };
+		8251FF9A1B7E7C9C0021C1BA /* xhWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xhWebViewController.m; sourceTree = "<group>"; };
+		8251FF9C1B7E817B0021C1BA /* grfx_menuGallery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grfx_menuGallery.jpg; path = src/grfx/grfx_menuGallery.jpg; sourceTree = "<group>"; };
+		8251FF9D1B7E817B0021C1BA /* grfx_menuRestart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grfx_menuRestart.jpg; path = src/grfx/grfx_menuRestart.jpg; sourceTree = "<group>"; };
+		8251FF9E1B7E817B0021C1BA /* grfx_menuSettings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grfx_menuSettings.jpg; path = src/grfx/grfx_menuSettings.jpg; sourceTree = "<group>"; };
+		8251FF9F1B7E817B0021C1BA /* grfx_menuWebcam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grfx_menuWebcam.jpg; path = src/grfx/grfx_menuWebcam.jpg; sourceTree = "<group>"; };
+		8251FFA01B7E817B0021C1BA /* grfx_menuRestart@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "grfx_menuRestart@2x.jpg"; path = "src/grfx/grfx_menuRestart@2x.jpg"; sourceTree = "<group>"; };
+		8251FFA11B7E817B0021C1BA /* grfx_menuSettings@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "grfx_menuSettings@2x.jpg"; path = "src/grfx/grfx_menuSettings@2x.jpg"; sourceTree = "<group>"; };
+		8251FFA21B7E817B0021C1BA /* grfx_menuWebcam@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "grfx_menuWebcam@2x.jpg"; path = "src/grfx/grfx_menuWebcam@2x.jpg"; sourceTree = "<group>"; };
+		8251FFA31B7E817B0021C1BA /* grfx_menuGallery@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "grfx_menuGallery@2x.jpg"; path = "src/grfx/grfx_menuGallery@2x.jpg"; sourceTree = "<group>"; };
+		8251FFAC1B7E845C0021C1BA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8251FFAD1B7E845C0021C1BA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		82A1282E1B66657B00564266 /* animationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = animationView.h; path = utilities/animationView.h; sourceTree = "<group>"; };
 		82A1282F1B66657C00564266 /* animationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = animationView.m; path = utilities/animationView.m; sourceTree = "<group>"; };
 		82A128321B66668800564266 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
@@ -1514,6 +1536,14 @@
 				82A128311B66668800564266 /* marketplace_ecosystem */,
 				824D27971B6039C300E5F5A5 /* main_bg.jpg */,
 				824D27981B6039C300E5F5A5 /* main_bg@2x.jpg */,
+				8251FF9C1B7E817B0021C1BA /* grfx_menuGallery.jpg */,
+				8251FF9D1B7E817B0021C1BA /* grfx_menuRestart.jpg */,
+				8251FF9E1B7E817B0021C1BA /* grfx_menuSettings.jpg */,
+				8251FF9F1B7E817B0021C1BA /* grfx_menuWebcam.jpg */,
+				8251FFA01B7E817B0021C1BA /* grfx_menuRestart@2x.jpg */,
+				8251FFA11B7E817B0021C1BA /* grfx_menuSettings@2x.jpg */,
+				8251FFA21B7E817B0021C1BA /* grfx_menuWebcam@2x.jpg */,
+				8251FFA31B7E817B0021C1BA /* grfx_menuGallery@2x.jpg */,
 				824D27831B5FE0CD00E5F5A5 /* grfx_summary.jpg */,
 				824D27841B5FE0CD00E5F5A5 /* grfx_summary@2x.jpg */,
 				824D27891B60179A00E5F5A5 /* grfx_siteplan.jpg */,
@@ -1565,6 +1595,10 @@
 				824D279F1B61467400E5F5A5 /* ColorPickerImageView.m */,
 				824D2B191B6179AF00E5F5A5 /* GalleryCollectionViewCell.h */,
 				824D2B1A1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m */,
+				8251FF991B7E7C9C0021C1BA /* xhWebViewController.h */,
+				8251FF9A1B7E7C9C0021C1BA /* xhWebViewController.m */,
+				8251FFAC1B7E845C0021C1BA /* Reachability.h */,
+				8251FFAD1B7E845C0021C1BA /* Reachability.m */,
 			);
 			name = utiliites;
 			sourceTree = "<group>";
@@ -2376,6 +2410,7 @@
 				824D2A361B61671600E5F5A5 /* phase_b_base_00067.jpg in Resources */,
 				824D2B311B6186FA00E5F5A5 /* View 04.jpg in Resources */,
 				824D2A3D1B61671600E5F5A5 /* phase_b_color_00002.jpg in Resources */,
+				8251FFA91B7E817B0021C1BA /* grfx_menuSettings@2x.jpg in Resources */,
 				824D2BF21B62D02100E5F5A5 /* share_View 6 - no bridge.jpg.jpg in Resources */,
 				824D2BCD1B62D02100E5F5A5 /* share_market_exterior02.jpg.jpg in Resources */,
 				824D2A861B61671600E5F5A5 /* phase_d_base_00003.jpg in Resources */,
@@ -2437,6 +2472,7 @@
 				8251FF7B1B7D0DE80021C1BA /* phase_a_base_00049.png in Resources */,
 				8251FF681B7D0DE80021C1BA /* phase_a_base_00030.png in Resources */,
 				8251FF7A1B7D0DE80021C1BA /* phase_a_base_00048.png in Resources */,
+				8251FFAB1B7E817B0021C1BA /* grfx_menuGallery@2x.jpg in Resources */,
 				824D2A391B61671600E5F5A5 /* phase_b_base_00070.jpg in Resources */,
 				8251FF5C1B7D0DE80021C1BA /* phase_a_base_00018.png in Resources */,
 				824D2A621B61671600E5F5A5 /* phase_b_color_00039.jpg in Resources */,
@@ -2609,6 +2645,7 @@
 				8251FE641B7BB2470021C1BA /* supporting_story_2.jpg in Resources */,
 				8251FF711B7D0DE80021C1BA /* phase_a_base_00039.png in Resources */,
 				824D2A231B61671600E5F5A5 /* phase_b_base_00048.jpg in Resources */,
+				8251FFA41B7E817B0021C1BA /* grfx_menuGallery.jpg in Resources */,
 				824D2A9B1B61671600E5F5A5 /* phase_d_base_00024.jpg in Resources */,
 				824D2BDF1B62D02100E5F5A5 /* share_Picture 051.jpg.jpg in Resources */,
 				824D2AD71B61671600E5F5A5 /* phase_d_color_00012.jpg in Resources */,
@@ -2682,6 +2719,7 @@
 				8251FF7D1B7D0DE80021C1BA /* phase_a_base_00051.png in Resources */,
 				82CA342D1B6BF46F0065E31E /* grfx_regionalMap.jpg in Resources */,
 				824D2ACD1B61671600E5F5A5 /* phase_d_color_00002.jpg in Resources */,
+				8251FFA51B7E817B0021C1BA /* grfx_menuRestart.jpg in Resources */,
 				8251FEE41B7D0D880021C1BA /* phase_a_color_00044.png in Resources */,
 				824D2A261B61671600E5F5A5 /* phase_b_base_00051.jpg in Resources */,
 				82115DFF1B7144C200A36684 /* grfx_initImage.jpg in Resources */,
@@ -2839,7 +2877,9 @@
 				8251FF6C1B7D0DE80021C1BA /* phase_a_base_00034.png in Resources */,
 				824D2BBB1B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot07.jpg.jpg in Resources */,
 				824D2BDD1B62D02100E5F5A5 /* share_Picture 049.jpg.jpg in Resources */,
+				8251FFA71B7E817B0021C1BA /* grfx_menuWebcam.jpg in Resources */,
 				824D2A9A1B61671600E5F5A5 /* phase_d_base_00023.jpg in Resources */,
+				8251FFAA1B7E817B0021C1BA /* grfx_menuWebcam@2x.jpg in Resources */,
 				824D2AB81B61671600E5F5A5 /* phase_d_base_00053.jpg in Resources */,
 				8251FF8F1B7D0DE80021C1BA /* phase_a_base_00069.png in Resources */,
 				824D2B561B62CF7F00E5F5A5 /* shareableData.plist in Resources */,
@@ -2866,6 +2906,7 @@
 				824D2AFE1B61671600E5F5A5 /* phase_d_color_00051.jpg in Resources */,
 				824D2B2F1B6186FA00E5F5A5 /* Victory Center_Highway View.jpg in Resources */,
 				824D29FC1B61671600E5F5A5 /* phase_b_base_00009.jpg in Resources */,
+				8251FFA81B7E817B0021C1BA /* grfx_menuRestart@2x.jpg in Resources */,
 				8251FEB91B7D0D880021C1BA /* phase_a_color_00001.png in Resources */,
 				8251FF7F1B7D0DE80021C1BA /* phase_a_base_00053.png in Resources */,
 				824D2BE01B62D02100E5F5A5 /* share_Picture 056.jpg.jpg in Resources */,
@@ -2917,6 +2958,7 @@
 				8251FEDE1B7D0D880021C1BA /* phase_a_color_00038.png in Resources */,
 				8251FF721B7D0DE80021C1BA /* phase_a_base_00040.png in Resources */,
 				824D2AF11B61671600E5F5A5 /* phase_d_color_00038.jpg in Resources */,
+				8251FFA61B7E817B0021C1BA /* grfx_menuSettings.jpg in Resources */,
 				824D2BBF1B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View03_051215.jpg.jpg in Resources */,
 				8251FF541B7D0DE80021C1BA /* phase_a_base_00010.png in Resources */,
 				824D2AA91B61671600E5F5A5 /* phase_d_base_00038.jpg in Resources */,
@@ -3001,6 +3043,7 @@
 				824D27A01B61467400E5F5A5 /* ColorPickerImageView.m in Sources */,
 				824D2B441B62B5C600E5F5A5 /* EMBSPCell.m in Sources */,
 				82CA34211B6BE2960065E31E /* LocationViewController.m in Sources */,
+				8251FFAE1B7E845C0021C1BA /* Reachability.m in Sources */,
 				824D272E1B5D7E6700E5F5A5 /* ViewController.m in Sources */,
 				824D2B351B6286AA00E5F5A5 /* embEmailData.m in Sources */,
 				824D272B1B5D7E6700E5F5A5 /* AppDelegate.m in Sources */,
@@ -3018,6 +3061,7 @@
 				82A128301B66657C00564266 /* animationView.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
 				82A128B81B69164100564266 /* embDataViewController.m in Sources */,
+				8251FF9B1B7E7C9C0021C1BA /* xhWebViewController.m in Sources */,
 				8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */,
 				824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */,
 			);

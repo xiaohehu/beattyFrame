@@ -428,12 +428,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eia-ph-AoR">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="14"/>
-                                        <state key="normal" title="Gallery">
+                                        <state key="normal" image="grfx_menuGallery.jpg">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="28" y="681" width="45" height="30"/>
+                                            <rect key="frame" x="21" y="681" width="46" height="46"/>
                                         </variation>
                                         <connections>
                                             <action selector="loadGallery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHr-Rp-hbt"/>
@@ -442,21 +442,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLc-d3-yrK">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="14"/>
-                                        <state key="normal" title="Setting">
+                                        <state key="normal" image="grfx_menuSettings.jpg">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="161" y="681" width="45" height="30"/>
+                                            <rect key="frame" x="129" y="681" width="46" height="46"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIg-Od-4Yx">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="grfx_menuWebcam.jpg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="75" y="681" width="46" height="46"/>
                                         </variation>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGt-74-4wg" userLabel="Reset">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" image="grfx_resartBtn.png">
+                                        <state key="normal" image="grfx_menuRestart.jpg">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="95" y="685" width="45" height="22"/>
+                                            <rect key="frame" x="173" y="681" width="46" height="46"/>
                                         </variation>
                                         <connections>
                                             <action selector="tapResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UTf-vO-JJ3"/>
@@ -473,6 +482,7 @@
                                         <exclude reference="hgm-z0-noT"/>
                                         <exclude reference="eia-ph-AoR"/>
                                         <exclude reference="nLc-d3-yrK"/>
+                                        <exclude reference="qIg-Od-4Yx"/>
                                         <exclude reference="vGt-74-4wg"/>
                                     </mask>
                                 </variation>
@@ -486,6 +496,7 @@
                                         <include reference="hgm-z0-noT"/>
                                         <include reference="eia-ph-AoR"/>
                                         <include reference="nLc-d3-yrK"/>
+                                        <include reference="qIg-Od-4Yx"/>
                                         <include reference="vGt-74-4wg"/>
                                     </mask>
                                 </variation>
@@ -1009,7 +1020,10 @@
     <resources>
         <image name="grfx_building.jpg" width="1024" height="768"/>
         <image name="grfx_closeBtn.png" width="25" height="25"/>
-        <image name="grfx_resartBtn.png" width="17" height="22"/>
+        <image name="grfx_menuGallery.jpg" width="23" height="19"/>
+        <image name="grfx_menuRestart.jpg" width="23" height="14"/>
+        <image name="grfx_menuSettings.jpg" width="24" height="21"/>
+        <image name="grfx_menuWebcam.jpg" width="18" height="11"/>
         <image name="share_but_email.png" width="66" height="33"/>
         <image name="share_but_email_roll.png" width="149" height="762"/>
         <image name="share_but_pdf.png" width="66" height="33"/>
