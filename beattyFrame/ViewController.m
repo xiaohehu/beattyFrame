@@ -20,6 +20,7 @@
 #import <AVFoundation/AVAsset.h>
 #import <AVFoundation/AVPlayerItem.h>
 #import <AVFoundation/AVFoundation.h>
+#import "xhWebViewController.h"
 
 static float    sideMenuWidth = 235.0;
 static float    menuButtonSize = 50.0;
@@ -108,18 +109,27 @@ static float    menuButtonSize = 50.0;
 
 - (void)viewWillAppear:(BOOL)animated {
 //    [self.view addSubview: uiiv_initImage];
-    uiv_vcBigContainer.alpha = 0.0;
-    uib_menuButton.alpha = 0.0;
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"]) {
+        uiv_vcBigContainer.alpha = 0.0;
+        uib_menuButton.alpha = 0.0;
+    }
+
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self createIntroMovie];
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"]) {
+        [self createIntroMovie];
+    }
     [self highlightTheButton:uib_site360 withAnimation:NO];
     [UIView animateWithDuration:0.5 delay:2.0 options:0 animations:^(void){
         uiiv_initImage.alpha = 0.0;
     } completion:^(BOOL finished){
     
     }];
+    
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"HasLaunchedOnce"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
 //    NSArray *fontFamilies = [UIFont familyNames];
 //    
 //    for (int i = 0; i < [fontFamilies count]; i++)
@@ -310,11 +320,12 @@ static float    menuButtonSize = 50.0;
 - (IBAction)tapResetButton:(id)sender {
 
     [self tapMenuButtonClose:nil];
-    [self performSelector:@selector(createIntroMovie) withObject:nil afterDelay:0.2];
+    [self performSelector:@selector(createIntroMovie) withObject:nil afterDelay:0.33];
+    [self loadSite360:uib_site360];
 //    [UIView animateWithDuration:0.33 delay:0.33 options:0 animations:^(void){
 //        uiiv_initImage.alpha = 1.0;
 //    } completion:^(BOOL finished){
-//        [self loadSite360:uib_site360];
+//
 //        [UIView animateWithDuration:0.5 delay:2.0 options:0 animations:^(void){
 //            uiiv_initImage.alpha = 0.0;
 //        } completion:^(BOOL finished){
@@ -543,6 +554,16 @@ static float    menuButtonSize = 50.0;
     
     }];
 }
+
+- (IBAction)loadWebcamView:(id)sender {
+    NSString *theUrl = @"http://webcampub.multivista.com/index.cfm?fuseaction=aPublicWebcam.page&WebcamPublicPageUID=C8A2F78F-8A9E-445F-A73E-749257863052";
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    xhWebViewController *vc = (xhWebViewController*)[mainStoryboard instantiateViewControllerWithIdentifier:@"xhWebViewController"];
+    [vc socialButton:theUrl];
+    vc.modalPresentationStyle = UIModalPresentationCurrentContext;
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 
 #pragma mark - Mail Sending
 -(void)setEmailDataObject:(NSNotification *)pNotification

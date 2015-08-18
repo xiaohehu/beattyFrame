@@ -425,7 +425,7 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eia-ph-AoR">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eia-ph-AoR" userLabel="Gallery">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="14"/>
                                         <state key="normal" image="grfx_menuGallery.jpg">
@@ -439,7 +439,7 @@
                                             <action selector="loadGallery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHr-Rp-hbt"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLc-d3-yrK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLc-d3-yrK" userLabel="Setting">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="14"/>
                                         <state key="normal" image="grfx_menuSettings.jpg">
@@ -450,7 +450,7 @@
                                             <rect key="frame" x="129" y="681" width="46" height="46"/>
                                         </variation>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIg-Od-4Yx">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIg-Od-4Yx" userLabel="Webcam">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <state key="normal" image="grfx_menuWebcam.jpg">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -458,6 +458,9 @@
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                             <rect key="frame" x="75" y="681" width="46" height="46"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="loadWebcamView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eH9-xj-QgK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGt-74-4wg" userLabel="Reset">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -974,21 +977,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grfx_building.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="u2C-Yz-hb4">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeQ-tM-npq">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Close">
+                                <state key="normal" image="grfx_closeBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="88" width="46" height="30"/>
+                                    <rect key="frame" x="957" y="0.0" width="57" height="57"/>
                                 </variation>
                                 <connections>
                                     <action selector="tapCloseButton:" destination="A9H-hM-v0d" eventType="touchUpInside" id="B7g-9d-iU2"/>
@@ -998,13 +995,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="u2C-Yz-hb4"/>
                                 <exclude reference="QeQ-tM-npq"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
-                                <include reference="u2C-Yz-hb4"/>
                                 <include reference="QeQ-tM-npq"/>
                             </mask>
                         </variation>
@@ -1048,9 +1043,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uf9-QI-JEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Xh Web View Controller-->
+        <scene sceneID="Ji6-Y6-bqd">
+            <objects>
+                <viewController storyboardIdentifier="xhWebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vpF-j4-s0d" customClass="xhWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wmY-3D-3yU"/>
+                        <viewControllerLayoutGuide type="bottom" id="B34-CE-7UY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yd2-aX-HoO">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y2u-dd-Iee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
-        <image name="grfx_building.jpg" width="1024" height="768"/>
         <image name="grfx_closeBtn.png" width="25" height="25"/>
         <image name="grfx_menuGallery.jpg" width="23" height="19"/>
         <image name="grfx_menuRestart.jpg" width="23" height="14"/>
