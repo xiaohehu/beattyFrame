@@ -30,6 +30,8 @@
 		822822801B822243004154E7 /* sponsorDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8228227F1B822243004154E7 /* sponsorDataViewController.m */; };
 		822822831B82290C004154E7 /* SponsorshipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822822821B82290C004154E7 /* SponsorshipViewController.m */; };
 		822822851B824339004154E7 /* sponsorship_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 822822841B824339004154E7 /* sponsorship_data.plist */; };
+		822822871B83695A004154E7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822822861B83695A004154E7 /* AVFoundation.framework */; };
+		8228228A1B836F83004154E7 /* 2015_08_14_ipad_logo_intro.mov in Resources */ = {isa = PBXBuildFile; fileRef = 822822891B836F83004154E7 /* 2015_08_14_ipad_logo_intro.mov */; };
 		8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8243874E1B6929A1003AC214 /* SupportingViewController.m */; };
 		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
 		824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824387571B6BAA14003AC214 /* xhPageViewController.m */; };
@@ -717,6 +719,8 @@
 		822822811B82290C004154E7 /* SponsorshipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SponsorshipViewController.h; sourceTree = "<group>"; };
 		822822821B82290C004154E7 /* SponsorshipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SponsorshipViewController.m; sourceTree = "<group>"; };
 		822822841B824339004154E7 /* sponsorship_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sponsorship_data.plist; sourceTree = "<group>"; };
+		822822861B83695A004154E7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		822822891B836F83004154E7 /* 2015_08_14_ipad_logo_intro.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 2015_08_14_ipad_logo_intro.mov; sourceTree = "<group>"; };
 		8243874D1B6929A1003AC214 /* SupportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportingViewController.h; sourceTree = "<group>"; };
 		8243874E1B6929A1003AC214 /* SupportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportingViewController.m; sourceTree = "<group>"; };
 		824387501B69414D003AC214 /* supporting_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = supporting_data.plist; sourceTree = "<group>"; };
@@ -1398,6 +1402,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				822822871B83695A004154E7 /* AVFoundation.framework in Frameworks */,
 				824D2B541B62BF4400E5F5A5 /* SystemConfiguration.framework in Frameworks */,
 				824D2B521B62BEB200E5F5A5 /* MessageUI.framework in Frameworks */,
 				824D27A91B61616D00E5F5A5 /* QuartzCore.framework in Frameworks */,
@@ -1467,6 +1472,15 @@
 			name = Sponsorship;
 			sourceTree = "<group>";
 		};
+		822822881B836F83004154E7 /* film */ = {
+			isa = PBXGroup;
+			children = (
+				822822891B836F83004154E7 /* 2015_08_14_ipad_logo_intro.mov */,
+			);
+			name = film;
+			path = src/film;
+			sourceTree = "<group>";
+		};
 		824D27191B5D7E6700E5F5A5 = {
 			isa = PBXGroup;
 			children = (
@@ -1520,6 +1534,7 @@
 		824D27251B5D7E6700E5F5A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				822822861B83695A004154E7 /* AVFoundation.framework */,
 				824D2B531B62BF4400E5F5A5 /* SystemConfiguration.framework */,
 				824D2B511B62BEB200E5F5A5 /* MessageUI.framework */,
 				824D27A81B61616D00E5F5A5 /* QuartzCore.framework */,
@@ -1553,6 +1568,7 @@
 		824D27871B5FE0D300E5F5A5 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				822822881B836F83004154E7 /* film */,
 				82115DF01B7012A600A36684 /* building */,
 				82115DD81B6FB14400A36684 /* fonts */,
 				824D2B571B62D02100E5F5A5 /* share_thumb */,
@@ -2485,6 +2501,7 @@
 				824D2A4D1B61671600E5F5A5 /* phase_b_color_00018.jpg in Resources */,
 				824D2A2C1B61671600E5F5A5 /* phase_b_base_00057.jpg in Resources */,
 				8251FEEA1B7D0D880021C1BA /* phase_a_color_00050.png in Resources */,
+				8228228A1B836F83004154E7 /* 2015_08_14_ipad_logo_intro.mov in Resources */,
 				82A128771B66668800564266 /* fact-grid-06-sm@2x.png in Resources */,
 				824D2BD41B62D02100E5F5A5 /* share_Pg 9  0251 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				824D2AF41B61671600E5F5A5 /* phase_d_color_00041.jpg in Resources */,

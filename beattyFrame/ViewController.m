@@ -16,6 +16,10 @@
 #import "LocationViewController.h"
 #import "BuildingViewController.h"
 #import "sponsorDataViewController.h"
+#import <AVFoundation/AVPlayer.h>
+#import <AVFoundation/AVAsset.h>
+#import <AVFoundation/AVPlayerItem.h>
+#import <AVFoundation/AVFoundation.h>
 
 static float    sideMenuWidth = 235.0;
 static float    menuButtonSize = 50.0;
@@ -67,6 +71,10 @@ static float    menuButtonSize = 50.0;
     __weak IBOutlet UIButton *uib_currentFutureTrends;
     
     NSArray                  *arr_sideMenuBttuons;
+    
+    // AVPlayer
+    AVPlayerLayer            *introAvPlayerLayer;
+    AVPlayer                 *introAvPlayer;
 }
 
 @property (nonatomic, strong)       embEmailData            *receivedData;
@@ -89,7 +97,7 @@ static float    menuButtonSize = 50.0;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateHighlightedButton:) name:@"updatedSupportingSideMenu" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadBuildingVC:) name:@"loadBuilding" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeBuildingVC:) name:@"removeBuilding" object:nil];
-    [self createInitImage];
+//    [self createInitImage];
     [self prepareViewContainer];
     [self groupSideMenuButtons];
     
@@ -99,10 +107,13 @@ static float    menuButtonSize = 50.0;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self.view addSubview: uiiv_initImage];
+//    [self.view addSubview: uiiv_initImage];
+    uiv_vcBigContainer.alpha = 0.0;
+    uib_menuButton.alpha = 0.0;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    [self createIntroMovie];
     [self highlightTheButton:uib_site360 withAnimation:NO];
     [UIView animateWithDuration:0.5 delay:2.0 options:0 animations:^(void){
         uiiv_initImage.alpha = 0.0;
@@ -122,6 +133,40 @@ static float    menuButtonSize = 50.0;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Intro movie
+- (void)createIntroMovie {
+    if (introAvPlayer) {
+        [introAvPlayerLayer removeFromSuperlayer];
+        introAvPlayerLayer = nil;
+        introAvPlayer = nil;
+    }
+    NSString *url = [[NSBundle mainBundle] pathForResource:@"2015_08_14_ipad_logo_intro" ofType:@"mov"];
+    introAvPlayer = [AVPlayer playerWithURL:[NSURL fileURLWithPath:url]];
+    introAvPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:introAvPlayer];
+    introAvPlayerLayer.frame = self.view.bounds;
+    [self.view.layer addSublayer: introAvPlayerLayer];
+    [introAvPlayer play];
+    
+    // Add obersver when the movie reaches end
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(playerItemDidReachEnd:)
+                                                 name:AVPlayerItemDidPlayToEndTimeNotification
+                                               object:nil];
+}
+
+- (void)playerItemDidReachEnd:(NSNotification *)notification {
+    uiv_vcBigContainer.alpha = 1.0;
+    uib_menuButton.alpha = 1.0;
+    
+    CABasicAnimation* fadeAnim = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    fadeAnim.fromValue = [NSNumber numberWithFloat:1.0];
+    fadeAnim.toValue = [NSNumber numberWithFloat:0.0];
+    fadeAnim.duration = 1.0;
+    fadeAnim.removedOnCompletion = NO;
+    fadeAnim.fillMode = kCAFillModeForwards;
+    [introAvPlayerLayer addAnimation:fadeAnim forKey:@"opacity"];
 }
 
 #pragma mark - Create/Style UI elements
@@ -265,18 +310,18 @@ static float    menuButtonSize = 50.0;
 - (IBAction)tapResetButton:(id)sender {
 
     [self tapMenuButtonClose:nil];
-    
-    [UIView animateWithDuration:0.33 delay:0.33 options:0 animations:^(void){
-        uiiv_initImage.alpha = 1.0;
-    } completion:^(BOOL finished){
-        [self loadSite360:uib_site360];
-        [UIView animateWithDuration:0.5 delay:2.0 options:0 animations:^(void){
-            uiiv_initImage.alpha = 0.0;
-        } completion:^(BOOL finished){
-            
-        }];
-        
-    }];
+    [self performSelector:@selector(createIntroMovie) withObject:nil afterDelay:0.2];
+//    [UIView animateWithDuration:0.33 delay:0.33 options:0 animations:^(void){
+//        uiiv_initImage.alpha = 1.0;
+//    } completion:^(BOOL finished){
+//        [self loadSite360:uib_site360];
+//        [UIView animateWithDuration:0.5 delay:2.0 options:0 animations:^(void){
+//            uiiv_initImage.alpha = 0.0;
+//        } completion:^(BOOL finished){
+//            
+//        }];
+//        
+//    }];
 }
 
 #pragma mark Highlight selected side menu buttons
