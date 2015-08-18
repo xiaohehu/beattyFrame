@@ -128,7 +128,6 @@ static float    menuButtonSize = 50.0;
     }];
     
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"HasLaunchedOnce"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
     
 //    NSArray *fontFamilies = [UIFont familyNames];
 //    
