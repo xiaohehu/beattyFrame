@@ -27,6 +27,9 @@
     hostReachable = [Reachability reachabilityWithHostName: @"www.apple.com"];
     [hostReachable startNotifier];
     
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"loadIntroMove"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     return YES;
 }
 
@@ -50,6 +53,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+
 }
 #pragma mark Web Check
 //////////////////////////

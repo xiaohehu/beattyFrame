@@ -109,25 +109,25 @@ static float    menuButtonSize = 50.0;
 
 - (void)viewWillAppear:(BOOL)animated {
 //    [self.view addSubview: uiiv_initImage];
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"]) {
+    NSString *loadFilm = [[NSUserDefaults standardUserDefaults] objectForKey:@"loadIntroMove"];
+    NSLog(@"\n\n The string is %@", loadFilm);
+    if ([loadFilm isEqual:@"loadFilm"]) {
+        return;
+    } else {
         uiv_vcBigContainer.alpha = 0.0;
         uib_menuButton.alpha = 0.0;
     }
-
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"]) {
+    
+    NSString *loadFilm = [[NSUserDefaults standardUserDefaults] objectForKey:@"loadIntroMove"];
+    if (![loadFilm isEqual:@"loadFilm"]) {
         [self createIntroMovie];
     }
     [self highlightTheButton:uib_site360 withAnimation:NO];
-    [UIView animateWithDuration:0.5 delay:2.0 options:0 animations:^(void){
-        uiiv_initImage.alpha = 0.0;
-    } completion:^(BOOL finished){
     
-    }];
-    
-    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"HasLaunchedOnce"];
+    [[NSUserDefaults standardUserDefaults] setValue:@"loadFilm" forKey:@"loadIntroMove"];
     
 //    NSArray *fontFamilies = [UIFont familyNames];
 //    
