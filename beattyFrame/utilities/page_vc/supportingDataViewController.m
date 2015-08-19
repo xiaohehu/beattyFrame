@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 neoscape. All rights reserved.
 //
 
-#import "embDataViewController.h"
+#import "supportingDataViewController.h"
 #import "ebZoomingScrollView.h"
 #import "UIColor+Extensions.h"
 #import "animationView.h"
@@ -14,7 +14,7 @@
 
 #define animationIndex  6
 
-@interface embDataViewController () {
+@interface supportingDataViewController () {
 
 }
 
@@ -24,7 +24,7 @@
 
 @end
 
-@implementation embDataViewController
+@implementation supportingDataViewController
 @synthesize vcIndex;
 - (void)viewDidLoad
 {

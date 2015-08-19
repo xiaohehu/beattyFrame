@@ -701,7 +701,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhg-zw-OeN">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                         <rect key="frame" x="0.0" y="102" width="91" height="28"/>
@@ -906,10 +906,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQy-23-0Ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Emb Data View Controller-->
+        <!--Supporting Data View Controller-->
         <scene sceneID="ev1-lP-VlW">
             <objects>
-                <viewController storyboardIdentifier="embDataViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fwv-9V-5Qf" customClass="embDataViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="supportingDataViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fwv-9V-5Qf" customClass="supportingDataViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f5e-Fx-rLa"/>
                         <viewControllerLayoutGuide type="bottom" id="od3-EW-7ld"/>
@@ -1020,6 +1020,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yja-DK-s53"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eGd-SH-m3w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1036,6 +1037,7 @@
                         <viewControllerLayoutGuide type="bottom" id="SxU-dV-Pdt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IXi-ht-gJS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1052,6 +1054,7 @@
                         <viewControllerLayoutGuide type="bottom" id="B34-CE-7UY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yd2-aX-HoO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

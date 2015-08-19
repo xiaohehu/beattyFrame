@@ -7,8 +7,8 @@
 //
 
 #import "SupportingViewController.h"
-#import "embModelController.h"
-#import "embDataViewController.h"
+#import "supportingModelController.h"
+#import "supportingDataViewController.h"
 #import "UIColor+Extensions.h"
 #import "animationView.h"
 #import "xhPageViewController.h"
@@ -27,7 +27,7 @@ static int      animationViewIndex = 6;
     int             currentPageIndex;
 }
 
-@property (readonly, strong, nonatomic) embModelController		*modelController;
+@property (readonly, strong, nonatomic) supportingModelController		*modelController;
 //@property (strong, nonatomic)           UIPageViewController	*pageViewController;
 @property (strong, nonatomic)           xhPageViewController	*pageViewController;
 @end
@@ -42,7 +42,7 @@ static int      animationViewIndex = 6;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _modelController = [[embModelController alloc] init];
+    _modelController = [[supportingModelController alloc] init];
     [self prepareData];
 }
 
@@ -112,7 +112,7 @@ static int      animationViewIndex = 6;
 
 - (void)loadPage:(int)page {
     
-    embDataViewController *startingViewController = [self.modelController viewControllerAtIndex:page storyboard:self.storyboard];
+    supportingDataViewController *startingViewController = [self.modelController viewControllerAtIndex:page storyboard:self.storyboard];
     currentPageIndex = page;
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers
@@ -145,7 +145,7 @@ static int      animationViewIndex = 6;
 }
 
 - (void) setpageIndex {
-    embDataViewController *theCurrentViewController = [self.pageViewController.viewControllers objectAtIndex:0];
+    supportingDataViewController *theCurrentViewController = [self.pageViewController.viewControllers objectAtIndex:0];
     currentPageIndex = (int)[self.modelController indexOfViewController:theCurrentViewController];
     [self checkCurrentIndexPosition];
     
@@ -168,12 +168,12 @@ static int      animationViewIndex = 6;
     [self updatePageNumLabelText];
 }
 
-- (embModelController *)modelController
+- (supportingModelController *)modelController
 {
     // Return the model controller object, creating it if necessary.
     // In more complex implementations, the model controller may be passed to the view controller.
     if (!_modelController) {
-        _modelController = [[embModelController alloc] init];
+        _modelController = [[supportingModelController alloc] init];
     }
     return _modelController;
 }

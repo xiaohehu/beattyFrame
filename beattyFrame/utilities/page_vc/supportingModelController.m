@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 neoscape. All rights reserved.
 //
 
-#import "embModelController.h"
-#import "embDataViewController.h"
+#import "supportingDataViewController.h"
+#import "supportingModelController.h"
 
 /*
  A controller object that manages a simple model -- a collection of month names.
@@ -18,11 +18,11 @@
  There is no need to actually create view controllers for each page in advance -- indeed doing so incurs unnecessary overhead. Given the data model, these methods create, configure, and return a new view controller on demand.
  */
 
-@interface embModelController()
+@interface supportingModelController()
 @property (readonly, strong, nonatomic) NSArray *pageData;
 @end
 
-@implementation embModelController
+@implementation supportingModelController
 
 - (id)init
 {
@@ -34,7 +34,7 @@
     return self;
 }
 
-- (embDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
+- (supportingDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
 {   
     // Return the data view controller for the given index.
     if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
@@ -42,13 +42,13 @@
     }
     
     // Create a new view controller and pass suitable data.
-    embDataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"embDataViewController"];
+    supportingDataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"supportingDataViewController"];
     dataViewController.dataObject = self.pageData[index];
     dataViewController.vcIndex = index;
     return dataViewController;
 }
 
-- (NSUInteger)indexOfViewController:(embDataViewController *)viewController
+- (NSUInteger)indexOfViewController:(supportingDataViewController *)viewController
 {   
      // Return the index of the given data view controller.
      // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
@@ -59,7 +59,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    NSUInteger index = [self indexOfViewController:(embDataViewController *)viewController];
+    NSUInteger index = [self indexOfViewController:(supportingDataViewController *)viewController];
     if ((index == 0) || (index == NSNotFound)) {
         return nil;
     }
@@ -69,8 +69,9 @@
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
+
 {
-    NSUInteger index = [self indexOfViewController:(embDataViewController *)viewController];
+    NSUInteger index = [self indexOfViewController:(supportingDataViewController *)viewController];
     if (index == NSNotFound) {
         return nil;
     }

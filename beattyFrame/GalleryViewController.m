@@ -311,6 +311,7 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
     if (isShare) {
         NSNumber *selSection = [NSNumber numberWithInt:(int)indexPath.section];
         NSNumber *selRow = [NSNumber numberWithInt:(int)indexPath.row];
@@ -366,13 +367,39 @@
         
         // and now reload only the cells that need updating
         [collectionView reloadData];
-
+        
     } else {
+        NSArray *images = [NSArray new];
+        NSArray *captions = [NSArray new];
+        NSDictionary *ggallDict = [arr_AlbumData objectAtIndex:indexPath.section];
+        NSArray *ggalleryArray = [ggallDict objectForKey:@"sectioninfo"];
+        
+        for (int i = 0; i < [ggalleryArray count]; i++) {
+            NSDictionary *itemDic = [[NSDictionary alloc] initWithDictionary:ggalleryArray[i]];
+            
+            //Add all items' names into this array
+            images = [itemDic objectForKey:@"assets"];
+            captions = [itemDic objectForKey:@"captions"];
+        }     
+        
+        
+        NSMutableArray *galleryData = [NSMutableArray new];
+        
+        for (int i = 0; i < images.count; i++) {
+            NSDictionary *gallery_item = @{
+                                           @"caption" : captions[i],
+                                           @"file" : images[i],
+                                           @"type" : @"image"
+                                           };
+            [galleryData addObject: gallery_item];
+        }
+        NSLog(@"\n\n%@\n\n", galleryData);
+        
         _gallery = [[XHGalleryViewController alloc] init];
         _gallery.delegate = self;
         _gallery.startIndex = 0; 		// Change this value to start with different page
         _gallery.view.frame = self.view.bounds; 	// Change to load different frame
-        _gallery.arr_rawData = arr_rawData[0];
+        _gallery.arr_rawData = galleryData;//arr_rawData[0];
         [self addChildViewController: _gallery];
         [self.view addSubview: _gallery.view];
     }
