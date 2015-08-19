@@ -21,6 +21,7 @@
 #import <AVFoundation/AVPlayerItem.h>
 #import <AVFoundation/AVFoundation.h>
 #import "xhWebViewController.h"
+#import "SettingViewController.h"
 
 static float    sideMenuWidth = 235.0;
 static float    menuButtonSize = 50.0;
@@ -562,6 +563,11 @@ static float    menuButtonSize = 50.0;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
+- (IBAction)loadSetting:(id)sender {
+    SettingViewController *settingVC = [[SettingViewController alloc] init];
+    settingVC.view.frame = self.view.bounds;
+    [self presentViewController:settingVC animated:YES completion:^(void){  }];
+}
 
 #pragma mark - Mail Sending
 -(void)setEmailDataObject:(NSNotification *)pNotification
