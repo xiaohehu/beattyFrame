@@ -12,4 +12,7 @@
 @interface GalleryViewController : UIViewController
 @property (nonatomic, copy) NSString *plistName;
 @property (nonatomic) User *user;
+
+- (void)scrollToIndex:(int)sectionIndex;
+
 @end

@@ -10,6 +10,7 @@
 #import "UIColor+Extensions.h"
 #import "buildingDataViewController.h"
 #import "buildingModelController.h"
+#import "GalleryViewController.h"
 
 @interface BuildingViewController () <UIPageViewControllerDelegate, UIGestureRecognizerDelegate>
 {
@@ -149,7 +150,7 @@
     int index = (int)[sender tag];
     switch (index) {
         case 0: {
-            
+            [self loadGallery];
             break;
         }
         case 1: {
@@ -174,7 +175,10 @@
 }
 
 - (void)loadGallery {
-
+    GalleryViewController *gallery = [self.storyboard instantiateViewControllerWithIdentifier:@"GalleryViewController"];
+    [self presentViewController:gallery animated:YES completion:^(void){
+        [gallery scrollToIndex:3];
+    }];
 }
 
 - (void)loadPlayGround {

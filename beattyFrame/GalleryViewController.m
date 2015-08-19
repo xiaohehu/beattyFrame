@@ -188,6 +188,12 @@
     uib_sectionTitle.frame = frame;
 }
 
+- (void)scrollToIndex:(int)sectionIndex {
+    NSLog(@"haha %i", sectionIndex);
+    NSIndexPath *index = [NSIndexPath indexPathForItem:0 inSection:sectionIndex];
+    [_uic_collectionView scrollToItemAtIndexPath:index atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
+}
+
 #pragma mark - Collection View
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
