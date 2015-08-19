@@ -57,6 +57,10 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    if (uiv_menuContainer) {
+        return;
+    }
+    
     [self initPageView:pageIndex];
     [self createMenuContainer];
     [self createMenuItems];
