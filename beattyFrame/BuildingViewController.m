@@ -7,12 +7,14 @@
 //
 
 #import "BuildingViewController.h"
+#import "UIColor+Extensions.h"
+#import "buildingDataViewController.h"
+#import "buildingModelController.h"
 
-@interface BuildingViewController ()
+@interface BuildingViewController () <UIPageViewControllerDelegate, UIGestureRecognizerDelegate>
 {
     CGRect              bigContainerFrame;
     CGRect              smallContainerFrame;
-    
     // Building menu & content
     UIImageView         *uiiv_bg;
     UIView              *uiv_menuContainer;
@@ -25,15 +27,18 @@
     UILabel             *uil_buildingName;
     NSArray             *arr_buttonIcons;
     NSMutableArray      *arr_menuButtons;
-//    UIButton            *uib_gallery;
-//    UIButton            *uib_playground;
-//    UIButton            *uib_list;
-//    UIButton            *uib_previous;
-//    UIButton            *uib_next;
+    int                 currentPageIndex;
 }
+
+@property (readonly, strong, nonatomic) buildingModelController         *modelController;
+@property (strong, nonatomic)           UIPageViewController            *pageViewController;
+
 @end
 
 @implementation BuildingViewController
+
+@synthesize modelController = _modelController;
+@synthesize pageIndex;
 
 #pragma mark - View Controller Life-cycle
 
@@ -44,19 +49,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    _modelController = [[buildingModelController alloc] init];
+    
     [self prepareData];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self initPageView:pageIndex];
     [self createMenuContainer];
     [self createMenuItems];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-
-}
-
 - (void)viewDidAppear:(BOOL)animated {
-    for (UIView *view in [self.view subviews]) {
-        NSLog(@"\n\n%@\n\n", view);
-    }
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -84,14 +90,14 @@
     
     uiiv_bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"grfx_building.jpg"]];
     uiiv_bg.frame = self.view.bounds;
-    [self.view addSubview: uiiv_bg];
+//    [self.view addSubview: uiiv_bg];
     
     uiv_menuContainer = [UIView new];
     uiv_menuContainer.frame = smallContainerFrame;
     uiv_menuContainer.clipsToBounds = YES;
     
     uiv_menuContainer.backgroundColor = [UIColor redColor];
-    [self.view insertSubview:uiv_menuContainer aboveSubview:uiiv_bg];
+    [self.view insertSubview:uiv_menuContainer aboveSubview:self.pageViewController.view];
     
     uiv_buildingMenu = [UIView new];
     uiv_buildingMenu.frame = CGRectMake(0.0, 0.0, 360, 130);
@@ -204,6 +210,66 @@
 - (IBAction)tapCloseButton:(id)sender {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"removeBuilding" object:nil];
 }
+
+# pragma mark - UIPageView Controller
+/*
+ * Init page view controller
+ */
+- (void)initPageView:(NSInteger)index {
+    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    self.pageViewController.delegate = self;
+    self.pageViewController.dataSource = self.modelController;
+    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.view.autoresizesSubviews =YES;
+    self.pageViewController.view.frame = self.view.bounds;
+    [self.pageViewController didMoveToParentViewController:self];
+    [self addChildViewController:self.pageViewController];
+    [self.view addSubview: self.pageViewController.view];
+    [self.pageViewController.view setBackgroundColor:[UIColor whiteColor]];
+    
+    [self loadPage:(int)index];
+}
+
+- (void)loadPage:(int)page {
+    
+    buildingDataViewController *startingViewController = [self.modelController viewControllerAtIndex:page storyboard:self.storyboard];
+    currentPageIndex = page;
+    NSArray *viewControllers = @[startingViewController];
+    [self.pageViewController setViewControllers:viewControllers
+                                      direction:UIPageViewControllerNavigationDirectionForward
+                                       animated:NO
+                                     completion:nil];
+}
+
+- (void)pageViewController:(UIPageViewController *)pvc didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed
+{
+    // If the page did not turn
+    if (!completed)
+    {
+        // You do nothing because whatever page you thought you were on
+        // before the gesture started is still the correct page
+        NSLog(@"same page");
+        return;
+    }
+    // This is where you would know the page number changed and handle it appropriately
+    //    NSLog(@"new page");
+    [self setpageIndex];
+}
+
+- (void) setpageIndex {
+    buildingDataViewController *theCurrentViewController = [self.pageViewController.viewControllers objectAtIndex:0];
+    currentPageIndex = (int)[self.modelController indexOfViewController:theCurrentViewController];
+}
+- (buildingModelController *)modelController
+{
+    // Return the model controller object, creating it if necessary.
+    // In more complex implementations, the model controller may be passed to the view controller.
+    if (!_modelController) {
+        _modelController = [[buildingModelController alloc] init];
+    }
+    return _modelController;
+}
+
 
 /*
 #pragma mark - Navigation

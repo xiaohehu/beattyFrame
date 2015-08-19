@@ -45,6 +45,11 @@
 		822822A01B83CE6D004154E7 /* grfx_buildingPre@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822961B83CE6D004154E7 /* grfx_buildingPre@2x.jpg */; };
 		822822A31B83D5AB004154E7 /* grfx_expand.png in Resources */ = {isa = PBXBuildFile; fileRef = 822822A11B83D5AB004154E7 /* grfx_expand.png */; };
 		822822A41B83D5AB004154E7 /* grfx_expand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 822822A21B83D5AB004154E7 /* grfx_expand@2x.png */; };
+		822822A81B84F783004154E7 /* buildingModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822822A71B84F783004154E7 /* buildingModelController.m */; };
+		822822AE1B84F993004154E7 /* buildingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822822AD1B84F993004154E7 /* buildingDataViewController.m */; };
+		822822B11B850AC6004154E7 /* grfx_building1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822AF1B850AC6004154E7 /* grfx_building1.jpg */; };
+		822822B21B850AC6004154E7 /* grfx_building1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822B01B850AC6004154E7 /* grfx_building1@2x.jpg */; };
+		822822B41B850B55004154E7 /* building_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 822822B31B850B55004154E7 /* building_data.plist */; };
 		8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8243874E1B6929A1003AC214 /* SupportingViewController.m */; };
 		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
 		824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824387571B6BAA14003AC214 /* xhPageViewController.m */; };
@@ -747,6 +752,13 @@
 		822822961B83CE6D004154E7 /* grfx_buildingPre@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx_buildingPre@2x.jpg"; sourceTree = "<group>"; };
 		822822A11B83D5AB004154E7 /* grfx_expand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_expand.png; sourceTree = "<group>"; };
 		822822A21B83D5AB004154E7 /* grfx_expand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_expand@2x.png"; sourceTree = "<group>"; };
+		822822A61B84F783004154E7 /* buildingModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buildingModelController.h; sourceTree = "<group>"; };
+		822822A71B84F783004154E7 /* buildingModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buildingModelController.m; sourceTree = "<group>"; };
+		822822AC1B84F993004154E7 /* buildingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buildingDataViewController.h; sourceTree = "<group>"; };
+		822822AD1B84F993004154E7 /* buildingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buildingDataViewController.m; sourceTree = "<group>"; };
+		822822AF1B850AC6004154E7 /* grfx_building1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grfx_building1.jpg; sourceTree = "<group>"; };
+		822822B01B850AC6004154E7 /* grfx_building1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx_building1@2x.jpg"; sourceTree = "<group>"; };
+		822822B31B850B55004154E7 /* building_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = building_data.plist; sourceTree = "<group>"; };
 		8243874D1B6929A1003AC214 /* SupportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportingViewController.h; sourceTree = "<group>"; };
 		8243874E1B6929A1003AC214 /* SupportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportingViewController.m; sourceTree = "<group>"; };
 		824387501B69414D003AC214 /* supporting_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = supporting_data.plist; sourceTree = "<group>"; };
@@ -1472,6 +1484,8 @@
 				8228228B1B83BC29004154E7 /* grfx_buildingIcon.jpg */,
 				82115DF11B7012A600A36684 /* grfx_building.jpg */,
 				82115DF21B7012A600A36684 /* grfx_building@2x.jpg */,
+				822822AF1B850AC6004154E7 /* grfx_building1.jpg */,
+				822822B01B850AC6004154E7 /* grfx_building1@2x.jpg */,
 				8228228D1B83CE6D004154E7 /* grfx_buildingGallery.jpg */,
 				8228228E1B83CE6D004154E7 /* grfx_buildingGallery@2x.jpg */,
 				8228228F1B83CE6D004154E7 /* grfx_buildingList.jpg */,
@@ -1518,6 +1532,17 @@
 			);
 			name = film;
 			path = src/film;
+			sourceTree = "<group>";
+		};
+		822822A51B84F75E004154E7 /* Building */ = {
+			isa = PBXGroup;
+			children = (
+				822822AC1B84F993004154E7 /* buildingDataViewController.h */,
+				822822AD1B84F993004154E7 /* buildingDataViewController.m */,
+				822822A61B84F783004154E7 /* buildingModelController.h */,
+				822822A71B84F783004154E7 /* buildingModelController.m */,
+			);
+			name = Building;
 			sourceTree = "<group>";
 		};
 		824D27191B5D7E6700E5F5A5 = {
@@ -2186,6 +2211,7 @@
 		824D2B131B6169AB00E5F5A5 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				822822B31B850B55004154E7 /* building_data.plist */,
 				824D2B551B62CF7F00E5F5A5 /* shareableData.plist */,
 				824D2B1E1B61857E00E5F5A5 /* photoData.plist */,
 				824D2B141B6169AB00E5F5A5 /* ImageData.plist */,
@@ -2353,6 +2379,7 @@
 		82A128B31B69164100564266 /* page_vc */ = {
 			isa = PBXGroup;
 			children = (
+				822822A51B84F75E004154E7 /* Building */,
 				8228227A1B822100004154E7 /* Sponsorship */,
 				822822791B8220E8004154E7 /* Supporting_stories */,
 				82A128BA1B6916BF00564266 /* ebZoomingScrollView.h */,
@@ -2589,6 +2616,7 @@
 				824D2B071B61671600E5F5A5 /* phase_d_color_00060.jpg in Resources */,
 				824D2BC51B62D02100E5F5A5 /* share_inspi01.jpg.jpg in Resources */,
 				824D2A541B61671600E5F5A5 /* phase_b_color_00025.jpg in Resources */,
+				822822B21B850AC6004154E7 /* grfx_building1@2x.jpg in Resources */,
 				824D2A031B61671600E5F5A5 /* phase_b_base_00016.jpg in Resources */,
 				82A128B11B66CA6B00564266 /* grfx_menuOpen.png in Resources */,
 				824D2AAB1B61671600E5F5A5 /* phase_d_base_00040.jpg in Resources */,
@@ -2914,6 +2942,7 @@
 				824D2AAD1B61671600E5F5A5 /* phase_d_base_00042.jpg in Resources */,
 				824D2A491B61671600E5F5A5 /* phase_b_color_00014.jpg in Resources */,
 				824D2AA61B61671600E5F5A5 /* phase_d_base_00035.jpg in Resources */,
+				822822B41B850B55004154E7 /* building_data.plist in Resources */,
 				824D2A701B61671600E5F5A5 /* phase_b_color_00053.jpg in Resources */,
 				824D2AC31B61671600E5F5A5 /* phase_d_base_00064.jpg in Resources */,
 				824D2AF81B61671600E5F5A5 /* phase_d_color_00045.jpg in Resources */,
@@ -2935,6 +2964,7 @@
 				824D2ADD1B61671600E5F5A5 /* phase_d_color_00018.jpg in Resources */,
 				824D2A961B61671600E5F5A5 /* phase_d_base_00019.jpg in Resources */,
 				8251FEBB1B7D0D880021C1BA /* phase_a_color_00003.png in Resources */,
+				822822B11B850AC6004154E7 /* grfx_building1.jpg in Resources */,
 				824D2B2E1B6186FA00E5F5A5 /* Victory Center 02 W Hotel View.jpg in Resources */,
 				824D2BC41B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View08_050715.jpg.jpg in Resources */,
 				824D2BCC1B62D02100E5F5A5 /* share_market_exterior01.jpg.jpg in Resources */,
@@ -3143,6 +3173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				822822AE1B84F993004154E7 /* buildingDataViewController.m in Sources */,
 				8228227D1B822134004154E7 /* sponsorshipModelController.m in Sources */,
 				822822831B82290C004154E7 /* SponsorshipViewController.m in Sources */,
 				824D2B461B62B5C600E5F5A5 /* EMBSPSectionHeader.m in Sources */,
@@ -3157,6 +3188,7 @@
 				824D27281B5D7E6700E5F5A5 /* main.m in Sources */,
 				824D2B1B1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m in Sources */,
 				82A128B91B69164100564266 /* supportingModelController.m in Sources */,
+				822822A81B84F783004154E7 /* buildingModelController.m in Sources */,
 				822822801B822243004154E7 /* sponsorDataViewController.m in Sources */,
 				82A128BC1B6916BF00564266 /* ebZoomingScrollView.m in Sources */,
 				824D2B3B1B62B57D00E5F5A5 /* UIImage+ScaleToFit.m in Sources */,

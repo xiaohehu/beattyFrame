@@ -10,4 +10,6 @@
 
 @interface BuildingViewController : UIViewController
 
+@property (readwrite, nonatomic)    int     pageIndex;
+
 @end

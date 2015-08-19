@@ -110,7 +110,6 @@ static float    menuButtonSize = 50.0;
 - (void)viewWillAppear:(BOOL)animated {
 //    [self.view addSubview: uiiv_initImage];
     NSString *loadFilm = [[NSUserDefaults standardUserDefaults] objectForKey:@"loadIntroMove"];
-    NSLog(@"\n\n The string is %@", loadFilm);
     if ([loadFilm isEqual:@"loadFilm"]) {
         return;
     } else {
