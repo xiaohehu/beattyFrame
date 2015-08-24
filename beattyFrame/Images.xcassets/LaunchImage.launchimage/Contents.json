@@ -12,7 +12,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "grfx_initImage@2x 2.png",
+      "filename" : "red_bg.png",
       "scale" : "1x"
     },
     {
@@ -27,7 +27,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "grfx_initImage@2x.png",
+      "filename" : "red_bg@2x.png",
       "scale" : "2x"
     }
   ],

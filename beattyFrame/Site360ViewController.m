@@ -53,7 +53,7 @@ static float bottomMenuHeight  = 37.0;
     [uiv_container addGestureRecognizer:panGesture];
     panGesture.delegate = self;
     
-    currentFrame = 3;
+    currentFrame = 0;
     
     numberOfFrames = [self imageCount]-1;
     uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];

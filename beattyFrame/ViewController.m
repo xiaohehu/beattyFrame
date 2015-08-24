@@ -92,7 +92,7 @@ static float    menuButtonSize = 50.0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    self.view.backgroundColor = [UIColor redColor];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeSummary:) name:@"RemoveSummeary" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadSummaryInSite360:) name:@"loadSummary" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setEmailDataObject:) name:@"emailData" object:nil];
@@ -120,7 +120,6 @@ static float    menuButtonSize = 50.0;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    
     NSString *loadFilm = [[NSUserDefaults standardUserDefaults] objectForKey:@"loadIntroMove"];
     if (![loadFilm isEqual:@"loadFilm"]) {
         [self createIntroMovie];
@@ -128,7 +127,7 @@ static float    menuButtonSize = 50.0;
     [self highlightTheButton:uib_site360 withAnimation:NO];
     
     [[NSUserDefaults standardUserDefaults] setValue:@"loadFilm" forKey:@"loadIntroMove"];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
 //    NSArray *fontFamilies = [UIFont familyNames];
 //    
 //    for (int i = 0; i < [fontFamilies count]; i++)
@@ -155,6 +154,7 @@ static float    menuButtonSize = 50.0;
     introAvPlayer = [AVPlayer playerWithURL:[NSURL fileURLWithPath:url]];
     introAvPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:introAvPlayer];
     introAvPlayerLayer.frame = self.view.bounds;
+    introAvPlayerLayer.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:2.0/255.0 blue:1.0/255.0 alpha:1.0].CGColor;
     [self.view.layer addSublayer: introAvPlayerLayer];
     [introAvPlayer play];
     

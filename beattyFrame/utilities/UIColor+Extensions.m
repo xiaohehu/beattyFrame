@@ -25,6 +25,10 @@
     return [UIColor colorWithRed:216.0/255.0 green:35.0/255.0 blue:42.0/255.0 alpha:1.0];
 }
 
++ (UIColor *)selectedBlue {
+    return [UIColor colorWithRed:118.0/255.0 green:199.0/255.0 blue:253.0/255.0 alpha:1.0];
+}
+
 + (UIColor *)randomColor {
     return [self colorWithRed:((float)rand() / RAND_MAX)
                         green:((float)rand() / RAND_MAX)

@@ -52,6 +52,142 @@
 		822822B41B850B55004154E7 /* building_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 822822B31B850B55004154E7 /* building_data.plist */; };
 		822822BA1B851E44004154E7 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822822B71B851E44004154E7 /* SettingTableViewController.m */; };
 		822822BB1B851E44004154E7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822822B91B851E44004154E7 /* SettingViewController.m */; };
+		822822C01B86169A004154E7 /* grfx_shareEmail.png in Resources */ = {isa = PBXBuildFile; fileRef = 822822BC1B86169A004154E7 /* grfx_shareEmail.png */; };
+		822822C11B86169A004154E7 /* grfx_sharePDF.png in Resources */ = {isa = PBXBuildFile; fileRef = 822822BD1B86169A004154E7 /* grfx_sharePDF.png */; };
+		822822C21B86169A004154E7 /* grfx_shareEmail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 822822BE1B86169A004154E7 /* grfx_shareEmail@2x.png */; };
+		822822C31B86169A004154E7 /* grfx_sharePDF@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 822822BF1B86169A004154E7 /* grfx_sharePDF@2x.png */; };
+		822823631B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822C71B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot01.jpg */; };
+		822823641B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822C81B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot02.jpg */; };
+		822823651B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822C91B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot03.jpg */; };
+		822823661B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822CA1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot04.jpg */; };
+		822823671B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822CB1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot05.jpg */; };
+		822823681B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822CC1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot06.jpg */; };
+		822823691B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822CD1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot07.jpg */; };
+		8228236A1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822CE1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot08.jpg */; };
+		8228236B1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View01_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D01B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View01_051215.jpg */; };
+		8228236C1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View02_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D11B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View02_051215.jpg */; };
+		8228236D1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View03_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D21B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View03_051215.jpg */; };
+		8228236E1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View04_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D31B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View04_051215.jpg */; };
+		8228236F1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View05_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D41B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View05_051215.jpg */; };
+		822823701B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View06_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D51B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View06_051215.jpg */; };
+		822823711B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View07_050715.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D61B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View07_050715.jpg */; };
+		822823721B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View08_050715.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D71B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View08_050715.jpg */; };
+		822823731B862A0A004154E7 /* View 1 - Corner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D81B862A0A004154E7 /* View 1 - Corner.jpg */; };
+		822823741B862A0A004154E7 /* View 10- Mews.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D91B862A0A004154E7 /* View 10- Mews.jpg */; };
+		822823751B862A0A004154E7 /* View 11 - Mews.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822DA1B862A0A004154E7 /* View 11 - Mews.jpg */; };
+		822823761B862A0A004154E7 /* View 12 - N Randolph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822DB1B862A0A004154E7 /* View 12 - N Randolph.jpg */; };
+		822823771B862A0A004154E7 /* View 2 - Wilson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822DC1B862A0A004154E7 /* View 2 - Wilson.jpg */; };
+		822823781B862A0A004154E7 /* View 5 - Plaza - no bridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822DD1B862A0A004154E7 /* View 5 - Plaza - no bridge.jpg */; };
+		822823791B862A0A004154E7 /* View 6 - no bridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822DE1B862A0A004154E7 /* View 6 - no bridge.jpg */; };
+		8228237A1B862A0A004154E7 /* View 7 - N Stuart - no bridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822DF1B862A0A004154E7 /* View 7 - N Stuart - no bridge.jpg */; };
+		8228237B1B862A0A004154E7 /* View 8 - Plaza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822E01B862A0A004154E7 /* View 8 - Plaza.jpg */; };
+		8228237C1B862A0A004154E7 /* View 9 - Interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822E11B862A0A004154E7 /* View 9 - Interior.jpg */; };
+		8228237D1B862A0A004154E7 /* 150512_BC_PresTemplate_ProgressR3_LR 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E31B862A0A004154E7 /* 150512_BC_PresTemplate_ProgressR3_LR 2.pdf */; };
+		8228237E1B862A0A004154E7 /* 150604_BallstonQuarter_DiningGallery_R4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E41B862A0A004154E7 /* 150604_BallstonQuarter_DiningGallery_R4.pdf */; };
+		8228237F1B862A0A004154E7 /* 2015_04_06-ESCALATORS AXON .pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E51B862A0A004154E7 /* 2015_04_06-ESCALATORS AXON .pdf */; };
+		822823801B862A0A004154E7 /* Ballston Center Mall Permanent 11x17.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E61B862A0A004154E7 /* Ballston Center Mall Permanent 11x17.pdf */; };
+		822823811B862A0A004154E7 /* ballston leasing book with cards-2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E71B862A0A004154E7 /* ballston leasing book with cards-2.pdf */; };
+		822823821B862A0A004154E7 /* Ballston_Existing_Lease_Plan_mh.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E81B862A0A004154E7 /* Ballston_Existing_Lease_Plan_mh.pdf */; };
+		822823831B862A0A004154E7 /* Ballston_Presentation_072414-low res.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E91B862A0A004154E7 /* Ballston_Presentation_072414-low res.pdf */; };
+		822823841B862A0A004154E7 /* BallstonSDPackage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822EA1B862A0A004154E7 /* BallstonSDPackage.pdf */; };
+		822823851B862A0A004154E7 /* BCLP DEV_ 05-01-2015..pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822EB1B862A0A004154E7 /* BCLP DEV_ 05-01-2015..pdf */; };
+		822823861B862A0A004154E7 /* BCLP DEV_ 07-09-2015.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822EC1B862A0A004154E7 /* BCLP DEV_ 07-09-2015.pdf */; };
+		822823871B862A0A004154E7 /* BCLP DEV_MNSP01 SPACE PLAN 11 25 14-mh.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822ED1B862A0A004154E7 /* BCLP DEV_MNSP01 SPACE PLAN 11 25 14-mh.pdf */; };
+		822823881B862A0A004154E7 /* Design Update.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822EE1B862A0A004154E7 /* Design Update.pdf */; };
+		822823891B862A0A004154E7 /* Existing_Page_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F01B862A0A004154E7 /* Existing_Page_1.jpg */; };
+		8228238A1B862A0A004154E7 /* Existing_Page_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F11B862A0A004154E7 /* Existing_Page_2.jpg */; };
+		8228238B1B862A0A004154E7 /* Existing_Page_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F21B862A0A004154E7 /* Existing_Page_3.jpg */; };
+		8228238C1B862A0A004154E7 /* Existing_Page_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F31B862A0A004154E7 /* Existing_Page_4.jpg */; };
+		8228238D1B862A0A004154E7 /* Leasing_Page_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F51B862A0A004154E7 /* Leasing_Page_1.jpg */; };
+		8228238E1B862A0A004154E7 /* Leasing_Page_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F61B862A0A004154E7 /* Leasing_Page_2.jpg */; };
+		8228238F1B862A0A004154E7 /* Leasing_Page_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F71B862A0A004154E7 /* Leasing_Page_3.jpg */; };
+		822823901B862A0A004154E7 /* Leasing_Page_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F81B862A0A004154E7 /* Leasing_Page_4.jpg */; };
+		8228239C1B862A0A004154E7 /* arch_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823071B862A0A004154E7 /* arch_01.jpg */; };
+		8228239D1B862A0A004154E7 /* arch_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823081B862A0A004154E7 /* arch_02.jpg */; };
+		8228239E1B862A0A004154E7 /* arch_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823091B862A0A004154E7 /* arch_03.jpg */; };
+		8228239F1B862A0A004154E7 /* arch_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228230A1B862A0A004154E7 /* arch_04.jpg */; };
+		822823A01B862A0A004154E7 /* arch_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228230B1B862A0A004154E7 /* arch_05.jpg */; };
+		822823A11B862A0A004154E7 /* arch_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228230C1B862A0A004154E7 /* arch_06.jpg */; };
+		822823A21B862A0A004154E7 /* inspi01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228230E1B862A0A004154E7 /* inspi01.jpg */; };
+		822823A31B862A0A004154E7 /* inspi02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228230F1B862A0A004154E7 /* inspi02.jpg */; };
+		822823A41B862A0A004154E7 /* inspi03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823101B862A0A004154E7 /* inspi03.jpg */; };
+		822823A51B862A0A004154E7 /* inspi04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823111B862A0A004154E7 /* inspi04.jpg */; };
+		822823A61B862A0A004154E7 /* inspi05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823121B862A0A004154E7 /* inspi05.jpg */; };
+		822823A71B862A0A004154E7 /* inspi06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823131B862A0A004154E7 /* inspi06.jpg */; };
+		822823A81B862A0A004154E7 /* lifestyle01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823141B862A0A004154E7 /* lifestyle01.jpg */; };
+		822823A91B862A0A004154E7 /* store01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823161B862A0A004154E7 /* store01.jpg */; };
+		822823AA1B862A0A004154E7 /* store02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823171B862A0A004154E7 /* store02.jpg */; };
+		822823AB1B862A0A004154E7 /* store03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823181B862A0A004154E7 /* store03.jpg */; };
+		822823AC1B862A0A004154E7 /* store04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823191B862A0A004154E7 /* store04.jpg */; };
+		822823AD1B862A0A004154E7 /* store05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228231A1B862A0A004154E7 /* store05.jpg */; };
+		822823AE1B862A0A004154E7 /* store06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228231B1B862A0A004154E7 /* store06.jpg */; };
+		822823AF1B862A0A004154E7 /* store07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228231C1B862A0A004154E7 /* store07.jpg */; };
+		822823B01B862A0A004154E7 /* street01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228231E1B862A0A004154E7 /* street01.jpg */; };
+		822823B11B862A0A004154E7 /* street02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228231F1B862A0A004154E7 /* street02.jpg */; };
+		822823B21B862A0A004154E7 /* street03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823201B862A0A004154E7 /* street03.jpg */; };
+		822823B31B862A0A004154E7 /* market_exterior01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823221B862A0A004154E7 /* market_exterior01.jpg */; };
+		822823B41B862A0A004154E7 /* market_exterior02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823231B862A0A004154E7 /* market_exterior02.jpg */; };
+		822823B51B862A0A004154E7 /* market_interior01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823241B862A0A004154E7 /* market_interior01.jpg */; };
+		822823B61B862A0A004154E7 /* market_interior02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823251B862A0A004154E7 /* market_interior02.jpg */; };
+		822823B71B862A0A004154E7 /* market_interior03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823261B862A0A004154E7 /* market_interior03.jpg */; };
+		822823B81B862A0A004154E7 /* Ballston aerial01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823291B862A0A004154E7 /* Ballston aerial01.jpg */; };
+		822823B91B862A0A004154E7 /* Ballston Aerial02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228232A1B862A0A004154E7 /* Ballston Aerial02.jpg */; };
+		822823BA1B862A0A004154E7 /* 0160 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228232D1B862A0A004154E7 /* 0160 BCM (c) 2014 David Galen.jpg */; };
+		822823BB1B862A0A004154E7 /* 0336 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228232E1B862A0A004154E7 /* 0336 BCM (c) 2014 David Galen.jpg */; };
+		822823BC1B862A0A004154E7 /* 0364 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228232F1B862A0A004154E7 /* 0364 BCM (c) 2014 David Galen.jpg */; };
+		822823BD1B862A0A004154E7 /* Pg 2A  0225 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823301B862A0A004154E7 /* Pg 2A  0225 BCM (c) 2014 David Galen.jpg */; };
+		822823BE1B862A0A004154E7 /* Pg 5B  0420 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823311B862A0A004154E7 /* Pg 5B  0420 BCM (c) 2014 David Galen.jpg */; };
+		822823BF1B862A0A004154E7 /* Pg 9  0251 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823321B862A0A004154E7 /* Pg 9  0251 BCM (c) 2014 David Galen.jpg */; };
+		822823C01B862A0A004154E7 /* Picture 031.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823331B862A0A004154E7 /* Picture 031.jpg */; };
+		822823C11B862A0A004154E7 /* Picture 035.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823341B862A0A004154E7 /* Picture 035.jpg */; };
+		822823C21B862A0A004154E7 /* Picture 036.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823351B862A0A004154E7 /* Picture 036.jpg */; };
+		822823C31B862A0A004154E7 /* Picture 038.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823361B862A0A004154E7 /* Picture 038.jpg */; };
+		822823C41B862A0A004154E7 /* Picture 049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823371B862A0A004154E7 /* Picture 049.jpg */; };
+		822823C51B862A0A004154E7 /* Picture 050.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823381B862A0A004154E7 /* Picture 050.jpg */; };
+		822823C61B862A0A004154E7 /* Picture 051.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823391B862A0A004154E7 /* Picture 051.jpg */; };
+		822823C71B862A0A004154E7 /* Picture 056.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228233A1B862A0A004154E7 /* Picture 056.jpg */; };
+		822823C81B862A0A004154E7 /* 0005 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228233C1B862A0A004154E7 /* 0005 BCM (c) 2014 David Galen.jpg */; };
+		822823C91B862A0A004154E7 /* 0027 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228233D1B862A0A004154E7 /* 0027 BCM (c) 2014 David Galen.jpg */; };
+		822823CA1B862A0A004154E7 /* 0099 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228233E1B862A0A004154E7 /* 0099 BCM (c) 2014 David Galen.jpg */; };
+		822823CB1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228233F1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg */; };
+		822823CC1B862A0A004154E7 /* Picture 024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823401B862A0A004154E7 /* Picture 024.jpg */; };
+		822823CD1B862A0A004154E7 /* Picture 030.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823411B862A0A004154E7 /* Picture 030.jpg */; };
+		822823CE1B862A0A004154E7 /* Picture 041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823421B862A0A004154E7 /* Picture 041.jpg */; };
+		822823CF1B862A0A004154E7 /* thumb_3D.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823441B862A0A004154E7 /* thumb_3D.jpg */; };
+		822823D01B862A0A004154E7 /* thumb_arch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823451B862A0A004154E7 /* thumb_arch.jpg */; };
+		822823D11B862A0A004154E7 /* thumb_architecture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823461B862A0A004154E7 /* thumb_architecture.jpg */; };
+		822823D21B862A0A004154E7 /* thumb_design.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823471B862A0A004154E7 /* thumb_design.jpg */; };
+		822823D31B862A0A004154E7 /* thumb_dining_gallery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823481B862A0A004154E7 /* thumb_dining_gallery.jpg */; };
+		822823D41B862A0A004154E7 /* thumb_escalator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823491B862A0A004154E7 /* thumb_escalator.jpg */; };
+		822823D51B862A0A004154E7 /* thumb_existing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228234A1B862A0A004154E7 /* thumb_existing.jpg */; };
+		822823D61B862A0A004154E7 /* thumb_exterior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228234B1B862A0A004154E7 /* thumb_exterior.jpg */; };
+		822823D71B862A0A004154E7 /* thumb_film1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228234C1B862A0A004154E7 /* thumb_film1.jpg */; };
+		822823D81B862A0A004154E7 /* thumb_film2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228234D1B862A0A004154E7 /* thumb_film2.jpg */; };
+		822823D91B862A0A004154E7 /* thumb_film3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228234E1B862A0A004154E7 /* thumb_film3.jpg */; };
+		822823DA1B862A0A004154E7 /* thumb_film4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228234F1B862A0A004154E7 /* thumb_film4.jpg */; };
+		822823DB1B862A0A004154E7 /* thumb_film5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823501B862A0A004154E7 /* thumb_film5.jpg */; };
+		822823DC1B862A0A004154E7 /* thumb_film6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823511B862A0A004154E7 /* thumb_film6.jpg */; };
+		822823DD1B862A0A004154E7 /* thumb_film7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823521B862A0A004154E7 /* thumb_film7.jpg */; };
+		822823DE1B862A0A004154E7 /* thumb_film8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823531B862A0A004154E7 /* thumb_film8.jpg */; };
+		822823DF1B862A0A004154E7 /* thumb_film_full.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823541B862A0A004154E7 /* thumb_film_full.jpg */; };
+		822823E01B862A0A004154E7 /* thumb_inspiration.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823551B862A0A004154E7 /* thumb_inspiration.jpg */; };
+		822823E11B862A0A004154E7 /* thumb_interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823561B862A0A004154E7 /* thumb_interior.jpg */; };
+		822823E21B862A0A004154E7 /* thumb_leasing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823571B862A0A004154E7 /* thumb_leasing.jpg */; };
+		822823E31B862A0A004154E7 /* thumb_lifeStyle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823581B862A0A004154E7 /* thumb_lifeStyle.jpg */; };
+		822823E41B862A0A004154E7 /* thumb_market.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823591B862A0A004154E7 /* thumb_market.jpg */; };
+		822823E51B862A0A004154E7 /* thumb_market_exterior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228235A1B862A0A004154E7 /* thumb_market_exterior.jpg */; };
+		822823E61B862A0A004154E7 /* thumb_market_interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228235B1B862A0A004154E7 /* thumb_market_interior.jpg */; };
+		822823E71B862A0A004154E7 /* thumb_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228235C1B862A0A004154E7 /* thumb_photo.jpg */; };
+		822823E81B862A0A004154E7 /* thumb_presentation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228235D1B862A0A004154E7 /* thumb_presentation.jpg */; };
+		822823E91B862A0A004154E7 /* thumb_sdpackage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228235E1B862A0A004154E7 /* thumb_sdpackage.jpg */; };
+		822823EA1B862A0A004154E7 /* thumb_spacePlan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228235F1B862A0A004154E7 /* thumb_spacePlan.jpg */; };
+		822823EB1B862A0A004154E7 /* thumb_street.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823601B862A0A004154E7 /* thumb_street.jpg */; };
+		822823EC1B862A0A004154E7 /* thumb_strorefronts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823611B862A0A004154E7 /* thumb_strorefronts.jpg */; };
+		822823ED1B862A0A004154E7 /* thumb_vegas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823621B862A0A004154E7 /* thumb_vegas.jpg */; };
+		822823F21B862EF0004154E7 /* grfx_selectedFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 822823EE1B862EF0004154E7 /* grfx_selectedFrame.png */; };
+		822823F31B862EF0004154E7 /* grfx_unselectedFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 822823EF1B862EF0004154E7 /* grfx_unselectedFrame.png */; };
+		822823F41B862EF0004154E7 /* grfx_selectedFrame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 822823F01B862EF0004154E7 /* grfx_selectedFrame@2x.png */; };
+		822823F51B862EF0004154E7 /* grfx_unselectedFrame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 822823F11B862EF0004154E7 /* grfx_unselectedFrame@2x.png */; };
 		8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8243874E1B6929A1003AC214 /* SupportingViewController.m */; };
 		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
 		824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824387571B6BAA14003AC214 /* xhPageViewController.m */; };
@@ -765,6 +901,142 @@
 		822822B71B851E44004154E7 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
 		822822B81B851E44004154E7 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		822822B91B851E44004154E7 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		822822BC1B86169A004154E7 /* grfx_shareEmail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_shareEmail.png; path = src/grfx/grfx_shareEmail.png; sourceTree = "<group>"; };
+		822822BD1B86169A004154E7 /* grfx_sharePDF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_sharePDF.png; path = src/grfx/grfx_sharePDF.png; sourceTree = "<group>"; };
+		822822BE1B86169A004154E7 /* grfx_shareEmail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_shareEmail@2x.png"; path = "src/grfx/grfx_shareEmail@2x.png"; sourceTree = "<group>"; };
+		822822BF1B86169A004154E7 /* grfx_sharePDF@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_sharePDF@2x.png"; path = "src/grfx/grfx_sharePDF@2x.png"; sourceTree = "<group>"; };
+		822822C71B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot01.jpg; sourceTree = "<group>"; };
+		822822C81B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot02.jpg; sourceTree = "<group>"; };
+		822822C91B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot03.jpg; sourceTree = "<group>"; };
+		822822CA1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot04.jpg; sourceTree = "<group>"; };
+		822822CB1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot05.jpg; sourceTree = "<group>"; };
+		822822CC1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot06.jpg; sourceTree = "<group>"; };
+		822822CD1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot07.jpg; sourceTree = "<group>"; };
+		822822CE1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot08.jpg; sourceTree = "<group>"; };
+		822822D01B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View01_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View01_051215.jpg"; sourceTree = "<group>"; };
+		822822D11B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View02_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View02_051215.jpg"; sourceTree = "<group>"; };
+		822822D21B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View03_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View03_051215.jpg"; sourceTree = "<group>"; };
+		822822D31B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View04_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View04_051215.jpg"; sourceTree = "<group>"; };
+		822822D41B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View05_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View05_051215.jpg"; sourceTree = "<group>"; };
+		822822D51B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View06_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View06_051215.jpg"; sourceTree = "<group>"; };
+		822822D61B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View07_050715.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View07_050715.jpg"; sourceTree = "<group>"; };
+		822822D71B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View08_050715.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View08_050715.jpg"; sourceTree = "<group>"; };
+		822822D81B862A0A004154E7 /* View 1 - Corner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 1 - Corner.jpg"; sourceTree = "<group>"; };
+		822822D91B862A0A004154E7 /* View 10- Mews.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 10- Mews.jpg"; sourceTree = "<group>"; };
+		822822DA1B862A0A004154E7 /* View 11 - Mews.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 11 - Mews.jpg"; sourceTree = "<group>"; };
+		822822DB1B862A0A004154E7 /* View 12 - N Randolph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 12 - N Randolph.jpg"; sourceTree = "<group>"; };
+		822822DC1B862A0A004154E7 /* View 2 - Wilson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 2 - Wilson.jpg"; sourceTree = "<group>"; };
+		822822DD1B862A0A004154E7 /* View 5 - Plaza - no bridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 5 - Plaza - no bridge.jpg"; sourceTree = "<group>"; };
+		822822DE1B862A0A004154E7 /* View 6 - no bridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 6 - no bridge.jpg"; sourceTree = "<group>"; };
+		822822DF1B862A0A004154E7 /* View 7 - N Stuart - no bridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 7 - N Stuart - no bridge.jpg"; sourceTree = "<group>"; };
+		822822E01B862A0A004154E7 /* View 8 - Plaza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 8 - Plaza.jpg"; sourceTree = "<group>"; };
+		822822E11B862A0A004154E7 /* View 9 - Interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 9 - Interior.jpg"; sourceTree = "<group>"; };
+		822822E31B862A0A004154E7 /* 150512_BC_PresTemplate_ProgressR3_LR 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "150512_BC_PresTemplate_ProgressR3_LR 2.pdf"; sourceTree = "<group>"; };
+		822822E41B862A0A004154E7 /* 150604_BallstonQuarter_DiningGallery_R4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 150604_BallstonQuarter_DiningGallery_R4.pdf; sourceTree = "<group>"; };
+		822822E51B862A0A004154E7 /* 2015_04_06-ESCALATORS AXON .pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2015_04_06-ESCALATORS AXON .pdf"; sourceTree = "<group>"; };
+		822822E61B862A0A004154E7 /* Ballston Center Mall Permanent 11x17.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Ballston Center Mall Permanent 11x17.pdf"; sourceTree = "<group>"; };
+		822822E71B862A0A004154E7 /* ballston leasing book with cards-2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ballston leasing book with cards-2.pdf"; sourceTree = "<group>"; };
+		822822E81B862A0A004154E7 /* Ballston_Existing_Lease_Plan_mh.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Ballston_Existing_Lease_Plan_mh.pdf; sourceTree = "<group>"; };
+		822822E91B862A0A004154E7 /* Ballston_Presentation_072414-low res.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Ballston_Presentation_072414-low res.pdf"; sourceTree = "<group>"; };
+		822822EA1B862A0A004154E7 /* BallstonSDPackage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BallstonSDPackage.pdf; sourceTree = "<group>"; };
+		822822EB1B862A0A004154E7 /* BCLP DEV_ 05-01-2015..pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "BCLP DEV_ 05-01-2015..pdf"; sourceTree = "<group>"; };
+		822822EC1B862A0A004154E7 /* BCLP DEV_ 07-09-2015.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "BCLP DEV_ 07-09-2015.pdf"; sourceTree = "<group>"; };
+		822822ED1B862A0A004154E7 /* BCLP DEV_MNSP01 SPACE PLAN 11 25 14-mh.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "BCLP DEV_MNSP01 SPACE PLAN 11 25 14-mh.pdf"; sourceTree = "<group>"; };
+		822822EE1B862A0A004154E7 /* Design Update.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Design Update.pdf"; sourceTree = "<group>"; };
+		822822F01B862A0A004154E7 /* Existing_Page_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Existing_Page_1.jpg; sourceTree = "<group>"; };
+		822822F11B862A0A004154E7 /* Existing_Page_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Existing_Page_2.jpg; sourceTree = "<group>"; };
+		822822F21B862A0A004154E7 /* Existing_Page_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Existing_Page_3.jpg; sourceTree = "<group>"; };
+		822822F31B862A0A004154E7 /* Existing_Page_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Existing_Page_4.jpg; sourceTree = "<group>"; };
+		822822F51B862A0A004154E7 /* Leasing_Page_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Leasing_Page_1.jpg; sourceTree = "<group>"; };
+		822822F61B862A0A004154E7 /* Leasing_Page_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Leasing_Page_2.jpg; sourceTree = "<group>"; };
+		822822F71B862A0A004154E7 /* Leasing_Page_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Leasing_Page_3.jpg; sourceTree = "<group>"; };
+		822822F81B862A0A004154E7 /* Leasing_Page_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Leasing_Page_4.jpg; sourceTree = "<group>"; };
+		822823071B862A0A004154E7 /* arch_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch_01.jpg; sourceTree = "<group>"; };
+		822823081B862A0A004154E7 /* arch_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch_02.jpg; sourceTree = "<group>"; };
+		822823091B862A0A004154E7 /* arch_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch_03.jpg; sourceTree = "<group>"; };
+		8228230A1B862A0A004154E7 /* arch_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch_04.jpg; sourceTree = "<group>"; };
+		8228230B1B862A0A004154E7 /* arch_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch_05.jpg; sourceTree = "<group>"; };
+		8228230C1B862A0A004154E7 /* arch_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch_06.jpg; sourceTree = "<group>"; };
+		8228230E1B862A0A004154E7 /* inspi01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inspi01.jpg; sourceTree = "<group>"; };
+		8228230F1B862A0A004154E7 /* inspi02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inspi02.jpg; sourceTree = "<group>"; };
+		822823101B862A0A004154E7 /* inspi03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inspi03.jpg; sourceTree = "<group>"; };
+		822823111B862A0A004154E7 /* inspi04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inspi04.jpg; sourceTree = "<group>"; };
+		822823121B862A0A004154E7 /* inspi05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inspi05.jpg; sourceTree = "<group>"; };
+		822823131B862A0A004154E7 /* inspi06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inspi06.jpg; sourceTree = "<group>"; };
+		822823141B862A0A004154E7 /* lifestyle01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lifestyle01.jpg; sourceTree = "<group>"; };
+		822823161B862A0A004154E7 /* store01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store01.jpg; sourceTree = "<group>"; };
+		822823171B862A0A004154E7 /* store02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store02.jpg; sourceTree = "<group>"; };
+		822823181B862A0A004154E7 /* store03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store03.jpg; sourceTree = "<group>"; };
+		822823191B862A0A004154E7 /* store04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store04.jpg; sourceTree = "<group>"; };
+		8228231A1B862A0A004154E7 /* store05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store05.jpg; sourceTree = "<group>"; };
+		8228231B1B862A0A004154E7 /* store06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store06.jpg; sourceTree = "<group>"; };
+		8228231C1B862A0A004154E7 /* store07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store07.jpg; sourceTree = "<group>"; };
+		8228231E1B862A0A004154E7 /* street01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = street01.jpg; sourceTree = "<group>"; };
+		8228231F1B862A0A004154E7 /* street02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = street02.jpg; sourceTree = "<group>"; };
+		822823201B862A0A004154E7 /* street03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = street03.jpg; sourceTree = "<group>"; };
+		822823221B862A0A004154E7 /* market_exterior01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = market_exterior01.jpg; sourceTree = "<group>"; };
+		822823231B862A0A004154E7 /* market_exterior02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = market_exterior02.jpg; sourceTree = "<group>"; };
+		822823241B862A0A004154E7 /* market_interior01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = market_interior01.jpg; sourceTree = "<group>"; };
+		822823251B862A0A004154E7 /* market_interior02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = market_interior02.jpg; sourceTree = "<group>"; };
+		822823261B862A0A004154E7 /* market_interior03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = market_interior03.jpg; sourceTree = "<group>"; };
+		822823291B862A0A004154E7 /* Ballston aerial01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ballston aerial01.jpg"; sourceTree = "<group>"; };
+		8228232A1B862A0A004154E7 /* Ballston Aerial02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ballston Aerial02.jpg"; sourceTree = "<group>"; };
+		8228232D1B862A0A004154E7 /* 0160 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0160 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
+		8228232E1B862A0A004154E7 /* 0336 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0336 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
+		8228232F1B862A0A004154E7 /* 0364 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0364 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
+		822823301B862A0A004154E7 /* Pg 2A  0225 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pg 2A  0225 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
+		822823311B862A0A004154E7 /* Pg 5B  0420 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pg 5B  0420 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
+		822823321B862A0A004154E7 /* Pg 9  0251 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pg 9  0251 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
+		822823331B862A0A004154E7 /* Picture 031.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 031.jpg"; sourceTree = "<group>"; };
+		822823341B862A0A004154E7 /* Picture 035.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 035.jpg"; sourceTree = "<group>"; };
+		822823351B862A0A004154E7 /* Picture 036.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 036.jpg"; sourceTree = "<group>"; };
+		822823361B862A0A004154E7 /* Picture 038.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 038.jpg"; sourceTree = "<group>"; };
+		822823371B862A0A004154E7 /* Picture 049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 049.jpg"; sourceTree = "<group>"; };
+		822823381B862A0A004154E7 /* Picture 050.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 050.jpg"; sourceTree = "<group>"; };
+		822823391B862A0A004154E7 /* Picture 051.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 051.jpg"; sourceTree = "<group>"; };
+		8228233A1B862A0A004154E7 /* Picture 056.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 056.jpg"; sourceTree = "<group>"; };
+		8228233C1B862A0A004154E7 /* 0005 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0005 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
+		8228233D1B862A0A004154E7 /* 0027 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0027 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
+		8228233E1B862A0A004154E7 /* 0099 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0099 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
+		8228233F1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pg 7D  0075 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
+		822823401B862A0A004154E7 /* Picture 024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 024.jpg"; sourceTree = "<group>"; };
+		822823411B862A0A004154E7 /* Picture 030.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 030.jpg"; sourceTree = "<group>"; };
+		822823421B862A0A004154E7 /* Picture 041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 041.jpg"; sourceTree = "<group>"; };
+		822823441B862A0A004154E7 /* thumb_3D.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_3D.jpg; sourceTree = "<group>"; };
+		822823451B862A0A004154E7 /* thumb_arch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_arch.jpg; sourceTree = "<group>"; };
+		822823461B862A0A004154E7 /* thumb_architecture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_architecture.jpg; sourceTree = "<group>"; };
+		822823471B862A0A004154E7 /* thumb_design.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_design.jpg; sourceTree = "<group>"; };
+		822823481B862A0A004154E7 /* thumb_dining_gallery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_dining_gallery.jpg; sourceTree = "<group>"; };
+		822823491B862A0A004154E7 /* thumb_escalator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_escalator.jpg; sourceTree = "<group>"; };
+		8228234A1B862A0A004154E7 /* thumb_existing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_existing.jpg; sourceTree = "<group>"; };
+		8228234B1B862A0A004154E7 /* thumb_exterior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_exterior.jpg; sourceTree = "<group>"; };
+		8228234C1B862A0A004154E7 /* thumb_film1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film1.jpg; sourceTree = "<group>"; };
+		8228234D1B862A0A004154E7 /* thumb_film2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film2.jpg; sourceTree = "<group>"; };
+		8228234E1B862A0A004154E7 /* thumb_film3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film3.jpg; sourceTree = "<group>"; };
+		8228234F1B862A0A004154E7 /* thumb_film4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film4.jpg; sourceTree = "<group>"; };
+		822823501B862A0A004154E7 /* thumb_film5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film5.jpg; sourceTree = "<group>"; };
+		822823511B862A0A004154E7 /* thumb_film6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film6.jpg; sourceTree = "<group>"; };
+		822823521B862A0A004154E7 /* thumb_film7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film7.jpg; sourceTree = "<group>"; };
+		822823531B862A0A004154E7 /* thumb_film8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film8.jpg; sourceTree = "<group>"; };
+		822823541B862A0A004154E7 /* thumb_film_full.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film_full.jpg; sourceTree = "<group>"; };
+		822823551B862A0A004154E7 /* thumb_inspiration.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_inspiration.jpg; sourceTree = "<group>"; };
+		822823561B862A0A004154E7 /* thumb_interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_interior.jpg; sourceTree = "<group>"; };
+		822823571B862A0A004154E7 /* thumb_leasing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_leasing.jpg; sourceTree = "<group>"; };
+		822823581B862A0A004154E7 /* thumb_lifeStyle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_lifeStyle.jpg; sourceTree = "<group>"; };
+		822823591B862A0A004154E7 /* thumb_market.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_market.jpg; sourceTree = "<group>"; };
+		8228235A1B862A0A004154E7 /* thumb_market_exterior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_market_exterior.jpg; sourceTree = "<group>"; };
+		8228235B1B862A0A004154E7 /* thumb_market_interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_market_interior.jpg; sourceTree = "<group>"; };
+		8228235C1B862A0A004154E7 /* thumb_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_photo.jpg; sourceTree = "<group>"; };
+		8228235D1B862A0A004154E7 /* thumb_presentation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_presentation.jpg; sourceTree = "<group>"; };
+		8228235E1B862A0A004154E7 /* thumb_sdpackage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_sdpackage.jpg; sourceTree = "<group>"; };
+		8228235F1B862A0A004154E7 /* thumb_spacePlan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_spacePlan.jpg; sourceTree = "<group>"; };
+		822823601B862A0A004154E7 /* thumb_street.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_street.jpg; sourceTree = "<group>"; };
+		822823611B862A0A004154E7 /* thumb_strorefronts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_strorefronts.jpg; sourceTree = "<group>"; };
+		822823621B862A0A004154E7 /* thumb_vegas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_vegas.jpg; sourceTree = "<group>"; };
+		822823EE1B862EF0004154E7 /* grfx_selectedFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_selectedFrame.png; path = src/grfx/grfx_selectedFrame.png; sourceTree = "<group>"; };
+		822823EF1B862EF0004154E7 /* grfx_unselectedFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_unselectedFrame.png; path = src/grfx/grfx_unselectedFrame.png; sourceTree = "<group>"; };
+		822823F01B862EF0004154E7 /* grfx_selectedFrame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_selectedFrame@2x.png"; path = "src/grfx/grfx_selectedFrame@2x.png"; sourceTree = "<group>"; };
+		822823F11B862EF0004154E7 /* grfx_unselectedFrame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_unselectedFrame@2x.png"; path = "src/grfx/grfx_unselectedFrame@2x.png"; sourceTree = "<group>"; };
 		8243874D1B6929A1003AC214 /* SupportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportingViewController.h; sourceTree = "<group>"; };
 		8243874E1B6929A1003AC214 /* SupportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportingViewController.m; sourceTree = "<group>"; };
 		824387501B69414D003AC214 /* supporting_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = supporting_data.plist; sourceTree = "<group>"; };
@@ -1563,6 +1835,294 @@
 			path = utilities/setting;
 			sourceTree = "<group>";
 		};
+		822822C41B862A0A004154E7 /* tmp_gallery */ = {
+			isa = PBXGroup;
+			children = (
+				822822C51B862A0A004154E7 /* Gallery */,
+			);
+			name = tmp_gallery;
+			path = src/tmp_gallery;
+			sourceTree = "<group>";
+		};
+		822822C51B862A0A004154E7 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				822822C61B862A0A004154E7 /* 3D */,
+				822822CF1B862A0A004154E7 /* Architecture */,
+				822822E21B862A0A004154E7 /* Documents */,
+				822822F91B862A0A004154E7 /* film */,
+				822823051B862A0A004154E7 /* look_book */,
+				822823211B862A0A004154E7 /* market */,
+				822823271B862A0A004154E7 /* Photograph */,
+				822823441B862A0A004154E7 /* thumb_3D.jpg */,
+				822823451B862A0A004154E7 /* thumb_arch.jpg */,
+				822823461B862A0A004154E7 /* thumb_architecture.jpg */,
+				822823471B862A0A004154E7 /* thumb_design.jpg */,
+				822823481B862A0A004154E7 /* thumb_dining_gallery.jpg */,
+				822823491B862A0A004154E7 /* thumb_escalator.jpg */,
+				8228234A1B862A0A004154E7 /* thumb_existing.jpg */,
+				8228234B1B862A0A004154E7 /* thumb_exterior.jpg */,
+				8228234C1B862A0A004154E7 /* thumb_film1.jpg */,
+				8228234D1B862A0A004154E7 /* thumb_film2.jpg */,
+				8228234E1B862A0A004154E7 /* thumb_film3.jpg */,
+				8228234F1B862A0A004154E7 /* thumb_film4.jpg */,
+				822823501B862A0A004154E7 /* thumb_film5.jpg */,
+				822823511B862A0A004154E7 /* thumb_film6.jpg */,
+				822823521B862A0A004154E7 /* thumb_film7.jpg */,
+				822823531B862A0A004154E7 /* thumb_film8.jpg */,
+				822823541B862A0A004154E7 /* thumb_film_full.jpg */,
+				822823551B862A0A004154E7 /* thumb_inspiration.jpg */,
+				822823561B862A0A004154E7 /* thumb_interior.jpg */,
+				822823571B862A0A004154E7 /* thumb_leasing.jpg */,
+				822823581B862A0A004154E7 /* thumb_lifeStyle.jpg */,
+				822823591B862A0A004154E7 /* thumb_market.jpg */,
+				8228235A1B862A0A004154E7 /* thumb_market_exterior.jpg */,
+				8228235B1B862A0A004154E7 /* thumb_market_interior.jpg */,
+				8228235C1B862A0A004154E7 /* thumb_photo.jpg */,
+				8228235D1B862A0A004154E7 /* thumb_presentation.jpg */,
+				8228235E1B862A0A004154E7 /* thumb_sdpackage.jpg */,
+				8228235F1B862A0A004154E7 /* thumb_spacePlan.jpg */,
+				822823601B862A0A004154E7 /* thumb_street.jpg */,
+				822823611B862A0A004154E7 /* thumb_strorefronts.jpg */,
+				822823621B862A0A004154E7 /* thumb_vegas.jpg */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		822822C61B862A0A004154E7 /* 3D */ = {
+			isa = PBXGroup;
+			children = (
+				822822C71B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot01.jpg */,
+				822822C81B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot02.jpg */,
+				822822C91B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot03.jpg */,
+				822822CA1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot04.jpg */,
+				822822CB1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot05.jpg */,
+				822822CC1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot06.jpg */,
+				822822CD1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot07.jpg */,
+				822822CE1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot08.jpg */,
+			);
+			path = 3D;
+			sourceTree = "<group>";
+		};
+		822822CF1B862A0A004154E7 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				822822D01B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View01_051215.jpg */,
+				822822D11B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View02_051215.jpg */,
+				822822D21B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View03_051215.jpg */,
+				822822D31B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View04_051215.jpg */,
+				822822D41B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View05_051215.jpg */,
+				822822D51B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View06_051215.jpg */,
+				822822D61B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View07_050715.jpg */,
+				822822D71B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View08_050715.jpg */,
+				822822D81B862A0A004154E7 /* View 1 - Corner.jpg */,
+				822822D91B862A0A004154E7 /* View 10- Mews.jpg */,
+				822822DA1B862A0A004154E7 /* View 11 - Mews.jpg */,
+				822822DB1B862A0A004154E7 /* View 12 - N Randolph.jpg */,
+				822822DC1B862A0A004154E7 /* View 2 - Wilson.jpg */,
+				822822DD1B862A0A004154E7 /* View 5 - Plaza - no bridge.jpg */,
+				822822DE1B862A0A004154E7 /* View 6 - no bridge.jpg */,
+				822822DF1B862A0A004154E7 /* View 7 - N Stuart - no bridge.jpg */,
+				822822E01B862A0A004154E7 /* View 8 - Plaza.jpg */,
+				822822E11B862A0A004154E7 /* View 9 - Interior.jpg */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		822822E21B862A0A004154E7 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				822822E31B862A0A004154E7 /* 150512_BC_PresTemplate_ProgressR3_LR 2.pdf */,
+				822822E41B862A0A004154E7 /* 150604_BallstonQuarter_DiningGallery_R4.pdf */,
+				822822E51B862A0A004154E7 /* 2015_04_06-ESCALATORS AXON .pdf */,
+				822822E61B862A0A004154E7 /* Ballston Center Mall Permanent 11x17.pdf */,
+				822822E71B862A0A004154E7 /* ballston leasing book with cards-2.pdf */,
+				822822E81B862A0A004154E7 /* Ballston_Existing_Lease_Plan_mh.pdf */,
+				822822E91B862A0A004154E7 /* Ballston_Presentation_072414-low res.pdf */,
+				822822EA1B862A0A004154E7 /* BallstonSDPackage.pdf */,
+				822822EB1B862A0A004154E7 /* BCLP DEV_ 05-01-2015..pdf */,
+				822822EC1B862A0A004154E7 /* BCLP DEV_ 07-09-2015.pdf */,
+				822822ED1B862A0A004154E7 /* BCLP DEV_MNSP01 SPACE PLAN 11 25 14-mh.pdf */,
+				822822EE1B862A0A004154E7 /* Design Update.pdf */,
+				822822EF1B862A0A004154E7 /* existing */,
+				822822F41B862A0A004154E7 /* leasing */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		822822EF1B862A0A004154E7 /* existing */ = {
+			isa = PBXGroup;
+			children = (
+				822822F01B862A0A004154E7 /* Existing_Page_1.jpg */,
+				822822F11B862A0A004154E7 /* Existing_Page_2.jpg */,
+				822822F21B862A0A004154E7 /* Existing_Page_3.jpg */,
+				822822F31B862A0A004154E7 /* Existing_Page_4.jpg */,
+			);
+			path = existing;
+			sourceTree = "<group>";
+		};
+		822822F41B862A0A004154E7 /* leasing */ = {
+			isa = PBXGroup;
+			children = (
+				822822F51B862A0A004154E7 /* Leasing_Page_1.jpg */,
+				822822F61B862A0A004154E7 /* Leasing_Page_2.jpg */,
+				822822F71B862A0A004154E7 /* Leasing_Page_3.jpg */,
+				822822F81B862A0A004154E7 /* Leasing_Page_4.jpg */,
+			);
+			path = leasing;
+			sourceTree = "<group>";
+		};
+		822822F91B862A0A004154E7 /* film */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = film;
+			sourceTree = "<group>";
+		};
+		822823051B862A0A004154E7 /* look_book */ = {
+			isa = PBXGroup;
+			children = (
+				822823061B862A0A004154E7 /* Architecture */,
+				8228230D1B862A0A004154E7 /* Inspiration */,
+				822823141B862A0A004154E7 /* lifestyle01.jpg */,
+				822823151B862A0A004154E7 /* Storefronts */,
+				8228231D1B862A0A004154E7 /* Streetscape */,
+			);
+			path = look_book;
+			sourceTree = "<group>";
+		};
+		822823061B862A0A004154E7 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				822823071B862A0A004154E7 /* arch_01.jpg */,
+				822823081B862A0A004154E7 /* arch_02.jpg */,
+				822823091B862A0A004154E7 /* arch_03.jpg */,
+				8228230A1B862A0A004154E7 /* arch_04.jpg */,
+				8228230B1B862A0A004154E7 /* arch_05.jpg */,
+				8228230C1B862A0A004154E7 /* arch_06.jpg */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		8228230D1B862A0A004154E7 /* Inspiration */ = {
+			isa = PBXGroup;
+			children = (
+				8228230E1B862A0A004154E7 /* inspi01.jpg */,
+				8228230F1B862A0A004154E7 /* inspi02.jpg */,
+				822823101B862A0A004154E7 /* inspi03.jpg */,
+				822823111B862A0A004154E7 /* inspi04.jpg */,
+				822823121B862A0A004154E7 /* inspi05.jpg */,
+				822823131B862A0A004154E7 /* inspi06.jpg */,
+			);
+			path = Inspiration;
+			sourceTree = "<group>";
+		};
+		822823151B862A0A004154E7 /* Storefronts */ = {
+			isa = PBXGroup;
+			children = (
+				822823161B862A0A004154E7 /* store01.jpg */,
+				822823171B862A0A004154E7 /* store02.jpg */,
+				822823181B862A0A004154E7 /* store03.jpg */,
+				822823191B862A0A004154E7 /* store04.jpg */,
+				8228231A1B862A0A004154E7 /* store05.jpg */,
+				8228231B1B862A0A004154E7 /* store06.jpg */,
+				8228231C1B862A0A004154E7 /* store07.jpg */,
+			);
+			path = Storefronts;
+			sourceTree = "<group>";
+		};
+		8228231D1B862A0A004154E7 /* Streetscape */ = {
+			isa = PBXGroup;
+			children = (
+				8228231E1B862A0A004154E7 /* street01.jpg */,
+				8228231F1B862A0A004154E7 /* street02.jpg */,
+				822823201B862A0A004154E7 /* street03.jpg */,
+			);
+			path = Streetscape;
+			sourceTree = "<group>";
+		};
+		822823211B862A0A004154E7 /* market */ = {
+			isa = PBXGroup;
+			children = (
+				822823221B862A0A004154E7 /* market_exterior01.jpg */,
+				822823231B862A0A004154E7 /* market_exterior02.jpg */,
+				822823241B862A0A004154E7 /* market_interior01.jpg */,
+				822823251B862A0A004154E7 /* market_interior02.jpg */,
+				822823261B862A0A004154E7 /* market_interior03.jpg */,
+			);
+			path = market;
+			sourceTree = "<group>";
+		};
+		822823271B862A0A004154E7 /* Photograph */ = {
+			isa = PBXGroup;
+			children = (
+				822823281B862A0A004154E7 /* aerial */,
+				8228232B1B862A0A004154E7 /* David */,
+				8228232C1B862A0A004154E7 /* exteriors */,
+				8228233B1B862A0A004154E7 /* interiors */,
+				822823431B862A0A004154E7 /* photo */,
+			);
+			path = Photograph;
+			sourceTree = "<group>";
+		};
+		822823281B862A0A004154E7 /* aerial */ = {
+			isa = PBXGroup;
+			children = (
+				822823291B862A0A004154E7 /* Ballston aerial01.jpg */,
+				8228232A1B862A0A004154E7 /* Ballston Aerial02.jpg */,
+			);
+			path = aerial;
+			sourceTree = "<group>";
+		};
+		8228232B1B862A0A004154E7 /* David */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = David;
+			sourceTree = "<group>";
+		};
+		8228232C1B862A0A004154E7 /* exteriors */ = {
+			isa = PBXGroup;
+			children = (
+				8228232D1B862A0A004154E7 /* 0160 BCM (c) 2014 David Galen.jpg */,
+				8228232E1B862A0A004154E7 /* 0336 BCM (c) 2014 David Galen.jpg */,
+				8228232F1B862A0A004154E7 /* 0364 BCM (c) 2014 David Galen.jpg */,
+				822823301B862A0A004154E7 /* Pg 2A  0225 BCM (c) 2014 David Galen.jpg */,
+				822823311B862A0A004154E7 /* Pg 5B  0420 BCM (c) 2014 David Galen.jpg */,
+				822823321B862A0A004154E7 /* Pg 9  0251 BCM (c) 2014 David Galen.jpg */,
+				822823331B862A0A004154E7 /* Picture 031.jpg */,
+				822823341B862A0A004154E7 /* Picture 035.jpg */,
+				822823351B862A0A004154E7 /* Picture 036.jpg */,
+				822823361B862A0A004154E7 /* Picture 038.jpg */,
+				822823371B862A0A004154E7 /* Picture 049.jpg */,
+				822823381B862A0A004154E7 /* Picture 050.jpg */,
+				822823391B862A0A004154E7 /* Picture 051.jpg */,
+				8228233A1B862A0A004154E7 /* Picture 056.jpg */,
+			);
+			path = exteriors;
+			sourceTree = "<group>";
+		};
+		8228233B1B862A0A004154E7 /* interiors */ = {
+			isa = PBXGroup;
+			children = (
+				8228233C1B862A0A004154E7 /* 0005 BCM (c) 2014 David Galen.jpg */,
+				8228233D1B862A0A004154E7 /* 0027 BCM (c) 2014 David Galen.jpg */,
+				8228233E1B862A0A004154E7 /* 0099 BCM (c) 2014 David Galen.jpg */,
+				8228233F1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg */,
+				822823401B862A0A004154E7 /* Picture 024.jpg */,
+				822823411B862A0A004154E7 /* Picture 030.jpg */,
+				822823421B862A0A004154E7 /* Picture 041.jpg */,
+			);
+			path = interiors;
+			sourceTree = "<group>";
+		};
+		822823431B862A0A004154E7 /* photo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = photo;
+			sourceTree = "<group>";
+		};
 		824D27191B5D7E6700E5F5A5 = {
 			isa = PBXGroup;
 			children = (
@@ -1650,6 +2210,7 @@
 		824D27871B5FE0D300E5F5A5 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				822822C41B862A0A004154E7 /* tmp_gallery */,
 				822822881B836F83004154E7 /* film */,
 				82115DF01B7012A600A36684 /* building */,
 				82115DD81B6FB14400A36684 /* fonts */,
@@ -1667,6 +2228,14 @@
 				82CA342F1B6C02C40065E31E /* supporting_stories */,
 				82CA34221B6BEB950065E31E /* Location */,
 				82A128311B66668800564266 /* marketplace_ecosystem */,
+				822822BC1B86169A004154E7 /* grfx_shareEmail.png */,
+				822822BD1B86169A004154E7 /* grfx_sharePDF.png */,
+				822823EE1B862EF0004154E7 /* grfx_selectedFrame.png */,
+				822823F01B862EF0004154E7 /* grfx_selectedFrame@2x.png */,
+				822823EF1B862EF0004154E7 /* grfx_unselectedFrame.png */,
+				822823F11B862EF0004154E7 /* grfx_unselectedFrame@2x.png */,
+				822822BE1B86169A004154E7 /* grfx_shareEmail@2x.png */,
+				822822BF1B86169A004154E7 /* grfx_sharePDF@2x.png */,
 				824D27971B6039C300E5F5A5 /* main_bg.jpg */,
 				824D27981B6039C300E5F5A5 /* main_bg@2x.jpg */,
 				8251FF9C1B7E817B0021C1BA /* grfx_menuGallery.jpg */,
@@ -2527,18 +3096,24 @@
 				824D2AA31B61671600E5F5A5 /* phase_d_base_00032.jpg in Resources */,
 				824D2B0C1B61671600E5F5A5 /* phase_d_color_00065.jpg in Resources */,
 				824D2ABD1B61671600E5F5A5 /* phase_d_base_00058.jpg in Resources */,
+				822823871B862A0A004154E7 /* BCLP DEV_MNSP01 SPACE PLAN 11 25 14-mh.pdf in Resources */,
+				822823741B862A0A004154E7 /* View 10- Mews.jpg in Resources */,
 				824D2BF31B62D02100E5F5A5 /* share_View 7 - N Stuart - no bridge.jpg.jpg in Resources */,
 				824D2A4B1B61671600E5F5A5 /* phase_b_color_00016.jpg in Resources */,
 				824D2A5E1B61671600E5F5A5 /* phase_b_color_00035.jpg in Resources */,
 				824D2A5A1B61671600E5F5A5 /* phase_b_color_00031.jpg in Resources */,
+				822823AC1B862A0A004154E7 /* store04.jpg in Resources */,
 				8251FF691B7D0DE80021C1BA /* phase_a_base_00031.png in Resources */,
 				824D2A451B61671600E5F5A5 /* phase_b_color_00010.jpg in Resources */,
 				824D29F31B61671600E5F5A5 /* phase_b_base_00000.jpg in Resources */,
 				8251FF641B7D0DE80021C1BA /* phase_a_base_00026.png in Resources */,
 				82A1286B1B66668800564266 /* fact-grid-03-sm@2x.png in Resources */,
+				822823751B862A0A004154E7 /* View 11 - Mews.jpg in Resources */,
 				824D2A531B61671600E5F5A5 /* phase_b_color_00024.jpg in Resources */,
 				824D2A1B1B61671600E5F5A5 /* phase_b_base_00040.jpg in Resources */,
+				822823A21B862A0A004154E7 /* inspi01.jpg in Resources */,
 				8251FF4E1B7D0DE80021C1BA /* phase_a_base_00004.png in Resources */,
+				822823D91B862A0A004154E7 /* thumb_film3.jpg in Resources */,
 				8251FE6C1B7CCB110021C1BA /* tbd_3.jpg in Resources */,
 				8251FEE61B7D0D880021C1BA /* phase_a_color_00046.png in Resources */,
 				824D2BEE1B62D02100E5F5A5 /* share_View 12 - N Randolph.jpg.jpg in Resources */,
@@ -2558,19 +3133,23 @@
 				824D2BF41B62D02100E5F5A5 /* share_View 8 - Plaza.jpg.jpg in Resources */,
 				824D2B471B62B5C600E5F5A5 /* EMBSPSectionHeader.xib in Resources */,
 				824D2B4F1B62B92500E5F5A5 /* share_but_pdf@2x.png in Resources */,
+				822823851B862A0A004154E7 /* BCLP DEV_ 05-01-2015..pdf in Resources */,
 				8251FE6A1B7CCB110021C1BA /* tbd_1.jpg in Resources */,
 				82A128811B66668800564266 /* fact-grid-09-lg@2x.png in Resources */,
 				8251FF4F1B7D0DE80021C1BA /* phase_a_base_00005.png in Resources */,
 				824D2A981B61671600E5F5A5 /* phase_d_base_00021.jpg in Resources */,
 				8251FF8D1B7D0DE80021C1BA /* phase_a_base_00067.png in Resources */,
+				822823D61B862A0A004154E7 /* thumb_exterior.jpg in Resources */,
 				824D2BEB1B62D02100E5F5A5 /* share_View 1 - Corner.jpg.jpg in Resources */,
 				8251FED61B7D0D880021C1BA /* phase_a_color_00030.png in Resources */,
+				822823681B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot06.jpg in Resources */,
 				824D2A341B61671600E5F5A5 /* phase_b_base_00065.jpg in Resources */,
 				824D2A4F1B61671600E5F5A5 /* phase_b_color_00020.jpg in Resources */,
 				824D2A8C1B61671600E5F5A5 /* phase_d_base_00009.jpg in Resources */,
 				824D2BAF1B62D02100E5F5A5 /* share_arch_03.jpg.jpg in Resources */,
 				8251FF6E1B7D0DE80021C1BA /* phase_a_base_00036.png in Resources */,
 				824D2BD71B62D02100E5F5A5 /* share_Picture 030.jpg.jpg in Resources */,
+				822823C41B862A0A004154E7 /* Picture 049.jpg in Resources */,
 				824D2ADC1B61671600E5F5A5 /* phase_d_color_00017.jpg in Resources */,
 				824D2BE61B62D02100E5F5A5 /* share_store06.jpg.jpg in Resources */,
 				824D2A121B61671600E5F5A5 /* phase_b_base_00031.jpg in Resources */,
@@ -2587,20 +3166,30 @@
 				824D2AF91B61671600E5F5A5 /* phase_d_color_00046.jpg in Resources */,
 				824D2A4D1B61671600E5F5A5 /* phase_b_color_00018.jpg in Resources */,
 				824D2A2C1B61671600E5F5A5 /* phase_b_base_00057.jpg in Resources */,
+				822823B51B862A0A004154E7 /* market_interior01.jpg in Resources */,
 				8251FEEA1B7D0D880021C1BA /* phase_a_color_00050.png in Resources */,
+				822823B21B862A0A004154E7 /* street03.jpg in Resources */,
 				8228228A1B836F83004154E7 /* 2015_08_14_ipad_logo_intro.mov in Resources */,
 				82A128771B66668800564266 /* fact-grid-06-sm@2x.png in Resources */,
+				822823DC1B862A0A004154E7 /* thumb_film6.jpg in Resources */,
 				824D2BD41B62D02100E5F5A5 /* share_Pg 9  0251 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
+				822823D51B862A0A004154E7 /* thumb_existing.jpg in Resources */,
 				824D2AF41B61671600E5F5A5 /* phase_d_color_00041.jpg in Resources */,
 				8251FF001B7D0D880021C1BA /* phase_a_color_00072.png in Resources */,
+				822823E21B862A0A004154E7 /* thumb_leasing.jpg in Resources */,
 				824D2A871B61671600E5F5A5 /* phase_d_base_00004.jpg in Resources */,
+				822823CC1B862A0A004154E7 /* Picture 024.jpg in Resources */,
+				822823881B862A0A004154E7 /* Design Update.pdf in Resources */,
+				822823AD1B862A0A004154E7 /* store05.jpg in Resources */,
 				824D2BB21B62D02100E5F5A5 /* share_arch_06.jpg.jpg in Resources */,
+				822823C01B862A0A004154E7 /* Picture 031.jpg in Resources */,
 				824D2BB81B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot04.jpg.jpg in Resources */,
 				8251FF531B7D0DE80021C1BA /* phase_a_base_00009.png in Resources */,
 				824D29F91B61671600E5F5A5 /* phase_b_base_00006.jpg in Resources */,
 				82A128781B66668800564266 /* fact-grid-07-lg.png in Resources */,
 				824D2AB01B61671600E5F5A5 /* phase_d_base_00045.jpg in Resources */,
 				8251FEBD1B7D0D880021C1BA /* phase_a_color_00005.png in Resources */,
+				8228237E1B862A0A004154E7 /* 150604_BallstonQuarter_DiningGallery_R4.pdf in Resources */,
 				824D2BC01B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View04_051215.jpg.jpg in Resources */,
 				824D2B111B61671600E5F5A5 /* phase_d_color_00070.jpg in Resources */,
 				824D2AD41B61671600E5F5A5 /* phase_d_color_00009.jpg in Resources */,
@@ -2609,6 +3198,7 @@
 				822822851B824339004154E7 /* sponsorship_data.plist in Resources */,
 				824D2A001B61671600E5F5A5 /* phase_b_base_00013.jpg in Resources */,
 				8251FF7B1B7D0DE80021C1BA /* phase_a_base_00049.png in Resources */,
+				822823A51B862A0A004154E7 /* inspi04.jpg in Resources */,
 				8251FF681B7D0DE80021C1BA /* phase_a_base_00030.png in Resources */,
 				8251FF7A1B7D0DE80021C1BA /* phase_a_base_00048.png in Resources */,
 				8251FFAB1B7E817B0021C1BA /* grfx_menuGallery@2x.jpg in Resources */,
@@ -2628,6 +3218,7 @@
 				824D2A831B61671600E5F5A5 /* phase_d_base_00000.jpg in Resources */,
 				82115DEA1B6FB14400A36684 /* GoodPro-WideLight.otf in Resources */,
 				824D2BEA1B62D02100E5F5A5 /* share_street03.jpg.jpg in Resources */,
+				8228236B1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View01_051215.jpg in Resources */,
 				824D2AE41B61671600E5F5A5 /* phase_d_color_00025.jpg in Resources */,
 				824D2A661B61671600E5F5A5 /* phase_b_color_00043.jpg in Resources */,
 				824D2A9C1B61671600E5F5A5 /* phase_d_base_00025.jpg in Resources */,
@@ -2641,11 +3232,14 @@
 				824D2AAB1B61671600E5F5A5 /* phase_d_base_00040.jpg in Resources */,
 				82115DE91B6FB14400A36684 /* GoodPro-WideBook.otf in Resources */,
 				824D2BB51B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot01.jpg.jpg in Resources */,
+				822823BA1B862A0A004154E7 /* 0160 BCM (c) 2014 David Galen.jpg in Resources */,
+				822823901B862A0A004154E7 /* Leasing_Page_4.jpg in Resources */,
 				824D2A7E1B61671600E5F5A5 /* phase_b_color_00067.jpg in Resources */,
 				8251FF4A1B7D0DE80021C1BA /* phase_a_base_00000.png in Resources */,
 				82A1286F1B66668800564266 /* fact-grid-04-sm@2x.png in Resources */,
 				8251FEE91B7D0D880021C1BA /* phase_a_color_00049.png in Resources */,
 				824D2AC01B61671600E5F5A5 /* phase_d_base_00061.jpg in Resources */,
+				822823C21B862A0A004154E7 /* Picture 036.jpg in Resources */,
 				8251FEE11B7D0D880021C1BA /* phase_a_color_00041.png in Resources */,
 				824D2A4E1B61671600E5F5A5 /* phase_b_color_00019.jpg in Resources */,
 				824D2A131B61671600E5F5A5 /* phase_b_base_00032.jpg in Resources */,
@@ -2656,7 +3250,12 @@
 				8251FEFC1B7D0D880021C1BA /* phase_a_color_00068.png in Resources */,
 				824D2A041B61671600E5F5A5 /* phase_b_base_00017.jpg in Resources */,
 				824D2A7A1B61671600E5F5A5 /* phase_b_color_00063.jpg in Resources */,
+				822823781B862A0A004154E7 /* View 5 - Plaza - no bridge.jpg in Resources */,
+				822823ED1B862A0A004154E7 /* thumb_vegas.jpg in Resources */,
 				8251FF591B7D0DE80021C1BA /* phase_a_base_00015.png in Resources */,
+				822823B11B862A0A004154E7 /* street02.jpg in Resources */,
+				822823841B862A0A004154E7 /* BallstonSDPackage.pdf in Resources */,
+				822823DB1B862A0A004154E7 /* thumb_film5.jpg in Resources */,
 				82115DFB1B7143D800A36684 /* grfx_resartBtn.png in Resources */,
 				824D2A161B61671600E5F5A5 /* phase_b_base_00035.jpg in Resources */,
 				824D2AA11B61671600E5F5A5 /* phase_d_base_00030.jpg in Resources */,
@@ -2671,13 +3270,16 @@
 				8251FF571B7D0DE80021C1BA /* phase_a_base_00013.png in Resources */,
 				824D2BC91B62D02100E5F5A5 /* share_inspi05.jpg.jpg in Resources */,
 				824D2AFF1B61671600E5F5A5 /* phase_d_color_00052.jpg in Resources */,
+				822823CD1B862A0A004154E7 /* Picture 030.jpg in Resources */,
 				824D2A4C1B61671600E5F5A5 /* phase_b_color_00017.jpg in Resources */,
 				824D2B4E1B62B92500E5F5A5 /* share_but_pdf.png in Resources */,
 				824D27931B60331600E5F5A5 /* hotel.png in Resources */,
 				8251FF651B7D0DE80021C1BA /* phase_a_base_00027.png in Resources */,
+				8228236E1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View04_051215.jpg in Resources */,
 				824D2BD21B62D02100E5F5A5 /* share_Pg 5B  0420 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				824D2A371B61671600E5F5A5 /* phase_b_base_00068.jpg in Resources */,
 				82CA34371B6C02C40065E31E /* lifeStyle_bg@2x.jpg in Resources */,
+				822823661B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot04.jpg in Resources */,
 				82A1286E1B66668800564266 /* fact-grid-04-sm.png in Resources */,
 				8251FEC11B7D0D880021C1BA /* phase_a_color_00009.png in Resources */,
 				824D2B4D1B62B92500E5F5A5 /* share_but_email.png in Resources */,
@@ -2689,9 +3291,15 @@
 				824D2A111B61671600E5F5A5 /* phase_b_base_00030.jpg in Resources */,
 				82115DE21B6FB14400A36684 /* GoodPro-Black.otf in Resources */,
 				8251FF911B7D0DE80021C1BA /* phase_a_base_00071.png in Resources */,
+				822823801B862A0A004154E7 /* Ballston Center Mall Permanent 11x17.pdf in Resources */,
+				822823D41B862A0A004154E7 /* thumb_escalator.jpg in Resources */,
+				822823BF1B862A0A004154E7 /* Pg 9  0251 BCM (c) 2014 David Galen.jpg in Resources */,
 				8251FF5A1B7D0DE80021C1BA /* phase_a_base_00016.png in Resources */,
 				824D2ACC1B61671600E5F5A5 /* phase_d_color_00001.jpg in Resources */,
+				822823A41B862A0A004154E7 /* inspi03.jpg in Resources */,
 				824D279A1B6039C300E5F5A5 /* main_bg@2x.jpg in Resources */,
+				8228236D1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View03_051215.jpg in Resources */,
+				822822C11B86169A004154E7 /* grfx_sharePDF.png in Resources */,
 				824D2A3A1B61671600E5F5A5 /* phase_b_base_00071.jpg in Resources */,
 				8251FF861B7D0DE80021C1BA /* phase_a_base_00060.png in Resources */,
 				824D2A7C1B61671600E5F5A5 /* phase_b_color_00065.jpg in Resources */,
@@ -2704,13 +3312,17 @@
 				8251FEB81B7D0D880021C1BA /* phase_a_color_00000.png in Resources */,
 				824D2A521B61671600E5F5A5 /* phase_b_color_00023.jpg in Resources */,
 				824D2BCF1B62D02100E5F5A5 /* share_market_interior02.jpg.jpg in Resources */,
+				822822C31B86169A004154E7 /* grfx_sharePDF@2x.png in Resources */,
 				824D2A191B61671600E5F5A5 /* phase_b_base_00038.jpg in Resources */,
 				82115DE81B6FB14400A36684 /* GoodPro-WideBlack.otf in Resources */,
 				82A128841B66668800564266 /* grfx-arrow-right.png in Resources */,
 				824D2AF21B61671600E5F5A5 /* phase_d_color_00039.jpg in Resources */,
+				822823D21B862A0A004154E7 /* thumb_design.jpg in Resources */,
 				82A128721B66668800564266 /* fact-grid-05-sm.png in Resources */,
 				824D2A441B61671600E5F5A5 /* phase_b_color_00009.jpg in Resources */,
+				8228239C1B862A0A004154E7 /* arch_01.jpg in Resources */,
 				824D2AB51B61671600E5F5A5 /* phase_d_base_00050.jpg in Resources */,
+				822823EC1B862A0A004154E7 /* thumb_strorefronts.jpg in Resources */,
 				824D2A811B61671600E5F5A5 /* phase_b_color_00070.jpg in Resources */,
 				824D2BAB1B62D02100E5F5A5 /* share_0336 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				824D2A941B61671600E5F5A5 /* phase_d_base_00017.jpg in Resources */,
@@ -2719,6 +3331,7 @@
 				8251FEEE1B7D0D880021C1BA /* phase_a_color_00054.png in Resources */,
 				8251FF501B7D0DE80021C1BA /* phase_a_base_00006.png in Resources */,
 				824D2BE91B62D02100E5F5A5 /* share_street02.jpg.jpg in Resources */,
+				822823A81B862A0A004154E7 /* lifestyle01.jpg in Resources */,
 				824D2A611B61671600E5F5A5 /* phase_b_color_00038.jpg in Resources */,
 				8251FED91B7D0D880021C1BA /* phase_a_color_00033.png in Resources */,
 				824D2AC51B61671600E5F5A5 /* phase_d_base_00066.jpg in Resources */,
@@ -2726,7 +3339,10 @@
 				824D2B0A1B61671600E5F5A5 /* phase_d_color_00063.jpg in Resources */,
 				824D2A9F1B61671600E5F5A5 /* phase_d_base_00028.jpg in Resources */,
 				824D2A6C1B61671600E5F5A5 /* phase_b_color_00049.jpg in Resources */,
+				822823761B862A0A004154E7 /* View 12 - N Randolph.jpg in Resources */,
 				824D2AEC1B61671600E5F5A5 /* phase_d_color_00033.jpg in Resources */,
+				822823B01B862A0A004154E7 /* street01.jpg in Resources */,
+				822823B61B862A0A004154E7 /* market_interior02.jpg in Resources */,
 				824D2B2B1B6186FA00E5F5A5 /* Lobby View.jpg in Resources */,
 				824D2AD51B61671600E5F5A5 /* phase_d_color_00010.jpg in Resources */,
 				824D2ABB1B61671600E5F5A5 /* phase_d_base_00056.jpg in Resources */,
@@ -2735,6 +3351,7 @@
 				824D2A1C1B61671600E5F5A5 /* phase_b_base_00041.jpg in Resources */,
 				8251FF881B7D0DE80021C1BA /* phase_a_base_00062.png in Resources */,
 				8251FEF51B7D0D880021C1BA /* phase_a_color_00061.png in Resources */,
+				822823631B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot01.jpg in Resources */,
 				8251FEFF1B7D0D880021C1BA /* phase_a_color_00071.png in Resources */,
 				8251FF551B7D0DE80021C1BA /* phase_a_base_00011.png in Resources */,
 				8251FEC71B7D0D880021C1BA /* phase_a_color_00015.png in Resources */,
@@ -2744,11 +3361,16 @@
 				824D2A251B61671600E5F5A5 /* phase_b_base_00050.jpg in Resources */,
 				824D2BD31B62D02100E5F5A5 /* share_Pg 7D  0075 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				8251FEED1B7D0D880021C1BA /* phase_a_color_00053.png in Resources */,
+				822823651B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot03.jpg in Resources */,
 				8251FEC21B7D0D880021C1BA /* phase_a_color_00010.png in Resources */,
 				82A128641B66668800564266 /* fact-grid-02-lg.png in Resources */,
 				824D2A8D1B61671600E5F5A5 /* phase_d_base_00010.jpg in Resources */,
+				822823AA1B862A0A004154E7 /* store02.jpg in Resources */,
+				822823CF1B862A0A004154E7 /* thumb_3D.jpg in Resources */,
 				824D2AE51B61671600E5F5A5 /* phase_d_color_00026.jpg in Resources */,
+				822823DD1B862A0A004154E7 /* thumb_film7.jpg in Resources */,
 				824D27361B5D7E6700E5F5A5 /* LaunchScreen.xib in Resources */,
+				822823C51B862A0A004154E7 /* Picture 050.jpg in Resources */,
 				82115DEF1B7004A300A36684 /* colors.plist in Resources */,
 				82115DE41B6FB14400A36684 /* GoodPro-CondBlack.otf in Resources */,
 				824D29FA1B61671600E5F5A5 /* phase_b_base_00007.jpg in Resources */,
@@ -2757,11 +3379,15 @@
 				8251FECD1B7D0D880021C1BA /* phase_a_color_00021.png in Resources */,
 				824D2A151B61671600E5F5A5 /* phase_b_base_00034.jpg in Resources */,
 				824D29F41B61671600E5F5A5 /* phase_b_base_00001.jpg in Resources */,
+				822823E61B862A0A004154E7 /* thumb_market_interior.jpg in Resources */,
+				822823F41B862EF0004154E7 /* grfx_selectedFrame@2x.png in Resources */,
+				822823701B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View06_051215.jpg in Resources */,
 				824D2A651B61671600E5F5A5 /* phase_b_color_00042.jpg in Resources */,
 				82CA342B1B6BF46F0065E31E /* grfx_cityMap.jpg in Resources */,
 				824D2A691B61671600E5F5A5 /* phase_b_color_00046.jpg in Resources */,
 				824D29FE1B61671600E5F5A5 /* phase_b_base_00011.jpg in Resources */,
 				824D2AD81B61671600E5F5A5 /* phase_d_color_00013.jpg in Resources */,
+				822823C81B862A0A004154E7 /* 0005 BCM (c) 2014 David Galen.jpg in Resources */,
 				824D2BC81B62D02100E5F5A5 /* share_inspi04.jpg.jpg in Resources */,
 				824D2A481B61671600E5F5A5 /* phase_b_color_00013.jpg in Resources */,
 				824D2A851B61671600E5F5A5 /* phase_d_base_00002.jpg in Resources */,
@@ -2773,8 +3399,10 @@
 				824D2AED1B61671600E5F5A5 /* phase_d_color_00034.jpg in Resources */,
 				8251FEDD1B7D0D880021C1BA /* phase_a_color_00037.png in Resources */,
 				8228229D1B83CE6D004154E7 /* grfx_buildingPlayground.jpg in Resources */,
+				822823A91B862A0A004154E7 /* store01.jpg in Resources */,
 				824D29F61B61671600E5F5A5 /* phase_b_base_00003.jpg in Resources */,
 				8251FF921B7D0DE80021C1BA /* phase_a_base_00072.png in Resources */,
+				822823791B862A0A004154E7 /* View 6 - no bridge.jpg in Resources */,
 				824D2AA01B61671600E5F5A5 /* phase_d_base_00029.jpg in Resources */,
 				82115DE51B6FB14400A36684 /* GoodPro-CondBook.otf in Resources */,
 				824D29FB1B61671600E5F5A5 /* phase_b_base_00008.jpg in Resources */,
@@ -2792,19 +3420,23 @@
 				824D2A9B1B61671600E5F5A5 /* phase_d_base_00024.jpg in Resources */,
 				824D2BDF1B62D02100E5F5A5 /* share_Picture 051.jpg.jpg in Resources */,
 				824D2AD71B61671600E5F5A5 /* phase_d_color_00012.jpg in Resources */,
+				822823CE1B862A0A004154E7 /* Picture 041.jpg in Resources */,
 				8251FE651B7BB2470021C1BA /* supporting_story_3.jpg in Resources */,
 				824D27861B5FE0CD00E5F5A5 /* grfx_summary@2x.jpg in Resources */,
 				8251FEC41B7D0D880021C1BA /* phase_a_color_00012.png in Resources */,
 				824D2BF51B62D02100E5F5A5 /* share_View 9 - Interior.jpg.jpg in Resources */,
+				8228236F1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View05_051215.jpg in Resources */,
 				8251FEE81B7D0D880021C1BA /* phase_a_color_00048.png in Resources */,
 				82A128661B66668800564266 /* fact-grid-02-sm.png in Resources */,
 				824D2A2E1B61671600E5F5A5 /* phase_b_base_00059.jpg in Resources */,
+				822823DF1B862A0A004154E7 /* thumb_film_full.jpg in Resources */,
 				824D2A631B61671600E5F5A5 /* phase_b_color_00040.jpg in Resources */,
 				824D2A8B1B61671600E5F5A5 /* phase_d_base_00008.jpg in Resources */,
 				824D2BC71B62D02100E5F5A5 /* share_inspi03.jpg.jpg in Resources */,
 				824D2A6D1B61671600E5F5A5 /* phase_b_color_00050.jpg in Resources */,
 				8251FF601B7D0DE80021C1BA /* phase_a_base_00022.png in Resources */,
 				8251FEFB1B7D0D880021C1BA /* phase_a_color_00067.png in Resources */,
+				822823F51B862EF0004154E7 /* grfx_unselectedFrame@2x.png in Resources */,
 				824D2A501B61671600E5F5A5 /* phase_b_color_00021.jpg in Resources */,
 				8251FF841B7D0DE80021C1BA /* phase_a_base_00058.png in Resources */,
 				824D2AE91B61671600E5F5A5 /* phase_d_color_00030.jpg in Resources */,
@@ -2814,9 +3446,11 @@
 				822822A01B83CE6D004154E7 /* grfx_buildingPre@2x.jpg in Resources */,
 				824D2AC71B61671600E5F5A5 /* phase_d_base_00068.jpg in Resources */,
 				824D2A2F1B61671600E5F5A5 /* phase_b_base_00060.jpg in Resources */,
+				822823821B862A0A004154E7 /* Ballston_Existing_Lease_Plan_mh.pdf in Resources */,
 				824D2A511B61671600E5F5A5 /* phase_b_color_00022.jpg in Resources */,
 				824D27951B60331600E5F5A5 /* retail.png in Resources */,
 				822822A31B83D5AB004154E7 /* grfx_expand.png in Resources */,
+				822823D71B862A0A004154E7 /* thumb_film1.jpg in Resources */,
 				824D2AE61B61671600E5F5A5 /* phase_d_color_00027.jpg in Resources */,
 				824D2B1F1B61857E00E5F5A5 /* photoData.plist in Resources */,
 				82A1286A1B66668800564266 /* fact-grid-03-sm.png in Resources */,
@@ -2825,16 +3459,23 @@
 				824D2AAE1B61671600E5F5A5 /* phase_d_base_00043.jpg in Resources */,
 				824D2A581B61671600E5F5A5 /* phase_b_color_00029.jpg in Resources */,
 				824D2BB31B62D02100E5F5A5 /* share_Ballston aerial01.jpg.jpg in Resources */,
+				822823A31B862A0A004154E7 /* inspi02.jpg in Resources */,
 				8251FF5D1B7D0DE80021C1BA /* phase_a_base_00019.png in Resources */,
+				8228237F1B862A0A004154E7 /* 2015_04_06-ESCALATORS AXON .pdf in Resources */,
 				824D2BDC1B62D02100E5F5A5 /* share_Picture 041.jpg.jpg in Resources */,
 				8251FF631B7D0DE80021C1BA /* phase_a_base_00025.png in Resources */,
+				822823671B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot05.jpg in Resources */,
 				824D2BDB1B62D02100E5F5A5 /* share_Picture 038.jpg.jpg in Resources */,
+				822823711B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View07_050715.jpg in Resources */,
+				822823BE1B862A0A004154E7 /* Pg 5B  0420 BCM (c) 2014 David Galen.jpg in Resources */,
 				824D2AEB1B61671600E5F5A5 /* phase_d_color_00032.jpg in Resources */,
 				82A128681B66668800564266 /* fact-grid-03-lg.png in Resources */,
 				824D2AE31B61671600E5F5A5 /* phase_d_color_00024.jpg in Resources */,
 				8251FF871B7D0DE80021C1BA /* phase_a_base_00061.png in Resources */,
+				822823D11B862A0A004154E7 /* thumb_architecture.jpg in Resources */,
 				824D2B0B1B61671600E5F5A5 /* phase_d_color_00064.jpg in Resources */,
 				8251FF781B7D0DE80021C1BA /* phase_a_base_00046.png in Resources */,
+				822823731B862A0A004154E7 /* View 1 - Corner.jpg in Resources */,
 				824D2BAC1B62D02100E5F5A5 /* share_0364 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				824D2A741B61671600E5F5A5 /* phase_b_color_00057.jpg in Resources */,
 				824D2AAF1B61671600E5F5A5 /* phase_d_base_00044.jpg in Resources */,
@@ -2843,16 +3484,21 @@
 				8251FF5E1B7D0DE80021C1BA /* phase_a_base_00020.png in Resources */,
 				82115DF71B713D1C00A36684 /* grfx_closeBtn.png in Resources */,
 				8251FED21B7D0D880021C1BA /* phase_a_color_00026.png in Resources */,
+				822823F21B862EF0004154E7 /* grfx_selectedFrame.png in Resources */,
 				824D2A181B61671600E5F5A5 /* phase_b_base_00037.jpg in Resources */,
 				824D2B121B61671600E5F5A5 /* phase_d_color_00071.jpg in Resources */,
 				824D2BB71B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot03.jpg.jpg in Resources */,
+				8228238A1B862A0A004154E7 /* Existing_Page_2.jpg in Resources */,
 				824D2ADF1B61671600E5F5A5 /* phase_d_color_00020.jpg in Resources */,
 				824D2AF71B61671600E5F5A5 /* phase_d_color_00044.jpg in Resources */,
 				824D2A321B61671600E5F5A5 /* phase_b_base_00063.jpg in Resources */,
+				8228236C1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View02_051215.jpg in Resources */,
 				824D2A461B61671600E5F5A5 /* phase_b_color_00011.jpg in Resources */,
+				822823EB1B862A0A004154E7 /* thumb_street.jpg in Resources */,
 				824D2BDE1B62D02100E5F5A5 /* share_Picture 050.jpg.jpg in Resources */,
 				82A1286C1B66668800564266 /* fact-grid-04-lg.png in Resources */,
 				824D2AD31B61671600E5F5A5 /* phase_d_color_00008.jpg in Resources */,
+				822823BB1B862A0A004154E7 /* 0336 BCM (c) 2014 David Galen.jpg in Resources */,
 				824D2A8E1B61671600E5F5A5 /* phase_d_base_00011.jpg in Resources */,
 				822822981B83CE6D004154E7 /* grfx_buildingGallery@2x.jpg in Resources */,
 				8251FEDF1B7D0D880021C1BA /* phase_a_color_00039.png in Resources */,
@@ -2863,18 +3509,25 @@
 				824D2BD81B62D02100E5F5A5 /* share_Picture 031.jpg.jpg in Resources */,
 				82A128831B66668800564266 /* fact-grid-09-sm@2x.png in Resources */,
 				8251FF7D1B7D0DE80021C1BA /* phase_a_base_00051.png in Resources */,
+				822823E31B862A0A004154E7 /* thumb_lifeStyle.jpg in Resources */,
 				82CA342D1B6BF46F0065E31E /* grfx_regionalMap.jpg in Resources */,
+				822823E51B862A0A004154E7 /* thumb_market_exterior.jpg in Resources */,
 				824D2ACD1B61671600E5F5A5 /* phase_d_color_00002.jpg in Resources */,
 				8251FFA51B7E817B0021C1BA /* grfx_menuRestart.jpg in Resources */,
 				8251FEE41B7D0D880021C1BA /* phase_a_color_00044.png in Resources */,
+				822823721B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View08_050715.jpg in Resources */,
+				822823C31B862A0A004154E7 /* Picture 038.jpg in Resources */,
 				824D2A261B61671600E5F5A5 /* phase_b_base_00051.jpg in Resources */,
 				82115DFF1B7144C200A36684 /* grfx_initImage.jpg in Resources */,
 				824D2A221B61671600E5F5A5 /* phase_b_base_00047.jpg in Resources */,
 				824D2AA81B61671600E5F5A5 /* phase_d_base_00037.jpg in Resources */,
+				822823C91B862A0A004154E7 /* 0027 BCM (c) 2014 David Galen.jpg in Resources */,
 				824D2AFD1B61671600E5F5A5 /* phase_d_color_00050.jpg in Resources */,
 				824D2A2D1B61671600E5F5A5 /* phase_b_base_00058.jpg in Resources */,
 				82115DF31B7012A600A36684 /* grfx_building.jpg in Resources */,
 				824D2A3F1B61671600E5F5A5 /* phase_b_color_00004.jpg in Resources */,
+				822823AF1B862A0A004154E7 /* store07.jpg in Resources */,
+				822823A11B862A0A004154E7 /* arch_06.jpg in Resources */,
 				824D2BC31B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View07_050715.jpg.jpg in Resources */,
 				824D2A6A1B61671600E5F5A5 /* phase_b_color_00047.jpg in Resources */,
 				8251FF6A1B7D0DE80021C1BA /* phase_a_base_00032.png in Resources */,
@@ -2883,6 +3536,7 @@
 				824D2A431B61671600E5F5A5 /* phase_b_color_00008.jpg in Resources */,
 				824D27961B60331600E5F5A5 /* office.png in Resources */,
 				824D2A1D1B61671600E5F5A5 /* phase_b_base_00042.jpg in Resources */,
+				822823B81B862A0A004154E7 /* Ballston aerial01.jpg in Resources */,
 				824D2BE31B62D02100E5F5A5 /* share_store03.jpg.jpg in Resources */,
 				824D2ADB1B61671600E5F5A5 /* phase_d_color_00016.jpg in Resources */,
 				824D2BB91B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot05.jpg.jpg in Resources */,
@@ -2891,16 +3545,26 @@
 				824D2A801B61671600E5F5A5 /* phase_b_color_00069.jpg in Resources */,
 				824D29F81B61671600E5F5A5 /* phase_b_base_00005.jpg in Resources */,
 				824D2AA71B61671600E5F5A5 /* phase_d_base_00036.jpg in Resources */,
+				822823AB1B862A0A004154E7 /* store03.jpg in Resources */,
 				824D2A561B61671600E5F5A5 /* phase_b_color_00027.jpg in Resources */,
+				8228238E1B862A0A004154E7 /* Leasing_Page_2.jpg in Resources */,
 				824D2A7B1B61671600E5F5A5 /* phase_b_color_00064.jpg in Resources */,
 				824D2B2A1B6186FA00E5F5A5 /* Lobby Entry and Restuarant.jpg in Resources */,
+				8228239E1B862A0A004154E7 /* arch_03.jpg in Resources */,
+				822823691B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot07.jpg in Resources */,
+				822823F31B862EF0004154E7 /* grfx_unselectedFrame.png in Resources */,
 				824D2B041B61671600E5F5A5 /* phase_d_color_00057.jpg in Resources */,
 				8251FEDB1B7D0D880021C1BA /* phase_a_color_00035.png in Resources */,
 				824D2A311B61671600E5F5A5 /* phase_b_base_00062.jpg in Resources */,
 				824D2BBC1B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot08.jpg.jpg in Resources */,
+				8228238C1B862A0A004154E7 /* Existing_Page_4.jpg in Resources */,
+				8228237A1B862A0A004154E7 /* View 7 - N Stuart - no bridge.jpg in Resources */,
 				82CA34251B6BEB950065E31E /* grfx_areaMap.jpg in Resources */,
 				824D2BCB1B62D02100E5F5A5 /* share_lifestyle01.jpg.jpg in Resources */,
+				8228236A1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot08.jpg in Resources */,
 				82CA342E1B6BF46F0065E31E /* grfx_regionalMap@2x.jpg in Resources */,
+				8228237D1B862A0A004154E7 /* 150512_BC_PresTemplate_ProgressR3_LR 2.pdf in Resources */,
+				822823D31B862A0A004154E7 /* thumb_dining_gallery.jpg in Resources */,
 				824D2ACE1B61671600E5F5A5 /* phase_d_color_00003.jpg in Resources */,
 				8251FEFE1B7D0D880021C1BA /* phase_a_color_00070.png in Resources */,
 				824D2BE81B62D02100E5F5A5 /* share_street01.jpg.jpg in Resources */,
@@ -2911,18 +3575,25 @@
 				824D2A5C1B61671600E5F5A5 /* phase_b_color_00033.jpg in Resources */,
 				824D2AB41B61671600E5F5A5 /* phase_d_base_00049.jpg in Resources */,
 				824D2AA41B61671600E5F5A5 /* phase_d_base_00033.jpg in Resources */,
+				822823771B862A0A004154E7 /* View 2 - Wilson.jpg in Resources */,
+				822823641B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot02.jpg in Resources */,
+				8228238D1B862A0A004154E7 /* Leasing_Page_1.jpg in Resources */,
 				8251FEE01B7D0D880021C1BA /* phase_a_color_00040.png in Resources */,
 				82A128801B66668800564266 /* fact-grid-09-lg.png in Resources */,
 				824D2BA81B62D02100E5F5A5 /* share_0027 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				8251FEEC1B7D0D880021C1BA /* phase_a_color_00052.png in Resources */,
+				822823C61B862A0A004154E7 /* Picture 051.jpg in Resources */,
 				824D2A891B61671600E5F5A5 /* phase_d_base_00006.jpg in Resources */,
 				824D2BF01B62D02100E5F5A5 /* share_View 4 from bridge.jpg.jpg in Resources */,
 				8228229C1B83CE6D004154E7 /* grfx_buildingNext@2x.jpg in Resources */,
+				822823A01B862A0A004154E7 /* arch_05.jpg in Resources */,
 				824D2A771B61671600E5F5A5 /* phase_b_color_00060.jpg in Resources */,
 				824D2A881B61671600E5F5A5 /* phase_d_base_00005.jpg in Resources */,
 				824D2A681B61671600E5F5A5 /* phase_b_color_00045.jpg in Resources */,
 				824D2ABF1B61671600E5F5A5 /* phase_d_base_00060.jpg in Resources */,
 				824D2A1F1B61671600E5F5A5 /* phase_b_base_00044.jpg in Resources */,
+				822823B71B862A0A004154E7 /* market_interior03.jpg in Resources */,
+				8228238B1B862A0A004154E7 /* Existing_Page_3.jpg in Resources */,
 				824D2BC11B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View05_051215.jpg.jpg in Resources */,
 				82CA34361B6C02C40065E31E /* lifeStyle_bg.jpg in Resources */,
 				8251FEE71B7D0D880021C1BA /* phase_a_color_00047.png in Resources */,
@@ -2945,19 +3616,24 @@
 				824D2BC61B62D02100E5F5A5 /* share_inspi02.jpg.jpg in Resources */,
 				8251FEF31B7D0D880021C1BA /* phase_a_color_00059.png in Resources */,
 				824D2A9D1B61671600E5F5A5 /* phase_d_base_00026.jpg in Resources */,
+				8228237C1B862A0A004154E7 /* View 9 - Interior.jpg in Resources */,
 				8251FEF91B7D0D880021C1BA /* phase_a_color_00065.png in Resources */,
 				824D2AB31B61671600E5F5A5 /* phase_d_base_00048.jpg in Resources */,
+				822823B41B862A0A004154E7 /* market_exterior02.jpg in Resources */,
 				824D2A6E1B61671600E5F5A5 /* phase_b_color_00051.jpg in Resources */,
 				8251FEE51B7D0D880021C1BA /* phase_a_color_00045.png in Resources */,
 				8251FF5F1B7D0DE80021C1BA /* phase_a_base_00021.png in Resources */,
+				822823861B862A0A004154E7 /* BCLP DEV_ 07-09-2015.pdf in Resources */,
 				824D2B2C1B6186FA00E5F5A5 /* Southeast View of Victory Center.jpg in Resources */,
 				824D29F51B61671600E5F5A5 /* phase_b_base_00002.jpg in Resources */,
 				824D2A901B61671600E5F5A5 /* phase_d_base_00013.jpg in Resources */,
 				824D2AAA1B61671600E5F5A5 /* phase_d_base_00039.jpg in Resources */,
 				824D2BDA1B62D02100E5F5A5 /* share_Picture 036.jpg.jpg in Resources */,
+				822823BD1B862A0A004154E7 /* Pg 2A  0225 BCM (c) 2014 David Galen.jpg in Resources */,
 				82A1287A1B66668800564266 /* fact-grid-07-sm.png in Resources */,
 				824D2A7D1B61671600E5F5A5 /* phase_b_color_00066.jpg in Resources */,
 				824D2A0E1B61671600E5F5A5 /* phase_b_base_00027.jpg in Resources */,
+				822823811B862A0A004154E7 /* ballston leasing book with cards-2.pdf in Resources */,
 				824D2AAD1B61671600E5F5A5 /* phase_d_base_00042.jpg in Resources */,
 				824D2A491B61671600E5F5A5 /* phase_b_color_00014.jpg in Resources */,
 				824D2AA61B61671600E5F5A5 /* phase_d_base_00035.jpg in Resources */,
@@ -2989,7 +3665,9 @@
 				824D2BCC1B62D02100E5F5A5 /* share_market_exterior01.jpg.jpg in Resources */,
 				8251FF8E1B7D0DE80021C1BA /* phase_a_base_00068.png in Resources */,
 				824D2BAD1B62D02100E5F5A5 /* share_arch_01.jpg.jpg in Resources */,
+				822823B31B862A0A004154E7 /* market_exterior01.jpg in Resources */,
 				824D2AC61B61671600E5F5A5 /* phase_d_base_00067.jpg in Resources */,
+				8228239F1B862A0A004154E7 /* arch_04.jpg in Resources */,
 				824D2A3B1B61671600E5F5A5 /* phase_b_color_00000.jpg in Resources */,
 				8251FE661B7BB2470021C1BA /* supporting_story_4.jpg in Resources */,
 				824D2AE81B61671600E5F5A5 /* phase_d_color_00029.jpg in Resources */,
@@ -3010,16 +3688,20 @@
 				8251FED01B7D0D880021C1BA /* phase_a_color_00024.png in Resources */,
 				824D2A021B61671600E5F5A5 /* phase_b_base_00015.jpg in Resources */,
 				8251FE6B1B7CCB110021C1BA /* tbd_2.jpg in Resources */,
+				822823EA1B862A0A004154E7 /* thumb_spacePlan.jpg in Resources */,
 				824D2A5B1B61671600E5F5A5 /* phase_b_color_00032.jpg in Resources */,
+				822823A61B862A0A004154E7 /* inspi05.jpg in Resources */,
 				824D2A911B61671600E5F5A5 /* phase_d_base_00014.jpg in Resources */,
 				824D27331B5D7E6700E5F5A5 /* Images.xcassets in Resources */,
 				824D2BD61B62D02100E5F5A5 /* share_Picture 030.jpg in Resources */,
 				82A128791B66668800564266 /* fact-grid-07-lg@2x.png in Resources */,
 				8251FED41B7D0D880021C1BA /* phase_a_color_00028.png in Resources */,
 				824D2AC21B61671600E5F5A5 /* phase_d_base_00063.jpg in Resources */,
+				8228239D1B862A0A004154E7 /* arch_02.jpg in Resources */,
 				8251FF7E1B7D0DE80021C1BA /* phase_a_base_00052.png in Resources */,
 				82A1285F1B66668800564266 /* fact-copy-01@2x.png in Resources */,
 				824D2A9E1B61671600E5F5A5 /* phase_d_base_00027.jpg in Resources */,
+				822823DE1B862A0A004154E7 /* thumb_film8.jpg in Resources */,
 				824D2A4A1B61671600E5F5A5 /* phase_b_color_00015.jpg in Resources */,
 				824D2A211B61671600E5F5A5 /* phase_b_base_00046.jpg in Resources */,
 				8251FEFA1B7D0D880021C1BA /* phase_a_color_00066.png in Resources */,
@@ -3029,8 +3711,10 @@
 				824D2BDD1B62D02100E5F5A5 /* share_Picture 049.jpg.jpg in Resources */,
 				8251FFA71B7E817B0021C1BA /* grfx_menuWebcam.jpg in Resources */,
 				824D2A9A1B61671600E5F5A5 /* phase_d_base_00023.jpg in Resources */,
+				822823A71B862A0A004154E7 /* inspi06.jpg in Resources */,
 				8251FFAA1B7E817B0021C1BA /* grfx_menuWebcam@2x.jpg in Resources */,
 				824D2AB81B61671600E5F5A5 /* phase_d_base_00053.jpg in Resources */,
+				822823C11B862A0A004154E7 /* Picture 035.jpg in Resources */,
 				8251FF8F1B7D0DE80021C1BA /* phase_a_base_00069.png in Resources */,
 				824D2B561B62CF7F00E5F5A5 /* shareableData.plist in Resources */,
 				824D2B101B61671600E5F5A5 /* phase_d_color_00069.jpg in Resources */,
@@ -3038,11 +3722,14 @@
 				82A128601B66668800564266 /* fact-grid-01-lg.png in Resources */,
 				82A128621B66668800564266 /* fact-grid-01-sm.png in Resources */,
 				82A1287C1B66668800564266 /* fact-grid-08-lg.png in Resources */,
+				822823B91B862A0A004154E7 /* Ballston Aerial02.jpg in Resources */,
 				8251FECA1B7D0D880021C1BA /* phase_a_color_00018.png in Resources */,
 				82115DE31B6FB14400A36684 /* GoodPro-Book.otf in Resources */,
 				824D2A641B61671600E5F5A5 /* phase_b_color_00041.jpg in Resources */,
 				8251FF731B7D0DE80021C1BA /* phase_a_base_00041.png in Resources */,
+				822823AE1B862A0A004154E7 /* store06.jpg in Resources */,
 				824D2AFA1B61671600E5F5A5 /* phase_d_color_00047.jpg in Resources */,
+				8228237B1B862A0A004154E7 /* View 8 - Plaza.jpg in Resources */,
 				824D2B021B61671600E5F5A5 /* phase_d_color_00055.jpg in Resources */,
 				824D2AEF1B61671600E5F5A5 /* phase_d_color_00036.jpg in Resources */,
 				8251FEBF1B7D0D880021C1BA /* phase_a_color_00007.png in Resources */,
@@ -3063,9 +3750,12 @@
 				8251FEF81B7D0D880021C1BA /* phase_a_color_00064.png in Resources */,
 				8251FF741B7D0DE80021C1BA /* phase_a_base_00042.png in Resources */,
 				824D2A471B61671600E5F5A5 /* phase_b_color_00012.jpg in Resources */,
+				822823DA1B862A0A004154E7 /* thumb_film4.jpg in Resources */,
+				822822C21B86169A004154E7 /* grfx_shareEmail@2x.png in Resources */,
 				824D2AFB1B61671600E5F5A5 /* phase_d_color_00048.jpg in Resources */,
 				824D2ADE1B61671600E5F5A5 /* phase_d_color_00019.jpg in Resources */,
 				8251FEF61B7D0D880021C1BA /* phase_a_color_00062.png in Resources */,
+				822823C71B862A0A004154E7 /* Picture 056.jpg in Resources */,
 				8251FED81B7D0D880021C1BA /* phase_a_color_00032.png in Resources */,
 				824D2BD01B62D02100E5F5A5 /* share_market_interior03.jpg.jpg in Resources */,
 				824D2A5F1B61671600E5F5A5 /* phase_b_color_00036.jpg in Resources */,
@@ -3077,24 +3767,29 @@
 				8251FEC81B7D0D880021C1BA /* phase_a_color_00016.png in Resources */,
 				8251FEF21B7D0D880021C1BA /* phase_a_color_00058.png in Resources */,
 				8251FF7C1B7D0DE80021C1BA /* phase_a_base_00050.png in Resources */,
+				822823E41B862A0A004154E7 /* thumb_market.jpg in Resources */,
 				824D29FF1B61671600E5F5A5 /* phase_b_base_00012.jpg in Resources */,
 				824D278B1B60179A00E5F5A5 /* grfx_siteplan.jpg in Resources */,
 				824D2BE51B62D02100E5F5A5 /* share_store05.jpg.jpg in Resources */,
 				824D2B001B61671600E5F5A5 /* phase_d_color_00053.jpg in Resources */,
+				822823D01B862A0A004154E7 /* thumb_arch.jpg in Resources */,
 				824D2AD21B61671600E5F5A5 /* phase_d_color_00007.jpg in Resources */,
 				824D2B151B6169AB00E5F5A5 /* ImageData.plist in Resources */,
 				82A128691B66668800564266 /* fact-grid-03-lg@2x.png in Resources */,
 				824D2A951B61671600E5F5A5 /* phase_d_base_00018.jpg in Resources */,
+				822823BC1B862A0A004154E7 /* 0364 BCM (c) 2014 David Galen.jpg in Resources */,
 				824D2AF61B61671600E5F5A5 /* phase_d_color_00043.jpg in Resources */,
 				82115DFC1B7143D800A36684 /* grfx_resartBtn@2x.png in Resources */,
 				824D2A141B61671600E5F5A5 /* phase_b_base_00033.jpg in Resources */,
 				82A128B21B66CA6B00564266 /* grfx_menuOpen@2x.png in Resources */,
 				82115DE71B6FB14400A36684 /* GoodPro-Light.otf in Resources */,
 				824D2A011B61671600E5F5A5 /* phase_b_base_00014.jpg in Resources */,
+				822822C01B86169A004154E7 /* grfx_shareEmail.png in Resources */,
 				824D29FD1B61671600E5F5A5 /* phase_b_base_00010.jpg in Resources */,
 				824D2B501B62B92500E5F5A5 /* share_but_email@2x.png in Resources */,
 				824D2A791B61671600E5F5A5 /* phase_b_color_00062.jpg in Resources */,
 				82A1285E1B66668800564266 /* fact-copy-01.png in Resources */,
+				822823CA1B862A0A004154E7 /* 0099 BCM (c) 2014 David Galen.jpg in Resources */,
 				824D2BAE1B62D02100E5F5A5 /* share_arch_02.jpg.jpg in Resources */,
 				824D2B061B61671600E5F5A5 /* phase_d_color_00059.jpg in Resources */,
 				824D2A721B61671600E5F5A5 /* phase_b_color_00055.jpg in Resources */,
@@ -3109,6 +3804,7 @@
 				8251FEDE1B7D0D880021C1BA /* phase_a_color_00038.png in Resources */,
 				8251FF721B7D0DE80021C1BA /* phase_a_base_00040.png in Resources */,
 				824D2AF11B61671600E5F5A5 /* phase_d_color_00038.jpg in Resources */,
+				822823D81B862A0A004154E7 /* thumb_film2.jpg in Resources */,
 				8251FFA61B7E817B0021C1BA /* grfx_menuSettings.jpg in Resources */,
 				824D2BBF1B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View03_051215.jpg.jpg in Resources */,
 				8251FF541B7D0DE80021C1BA /* phase_a_base_00010.png in Resources */,
@@ -3116,6 +3812,7 @@
 				824D2A0A1B61671600E5F5A5 /* phase_b_base_00023.jpg in Resources */,
 				8251FF5B1B7D0DE80021C1BA /* phase_a_base_00017.png in Resources */,
 				824D2BE21B62D02100E5F5A5 /* share_store02.jpg.jpg in Resources */,
+				822823CB1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg in Resources */,
 				824D2BD91B62D02100E5F5A5 /* share_Picture 035.jpg.jpg in Resources */,
 				8251FEBE1B7D0D880021C1BA /* phase_a_color_00006.png in Resources */,
 				824D2BB01B62D02100E5F5A5 /* share_arch_04.jpg.jpg in Resources */,
@@ -3124,6 +3821,7 @@
 				824D2BEF1B62D02100E5F5A5 /* share_View 2 - Wilson.jpg.jpg in Resources */,
 				8251FECC1B7D0D880021C1BA /* phase_a_color_00020.png in Resources */,
 				8228228C1B83BC29004154E7 /* grfx_buildingIcon.jpg in Resources */,
+				822823891B862A0A004154E7 /* Existing_Page_1.jpg in Resources */,
 				824D27921B60331600E5F5A5 /* greenspace.png in Resources */,
 				8251FF901B7D0DE80021C1BA /* phase_a_base_00070.png in Resources */,
 				8251FEDC1B7D0D880021C1BA /* phase_a_color_00036.png in Resources */,
@@ -3132,6 +3830,7 @@
 				82115DF41B7012A600A36684 /* grfx_building@2x.jpg in Resources */,
 				824D2B2D1B6186FA00E5F5A5 /* Soutwest View of Victory Center.jpg in Resources */,
 				82A128761B66668800564266 /* fact-grid-06-sm.png in Resources */,
+				822823831B862A0A004154E7 /* Ballston_Presentation_072414-low res.pdf in Resources */,
 				8251FF511B7D0DE80021C1BA /* phase_a_base_00007.png in Resources */,
 				824D2A2B1B61671600E5F5A5 /* phase_b_base_00056.jpg in Resources */,
 				824D2A781B61671600E5F5A5 /* phase_b_color_00061.jpg in Resources */,
@@ -3145,6 +3844,8 @@
 				824D2AB91B61671600E5F5A5 /* phase_d_base_00054.jpg in Resources */,
 				824D2A971B61671600E5F5A5 /* phase_d_base_00020.jpg in Resources */,
 				824D2AE01B61671600E5F5A5 /* phase_d_color_00021.jpg in Resources */,
+				822823E01B862A0A004154E7 /* thumb_inspiration.jpg in Resources */,
+				822823E11B862A0A004154E7 /* thumb_interior.jpg in Resources */,
 				824D2A591B61671600E5F5A5 /* phase_b_color_00030.jpg in Resources */,
 				824D2BC21B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View06_051215.jpg.jpg in Resources */,
 				824D2A711B61671600E5F5A5 /* phase_b_color_00054.jpg in Resources */,
@@ -3154,6 +3855,8 @@
 				824D2B451B62B5C600E5F5A5 /* EMBSPCell.xib in Resources */,
 				8251FF6B1B7D0DE80021C1BA /* phase_a_base_00033.png in Resources */,
 				824D2A671B61671600E5F5A5 /* phase_b_color_00044.jpg in Resources */,
+				822823E81B862A0A004154E7 /* thumb_presentation.jpg in Resources */,
+				8228238F1B862A0A004154E7 /* Leasing_Page_3.jpg in Resources */,
 				824D2A071B61671600E5F5A5 /* phase_b_base_00020.jpg in Resources */,
 				8251FF831B7D0DE80021C1BA /* phase_a_base_00057.png in Resources */,
 				824D2AA51B61671600E5F5A5 /* phase_d_base_00034.jpg in Resources */,
@@ -3163,10 +3866,12 @@
 				8228229A1B83CE6D004154E7 /* grfx_buildingList@2x.jpg in Resources */,
 				824D2AEE1B61671600E5F5A5 /* phase_d_color_00035.jpg in Resources */,
 				824D2BE71B62D02100E5F5A5 /* share_store07.jpg.jpg in Resources */,
+				822823E91B862A0A004154E7 /* thumb_sdpackage.jpg in Resources */,
 				8251FEDA1B7D0D880021C1BA /* phase_a_color_00034.png in Resources */,
 				824D2A381B61671600E5F5A5 /* phase_b_base_00069.jpg in Resources */,
 				824D2AB21B61671600E5F5A5 /* phase_d_base_00047.jpg in Resources */,
 				824D2AF51B61671600E5F5A5 /* phase_d_color_00042.jpg in Resources */,
+				822823E71B862A0A004154E7 /* thumb_photo.jpg in Resources */,
 				824D2BCA1B62D02100E5F5A5 /* share_inspi06.jpg.jpg in Resources */,
 				824D2A201B61671600E5F5A5 /* phase_b_base_00045.jpg in Resources */,
 				824D2A1A1B61671600E5F5A5 /* phase_b_base_00039.jpg in Resources */,

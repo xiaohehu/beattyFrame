@@ -144,11 +144,16 @@
     isShare = uib_shareSwitch.selected;
     [self updateTitleLabel];
     if (isShare) {
+        [_uic_collectionView reloadData];
+        self.view.layer.borderWidth = 2.0;
+        self.view.layer.borderColor = [UIColor themeRed].CGColor;
         [UIView animateWithDuration:0.33 animations:^(void){
             uiv_sharePanel.transform = CGAffineTransformIdentity;
         }];
         
     } else {
+        [_uic_collectionView reloadData];
+        self.view.layer.borderWidth = 0.0;
         [UIView animateWithDuration:0.33 animations:^(void){
             uiv_sharePanel.transform = CGAffineTransformMakeTranslation(0, uiv_sharePanel.frame.size.height);
         }];
@@ -249,6 +254,7 @@
         supplementaryView.label.text = secTitle;
         supplementaryView.label.autoresizesSubviews = YES;
         supplementaryView.label.transform = CGAffineTransformMakeTranslation(0 , 15);
+        supplementaryView.label.font = [UIFont fontWithName:@"GoodPro-Book" size:18.0];
     }
     
     
@@ -278,34 +284,40 @@
     }
     cell.backgroundColor = [UIColor redColor];
     [cell.titleLabel setText:[totalCap objectAtIndex:indexPath.row]];
-    cell.titleLabel.font = [UIFont fontWithName:@"JosefinSans-SemiBold" size:13];
+    cell.titleLabel.font = [UIFont fontWithName:@"GoodPro-Book" size:13];
     
     cell.cellThumb.image = [UIImage imageNamed:[totalImg objectAtIndex:indexPath.row]];
     [cell.cellThumb setContentMode:UIViewContentModeScaleAspectFit];
     
-    NSNumber *selSection = [NSNumber numberWithInt:(int)indexPath.section];
-    NSNumber *selRow = [NSNumber numberWithInt:(int)indexPath.row];
-    
-    NSString *selKeyName = [NSString stringWithFormat:@"%@-%@",[selSection stringValue], [selRow stringValue]];
-    NSString *selValue = [NSString stringWithFormat:@"%@,%@",[selSection stringValue], [selRow stringValue]];
-    
-    NSDictionary *myDict = [self findDictionaryWithValue:selKeyName forKey:selValue];
-    
-    //cell.cellThumb.layer.cornerRadius = cell.frame.size.width / 2.0;
-    
-    if (myDict!=nil) {
-        NSLog(@"should hilight");
-        //cell.cellThumb.layer.borderColor = [[UIColor darkGrayColor] CGColor];
-        //cell.cellThumb.layer.borderWidth = 4.0;
+    if (isShare) {
+        NSNumber *selSection = [NSNumber numberWithInt:(int)indexPath.section];
+        NSNumber *selRow = [NSNumber numberWithInt:(int)indexPath.row];
         
-        cell.imgFrame.hidden = NO;
+        NSString *selKeyName = [NSString stringWithFormat:@"%@-%@",[selSection stringValue], [selRow stringValue]];
+        NSString *selValue = [NSString stringWithFormat:@"%@,%@",[selSection stringValue], [selRow stringValue]];
         
+        NSDictionary *myDict = [self findDictionaryWithValue:selKeyName forKey:selValue];
+        
+        //cell.cellThumb.layer.cornerRadius = cell.frame.size.width / 2.0;
+        
+        if (myDict!=nil) {
+            NSLog(@"should hilight");
+            //cell.cellThumb.layer.borderColor = [[UIColor darkGrayColor] CGColor];
+            //cell.cellThumb.layer.borderWidth = 4.0;
+            
+            cell.imgFrame.hidden = NO;
+            cell.imgFrame.image = [UIImage imageNamed:@"grfx_selectedFrame.png"];
+            
+        } else {
+            //cell.cellThumb.layer.borderColor = [[UIColor lightGrayColor] CGColor];
+            //cell.cellThumb.layer.borderWidth = 2.0;
+            
+            cell.imgFrame.hidden = NO;
+            cell.imgFrame.image = [UIImage imageNamed:@"grfx_unselectedFrame.png"];
+            
+        }
     } else {
-        //cell.cellThumb.layer.borderColor = [[UIColor lightGrayColor] CGColor];
-        //cell.cellThumb.layer.borderWidth = 2.0;
-        
         cell.imgFrame.hidden = YES;
-        
     }
     
     return cell;
@@ -362,6 +374,8 @@
                                                nil];
             
             [selectedIndexPaths addObject:dictSelIndexPaths];
+            
+            [_uic_collectionView reloadData];
             
         } else {
             
@@ -498,19 +512,19 @@
     
     NSLog(@"percentDone: %f",percentDone);
     
-    CGRect rect = CGRectMake(20, 733, uitv_sharedList.bounds.size.width, 5);
+    CGRect rect = CGRectMake(20, 50, 430, 5);
     
     upperRect.frame = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width * percentDone, rect.size.height );
     
     lowerRect.frame = CGRectMake(rect.origin.x + (rect.size.width * percentDone), rect.origin.y, rect.size.width*(1-percentDone), rect.size.height );
-    lowerRect.alpha = 0.7;
-    upperRect.alpha = 0.7;
+    lowerRect.alpha = 1.0;
+    upperRect.alpha = 1.0      ;
     
-    [upperRect setBackgroundColor:spaceleft];
+    [upperRect setBackgroundColor:[UIColor selectedBlue]];
     [lowerRect setBackgroundColor:[UIColor whiteColor]];
     
-    [self.view insertSubview:upperRect atIndex:1];
-    [self.view insertSubview:lowerRect atIndex:1];
+    [uiv_sharePanel addSubview: lowerRect];
+    [uiv_sharePanel addSubview: upperRect];
     
     NSString *sttring = [NSByteCountFormatter stringFromByteCount:totalBhytes countStyle:NSByteCountFormatterCountStyleFile];
     
@@ -558,8 +572,8 @@
         btn.layer.borderWidth = 0.0;
     } else {
         btn.enabled = enabled;
-        btn.layer.borderColor = [UIColor whiteColor].CGColor;
-        btn.layer.borderWidth = 1.0;
+//        btn.layer.borderColor = [UIColor whiteColor].CGColor;
+//        btn.layer.borderWidth = 1.0;
     }
 }
 
