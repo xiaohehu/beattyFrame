@@ -9,6 +9,8 @@
 #import "Site360ViewController.h"
 #import "BuildingViewController.h"
 #import "UIColor+Extensions.h"
+#import <QuartzCore/QuartzCore.h>
+
 static int  phaseNumber = 4;
 static float bottomMenuHeight  = 37.0;
 @interface Site360ViewController ()
@@ -17,6 +19,8 @@ static float bottomMenuHeight  = 37.0;
     UIView              *uiv_buttonIndicator;
     IBOutlet UIButton   *uib_summary;
     NSMutableArray      *arr_menuButton;
+    
+    UILabel             *uil_buildingTitle;
 }
 @end
 
@@ -34,6 +38,13 @@ static float bottomMenuHeight  = 37.0;
 
 - (void)viewWillAppear:(BOOL)animated {
     [self createBottomMenu];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    uil_buildingTitle = [[UILabel alloc] initWithFrame:CGRectMake(68.5, 219.5, 100, 50)];
+    uil_buildingTitle.backgroundColor = [UIColor blueColor];
+    [self.view addSubview: uil_buildingTitle];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -92,6 +103,142 @@ static float bottomMenuHeight  = 37.0;
         }
     }
 }
+
+//===================Animate Path==============================
+
+- (CGPoint)calculateEllipsePathWithIndex:(int)index andA:(int)a andB:(int)b andCenterPoint:(CGPoint)centerPoint {
+    int sectionFrameNum = numberOfFrames/4;
+    int section = index/sectionFrameNum;
+    if (section == 4) {
+        section = 3;
+    }
+    CGPoint startPoint;
+    CGPoint endPoint;
+    switch (section) {
+        case 0: {
+            startPoint = CGPointMake(centerPoint.x - a, centerPoint.y);
+            endPoint = CGPointMake(centerPoint.x, centerPoint.y + b);
+            break;
+        }
+        case 1: {
+            startPoint = CGPointMake(centerPoint.x, centerPoint.y + b);
+            endPoint = CGPointMake(centerPoint.x + a, centerPoint.y);
+            break;
+        }
+        case 2: {
+            startPoint = CGPointMake(centerPoint.x, centerPoint.y + b);
+            endPoint = CGPointMake(centerPoint.x, centerPoint.y - b);
+            break;
+        }
+        case 3: {
+            startPoint = CGPointMake(centerPoint.x, centerPoint.y - b);
+            endPoint = CGPointMake(centerPoint.x - a, centerPoint.y);
+            break;
+        }
+        default:
+            break;
+    }
+//    NSLog(@"\n\n%@\n%@\n\n", NSStringFromCGPoint(startPoint), NSStringFromCGPoint(endPoint));
+    
+    float x_value = (endPoint.x - startPoint.x) * (index - section*sectionFrameNum)/sectionFrameNum + startPoint.x;
+    float y_value = 0.0;
+    NSLog(@"\n\n %f \n\n",x_value  - centerPoint.x);
+//    NSLog(@"\n\n%f\n%f\n\n", pow(x_value - centerPoint.x, 2), pow(a, 2));
+    y_value = sqrtf((1 - pow(centerPoint.x - x_value, 2)/pow(a, 2)) * pow(b, 2));
+    if (section < 2) {
+        return CGPointMake(x_value, centerPoint.y + y_value);
+    } else {
+        return CGPointMake(x_value, centerPoint.y - y_value);
+    }
+    return  CGPointZero;
+}
+
+- (void)animateLabelAtIndex:(int)index andDirection:(int)direction {
+    
+//    CGPoint startPoint = CGPointMake(156, 177);
+//    CGPoint firstPoint = CGPointMake(547, 334);
+//    CGPoint secondPoint = CGPointMake(923, 177);
+//    CGPoint thridPoint = CGPointMake(547, 27);
+    
+    CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    pathAnimation.calculationMode = kCAAnimationDiscrete;
+    pathAnimation.fillMode = kCAFillModeBoth;
+    pathAnimation.removedOnCompletion = NO;
+    pathAnimation.duration = 0.0;
+    
+    CGMutablePathRef curvedPath = CGPathCreateMutable();
+//    CGPathMoveToPoint(curvedPath, NULL, 68.5, 219.5);
+//    CGPathAddQuadCurveToPoint(curvedPath, NULL, 144.5, 260.5, 134.5, 245.5);
+//    CGPathAddQuadCurveToPoint(curvedPath, NULL, 146.5, 267.5, 162.75, 286);
+    CGPoint destination = [self calculateEllipsePathWithIndex:index andA:365 andB:155 andCenterPoint:CGPointMake(517, 218)];
+//    CGPathMoveToPoint(curvedPath, NULL, destination.x, destination.y);
+//    CGPathAddQuadCurveToPoint(curvedPath, NULL, destination.x, destination.y, destination.x, destination.y);
+
+//    if (index >= 0 && index < 18) {
+//        CGPathMoveToPoint(curvedPath,
+//                          NULL,
+//                          startPoint.x + (firstPoint.x - startPoint.x) * (index + direction) / 18 ,
+//                          startPoint.y + (firstPoint.y - startPoint.y) * (index + direction) / 18);
+//        
+//        CGPathAddQuadCurveToPoint(curvedPath,
+//                                  NULL,
+//                                  startPoint.x + (firstPoint.x - startPoint.x) * index / 18,
+//                                  startPoint.y + (firstPoint.y - startPoint.y) * index / 18,
+//                                  startPoint.x + (firstPoint.x - startPoint.x) * index / 18,
+//                                  startPoint.y + (firstPoint.y - startPoint.y) * index / 18);
+//        
+//    } else if (index >= 18 && index < 36) {
+//        CGPathMoveToPoint(curvedPath,
+//                          NULL,
+//                          firstPoint.x + (secondPoint.x - firstPoint.x) * (index - 18 + direction) / 18 ,
+//                          firstPoint.y + (secondPoint.y - firstPoint.y) * (index - 18 + direction) / 18);
+//        
+//        CGPathAddQuadCurveToPoint(curvedPath,
+//                                  NULL,
+//                                  firstPoint.x + (secondPoint.x - firstPoint.x) * (index - 18) / 18,
+//                                  firstPoint.y + (secondPoint.y - firstPoint.y) * (index - 18) / 18,
+//                                  firstPoint.x + (secondPoint.x - firstPoint.x) * (index - 18) / 18,
+//                                  firstPoint.y + (secondPoint.y - firstPoint.y) * (index - 18) / 18);
+//        
+//    } else if (index >= 36 && index < 54) {
+//        CGPathMoveToPoint(curvedPath,
+//                          NULL,
+//                          secondPoint.x + (thridPoint.x - secondPoint.x) * (index - 36 + direction) / 18 ,
+//                          secondPoint.y + (thridPoint.y - secondPoint.y) * (index - 36 + direction) / 18);
+//        
+//        CGPathAddQuadCurveToPoint(curvedPath,
+//                                  NULL,
+//                                  secondPoint.x + (thridPoint.x - secondPoint.x) * (index - 36) / 18,
+//                                  secondPoint.y + (thridPoint.y - secondPoint.y) * (index - 36) / 18,
+//                                  secondPoint.x + (thridPoint.x - secondPoint.x) * (index - 36) / 18,
+//                                  secondPoint.y + (thridPoint.y - secondPoint.y) * (index - 36) / 18);
+//        
+//    } else {
+//        CGPathMoveToPoint(curvedPath,
+//                          NULL,
+//                          thridPoint.x + (startPoint.x - thridPoint.x) * (index - 54 + direction) / 18 ,
+//                          thridPoint.y + (startPoint.y - thridPoint.y) * (index - 54 + direction) / 18);
+//        
+//        CGPathAddQuadCurveToPoint(curvedPath,
+//                                  NULL,
+//                                  thridPoint.x + (startPoint.x - thridPoint.x) * (index - 54) / 18,
+//                                  thridPoint.y + (startPoint.y - thridPoint.y) * (index - 54) / 18,
+//                                  thridPoint.x + (startPoint.x - thridPoint.x) * (index - 54) / 18,
+//                                  thridPoint.y + (startPoint.y - thridPoint.y) * (index - 54) / 18);
+//        
+//        
+//    }
+    
+    //Now we have the path, we tell the animation we want to use this path - then we release the path
+    pathAnimation.path = curvedPath;
+    CGPathRelease(curvedPath);
+    [uil_buildingTitle.layer addAnimation:pathAnimation forKey:@"moveTheSquare"];
+
+}
+
+//===================Animate Path==============================
+
+
 
 - (void)createBottomMenu {
     arr_menuButton = [[NSMutableArray alloc] init];
@@ -246,6 +393,8 @@ static float bottomMenuHeight  = 37.0;
                 currentFrame = numberOfFrames;
             }
             
+            [self animateLabelAtIndex:currentFrame andDirection: 1];
+            
             if (phaseIndex == 0) {
                 uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
                 colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
@@ -261,6 +410,7 @@ static float bottomMenuHeight  = 37.0;
             }
             [sender setTranslation:CGPointZero inView:[myView superview]];
             
+            
         }else {
             
             if (translation.x < -5){
@@ -270,6 +420,9 @@ static float bottomMenuHeight  = 37.0;
                 }else {
                     currentFrame = 0;
                 }
+                
+                [self animateLabelAtIndex:currentFrame andDirection: 0];
+                
                 if (phaseIndex == 0) {
                     uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
                     colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
