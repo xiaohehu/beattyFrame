@@ -107,58 +107,49 @@ static float bottomMenuHeight  = 37.0;
 //===================Animate Path==============================
 
 - (CGPoint)calculateEllipsePathWithIndex:(int)index andA:(int)a andB:(int)b andCenterPoint:(CGPoint)centerPoint {
-    int sectionFrameNum = numberOfFrames/4;
+    int sectionFrameNum = (numberOfFrames + 1)/4;
     int section = index/sectionFrameNum;
-    if (section == 4) {
-        section = 3;
-    }
     CGPoint startPoint;
     CGPoint endPoint;
     switch (section) {
         case 0: {
-            startPoint = CGPointMake(centerPoint.x - a, centerPoint.y);
-            endPoint = CGPointMake(centerPoint.x, centerPoint.y + b);
+            startPoint = CGPointMake(-a, 0);
+            endPoint = CGPointMake(0, b);
             break;
         }
         case 1: {
-            startPoint = CGPointMake(centerPoint.x, centerPoint.y + b);
-            endPoint = CGPointMake(centerPoint.x + a, centerPoint.y);
+            startPoint = CGPointMake(0, b);
+            endPoint = CGPointMake(a, 0);
             break;
         }
         case 2: {
-            startPoint = CGPointMake(centerPoint.x, centerPoint.y + b);
-            endPoint = CGPointMake(centerPoint.x, centerPoint.y - b);
+            startPoint = CGPointMake(a, 0);
+            endPoint = CGPointMake(0, -b);
             break;
         }
         case 3: {
-            startPoint = CGPointMake(centerPoint.x, centerPoint.y - b);
-            endPoint = CGPointMake(centerPoint.x - a, centerPoint.y);
+            startPoint = CGPointMake(0, -b);
+            endPoint = CGPointMake(-a, 0);
             break;
         }
         default:
             break;
     }
-//    NSLog(@"\n\n%@\n%@\n\n", NSStringFromCGPoint(startPoint), NSStringFromCGPoint(endPoint));
-    
+
     float x_value = (endPoint.x - startPoint.x) * (index - section*sectionFrameNum)/sectionFrameNum + startPoint.x;
-    float y_value = 0.0;
-    NSLog(@"\n\n %f \n\n",x_value  - centerPoint.x);
-//    NSLog(@"\n\n%f\n%f\n\n", pow(x_value - centerPoint.x, 2), pow(a, 2));
-    y_value = sqrtf((1 - pow(centerPoint.x - x_value, 2)/pow(a, 2)) * pow(b, 2));
+    float y_value = 0.0;//(endPoint.y - startPoint.y) * (index - section*sectionFrameNum)/sectionFrameNum + startPoint.y;
+    y_value = sqrtf((1 - powf(x_value, 2)/powf(a, 2)) * powf(b, 2));
+//    x_value = sqrtf((1 - powf(y_value, 2)/powf(b, 2)) * powf(a, 2));
+    NSLog(@"\n\nThe y is %f\n\n", x_value);
     if (section < 2) {
-        return CGPointMake(x_value, centerPoint.y + y_value);
+        return CGPointMake(x_value + centerPoint.x, centerPoint.y + y_value);
     } else {
-        return CGPointMake(x_value, centerPoint.y - y_value);
+        return CGPointMake(x_value + centerPoint.x, centerPoint.y - y_value);
     }
     return  CGPointZero;
 }
 
 - (void)animateLabelAtIndex:(int)index andDirection:(int)direction {
-    
-//    CGPoint startPoint = CGPointMake(156, 177);
-//    CGPoint firstPoint = CGPointMake(547, 334);
-//    CGPoint secondPoint = CGPointMake(923, 177);
-//    CGPoint thridPoint = CGPointMake(547, 27);
     
     CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     pathAnimation.calculationMode = kCAAnimationDiscrete;
@@ -170,64 +161,10 @@ static float bottomMenuHeight  = 37.0;
 //    CGPathMoveToPoint(curvedPath, NULL, 68.5, 219.5);
 //    CGPathAddQuadCurveToPoint(curvedPath, NULL, 144.5, 260.5, 134.5, 245.5);
 //    CGPathAddQuadCurveToPoint(curvedPath, NULL, 146.5, 267.5, 162.75, 286);
+    
     CGPoint destination = [self calculateEllipsePathWithIndex:index andA:365 andB:155 andCenterPoint:CGPointMake(517, 218)];
-//    CGPathMoveToPoint(curvedPath, NULL, destination.x, destination.y);
-//    CGPathAddQuadCurveToPoint(curvedPath, NULL, destination.x, destination.y, destination.x, destination.y);
-
-//    if (index >= 0 && index < 18) {
-//        CGPathMoveToPoint(curvedPath,
-//                          NULL,
-//                          startPoint.x + (firstPoint.x - startPoint.x) * (index + direction) / 18 ,
-//                          startPoint.y + (firstPoint.y - startPoint.y) * (index + direction) / 18);
-//        
-//        CGPathAddQuadCurveToPoint(curvedPath,
-//                                  NULL,
-//                                  startPoint.x + (firstPoint.x - startPoint.x) * index / 18,
-//                                  startPoint.y + (firstPoint.y - startPoint.y) * index / 18,
-//                                  startPoint.x + (firstPoint.x - startPoint.x) * index / 18,
-//                                  startPoint.y + (firstPoint.y - startPoint.y) * index / 18);
-//        
-//    } else if (index >= 18 && index < 36) {
-//        CGPathMoveToPoint(curvedPath,
-//                          NULL,
-//                          firstPoint.x + (secondPoint.x - firstPoint.x) * (index - 18 + direction) / 18 ,
-//                          firstPoint.y + (secondPoint.y - firstPoint.y) * (index - 18 + direction) / 18);
-//        
-//        CGPathAddQuadCurveToPoint(curvedPath,
-//                                  NULL,
-//                                  firstPoint.x + (secondPoint.x - firstPoint.x) * (index - 18) / 18,
-//                                  firstPoint.y + (secondPoint.y - firstPoint.y) * (index - 18) / 18,
-//                                  firstPoint.x + (secondPoint.x - firstPoint.x) * (index - 18) / 18,
-//                                  firstPoint.y + (secondPoint.y - firstPoint.y) * (index - 18) / 18);
-//        
-//    } else if (index >= 36 && index < 54) {
-//        CGPathMoveToPoint(curvedPath,
-//                          NULL,
-//                          secondPoint.x + (thridPoint.x - secondPoint.x) * (index - 36 + direction) / 18 ,
-//                          secondPoint.y + (thridPoint.y - secondPoint.y) * (index - 36 + direction) / 18);
-//        
-//        CGPathAddQuadCurveToPoint(curvedPath,
-//                                  NULL,
-//                                  secondPoint.x + (thridPoint.x - secondPoint.x) * (index - 36) / 18,
-//                                  secondPoint.y + (thridPoint.y - secondPoint.y) * (index - 36) / 18,
-//                                  secondPoint.x + (thridPoint.x - secondPoint.x) * (index - 36) / 18,
-//                                  secondPoint.y + (thridPoint.y - secondPoint.y) * (index - 36) / 18);
-//        
-//    } else {
-//        CGPathMoveToPoint(curvedPath,
-//                          NULL,
-//                          thridPoint.x + (startPoint.x - thridPoint.x) * (index - 54 + direction) / 18 ,
-//                          thridPoint.y + (startPoint.y - thridPoint.y) * (index - 54 + direction) / 18);
-//        
-//        CGPathAddQuadCurveToPoint(curvedPath,
-//                                  NULL,
-//                                  thridPoint.x + (startPoint.x - thridPoint.x) * (index - 54) / 18,
-//                                  thridPoint.y + (startPoint.y - thridPoint.y) * (index - 54) / 18,
-//                                  thridPoint.x + (startPoint.x - thridPoint.x) * (index - 54) / 18,
-//                                  thridPoint.y + (startPoint.y - thridPoint.y) * (index - 54) / 18);
-//        
-//        
-//    }
+    CGPathMoveToPoint(curvedPath, NULL, destination.x, destination.y);
+    CGPathAddQuadCurveToPoint(curvedPath, NULL, destination.x, destination.y, destination.x, destination.y);
     
     //Now we have the path, we tell the animation we want to use this path - then we release the path
     pathAnimation.path = curvedPath;
