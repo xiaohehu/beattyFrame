@@ -106,26 +106,73 @@ static float bottomMenuHeight  = 37.0;
 
 //===================Animate Path==============================
 
-- (CGPoint)calculateEllipsePathWithIndex:(int)index andA:(int)a andB:(int)b andCenterPoint:(CGPoint)centerPoint {
+- (CGPoint)calculateEllipsePathWithIndex:(int)index andA:(int)a andB:(int)b andCenterPoint:(CGPoint)centerPoint rotation:(float)rotation {
+
     int sectionFrameNum = (numberOfFrames + 1)/4;
     int section = index/sectionFrameNum;
     
     float x_value = 0.0;
     float y_value = 0.0;
-    
-    if (section < 2) {
-        float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
-        float angle = M_PI * (1.0 - ratio);
-        x_value = cosf(angle)*a;
-        y_value = sinf(angle)*b;
-        return CGPointMake(x_value + centerPoint.x, centerPoint.y + y_value);
-    } else {
-        float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
-        float angle = M_PI * ratio;
-        x_value = cosf(angle)*a;
-        y_value = sinf(angle)*b;
-        return CGPointMake(x_value + centerPoint.x, centerPoint.y - y_value);
+    float x_final = 0.0;
+    float y_final = 0.0;
+    while (rotation > M_PI) {
+        rotation -= M_PI;
     }
+    if (ABS(rotation - M_PI_2) < 0.1) {
+        if (section < 2) {
+            float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
+            float angle = M_PI * (1.0 - ratio);
+            x_value = cosf(angle) * b ;
+            y_value = sinf(angle) * a ;
+            return CGPointMake(x_value + centerPoint.x, centerPoint.y + y_value);
+        } else {
+            float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
+            float angle = M_PI * ratio;
+            x_value = cosf(angle) * b ;
+            y_value = sinf(angle) * a ;
+            return CGPointMake(x_value + centerPoint.x, centerPoint.y - y_value);
+        }
+    }
+    
+    else {
+//        if (section < 2) {
+            float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
+            float angle = M_PI * (1.0 - ratio);
+            x_value = cosf(angle) * a ;
+            y_value = sinf(angle) * b ;
+            
+            x_final = (x_value - y_value*tanf(rotation)) * cosf(rotation);
+            y_final = (x_value - y_value*tanf(rotation)) * sinf(rotation) + (y_value / cosf(rotation));
+
+    
+            return CGPointMake(x_final + centerPoint.x, centerPoint.y + y_final);
+//        } else {
+//            float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
+//            float angle = M_PI * ratio;
+//            x_value = cosf(angle) * a ;
+//            y_value = sinf(angle) * b ;
+//            
+//            x_final = (x_value - y_value*tanf(M_PI_2 - rotation)) * cosf(M_PI_2 - rotation);
+//            y_final = (x_value - y_value*tanf(M_PI_2 - rotation)) * sinf(M_PI_2 - rotation) + (y_value / cosf(M_PI_2 - rotation));
+//            
+//            return CGPointMake(x_final + centerPoint.x, centerPoint.y - y_final);
+//        }
+    }
+
+    
+//    if (section < 2) {
+//        float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
+//        float angle = M_PI * (1.0 - ratio);
+//        x_value = cosf(angle) * a ;
+//        y_value = sinf(angle) * b ;
+//        return CGPointMake(x_value + centerPoint.x, centerPoint.y + y_value);
+//    } else {
+//        float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
+//        float angle = M_PI * ratio;
+//        x_value = cosf(angle) * a ;
+//        y_value = sinf(angle) * b ;
+//        return CGPointMake(x_value + centerPoint.x, centerPoint.y - y_value);
+//    }
     return  CGPointZero;
 }
 
@@ -138,7 +185,7 @@ static float bottomMenuHeight  = 37.0;
     pathAnimation.duration = 0.0;
     
     CGMutablePathRef curvedPath = CGPathCreateMutable();
-    CGPoint destination = [self calculateEllipsePathWithIndex:index andA:365 andB:155 andCenterPoint:CGPointMake(517, 218)];
+    CGPoint destination = [self calculateEllipsePathWithIndex:index andA:400 andB:100 andCenterPoint:CGPointMake(517, 318) rotation:M_PI_2/3];
     CGPathMoveToPoint(curvedPath, NULL, destination.x, destination.y);
     CGPathAddQuadCurveToPoint(curvedPath, NULL, destination.x, destination.y, destination.x, destination.y);
     
