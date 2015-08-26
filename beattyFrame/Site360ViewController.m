@@ -109,6 +109,20 @@ static float bottomMenuHeight  = 37.0;
 - (CGPoint)calculateEllipsePathWithIndex:(int)index andA:(int)a andB:(int)b andCenterPoint:(CGPoint)centerPoint {
     int sectionFrameNum = (numberOfFrames + 1)/4;
     int section = index/sectionFrameNum;
+//    if (index % sectionFrameNum == 0) {
+//        switch (section) {
+//            case 0:
+//                return CGPointMake(centerPoint.x - a, centerPoint.y);
+//            case 1:
+//                return CGPointMake(centerPoint.x, centerPoint.y + b);
+//            case 2:
+//                return CGPointMake(centerPoint.x + a, centerPoint.y);
+//            case 3:
+//                return CGPointMake(centerPoint.x, centerPoint.y - b);
+//            default:
+//                break;
+//        }
+//    }
     CGPoint startPoint;
     CGPoint endPoint;
     switch (section) {
@@ -135,12 +149,27 @@ static float bottomMenuHeight  = 37.0;
         default:
             break;
     }
+    
+    float x_value = 0.0;
+    float y_value = 0.0;
+    if (section < 2) {
+        float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
+        float angle = M_PI * (1.0 - ratio);
+        x_value = cosf(angle)*a;
+        y_value = sinf(angle)*b;
+        NSLog(@"\n\n %f \n\n %f", x_value, y_value);
+    } else {
+        float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
+        float angle = M_PI * ratio;
+        x_value = cosf(angle)*a;
+        y_value = sinf(angle)*b;
+    }
 
-    float x_value = (endPoint.x - startPoint.x) * (index - section*sectionFrameNum)/sectionFrameNum + startPoint.x;
-    float y_value = 0.0;//(endPoint.y - startPoint.y) * (index - section*sectionFrameNum)/sectionFrameNum + startPoint.y;
-    y_value = sqrtf((1 - powf(x_value, 2)/powf(a, 2)) * powf(b, 2));
+//    float x_value = (endPoint.x - startPoint.x) * (index - section*sectionFrameNum)/sectionFrameNum + startPoint.x;
+//    float y_value = 0.0;//(endPoint.y - startPoint.y) * (index - section*sectionFrameNum)/sectionFrameNum + startPoint.y;
+//    y_value = sqrtf((1 - powf(x_value, 2)/powf(a, 2)) * powf(b, 2));
 //    x_value = sqrtf((1 - powf(y_value, 2)/powf(b, 2)) * powf(a, 2));
-    NSLog(@"\n\nThe y is %f\n\n", x_value);
+
     if (section < 2) {
         return CGPointMake(x_value + centerPoint.x, centerPoint.y + y_value);
     } else {
