@@ -129,7 +129,7 @@ static float bottomMenuHeight  = 37.0;
     return  CGPointZero;
 }
 
-- (void)animateLabelAtIndex:(int)index andDirection:(int)direction {
+- (void)animateLabelAtIndex:(int)index{
     
     CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     pathAnimation.calculationMode = kCAAnimationDiscrete;
@@ -138,10 +138,6 @@ static float bottomMenuHeight  = 37.0;
     pathAnimation.duration = 0.0;
     
     CGMutablePathRef curvedPath = CGPathCreateMutable();
-//    CGPathMoveToPoint(curvedPath, NULL, 68.5, 219.5);
-//    CGPathAddQuadCurveToPoint(curvedPath, NULL, 144.5, 260.5, 134.5, 245.5);
-//    CGPathAddQuadCurveToPoint(curvedPath, NULL, 146.5, 267.5, 162.75, 286);
-    
     CGPoint destination = [self calculateEllipsePathWithIndex:index andA:365 andB:155 andCenterPoint:CGPointMake(517, 218)];
     CGPathMoveToPoint(curvedPath, NULL, destination.x, destination.y);
     CGPathAddQuadCurveToPoint(curvedPath, NULL, destination.x, destination.y, destination.x, destination.y);
@@ -150,12 +146,9 @@ static float bottomMenuHeight  = 37.0;
     pathAnimation.path = curvedPath;
     CGPathRelease(curvedPath);
     [uil_buildingTitle.layer addAnimation:pathAnimation forKey:@"moveTheSquare"];
-
 }
 
 //===================Animate Path==============================
-
-
 
 - (void)createBottomMenu {
     arr_menuButton = [[NSMutableArray alloc] init];
@@ -195,7 +188,6 @@ static float bottomMenuHeight  = 37.0;
     [uib_summary setTitle:@"Summary" forState:UIControlStateNormal];
     [uib_summary setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [uib_summary.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
-    
 }
 
 - (void)tapBottomButton:(id)sender {
@@ -310,7 +302,7 @@ static float bottomMenuHeight  = 37.0;
                 currentFrame = numberOfFrames;
             }
             
-            [self animateLabelAtIndex:currentFrame andDirection: 1];
+            [self animateLabelAtIndex:currentFrame];
             
             if (phaseIndex == 0) {
                 uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
@@ -338,7 +330,7 @@ static float bottomMenuHeight  = 37.0;
                     currentFrame = 0;
                 }
                 
-                [self animateLabelAtIndex:currentFrame andDirection: 0];
+                [self animateLabelAtIndex:currentFrame];
                 
                 if (phaseIndex == 0) {
                     uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
