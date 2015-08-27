@@ -41,10 +41,11 @@ static float bottomMenuHeight  = 37.0;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    
-    uil_buildingTitle = [[UILabel alloc] initWithFrame:CGRectMake(68.5, 219.5, 100, 50)];
-    uil_buildingTitle.backgroundColor = [UIColor blueColor];
-    [self.view addSubview: uil_buildingTitle];
+    if (uil_buildingTitle == nil) {
+        uil_buildingTitle = [[UILabel alloc] initWithFrame:CGRectMake(68.5, 219.5, 100, 50)];
+        uil_buildingTitle.backgroundColor = [UIColor blueColor];
+        [self.view addSubview: uil_buildingTitle];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -143,8 +144,6 @@ static float bottomMenuHeight  = 37.0;
             
             x_final = (x_value - y_value*tanf(rotation)) * cosf(rotation);
             y_final = (x_value - y_value*tanf(rotation)) * sinf(rotation) + (y_value / cosf(rotation));
-
-    
             return CGPointMake(x_final + centerPoint.x, centerPoint.y + y_final);
 //        } else {
 //            float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
