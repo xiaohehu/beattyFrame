@@ -184,7 +184,7 @@ static float bottomMenuHeight  = 37.0;
     pathAnimation.duration = 0.0;
     
     CGMutablePathRef curvedPath = CGPathCreateMutable();
-    CGPoint destination = [self calculateEllipsePathWithIndex:index andA:400 andB:100 andCenterPoint:CGPointMake(517, 318) rotation:M_PI_2/3];
+    CGPoint destination = [self calculateEllipsePathWithIndex:index andA:400 andB:100 andCenterPoint:CGPointMake(517, 318) rotation:0.0];
     CGPathMoveToPoint(curvedPath, NULL, destination.x, destination.y);
     CGPathAddQuadCurveToPoint(curvedPath, NULL, destination.x, destination.y, destination.x, destination.y);
     
