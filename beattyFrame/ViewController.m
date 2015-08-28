@@ -149,14 +149,29 @@ static float    menuButtonSize = 50.0;
         [introAvPlayerLayer removeFromSuperlayer];
         introAvPlayerLayer = nil;
         introAvPlayer = nil;
+        NSLog(@"Set to nil");
     }
-    NSString *url = [[NSBundle mainBundle] pathForResource:@"2015_08_14_ipad_logo_intro" ofType:@"mov"];
-    introAvPlayer = [AVPlayer playerWithURL:[NSURL fileURLWithPath:url]];
-    introAvPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:introAvPlayer];
-    introAvPlayerLayer.frame = self.view.bounds;
+    NSString *url = [[NSBundle mainBundle] pathForResource:@"2015_08_14_ipad_logo_intro" ofType:@"m4v"];
+//    introAvPlayer = [AVPlayer playerWithURL:[NSURL fileURLWithPath:url]];
+//    introAvPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:introAvPlayer];
+//    introAvPlayerLayer.frame = self.view.bounds;
+//    introAvPlayerLayer.backgroundColor = [UIColor greenColor].CGColor;//[UIColor colorWithRed:255.0/255.0 green:2.0/255.0 blue:1.0/255.0 alpha:1.0].CGColor;
+//    [self.view.layer addSublayer: introAvPlayerLayer];
+//    [introAvPlayer play];
+    
+    AVAsset *avAsset = [AVAsset assetWithURL:[NSURL fileURLWithPath:url]];
+    AVPlayerItem *avPlayerItem =[[AVPlayerItem alloc]initWithAsset:avAsset];
+    introAvPlayer = [[AVPlayer alloc]initWithPlayerItem:avPlayerItem];
+    introAvPlayerLayer =[AVPlayerLayer playerLayerWithPlayer:introAvPlayer];
+    [introAvPlayerLayer setFrame:self.view.bounds];
     introAvPlayerLayer.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:2.0/255.0 blue:1.0/255.0 alpha:1.0].CGColor;
-    [self.view.layer addSublayer: introAvPlayerLayer];
+    [self.view.layer addSublayer:introAvPlayerLayer];
+//    [introAvPlayer seekToTime:kCMTimeZero];
+    
     [introAvPlayer play];
+    
+    
+    
     
     // Add obersver when the movie reaches end
     [[NSNotificationCenter defaultCenter] addObserver:self

@@ -508,12 +508,18 @@ static float bottomMenuHeight  = 37.0;
         // read the filenames/sizes out of a plist in the app bundle
         NSString *path = [[NSBundle mainBundle] pathForResource:@"ImageData" ofType:@"plist"];
         NSData *plistData = [NSData dataWithContentsOfFile:path];
-        NSString *error; NSPropertyListFormat format;
-        __imageData = [NSPropertyListSerialization propertyListFromData:plistData
-                                                       mutabilityOption:NSPropertyListImmutable
+        NSError *error;
+        NSPropertyListFormat format;
+//        __imageData = [NSPropertyListSerialization propertyListFromData:plistData
+//                                                       mutabilityOption:NSPropertyListImmutable
+//                                                                 format:&format
+//                                                       errorDescription:&error];
+        
+        __imageData = [NSPropertyListSerialization propertyListWithData:plistData
+                                                                options:NSPropertyListImmutable
                                                                  format:&format
-                                                       errorDescription:&error]
-        ;
+                                                                  error:&error];
+        
         if (!__imageData) {
         }
     }

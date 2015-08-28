@@ -13,7 +13,8 @@
 - (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        self.label = [[UILabel alloc]initWithFrame:CGRectMake(10, 0, 500, 25)];
+//        self.label = [[UILabel alloc]initWithFrame:CGRectMake(10, 0, 500, 25)];
+        self.label.frame = CGRectMake(10, 0, 500, 25);
         self.label.textAlignment = NSTextAlignmentLeft;
         self.label.font = [UIFont boldSystemFontOfSize:20.0];
         self.label.textColor = [UIColor blackColor];

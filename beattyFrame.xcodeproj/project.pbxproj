@@ -188,6 +188,7 @@
 		822823F31B862EF0004154E7 /* grfx_unselectedFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 822823EF1B862EF0004154E7 /* grfx_unselectedFrame.png */; };
 		822823F41B862EF0004154E7 /* grfx_selectedFrame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 822823F01B862EF0004154E7 /* grfx_selectedFrame@2x.png */; };
 		822823F51B862EF0004154E7 /* grfx_unselectedFrame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 822823F11B862EF0004154E7 /* grfx_unselectedFrame@2x.png */; };
+		823464B21B90E487005DA3E0 /* 2015_08_14_ipad_logo_intro.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 823464B11B90E450005DA3E0 /* 2015_08_14_ipad_logo_intro.m4v */; };
 		8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8243874E1B6929A1003AC214 /* SupportingViewController.m */; };
 		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
 		824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824387571B6BAA14003AC214 /* xhPageViewController.m */; };
@@ -1037,6 +1038,7 @@
 		822823EF1B862EF0004154E7 /* grfx_unselectedFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_unselectedFrame.png; path = src/grfx/grfx_unselectedFrame.png; sourceTree = "<group>"; };
 		822823F01B862EF0004154E7 /* grfx_selectedFrame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_selectedFrame@2x.png"; path = "src/grfx/grfx_selectedFrame@2x.png"; sourceTree = "<group>"; };
 		822823F11B862EF0004154E7 /* grfx_unselectedFrame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_unselectedFrame@2x.png"; path = "src/grfx/grfx_unselectedFrame@2x.png"; sourceTree = "<group>"; };
+		823464B11B90E450005DA3E0 /* 2015_08_14_ipad_logo_intro.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2015_08_14_ipad_logo_intro.m4v; sourceTree = "<group>"; };
 		8243874D1B6929A1003AC214 /* SupportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportingViewController.h; sourceTree = "<group>"; };
 		8243874E1B6929A1003AC214 /* SupportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportingViewController.m; sourceTree = "<group>"; };
 		824387501B69414D003AC214 /* supporting_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = supporting_data.plist; sourceTree = "<group>"; };
@@ -1807,6 +1809,7 @@
 			isa = PBXGroup;
 			children = (
 				822822891B836F83004154E7 /* 2015_08_14_ipad_logo_intro.mov */,
+				823464B11B90E450005DA3E0 /* 2015_08_14_ipad_logo_intro.m4v */,
 			);
 			name = film;
 			path = src/film;
@@ -3151,6 +3154,7 @@
 				824D2BD71B62D02100E5F5A5 /* share_Picture 030.jpg.jpg in Resources */,
 				822823C41B862A0A004154E7 /* Picture 049.jpg in Resources */,
 				824D2ADC1B61671600E5F5A5 /* phase_d_color_00017.jpg in Resources */,
+				823464B21B90E487005DA3E0 /* 2015_08_14_ipad_logo_intro.m4v in Resources */,
 				824D2BE61B62D02100E5F5A5 /* share_store06.jpg.jpg in Resources */,
 				824D2A121B61671600E5F5A5 /* phase_b_base_00031.jpg in Resources */,
 				824D2AE21B61671600E5F5A5 /* phase_d_color_00023.jpg in Resources */,
