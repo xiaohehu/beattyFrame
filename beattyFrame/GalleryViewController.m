@@ -13,7 +13,7 @@
 #import "EMBSPCell.h"
 #import "EMBSPSupplementaryView.h"
 #import "UIImage+ScaleToFit.h"
-#import "TLSpringFlowLayout.h"
+//#import "TLSpringFlowLayout.h"
 #import "UIColor+Extensions.h"
 
 //#import "UIColor+Extensions.h"
@@ -282,7 +282,7 @@
         [totalImg addObjectsFromArray:imgArray];
         [totalCap addObjectsFromArray:capArray];
     }
-    cell.backgroundColor = [UIColor redColor];
+    cell.backgroundColor = [UIColor clearColor];
     [cell.titleLabel setText:[totalCap objectAtIndex:indexPath.row]];
     cell.titleLabel.font = [UIFont fontWithName:@"GoodPro-Book" size:13];
     

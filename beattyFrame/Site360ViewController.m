@@ -20,7 +20,7 @@ static float bottomMenuHeight  = 37.0;
     IBOutlet UIButton   *uib_summary;
     NSMutableArray      *arr_menuButton;
     
-    UILabel             *uil_buildingTitle;
+//    UILabel             *uil_buildingTitle;
 }
 @end
 
@@ -41,11 +41,11 @@ static float bottomMenuHeight  = 37.0;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    if (uil_buildingTitle == nil) {
-        uil_buildingTitle = [[UILabel alloc] initWithFrame:CGRectMake(68.5, 219.5, 100, 50)];
-        uil_buildingTitle.backgroundColor = [UIColor blueColor];
-        [self.view addSubview: uil_buildingTitle];
-    }
+//    if (uil_buildingTitle == nil) {
+//        uil_buildingTitle = [[UILabel alloc] initWithFrame:CGRectMake(68.5, 219.5, 100, 50)];
+//        uil_buildingTitle.backgroundColor = [UIColor blueColor];
+//        [self.view addSubview: uil_buildingTitle];
+//    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -107,94 +107,94 @@ static float bottomMenuHeight  = 37.0;
 
 //===================Animate Path==============================
 
-- (CGPoint)calculateEllipsePathWithIndex:(int)index andA:(int)a andB:(int)b andCenterPoint:(CGPoint)centerPoint rotation:(float)rotation {
-
-    int sectionFrameNum = (numberOfFrames + 1)/4;
-    int section = index/sectionFrameNum;
-    
-    float x_value = 0.0;
-    float y_value = 0.0;
-    float x_final = 0.0;
-    float y_final = 0.0;
-    while (rotation > M_PI) {
-        rotation -= M_PI;
-    }
-    if (ABS(rotation - M_PI_2) < 0.1) {
-        if (section < 2) {
-            float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
-            float angle = M_PI * (1.0 - ratio);
-            x_value = cosf(angle) * b ;
-            y_value = sinf(angle) * a ;
-            return CGPointMake(x_value + centerPoint.x, centerPoint.y + y_value);
-        } else {
-            float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
-            float angle = M_PI * ratio;
-            x_value = cosf(angle) * b ;
-            y_value = sinf(angle) * a ;
-            return CGPointMake(x_value + centerPoint.x, centerPoint.y - y_value);
-        }
-    }
-    
-    else {
+//- (CGPoint)calculateEllipsePathWithIndex:(int)index andA:(int)a andB:(int)b andCenterPoint:(CGPoint)centerPoint rotation:(float)rotation {
+//
+//    int sectionFrameNum = (numberOfFrames + 1)/4;
+//    int section = index/sectionFrameNum;
+//    
+//    float x_value = 0.0;
+//    float y_value = 0.0;
+//    float x_final = 0.0;
+//    float y_final = 0.0;
+//    while (rotation > M_PI) {
+//        rotation -= M_PI;
+//    }
+//    if (ABS(rotation - M_PI_2) < 0.1) {
 //        if (section < 2) {
-            float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
-            float angle = M_PI * (1.0 - ratio);
-            x_value = cosf(angle) * a ;
-            y_value = sinf(angle) * b ;
-            
-            x_final = (x_value - y_value*tanf(rotation)) * cosf(rotation);
-            y_final = (x_value - y_value*tanf(rotation)) * sinf(rotation) + (y_value / cosf(rotation));
-            return CGPointMake(x_final + centerPoint.x, centerPoint.y + y_final);
+//            float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
+//            float angle = M_PI * (1.0 - ratio);
+//            x_value = cosf(angle) * b ;
+//            y_value = sinf(angle) * a ;
+//            return CGPointMake(x_value + centerPoint.x, centerPoint.y + y_value);
 //        } else {
 //            float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
 //            float angle = M_PI * ratio;
+//            x_value = cosf(angle) * b ;
+//            y_value = sinf(angle) * a ;
+//            return CGPointMake(x_value + centerPoint.x, centerPoint.y - y_value);
+//        }
+//    }
+//    
+//    else {
+////        if (section < 2) {
+//            float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
+//            float angle = M_PI * (1.0 - ratio);
 //            x_value = cosf(angle) * a ;
 //            y_value = sinf(angle) * b ;
 //            
-//            x_final = (x_value - y_value*tanf(M_PI_2 - rotation)) * cosf(M_PI_2 - rotation);
-//            y_final = (x_value - y_value*tanf(M_PI_2 - rotation)) * sinf(M_PI_2 - rotation) + (y_value / cosf(M_PI_2 - rotation));
-//            
-//            return CGPointMake(x_final + centerPoint.x, centerPoint.y - y_final);
-//        }
-    }
-
-    
-//    if (section < 2) {
-//        float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
-//        float angle = M_PI * (1.0 - ratio);
-//        x_value = cosf(angle) * a ;
-//        y_value = sinf(angle) * b ;
-//        return CGPointMake(x_value + centerPoint.x, centerPoint.y + y_value);
-//    } else {
-//        float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
-//        float angle = M_PI * ratio;
-//        x_value = cosf(angle) * a ;
-//        y_value = sinf(angle) * b ;
-//        return CGPointMake(x_value + centerPoint.x, centerPoint.y - y_value);
+//            x_final = (x_value - y_value*tanf(rotation)) * cosf(rotation);
+//            y_final = (x_value - y_value*tanf(rotation)) * sinf(rotation) + (y_value / cosf(rotation));
+//            return CGPointMake(x_final + centerPoint.x, centerPoint.y + y_final);
+////        } else {
+////            float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
+////            float angle = M_PI * ratio;
+////            x_value = cosf(angle) * a ;
+////            y_value = sinf(angle) * b ;
+////            
+////            x_final = (x_value - y_value*tanf(M_PI_2 - rotation)) * cosf(M_PI_2 - rotation);
+////            y_final = (x_value - y_value*tanf(M_PI_2 - rotation)) * sinf(M_PI_2 - rotation) + (y_value / cosf(M_PI_2 - rotation));
+////            
+////            return CGPointMake(x_final + centerPoint.x, centerPoint.y - y_final);
+////        }
 //    }
-    return  CGPointZero;
-}
-
-- (void)animateLabelAtIndex:(int)index{
-    
-    CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-    pathAnimation.calculationMode = kCAAnimationDiscrete;
-    pathAnimation.fillMode = kCAFillModeBoth;
-    pathAnimation.removedOnCompletion = NO;
-    pathAnimation.duration = 0.0;
-    
-    CGMutablePathRef curvedPath = CGPathCreateMutable();
-    CGPoint destination = [self calculateEllipsePathWithIndex:index andA:400 andB:100 andCenterPoint:CGPointMake(517, 318) rotation:0.0];
-    CGPathMoveToPoint(curvedPath, NULL, destination.x, destination.y);
-    CGPathAddQuadCurveToPoint(curvedPath, NULL, destination.x, destination.y, destination.x, destination.y);
-    
-    //Now we have the path, we tell the animation we want to use this path - then we release the path
-    pathAnimation.path = curvedPath;
-    CGPathRelease(curvedPath);
-    [uil_buildingTitle.layer addAnimation:pathAnimation forKey:@"moveTheSquare"];
-}
-
-//===================Animate Path==============================
+//
+//    
+////    if (section < 2) {
+////        float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
+////        float angle = M_PI * (1.0 - ratio);
+////        x_value = cosf(angle) * a ;
+////        y_value = sinf(angle) * b ;
+////        return CGPointMake(x_value + centerPoint.x, centerPoint.y + y_value);
+////    } else {
+////        float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
+////        float angle = M_PI * ratio;
+////        x_value = cosf(angle) * a ;
+////        y_value = sinf(angle) * b ;
+////        return CGPointMake(x_value + centerPoint.x, centerPoint.y - y_value);
+////    }
+//    return  CGPointZero;
+//}
+//
+//- (void)animateLabelAtIndex:(int)index{
+//    
+//    CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+//    pathAnimation.calculationMode = kCAAnimationDiscrete;
+//    pathAnimation.fillMode = kCAFillModeBoth;
+//    pathAnimation.removedOnCompletion = NO;
+//    pathAnimation.duration = 0.0;
+//    
+//    CGMutablePathRef curvedPath = CGPathCreateMutable();
+//    CGPoint destination = [self calculateEllipsePathWithIndex:index andA:400 andB:100 andCenterPoint:CGPointMake(517, 318) rotation:0.0];
+//    CGPathMoveToPoint(curvedPath, NULL, destination.x, destination.y);
+//    CGPathAddQuadCurveToPoint(curvedPath, NULL, destination.x, destination.y, destination.x, destination.y);
+//    
+//    //Now we have the path, we tell the animation we want to use this path - then we release the path
+//    pathAnimation.path = curvedPath;
+//    CGPathRelease(curvedPath);
+//    [uil_buildingTitle.layer addAnimation:pathAnimation forKey:@"moveTheSquare"];
+//}
+//
+////===================Animate Path==============================
 
 - (void)createBottomMenu {
     arr_menuButton = [[NSMutableArray alloc] init];
@@ -348,7 +348,7 @@ static float bottomMenuHeight  = 37.0;
                 currentFrame = numberOfFrames;
             }
             
-            [self animateLabelAtIndex:currentFrame];
+            //[self animateLabelAtIndex:currentFrame];
             
             if (phaseIndex == 0) {
                 uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
@@ -376,7 +376,7 @@ static float bottomMenuHeight  = 37.0;
                     currentFrame = 0;
                 }
                 
-                [self animateLabelAtIndex:currentFrame];
+                //[self animateLabelAtIndex:currentFrame];
                 
                 if (phaseIndex == 0) {
                     uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];

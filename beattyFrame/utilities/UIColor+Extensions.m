@@ -29,6 +29,14 @@
     return [UIColor colorWithRed:118.0/255.0 green:199.0/255.0 blue:253.0/255.0 alpha:1.0];
 }
 
++ (UIColor *)helpBlue {
+    return [UIColor colorWithRed:60.0/255.0 green:197.0/255.0 blue:233.0/255.0 alpha:1.0];
+}
+
++ (UIColor *)helpSectionHeaderBlue {
+    return [UIColor colorWithRed:150.0/255.0 green:180.0/255.0 blue:188.0/255.0 alpha:1.0];
+}
+
 + (UIColor *)randomColor {
     return [self colorWithRed:((float)rand() / RAND_MAX)
                         green:((float)rand() / RAND_MAX)
@@ -36,6 +44,5 @@
                         alpha:1.0f];
 }
 
-// use self.view.backgroundColor = highlight? [UIColor paleYellowColor] : [UIColor whitecolor];
 
 @end

@@ -22,6 +22,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import "xhWebViewController.h"
 #import "SettingViewController.h"
+#import "TipsViewController.h"
+#import "TutorialsListController.h"
 
 static float    sideMenuWidth = 235.0;
 static float    menuButtonSize = 50.0;
@@ -36,6 +38,7 @@ static float    menuButtonSize = 50.0;
     IBOutlet UIView         *uiv_sideMenuContainer;
     IBOutlet UIView         *uiv_vcCover;
     UIButton                *uib_menuButton;
+    IBOutlet UIButton       *uib_help;
     UIButton                *uib_sectionTitle;
     UIButton                *uib_subTitle;
     UIViewController        *currentViewController;
@@ -43,6 +46,10 @@ static float    menuButtonSize = 50.0;
     NSString                *currentSectionTitle;
     NSString                *currentSubTitle;
     int                     sectionIndex;
+    
+    // help
+    BOOL                    isTouchPointInsideHelpView;
+    
     // Side menu content button
     __weak IBOutlet UIView *uiv_buutonHighlight;
     // Button containers
@@ -187,7 +194,7 @@ static float    menuButtonSize = 50.0;
     CABasicAnimation* fadeAnim = [CABasicAnimation animationWithKeyPath:@"opacity"];
     fadeAnim.fromValue = [NSNumber numberWithFloat:1.0];
     fadeAnim.toValue = [NSNumber numberWithFloat:0.0];
-    fadeAnim.duration = 1.0;
+    fadeAnim.duration = 0.30;
     fadeAnim.removedOnCompletion = NO;
     fadeAnim.fillMode = kCAFillModeForwards;
     [introAvPlayerLayer addAnimation:fadeAnim forKey:@"opacity"];
@@ -249,6 +256,19 @@ static float    menuButtonSize = 50.0;
     frameSub.size.width += 38;
     uib_subTitle.frame = frameSub;
     [uiv_vcBigContainer addSubview:uib_subTitle];
+    
+    // UIButton control open/close HELP
+    uib_help = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *help = [UIImage imageNamed:@"ui_tips.png"];
+    uib_help.frame = CGRectMake(self.view.bounds.size.width / 2.8, self.view.bounds.size.height / 2.20, help.size.height, help.size.width);
+    [uib_help setImage:[UIImage imageNamed:@"ui_tips.png"] forState:UIControlStateNormal];
+    [uib_help addTarget:self action:@selector(loadHelp:) forControlEvents:UIControlEventTouchUpInside];
+    //[self.view addSubview: uib_menuButton];
+    [self.view insertSubview:uib_help aboveSubview:uiv_vcCover];
+
+    uib_help.transform = CGAffineTransformMakeTranslation(0.0, 50.0);
+    uib_help.alpha=0.0;
+
 }
 
 - (void)groupSideMenuButtons {
@@ -306,11 +326,21 @@ static float    menuButtonSize = 50.0;
         uiv_vcBigContainer.transform = CGAffineTransformScale(uiv_vcBigContainer.transform, 0.77, 0.77);
         uiv_vcBigContainer.transform = CGAffineTransformTranslate(uiv_vcBigContainer.transform, -1024*0.149, 0.0);
         
+        uib_help.alpha=1.0;
+        uib_help.transform = CGAffineTransformIdentity;
+        
     } completion:^(BOOL finished){
         [uib_menuButton removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
         [uib_menuButton addTarget:self action:@selector(tapMenuButtonClose:) forControlEvents:UIControlEventTouchUpInside];
         [self.view insertSubview:uiv_sideMenuContainer aboveSubview:uiv_vcCover];
     }];
+}
+
+// gesture to dimiss is ignored when buttons are tapped
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    CGPoint aPoint = touch.view.center;
+    isTouchPointInsideHelpView = ![uib_help pointInside:aPoint withEvent:nil];
+    return isTouchPointInsideHelpView;
 }
 
 /*
@@ -320,8 +350,12 @@ static float    menuButtonSize = 50.0;
 - (void)tapMenuButtonClose:(id)sender {
     
     uiv_vcBigContainer.layer.borderWidth = 0.0;
-    
+
     [UIView animateWithDuration:0.33 animations:^(void){
+        
+        uib_help.transform = CGAffineTransformMakeTranslation(0.0, 50.0);
+        uib_help.alpha=0.0;
+        
         uib_menuButton.transform = CGAffineTransformIdentity;
         uiv_vcBigContainer.transform = CGAffineTransformIdentity;
         uiv_sideMenuContainer.transform = CGAffineTransformMakeTranslation(sideMenuWidth, 0.0);
@@ -582,6 +616,60 @@ static float    menuButtonSize = 50.0;
     SettingViewController *settingVC = [[SettingViewController alloc] init];
     settingVC.view.frame = self.view.bounds;
     [self presentViewController:settingVC animated:YES completion:^(void){  }];
+}
+
+- (IBAction)loadHelp:(id)sender {
+
+    switch (sectionIndex) {
+        case 0:
+            NSLog(@"0");
+            break;
+            
+        case 10:
+            NSLog(@"10");
+            break;
+
+            
+        case 20:
+            NSLog(@"20");
+            break;
+
+            
+        case 30:
+            NSLog(@"30");
+            break;
+
+        case 40:
+            NSLog(@"40");
+            break;
+            
+        default:
+            break;
+    }
+    
+    NSLog(@"loadKeypad");
+    TipsViewController* vc = [TipsViewController new];
+    [self presentViewController:vc animated:YES completion:nil];
+    
+//    CGRect VIEWRECT = CGRectMake(0, 0, 366, 544);
+//    
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"tutorial" bundle:nil];
+//    [sb instantiateInitialViewController];
+//    UINavigationController *vc = [sb instantiateViewControllerWithIdentifier:@"NavController"];
+//    
+//    vc.view.frame = VIEWRECT;
+//    [self.view addSubview:vc.view];
+//    [self addChildViewController:vc];
+//    [vc didMoveToParentViewController:self];
+    
+    //CGRect VIEWRECT = CGRectMake(0, 0, 366, 544);
+    
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"tutorial" bundle:nil];
+//    [sb instantiateInitialViewController];
+//    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"TutorialsListController"];
+//    vc.view.frame = VIEWRECT;
+//    //vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//    [self.view addSubview:vc.view];
 }
 
 #pragma mark - Mail Sending
