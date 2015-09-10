@@ -32,6 +32,7 @@
     _uil_Title.text = [self.dataObject objectForKey:@"Title"];
     _uil_Subtitle.text = [self.dataObject objectForKey:@"Subtitle"];
     _uitv_description.text = [self.dataObject objectForKey:@"Description"];
+    [_uitv_description setContentOffset:CGPointZero animated:YES];
     _uil_tip.text = [self.dataObject objectForKey:@"Tip"];
     
     // GIF
@@ -46,11 +47,11 @@
     if ([iconType isEqualToString:@"pinch"]) {
         _uiiv_icon.image = [UIImage imageNamed:@"icon_0000.png"];
     } else if ([iconType isEqualToString:@"swipe"]) {
-        _uiiv_icon.image = [UIImage imageNamed:@"icon_0001.png"];
+        _uiiv_icon.image = [UIImage imageNamed:@"icon_0003.png"];
     } else if ([iconType isEqualToString:@"tap"]) {
         _uiiv_icon.image = [UIImage imageNamed:@"icon_0002.png"];
     } else if ([iconType isEqualToString:@"drag"]) {
-        _uiiv_icon.image = [UIImage imageNamed:@"icon_0003.png"];
+        _uiiv_icon.image = [UIImage imageNamed:@"icon_0001.png"];
     } else if ([iconType isEqualToString:@"doubletap"]) {
         _uiiv_icon.image = [UIImage imageNamed:@"icon_0004.png"];
     }

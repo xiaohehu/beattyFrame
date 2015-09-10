@@ -9,15 +9,21 @@
 #import "LocationViewController.h"
 #import "ebZoomingScrollView.h"
 #import "UIColor+Extensions.h"
+#import "ButtonStack.h"
 static float    bottomWidth = 236;
 static float    bottomHeight = 37;
 
-@interface LocationViewController ()
+@interface LocationViewController () <ButtonStackDelegate>
 {
     UIView              *uiv_bottomMenu;
     UIView              *uiv_menuIndicator;
     UIImageView         *uiiv_tmpMap;
     NSArray             *arr_mapImageNames;
+    ButtonStack         *overlayMenu;
+    UIImageView         *overlayAsset;
+    int                 overlayMenuIndex;
+    NSArray             *arr_OverlayData;
+    NSDictionary *menuData;
 }
 
 @property (nonatomic, strong) ebZoomingScrollView			*zoomingScroll;
@@ -51,6 +57,64 @@ static float    bottomHeight = 37;
                           @"grfx_cityMap.jpg",
                           @"grfx_regionalMap.jpg"
                           ];
+    
+    NSString *textPath = [[NSBundle mainBundle] pathForResource:@"buttonstack" ofType:@"json"];
+    
+    NSError *error;
+    NSString *content = [NSString stringWithContentsOfFile:textPath encoding:NSUTF8StringEncoding error:&error];  //error checking omitted
+    NSData *jsonData = [content dataUsingEncoding:NSUTF8StringEncoding];
+    menuData = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
+}
+
+-(void)createOverlayMenu:(int)index
+{
+    NSMutableArray *d = [[NSMutableArray alloc] init];
+    for (NSArray *menuAsset in menuData )
+    {
+        [d addObject:menuAsset];
+        NSLog(@"%@", menuAsset);
+    }
+    
+    arr_OverlayData = menuData[d[index]];
+    
+    NSMutableArray *overlayAssets = [[NSMutableArray alloc] init];
+    for ( NSDictionary *menuAsset in arr_OverlayData )
+    {
+        [overlayAssets addObject:menuAsset[@"name"]];
+    }
+
+    if (overlayMenu) {
+        [overlayMenu removeFromSuperview];
+    }
+    
+    overlayMenu = [[ButtonStack alloc] initWithFrame:CGRectZero];
+    overlayMenu.delegate = self;
+    [overlayMenu setupfromArray:overlayAssets maxWidth:300];
+    [overlayMenu setBackgroundColor:[UIColor whiteColor]];
+    overlayMenu.layer.borderWidth = 1;
+    overlayMenu.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    [self.view addSubview:overlayMenu];
+}
+
+- (void)buttonStack:(ButtonStack *)buttonStack selectedIndex:(int)index
+{
+    NSLog(@"tapped %d", index);
+    if ( ! overlayAsset) {
+        overlayAsset = [[UIImageView alloc] initWithFrame:_zoomingScroll.frame];
+        [_zoomingScroll.blurView addSubview:overlayAsset];
+        overlayMenuIndex = -1;
+    }
+    
+    NSString *imgNm = [arr_OverlayData[index] objectForKey:@"overlay"];
+    
+    if (index != overlayMenuIndex) {
+        overlayAsset.image = [UIImage imageNamed:imgNm];
+        overlayMenuIndex = index;
+    } else {
+        [overlayAsset removeFromSuperview];
+        overlayAsset = nil;
+        overlayMenuIndex = -1;
+    }
 }
 
 - (void)loadZoomingScrollView {
@@ -100,14 +164,26 @@ static float    bottomHeight = 37;
         button.tag = i;
         [button addTarget:self action:@selector(tapBottomMenu:) forControlEvents:UIControlEventTouchUpInside];
         [uiv_bottomMenu addSubview: button];
+        
+        if (i == 0) {
+            [self tapBottomMenu:button];
+        }
     }
     
     uiv_menuIndicator = [[UIView alloc] initWithFrame:CGRectMake(0, bottomHeight-4, buttonWidth, 4)];
     uiv_menuIndicator.backgroundColor = [UIColor themeRed];
     [uiv_bottomMenu addSubview: uiv_menuIndicator];
+    
 }
 
 - (void)tapBottomMenu:(id)sender {
+    
+    [self createOverlayMenu: (int)[sender tag] ];
+    
+    if (overlayAsset) {
+        [overlayAsset removeFromSuperview];
+    }
+    
     UIButton *tappedButton = sender;
     CGRect frame = uiv_menuIndicator.frame;
     uiiv_tmpMap.image = [UIImage imageNamed:arr_mapImageNames[tappedButton.tag]];

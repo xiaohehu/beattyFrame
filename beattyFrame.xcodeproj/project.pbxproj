@@ -836,6 +836,16 @@
 		82CA34351B6C02C40065E31E /* grfx_ecoDistrict@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82CA34311B6C02C40065E31E /* grfx_ecoDistrict@2x.jpg */; };
 		82CA34361B6C02C40065E31E /* lifeStyle_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82CA34321B6C02C40065E31E /* lifeStyle_bg.jpg */; };
 		82CA34371B6C02C40065E31E /* lifeStyle_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82CA34331B6C02C40065E31E /* lifeStyle_bg@2x.jpg */; };
+		888233751BA0B0600019FD75 /* ButtonStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 888233741BA0B0600019FD75 /* ButtonStack.m */; };
+		8882337A1BA1BBDD0019FD75 /* grfx_mapMenuBtnDef.png in Resources */ = {isa = PBXBuildFile; fileRef = 888233761BA1BBDD0019FD75 /* grfx_mapMenuBtnDef.png */; };
+		8882337B1BA1BBDD0019FD75 /* grfx_mapMenuBtnDef@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888233771BA1BBDD0019FD75 /* grfx_mapMenuBtnDef@2x.png */; };
+		8882337C1BA1BBDD0019FD75 /* grfx_mapMenuBtnSel.png in Resources */ = {isa = PBXBuildFile; fileRef = 888233781BA1BBDD0019FD75 /* grfx_mapMenuBtnSel.png */; };
+		8882337D1BA1BBDD0019FD75 /* grfx_mapMenuBtnSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888233791BA1BBDD0019FD75 /* grfx_mapMenuBtnSel@2x.png */; };
+		888233801BA20FFA0019FD75 /* grfx_regionalMap_overlay_access.png in Resources */ = {isa = PBXBuildFile; fileRef = 8882337E1BA20FFA0019FD75 /* grfx_regionalMap_overlay_access.png */; };
+		888233811BA20FFA0019FD75 /* grfx_regionalMap_overlay_access@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8882337F1BA20FFA0019FD75 /* grfx_regionalMap_overlay_access@2x.png */; };
+		888233831BA214930019FD75 /* buttonstack.json in Resources */ = {isa = PBXBuildFile; fileRef = 888233821BA214930019FD75 /* buttonstack.json */; };
+		888233861BA2199A0019FD75 /* grfx_regionalMap_overlay_neighbor.png in Resources */ = {isa = PBXBuildFile; fileRef = 888233841BA2199A0019FD75 /* grfx_regionalMap_overlay_neighbor.png */; };
+		888233871BA2199A0019FD75 /* grfx_regionalMap_overlay_neighbor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888233851BA2199A0019FD75 /* grfx_regionalMap_overlay_neighbor@2x.png */; };
 		88E0744F1B98CFB400E0982A /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074311B98CFB400E0982A /* ContainerViewController.m */; };
 		88E074501B98CFB400E0982A /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074341B98CFB400E0982A /* FLAnimatedImage.m */; };
 		88E074511B98CFB400E0982A /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074361B98CFB400E0982A /* FLAnimatedImageView.m */; };
@@ -1740,6 +1750,17 @@
 		82CA34311B6C02C40065E31E /* grfx_ecoDistrict@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx_ecoDistrict@2x.jpg"; sourceTree = "<group>"; };
 		82CA34321B6C02C40065E31E /* lifeStyle_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lifeStyle_bg.jpg; sourceTree = "<group>"; };
 		82CA34331B6C02C40065E31E /* lifeStyle_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lifeStyle_bg@2x.jpg"; sourceTree = "<group>"; };
+		888233731BA0B0600019FD75 /* ButtonStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonStack.h; path = utilities/ButtonStack.h; sourceTree = "<group>"; };
+		888233741BA0B0600019FD75 /* ButtonStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonStack.m; path = utilities/ButtonStack.m; sourceTree = "<group>"; };
+		888233761BA1BBDD0019FD75 /* grfx_mapMenuBtnDef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_mapMenuBtnDef.png; sourceTree = "<group>"; };
+		888233771BA1BBDD0019FD75 /* grfx_mapMenuBtnDef@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_mapMenuBtnDef@2x.png"; sourceTree = "<group>"; };
+		888233781BA1BBDD0019FD75 /* grfx_mapMenuBtnSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_mapMenuBtnSel.png; sourceTree = "<group>"; };
+		888233791BA1BBDD0019FD75 /* grfx_mapMenuBtnSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_mapMenuBtnSel@2x.png"; sourceTree = "<group>"; };
+		8882337E1BA20FFA0019FD75 /* grfx_regionalMap_overlay_access.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_regionalMap_overlay_access.png; sourceTree = "<group>"; };
+		8882337F1BA20FFA0019FD75 /* grfx_regionalMap_overlay_access@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_regionalMap_overlay_access@2x.png"; sourceTree = "<group>"; };
+		888233821BA214930019FD75 /* buttonstack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = buttonstack.json; path = utilities/buttonstack.json; sourceTree = "<group>"; };
+		888233841BA2199A0019FD75 /* grfx_regionalMap_overlay_neighbor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_regionalMap_overlay_neighbor.png; sourceTree = "<group>"; };
+		888233851BA2199A0019FD75 /* grfx_regionalMap_overlay_neighbor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_regionalMap_overlay_neighbor@2x.png"; sourceTree = "<group>"; };
 		88E074301B98CFB400E0982A /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
 		88E074311B98CFB400E0982A /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		88E074331B98CFB400E0982A /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
@@ -2349,6 +2370,9 @@
 		824D27A11B61467700E5F5A5 /* utiliites */ = {
 			isa = PBXGroup;
 			children = (
+				888233821BA214930019FD75 /* buttonstack.json */,
+				888233731BA0B0600019FD75 /* ButtonStack.h */,
+				888233741BA0B0600019FD75 /* ButtonStack.m */,
 				88E0742F1B98CFB400E0982A /* TutorialCard */,
 				822822B51B851E44004154E7 /* setting */,
 				82A128B31B69164100564266 /* page_vc */,
@@ -3062,8 +3086,16 @@
 				82CA34241B6BEB950065E31E /* grfx_areaMap@2x.jpg */,
 				82CA34271B6BF46F0065E31E /* grfx_cityMap.jpg */,
 				82CA34281B6BF46F0065E31E /* grfx_cityMap@2x.jpg */,
+				8882337E1BA20FFA0019FD75 /* grfx_regionalMap_overlay_access.png */,
+				8882337F1BA20FFA0019FD75 /* grfx_regionalMap_overlay_access@2x.png */,
+				888233841BA2199A0019FD75 /* grfx_regionalMap_overlay_neighbor.png */,
+				888233851BA2199A0019FD75 /* grfx_regionalMap_overlay_neighbor@2x.png */,
 				82CA34291B6BF46F0065E31E /* grfx_regionalMap.jpg */,
 				82CA342A1B6BF46F0065E31E /* grfx_regionalMap@2x.jpg */,
+				888233761BA1BBDD0019FD75 /* grfx_mapMenuBtnDef.png */,
+				888233771BA1BBDD0019FD75 /* grfx_mapMenuBtnDef@2x.png */,
+				888233781BA1BBDD0019FD75 /* grfx_mapMenuBtnSel.png */,
+				888233791BA1BBDD0019FD75 /* grfx_mapMenuBtnSel@2x.png */,
 			);
 			name = Location;
 			path = src/grfx/Location;
@@ -3332,6 +3364,7 @@
 				822823E21B862A0A004154E7 /* thumb_leasing.jpg in Resources */,
 				824D2A871B61671600E5F5A5 /* phase_d_base_00004.jpg in Resources */,
 				822823CC1B862A0A004154E7 /* Picture 024.jpg in Resources */,
+				888233871BA2199A0019FD75 /* grfx_regionalMap_overlay_neighbor@2x.png in Resources */,
 				822823881B862A0A004154E7 /* Design Update.pdf in Resources */,
 				822823AD1B862A0A004154E7 /* store05.jpg in Resources */,
 				824D2BB21B62D02100E5F5A5 /* share_arch_06.jpg.jpg in Resources */,
@@ -3362,6 +3395,7 @@
 				824D2A991B61671600E5F5A5 /* phase_d_base_00022.jpg in Resources */,
 				824D2A2A1B61671600E5F5A5 /* phase_b_base_00055.jpg in Resources */,
 				822822A41B83D5AB004154E7 /* grfx_expand@2x.png in Resources */,
+				888233801BA20FFA0019FD75 /* grfx_regionalMap_overlay_access.png in Resources */,
 				824D2A421B61671600E5F5A5 /* phase_b_color_00007.jpg in Resources */,
 				82A1287F1B66668800564266 /* fact-grid-08-sm@2x.png in Resources */,
 				82A128751B66668800564266 /* fact-grid-06-lg@2x.png in Resources */,
@@ -3441,6 +3475,7 @@
 				824D2A291B61671600E5F5A5 /* phase_b_base_00054.jpg in Resources */,
 				824D2A281B61671600E5F5A5 /* phase_b_base_00053.jpg in Resources */,
 				8228229F1B83CE6D004154E7 /* grfx_buildingPre.jpg in Resources */,
+				8882337A1BA1BBDD0019FD75 /* grfx_mapMenuBtnDef.png in Resources */,
 				88E0745A1B98CFB400E0982A /* icon_0000.png in Resources */,
 				824D2ABE1B61671600E5F5A5 /* phase_d_base_00059.jpg in Resources */,
 				824D2A3E1B61671600E5F5A5 /* phase_b_color_00003.jpg in Resources */,
@@ -3496,6 +3531,7 @@
 				824D2B0A1B61671600E5F5A5 /* phase_d_color_00063.jpg in Resources */,
 				824D2A9F1B61671600E5F5A5 /* phase_d_base_00028.jpg in Resources */,
 				824D2A6C1B61671600E5F5A5 /* phase_b_color_00049.jpg in Resources */,
+				8882337D1BA1BBDD0019FD75 /* grfx_mapMenuBtnSel@2x.png in Resources */,
 				822823761B862A0A004154E7 /* View 12 - N Randolph.jpg in Resources */,
 				824D2AEC1B61671600E5F5A5 /* phase_d_color_00033.jpg in Resources */,
 				822823B01B862A0A004154E7 /* street01.jpg in Resources */,
@@ -3627,6 +3663,7 @@
 				822823711B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View07_050715.jpg in Resources */,
 				822823BE1B862A0A004154E7 /* Pg 5B  0420 BCM (c) 2014 David Galen.jpg in Resources */,
 				824D2AEB1B61671600E5F5A5 /* phase_d_color_00032.jpg in Resources */,
+				888233811BA20FFA0019FD75 /* grfx_regionalMap_overlay_access@2x.png in Resources */,
 				82A128681B66668800564266 /* fact-grid-03-lg.png in Resources */,
 				824D2AE31B61671600E5F5A5 /* phase_d_color_00024.jpg in Resources */,
 				8251FF871B7D0DE80021C1BA /* phase_a_base_00061.png in Resources */,
@@ -3637,6 +3674,7 @@
 				824D2BAC1B62D02100E5F5A5 /* share_0364 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				88E79F101B98CC4900D41B23 /* ui_tips.png in Resources */,
 				824D2A741B61671600E5F5A5 /* phase_b_color_00057.jpg in Resources */,
+				888233861BA2199A0019FD75 /* grfx_regionalMap_overlay_neighbor.png in Resources */,
 				824D2AAF1B61671600E5F5A5 /* phase_d_base_00044.jpg in Resources */,
 				8251FF701B7D0DE80021C1BA /* phase_a_base_00038.png in Resources */,
 				824D2A601B61671600E5F5A5 /* phase_b_color_00037.jpg in Resources */,
@@ -3696,6 +3734,7 @@
 				8251FEE21B7D0D880021C1BA /* phase_a_color_00042.png in Resources */,
 				824D2A431B61671600E5F5A5 /* phase_b_color_00008.jpg in Resources */,
 				824D27961B60331600E5F5A5 /* office.png in Resources */,
+				8882337C1BA1BBDD0019FD75 /* grfx_mapMenuBtnSel.png in Resources */,
 				824D2A1D1B61671600E5F5A5 /* phase_b_base_00042.jpg in Resources */,
 				822823B81B862A0A004154E7 /* Ballston aerial01.jpg in Resources */,
 				824D2BE31B62D02100E5F5A5 /* share_store03.jpg.jpg in Resources */,
@@ -3837,6 +3876,7 @@
 				8251FE661B7BB2470021C1BA /* supporting_story_4.jpg in Resources */,
 				824D2AE81B61671600E5F5A5 /* phase_d_color_00029.jpg in Resources */,
 				824D2A6B1B61671600E5F5A5 /* phase_b_color_00048.jpg in Resources */,
+				8882337B1BA1BBDD0019FD75 /* grfx_mapMenuBtnDef@2x.png in Resources */,
 				824D2A3C1B61671600E5F5A5 /* phase_b_color_00001.jpg in Resources */,
 				8251FF821B7D0DE80021C1BA /* phase_a_base_00056.png in Resources */,
 				824D2AA21B61671600E5F5A5 /* phase_d_base_00031.jpg in Resources */,
@@ -3980,6 +4020,7 @@
 				824D2AA91B61671600E5F5A5 /* phase_d_base_00038.jpg in Resources */,
 				824D2A0A1B61671600E5F5A5 /* phase_b_base_00023.jpg in Resources */,
 				8251FF5B1B7D0DE80021C1BA /* phase_a_base_00017.png in Resources */,
+				888233831BA214930019FD75 /* buttonstack.json in Resources */,
 				88E0746E1B99CBB200E0982A /* ui_tips_menu.png in Resources */,
 				824D2BE21B62D02100E5F5A5 /* share_store02.jpg.jpg in Resources */,
 				822823CB1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg in Resources */,
@@ -4097,6 +4138,7 @@
 				82A128BF1B6916EE00564266 /* UIColor+Extensions.m in Sources */,
 				82A128301B66657C00564266 /* animationView.m in Sources */,
 				88E074661B98D12C00E0982A /* TipsViewController.m in Sources */,
+				888233751BA0B0600019FD75 /* ButtonStack.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
 				88E074561B98CFB400E0982A /* TutorialsListController.m in Sources */,
 				82A128B81B69164100564266 /* supportingDataViewController.m in Sources */,
