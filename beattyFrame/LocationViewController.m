@@ -19,11 +19,12 @@ static float    bottomHeight = 37;
     UIView              *uiv_menuIndicator;
     UIImageView         *uiiv_tmpMap;
     NSArray             *arr_mapImageNames;
+    
     ButtonStack         *overlayMenu;
     UIImageView         *overlayAsset;
     int                 overlayMenuIndex;
     NSArray             *arr_OverlayData;
-    NSDictionary *menuData;
+    NSDictionary        *menuData;
 }
 
 @property (nonatomic, strong) ebZoomingScrollView			*zoomingScroll;
@@ -33,7 +34,6 @@ static float    bottomHeight = 37;
 @implementation LocationViewController
 
 #warning Make sure the hotspot's tag > 100 to keep their size while the map is zoomed!!!!!!
-
 
 #pragma mark - View Controller life-cycle
 - (void)viewDidLoad {
@@ -66,7 +66,8 @@ static float    bottomHeight = 37;
     menuData = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
 }
 
--(void)createOverlayMenu:(int)index
+#pragma mark - menu for overlays
+-(void)createButtonStack:(int)index
 {
     NSMutableArray *d = [[NSMutableArray alloc] init];
     for (NSArray *menuAsset in menuData )
@@ -74,6 +75,8 @@ static float    bottomHeight = 37;
         [d addObject:menuAsset];
         NSLog(@"%@", menuAsset);
     }
+    // sort them alphabetically
+    [d sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     
     arr_OverlayData = menuData[d[index]];
     
@@ -111,12 +114,18 @@ static float    bottomHeight = 37;
         overlayAsset.image = [UIImage imageNamed:imgNm];
         overlayMenuIndex = index;
     } else {
-        [overlayAsset removeFromSuperview];
-        overlayAsset = nil;
-        overlayMenuIndex = -1;
+        [self clearOverlayData];
     }
 }
 
+-(void)clearOverlayData
+{
+    [overlayAsset removeFromSuperview];
+    overlayAsset = nil;
+    overlayMenuIndex = -1;
+}
+
+#pragma mark - maps
 - (void)loadZoomingScrollView {
     
     if (!_zoomingScroll) {
@@ -134,6 +143,7 @@ static float    bottomHeight = 37;
     [self.view addSubview: uiiv_tmpMap];
 }
 
+#pragma mark - menu @ bottom
 - (void)createBottomMenu {
     uiv_bottomMenu = [[UIView alloc] initWithFrame:CGRectMake((self.view.frame.size.width - bottomWidth)/2, self.view.frame.size.height - 22 - bottomHeight, bottomWidth, bottomHeight)];
     uiv_bottomMenu.backgroundColor = [UIColor whiteColor];
@@ -149,7 +159,7 @@ static float    bottomHeight = 37;
     [self createBottomButtons:arr_menuTitles];
 }
 
-#pragma mark - UI interation methods
+#pragma mark - UI interaction methods
 
 - (void)createBottomButtons:(NSArray *)titles {
     
@@ -178,11 +188,9 @@ static float    bottomHeight = 37;
 
 - (void)tapBottomMenu:(id)sender {
     
-    [self createOverlayMenu: (int)[sender tag] ];
-    
-    if (overlayAsset) {
-        [overlayAsset removeFromSuperview];
-    }
+    [self clearOverlayData];
+
+    [self createButtonStack: (int)[sender tag] ];
     
     UIButton *tappedButton = sender;
     CGRect frame = uiv_menuIndicator.frame;
@@ -198,15 +206,5 @@ static float    bottomHeight = 37;
         uiiv_tmpMap.alpha = 0.0;
     }];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
