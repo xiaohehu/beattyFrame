@@ -45,7 +45,7 @@ static CGFloat  bottomMenuHeight = 37;
 - (void)viewWillAppear:(BOOL)animated {
     [self initPageView:pageIndex];
     [self createBottomMenu];
-    [self createPageNumLabel];
+    //[self createPageNumLabel];
     [self checkCurrentIndexPosition];
 }
 
@@ -60,7 +60,7 @@ static CGFloat  bottomMenuHeight = 37;
     
     arr_menuTitles = @[
                        @"Beatty Development Group",
-                       @"Financial Parteners",
+                       @"Financial Partners",
                        @"Current & Future Tenants"
                        ];
     arr_lastIndex = @[

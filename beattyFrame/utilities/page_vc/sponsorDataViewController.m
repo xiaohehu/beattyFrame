@@ -9,6 +9,7 @@
 #import "sponsorDataViewController.h"
 #import "ebZoomingScrollView.h"
 #import "UIColor+Extensions.h"
+#import "xhWebViewController.h"
 
 @interface sponsorDataViewController ()
 
@@ -39,6 +40,13 @@
         _zoomingScroll.delegate=self;
     }
     [self loadInImge:_dict[@"image"]];
+    
+    if ([_dict objectForKey:@"webaddress"]) {
+        NSLog(@"There's an object set for key @\"b\"!");
+        [self createWebButton];
+    } else {
+        NSLog(@"No object set for key @\"b\"");
+    }
 }
 
 -(void)loadInImge:(NSString *)imageName
@@ -52,6 +60,56 @@
         }];
     }];
 }
+
+-(void)createWebButton
+{
+    UIButton *webButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage* webButtonImage = [UIImage imageNamed:@"grfx_web_arrow.png"];
+    int padding = 6;
+    
+    NSString *text = [_dict objectForKey:@"webaddress"];
+    CGSize frameSize = CGSizeMake(999, 30);
+    UIFont *font = [UIFont fontWithName:@"GoodPro-Book" size:14.0];
+    
+    CGRect idealFrame = [text boundingRectWithSize:frameSize
+                                           options:NSStringDrawingUsesLineFragmentOrigin
+                                        attributes:@{ NSFontAttributeName:font }
+                                           context:nil];
+    NSLog(@"width: %0.1f", idealFrame.size.width);
+    
+    
+    webButton.frame = CGRectMake(174, 625, idealFrame.size.width + webButtonImage.size.width + padding , idealFrame.size.height);
+    
+    [webButton addTarget:self action:@selector(createWebButtonWithAddress:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [webButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [webButton setImage:[UIImage imageNamed:@"grfx_web_arrow.png"] forState:UIControlStateNormal];
+    
+    [webButton setTitle:text forState:UIControlStateNormal];
+    
+    webButton.showsTouchWhenHighlighted = YES;
+    webButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    
+    [webButton setBackgroundColor:[UIColor clearColor]];
+    
+    [webButton.titleLabel setFont:font];
+    
+    webButton.imageEdgeInsets = UIEdgeInsetsMake(0, 2, 0, 0);
+    
+    [webButton setTitleEdgeInsets:UIEdgeInsetsMake(0, padding, 0, 0)];
+
+    [_zoomingScroll.blurView addSubview:webButton];
+}
+
+-(void)createWebButtonWithAddress:(NSString*)address
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    xhWebViewController *vc = (xhWebViewController*)[mainStoryboard instantiateViewControllerWithIdentifier:@"xhWebViewController"];
+    [vc socialButton:[_dict objectForKey:@"webaddress"]];
+    vc.modalPresentationStyle = UIModalPresentationCurrentContext;
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -4,15 +4,19 @@
 <array>
 	<dict>
 		<key>image</key>
-		<string>tbd_1.jpg</string>
+		<string>sponsorship_00.png</string>
 		<key>title</key>
 		<string>History</string>
+		<key>webaddress</key>
+		<string>http://beattydevelopment.com</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>tbd_2.jpg</string>
+		<string>sponsorship_01.png</string>
 		<key>title</key>
 		<string>Trends</string>
+		<key>webaddress</key>
+		<string>http://www.exeloncorp.com/Pages/home.aspx</string>
 	</dict>
 	<dict>
 		<key>image</key>

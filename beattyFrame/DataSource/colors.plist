@@ -65,10 +65,10 @@
 		<dict>
 			<key>simulator</key>
 			<array>
-				<string>RGB A 2 0 136  255</string>
 				<string>RGB A 255 255 1  255</string>
+				<string>RGB A 136 0 0  255</string>
 				<string>RGB A 0 136 0  255</string>
-				<string>RGB A 255 35 35  255</string>
+				<string>RGB A 1 0 136  255</string>
 				<string>RGB A 0 82 238  255</string>
 				<string>RGB A 1 255 255  255</string>
 				<string>RGB A 221 1 189  255</string>

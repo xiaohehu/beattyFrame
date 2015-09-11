@@ -4,15 +4,111 @@
 <array>
 	<dict>
 		<key>image</key>
-		<string>grfx_building.jpg</string>
+		<string>Parcel_01.jpg</string>
 		<key>title</key>
 		<string>History</string>
+		<key>siteplan</key>
+		<string>siteplan_01.png</string>
+		<key>caption</key>
+		<string>View from NW</string>
+		<key>galleryname</key>
+		<string>gallery name</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>grfx_building1.jpg</string>
+		<string>Thames_Street_Wharf.jpg</string>
 		<key>title</key>
 		<string>Trends</string>
+        <key>siteplan</key>
+        <string>siteplan_01.png</string>
+        <key>caption</key>
+        <string>View from NW</string>
+        <key>galleryname</key>
+        <string>gallery name</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Parcel_02-Excelon.jpg</string>
+		<key>title</key>
+		<string>Trends</string>
+        <key>siteplan</key>
+        <string>siteplan_01.png</string>
+        <key>caption</key>
+        <string>View from NW</string>
+        <key>galleryname</key>
+        <string>gallery name</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Central_Plaza.jpg</string>
+		<key>title</key>
+		<string>Trends</string>
+        <key>siteplan</key>
+        <string>siteplan_01.png</string>
+        <key>caption</key>
+        <string>View from NW</string>
+        <key>galleryname</key>
+        <string>gallery name</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Point_Street_Apt.jpg</string>
+		<key>title</key>
+		<string>Trends</string>
+        <key>siteplan</key>
+        <string>siteplan_01.png</string>
+        <key>caption</key>
+        <string>View from NW</string>
+        <key>galleryname</key>
+        <string>gallery name</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Parcel_04.jpg</string>
+		<key>title</key>
+		<string>Trends</string>
+        <key>siteplan</key>
+        <string>siteplan_01.png</string>
+        <key>caption</key>
+        <string>View from NW</string>
+        <key>galleryname</key>
+        <string>gallery name</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Wills_Street_Wharf.jpg</string>
+		<key>title</key>
+		<string>Trends</string>
+        <key>siteplan</key>
+        <string>siteplan_01.png</string>
+        <key>caption</key>
+        <string>View from NW</string>
+        <key>galleryname</key>
+        <string>gallery name</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Harbor_Point_Park.jpg</string>
+		<key>title</key>
+		<string>Trends</string>
+        <key>siteplan</key>
+        <string>siteplan_01.png</string>
+        <key>caption</key>
+        <string>View from NW</string>
+        <key>galleryname</key>
+        <string>gallery name</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Parcel_03.jpg</string>
+		<key>title</key>
+		<string>Trends</string>
+        <key>siteplan</key>
+        <string>siteplan_01.png</string>
+        <key>caption</key>
+        <string>View from NW</string>
+        <key>galleryname</key>
+        <string>gallery name</string>
 	</dict>
 </array>
 </plist>

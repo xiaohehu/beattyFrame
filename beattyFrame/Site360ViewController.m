@@ -310,6 +310,8 @@ static float bottomMenuHeight  = 37.0;
     
     // namesarray is created in viewdidload
     
+    NSLog(@"namesArray %@",namesArray);
+    
     NSString *answer = nil;
     NSUInteger index = [namesArray indexOfObject:incomingColor];
     if (index != NSNotFound) {
