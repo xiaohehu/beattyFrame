@@ -10,6 +10,8 @@
 #import "ebZoomingScrollView.h"
 #import "UIColor+Extensions.h"
 #import "ButtonStack.h"
+#import "KeyOverlay.h"
+
 static float    bottomWidth = 236;
 static float    bottomHeight = 37;
 
@@ -23,6 +25,7 @@ static float    bottomHeight = 37;
     ButtonStack         *overlayMenu;
     UIImageView         *overlayAsset;
     int                 overlayMenuIndex;
+    int                 mapIndex;
     NSArray             *arr_OverlayData;
     NSDictionary        *menuData;
 }
@@ -99,6 +102,19 @@ static float    bottomHeight = 37;
     [self.view addSubview:overlayMenu];
 }
 
+-(void)createKeyForMap
+{
+    UIImage*key = [UIImage imageNamed:@"grfx_regionalMap_overlay_key.png"];
+    KeyOverlay *keyOverlay = [[KeyOverlay alloc] initWithFrame:CGRectMake(20, 320, key.size.width, key.size.height)];
+    [keyOverlay setKeyImage:key];
+    [self.view addSubview:keyOverlay];
+    
+    key = [UIImage imageNamed:@"grfx_regionalMap_overlay_stats.png"];
+    keyOverlay = [[KeyOverlay alloc] initWithFrame:CGRectMake(600, 350, key.size.width, key.size.height)];
+    [keyOverlay setKeyImage:key];
+    [self.view addSubview:keyOverlay];
+}
+
 - (void)buttonStack:(ButtonStack *)buttonStack selectedIndex:(int)index
 {
     NSLog(@"tapped %d", index);
@@ -123,7 +139,13 @@ static float    bottomHeight = 37;
     [overlayAsset removeFromSuperview];
     overlayAsset = nil;
     overlayMenuIndex = -1;
+    
+    for (UIView *key in self.view.subviews) {
+        if ([key  isKindOfClass:[KeyOverlay class]])
+            [key removeFromSuperview];
+    }
 }
+
 
 #pragma mark - maps
 - (void)loadZoomingScrollView {
@@ -190,9 +212,18 @@ static float    bottomHeight = 37;
     
     [self clearOverlayData];
 
-    [self createButtonStack: (int)[sender tag] ];
+    if ([sender tag] !=2) {
+        [self createButtonStack: (int)[sender tag] ];
+    } else {
+        [overlayMenu removeFromSuperview];
+        [self createKeyForMap];
+    }
     
     UIButton *tappedButton = sender;
+    
+    mapIndex = (int)[sender tag];
+    NSLog(@"mapIndex %d",mapIndex);
+
     CGRect frame = uiv_menuIndicator.frame;
     uiiv_tmpMap.image = [UIImage imageNamed:arr_mapImageNames[tappedButton.tag]];
     [UIView animateWithDuration:0.33 animations:^(void){

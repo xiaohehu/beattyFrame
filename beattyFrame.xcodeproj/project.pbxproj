@@ -868,6 +868,7 @@
 		887647D11BA3338E002D4183 /* grfx_cityMap_overlay_institutions@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647C91BA3338E002D4183 /* grfx_cityMap_overlay_institutions@2x.png */; settings = {ASSET_TAGS = (); }; };
 		887647D21BA3338E002D4183 /* grfx_cityMap_overlay_landmarks.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647CA1BA3338E002D4183 /* grfx_cityMap_overlay_landmarks.png */; settings = {ASSET_TAGS = (); }; };
 		887647D31BA3338E002D4183 /* grfx_cityMap_overlay_landmarks@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647CB1BA3338E002D4183 /* grfx_cityMap_overlay_landmarks@2x.png */; settings = {ASSET_TAGS = (); }; };
+		887647D61BA33651002D4183 /* KeyOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 887647D51BA33651002D4183 /* KeyOverlay.m */; settings = {ASSET_TAGS = (); }; };
 		888233751BA0B0600019FD75 /* ButtonStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 888233741BA0B0600019FD75 /* ButtonStack.m */; };
 		8882337A1BA1BBDD0019FD75 /* grfx_mapMenuBtnDef.png in Resources */ = {isa = PBXBuildFile; fileRef = 888233761BA1BBDD0019FD75 /* grfx_mapMenuBtnDef.png */; };
 		8882337B1BA1BBDD0019FD75 /* grfx_mapMenuBtnDef@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888233771BA1BBDD0019FD75 /* grfx_mapMenuBtnDef@2x.png */; };
@@ -1810,6 +1811,8 @@
 		887647C91BA3338E002D4183 /* grfx_cityMap_overlay_institutions@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_cityMap_overlay_institutions@2x.png"; sourceTree = "<group>"; };
 		887647CA1BA3338E002D4183 /* grfx_cityMap_overlay_landmarks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_cityMap_overlay_landmarks.png; sourceTree = "<group>"; };
 		887647CB1BA3338E002D4183 /* grfx_cityMap_overlay_landmarks@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_cityMap_overlay_landmarks@2x.png"; sourceTree = "<group>"; };
+		887647D41BA33651002D4183 /* KeyOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyOverlay.h; path = utilities/KeyOverlay.h; sourceTree = "<group>"; };
+		887647D51BA33651002D4183 /* KeyOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyOverlay.m; path = utilities/KeyOverlay.m; sourceTree = "<group>"; };
 		888233731BA0B0600019FD75 /* ButtonStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonStack.h; path = utilities/ButtonStack.h; sourceTree = "<group>"; };
 		888233741BA0B0600019FD75 /* ButtonStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonStack.m; path = utilities/ButtonStack.m; sourceTree = "<group>"; };
 		888233761BA1BBDD0019FD75 /* grfx_mapMenuBtnDef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_mapMenuBtnDef.png; sourceTree = "<group>"; };
@@ -2429,6 +2432,8 @@
 				888233821BA214930019FD75 /* buttonstack.json */,
 				888233731BA0B0600019FD75 /* ButtonStack.h */,
 				888233741BA0B0600019FD75 /* ButtonStack.m */,
+				887647D41BA33651002D4183 /* KeyOverlay.h */,
+				887647D51BA33651002D4183 /* KeyOverlay.m */,
 				88E0742F1B98CFB400E0982A /* TutorialCard */,
 				822822B51B851E44004154E7 /* setting */,
 				82A128B31B69164100564266 /* page_vc */,
@@ -4249,6 +4254,7 @@
 				8228227D1B822134004154E7 /* sponsorshipModelController.m in Sources */,
 				822822831B82290C004154E7 /* SponsorshipViewController.m in Sources */,
 				824D2B461B62B5C600E5F5A5 /* EMBSPSectionHeader.m in Sources */,
+				887647D61BA33651002D4183 /* KeyOverlay.m in Sources */,
 				824D27A01B61467400E5F5A5 /* ColorPickerImageView.m in Sources */,
 				824D2B441B62B5C600E5F5A5 /* EMBSPCell.m in Sources */,
 				82CA34211B6BE2960065E31E /* LocationViewController.m in Sources */,

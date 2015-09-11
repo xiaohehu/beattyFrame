@@ -38,19 +38,5 @@
 				"name": "Institutions",
 				"overlay": "grfx_cityMap_overlay_institutions.png",
 				}
-            ],
-    "regional": [
-                {
-				"name": "Acela Corridor",
-				"overlay": "grfx_regionalMap_overlay_access.png",
-				},
-				{
-				"name": "Airports",
-				"overlay": "grfx_regionalMap_overlay_neighbor.png",
-				},
-				{
-				"name": "Highway Network",
-				"overlay": "grfx_regionalMap_overlay_access.png",
-				}
             ]
 }
