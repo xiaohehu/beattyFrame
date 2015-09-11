@@ -73,9 +73,7 @@
 
         int heightt = _notSelectedImage.size.height + padding;
 
-        //CGRect frame = CGRectInset(self.bounds, 10, 10);
         CGRect frame = CGRectMake(0,2,self.bounds.size.width, _notSelectedImage.size.height);
-
         
         for(i=0; i<btnArray.count; i++)
         {
@@ -107,12 +105,12 @@
             
             button.imageEdgeInsets = UIEdgeInsetsMake(0, 2, 0, 0);
             
-            [button setTitleEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
+            [button setTitleEdgeInsets:UIEdgeInsetsMake(0, 6, 0, 0)];
             [self addSubview:button];
             [btns addObject:button];
             
             if(i!=0) {
-                UIView *rule = [[UIView alloc] initWithFrame:CGRectMake(2, frame.origin.y, 130, 0.5)];
+                UIView *rule = [[UIView alloc] initWithFrame:CGRectMake(2, frame.origin.y-1, 130, 0.5)];
                 [rule setBackgroundColor:[UIColor lightGrayColor]];
                 [self addSubview:rule];
             }
