@@ -53,9 +53,9 @@ static float    bottomHeight = 37;
 
 - (void)prepareData {
     arr_mapImageNames = @[
-                          @"grfx_areaMap.jpg",
-                          @"grfx_cityMap.jpg",
-                          @"grfx_regionalMap.jpg"
+                          @"grfx_areaMap_base_map.png",
+                          @"grfx-city-base-map.png",
+                          @"grfx_regionalMap_base_map.png"
                           ];
     
     NSString *textPath = [[NSBundle mainBundle] pathForResource:@"buttonstack" ofType:@"json"];
