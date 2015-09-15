@@ -49,39 +49,6 @@
     return [persistencyManager getCurrentEvents];
 }
 
-//- (void)addEvent:(embBuilding*)event
-//{
-//    [persistencyManager addEvent:event];
-//    if (isOnline)
-//    {
-//    }
-//}
-//
-//- (void)deleteEvent:(embBuilding*)event atIndex:(int)index
-//{
-//    [persistencyManager deleteEvent:event atIndex:index];
-//    if (isOnline)
-//    {
-//    }
-//}
-//
-//- (void)archiveEvent:(embBuilding*)event atIndex:(NSInteger)index
-//{
-//    [persistencyManager archiveEvent:event atIndex:index];
-//}
-//
-//
-//- (void)replaceEvent:(embBuilding*)event atIndex:(NSInteger)index
-//
-//{
-//    [persistencyManager replaceEvent:event atIndex:index];
-//}
-//
-//- (void)saveEvents
-//{
-//    [persistencyManager saveEvents];
-//}
-
 -(embBuilding*)getCurrentEvent
 {
     return [persistencyManager currentEvent];

@@ -12,8 +12,6 @@
 
 @property (nonatomic, copy) NSString *buildingImage, *buildingTitle, *buildingSiteCaption, *buildingSite, *buildingGallery;
 
--(NSDictionary *)dictionary;
-
 - (id)initWithImage:(NSString*)buildingImage title:(NSString*)buildingTitle state:(NSString*)buildingSiteCaption caption:(NSString*)buildingSite background:(NSString*)buildingGallery;
 
 @end
