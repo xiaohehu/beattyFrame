@@ -11,7 +11,6 @@
 
 @interface LibraryAPI () {
     PersistencyManager *persistencyManager;
-    BOOL isOnline;
 }
 
 @end
@@ -36,7 +35,6 @@
     self = [super init];
     if (self) {
         persistencyManager = [[PersistencyManager alloc] init];
-        isOnline = NO;
     }
     return self;
 }
@@ -48,42 +46,41 @@
 
 - (NSArray*)getCurrentEvents
 {
-    NSLog(@"\n\n\n\n\n\n\n\n !!!!!!!!!!!!!!!!!!!!");
     return [persistencyManager getCurrentEvents];
 }
 
-- (void)addEvent:(embBuilding*)event
-{
-    [persistencyManager addEvent:event];
-    if (isOnline)
-    {
-    }
-}
-
-- (void)deleteEvent:(embBuilding*)event atIndex:(int)index
-{
-    [persistencyManager deleteEvent:event atIndex:index];
-    if (isOnline)
-    {
-    }
-}
-
-- (void)archiveEvent:(embBuilding*)event atIndex:(NSInteger)index
-{
-    [persistencyManager archiveEvent:event atIndex:index];
-}
-
-
-- (void)replaceEvent:(embBuilding*)event atIndex:(NSInteger)index
-
-{
-    [persistencyManager replaceEvent:event atIndex:index];
-}
-
-- (void)saveEvents
-{
-    [persistencyManager saveEvents];
-}
+//- (void)addEvent:(embBuilding*)event
+//{
+//    [persistencyManager addEvent:event];
+//    if (isOnline)
+//    {
+//    }
+//}
+//
+//- (void)deleteEvent:(embBuilding*)event atIndex:(int)index
+//{
+//    [persistencyManager deleteEvent:event atIndex:index];
+//    if (isOnline)
+//    {
+//    }
+//}
+//
+//- (void)archiveEvent:(embBuilding*)event atIndex:(NSInteger)index
+//{
+//    [persistencyManager archiveEvent:event atIndex:index];
+//}
+//
+//
+//- (void)replaceEvent:(embBuilding*)event atIndex:(NSInteger)index
+//
+//{
+//    [persistencyManager replaceEvent:event atIndex:index];
+//}
+//
+//- (void)saveEvents
+//{
+//    [persistencyManager saveEvents];
+//}
 
 -(embBuilding*)getCurrentEvent
 {

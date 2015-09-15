@@ -24,6 +24,8 @@
 #import "SettingViewController.h"
 #import "TipsViewController.h"
 #import "TutorialsListController.h"
+#import "LibraryAPI.h"
+#import "embBuilding.h"
 
 static float    sideMenuWidth = 235.0;
 static float    menuButtonSize = 50.0;
@@ -430,10 +432,23 @@ static float    menuButtonSize = 50.0;
 #pragma mark Load/Remove view controller
 
 - (void)loadBuildingVC:(NSNotification *)notification {
+    
+    
+    
+    
+    NSDictionary* userInfo = notification.userInfo;
+    NSNumber* total = (NSNumber*)userInfo[@"buildingindex"];
+    NSLog (@"Successfully received test notification! %i", total.intValue);
+    
+    embBuilding *currentBuilding = [[[LibraryAPI sharedInstance] getEvents] objectAtIndex:total.intValue];
+    [[LibraryAPI sharedInstance] setCurrentEvent:currentBuilding];
+    NSLog(@"loadBuildingVC currentBuilding %@", currentBuilding);
+
     buildingVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BuildingViewController"];
     buildingVC.view.frame = self.view.bounds;
     buildingVC.view.transform = CGAffineTransformMakeTranslation(0, buildingVC.view.frame.size.height);
     [self addChildViewController:buildingVC];
+
     
     [self updateSubTitle:@"Site 360 - Parcel Detail"];
     

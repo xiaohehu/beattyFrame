@@ -11,6 +11,10 @@
 #import "buildingDataViewController.h"
 #import "buildingModelController.h"
 #import "GalleryViewController.h"
+#import "LibraryAPI.h"
+#import "embBuilding.h"
+
+#define dataExpansion YES
 
 @interface BuildingViewController () <UIPageViewControllerDelegate, UIGestureRecognizerDelegate>
 {
@@ -29,6 +33,7 @@
     NSArray             *arr_buttonIcons;
     NSMutableArray      *arr_menuButtons;
     int                 currentPageIndex;
+    embBuilding         *currentBuilding;
 }
 
 @property (readonly, strong, nonatomic) buildingModelController         *modelController;
@@ -53,14 +58,14 @@
     
     _modelController = [[buildingModelController alloc] init];
     
-    [self prepareData];
+    //[self prepareData];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     if (uiv_menuContainer) {
         return;
     }
-    
+    [self prepareData];
     [self initPageView:pageIndex];
     [self createMenuContainer];
     [self createMenuItems];
@@ -85,17 +90,15 @@
                         @"grfx_buildingPre.jpg",
                         @"grfx_buildingNext.jpg"
                         ];
+    
+    currentBuilding = [[LibraryAPI sharedInstance] getCurrentEvent];
+    NSLog(@"prepareData currentBuilding %@", currentBuilding.buildingImage);
 }
 
 - (void)createMenuContainer {
     
     bigContainerFrame = CGRectMake(571, 28, 360, 390);
     smallContainerFrame = CGRectMake(571, 28, 360, 130);
-
-    
-    uiiv_bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"grfx_building.jpg"]];
-    uiiv_bg.frame = self.view.bounds;
-//    [self.view addSubview: uiiv_bg];
     
     uiv_menuContainer = [UIView new];
     uiv_menuContainer.frame = smallContainerFrame;
@@ -109,29 +112,35 @@
     uiv_buildingMenu.backgroundColor = [UIColor whiteColor];
     [uiv_menuContainer addSubview:uiv_buildingMenu];
     
-    uiv_buildingContent = [UIView new];
-    uiv_buildingContent.frame = CGRectMake(0.0, 130.0, 360.0, 260.0);
-    uiv_buildingContent.backgroundColor = [UIColor greenColor];
-    [uiv_menuContainer addSubview: uiv_buildingContent];
+    if (! dataExpansion) {
+        
+        uiv_buildingContent = [UIView new];
+        uiv_buildingContent.frame = CGRectMake(0.0, 130.0, 360.0, 260.0);
+        uiv_buildingContent.backgroundColor = [UIColor greenColor];
+        [uiv_menuContainer addSubview: uiv_buildingContent];
     
-    uib_expand = [UIButton buttonWithType:UIButtonTypeCustom];
-    uib_expand.frame = CGRectMake(uiv_menuContainer.frame.origin.x + (uiv_buildingMenu.frame.size.width - 50)/2, uiv_menuContainer.frame.origin.y + uiv_buildingMenu.frame.size.height - 50/2, 50, 50);
-    [uib_expand setImage:[UIImage imageNamed:@"grfx_expand.png"] forState:UIControlStateNormal];
-    [uib_expand addTarget:self action:@selector(expandBuildingMenu:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview: uib_expand];
+        uib_expand = [UIButton buttonWithType:UIButtonTypeCustom];
+        uib_expand.frame = CGRectMake(uiv_menuContainer.frame.origin.x + (uiv_buildingMenu.frame.size.width - 50)/2, uiv_menuContainer.frame.origin.y + uiv_buildingMenu.frame.size.height - 50/2, 50, 50);
+        [uib_expand setImage:[UIImage imageNamed:@"grfx_expand.png"] forState:UIControlStateNormal];
+        [uib_expand addTarget:self action:@selector(expandBuildingMenu:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview: uib_expand];
+    }
 }
 
 - (void)createMenuItems {
-    uiiv_viewImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"grfx_buildingIcon.jpg"]];
-    uiiv_viewImage.frame = CGRectMake(11.0, 13.0, uiiv_viewImage.frame.size.width, uiiv_viewImage.frame.size.height);
+    uiiv_viewImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:currentBuilding.buildingSite]];
+    uiiv_viewImage.frame = CGRectMake(0.0, 0.0, uiiv_viewImage.frame.size.width, uiiv_viewImage.frame.size.height);
     [uiv_buildingMenu addSubview: uiiv_viewImage];
     
     uil_viewLabel = [[UILabel alloc] initWithFrame:CGRectMake(11.0, 108.0, 111, 22)];
-    uil_viewLabel.backgroundColor =  [UIColor redColor];
+    [uil_viewLabel setText:currentBuilding.buildingSiteCaption];
+    [uil_viewLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:14.0]];
+    uil_viewLabel.backgroundColor =  [UIColor clearColor];
     [uiv_buildingMenu addSubview: uil_viewLabel];
     
-    uil_buildingName = [[UILabel alloc] initWithFrame:CGRectMake(uiiv_viewImage.frame.origin.x+uiiv_viewImage.frame.size.width + 24, 0.0, 202, 47)];
-    uil_buildingName.backgroundColor = [UIColor yellowColor];
+    uil_buildingName = [[UILabel alloc] initWithFrame:CGRectMake(uiiv_viewImage.frame.origin.x+uiiv_viewImage.frame.size.width, 0.0, 202, 47)];
+    [uil_buildingName setText:currentBuilding.buildingTitle];
+    uil_buildingName.backgroundColor = [UIColor clearColor];
     [uiv_buildingMenu addSubview: uil_buildingName];
     
     UIView *uiv_bar = [[UIView alloc] initWithFrame:CGRectMake(uil_buildingName.frame.origin.x, uil_buildingName.frame.size.height, uil_buildingName.frame.size.width, 1.0)];
@@ -141,7 +150,7 @@
     arr_menuButtons = [NSMutableArray new];
     for (int i = 0; i < 5; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectMake(uiiv_viewImage.frame.origin.x + uiiv_viewImage.frame.size.width + 13 + i * 45, uiv_bar.frame.origin.y + 1, 45, 45);
+        button.frame = CGRectMake((uiiv_viewImage.frame.size.width - 10) + (i * 45), uiv_bar.frame.origin.y + 1, 45, 45);
         button.tag = i;
         [button setImage:[UIImage imageNamed:arr_buttonIcons[i]] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(tapMenuButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -166,11 +175,11 @@
             break;
         }
         case 3: {
-            
+            [self loadPage:currentPageIndex-1];
             break;
         }
         case 4: {
-            
+            [self loadPage:currentPageIndex+1];
             break;
         }
         default:
@@ -262,6 +271,24 @@
     // This is where you would know the page number changed and handle it appropriately
     //    NSLog(@"new page");
     [self setpageIndex];
+    
+    NSLog(@"update data");
+
+    
+        embBuilding *newBuilding = [[[LibraryAPI sharedInstance] getEvents] objectAtIndex:currentPageIndex];
+        [[LibraryAPI sharedInstance] setCurrentEvent:newBuilding];
+//        currentBuilding = nil;
+//    currentBuilding = newBuilding;
+//    
+//    currentBuilding = [[LibraryAPI sharedInstance] getCurrentEvent];
+//    [self createMenuItems];
+//    
+//    [uiv_menuContainer removeFromSuperview];
+    
+    [uil_buildingName setText:newBuilding.buildingTitle];
+    [uil_viewLabel setText:newBuilding.buildingSiteCaption];
+    uiiv_viewImage.image = [UIImage imageNamed:newBuilding.buildingSite];
+
 }
 
 - (void) setpageIndex {

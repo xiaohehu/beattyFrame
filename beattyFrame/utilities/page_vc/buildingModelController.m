@@ -8,6 +8,7 @@
 
 #import "buildingModelController.h"
 #import "buildingDataViewController.h"
+#import "LibraryAPI.h"
 
 @interface buildingModelController()
 @property (readonly, strong, nonatomic) NSArray *pageData;
@@ -19,7 +20,10 @@
     self = [super init];
     if (self) {
         // Create the data model.
-        _pageData = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"building_data" ofType:@"plist"]] copy];
+//        _pageData = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"building_data" ofType:@"plist"]] copy];
+        
+        _pageData = [[LibraryAPI sharedInstance] getCurrentEvents];
+
     }
     return self;
 }

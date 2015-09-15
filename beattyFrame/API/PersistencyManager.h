@@ -17,11 +17,11 @@
 - (NSArray*)getEvents;
 - (NSArray*)getCurrentEvents;
 
-- (void)addEvent:(embBuilding*)event;
-- (void)deleteEvent:(embBuilding*)event atIndex:(int)index;
-- (void)saveEvents;
+//- (void)addEvent:(embBuilding*)event;
+//- (void)deleteEvent:(embBuilding*)event atIndex:(int)index;
+//- (void)saveEvents;
 - (void)setCurrentEvent:(embBuilding*)event;
-- (void)replaceEvent:(embBuilding*)event atIndex:(NSInteger)index;
+//- (void)replaceEvent:(embBuilding*)event atIndex:(NSInteger)index;
 
-- (void)archiveEvent:(embBuilding*)event atIndex:(NSInteger)index;
+//- (void)archiveEvent:(embBuilding*)event atIndex:(NSInteger)index;
 @end

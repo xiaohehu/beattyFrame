@@ -10,12 +10,10 @@
 
 @interface embBuilding : NSObject <NSCoding>
 
-@property (nonatomic, copy) NSString *eventCity, *eventState, *eventBG, *eventCaption;
-@property (nonatomic, copy) NSDate *eventDate;
-@property (nonatomic, readwrite) NSString *eventBGAlpha;
+@property (nonatomic, copy) NSString *buildingImage, *buildingTitle, *buildingSiteCaption, *buildingSite, *buildingGallery;
 
 -(NSDictionary *)dictionary;
 
-- (id)initWithCity:(NSString*)eventCity state:(NSString*)eventState caption:(NSString*)eventCaption background:(NSString*)eventBG eventBGAlpha:(NSString*)eventBGAlpha departureDate:(NSDate*)eventDate archived:(BOOL)isArchived;
+- (id)initWithImage:(NSString*)buildingImage title:(NSString*)buildingTitle state:(NSString*)buildingSiteCaption caption:(NSString*)buildingSite background:(NSString*)buildingGallery;
 
 @end

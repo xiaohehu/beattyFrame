@@ -320,8 +320,10 @@ static float bottomMenuHeight  = 37.0;
         currentIndex = index;
         isColorPicked=YES;
         
+        NSDictionary* userInfo = @{@"buildingindex": @(index)};
+        
         // Need to add userInfo to trach the index of building
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"loadBuilding" object:nil userInfo:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"loadBuilding" object:nil userInfo:userInfo];
         
     } else {
         isColorEligible = NO;

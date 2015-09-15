@@ -13,12 +13,11 @@
 
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
-    [aCoder encodeObject:self.eventDate forKey:@"eventDate"];
-    [aCoder encodeObject:self.eventCity forKey:@"eventCity"];
-    [aCoder encodeObject:self.eventState forKey:@"eventState"];
-    [aCoder encodeObject:self.eventBG forKey:@"eventBG"];
-    [aCoder encodeObject:self.eventCaption forKey:@"eventCaption"];
-    [aCoder encodeObject:self.eventBGAlpha forKey:@"eventBGAlpha"];
+    [aCoder encodeObject:self.buildingImage forKey:@"buildingImage"];
+    [aCoder encodeObject:self.buildingTitle forKey:@"buildingTitle"];
+    [aCoder encodeObject:self.buildingSite forKey:@"buildingSite"];
+    [aCoder encodeObject:self.buildingSiteCaption forKey:@"buildingSiteCaption"];
+    [aCoder encodeObject:self.buildingGallery forKey:@"buildingGallery"];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -26,12 +25,11 @@
     self = [super init];
     if (self)
     {
-        _eventDate = [aDecoder decodeObjectForKey:@"eventDate"];
-        _eventCity = [aDecoder decodeObjectForKey:@"eventCity"];
-        _eventState = [aDecoder decodeObjectForKey:@"eventState"];
-        _eventBG = [aDecoder decodeObjectForKey:@"eventBG"];
-        _eventCaption = [aDecoder decodeObjectForKey:@"eventCaption"];
-        _eventBGAlpha = [aDecoder decodeObjectForKey:@"eventBGAlpha"];
+        _buildingImage = [aDecoder decodeObjectForKey:@"buildingImage"];
+        _buildingTitle = [aDecoder decodeObjectForKey:@"buildingTitle"];
+        _buildingSite = [aDecoder decodeObjectForKey:@"buildingSite"];
+        _buildingSiteCaption = [aDecoder decodeObjectForKey:@"buildingSiteCaption"];
+        _buildingGallery = [aDecoder decodeObjectForKey:@"buildingGallery"];
     }
     return self;
 }
@@ -66,49 +64,39 @@
     return dictionary;
 }
 
-- (id)initWithCity:(NSString*)eventCity state:(NSString*)eventState caption:(NSString*)eventCaption background:(NSString*)eventBG eventBGAlpha:(NSString*)eventBGAlpha departureDate:(NSDate*)eventDate archived:(BOOL)isArchived
+- (id)initWithImage:(NSString*)buildingImage title:(NSString*)buildingTitle state:(NSString*)buildingSiteCaption caption:(NSString*)buildingSite background:(NSString*)buildingGallery
 {
     self = [super init];
     if (self)
     {
-        _eventBG = eventBG;
-        _eventCity = eventCity;
-        _eventState = eventState;
-        _eventDate = eventDate;
-        _eventCaption = eventCaption;
-        _eventBGAlpha = eventBGAlpha;
+        _buildingImage = buildingImage;
+        _buildingTitle = buildingTitle;
+        _buildingSite = buildingSite;
+        _buildingSiteCaption = buildingSiteCaption;
+        _buildingGallery = buildingGallery;
+
     }
     return self;
 }
 
--(void)setEventBG:(NSString *)eventBG
+-(void)setBuildingTitle:(NSString *)buildingTitle
 {
-    _eventBG = eventBG;
+    _buildingTitle = buildingTitle;
 }
 
--(void)setEventBGAlpha:(NSString *)eventBGAlpha
+-(void)setBuildingSite:(NSString *)buildingSite
 {
-    _eventBGAlpha = eventBGAlpha;
+    _buildingSite = buildingSite;
 }
 
--(void)setEventCaption:(NSString *)eventCaption
+-(void)setBuildingSiteCaption:(NSString *)buildingSiteCaption
 {
-    _eventCaption = eventCaption;
+    _buildingSiteCaption = buildingSiteCaption;
 }
 
--(void)setEventCity:(NSString *)eventCity
+-(void)setBuildingGallery:(NSString *)buildingGallery
 {
-    _eventCity = eventCity;
-}
-
--(void)setEventDate:(NSDate *)eventDate
-{
-    _eventDate = eventDate;
-}
-
--(void)setEventState:(NSString *)eventState
-{
-    _eventState = eventState;
+    _buildingGallery = buildingGallery;
 }
 
 @end

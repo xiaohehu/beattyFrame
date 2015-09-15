@@ -37,7 +37,7 @@
         _zoomingScroll.backgroundColor = [UIColor clearColor];
         _zoomingScroll.delegate=self;
     }
-    [self loadInImge:_dict[@"image"]];
+    [self loadInImge:_dict[@"buildingImage"]];
 }
 
 -(void)loadInImge:(NSString *)imageName
