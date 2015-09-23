@@ -215,11 +215,11 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     for (UIView *dropPinView in _blurView.subviews) {
-        if (dropPinView.tag > 100) {
+        //if (dropPinView.tag > 100) {
             CGRect oldFrame = dropPinView.frame;
             dropPinView.frame = oldFrame;
             dropPinView.transform = CGAffineTransformMakeScale(1.0/_scrollView.zoomScale, 1.0/_scrollView.zoomScale);
-        }
+        //}
     }
 }
 

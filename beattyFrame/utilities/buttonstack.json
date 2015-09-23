@@ -1,20 +1,24 @@
 {
-    "area": [
+    "site": [
 				{
 				"name": "Access",
-				"overlay": "grfx_areaMap_overlay_access.png",
+				"overlay": "grfx_siteMap_overlay_access.png",
+				},
+             	{
+				"name": "Neighborhoods",
+				"overlay": "grfx_siteMap_overlay_neighbor.png",
 				},
 				{
-				"name": "Neighborhoods",
-				"overlay": "grfx_areaMap_overlay_neighbor.png",
+				"name": "Corporate Neighbors",
+				"overlay": "grfx_siteMap_overlay_corp_neighbors.png",
 				},
 				{
 				"name": "Arts & Culture",
-				"overlay": "grfx_areaMap_overlay_culture.png",
+				"overlay": "grfx_siteMap_overlay_arts_culture.png",
 				}
             ],
     "city": [
-                {
+				{
 				"name": "Access",
 				"overlay": "grfx_cityMap_overlay_access.png",
 				},
@@ -23,16 +27,8 @@
 				"overlay": "grfx_cityMap_overlay_neighbor.png",
 				},
 				{
-				"name": "Landmarks",
-				"overlay": "grfx_cityMap_overlay_landmarks.png",
-				},
-				{
 				"name": "Arts & Culture",
-				"overlay": "grfx_cityMap_overlay_culture.png",
-				},
-				{
-				"name": "Corporate Neighbors",
-				"overlay": "grfx_cityMap_overlay_corporate.png",
+				"overlay": "grfx_cityMap_overlay_arts_culture.png",
 				},
 				{
 				"name": "Institutions",

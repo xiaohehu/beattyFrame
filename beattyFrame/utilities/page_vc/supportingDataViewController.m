@@ -10,9 +10,12 @@
 #import "ebZoomingScrollView.h"
 #import "UIColor+Extensions.h"
 #import "animationView.h"
-//#import "motionImageViewController.h"
+#import "AnimationIndex.h"
+#import "gridEcoViewIndex.h"
+#import "gridEcoView.h"
 
-#define animationIndex  6
+static int animationViewIndex = kAnimationIndex;
+static int gridViewIndex = kEcoIndex;
 
 @interface supportingDataViewController () {
 
@@ -37,8 +40,11 @@
 #pragma mark - LAYOUT FLOOR PLAN DATA
 -(void)loadDataAndView
 {
-    if (vcIndex == animationIndex) { // Load the animated grids view
+    if (vcIndex == animationViewIndex) { // Load the animated grids view
         animationView *animation = [[animationView alloc] initWithFrame:self.view.bounds];
+        [self.view addSubview: animation];
+    } else if (vcIndex == gridViewIndex) { // Load the animated grids view
+        gridEcoView *animation = [[gridEcoView alloc] initWithFrame:self.view.bounds];
         [self.view addSubview: animation];
     } else {
         

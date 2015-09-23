@@ -840,14 +840,6 @@
 		887647AB1BA32FD8002D4183 /* grfx_cityMap_overlay_access@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8876478D1BA32FD8002D4183 /* grfx_cityMap_overlay_access@2x.png */; };
 		887647AC1BA32FD8002D4183 /* grfx_cityMap_overlay_neighbor.png in Resources */ = {isa = PBXBuildFile; fileRef = 8876478E1BA32FD8002D4183 /* grfx_cityMap_overlay_neighbor.png */; };
 		887647AD1BA32FD8002D4183 /* grfx_cityMap_overlay_neighbor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8876478F1BA32FD8002D4183 /* grfx_cityMap_overlay_neighbor@2x.png */; };
-		887647AE1BA32FD8002D4183 /* grfx_areaMap_base_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647911BA32FD8002D4183 /* grfx_areaMap_base_map.png */; };
-		887647AF1BA32FD8002D4183 /* grfx_areaMap_base_map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647921BA32FD8002D4183 /* grfx_areaMap_base_map@2x.png */; };
-		887647B01BA32FD8002D4183 /* grfx_areaMap_overlay_access.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647931BA32FD8002D4183 /* grfx_areaMap_overlay_access.png */; };
-		887647B11BA32FD8002D4183 /* grfx_areaMap_overlay_access@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647941BA32FD8002D4183 /* grfx_areaMap_overlay_access@2x.png */; };
-		887647B21BA32FD8002D4183 /* grfx_areaMap_overlay_neighbor.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647951BA32FD8002D4183 /* grfx_areaMap_overlay_neighbor.png */; };
-		887647B31BA32FD8002D4183 /* grfx_areaMap_overlay_neighbor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647961BA32FD8002D4183 /* grfx_areaMap_overlay_neighbor@2x.png */; };
-		887647B41BA32FD8002D4183 /* grfx_areaMap_overlay_site_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647971BA32FD8002D4183 /* grfx_areaMap_overlay_site_marker.png */; };
-		887647B51BA32FD8002D4183 /* grfx_areaMap_overlay_site_marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647981BA32FD8002D4183 /* grfx_areaMap_overlay_site_marker@2x.png */; };
 		887647B61BA32FD8002D4183 /* grfx-site-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 8876479A1BA32FD8002D4183 /* grfx-site-marker.png */; };
 		887647B71BA32FD8002D4183 /* grfx-site-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8876479B1BA32FD8002D4183 /* grfx-site-marker@2x.png */; };
 		887647B81BA32FD8002D4183 /* grfx_regionalMap_base_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 8876479C1BA32FD8002D4183 /* grfx_regionalMap_base_map.png */; };
@@ -858,8 +850,6 @@
 		887647BD1BA32FD8002D4183 /* grfx_regionalMap_overlay_key@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647A11BA32FD8002D4183 /* grfx_regionalMap_overlay_key@2x.png */; };
 		887647BE1BA32FD8002D4183 /* grfx_regionalMap_overlay_stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647A21BA32FD8002D4183 /* grfx_regionalMap_overlay_stats.png */; };
 		887647BF1BA32FD8002D4183 /* grfx_regionalMap_overlay_stats@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647A31BA32FD8002D4183 /* grfx_regionalMap_overlay_stats@2x.png */; };
-		887647C21BA33377002D4183 /* grfx_areaMap_overlay_culture.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647C01BA33377002D4183 /* grfx_areaMap_overlay_culture.png */; };
-		887647C31BA33377002D4183 /* grfx_areaMap_overlay_culture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647C11BA33377002D4183 /* grfx_areaMap_overlay_culture@2x.png */; };
 		887647CC1BA3338E002D4183 /* grfx_cityMap_overlay_corporate.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647C41BA3338E002D4183 /* grfx_cityMap_overlay_corporate.png */; };
 		887647CD1BA3338E002D4183 /* grfx_cityMap_overlay_corporate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647C51BA3338E002D4183 /* grfx_cityMap_overlay_corporate@2x.png */; };
 		887647CE1BA3338E002D4183 /* grfx_cityMap_overlay_culture.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647C61BA3338E002D4183 /* grfx_cityMap_overlay_culture.png */; };
@@ -902,6 +892,30 @@
 		8882337C1BA1BBDD0019FD75 /* grfx_mapMenuBtnSel.png in Resources */ = {isa = PBXBuildFile; fileRef = 888233781BA1BBDD0019FD75 /* grfx_mapMenuBtnSel.png */; };
 		8882337D1BA1BBDD0019FD75 /* grfx_mapMenuBtnSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888233791BA1BBDD0019FD75 /* grfx_mapMenuBtnSel@2x.png */; };
 		888233831BA214930019FD75 /* buttonstack.json in Resources */ = {isa = PBXBuildFile; fileRef = 888233821BA214930019FD75 /* buttonstack.json */; };
+		889F07B21BB1DF7300CBD979 /* supporting-stories-cultural-hub.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07A81BB1DF7300CBD979 /* supporting-stories-cultural-hub.png */; settings = {ASSET_TAGS = (); }; };
+		889F07B31BB1DF7300CBD979 /* supporting-stories-cultural-hub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07A91BB1DF7300CBD979 /* supporting-stories-cultural-hub@2x.png */; settings = {ASSET_TAGS = (); }; };
+		889F07B41BB1DF7300CBD979 /* supporting-stories-eco-district.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07AA1BB1DF7300CBD979 /* supporting-stories-eco-district.png */; settings = {ASSET_TAGS = (); }; };
+		889F07B51BB1DF7300CBD979 /* supporting-stories-eco-district@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07AB1BB1DF7300CBD979 /* supporting-stories-eco-district@2x.png */; settings = {ASSET_TAGS = (); }; };
+		889F07B61BB1DF7300CBD979 /* supporting-stories-getting-to-work.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07AC1BB1DF7300CBD979 /* supporting-stories-getting-to-work.png */; settings = {ASSET_TAGS = (); }; };
+		889F07B71BB1DF7300CBD979 /* supporting-stories-getting-to-work@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07AD1BB1DF7300CBD979 /* supporting-stories-getting-to-work@2x.png */; settings = {ASSET_TAGS = (); }; };
+		889F07B81BB1DF7300CBD979 /* supporting-stories-thriving-baltimore.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07AE1BB1DF7300CBD979 /* supporting-stories-thriving-baltimore.png */; settings = {ASSET_TAGS = (); }; };
+		889F07B91BB1DF7300CBD979 /* supporting-stories-thriving-baltimore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07AF1BB1DF7300CBD979 /* supporting-stories-thriving-baltimore@2x.png */; settings = {ASSET_TAGS = (); }; };
+		889F07BA1BB1DF7300CBD979 /* supporting-stories-urban-renaissance.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07B01BB1DF7300CBD979 /* supporting-stories-urban-renaissance.png */; settings = {ASSET_TAGS = (); }; };
+		889F07BB1BB1DF7300CBD979 /* supporting-stories-urban-renaissance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07B11BB1DF7300CBD979 /* supporting-stories-urban-renaissance@2x.png */; settings = {ASSET_TAGS = (); }; };
+		889F07BD1BB1E57C00CBD979 /* AnimationIndex.h in Sources */ = {isa = PBXBuildFile; fileRef = 889F07BC1BB1E57C00CBD979 /* AnimationIndex.h */; settings = {ASSET_TAGS = (); }; };
+		889F07C01BB1E67600CBD979 /* gridEcoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 889F07BF1BB1E67600CBD979 /* gridEcoView.m */; settings = {ASSET_TAGS = (); }; };
+		889F07E01BB2CADA00CBD979 /* grfx_siteMap_base_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07D61BB2CADA00CBD979 /* grfx_siteMap_base_map.png */; settings = {ASSET_TAGS = (); }; };
+		889F07E11BB2CADA00CBD979 /* grfx_siteMap_base_map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07D71BB2CADA00CBD979 /* grfx_siteMap_base_map@2x.png */; settings = {ASSET_TAGS = (); }; };
+		889F07E21BB2CADA00CBD979 /* grfx_siteMap_overlay_access.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07D81BB2CADA00CBD979 /* grfx_siteMap_overlay_access.png */; settings = {ASSET_TAGS = (); }; };
+		889F07E31BB2CADA00CBD979 /* grfx_siteMap_overlay_access@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07D91BB2CADA00CBD979 /* grfx_siteMap_overlay_access@2x.png */; settings = {ASSET_TAGS = (); }; };
+		889F07E41BB2CADA00CBD979 /* grfx_siteMap_overlay_arts_culture.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07DA1BB2CADA00CBD979 /* grfx_siteMap_overlay_arts_culture.png */; settings = {ASSET_TAGS = (); }; };
+		889F07E51BB2CADA00CBD979 /* grfx_siteMap_overlay_arts_culture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07DB1BB2CADA00CBD979 /* grfx_siteMap_overlay_arts_culture@2x.png */; settings = {ASSET_TAGS = (); }; };
+		889F07E61BB2CADA00CBD979 /* grfx_siteMap_overlay_corp_neighbors.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07DC1BB2CADA00CBD979 /* grfx_siteMap_overlay_corp_neighbors.png */; settings = {ASSET_TAGS = (); }; };
+		889F07E71BB2CADA00CBD979 /* grfx_siteMap_overlay_corp_neighbors@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07DD1BB2CADA00CBD979 /* grfx_siteMap_overlay_corp_neighbors@2x.png */; settings = {ASSET_TAGS = (); }; };
+		889F07E81BB2CADA00CBD979 /* grfx_siteMap_overlay_neighbor.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07DE1BB2CADA00CBD979 /* grfx_siteMap_overlay_neighbor.png */; settings = {ASSET_TAGS = (); }; };
+		889F07E91BB2CADA00CBD979 /* grfx_siteMap_overlay_neighbor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07DF1BB2CADA00CBD979 /* grfx_siteMap_overlay_neighbor@2x.png */; settings = {ASSET_TAGS = (); }; };
+		889F07EC1BB2DD2C00CBD979 /* grfx_cityMap_overlay_arts_culture.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07EA1BB2DD2C00CBD979 /* grfx_cityMap_overlay_arts_culture.png */; settings = {ASSET_TAGS = (); }; };
+		889F07ED1BB2DD2C00CBD979 /* grfx_cityMap_overlay_arts_culture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889F07EB1BB2DD2C00CBD979 /* grfx_cityMap_overlay_arts_culture@2x.png */; settings = {ASSET_TAGS = (); }; };
 		88E0744F1B98CFB400E0982A /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074311B98CFB400E0982A /* ContainerViewController.m */; };
 		88E074501B98CFB400E0982A /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074341B98CFB400E0982A /* FLAnimatedImage.m */; };
 		88E074511B98CFB400E0982A /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074361B98CFB400E0982A /* FLAnimatedImageView.m */; };
@@ -1822,14 +1836,6 @@
 		8876478D1BA32FD8002D4183 /* grfx_cityMap_overlay_access@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_cityMap_overlay_access@2x.png"; sourceTree = "<group>"; };
 		8876478E1BA32FD8002D4183 /* grfx_cityMap_overlay_neighbor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_cityMap_overlay_neighbor.png; sourceTree = "<group>"; };
 		8876478F1BA32FD8002D4183 /* grfx_cityMap_overlay_neighbor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_cityMap_overlay_neighbor@2x.png"; sourceTree = "<group>"; };
-		887647911BA32FD8002D4183 /* grfx_areaMap_base_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_areaMap_base_map.png; sourceTree = "<group>"; };
-		887647921BA32FD8002D4183 /* grfx_areaMap_base_map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_areaMap_base_map@2x.png"; sourceTree = "<group>"; };
-		887647931BA32FD8002D4183 /* grfx_areaMap_overlay_access.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_areaMap_overlay_access.png; sourceTree = "<group>"; };
-		887647941BA32FD8002D4183 /* grfx_areaMap_overlay_access@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_areaMap_overlay_access@2x.png"; sourceTree = "<group>"; };
-		887647951BA32FD8002D4183 /* grfx_areaMap_overlay_neighbor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_areaMap_overlay_neighbor.png; sourceTree = "<group>"; };
-		887647961BA32FD8002D4183 /* grfx_areaMap_overlay_neighbor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_areaMap_overlay_neighbor@2x.png"; sourceTree = "<group>"; };
-		887647971BA32FD8002D4183 /* grfx_areaMap_overlay_site_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_areaMap_overlay_site_marker.png; sourceTree = "<group>"; };
-		887647981BA32FD8002D4183 /* grfx_areaMap_overlay_site_marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_areaMap_overlay_site_marker@2x.png"; sourceTree = "<group>"; };
 		8876479A1BA32FD8002D4183 /* grfx-site-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-site-marker.png"; sourceTree = "<group>"; };
 		8876479B1BA32FD8002D4183 /* grfx-site-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-site-marker@2x.png"; sourceTree = "<group>"; };
 		8876479C1BA32FD8002D4183 /* grfx_regionalMap_base_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_regionalMap_base_map.png; sourceTree = "<group>"; };
@@ -1840,8 +1846,6 @@
 		887647A11BA32FD8002D4183 /* grfx_regionalMap_overlay_key@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_regionalMap_overlay_key@2x.png"; sourceTree = "<group>"; };
 		887647A21BA32FD8002D4183 /* grfx_regionalMap_overlay_stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_regionalMap_overlay_stats.png; sourceTree = "<group>"; };
 		887647A31BA32FD8002D4183 /* grfx_regionalMap_overlay_stats@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_regionalMap_overlay_stats@2x.png"; sourceTree = "<group>"; };
-		887647C01BA33377002D4183 /* grfx_areaMap_overlay_culture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_areaMap_overlay_culture.png; sourceTree = "<group>"; };
-		887647C11BA33377002D4183 /* grfx_areaMap_overlay_culture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_areaMap_overlay_culture@2x.png"; sourceTree = "<group>"; };
 		887647C41BA3338E002D4183 /* grfx_cityMap_overlay_corporate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_cityMap_overlay_corporate.png; sourceTree = "<group>"; };
 		887647C51BA3338E002D4183 /* grfx_cityMap_overlay_corporate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_cityMap_overlay_corporate@2x.png"; sourceTree = "<group>"; };
 		887647C61BA3338E002D4183 /* grfx_cityMap_overlay_culture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_cityMap_overlay_culture.png; sourceTree = "<group>"; };
@@ -1889,6 +1893,32 @@
 		888233781BA1BBDD0019FD75 /* grfx_mapMenuBtnSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_mapMenuBtnSel.png; sourceTree = "<group>"; };
 		888233791BA1BBDD0019FD75 /* grfx_mapMenuBtnSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_mapMenuBtnSel@2x.png"; sourceTree = "<group>"; };
 		888233821BA214930019FD75 /* buttonstack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = buttonstack.json; path = utilities/buttonstack.json; sourceTree = "<group>"; };
+		889F07A81BB1DF7300CBD979 /* supporting-stories-cultural-hub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "supporting-stories-cultural-hub.png"; path = "beattyFrame/src/grfx/supporting/supporting-stories-cultural-hub.png"; sourceTree = SOURCE_ROOT; };
+		889F07A91BB1DF7300CBD979 /* supporting-stories-cultural-hub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "supporting-stories-cultural-hub@2x.png"; path = "beattyFrame/src/grfx/supporting/supporting-stories-cultural-hub@2x.png"; sourceTree = SOURCE_ROOT; };
+		889F07AA1BB1DF7300CBD979 /* supporting-stories-eco-district.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "supporting-stories-eco-district.png"; path = "beattyFrame/src/grfx/supporting/supporting-stories-eco-district.png"; sourceTree = SOURCE_ROOT; };
+		889F07AB1BB1DF7300CBD979 /* supporting-stories-eco-district@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "supporting-stories-eco-district@2x.png"; path = "beattyFrame/src/grfx/supporting/supporting-stories-eco-district@2x.png"; sourceTree = SOURCE_ROOT; };
+		889F07AC1BB1DF7300CBD979 /* supporting-stories-getting-to-work.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "supporting-stories-getting-to-work.png"; path = "beattyFrame/src/grfx/supporting/supporting-stories-getting-to-work.png"; sourceTree = SOURCE_ROOT; };
+		889F07AD1BB1DF7300CBD979 /* supporting-stories-getting-to-work@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "supporting-stories-getting-to-work@2x.png"; path = "beattyFrame/src/grfx/supporting/supporting-stories-getting-to-work@2x.png"; sourceTree = SOURCE_ROOT; };
+		889F07AE1BB1DF7300CBD979 /* supporting-stories-thriving-baltimore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "supporting-stories-thriving-baltimore.png"; path = "beattyFrame/src/grfx/supporting/supporting-stories-thriving-baltimore.png"; sourceTree = SOURCE_ROOT; };
+		889F07AF1BB1DF7300CBD979 /* supporting-stories-thriving-baltimore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "supporting-stories-thriving-baltimore@2x.png"; path = "beattyFrame/src/grfx/supporting/supporting-stories-thriving-baltimore@2x.png"; sourceTree = SOURCE_ROOT; };
+		889F07B01BB1DF7300CBD979 /* supporting-stories-urban-renaissance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "supporting-stories-urban-renaissance.png"; path = "beattyFrame/src/grfx/supporting/supporting-stories-urban-renaissance.png"; sourceTree = SOURCE_ROOT; };
+		889F07B11BB1DF7300CBD979 /* supporting-stories-urban-renaissance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "supporting-stories-urban-renaissance@2x.png"; path = "beattyFrame/src/grfx/supporting/supporting-stories-urban-renaissance@2x.png"; sourceTree = SOURCE_ROOT; };
+		889F07BC1BB1E57C00CBD979 /* AnimationIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationIndex.h; path = beattyFrame/DataSource/AnimationIndex.h; sourceTree = SOURCE_ROOT; };
+		889F07BE1BB1E67600CBD979 /* gridEcoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gridEcoView.h; path = utilities/gridEcoView.h; sourceTree = "<group>"; };
+		889F07BF1BB1E67600CBD979 /* gridEcoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gridEcoView.m; path = utilities/gridEcoView.m; sourceTree = "<group>"; };
+		889F07C11BB1E69D00CBD979 /* gridEcoViewIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gridEcoViewIndex.h; sourceTree = "<group>"; };
+		889F07D61BB2CADA00CBD979 /* grfx_siteMap_base_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_siteMap_base_map.png; path = beattyFrame/src/grfx/Location/site/grfx_siteMap_base_map.png; sourceTree = SOURCE_ROOT; };
+		889F07D71BB2CADA00CBD979 /* grfx_siteMap_base_map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_siteMap_base_map@2x.png"; path = "beattyFrame/src/grfx/Location/site/grfx_siteMap_base_map@2x.png"; sourceTree = SOURCE_ROOT; };
+		889F07D81BB2CADA00CBD979 /* grfx_siteMap_overlay_access.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_siteMap_overlay_access.png; path = beattyFrame/src/grfx/Location/site/grfx_siteMap_overlay_access.png; sourceTree = SOURCE_ROOT; };
+		889F07D91BB2CADA00CBD979 /* grfx_siteMap_overlay_access@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_siteMap_overlay_access@2x.png"; path = "beattyFrame/src/grfx/Location/site/grfx_siteMap_overlay_access@2x.png"; sourceTree = SOURCE_ROOT; };
+		889F07DA1BB2CADA00CBD979 /* grfx_siteMap_overlay_arts_culture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_siteMap_overlay_arts_culture.png; path = beattyFrame/src/grfx/Location/site/grfx_siteMap_overlay_arts_culture.png; sourceTree = SOURCE_ROOT; };
+		889F07DB1BB2CADA00CBD979 /* grfx_siteMap_overlay_arts_culture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_siteMap_overlay_arts_culture@2x.png"; path = "beattyFrame/src/grfx/Location/site/grfx_siteMap_overlay_arts_culture@2x.png"; sourceTree = SOURCE_ROOT; };
+		889F07DC1BB2CADA00CBD979 /* grfx_siteMap_overlay_corp_neighbors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_siteMap_overlay_corp_neighbors.png; path = beattyFrame/src/grfx/Location/site/grfx_siteMap_overlay_corp_neighbors.png; sourceTree = SOURCE_ROOT; };
+		889F07DD1BB2CADA00CBD979 /* grfx_siteMap_overlay_corp_neighbors@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_siteMap_overlay_corp_neighbors@2x.png"; path = "beattyFrame/src/grfx/Location/site/grfx_siteMap_overlay_corp_neighbors@2x.png"; sourceTree = SOURCE_ROOT; };
+		889F07DE1BB2CADA00CBD979 /* grfx_siteMap_overlay_neighbor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grfx_siteMap_overlay_neighbor.png; path = beattyFrame/src/grfx/Location/site/grfx_siteMap_overlay_neighbor.png; sourceTree = SOURCE_ROOT; };
+		889F07DF1BB2CADA00CBD979 /* grfx_siteMap_overlay_neighbor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_siteMap_overlay_neighbor@2x.png"; path = "beattyFrame/src/grfx/Location/site/grfx_siteMap_overlay_neighbor@2x.png"; sourceTree = SOURCE_ROOT; };
+		889F07EA1BB2DD2C00CBD979 /* grfx_cityMap_overlay_arts_culture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_cityMap_overlay_arts_culture.png; sourceTree = "<group>"; };
+		889F07EB1BB2DD2C00CBD979 /* grfx_cityMap_overlay_arts_culture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_cityMap_overlay_arts_culture@2x.png"; sourceTree = "<group>"; };
 		88E074301B98CFB400E0982A /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
 		88E074311B98CFB400E0982A /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		88E074331B98CFB400E0982A /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
@@ -2542,6 +2572,8 @@
 				82A128B31B69164100564266 /* page_vc */,
 				82A1282E1B66657B00564266 /* animationView.h */,
 				82A1282F1B66657C00564266 /* animationView.m */,
+				889F07BE1BB1E67600CBD979 /* gridEcoView.h */,
+				889F07BF1BB1E67600CBD979 /* gridEcoView.m */,
 				824D2B3C1B62B5C600E5F5A5 /* EMBSPCell.h */,
 				824D2B3D1B62B5C600E5F5A5 /* EMBSPCell.m */,
 				824D2B3E1B62B5C600E5F5A5 /* EMBSPCell.xib */,
@@ -3063,6 +3095,8 @@
 		824D2B131B6169AB00E5F5A5 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				889F07BC1BB1E57C00CBD979 /* AnimationIndex.h */,
+				889F07C11BB1E69D00CBD979 /* gridEcoViewIndex.h */,
 				822822B31B850B55004154E7 /* building_data.plist */,
 				824D2B551B62CF7F00E5F5A5 /* shareableData.plist */,
 				824D2B1E1B61857E00E5F5A5 /* photoData.plist */,
@@ -3246,7 +3280,7 @@
 		82CA34221B6BEB950065E31E /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				887647901BA32FD8002D4183 /* area */,
+				887647901BA32FD8002D4183 /* site */,
 				887647851BA32FD8002D4183 /* city */,
 				888233761BA1BBDD0019FD75 /* grfx_mapMenuBtnDef.png */,
 				888233771BA1BBDD0019FD75 /* grfx_mapMenuBtnDef@2x.png */,
@@ -3261,6 +3295,16 @@
 		82CA342F1B6C02C40065E31E /* supporting_stories */ = {
 			isa = PBXGroup;
 			children = (
+				889F07A81BB1DF7300CBD979 /* supporting-stories-cultural-hub.png */,
+				889F07A91BB1DF7300CBD979 /* supporting-stories-cultural-hub@2x.png */,
+				889F07AA1BB1DF7300CBD979 /* supporting-stories-eco-district.png */,
+				889F07AB1BB1DF7300CBD979 /* supporting-stories-eco-district@2x.png */,
+				889F07AC1BB1DF7300CBD979 /* supporting-stories-getting-to-work.png */,
+				889F07AD1BB1DF7300CBD979 /* supporting-stories-getting-to-work@2x.png */,
+				889F07AE1BB1DF7300CBD979 /* supporting-stories-thriving-baltimore.png */,
+				889F07AF1BB1DF7300CBD979 /* supporting-stories-thriving-baltimore@2x.png */,
+				889F07B01BB1DF7300CBD979 /* supporting-stories-urban-renaissance.png */,
+				889F07B11BB1DF7300CBD979 /* supporting-stories-urban-renaissance@2x.png */,
 				82CA34301B6C02C40065E31E /* grfx_ecoDistrict.jpg */,
 				82CA34311B6C02C40065E31E /* grfx_ecoDistrict@2x.jpg */,
 				82CA34321B6C02C40065E31E /* lifeStyle_bg.jpg */,
@@ -3292,6 +3336,8 @@
 				887647C51BA3338E002D4183 /* grfx_cityMap_overlay_corporate@2x.png */,
 				887647C61BA3338E002D4183 /* grfx_cityMap_overlay_culture.png */,
 				887647C71BA3338E002D4183 /* grfx_cityMap_overlay_culture@2x.png */,
+				889F07EA1BB2DD2C00CBD979 /* grfx_cityMap_overlay_arts_culture.png */,
+				889F07EB1BB2DD2C00CBD979 /* grfx_cityMap_overlay_arts_culture@2x.png */,
 				887647C81BA3338E002D4183 /* grfx_cityMap_overlay_institutions.png */,
 				887647C91BA3338E002D4183 /* grfx_cityMap_overlay_institutions@2x.png */,
 				887647CA1BA3338E002D4183 /* grfx_cityMap_overlay_landmarks.png */,
@@ -3302,20 +3348,21 @@
 			path = city;
 			sourceTree = "<group>";
 		};
-		887647901BA32FD8002D4183 /* area */ = {
+		887647901BA32FD8002D4183 /* site */ = {
 			isa = PBXGroup;
 			children = (
-				887647911BA32FD8002D4183 /* grfx_areaMap_base_map.png */,
-				887647921BA32FD8002D4183 /* grfx_areaMap_base_map@2x.png */,
-				887647931BA32FD8002D4183 /* grfx_areaMap_overlay_access.png */,
-				887647941BA32FD8002D4183 /* grfx_areaMap_overlay_access@2x.png */,
-				887647C01BA33377002D4183 /* grfx_areaMap_overlay_culture.png */,
-				887647C11BA33377002D4183 /* grfx_areaMap_overlay_culture@2x.png */,
-				887647951BA32FD8002D4183 /* grfx_areaMap_overlay_neighbor.png */,
-				887647961BA32FD8002D4183 /* grfx_areaMap_overlay_neighbor@2x.png */,
-				887647971BA32FD8002D4183 /* grfx_areaMap_overlay_site_marker.png */,
-				887647981BA32FD8002D4183 /* grfx_areaMap_overlay_site_marker@2x.png */,
+				889F07D61BB2CADA00CBD979 /* grfx_siteMap_base_map.png */,
+				889F07D71BB2CADA00CBD979 /* grfx_siteMap_base_map@2x.png */,
+				889F07D81BB2CADA00CBD979 /* grfx_siteMap_overlay_access.png */,
+				889F07D91BB2CADA00CBD979 /* grfx_siteMap_overlay_access@2x.png */,
+				889F07DA1BB2CADA00CBD979 /* grfx_siteMap_overlay_arts_culture.png */,
+				889F07DB1BB2CADA00CBD979 /* grfx_siteMap_overlay_arts_culture@2x.png */,
+				889F07DC1BB2CADA00CBD979 /* grfx_siteMap_overlay_corp_neighbors.png */,
+				889F07DD1BB2CADA00CBD979 /* grfx_siteMap_overlay_corp_neighbors@2x.png */,
+				889F07DE1BB2CADA00CBD979 /* grfx_siteMap_overlay_neighbor.png */,
+				889F07DF1BB2CADA00CBD979 /* grfx_siteMap_overlay_neighbor@2x.png */,
 			);
+			name = site;
 			path = area;
 			sourceTree = "<group>";
 		};
@@ -3559,6 +3606,7 @@
 				824D2A451B61671600E5F5A5 /* phase_b_color_00010.jpg in Resources */,
 				824D29F31B61671600E5F5A5 /* phase_b_base_00000.jpg in Resources */,
 				8251FF641B7D0DE80021C1BA /* phase_a_base_00026.png in Resources */,
+				889F07E71BB2CADA00CBD979 /* grfx_siteMap_overlay_corp_neighbors@2x.png in Resources */,
 				82A1286B1B66668800564266 /* fact-grid-03-sm@2x.png in Resources */,
 				822823751B862A0A004154E7 /* View 11 - Mews.jpg in Resources */,
 				824D2A531B61671600E5F5A5 /* phase_b_color_00024.jpg in Resources */,
@@ -3567,7 +3615,6 @@
 				8251FF4E1B7D0DE80021C1BA /* phase_a_base_00004.png in Resources */,
 				822823D91B862A0A004154E7 /* thumb_film3.jpg in Resources */,
 				8251FE6C1B7CCB110021C1BA /* tbd_3.jpg in Resources */,
-				887647B41BA32FD8002D4183 /* grfx_areaMap_overlay_site_marker.png in Resources */,
 				8251FEE61B7D0D880021C1BA /* phase_a_color_00046.png in Resources */,
 				824D2BEE1B62D02100E5F5A5 /* share_View 12 - N Randolph.jpg.jpg in Resources */,
 				824D2A361B61671600E5F5A5 /* phase_b_base_00067.jpg in Resources */,
@@ -3595,7 +3642,6 @@
 				8251FF8D1B7D0DE80021C1BA /* phase_a_base_00067.png in Resources */,
 				822823D61B862A0A004154E7 /* thumb_exterior.jpg in Resources */,
 				824D2BEB1B62D02100E5F5A5 /* share_View 1 - Corner.jpg.jpg in Resources */,
-				887647AE1BA32FD8002D4183 /* grfx_areaMap_base_map.png in Resources */,
 				8251FED61B7D0D880021C1BA /* phase_a_color_00030.png in Resources */,
 				822823681B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot06.jpg in Resources */,
 				824D2A341B61671600E5F5A5 /* phase_b_base_00065.jpg in Resources */,
@@ -3610,9 +3656,11 @@
 				824D2BE61B62D02100E5F5A5 /* share_store06.jpg.jpg in Resources */,
 				824D2A121B61671600E5F5A5 /* phase_b_base_00031.jpg in Resources */,
 				824D2AE21B61671600E5F5A5 /* phase_d_color_00023.jpg in Resources */,
+				889F07E41BB2CADA00CBD979 /* grfx_siteMap_overlay_arts_culture.png in Resources */,
 				8251FF6D1B7D0DE80021C1BA /* phase_a_base_00035.png in Resources */,
 				82A128631B66668800564266 /* fact-grid-01-sm@2x.png in Resources */,
 				824D2AD11B61671600E5F5A5 /* phase_d_color_00006.jpg in Resources */,
+				889F07B61BB1DF7300CBD979 /* supporting-stories-getting-to-work.png in Resources */,
 				82A1287E1B66668800564266 /* fact-grid-08-sm.png in Resources */,
 				824D2BEC1B62D02100E5F5A5 /* share_View 10- Mews.jpg.jpg in Resources */,
 				8251FF4C1B7D0DE80021C1BA /* phase_a_base_00002.png in Resources */,
@@ -3631,6 +3679,7 @@
 				822823DC1B862A0A004154E7 /* thumb_film6.jpg in Resources */,
 				824D2BD41B62D02100E5F5A5 /* share_Pg 9  0251 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				822823D51B862A0A004154E7 /* thumb_existing.jpg in Resources */,
+				889F07B71BB1DF7300CBD979 /* supporting-stories-getting-to-work@2x.png in Resources */,
 				88E79F111B98CC4900D41B23 /* ui_tips@2x.png in Resources */,
 				824D2AF41B61671600E5F5A5 /* phase_d_color_00041.jpg in Resources */,
 				8251FF001B7D0D880021C1BA /* phase_a_color_00072.png in Resources */,
@@ -3668,14 +3717,12 @@
 				8251FF5C1B7D0DE80021C1BA /* phase_a_base_00018.png in Resources */,
 				824D2A621B61671600E5F5A5 /* phase_b_color_00039.jpg in Resources */,
 				887647E01BA34E18002D4183 /* sponsorship_00.png in Resources */,
-				887647B31BA32FD8002D4183 /* grfx_areaMap_overlay_neighbor@2x.png in Resources */,
 				824D2A991B61671600E5F5A5 /* phase_d_base_00022.jpg in Resources */,
 				824D2A2A1B61671600E5F5A5 /* phase_b_base_00055.jpg in Resources */,
 				822822A41B83D5AB004154E7 /* grfx_expand@2x.png in Resources */,
 				824D2A421B61671600E5F5A5 /* phase_b_color_00007.jpg in Resources */,
 				82A1287F1B66668800564266 /* fact-grid-08-sm@2x.png in Resources */,
 				82A128751B66668800564266 /* fact-grid-06-lg@2x.png in Resources */,
-				887647B01BA32FD8002D4183 /* grfx_areaMap_overlay_access.png in Resources */,
 				8251FEC61B7D0D880021C1BA /* phase_a_color_00014.png in Resources */,
 				824D2AE71B61671600E5F5A5 /* phase_d_color_00028.jpg in Resources */,
 				82A128821B66668800564266 /* fact-grid-09-sm.png in Resources */,
@@ -3701,7 +3748,6 @@
 				82115DE91B6FB14400A36684 /* GoodPro-WideBook.otf in Resources */,
 				824D2BB51B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot01.jpg.jpg in Resources */,
 				822823BA1B862A0A004154E7 /* 0160 BCM (c) 2014 David Galen.jpg in Resources */,
-				887647B51BA32FD8002D4183 /* grfx_areaMap_overlay_site_marker@2x.png in Resources */,
 				822823901B862A0A004154E7 /* Leasing_Page_4.jpg in Resources */,
 				824D2A7E1B61671600E5F5A5 /* phase_b_color_00067.jpg in Resources */,
 				8251FF4A1B7D0DE80021C1BA /* phase_a_base_00000.png in Resources */,
@@ -3820,6 +3866,7 @@
 				822823761B862A0A004154E7 /* View 12 - N Randolph.jpg in Resources */,
 				824D2AEC1B61671600E5F5A5 /* phase_d_color_00033.jpg in Resources */,
 				822823B01B862A0A004154E7 /* street01.jpg in Resources */,
+				889F07E61BB2CADA00CBD979 /* grfx_siteMap_overlay_corp_neighbors.png in Resources */,
 				822823B61B862A0A004154E7 /* market_interior02.jpg in Resources */,
 				824D2B2B1B6186FA00E5F5A5 /* Lobby View.jpg in Resources */,
 				824D2AD51B61671600E5F5A5 /* phase_d_color_00010.jpg in Resources */,
@@ -3830,6 +3877,7 @@
 				824D2BBA1B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot06.jpg.jpg in Resources */,
 				824D2A1C1B61671600E5F5A5 /* phase_b_base_00041.jpg in Resources */,
 				8251FF881B7D0DE80021C1BA /* phase_a_base_00062.png in Resources */,
+				889F07E01BB2CADA00CBD979 /* grfx_siteMap_base_map.png in Resources */,
 				8251FEF51B7D0D880021C1BA /* phase_a_color_00061.png in Resources */,
 				822823631B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot01.jpg in Resources */,
 				8251FEFF1B7D0D880021C1BA /* phase_a_color_00071.png in Resources */,
@@ -3894,7 +3942,9 @@
 				824D2A931B61671600E5F5A5 /* phase_d_base_00016.jpg in Resources */,
 				8251FEE31B7D0D880021C1BA /* phase_a_color_00043.png in Resources */,
 				82A1287B1B66668800564266 /* fact-grid-07-sm@2x.png in Resources */,
+				889F07B41BB1DF7300CBD979 /* supporting-stories-eco-district.png in Resources */,
 				824D2B051B61671600E5F5A5 /* phase_d_color_00058.jpg in Resources */,
+				889F07E51BB2CADA00CBD979 /* grfx_siteMap_overlay_arts_culture@2x.png in Resources */,
 				824D2BD51B62D02100E5F5A5 /* share_Picture 024.jpg.jpg in Resources */,
 				824D2A751B61671600E5F5A5 /* phase_b_color_00058.jpg in Resources */,
 				8251FE641B7BB2470021C1BA /* supporting_story_2.jpg in Resources */,
@@ -3916,6 +3966,7 @@
 				824D2A2E1B61671600E5F5A5 /* phase_b_base_00059.jpg in Resources */,
 				822823DF1B862A0A004154E7 /* thumb_film_full.jpg in Resources */,
 				824D2A631B61671600E5F5A5 /* phase_b_color_00040.jpg in Resources */,
+				889F07B81BB1DF7300CBD979 /* supporting-stories-thriving-baltimore.png in Resources */,
 				824D2A8B1B61671600E5F5A5 /* phase_d_base_00008.jpg in Resources */,
 				824D2BC71B62D02100E5F5A5 /* share_inspi03.jpg.jpg in Resources */,
 				824D2A6D1B61671600E5F5A5 /* phase_b_color_00050.jpg in Resources */,
@@ -4005,6 +4056,7 @@
 				824D27991B6039C300E5F5A5 /* main_bg.jpg in Resources */,
 				8251FED51B7D0D880021C1BA /* phase_a_color_00029.png in Resources */,
 				824D2BD81B62D02100E5F5A5 /* share_Picture 031.jpg.jpg in Resources */,
+				889F07BB1BB1DF7300CBD979 /* supporting-stories-urban-renaissance@2x.png in Resources */,
 				82A128831B66668800564266 /* fact-grid-09-sm@2x.png in Resources */,
 				8251FF7D1B7D0DE80021C1BA /* phase_a_base_00051.png in Resources */,
 				822823E31B862A0A004154E7 /* thumb_lifeStyle.jpg in Resources */,
@@ -4035,7 +4087,6 @@
 				8882337C1BA1BBDD0019FD75 /* grfx_mapMenuBtnSel.png in Resources */,
 				824D2A1D1B61671600E5F5A5 /* phase_b_base_00042.jpg in Resources */,
 				822823B81B862A0A004154E7 /* Ballston aerial01.jpg in Resources */,
-				887647C21BA33377002D4183 /* grfx_areaMap_overlay_culture.png in Resources */,
 				824D2BE31B62D02100E5F5A5 /* share_store03.jpg.jpg in Resources */,
 				88E6B6EC1BA5DCA10057AE4E /* siteplan_11.png in Resources */,
 				824D2ADB1B61671600E5F5A5 /* phase_d_color_00016.jpg in Resources */,
@@ -4111,7 +4162,6 @@
 				824D2ACF1B61671600E5F5A5 /* phase_d_color_00004.jpg in Resources */,
 				824D2B031B61671600E5F5A5 /* phase_d_color_00056.jpg in Resources */,
 				824D2BE41B62D02100E5F5A5 /* share_store04.jpg.jpg in Resources */,
-				887647C31BA33377002D4183 /* grfx_areaMap_overlay_culture@2x.png in Resources */,
 				824D2A351B61671600E5F5A5 /* phase_b_base_00066.jpg in Resources */,
 				824D2A8F1B61671600E5F5A5 /* phase_d_base_00012.jpg in Resources */,
 				824D29F71B61671600E5F5A5 /* phase_b_base_00004.jpg in Resources */,
@@ -4157,7 +4207,9 @@
 				824D2AFC1B61671600E5F5A5 /* phase_d_color_00049.jpg in Resources */,
 				824D2A8A1B61671600E5F5A5 /* phase_d_base_00007.jpg in Resources */,
 				824D2A051B61671600E5F5A5 /* phase_b_base_00018.jpg in Resources */,
+				889F07E91BB2CADA00CBD979 /* grfx_siteMap_overlay_neighbor@2x.png in Resources */,
 				8251FED31B7D0D880021C1BA /* phase_a_color_00027.png in Resources */,
+				889F07B91BB1DF7300CBD979 /* supporting-stories-thriving-baltimore@2x.png in Resources */,
 				824D2B0F1B61671600E5F5A5 /* phase_d_color_00068.jpg in Resources */,
 				824D2BB61B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot02.jpg.jpg in Resources */,
 				8251FEFD1B7D0D880021C1BA /* phase_a_color_00069.png in Resources */,
@@ -4165,6 +4217,7 @@
 				8251FF4D1B7D0DE80021C1BA /* phase_a_base_00003.png in Resources */,
 				82A1287D1B66668800564266 /* fact-grid-08-lg@2x.png in Resources */,
 				824D2A7F1B61671600E5F5A5 /* phase_b_color_00068.jpg in Resources */,
+				889F07BA1BB1DF7300CBD979 /* supporting-stories-urban-renaissance.png in Resources */,
 				824D2ADD1B61671600E5F5A5 /* phase_d_color_00018.jpg in Resources */,
 				824D2A961B61671600E5F5A5 /* phase_d_base_00019.jpg in Resources */,
 				8251FEBB1B7D0D880021C1BA /* phase_a_color_00003.png in Resources */,
@@ -4183,6 +4236,7 @@
 				824D2A3B1B61671600E5F5A5 /* phase_b_color_00000.jpg in Resources */,
 				8251FE661B7BB2470021C1BA /* supporting_story_4.jpg in Resources */,
 				887647BA1BA32FD8002D4183 /* grfx_regionalMap_overlay_access.png in Resources */,
+				889F07B31BB1DF7300CBD979 /* supporting-stories-cultural-hub@2x.png in Resources */,
 				824D2AE81B61671600E5F5A5 /* phase_d_color_00029.jpg in Resources */,
 				824D2A6B1B61671600E5F5A5 /* phase_b_color_00048.jpg in Resources */,
 				8882337B1BA1BBDD0019FD75 /* grfx_mapMenuBtnDef@2x.png in Resources */,
@@ -4232,6 +4286,7 @@
 				824D2BDD1B62D02100E5F5A5 /* share_Picture 049.jpg.jpg in Resources */,
 				8251FFA71B7E817B0021C1BA /* grfx_menuWebcam.jpg in Resources */,
 				824D2A9A1B61671600E5F5A5 /* phase_d_base_00023.jpg in Resources */,
+				889F07E21BB2CADA00CBD979 /* grfx_siteMap_overlay_access.png in Resources */,
 				822823A71B862A0A004154E7 /* inspi06.jpg in Resources */,
 				8251FFAA1B7E817B0021C1BA /* grfx_menuWebcam@2x.jpg in Resources */,
 				824D2AB81B61671600E5F5A5 /* phase_d_base_00053.jpg in Resources */,
@@ -4254,6 +4309,7 @@
 				822823AE1B862A0A004154E7 /* store06.jpg in Resources */,
 				824D2AFA1B61671600E5F5A5 /* phase_d_color_00047.jpg in Resources */,
 				8228237B1B862A0A004154E7 /* View 8 - Plaza.jpg in Resources */,
+				889F07EC1BB2DD2C00CBD979 /* grfx_cityMap_overlay_arts_culture.png in Resources */,
 				824D2B021B61671600E5F5A5 /* phase_d_color_00055.jpg in Resources */,
 				824D2AEF1B61671600E5F5A5 /* phase_d_color_00036.jpg in Resources */,
 				887647A71BA32FD8002D4183 /* grfx-site-marker@2x.png in Resources */,
@@ -4275,7 +4331,9 @@
 				8251FEB91B7D0D880021C1BA /* phase_a_color_00001.png in Resources */,
 				8251FF7F1B7D0DE80021C1BA /* phase_a_base_00053.png in Resources */,
 				824D2BE01B62D02100E5F5A5 /* share_Picture 056.jpg.jpg in Resources */,
+				889F07ED1BB2DD2C00CBD979 /* grfx_cityMap_overlay_arts_culture@2x.png in Resources */,
 				8251FEF81B7D0D880021C1BA /* phase_a_color_00064.png in Resources */,
+				889F07B21BB1DF7300CBD979 /* supporting-stories-cultural-hub.png in Resources */,
 				8251FF741B7D0DE80021C1BA /* phase_a_base_00042.png in Resources */,
 				824D2A471B61671600E5F5A5 /* phase_b_color_00012.jpg in Resources */,
 				822823DA1B862A0A004154E7 /* thumb_film4.jpg in Resources */,
@@ -4287,7 +4345,6 @@
 				8251FED81B7D0D880021C1BA /* phase_a_color_00032.png in Resources */,
 				824D2BD01B62D02100E5F5A5 /* share_market_interior03.jpg.jpg in Resources */,
 				824D2A5F1B61671600E5F5A5 /* phase_b_color_00036.jpg in Resources */,
-				887647B21BA32FD8002D4183 /* grfx_areaMap_overlay_neighbor.png in Resources */,
 				824D2AC91B61671600E5F5A5 /* phase_d_base_00070.jpg in Resources */,
 				824D2A301B61671600E5F5A5 /* phase_b_base_00061.jpg in Resources */,
 				824D2A401B61671600E5F5A5 /* phase_b_color_00005.jpg in Resources */,
@@ -4351,7 +4408,6 @@
 				822823CB1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg in Resources */,
 				824D2BD91B62D02100E5F5A5 /* share_Picture 035.jpg.jpg in Resources */,
 				8251FEBE1B7D0D880021C1BA /* phase_a_color_00006.png in Resources */,
-				887647B11BA32FD8002D4183 /* grfx_areaMap_overlay_access@2x.png in Resources */,
 				824D2BB01B62D02100E5F5A5 /* share_arch_04.jpg.jpg in Resources */,
 				8251FF811B7D0DE80021C1BA /* phase_a_base_00055.png in Resources */,
 				8251FE631B7BB2470021C1BA /* supporting_story_1.jpg in Resources */,
@@ -4372,9 +4428,11 @@
 				887648031BA35247002D4183 /* Parcel_01@2x.jpg in Resources */,
 				8251FF511B7D0DE80021C1BA /* phase_a_base_00007.png in Resources */,
 				824D2A2B1B61671600E5F5A5 /* phase_b_base_00056.jpg in Resources */,
+				889F07E31BB2CADA00CBD979 /* grfx_siteMap_overlay_access@2x.png in Resources */,
 				824D2A781B61671600E5F5A5 /* phase_b_color_00061.jpg in Resources */,
 				82A128701B66668800564266 /* fact-grid-05-lg.png in Resources */,
 				82A128851B66668800564266 /* grfx-arrow-right@2x.png in Resources */,
+				889F07B51BB1DF7300CBD979 /* supporting-stories-eco-district@2x.png in Resources */,
 				824D2ABA1B61671600E5F5A5 /* phase_d_base_00055.jpg in Resources */,
 				824D2BBD1B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View01_051215.jpg.jpg in Resources */,
 				8251FF8A1B7D0DE80021C1BA /* phase_a_base_00064.png in Resources */,
@@ -4404,12 +4462,13 @@
 				824D27851B5FE0CD00E5F5A5 /* grfx_summary.jpg in Resources */,
 				824D2B081B61671600E5F5A5 /* phase_d_color_00061.jpg in Resources */,
 				887647CD1BA3338E002D4183 /* grfx_cityMap_overlay_corporate@2x.png in Resources */,
+				889F07E81BB2CADA00CBD979 /* grfx_siteMap_overlay_neighbor.png in Resources */,
 				824D2AAC1B61671600E5F5A5 /* phase_d_base_00041.jpg in Resources */,
 				88E6B6F11BA5DCA10057AE4E /* siteplan_10.png in Resources */,
 				8228229A1B83CE6D004154E7 /* grfx_buildingList@2x.jpg in Resources */,
 				824D2AEE1B61671600E5F5A5 /* phase_d_color_00035.jpg in Resources */,
 				824D2BE71B62D02100E5F5A5 /* share_store07.jpg.jpg in Resources */,
-				887647AF1BA32FD8002D4183 /* grfx_areaMap_base_map@2x.png in Resources */,
+				889F07E11BB2CADA00CBD979 /* grfx_siteMap_base_map@2x.png in Resources */,
 				822823E91B862A0A004154E7 /* thumb_sdpackage.jpg in Resources */,
 				8251FEDA1B7D0D880021C1BA /* phase_a_color_00034.png in Resources */,
 				824D2A381B61671600E5F5A5 /* phase_b_base_00069.jpg in Resources */,
@@ -4454,7 +4513,9 @@
 				88E074511B98CFB400E0982A /* FLAnimatedImageView.m in Sources */,
 				8251FFAE1B7E845C0021C1BA /* Reachability.m in Sources */,
 				824D272E1B5D7E6700E5F5A5 /* ViewController.m in Sources */,
+				889F07BD1BB1E57C00CBD979 /* AnimationIndex.h in Sources */,
 				824D2B351B6286AA00E5F5A5 /* embEmailData.m in Sources */,
+				889F07C01BB1E67600CBD979 /* gridEcoView.m in Sources */,
 				824D272B1B5D7E6700E5F5A5 /* AppDelegate.m in Sources */,
 				824D279D1B613EC500E5F5A5 /* Site360ViewController.m in Sources */,
 				824D27281B5D7E6700E5F5A5 /* main.m in Sources */,

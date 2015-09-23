@@ -10,17 +10,22 @@
 #import "supportingModelController.h"
 #import "supportingDataViewController.h"
 #import "UIColor+Extensions.h"
-#import "animationView.h"
+//#import "animationView.h"
 #import "xhPageViewController.h"
-static CGFloat  bottomMenuWidth = 572;
+#import "AnimationIndex.h"
+#import "gridEcoViewIndex.h"
+
+static CGFloat  bottomMenuWidth = 750;
 static CGFloat  bottomMenuHeight = 37;
-static int      animationViewIndex = 6;
+static int      animationViewIndex = kAnimationIndex;
+static int      gridViewIndex = kEcoIndex;
+
 @interface SupportingViewController () <UIPageViewControllerDelegate, UIGestureRecognizerDelegate>
 {
     UIView          *uiv_bottomMenu;
     UIView          *uiv_bottomHighlightView;
     UILabel         *uil_pageNum;
-    NSArray         *arr_menuTitles;
+    NSMutableArray  *arr_menuTitles;
     NSMutableArray  *arr_menuButton;
     NSArray         *arr_lastIndex;
     NSArray         *arr_firstIndex;
@@ -68,27 +73,34 @@ static int      animationViewIndex = 6;
 # pragma mark - View Controller Data
 - (void)prepareData {
     arr_menuButton = [[NSMutableArray alloc] init];
+    arr_menuTitles = [[NSMutableArray alloc] init];
+
+    NSArray *raw = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"supporting_data" ofType:@"plist"]] copy];
+
+    for (NSDictionary*rawDictEach in raw) {
+        [arr_menuTitles addObject:rawDictEach[@"title"]];
+    }
     
-    arr_menuTitles = @[
-                       @"History",
-                       @"Trends",
-                       @"Lifestyle & Culture",
-                       @"Facts & Figures",
-                       @"Eco-District"
-                       ];
+//    arr_menuTitles = @[
+//                       @"History",
+//                       @"Trends",
+//                       @"Lifestyle & Culture",
+//                       @"Facts & Figures",
+//                       @"Eco-District"
+//                       ];
     arr_lastIndex = @[
                       @0,
                       @1,
-                      @5,
-                      @6,
-                      @7
+                      @2,
+                      @3,
+                      @4
                       ];
     arr_firstIndex = @[
                        @0,
                        @1,
                        @2,
-                       @6,
-                       @7
+                       @3,
+                       @4
                        ];
 }
 # pragma mark - UIPageView Controller
@@ -119,8 +131,13 @@ static int      animationViewIndex = 6;
                                       direction:UIPageViewControllerNavigationDirectionForward
                                        animated:NO
                                      completion:nil];
-    
-    if (currentPageIndex == animationViewIndex) {
+    [self setGridSwipeArea];
+
+}
+
+-(void)setGridSwipeArea
+{
+    if (currentPageIndex == animationViewIndex || gridViewIndex) {
         self.pageViewController.swipeArea = CGRectMake(22, 204, 360, 360);
     } else {
         self.pageViewController.swipeArea = CGRectZero;
@@ -149,11 +166,7 @@ static int      animationViewIndex = 6;
     currentPageIndex = (int)[self.modelController indexOfViewController:theCurrentViewController];
     [self checkCurrentIndexPosition];
     
-    if (currentPageIndex == animationViewIndex) {
-        self.pageViewController.swipeArea = CGRectMake(22, 204, 360, 360);
-    } else {
-        self.pageViewController.swipeArea = CGRectZero;
-    }
+    [self setGridSwipeArea];
 }
 
 - (void)checkCurrentIndexPosition {

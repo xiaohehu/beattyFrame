@@ -56,7 +56,7 @@ static float    bottomHeight = 37;
 
 - (void)prepareData {
     arr_mapImageNames = @[
-                          @"grfx_areaMap_base_map.png",
+                          @"grfx_siteMap_base_map.png",
                           @"grfx-city-base-map.png",
                           @"grfx_regionalMap_base_map.png"
                           ];
@@ -79,7 +79,7 @@ static float    bottomHeight = 37;
         NSLog(@"%@", menuAsset);
     }
     // sort them alphabetically
-    [d sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    //[d sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     
     arr_OverlayData = menuData[d[index]];
     
@@ -127,7 +127,16 @@ static float    bottomHeight = 37;
     NSString *imgNm = [arr_OverlayData[index] objectForKey:@"overlay"];
     
     if (index != overlayMenuIndex) {
-        overlayAsset.image = [UIImage imageNamed:imgNm];
+        
+        UIImage * toImage = [UIImage imageNamed:imgNm];
+        [UIView transitionWithView:self.view
+                          duration:0.23f
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:^{
+                            overlayAsset.image = toImage;
+                        } completion:NULL];
+        
+        //overlayAsset.image = [UIImage imageNamed:imgNm];
         overlayMenuIndex = index;
     } else {
         [self clearOverlayData];
@@ -141,6 +150,11 @@ static float    bottomHeight = 37;
     overlayMenuIndex = -1;
     
     for (UIView *key in self.view.subviews) {
+        if ([key  isKindOfClass:[KeyOverlay class]])
+            [key removeFromSuperview];
+    }
+    
+    for (UIView *key in [_zoomingScroll.blurView subviews]) {
         if ([key  isKindOfClass:[KeyOverlay class]])
             [key removeFromSuperview];
     }
@@ -174,7 +188,7 @@ static float    bottomHeight = 37;
     [self.view addSubview: uiv_bottomMenu];
     
     NSArray *arr_menuTitles = @[
-                                @"Area",
+                                @"Site",
                                 @"City",
                                 @"Regional"
                                 ];
@@ -219,6 +233,13 @@ static float    bottomHeight = 37;
         [self createKeyForMap];
     }
     
+    // create logo hotspot
+    if ([sender tag] == 1) {
+        [self createLogoPinForMapAtRect:(CGPointMake(548,333))];
+    } else if ([sender tag] == 2) {
+        [self createLogoPinForMapAtRect:(CGPointMake(159,582))];
+    }
+    
     UIButton *tappedButton = sender;
     
     mapIndex = (int)[sender tag];
@@ -236,6 +257,14 @@ static float    bottomHeight = 37;
         _zoomingScroll.blurView.alpha = 1.0;
         uiiv_tmpMap.alpha = 0.0;
     }];
+}
+
+-(void)createLogoPinForMapAtRect:(CGPoint)point
+{
+    UIImage*key = [UIImage imageNamed:@"grfx-site-marker.png"];
+    KeyOverlay *keyOverlay = [[KeyOverlay alloc] initWithFrame:CGRectMake(point.x, point.y, key.size.width, key.size.height)];
+    [keyOverlay setKeyImage:key];
+    [_zoomingScroll.blurView addSubview:keyOverlay];
 }
 
 @end

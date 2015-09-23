@@ -4,49 +4,31 @@
 <array>
 	<dict>
 		<key>image</key>
-		<string>tbd_1.jpg</string>
+		<string>supporting-stories-urban-renaissance.png</string>
 		<key>title</key>
-		<string>History</string>
+		<string>Urban Renaissance</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>tbd_2.jpg</string>
+		<string>supporting-stories-getting-to-work.png</string>
 		<key>title</key>
-		<string>Trends</string>
+		<string>Getting To Work</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>supporting_story_1.jpg</string>
+		<string>supporting-stories-thriving-baltimore.png</string>
 		<key>title</key>
-		<string>Lifestyle &amp; Culture</string>
+		<string>Thriving Baltimore</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>supporting_story_2.jpg</string>
+		<string>supporting-stories-cultural-hub.png</string>
 		<key>title</key>
-		<string>Lifestyle &amp; Culture</string>
+		<string>Cultural Hub</string>
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>supporting_story_3.jpg</string>
-		<key>title</key>
-		<string>Lifestyle &amp; Culture</string>
-	</dict>
-	<dict>
-		<key>image</key>
-		<string>supporting_story_4.jpg</string>
-		<key>title</key>
-		<string>Lifestyle &amp; Culture</string>
-	</dict>
-	<dict>
-		<key>image</key>
-		<string>tbd_3.jpg</string>
-		<key>title</key>
-		<string>Facts &amp; Figures</string>
-	</dict>
-	<dict>
-		<key>image</key>
-		<string>grfx_ecoDistrict.jpg</string>
+		<string>supporting-stories-eco-district.png</string>
 		<key>title</key>
 		<string>Eco-District</string>
 	</dict>
