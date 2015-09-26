@@ -119,23 +119,23 @@ static float    largeGridSize = 360.0;
         grid.alpha = 0.0;
     }
     
-    float expandButtonSize = 40;
-    float expandButtonX = 342;
-    float expandButtonY = 364;
-    uib_arrow = [UIButton buttonWithType:UIButtonTypeCustom];
-    uib_arrow.frame = CGRectMake(expandButtonX, expandButtonY, expandButtonSize, expandButtonSize);
-    uib_arrow.backgroundColor = [UIColor clearColor];
-    [uib_arrow setImage:[UIImage imageNamed:@"grfx-arrow-right.png"] forState:UIControlStateNormal];
-    [self insertSubview:uib_arrow belowSubview:uiv_gridContainer];
-    uib_arrow.hidden = YES;
-    [uib_arrow addTarget:self action:@selector(tapArrowButtonOpen:) forControlEvents:UIControlEventTouchUpInside];
-    
-    uiv_textContent = [[UIView alloc] initWithFrame:CGRectMake(380, 100, 271, 167)];
-    uiv_textContent.backgroundColor = [UIColor clearColor];
-    uiv_textContent.alpha = 0.8;
-    UIImageView *textImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fact-copy-01.png"]];;
-    [uiv_textContent addSubview: textImage];
-    [uiv_gridContainer addSubview: uiv_textContent];
+//    float expandButtonSize = 40;
+//    float expandButtonX = 342;
+//    float expandButtonY = 364;
+//    uib_arrow = [UIButton buttonWithType:UIButtonTypeCustom];
+//    uib_arrow.frame = CGRectMake(expandButtonX, expandButtonY, expandButtonSize, expandButtonSize);
+//    uib_arrow.backgroundColor = [UIColor clearColor];
+//    [uib_arrow setImage:[UIImage imageNamed:@"grfx-arrow-right.png"] forState:UIControlStateNormal];
+//    [self insertSubview:uib_arrow belowSubview:uiv_gridContainer];
+//    uib_arrow.hidden = YES;
+//    [uib_arrow addTarget:self action:@selector(tapArrowButtonOpen:) forControlEvents:UIControlEventTouchUpInside];
+//    
+//    uiv_textContent = [[UIView alloc] initWithFrame:CGRectMake(380, 100, 271, 167)];
+//    uiv_textContent.backgroundColor = [UIColor clearColor];
+//    uiv_textContent.alpha = 0.8;
+//    UIImageView *textImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fact-copy-01.png"]];;
+//    [uiv_textContent addSubview: textImage];
+//    [uiv_gridContainer addSubview: uiv_textContent];
     
     [self createIndicatorView];
 }

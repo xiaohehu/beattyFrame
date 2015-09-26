@@ -84,7 +84,7 @@ static float    largeGridSize = 360.0;
     arr_smallImages = [[NSMutableArray alloc] init];
     arr_largeImages = [[NSMutableArray alloc] init];
     
-    for (int i = 0; i < 9; i++) {
+    for (int i = 0; i < 6; i++) {
         UIImageView *uiiv = [UIImageView new];
         [arr_grids addObject:uiiv];
         [arr_smallImages addObject:[NSString stringWithFormat:@"fact-grid-0%i-sm.png",i+1]];
@@ -104,68 +104,56 @@ static float    largeGridSize = 360.0;
     uiv_gridContainer.clipsToBounds = YES;
     [self addSubview: uiv_gridContainer];
     // Grid top space against container
-    float gridTopGap = 2.0;
+    //float gridTopGap = 2.0;
     // Grid size 117, space between 2 gird is 3
     float gridAndGap = 120;
     
-    for (UIImageView *grid in arr_grids) {
+    
+    for (int i = 0; i < arr_grids.count; i++) {
         
-        int x_position = 0;
-        int y_position = 0;
+        NSLog(@"grid");
         
-        if (grid.tag < 3) {
-            //x_position = gridAndGap * grid.tag;
-        } else if ((grid.tag > 2) && (grid.tag < 6)) {
-            x_position = gridAndGap * grid.tag;
-            y_position = 620;
+        UIImageView *grid = arr_grids[i];
+        
+        int row1Y = 0;
+        int row2Y = gridAndGap;
+        int row3Y = 2 * gridAndGap;
+
+        if (i < 3) {
+            grid.frame = CGRectMake(i * gridAndGap, row1Y , smallGridSize, smallGridSize);
         }
-        
-        grid.frame = CGRectMake(x_position, 3, smallGridSize, smallGridSize);
-        
-//        int x_position = 0;
-//        int y_position = 0;
-//        
-//        if (grid.tag == 0) {
-//            x_position = 0;
-//            y_position = 0;
-//        } else if (grid.tag == 1) {
-//            x_position = 1;
-//            y_position = 1;
-//        }
-//        
-//        grid.frame = CGRectMake(x_position * gridAndGap, y_position * gridAndGap+gridTopGap, smallGridSize, smallGridSize);
-        
-        /*
-        // Column position
-        int x_position = (int)grid.tag%3;
-        // Row position
-        int y_position = (int)grid.tag/3;
-        
-        grid.frame = CGRectMake(x_position * gridAndGap, y_position * gridAndGap+gridTopGap, smallGridSize, smallGridSize);
-        */
-        
+        else if ((i > 2) && (i < 5)) {
+            grid.frame = CGRectMake(i%3 * gridAndGap, row2Y, smallGridSize, smallGridSize);
+        }
+        else {
+            grid.frame = CGRectMake(0 * gridAndGap, row3Y, smallGridSize, smallGridSize);
+        }
+
+            
         grid.backgroundColor = [UIColor colorWithRed:30.0*grid.tag/255.0 green:18.0*grid.tag/255.0 blue:20.0*grid.tag/255.0 alpha:1.0];
         [uiv_gridContainer addSubview: grid];
         grid.alpha = 0.0;
+        
     }
+
     
-    float expandButtonSize = 40;
-    float expandButtonX = 342;
-    float expandButtonY = 364;
-    uib_arrow = [UIButton buttonWithType:UIButtonTypeCustom];
-    uib_arrow.frame = CGRectMake(expandButtonX, expandButtonY, expandButtonSize, expandButtonSize);
-    uib_arrow.backgroundColor = [UIColor clearColor];
-    [uib_arrow setImage:[UIImage imageNamed:@"grfx-arrow-right.png"] forState:UIControlStateNormal];
-    [self insertSubview:uib_arrow belowSubview:uiv_gridContainer];
-    uib_arrow.hidden = YES;
-    [uib_arrow addTarget:self action:@selector(tapArrowButtonOpen:) forControlEvents:UIControlEventTouchUpInside];
-    
-    uiv_textContent = [[UIView alloc] initWithFrame:CGRectMake(380, 100, 271, 167)];
-    uiv_textContent.backgroundColor = [UIColor clearColor];
-    uiv_textContent.alpha = 0.8;
-    UIImageView *textImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fact-copy-01.png"]];;
-    [uiv_textContent addSubview: textImage];
-    [uiv_gridContainer addSubview: uiv_textContent];
+//    float expandButtonSize = 40;
+//    float expandButtonX = 342;
+//    float expandButtonY = 364;
+//    uib_arrow = [UIButton buttonWithType:UIButtonTypeCustom];
+//    uib_arrow.frame = CGRectMake(expandButtonX, expandButtonY, expandButtonSize, expandButtonSize);
+//    uib_arrow.backgroundColor = [UIColor clearColor];
+//    [uib_arrow setImage:[UIImage imageNamed:@"grfx-arrow-right.png"] forState:UIControlStateNormal];
+//    [self insertSubview:uib_arrow belowSubview:uiv_gridContainer];
+//    uib_arrow.hidden = YES;
+//    [uib_arrow addTarget:self action:@selector(tapArrowButtonOpen:) forControlEvents:UIControlEventTouchUpInside];
+//    
+//    uiv_textContent = [[UIView alloc] initWithFrame:CGRectMake(380, 100, 271, 167)];
+//    uiv_textContent.backgroundColor = [UIColor clearColor];
+//    uiv_textContent.alpha = 0.8;
+//    UIImageView *textImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fact-copy-01.png"]];;
+//    [uiv_textContent addSubview: textImage];
+//    [uiv_gridContainer addSubview: uiv_textContent];
     
     [self createIndicatorView];
 }
@@ -186,7 +174,7 @@ static float    largeGridSize = 360.0;
     UIColor *uic_normal = [UIColor colorWithRed:155.0/255.0 green:155.0/255.0 blue:155.0/255.0 alpha:1.0];
     
     arr_indicator = [[NSMutableArray alloc] init];
-    for (int i = 0; i < 9; i++) {
+    for (int i = 0; i < 6; i++) {
         UIView *uiv = [UIView new];
         [arr_indicator addObject:uiv];
     }
@@ -201,15 +189,47 @@ static float    largeGridSize = 360.0;
     float smallGridAndSpace = 6.0;
     float smallGridSize = 5.0;
     
-    for (UIView *indicator in arr_indicator) {
-        // Column position
-        int x_position = (int)indicator.tag%3;
-        // Row position
-        int y_position = (int)indicator.tag/3;
-        indicator.frame = CGRectMake(x_position * smallGridAndSpace, y_position * smallGridAndSpace, smallGridSize, smallGridSize);
-        indicator.backgroundColor = uic_normal;
-        [uiv_indicator addSubview: indicator];
+    for (int i = 0; i < arr_indicator.count; i++) {
+        
+        NSLog(@"small grid %i", i);
+        
+        UIView *grid = arr_indicator[i];
+        
+        int row1Y = 0;
+        int row2Y = smallGridAndSpace;
+        int row3Y = 2 * smallGridAndSpace;
+        
+        if (i < 3) {
+            grid.frame = CGRectMake(i * smallGridAndSpace, row1Y , smallGridSize, smallGridSize);
+        }
+        else if ((i > 2) && (i < 5)) {
+            grid.frame = CGRectMake(i%3 * smallGridAndSpace, row2Y, smallGridSize, smallGridSize);
+        }
+        else {
+            grid.frame = CGRectMake(0 * smallGridAndSpace, row3Y, smallGridSize, smallGridSize);
+        }
+        //grid.frame = CGRectMake(x_position * smallGridAndSpace, y_position * smallGridAndSpace, smallGridSize, smallGridSize);
+        grid.backgroundColor = uic_normal;
+        [uiv_indicator addSubview: grid];
+
+        
+//        grid.backgroundColor = [UIColor colorWithRed:30.0*grid.tag/255.0 green:18.0*grid.tag/255.0 blue:20.0*grid.tag/255.0 alpha:1.0];
+//        [uiv_gridContainer addSubview: grid];
+//        grid.alpha = 0.0;
+        
     }
+
+    
+    
+//    for (UIView *indicator in arr_indicator) {
+//        // Column position
+//        int x_position = (int)indicator.tag%3;
+//        // Row position
+//        int y_position = (int)indicator.tag/3;
+//        indicator.frame = CGRectMake(x_position * smallGridAndSpace, y_position * smallGridAndSpace, smallGridSize, smallGridSize);
+//        indicator.backgroundColor = uic_normal;
+//        [uiv_indicator addSubview: indicator];
+//    }
     
     UITapGestureRecognizer *tapOnIndicator = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resetWholeGrids:)];
     uiv_indicatorContainer.userInteractionEnabled = YES;
@@ -277,9 +297,38 @@ static float    largeGridSize = 360.0;
     float expandButtonX = 342;
     float expandButtonY = 364;
     
+    
+    for (int i = 0; i < arr_grids.count; i++) {
+        
+        NSLog(@"grid");
+        
+        UIImageView *grid = arr_grids[i];
+        
+        int row1Y = 0;
+        int row2Y = gridAndGap;
+        int row3Y = 2 * gridAndGap;
+        
+        if (i < 3) {
+            grid.frame = CGRectMake(i * gridAndGap, row1Y , smallGridSize, smallGridSize);
+        }
+        else if ((i > 2) && (i < 5)) {
+            grid.frame = CGRectMake(i%3 * gridAndGap, row2Y, smallGridSize, smallGridSize);
+        }
+        else {
+            grid.frame = CGRectMake(0 * gridAndGap, row3Y, smallGridSize, smallGridSize);
+        }
+        
+         [grid setImage:[UIImage imageNamed:arr_smallImages[grid.tag]]];
+        grid.layer.zPosition=0;
+//        grid.backgroundColor = [UIColor colorWithRed:30.0*grid.tag/255.0 green:18.0*grid.tag/255.0 blue:20.0*grid.tag/255.0 alpha:1.0];
+//        [uiv_gridContainer addSubview: grid];
+//        grid.alpha = 0.0;
+        
+    }
+    
     /*
      * Reset all grids on back to original position
-     */
+     
     for (UIImageView *grid in arr_grids) {
         if (grid.tag != currentIndex) {
             int x_position = (int)grid.tag%3;
@@ -291,7 +340,7 @@ static float    largeGridSize = 360.0;
             grid.layer.zPosition=0;
         }
     }
-    /*
+    
      * Animate current big grid back to original position
      * Set all the rest grids alpha value as 1.0
      * Move arrow button
@@ -311,9 +360,9 @@ static float    largeGridSize = 360.0;
      {
          
          [UIView animateWithDuration:0.5 animations:^(void){
-             int x_position = (int)currentView.tag%3;
-             int y_position = (int)currentView.tag/3;
-             currentView.frame = CGRectMake(x_position * gridAndGap, y_position * gridAndGap+gridTopGap, smallGridSize, smallGridSize);
+//             int x_position = (int)currentView.tag%3;
+//             int y_position = (int)currentView.tag/3;
+//             currentView.frame = CGRectMake(x_position * gridAndGap, y_position * gridAndGap+gridTopGap, smallGridSize, smallGridSize);
              
              //[currentView setImage:[UIImage imageNamed:arr_smallImages[currentIndex]]];
              
@@ -522,7 +571,7 @@ static float    largeGridSize = 360.0;
     } else if (direction > 0) {
         direction = 1;
         nextIndex = 0;
-        if (currentIndex != 8) {
+        if (currentIndex != 5) {
             nextIndex = currentIndex + 1;
         }
     } else {
