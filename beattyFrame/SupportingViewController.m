@@ -15,7 +15,7 @@
 #import "AnimationIndex.h"
 #import "gridEcoViewIndex.h"
 
-static CGFloat  bottomMenuWidth = 750;
+static CGFloat  bottomMenuWidth = 728;
 static CGFloat  bottomMenuHeight = 37;
 static int      animationViewIndex = kAnimationIndex;
 static int      gridViewIndex = kEcoIndex;
@@ -194,7 +194,7 @@ static int      gridViewIndex = kEcoIndex;
 #pragma mark - Bottom Menu
 
 - (void)createPageNumLabel {
-    uil_pageNum = [[UILabel alloc] initWithFrame:CGRectMake(20.0, 709, 100, 37)];
+    uil_pageNum = [[UILabel alloc] initWithFrame:CGRectMake(25.0, 709, 100, 37)];
     uil_pageNum.backgroundColor = [UIColor themeRed];
     [uil_pageNum setText:@"of"];
     [uil_pageNum setTextColor:[UIColor whiteColor]];
