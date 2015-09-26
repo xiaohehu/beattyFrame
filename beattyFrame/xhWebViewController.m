@@ -8,6 +8,8 @@
 
 #import "xhWebViewController.h"
 #import "AppDelegate.h"
+#import "UIColor+Extensions.h"
+
 @interface xhWebViewController ()
 @property (strong, nonatomic) NSString *urlAddress;
 @end
@@ -31,6 +33,8 @@
 	UILabel* webTitle = [self createWebLabel];
 	[self.view addSubview:webTitle];
 	webTitle.text = self.title;
+    
+    [[UIToolbar appearance] setTintColor:[UIColor themeRed]];
 }
 
 -(UILabel*)createWebLabel

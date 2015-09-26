@@ -7,6 +7,7 @@
 //
 
 #import "SettingTableViewController.h"
+#import "UIColor+Extensions.h"
 
 @interface SettingTableViewController ()
 
@@ -31,6 +32,9 @@
 {
     self.navigationController.navigationBar.topItem.title = @"Setting";
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    self.navigationController.navigationBar.barTintColor = [UIColor themeRed];
+    
+     //[[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
 }
 
 - (void)viewDidAppear:(BOOL)animated
