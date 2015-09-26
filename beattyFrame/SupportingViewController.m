@@ -194,7 +194,7 @@ static int      gridViewIndex = kEcoIndex;
 #pragma mark - Bottom Menu
 
 - (void)createPageNumLabel {
-    uil_pageNum = [[UILabel alloc] initWithFrame:CGRectMake(50.0, 709, 100, 37)];
+    uil_pageNum = [[UILabel alloc] initWithFrame:CGRectMake(20.0, 709, 100, 37)];
     uil_pageNum.backgroundColor = [UIColor themeRed];
     [uil_pageNum setText:@"of"];
     [uil_pageNum setTextColor:[UIColor whiteColor]];
