@@ -8,7 +8,10 @@
 		<key>title</key>
 		<string>History</string>
 		<key>webaddress</key>
-		<string>http://beattydevelopment.com</string>
+		<array>
+			<string>http://beattydevelopment.com</string>
+			<string>http://harborpoint.com</string>
+		</array>
 	</dict>
 	<dict>
 		<key>image</key>
@@ -16,7 +19,9 @@
 		<key>title</key>
 		<string>Trends</string>
 		<key>webaddress</key>
-		<string>http://www.exeloncorp.com/Pages/home.aspx</string>
+		<array>
+			<string>http://www.exeloncorp.com/Pages/home.aspx</string>
+		</array>
 	</dict>
 	<dict>
 		<key>image</key>
