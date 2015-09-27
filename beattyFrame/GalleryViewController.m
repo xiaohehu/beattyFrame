@@ -284,9 +284,10 @@
     }
     cell.backgroundColor = [UIColor clearColor];
     [cell.titleLabel setText:[totalCap objectAtIndex:indexPath.row]];
-    cell.titleLabel.font = [UIFont fontWithName:@"GoodPro-Book" size:13];
+    cell.titleLabel.font = [UIFont fontWithName:@"GoodPro-Book" size:11];
     
-    cell.cellThumb.image = [UIImage imageNamed:[totalImg objectAtIndex:indexPath.row]];
+    //cell.cellThumb.image = [UIImage imageNamed:[totalImg objectAtIndex:indexPath.row]];
+    cell.cellThumb.image = [UIImage imageNamed:@"thumb_generic.png"];
     [cell.cellThumb setContentMode:UIViewContentModeScaleAspectFit];
     
     if (isShare) {
@@ -417,7 +418,7 @@
         
         _gallery = [[XHGalleryViewController alloc] init];
         _gallery.delegate = self;
-        _gallery.startIndex = 0; 		// Change this value to start with different page
+        _gallery.startIndex = indexPath.row; 		// Change this value to start with different page
         _gallery.view.frame = self.view.bounds; 	// Change to load different frame
         _gallery.arr_rawData = galleryData;//arr_rawData[0];
         [self addChildViewController: _gallery];
