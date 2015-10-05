@@ -16,18 +16,6 @@
 	</dict>
 	<dict>
 		<key>buildingImage</key>
-		<string>Thames_Street_Wharf.jpg</string>
-		<key>buildingTitle</key>
-		<string>Thames Street Wharf</string>
-		<key>buildingSite</key>
-		<string>siteplan_02.png</string>
-		<key>buildingSiteCaption</key>
-		<string>View from NE</string>
-		<key>buildingGallery</key>
-		<string>gallery name</string>
-	</dict>
-	<dict>
-		<key>buildingImage</key>
 		<string>Parcel_02-Excelon.jpg</string>
 		<key>buildingTitle</key>
 		<string>Excelon</string>
@@ -35,30 +23,6 @@
 		<string>siteplan_03.png</string>
 		<key>buildingSiteCaption</key>
 		<string>View from SW</string>
-		<key>buildingGallery</key>
-		<string>gallery name</string>
-	</dict>
-	<dict>
-		<key>buildingImage</key>
-		<string>Central_Plaza.jpg</string>
-		<key>buildingTitle</key>
-		<string>Central Plaza</string>
-		<key>buildingSite</key>
-		<string>siteplan_04.png</string>
-		<key>buildingSiteCaption</key>
-		<string>View from E</string>
-		<key>buildingGallery</key>
-		<string>gallery name</string>
-	</dict>
-	<dict>
-		<key>buildingImage</key>
-		<string>Point_Street_Apt.jpg</string>
-		<key>buildingTitle</key>
-		<string>Point Street Apt.</string>
-		<key>buildingSite</key>
-		<string>siteplan_05.png</string>
-		<key>buildingSiteCaption</key>
-		<string>View from SE</string>
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 	</dict>
@@ -76,6 +40,30 @@
 	</dict>
 	<dict>
 		<key>buildingImage</key>
+		<string>Point_Street_Apt.jpg</string>
+		<key>buildingTitle</key>
+		<string>Point Street Apt.</string>
+		<key>buildingSite</key>
+		<string>siteplan_05.png</string>
+		<key>buildingSiteCaption</key>
+		<string>View from SE</string>
+		<key>buildingGallery</key>
+		<string>gallery name</string>
+	</dict>
+	<dict>
+		<key>buildingImage</key>
+		<string>Thames_Street_Wharf.jpg</string>
+		<key>buildingTitle</key>
+		<string>Thames Street Wharf</string>
+		<key>buildingSite</key>
+		<string>siteplan_02.png</string>
+		<key>buildingSiteCaption</key>
+		<string>View from NE</string>
+		<key>buildingGallery</key>
+		<string>gallery name</string>
+	</dict>
+	<dict>
+		<key>buildingImage</key>
 		<string>Wills_Street_Wharf.jpg</string>
 		<key>buildingTitle</key>
 		<string>Wills Street Wharf</string>
@@ -83,6 +71,18 @@
 		<string>siteplan_07.png</string>
 		<key>buildingSiteCaption</key>
 		<string>View from S</string>
+		<key>buildingGallery</key>
+		<string>gallery name</string>
+	</dict>
+	<dict>
+		<key>buildingImage</key>
+		<string>Parcel_03.jpg</string>
+		<key>buildingTitle</key>
+		<string>Parcel 3</string>
+		<key>buildingSite</key>
+		<string>siteplan_09.png</string>
+		<key>buildingSiteCaption</key>
+		<string>View from N</string>
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 	</dict>
@@ -100,13 +100,13 @@
 	</dict>
 	<dict>
 		<key>buildingImage</key>
-		<string>Parcel_03.jpg</string>
+		<string>Central_Plaza.jpg</string>
 		<key>buildingTitle</key>
-		<string>Parcel 3</string>
+		<string>Central Plaza</string>
 		<key>buildingSite</key>
-		<string>siteplan_09.png</string>
+		<string>siteplan_04.png</string>
 		<key>buildingSiteCaption</key>
-		<string>View from N</string>
+		<string>View from E</string>
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 	</dict>

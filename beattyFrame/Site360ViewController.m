@@ -11,6 +11,15 @@
 #import "UIColor+Extensions.h"
 #import <QuartzCore/QuartzCore.h>
 
+#define kPhaseAColor @"phase_a_color"
+#define kPhaseBColor @"phase_b_color"
+#define kPhaseCColor @"phase_c_color"
+#define kPhaseDColor @"phase_d_color"
+#define kPhaseABase @"phase_a_base"
+#define kPhaseBBase @"phase_b_base"
+#define kPhaseCBase @"phase_c_base"
+#define kPhaseDBase @"phase_d_base"
+
 static int  phaseNumber = 4;
 static float bottomMenuHeight  = 37.0;
 @interface Site360ViewController ()
@@ -34,10 +43,14 @@ static float bottomMenuHeight  = 37.0;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeBuilding:) name:@"removeBuilding" object:nil];
     self.view.backgroundColor = [UIColor whiteColor];
     [self appInit];
+
+    
+    //[self tapBottomButton:btn];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [self createBottomMenu];
+    [self performSelector:@selector(tapBottomButton:) withObject:arr_menuButton[3] afterDelay:1.0];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -68,9 +81,9 @@ static float bottomMenuHeight  = 37.0;
     currentFrame = 0;
     
     numberOfFrames = [self imageCount]-1;
-    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
+    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseDBase];
     uiiv_imageView.alpha = 1.0;
-    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+    colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
     
     // setup scrollview
     self.uis_scrollView.minimumZoomScale=1.0;
@@ -238,6 +251,9 @@ static float bottomMenuHeight  = 37.0;
 
 - (void)tapBottomButton:(id)sender {
     UIButton *tappedButton = sender;
+    
+    NSLog(@"tappedButton %li",(long)tappedButton.tag);
+    
     CGRect indicatorFrame = uiv_buttonIndicator.frame;
     phaseIndex = tappedButton.tag;
     [UIView animateWithDuration:0.33 animations:^(void){
@@ -245,23 +261,23 @@ static float bottomMenuHeight  = 37.0;
     }];
     switch (tappedButton.tag) {
         case 0: {
-            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
-            colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseABase];
+            colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
             break;
         }
         case 1: {
-            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
-            colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseBBase];
+            colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
             break;
         }
         case 2: {
-            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
-            colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseCBase];
+            colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
             break;
         }
         case 3: {
-            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
-            colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+            uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseDBase];
+            colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
             break;
         }
         default:
@@ -309,8 +325,11 @@ static float bottomMenuHeight  = 37.0;
     //	[message show];
     
     // namesarray is created in viewdidload
+    //NSString *t = [NSString stringWithFormat:@"\nRGB A %i %i %i  %i",red,green,blue,alpha];
+    //NSArray* results = [namesArray[0] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF.type LIKE[cd] %@", t]];
+
     
-    NSLog(@"namesArray %@",namesArray);
+    NSLog(@"namesArray %ld",[namesArray indexOfObject:incomingColor]);
     
     NSString *answer = nil;
     NSUInteger index = [namesArray indexOfObject:incomingColor];
@@ -333,7 +352,7 @@ static float bottomMenuHeight  = 37.0;
 
 #pragma mark - controls/gestures on BG
 #pragma mark Pan Gesture
--(IBAction) handlePanGesture:(UIPanGestureRecognizer *) sender {
+-(IBAction)handlePanGesture:(UIPanGestureRecognizer *) sender {
     
     [self.view setUserInteractionEnabled:NO];
     
@@ -355,17 +374,17 @@ static float bottomMenuHeight  = 37.0;
             //[self animateLabelAtIndex:currentFrame];
             
             if (phaseIndex == 0) {
-                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
-                colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseABase];
+                colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
             } else if (phaseIndex == 1) {
-                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
-                colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseBBase];
+                colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
             } else if (phaseIndex == 2) {
-                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
-                colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseCBase];
+                colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
             } else if (phaseIndex == 3) {
-                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
-                colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+                uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseDBase];
+                colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
             }
             [sender setTranslation:CGPointZero inView:[myView superview]];
             
@@ -383,18 +402,19 @@ static float bottomMenuHeight  = 37.0;
                 //[self animateLabelAtIndex:currentFrame];
                 
                 if (phaseIndex == 0) {
-                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
-                    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseABase];
+                    colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
                 } else if (phaseIndex == 1) {
-                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
-                    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseBBase];
+                    colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
                 } else if (phaseIndex == 2) {
-                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
-                    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseCBase];
+                    colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
                 } else if (phaseIndex == 3) {
-                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:@"phase_a_base"];
-                    colorWheel.image = [self maskAtIndex: currentFrame maskType:@"phase_a_color"];
+                    uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseDBase];
+                    colorWheel.image = [self maskAtIndex: currentFrame maskType:kPhaseDColor];
                 }
+
                 [sender setTranslation:CGPointZero inView:[myView superview]];
             }
         }
@@ -541,7 +561,7 @@ static float bottomMenuHeight  = 37.0;
 - (UIImage *)imageAtIndex:(NSUInteger)index phaseType:(NSString*)phaseName {
     // use "imageWithContentsOfFile:" instead of "imageNamed:" here to avoid caching our images
     NSString *imageName = [self imageNameAtIndex:index phaseType:phaseName];
-    NSString *path = [[NSBundle mainBundle] pathForResource:imageName ofType:@"png"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:imageName ofType:@"jpg"];
     return [UIImage imageWithContentsOfFile:path];
 }
 

@@ -446,6 +446,7 @@ static float    menuButtonSize = 50.0;
 
     buildingVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BuildingViewController"];
     buildingVC.view.frame = self.view.bounds;
+    buildingVC.pageIndex = total.intValue;
     buildingVC.view.transform = CGAffineTransformMakeTranslation(0, buildingVC.view.frame.size.height);
     [self addChildViewController:buildingVC];
 

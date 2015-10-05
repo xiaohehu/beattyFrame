@@ -175,16 +175,40 @@
             break;
         }
         case 3: {
-            [self loadPage:currentPageIndex-1];
+            //[self loadPage:currentPageIndex-1];
+            [self determinePageIndex:3];
             break;
         }
         case 4: {
-            [self loadPage:currentPageIndex+1];
+            //[self loadPage:currentPageIndex+1];
+            [self determinePageIndex:4];
             break;
         }
         default:
             break;
     }
+}
+
+-(void)determinePageIndex:(int)index
+{
+    if (index==3) {
+        if (currentPageIndex == 0) {
+            currentPageIndex=8;
+        }
+        else {
+            currentPageIndex--;
+        }
+    } else {
+        if (index==4){
+            
+            if (currentPageIndex == 8) {
+                currentPageIndex=0;
+            } else {
+                currentPageIndex++;
+            }
+        }
+    }
+    [self loadPage:currentPageIndex];
 }
 
 - (void)loadGallery {
@@ -251,6 +275,7 @@
     
     buildingDataViewController *startingViewController = [self.modelController viewControllerAtIndex:page storyboard:self.storyboard];
     currentPageIndex = page;
+    [self setBuildingData];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers
                                       direction:UIPageViewControllerNavigationDirectionForward
@@ -274,21 +299,25 @@
     
     NSLog(@"update data");
 
-    
-        embBuilding *newBuilding = [[[LibraryAPI sharedInstance] getEvents] objectAtIndex:currentPageIndex];
-        [[LibraryAPI sharedInstance] setCurrentEvent:newBuilding];
-//        currentBuilding = nil;
-//    currentBuilding = newBuilding;
-//    
-//    currentBuilding = [[LibraryAPI sharedInstance] getCurrentEvent];
-//    [self createMenuItems];
-//    
-//    [uiv_menuContainer removeFromSuperview];
+    [self setBuildingData];
+
+}
+
+-(void)setBuildingData
+{
+    embBuilding *newBuilding = [[[LibraryAPI sharedInstance] getEvents] objectAtIndex:currentPageIndex];
+    [[LibraryAPI sharedInstance] setCurrentEvent:newBuilding];
+    //        currentBuilding = nil;
+    //    currentBuilding = newBuilding;
+    //
+    //    currentBuilding = [[LibraryAPI sharedInstance] getCurrentEvent];
+    //    [self createMenuItems];
+    //
+    //    [uiv_menuContainer removeFromSuperview];
     
     [uil_buildingName setText:newBuilding.buildingTitle];
     [uil_viewLabel setText:newBuilding.buildingSiteCaption];
     uiiv_viewImage.image = [UIImage imageNamed:newBuilding.buildingSite];
-
 }
 
 - (void) setpageIndex {
