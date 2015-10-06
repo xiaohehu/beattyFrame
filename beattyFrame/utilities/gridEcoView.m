@@ -42,7 +42,7 @@ static float    largeGridSize = 360.0;
     self = [super initWithFrame:frame];
     if (self)
     {
-        UIImageView *uiiv_bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lifeStyle_bg.jpg"]];
+        UIImageView *uiiv_bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"supporting-stories-eco-district.png"]];
         uiiv_bg.frame = self.bounds;
         [self addSubview: uiiv_bg];
         
@@ -57,7 +57,7 @@ static float    largeGridSize = 360.0;
     self = [super initWithCoder:coder];
     if (self)
     {
-        UIImageView *uiiv_bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lifeStyle_bg.jpg"]];
+        UIImageView *uiiv_bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"supporting-stories-eco-district.png"]];
         uiiv_bg.frame = self.bounds;
         [self addSubview: uiiv_bg];
         

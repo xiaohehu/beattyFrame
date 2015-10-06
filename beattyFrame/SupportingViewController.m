@@ -81,6 +81,8 @@ static int      gridViewIndex = kEcoIndex;
         [arr_menuTitles addObject:rawDictEach[@"title"]];
     }
     
+    NSLog(@"pageIndex %i",pageIndex);
+    
 //    arr_menuTitles = @[
 //                       @"History",
 //                       @"Trends",

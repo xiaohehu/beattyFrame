@@ -177,12 +177,12 @@ static float topButtonHeight = 38.0;
     uis_zoomSitePlan.backgroundColor = [UIColor whiteColor];
     [uiv_sitePlanContainer addSubview: uis_zoomSitePlan];
     
-    uiv_buttonPanel = [UIView new];
-    uiv_buttonPanel.frame = CGRectMake(19, 228, 200, 186);
-    uiv_buttonPanel.backgroundColor = [UIColor clearColor];
-    uiv_buttonPanel.layer.borderWidth = 2.0;
-    uiv_buttonPanel.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    [uiv_sitePlanContainer addSubview: uiv_buttonPanel];
+//    uiv_buttonPanel = [UIView new];
+//    uiv_buttonPanel.frame = CGRectMake(19, 228, 200, 186);
+//    uiv_buttonPanel.backgroundColor = [UIColor clearColor];
+//    uiv_buttonPanel.layer.borderWidth = 2.0;
+//    uiv_buttonPanel.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//    [uiv_sitePlanContainer addSubview: uiv_buttonPanel];
     /*
      * Needed data to create site plan's control panel
      */
@@ -209,7 +209,7 @@ static float topButtonHeight = 38.0;
         [arr_siteOverlay addObject:uiiv_overlay];
     }
     arr_siteOptions = [[NSMutableArray alloc] init];
-    [self createSitePlanButtons:arr_names andColors:arr_optionColors];
+    //[self createSitePlanButtons:arr_names andColors:arr_optionColors];
 }
 
 - (void)createSitePlanButtons:(NSArray *)arr_names andColors:(NSArray *)arr_colors {
