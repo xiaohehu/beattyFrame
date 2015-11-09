@@ -23,11 +23,5 @@
 			<string>http://www.exeloncorp.com/Pages/home.aspx</string>
 		</array>
 	</dict>
-	<dict>
-		<key>image</key>
-		<string>supporting_story_1.jpg</string>
-		<key>title</key>
-		<string>Lifestyle &amp; Culture</string>
-	</dict>
 </array>
 </plist>

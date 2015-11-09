@@ -132,7 +132,23 @@
                                                     <action selector="loadSummary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKQ-6W-W83"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yih-w3-nqm">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zD-7E-ng3">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
+                                                <state key="normal" title="Parking">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="117" width="142" height="25"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="loadOpportunities:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Av2-8B-eoY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yih-w3-nqm">
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -142,7 +158,7 @@
                                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="0.0" y="120" width="144" height="25"/>
+                                                    <rect key="frame" x="0.0" y="140" width="144" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="loadOpportunities:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l5u-UR-df3"/>
@@ -153,7 +169,7 @@
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="0.0" y="169" width="178" height="1"/>
+                                                    <rect key="frame" x="0.0" y="174" width="178" height="1"/>
                                                 </variation>
                                             </view>
                                         </subviews>
@@ -165,17 +181,19 @@
                                                 <exclude reference="0LG-p9-6Bv"/>
                                                 <exclude reference="9gh-43-0kz"/>
                                                 <exclude reference="vqe-Ok-DM7"/>
+                                                <exclude reference="7zD-7E-ng3"/>
                                                 <exclude reference="yih-w3-nqm"/>
                                                 <exclude reference="H0x-vH-IoR"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="28" y="73" width="178" height="170"/>
+                                            <rect key="frame" x="28" y="73" width="178" height="183"/>
                                             <mask key="subviews">
                                                 <include reference="a5J-p5-Z8H"/>
                                                 <include reference="0LG-p9-6Bv"/>
                                                 <include reference="9gh-43-0kz"/>
                                                 <include reference="vqe-Ok-DM7"/>
+                                                <include reference="7zD-7E-ng3"/>
                                                 <include reference="yih-w3-nqm"/>
                                                 <include reference="H0x-vH-IoR"/>
                                             </mask>
@@ -229,7 +247,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="28" y="244" width="178" height="90"/>
+                                            <rect key="frame" x="28" y="259" width="178" height="90"/>
                                             <mask key="subviews">
                                                 <include reference="k2h-b1-o4T"/>
                                                 <include reference="d5U-fo-QOb"/>
@@ -353,7 +371,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="28" y="335" width="178" height="197"/>
+                                            <rect key="frame" x="28" y="350" width="178" height="197"/>
                                             <mask key="subviews">
                                                 <include reference="OJs-9U-3OA"/>
                                                 <include reference="86P-iB-lbU"/>
@@ -368,46 +386,16 @@
                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgm-z0-noT" userLabel="Sponsorship">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
-                                            <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zS-go-uEd">
-                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partners" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzZ-Y0-lG6">
+                                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <animations/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
-                                                <state key="normal" title="Financial Partners">
-                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </state>
+                                                <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="0.0" y="64" width="102" height="25"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="31"/>
                                                 </variation>
-                                                <connections>
-                                                    <action selector="loadSponsorship:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sI-sp-FIV"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCR-Lr-GfV">
-                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                <animations/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
-                                                <state key="normal" title="Current &amp; Future Tenants">
-                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="0.0" y="89" width="132" height="25"/>
-                                                </variation>
-                                                <connections>
-                                                    <action selector="loadSponsorship:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2C0-CC-Ih7"/>
-                                                </connections>
-                                            </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Goe-aI-NmT" userLabel="Bottom_bar">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                                <animations/>
-                                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="0.0" y="139" width="178" height="1"/>
-                                                </variation>
-                                            </view>
+                                            </label>
                                             <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWd-j1-Izn">
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                                 <animations/>
@@ -418,42 +406,54 @@
                                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="0.0" y="39" width="141" height="25"/>
+                                                    <rect key="frame" x="0.0" y="36" width="141" height="25"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="loadSponsorship:" destination="BYZ-38-t0r" eventType="touchUpInside" id="amx-UX-377"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partners" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzZ-Y0-lG6">
-                                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCR-Lr-GfV">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
+                                                <state key="normal" title="Current &amp; Future Tenants">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="0.0" y="8" width="158" height="31"/>
+                                                    <rect key="frame" x="0.0" y="61" width="132" height="25"/>
                                                 </variation>
-                                            </label>
+                                                <connections>
+                                                    <action selector="loadSponsorship:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2C0-CC-Ih7"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Goe-aI-NmT" userLabel="Bottom_bar">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="111" width="178" height="1"/>
+                                                </variation>
+                                            </view>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <variation key="default">
                                             <mask key="subviews">
-                                                <exclude reference="6zS-go-uEd"/>
+                                                <exclude reference="JzZ-Y0-lG6"/>
+                                                <exclude reference="vWd-j1-Izn"/>
                                                 <exclude reference="CCR-Lr-GfV"/>
                                                 <exclude reference="Goe-aI-NmT"/>
-                                                <exclude reference="vWd-j1-Izn"/>
-                                                <exclude reference="JzZ-Y0-lG6"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                            <rect key="frame" x="28" y="533" width="178" height="140"/>
+                                            <rect key="frame" x="28" y="561" width="178" height="112"/>
                                             <mask key="subviews">
-                                                <include reference="6zS-go-uEd"/>
+                                                <include reference="JzZ-Y0-lG6"/>
+                                                <include reference="vWd-j1-Izn"/>
                                                 <include reference="CCR-Lr-GfV"/>
                                                 <include reference="Goe-aI-NmT"/>
-                                                <include reference="vWd-j1-Izn"/>
-                                                <include reference="JzZ-Y0-lG6"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -571,11 +571,11 @@
                         <outlet property="uib_development" destination="yih-w3-nqm" id="ZjC-Js-REc"/>
                         <outlet property="uib_ecoDistrict" destination="ldP-57-Nno" id="VFG-TW-5K0"/>
                         <outlet property="uib_factsFigures" destination="waS-0t-cP4" id="0Ta-ZW-R6h"/>
-                        <outlet property="uib_financial" destination="6zS-go-uEd" id="gCO-B5-PyR"/>
                         <outlet property="uib_history" destination="86P-iB-lbU" id="10S-Vv-h7w"/>
                         <outlet property="uib_lifestyle" destination="27L-c7-stm" id="6AS-hm-Cc1"/>
                         <outlet property="uib_location" destination="d5U-fo-QOb" id="qmh-B1-XvM"/>
                         <outlet property="uib_masterPlan" destination="vqe-Ok-DM7" id="KKo-Vb-nQc"/>
+                        <outlet property="uib_parking" destination="7zD-7E-ng3" id="idm-NP-ifE"/>
                         <outlet property="uib_site360" destination="0LG-p9-6Bv" id="RkI-7j-blP"/>
                         <outlet property="uib_summary" destination="9gh-43-0kz" id="lxN-D6-s5W"/>
                         <outlet property="uib_trends" destination="8UR-r7-2Su" id="B8y-Mx-UKF"/>

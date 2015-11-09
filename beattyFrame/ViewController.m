@@ -64,6 +64,7 @@ static float    menuButtonSize = 50.0;
     __weak IBOutlet UIButton *uib_site360;
     __weak IBOutlet UIButton *uib_summary;
     __weak IBOutlet UIButton *uib_masterPlan;
+    __weak IBOutlet UIButton *uib_parking;
     __weak IBOutlet UIButton *uib_development;
     
     // Location & Access
@@ -278,6 +279,7 @@ static float    menuButtonSize = 50.0;
                             uib_site360,
                             uib_summary,
                             uib_masterPlan,
+                            uib_parking,
                             uib_development,
                             uib_location,
                             uib_history,
@@ -286,7 +288,6 @@ static float    menuButtonSize = 50.0;
                             uib_factsFigures,
                             uib_ecoDistrict,
                             uib_developGroup,
-                            uib_financial,
                             uib_currentFutureTrends
                             ];
 }
