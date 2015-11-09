@@ -1,0 +1,42 @@
+{
+    "site": [
+				{
+				"name": "Office",
+				"overlay": "grfx_siteMap_overlay_access.png",
+				},
+             	{
+				"name": "Retail",
+				"overlay": "grfx_siteMap_overlay_neighbor.png",
+				},
+				{
+				"name": "Residential",
+				"overlay": "grfx_siteMap_overlay_corp_neighbors.png",
+				},
+				{
+				"name": "Hotel",
+				"overlay": "grfx_siteMap_overlay_arts_culture.png",
+				},
+                 {
+                 "name": "Green",
+                 "overlay": "grfx_siteMap_overlay_corp_neighbors.png",
+                 }
+            ],
+    "parking": [
+                {
+                "name": "Phase 1 Parking",
+                "overlay": "grfx_siteMap_overlay_corp_neighbors.png",
+                },
+                {
+                "name": "Phase 2 Parking",
+                "overlay": "grfx_siteMap_overlay_corp_neighbors.png",
+                },
+                {
+                "name": "Phase 3 Parking",
+                "overlay": "grfx_siteMap_overlay_corp_neighbors.png",
+                },
+                {
+                "name": "Phase 4 Parking",
+                "overlay": "grfx_siteMap_overlay_corp_neighbors.png",
+                }
+            ]
+}

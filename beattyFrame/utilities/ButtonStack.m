@@ -44,13 +44,13 @@
     return self;
 }
 
--(void)setupfromArray:(NSArray *)btnArray maxWidth:(CGFloat )maxW
+-(void)setupfromArray:(NSArray *)btnArray maxWidth:(CGRect)maxW
 {
     //Make(15, 100, 150, keyPadImage.count*35
     
     CGFloat padding = 2.f;
     
-    CGRect viewframe = CGRectMake(15,100,150, (btnArray.count*35)+(btnArray.count*padding+2));
+    CGRect viewframe = CGRectMake(maxW.origin.x,maxW.origin.y,150, (btnArray.count*35)+(btnArray.count*padding+2));
     self.frame = viewframe;
     
     if(btnArray.count >0){

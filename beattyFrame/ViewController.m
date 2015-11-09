@@ -603,8 +603,8 @@ static float    menuButtonSize = 50.0;
     
     masterplanVC = [[MasterplanParkingViewController alloc] init];
     masterplanVC.view.frame = self.view.bounds;
-    masterplanVC.preloadSitePlan = NO;
-    masterplanVC.loadWithAnimation = YES;
+//    masterplanVC.preloadSitePlan = NO;
+//    masterplanVC.loadWithAnimation = YES;
     [self addChildViewController: masterplanVC];
     [self.view addSubview: masterplanVC.view];
 }
@@ -613,10 +613,10 @@ static float    menuButtonSize = 50.0;
     [self tapMenuButtonClose:nil];
     masterplanVC = [[MasterplanParkingViewController alloc] init];
     masterplanVC.view.frame = self.view.bounds;
-    if ([sender tag]%2 != 0) {
-        masterplanVC.preloadSitePlan = YES;
-    }
-    masterplanVC.loadWithAnimation = YES;
+//    if ([sender tag]%2 != 0) {
+//        masterplanVC.preloadSitePlan = YES;
+//    }
+//    masterplanVC.loadWithAnimation = YES;
     [self addChildViewController: summary];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.33 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         [self.view addSubview: masterplanVC.view];

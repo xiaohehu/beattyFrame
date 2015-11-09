@@ -477,6 +477,10 @@
 		881D14051BF01D9900693C62 /* grfx_buildingWeb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D14031BF01D9900693C62 /* grfx_buildingWeb@2x.png */; };
 		881D14071BF0E1CA00693C62 /* building_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 881D14061BF0E1CA00693C62 /* building_data.json */; };
 		881D140A1BF111DA00693C62 /* MasterplanParkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881D14091BF111DA00693C62 /* MasterplanParkingViewController.m */; };
+		881D140E1BF1373300693C62 /* ParkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881D140C1BF1373300693C62 /* ParkingViewController.m */; };
+		881D140F1BF1373300693C62 /* ParkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881D140D1BF1373300693C62 /* ParkingViewController.xib */; };
+		881D14111BF13D2000693C62 /* phase_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 881D14101BF13D2000693C62 /* phase_data.json */; };
+		881D14131BF13F2F00693C62 /* masterplanstack.json in Resources */ = {isa = PBXBuildFile; fileRef = 881D14121BF13F2F00693C62 /* masterplanstack.json */; };
 		887647A41BA32FD8002D4183 /* grfx-city-base-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647861BA32FD8002D4183 /* grfx-city-base-map.png */; };
 		887647A51BA32FD8002D4183 /* grfx-city-base-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */; };
 		887647A61BA32FD8002D4183 /* grfx-site-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647881BA32FD8002D4183 /* grfx-site-marker.png */; };
@@ -1699,6 +1703,11 @@
 		881D14061BF0E1CA00693C62 /* building_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = building_data.json; sourceTree = "<group>"; };
 		881D14081BF111DA00693C62 /* MasterplanParkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterplanParkingViewController.h; sourceTree = "<group>"; };
 		881D14091BF111DA00693C62 /* MasterplanParkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterplanParkingViewController.m; sourceTree = "<group>"; };
+		881D140B1BF1373300693C62 /* ParkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingViewController.h; sourceTree = "<group>"; };
+		881D140C1BF1373300693C62 /* ParkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingViewController.m; sourceTree = "<group>"; };
+		881D140D1BF1373300693C62 /* ParkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingViewController.xib; sourceTree = "<group>"; };
+		881D14101BF13D2000693C62 /* phase_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phase_data.json; sourceTree = "<group>"; };
+		881D14121BF13F2F00693C62 /* masterplanstack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = masterplanstack.json; path = utilities/masterplanstack.json; sourceTree = "<group>"; };
 		887647861BA32FD8002D4183 /* grfx-city-base-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-city-base-map.png"; sourceTree = "<group>"; };
 		887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-city-base-map@2x.png"; sourceTree = "<group>"; };
 		887647881BA32FD8002D4183 /* grfx-site-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-site-marker.png"; sourceTree = "<group>"; };
@@ -2890,6 +2899,9 @@
 				824D272D1B5D7E6700E5F5A5 /* ViewController.m */,
 				881D14081BF111DA00693C62 /* MasterplanParkingViewController.h */,
 				881D14091BF111DA00693C62 /* MasterplanParkingViewController.m */,
+				881D140B1BF1373300693C62 /* ParkingViewController.h */,
+				881D140C1BF1373300693C62 /* ParkingViewController.m */,
+				881D140D1BF1373300693C62 /* ParkingViewController.xib */,
 				824D27801B5EE77E00E5F5A5 /* SummaryViewController.h */,
 				824D27811B5EE77E00E5F5A5 /* SummaryViewController.m */,
 				824D279B1B613EC500E5F5A5 /* Site360ViewController.h */,
@@ -3027,6 +3039,7 @@
 		824D27A11B61467700E5F5A5 /* utiliites */ = {
 			isa = PBXGroup;
 			children = (
+				881D14121BF13F2F00693C62 /* masterplanstack.json */,
 				888233821BA214930019FD75 /* buttonstack.json */,
 				888233731BA0B0600019FD75 /* ButtonStack.h */,
 				888233741BA0B0600019FD75 /* ButtonStack.m */,
@@ -3087,6 +3100,7 @@
 			children = (
 				889F07BC1BB1E57C00CBD979 /* AnimationIndex.h */,
 				889F07C11BB1E69D00CBD979 /* gridEcoViewIndex.h */,
+				881D14101BF13D2000693C62 /* phase_data.json */,
 				881D14061BF0E1CA00693C62 /* building_data.json */,
 				822822B31B850B55004154E7 /* building_data.plist */,
 				824D2B551B62CF7F00E5F5A5 /* shareableData.plist */,
@@ -4920,6 +4934,7 @@
 				824D2BDB1B62D02100E5F5A5 /* share_Picture 038.jpg.jpg in Resources */,
 				8892EA641BC2082C00347146 /* phase_a_base_00027.jpg in Resources */,
 				822823711B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View07_050715.jpg in Resources */,
+				881D14131BF13F2F00693C62 /* masterplanstack.json in Resources */,
 				8892EB6B1BC2082C00347146 /* phase_c_base_00002.jpg in Resources */,
 				8892EAE31BC2082C00347146 /* phase_b_base_00010.jpg in Resources */,
 				8892EA891BC2082C00347146 /* phase_a_base_00064.jpg in Resources */,
@@ -5087,6 +5102,7 @@
 				822823641B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot02.jpg in Resources */,
 				8819D8561BB8515400015AF5 /* A101-C - 1st Floor (Garage Level) Plan-2nd Floor (Park Level) (1).pdf in Resources */,
 				8892EB5D1BC2082C00347146 /* phase_b_color_00060.jpg in Resources */,
+				881D14111BF13D2000693C62 /* phase_data.json in Resources */,
 				8892EAA71BC2082C00347146 /* phase_d_color_00022.jpg in Resources */,
 				8228238D1B862A0A004154E7 /* Leasing_Page_1.jpg in Resources */,
 				82A128801B66668800564266 /* fact-grid-09-lg.png in Resources */,
@@ -5510,6 +5526,7 @@
 				824D2BCA1B62D02100E5F5A5 /* share_inspi06.jpg.jpg in Resources */,
 				8892EAE11BC2082C00347146 /* phase_b_base_00008.jpg in Resources */,
 				8892EB011BC2082C00347146 /* phase_b_base_00040.jpg in Resources */,
+				881D140F1BF1373300693C62 /* ParkingViewController.xib in Resources */,
 				8892EB6A1BC2082C00347146 /* phase_c_base_00001.jpg in Resources */,
 				8819D8241BB8515400015AF5 /* Parcel_02-Excelon@2x.jpg in Resources */,
 				8819D8571BB8515400015AF5 /* Point St. Permit Set without Landscape(Resubmission) (dragged) 1.pdf in Resources */,
@@ -5574,6 +5591,7 @@
 				82A128301B66657C00564266 /* animationView.m in Sources */,
 				88E074661B98D12C00E0982A /* TipsViewController.m in Sources */,
 				888233751BA0B0600019FD75 /* ButtonStack.m in Sources */,
+				881D140E1BF1373300693C62 /* ParkingViewController.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
 				88E074561B98CFB400E0982A /* TutorialsListController.m in Sources */,
 				82A128B81B69164100564266 /* supportingDataViewController.m in Sources */,

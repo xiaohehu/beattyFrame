@@ -95,7 +95,7 @@ static float    bottomHeight = 37;
     
     overlayMenu = [[ButtonStack alloc] initWithFrame:CGRectZero];
     overlayMenu.delegate = self;
-    [overlayMenu setupfromArray:overlayAssets maxWidth:300];
+    [overlayMenu setupfromArray:overlayAssets maxWidth:CGRectMake(15,100,0,0)];
     [overlayMenu setBackgroundColor:[UIColor whiteColor]];
     overlayMenu.layer.borderWidth = 1;
     overlayMenu.layer.borderColor = [UIColor lightGrayColor].CGColor;

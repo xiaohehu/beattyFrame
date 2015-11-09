@@ -22,6 +22,6 @@
 @property (assign) id <ButtonStackDelegate> delegate;
 
 - (id)initWithFrame:(CGRect)frame;
-- (void)setupfromArray:(NSArray *)btnArray maxWidth:(CGFloat )maxW;
+- (void)setupfromArray:(NSArray *)btnArray maxWidth:(CGRect)maxW;
 
 @end

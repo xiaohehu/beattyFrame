@@ -15,7 +15,11 @@
 				{
 				"name": "Arts & Culture",
 				"overlay": "grfx_siteMap_overlay_arts_culture.png",
-				}
+				},
+                 {
+                 "name": "Retail",
+                 "overlay": "grfx_siteMap_overlay_corp_neighbors.png",
+                 }
             ],
     "city": [
 				{
@@ -31,7 +35,7 @@
 				"overlay": "grfx_cityMap_overlay_arts_culture.png",
 				},
 				{
-				"name": "Institutions",
+				"name": "Universities",
 				"overlay": "grfx_cityMap_overlay_institutions.png",
 				}
             ]
