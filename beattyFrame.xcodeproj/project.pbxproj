@@ -475,6 +475,7 @@
 		881D14011BF01A6B00693C62 /* grfx_bldg_stats_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D13F81BF01A6B00693C62 /* grfx_bldg_stats_09.png */; };
 		881D14041BF01D9900693C62 /* grfx_buildingWeb.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D14021BF01D9900693C62 /* grfx_buildingWeb.png */; };
 		881D14051BF01D9900693C62 /* grfx_buildingWeb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D14031BF01D9900693C62 /* grfx_buildingWeb@2x.png */; };
+		881D14071BF0E1CA00693C62 /* building_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 881D14061BF0E1CA00693C62 /* building_data.json */; };
 		887647A41BA32FD8002D4183 /* grfx-city-base-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647861BA32FD8002D4183 /* grfx-city-base-map.png */; };
 		887647A51BA32FD8002D4183 /* grfx-city-base-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */; };
 		887647A61BA32FD8002D4183 /* grfx-site-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647881BA32FD8002D4183 /* grfx-site-marker.png */; };
@@ -1694,6 +1695,7 @@
 		881D13F81BF01A6B00693C62 /* grfx_bldg_stats_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_bldg_stats_09.png; sourceTree = "<group>"; };
 		881D14021BF01D9900693C62 /* grfx_buildingWeb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_buildingWeb.png; sourceTree = "<group>"; };
 		881D14031BF01D9900693C62 /* grfx_buildingWeb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_buildingWeb@2x.png"; sourceTree = "<group>"; };
+		881D14061BF0E1CA00693C62 /* building_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = building_data.json; sourceTree = "<group>"; };
 		887647861BA32FD8002D4183 /* grfx-city-base-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-city-base-map.png"; sourceTree = "<group>"; };
 		887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-city-base-map@2x.png"; sourceTree = "<group>"; };
 		887647881BA32FD8002D4183 /* grfx-site-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-site-marker.png"; sourceTree = "<group>"; };
@@ -3080,6 +3082,7 @@
 			children = (
 				889F07BC1BB1E57C00CBD979 /* AnimationIndex.h */,
 				889F07C11BB1E69D00CBD979 /* gridEcoViewIndex.h */,
+				881D14061BF0E1CA00693C62 /* building_data.json */,
 				822822B31B850B55004154E7 /* building_data.plist */,
 				824D2B551B62CF7F00E5F5A5 /* shareableData.plist */,
 				824D2B1E1B61857E00E5F5A5 /* photoData.plist */,
@@ -4589,6 +4592,7 @@
 				8892EDC61BC2092B00347146 /* phase_d_base_00047.png in Resources */,
 				8892EA631BC2082C00347146 /* phase_a_base_00026.jpg in Resources */,
 				8819D82A1BB8515400015AF5 /* Point_Street_Apt@2x.jpg in Resources */,
+				881D14071BF0E1CA00693C62 /* building_data.json in Resources */,
 				8892EB501BC2082C00347146 /* phase_b_color_00047.jpg in Resources */,
 				8892EA981BC2082C00347146 /* phase_d_color_00007.jpg in Resources */,
 				8892EB941BC2082C00347146 /* phase_c_base_00043.jpg in Resources */,

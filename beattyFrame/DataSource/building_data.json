@@ -1,0 +1,77 @@
+[
+	{	"buildingImage":"Parcel_01.jpg",
+		"buildingTitle":"Parcel 1",
+		"buildingSite":"siteplan_01.png",
+		"buildingSiteCaption":"View from NW",
+		"buildingGallery":"gallery name",
+		"buildingStats":"grfx_bldg_stats_01.png",
+		"buildingWeb":"http://1305dockstreet.com"
+	},
+	{
+		"buildingImage":"Parcel_02-Excelon.jpg",
+		"buildingTitle":"Excelon",
+		"buildingSite":"siteplan_03.png",
+		"buildingSiteCaption":"View from SW",
+		"buildingGallery":"gallery name",
+		"buildingStats":"grfx_bldg_stats_02.png"
+	},
+	{
+		"buildingImage":"Parcel_04.jpg",
+		"buildingTitle":"Parcel 4",
+		"buildingSite":"siteplan_06.png",
+		"buildingSiteCaption":"View from SW",
+		"buildingGallery":"gallery name",
+		"buildingStats":"grfx_bldg_stats_03.png",
+		"buildingWeb":"http://1305dockstreet.com"
+	},
+	{
+		"buildingImage":"Point_Street_Apt.jpg",
+		"buildingTitle":"Point Street Apt.",
+		"buildingSite":"siteplan_05.png",
+		"buildingSiteCaption":"View from SE",
+		"buildingGallery":"gallery name",
+		"buildingStats":"grfx_bldg_stats_04.png"
+	},
+	{
+		"buildingImage":"Thames_Street_Wharf.jpg",
+		"buildingTitle":"Thames Street Wharf",
+		"buildingSite":"siteplan_02.png",
+		"buildingSiteCaption":"View from NE",
+		"buildingGallery":"gallery name",
+		"buildingStats":"grfx_bldg_stats_05.png",
+		"buildingWeb":"http://www.neoscape.com"
+	},
+	{
+		"buildingImage":"Wills_Street_Wharf.jpg",
+		"buildingTitle":"Wills Street Wharf",
+		"buildingSite":"siteplan_07.png",
+		"buildingSiteCaption":"View from S",
+		"buildingGallery":"gallery name",
+		"buildingStats":"grfx_bldg_stats_06.png"
+	},
+	{
+		"buildingImage":"Parcel_03.jpg","buildingTitle":
+		"Parcel 3","buildingSite":"siteplan_09.png",
+		"buildingSiteCaption":"View from N",
+		"buildingGallery":"gallery name",
+		"buildingStats":"grfx_bldg_stats_07.png",
+		"buildingWeb":"http://1305dockstreet.com"
+	},
+	{
+		"buildingImage":"Harbor_Point_Park.jpg",
+		"buildingTitle":"Harbor Point Park",
+		"buildingSite":"siteplan_08.png",
+		"buildingSiteCaption":"View from W",
+		"buildingGallery":"gallery name",
+		"buildingStats":"grfx_bldg_stats_08.png"
+	},
+	{
+		"buildingImage":"Central_Plaza.jpg",
+		"buildingTitle":"Central Plaza",
+		"buildingSite":"siteplan_04.png",
+		"buildingSiteCaption":"View from E",
+		"buildingGallery":"gallery name",
+		"buildingStats":"grfx_bldg_stats_09.png",
+		"buildingWeb":"http://1305dockstreet.com"
+	}
+]
