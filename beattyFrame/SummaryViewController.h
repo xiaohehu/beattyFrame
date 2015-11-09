@@ -10,7 +10,4 @@
 
 @interface SummaryViewController : UIViewController
 
-@property (nonatomic, readwrite) BOOL   preloadSitePlan;
-@property (nonatomic, readwrite) BOOL   loadWithAnimation;
-
 @end

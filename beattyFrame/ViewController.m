@@ -26,6 +26,8 @@
 #import "TutorialsListController.h"
 #import "LibraryAPI.h"
 #import "embBuilding.h"
+#import "MasterplanParkingViewController.h"
+
 
 static float    sideMenuWidth = 235.0;
 static float    menuButtonSize = 50.0;
@@ -36,6 +38,7 @@ static float    menuButtonSize = 50.0;
 
     SummaryViewController   *summary;
     BuildingViewController  *buildingVC;
+    MasterplanParkingViewController*masterplanVC;
     IBOutlet UIView         *uiv_vcBigContainer;
     IBOutlet UIView         *uiv_sideMenuContainer;
     IBOutlet UIView         *uiv_vcCover;
@@ -104,7 +107,9 @@ static float    menuButtonSize = 50.0;
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor redColor];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeSummary:) name:@"RemoveSummeary" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadSummaryInSite360:) name:@"loadSummary" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadMasterPlanInSite360:) name:@"loadMasterPlan" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadSummary:) name:@"loadSummary" object:nil];
+
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setEmailDataObject:) name:@"emailData" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateHighlightedButton:) name:@"updatedSupportingSideMenu" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadBuildingVC:) name:@"loadBuilding" object:nil];
@@ -216,7 +221,7 @@ static float    menuButtonSize = 50.0;
     [self.view addSubview:uiv_vcBigContainer];
     
     // UiView used to tap close side menu
-    uiv_vcCover.backgroundColor = [UIColor clearColor];
+    uiv_vcCover.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.5];
     UITapGestureRecognizer *tapCover = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapMenuButtonClose:)];
     uiv_vcCover.userInteractionEnabled = YES;
     [uiv_vcCover addGestureRecognizer: tapCover];
@@ -319,9 +324,24 @@ static float    menuButtonSize = 50.0;
     
     uiv_vcBigContainer.layer.borderColor = [UIColor lightGrayColor].CGColor;
     uiv_vcBigContainer.layer.borderWidth = 5.0;
-    uiv_vcCover.alpha = 1.0;
+    
+    [UIView animateWithDuration:0.7
+                          delay:0
+         usingSpringWithDamping:0.2
+          initialSpringVelocity:0.2
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                            //Animations
+                         uib_help.transform = CGAffineTransformIdentity;
+                        }
+                     completion:^(BOOL finished) {
+                         //Completion Block
+                     }];
     
     [UIView animateWithDuration:0.33 animations:^(void){
+        
+        uiv_vcCover.alpha = 1.0;
+        
         uib_menuButton.transform = CGAffineTransformTranslate(uib_menuButton.transform, -sideMenuWidth+14+menuButtonSize/2, 0.0);
         uib_menuButton.transform = CGAffineTransformRotate(uib_menuButton.transform, M_PI_4);
         uiv_sideMenuContainer.transform = CGAffineTransformIdentity;
@@ -330,7 +350,7 @@ static float    menuButtonSize = 50.0;
         uiv_vcBigContainer.transform = CGAffineTransformTranslate(uiv_vcBigContainer.transform, -1024*0.149, 0.0);
         
         uib_help.alpha=1.0;
-        uib_help.transform = CGAffineTransformIdentity;
+       // uib_help.transform = CGAffineTransformIdentity;
         
     } completion:^(BOOL finished){
         [uib_menuButton removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
@@ -358,7 +378,7 @@ static float    menuButtonSize = 50.0;
         
         uib_help.transform = CGAffineTransformMakeTranslation(0.0, 50.0);
         uib_help.alpha=0.0;
-        
+        uiv_vcCover.alpha = 0.0;
         uib_menuButton.transform = CGAffineTransformIdentity;
         uiv_vcBigContainer.transform = CGAffineTransformIdentity;
         uiv_sideMenuContainer.transform = CGAffineTransformMakeTranslation(sideMenuWidth, 0.0);
@@ -576,32 +596,50 @@ static float    menuButtonSize = 50.0;
  * Pop up Summary/Master_Plan view controller
  * Accroding to selected button's tag to set the initial loaded view
  */
-- (void)loadSummaryInSite360:(NSNotification *)notification {
+- (void)loadMasterPlanInSite360:(NSNotification *)notification {
     
     [self updateSectionTitle:@"Harbor Point"];
     [self updateSubTitle:@"Site 360"];
     
-    summary = [[SummaryViewController alloc] init];
-    summary.view.frame = self.view.bounds;
-    summary.preloadSitePlan = NO;
-    summary.loadWithAnimation = YES;
+    masterplanVC = [[MasterplanParkingViewController alloc] init];
+    masterplanVC.view.frame = self.view.bounds;
+    masterplanVC.preloadSitePlan = NO;
+    masterplanVC.loadWithAnimation = YES;
+    [self addChildViewController: masterplanVC];
+    [self.view addSubview: masterplanVC.view];
+}
+
+- (IBAction)loadMasterPlan:(id)sender {
+    [self tapMenuButtonClose:nil];
+    masterplanVC = [[MasterplanParkingViewController alloc] init];
+    masterplanVC.view.frame = self.view.bounds;
+    if ([sender tag]%2 != 0) {
+        masterplanVC.preloadSitePlan = YES;
+    }
+    masterplanVC.loadWithAnimation = YES;
     [self addChildViewController: summary];
-    [self.view addSubview: summary.view];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.33 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [self.view addSubview: masterplanVC.view];
+    });
 }
 
 - (IBAction)loadSummary:(id)sender {
     [self tapMenuButtonClose:nil];
-    summary = [[SummaryViewController alloc] init];
-    summary.view.frame = self.view.bounds;
-    if ([sender tag]%2 != 0) {
-        summary.preloadSitePlan = YES;
-    }
-    summary.loadWithAnimation = YES;
-    [self addChildViewController: summary];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.33 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        [self.view addSubview: summary.view];
-    });
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    summary = [storyboard instantiateViewControllerWithIdentifier:@"SummaryViewController"];
+    [self presentViewController:summary animated:YES completion:nil];
 }
+
+//
+//- (IBAction)loadSummaryOnly:(id)sender {
+//    [self tapMenuButtonClose:nil];
+//    summary = [[SummaryViewController alloc] init];
+//    summary.view.frame = self.view.bounds;
+//    [self addChildViewController: summary];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.33 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+//        [self.view addSubview: summary.view];
+//    });
+//}
 
 /*
  * Remove Summary/Master_Plan view controller by recveiving the NSNotification

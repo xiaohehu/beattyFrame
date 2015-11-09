@@ -28,7 +28,11 @@ static float bottomMenuHeight  = 37.0;
     UIView              *uiv_buttonIndicator;
     IBOutlet UIButton   *uib_summary;
     NSMutableArray      *arr_menuButton;
-    
+    NSMutableArray      *arr_highlightViews;
+
+    __weak IBOutlet UIView *uiv_masterContainer;
+    __weak IBOutlet UIButton *uib_Masterplan;
+    __weak IBOutlet UIButton *uib_Parking;
 //    UILabel             *uil_buildingTitle;
 }
 @end
@@ -116,98 +120,9 @@ static float bottomMenuHeight  = 37.0;
             namesArray = [[dict valueForKey:@"devices"]objectForKey:[[self deviceInfo] objectForKey:@"EMBDeviceType"]];
         }
     }
+    
+    arr_highlightViews = [[NSMutableArray alloc] init];
 }
-
-//===================Animate Path==============================
-
-//- (CGPoint)calculateEllipsePathWithIndex:(int)index andA:(int)a andB:(int)b andCenterPoint:(CGPoint)centerPoint rotation:(float)rotation {
-//
-//    int sectionFrameNum = (numberOfFrames + 1)/4;
-//    int section = index/sectionFrameNum;
-//    
-//    float x_value = 0.0;
-//    float y_value = 0.0;
-//    float x_final = 0.0;
-//    float y_final = 0.0;
-//    while (rotation > M_PI) {
-//        rotation -= M_PI;
-//    }
-//    if (ABS(rotation - M_PI_2) < 0.1) {
-//        if (section < 2) {
-//            float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
-//            float angle = M_PI * (1.0 - ratio);
-//            x_value = cosf(angle) * b ;
-//            y_value = sinf(angle) * a ;
-//            return CGPointMake(x_value + centerPoint.x, centerPoint.y + y_value);
-//        } else {
-//            float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
-//            float angle = M_PI * ratio;
-//            x_value = cosf(angle) * b ;
-//            y_value = sinf(angle) * a ;
-//            return CGPointMake(x_value + centerPoint.x, centerPoint.y - y_value);
-//        }
-//    }
-//    
-//    else {
-////        if (section < 2) {
-//            float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
-//            float angle = M_PI * (1.0 - ratio);
-//            x_value = cosf(angle) * a ;
-//            y_value = sinf(angle) * b ;
-//            
-//            x_final = (x_value - y_value*tanf(rotation)) * cosf(rotation);
-//            y_final = (x_value - y_value*tanf(rotation)) * sinf(rotation) + (y_value / cosf(rotation));
-//            return CGPointMake(x_final + centerPoint.x, centerPoint.y + y_final);
-////        } else {
-////            float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
-////            float angle = M_PI * ratio;
-////            x_value = cosf(angle) * a ;
-////            y_value = sinf(angle) * b ;
-////            
-////            x_final = (x_value - y_value*tanf(M_PI_2 - rotation)) * cosf(M_PI_2 - rotation);
-////            y_final = (x_value - y_value*tanf(M_PI_2 - rotation)) * sinf(M_PI_2 - rotation) + (y_value / cosf(M_PI_2 - rotation));
-////            
-////            return CGPointMake(x_final + centerPoint.x, centerPoint.y - y_final);
-////        }
-//    }
-//
-//    
-////    if (section < 2) {
-////        float ratio = (float)index/((float)(numberOfFrames+1)/2.0);
-////        float angle = M_PI * (1.0 - ratio);
-////        x_value = cosf(angle) * a ;
-////        y_value = sinf(angle) * b ;
-////        return CGPointMake(x_value + centerPoint.x, centerPoint.y + y_value);
-////    } else {
-////        float ratio = (float)(index - (numberOfFrames+1)/2)/((float)(numberOfFrames+1)/2.0);
-////        float angle = M_PI * ratio;
-////        x_value = cosf(angle) * a ;
-////        y_value = sinf(angle) * b ;
-////        return CGPointMake(x_value + centerPoint.x, centerPoint.y - y_value);
-////    }
-//    return  CGPointZero;
-//}
-//
-//- (void)animateLabelAtIndex:(int)index{
-//    
-//    CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-//    pathAnimation.calculationMode = kCAAnimationDiscrete;
-//    pathAnimation.fillMode = kCAFillModeBoth;
-//    pathAnimation.removedOnCompletion = NO;
-//    pathAnimation.duration = 0.0;
-//    
-//    CGMutablePathRef curvedPath = CGPathCreateMutable();
-//    CGPoint destination = [self calculateEllipsePathWithIndex:index andA:400 andB:100 andCenterPoint:CGPointMake(517, 318) rotation:0.0];
-//    CGPathMoveToPoint(curvedPath, NULL, destination.x, destination.y);
-//    CGPathAddQuadCurveToPoint(curvedPath, NULL, destination.x, destination.y, destination.x, destination.y);
-//    
-//    //Now we have the path, we tell the animation we want to use this path - then we release the path
-//    pathAnimation.path = curvedPath;
-//    CGPathRelease(curvedPath);
-//    [uil_buildingTitle.layer addAnimation:pathAnimation forKey:@"moveTheSquare"];
-//}
-//
-////===================Animate Path==============================
 
 - (void)createBottomMenu {
     arr_menuButton = [[NSMutableArray alloc] init];
@@ -239,26 +154,72 @@ static float bottomMenuHeight  = 37.0;
         [uiv_bottomContainer addSubview:button];
     }
     
-    uiv_buttonIndicator = [[UIView alloc] initWithFrame:CGRectMake(0.0, bottomMenuHeight - 4.0, buttonFrame.size.width, 4.0)];
-    uiv_buttonIndicator.backgroundColor = [UIColor themeRed];
-    [uiv_bottomContainer addSubview: uiv_buttonIndicator];
+//    uiv_buttonIndicator = [[UIView alloc] initWithFrame:CGRectMake(0.0, bottomMenuHeight - 4.0, buttonFrame.size.width, 4.0)];
+//    uiv_buttonIndicator.backgroundColor = [UIColor themeRed];
+//    [uiv_bottomContainer addSubview: uiv_buttonIndicator];
 
+    [self addButtonHighlightViewTo:uiv_bottomContainer];
+    
     uib_summary.backgroundColor = [UIColor whiteColor];
     [uib_summary setTitle:@"Summary" forState:UIControlStateNormal];
     [uib_summary setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [uib_summary.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
+    
+    
+    
+    [uib_Masterplan setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [uib_Masterplan.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
+    [uib_Masterplan addTarget:self action:@selector(tapMasterMenu:) forControlEvents:UIControlEventTouchUpInside];
+
+    [uib_Parking setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [uib_Parking.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
+    [uib_Parking addTarget:self action:@selector(tapMasterMenu:) forControlEvents:UIControlEventTouchUpInside];
 }
+
+-(void)addButtonHighlightViewTo:(UIView*)container
+{
+    UIView *highlightView = [[UIView alloc] initWithFrame:CGRectMake(0.0, bottomMenuHeight-4.0, 80, 4.0)];
+    highlightView.backgroundColor = [UIColor themeRed];
+    [container addSubview: highlightView];
+    [arr_highlightViews addObject:highlightView];
+    [self.view bringSubviewToFront:highlightView];
+}
+
+- (IBAction)tapMasterMenu:(id)sender {
+    
+    if ([arr_highlightViews count] == 1) {
+        [self addButtonHighlightViewTo:uiv_masterContainer];
+    }
+
+    UIButton *tappedButton = sender;
+    NSLog(@"tapMasterMenu %li",(long)tappedButton.tag);
+    
+    UIView *selctedView = arr_highlightViews[1];
+    CGRect indicatorFrame = selctedView.frame;
+    
+    [UIView animateWithDuration:0.33 animations:^(void){
+        selctedView.frame = CGRectMake(tappedButton.frame.origin.x, indicatorFrame.origin.y, tappedButton.frame.size.width, indicatorFrame.size.height);
+    }];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"loadMasterPlan" object:nil];
+}
+
 
 - (void)tapBottomButton:(id)sender {
     UIButton *tappedButton = sender;
     
     NSLog(@"tappedButton %li",(long)tappedButton.tag);
     
-    CGRect indicatorFrame = uiv_buttonIndicator.frame;
+    //CGRect indicatorFrame = uiv_buttonIndicator.frame;
+    
+    UIView *selctedView = arr_highlightViews[0];
+    CGRect indicatorFrame = selctedView.frame;
+    
     phaseIndex = tappedButton.tag;
     [UIView animateWithDuration:0.33 animations:^(void){
-        uiv_buttonIndicator.frame = CGRectMake(tappedButton.frame.origin.x, indicatorFrame.origin.y, indicatorFrame.size.width, indicatorFrame.size.height);
+        selctedView.frame = CGRectMake(tappedButton.frame.origin.x, indicatorFrame.origin.y, tappedButton.frame.size.width, indicatorFrame.size.height);
     }];
+    
     switch (tappedButton.tag) {
         case 0: {
             uiiv_imageView.image = [self imageAtIndex: currentFrame phaseType:kPhaseABase];
@@ -286,9 +247,9 @@ static float bottomMenuHeight  = 37.0;
 }
 
 - (IBAction)tapSummaryButton:(id)sender {
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:@"loadSummary" object:nil];
 }
-
 
 #pragma mark - METHODS FOR PICKING BUILDING
 #pragma mark picked color from color
@@ -534,10 +495,6 @@ static float bottomMenuHeight  = 37.0;
         NSData *plistData = [NSData dataWithContentsOfFile:path];
         NSError *error;
         NSPropertyListFormat format;
-//        __imageData = [NSPropertyListSerialization propertyListFromData:plistData
-//                                                       mutabilityOption:NSPropertyListImmutable
-//                                                                 format:&format
-//                                                       errorDescription:&error];
         
         __imageData = [NSPropertyListSerialization propertyListWithData:plistData
                                                                 options:NSPropertyListImmutable
@@ -619,16 +576,5 @@ static float bottomMenuHeight  = 37.0;
     }
     return __count;
 }
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

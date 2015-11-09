@@ -476,6 +476,7 @@
 		881D14041BF01D9900693C62 /* grfx_buildingWeb.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D14021BF01D9900693C62 /* grfx_buildingWeb.png */; };
 		881D14051BF01D9900693C62 /* grfx_buildingWeb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D14031BF01D9900693C62 /* grfx_buildingWeb@2x.png */; };
 		881D14071BF0E1CA00693C62 /* building_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 881D14061BF0E1CA00693C62 /* building_data.json */; };
+		881D140A1BF111DA00693C62 /* MasterplanParkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881D14091BF111DA00693C62 /* MasterplanParkingViewController.m */; };
 		887647A41BA32FD8002D4183 /* grfx-city-base-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647861BA32FD8002D4183 /* grfx-city-base-map.png */; };
 		887647A51BA32FD8002D4183 /* grfx-city-base-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */; };
 		887647A61BA32FD8002D4183 /* grfx-site-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647881BA32FD8002D4183 /* grfx-site-marker.png */; };
@@ -1696,6 +1697,8 @@
 		881D14021BF01D9900693C62 /* grfx_buildingWeb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_buildingWeb.png; sourceTree = "<group>"; };
 		881D14031BF01D9900693C62 /* grfx_buildingWeb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_buildingWeb@2x.png"; sourceTree = "<group>"; };
 		881D14061BF0E1CA00693C62 /* building_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = building_data.json; sourceTree = "<group>"; };
+		881D14081BF111DA00693C62 /* MasterplanParkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterplanParkingViewController.h; sourceTree = "<group>"; };
+		881D14091BF111DA00693C62 /* MasterplanParkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterplanParkingViewController.m; sourceTree = "<group>"; };
 		887647861BA32FD8002D4183 /* grfx-city-base-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-city-base-map.png"; sourceTree = "<group>"; };
 		887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-city-base-map@2x.png"; sourceTree = "<group>"; };
 		887647881BA32FD8002D4183 /* grfx-site-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-site-marker.png"; sourceTree = "<group>"; };
@@ -2885,6 +2888,8 @@
 				887648081BA35914002D4183 /* API */,
 				824D272C1B5D7E6700E5F5A5 /* ViewController.h */,
 				824D272D1B5D7E6700E5F5A5 /* ViewController.m */,
+				881D14081BF111DA00693C62 /* MasterplanParkingViewController.h */,
+				881D14091BF111DA00693C62 /* MasterplanParkingViewController.m */,
 				824D27801B5EE77E00E5F5A5 /* SummaryViewController.h */,
 				824D27811B5EE77E00E5F5A5 /* SummaryViewController.m */,
 				824D279B1B613EC500E5F5A5 /* Site360ViewController.h */,
@@ -5579,6 +5584,7 @@
 				824387581B6BAA14003AC214 /* xhPageViewController.m in Sources */,
 				88E074531B98CFB400E0982A /* ModelController.m in Sources */,
 				88E074501B98CFB400E0982A /* FLAnimatedImage.m in Sources */,
+				881D140A1BF111DA00693C62 /* MasterplanParkingViewController.m in Sources */,
 				822822BA1B851E44004154E7 /* SettingTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

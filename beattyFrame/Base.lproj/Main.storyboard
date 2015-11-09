@@ -129,7 +129,7 @@
                                                     <rect key="frame" x="0.0" y="89" width="110" height="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="loadSummary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKQ-6W-W83"/>
+                                                    <action selector="loadMasterPlan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LWv-pp-tgq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yih-w3-nqm">
@@ -169,7 +169,7 @@
                                                     <rect key="frame" x="0.0" y="115" width="110" height="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="loadOpportunities:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Av2-8B-eoY"/>
+                                                    <action selector="loadMasterPlan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVZ-s4-7gT"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -625,6 +625,20 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                                 </variation>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmM-DY-bBI">
+                                                <rect key="frame" x="20" y="20" width="94" height="37"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Summary">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                                    <rect key="frame" x="910" y="20" width="94" height="37"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="tapSummaryButton:" destination="ejP-5U-I7s" eventType="touchUpInside" id="mwZ-ef-aso"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -632,6 +646,7 @@
                                             <mask key="subviews">
                                                 <exclude reference="Ogj-oa-04s"/>
                                                 <exclude reference="gys-LT-fGw"/>
+                                                <exclude reference="rmM-DY-bBI"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
@@ -639,6 +654,7 @@
                                             <mask key="subviews">
                                                 <include reference="Ogj-oa-04s"/>
                                                 <include reference="gys-LT-fGw"/>
+                                                <include reference="rmM-DY-bBI"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -661,23 +677,61 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="598" y="709" width="340" height="37"/>
+                                    <rect key="frame" x="664" y="709" width="340" height="37"/>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmM-DY-bBI">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37F-iI-gZi">
+                                <rect key="frame" x="476" y="689" width="134" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnU-s8-eV5">
+                                        <rect key="frame" x="20" y="20" width="94" height="37"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Masterplan">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="37"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="tapMasterMenu:" destination="ejP-5U-I7s" eventType="touchUpInside" id="Kds-fB-qk3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jp9-Jw-JtU">
+                                        <rect key="frame" x="20" y="20" width="94" height="37"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Parking">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="119" y="0.0" width="120" height="37"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="tapMasterMenu:" destination="ejP-5U-I7s" eventType="touchUpInside" id="II8-xN-b01"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Summary">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="496" y="709" width="94" height="37"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="jnU-s8-eV5"/>
+                                        <exclude reference="Jp9-Jw-JtU"/>
+                                    </mask>
                                 </variation>
-                                <connections>
-                                    <action selector="tapSummaryButton:" destination="ejP-5U-I7s" eventType="touchUpInside" id="Qnx-k0-I30"/>
-                                </connections>
-                            </button>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="711" width="239" height="37"/>
+                                    <mask key="subviews">
+                                        <include reference="jnU-s8-eV5"/>
+                                        <include reference="Jp9-Jw-JtU"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -685,14 +739,12 @@
                             <mask key="subviews">
                                 <exclude reference="LFp-Uy-dgE"/>
                                 <exclude reference="6Cr-rw-WHX"/>
-                                <exclude reference="rmM-DY-bBI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
                                 <include reference="LFp-Uy-dgE"/>
                                 <include reference="6Cr-rw-WHX"/>
-                                <include reference="rmM-DY-bBI"/>
                             </mask>
                         </variation>
                     </view>
@@ -701,15 +753,19 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="colorWheel" destination="Ogj-oa-04s" id="aHH-fP-z7U"/>
+                        <outlet property="uib_Masterplan" destination="jnU-s8-eV5" id="ked-X7-fcl"/>
+                        <outlet property="uib_Parking" destination="Jp9-Jw-JtU" id="25U-Wa-EeM"/>
                         <outlet property="uib_summary" destination="rmM-DY-bBI" id="8lk-rm-sgJ"/>
                         <outlet property="uiiv_imageView" destination="gys-LT-fGw" id="yrc-Ji-Y0d"/>
                         <outlet property="uis_scrollView" destination="LFp-Uy-dgE" id="YXf-2R-JMt"/>
                         <outlet property="uiv_bottomContainer" destination="6Cr-rw-WHX" id="dko-Ap-9jJ"/>
                         <outlet property="uiv_container" destination="gY6-51-LWV" id="ENh-TZ-Fxb"/>
+                        <outlet property="uiv_masterContainer" destination="37F-iI-gZi" id="4yf-rZ-qeh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFB-Y9-ifH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="531.75" y="888"/>
         </scene>
         <!--Gallery View Controller-->
         <scene sceneID="lRr-7H-nx7">
@@ -1089,6 +1145,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0X-a6-sJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Summary View Controller-->
+        <scene sceneID="Uhz-ez-FtC">
+            <objects>
+                <viewController storyboardIdentifier="SummaryViewController" id="hXN-dx-tnY" customClass="SummaryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ybm-p1-5fw"/>
+                        <viewControllerLayoutGuide type="bottom" id="3cf-Xi-1NB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N3Q-46-MOw">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF4-Ui-663" userLabel="Close">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="grfx_closeBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="962" y="8" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tapCloseButton:" destination="hXN-dx-tnY" eventType="touchUpInside" id="R3e-SY-05D"/>
+                                    <action selector="tapCloseButton:" destination="CeG-kc-ZJW" eventType="touchUpInside" id="pr5-Ge-lG5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xF4-Ui-663"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="xF4-Ui-663"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S1O-8v-s0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891.5" y="-764.25"/>
         </scene>
         <!--Sponsor Data View Controller-->
         <scene sceneID="YfS-Hv-lCf">
