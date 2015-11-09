@@ -10,8 +10,8 @@
 
 @interface embBuilding : NSObject <NSCoding>
 
-@property (nonatomic, copy) NSString *buildingImage, *buildingTitle, *buildingSiteCaption, *buildingSite, *buildingGallery;
+@property (nonatomic, copy) NSString *buildingImage, *buildingTitle, *buildingSiteCaption, *buildingSite, *buildingGallery, *buildingWeb, *buildingData;
 
-- (id)initWithImage:(NSString*)buildingImage title:(NSString*)buildingTitle state:(NSString*)buildingSiteCaption caption:(NSString*)buildingSite background:(NSString*)buildingGallery;
+- (id)initWithImage:(NSString*)buildingImage title:(NSString*)buildingTitle state:(NSString*)buildingSiteCaption caption:(NSString*)buildingSite background:(NSString*)buildingGallery buildingWeb:(NSString*)buildingWeb buildingData:(NSString*)buildingData;
 
 @end

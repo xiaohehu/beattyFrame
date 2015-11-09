@@ -13,6 +13,7 @@
 #import "GalleryViewController.h"
 #import "LibraryAPI.h"
 #import "embBuilding.h"
+#import "xhWebViewController.h"
 
 #define dataExpansion YES
 
@@ -21,7 +22,7 @@
     CGRect              bigContainerFrame;
     CGRect              smallContainerFrame;
     // Building menu & content
-    UIImageView         *uiiv_bg;
+    UIImageView         *uiiv_data;
     UIView              *uiv_menuContainer;
     UIView              *uiv_buildingMenu;
     UIView              *uiv_buildingContent;
@@ -34,10 +35,13 @@
     NSMutableArray      *arr_menuButtons;
     int                 currentPageIndex;
     embBuilding         *currentBuilding;
+    embBuilding *newBuilding;
+   
 }
 
 @property (readonly, strong, nonatomic) buildingModelController         *modelController;
 @property (strong, nonatomic)           UIPageViewController            *pageViewController;
+@property (strong, nonatomic)           UIButton                        *webButton;
 
 @end
 
@@ -58,7 +62,7 @@
     
     _modelController = [[buildingModelController alloc] init];
     
-    //[self prepareData];
+    [self prepareData];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -112,12 +116,22 @@
     uiv_buildingMenu.backgroundColor = [UIColor whiteColor];
     [uiv_menuContainer addSubview:uiv_buildingMenu];
     
-    if (! dataExpansion) {
+
+    if ( dataExpansion ) {
         
         uiv_buildingContent = [UIView new];
         uiv_buildingContent.frame = CGRectMake(0.0, 130.0, 360.0, 260.0);
-        uiv_buildingContent.backgroundColor = [UIColor greenColor];
+        uiv_buildingContent.backgroundColor = [UIColor whiteColor];
         [uiv_menuContainer addSubview: uiv_buildingContent];
+        
+        
+        uiiv_data = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, uiv_buildingContent.frame.size.width, uiv_buildingContent.frame.size.height)];
+        uiiv_data.image = [UIImage imageNamed:currentBuilding.buildingData];
+        [uiv_buildingContent addSubview:uiiv_data];
+        
+        //[self.view addSubview:uiiv_data];
+        
+        //[uiv_menuContainer addSubview:uiiv_data];
     
         uib_expand = [UIButton buttonWithType:UIButtonTypeCustom];
         uib_expand.frame = CGRectMake(uiv_menuContainer.frame.origin.x + (uiv_buildingMenu.frame.size.width - 50)/2, uiv_menuContainer.frame.origin.y + uiv_buildingMenu.frame.size.height - 50/2, 50, 50);
@@ -138,7 +152,7 @@
     uil_viewLabel.backgroundColor =  [UIColor clearColor];
     [uiv_buildingMenu addSubview: uil_viewLabel];
     
-    uil_buildingName = [[UILabel alloc] initWithFrame:CGRectMake(uiiv_viewImage.frame.origin.x+uiiv_viewImage.frame.size.width, 0.0, 202, 47)];
+    uil_buildingName = [[UILabel alloc] initWithFrame:CGRectMake(uiiv_viewImage.frame.origin.x+uiiv_viewImage.frame.size.width, 2.0, 202, 47)];
     [uil_buildingName setText:currentBuilding.buildingTitle];
     uil_buildingName.backgroundColor = [UIColor clearColor];
     [uiv_buildingMenu addSubview: uil_buildingName];
@@ -305,19 +319,34 @@
 
 -(void)setBuildingData
 {
-    embBuilding *newBuilding = [[[LibraryAPI sharedInstance] getEvents] objectAtIndex:currentPageIndex];
+    newBuilding = [[[LibraryAPI sharedInstance] getEvents] objectAtIndex:currentPageIndex];
     [[LibraryAPI sharedInstance] setCurrentEvent:newBuilding];
-    //        currentBuilding = nil;
-    //    currentBuilding = newBuilding;
-    //
-    //    currentBuilding = [[LibraryAPI sharedInstance] getCurrentEvent];
-    //    [self createMenuItems];
-    //
-    //    [uiv_menuContainer removeFromSuperview];
     
     [uil_buildingName setText:newBuilding.buildingTitle];
     [uil_viewLabel setText:newBuilding.buildingSiteCaption];
     uiiv_viewImage.image = [UIImage imageNamed:newBuilding.buildingSite];
+    
+    if ( ! newBuilding.buildingWeb.length == 0) {
+        NSLog(@" newbuilding.buildingWeb %@",newBuilding.buildingWeb);
+        _webButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _webButton.frame = CGRectMake(307,6,40,40);
+        [_webButton setImage:[UIImage imageNamed:@"grfx_buildingWeb.png"] forState:UIControlStateNormal];
+        [_webButton addTarget:self action:@selector(createWebButtonWithAddress:) forControlEvents:UIControlEventTouchUpInside];
+        [uiv_buildingMenu addSubview: _webButton];
+    } else {
+        [_webButton removeFromSuperview];
+    }
+    
+    uiiv_data.image = [UIImage imageNamed:newBuilding.buildingData];
+}
+
+-(void)createWebButtonWithAddress:(UIButton*)address
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    xhWebViewController *vc = (xhWebViewController*)[mainStoryboard instantiateViewControllerWithIdentifier:@"xhWebViewController"];
+    [vc socialButton:newBuilding.buildingWeb];
+    vc.modalPresentationStyle = UIModalPresentationCurrentContext;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void) setpageIndex {

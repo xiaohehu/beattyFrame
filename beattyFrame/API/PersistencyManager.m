@@ -40,6 +40,8 @@
             building.buildingSite = dict[@"buildingSite"];
             building.buildingSiteCaption = dict[@"buildingSiteCaption"];
             building.buildingGallery = dict[@"buildingGallery"];
+            building.buildingData = dict[@"buildingStats"];
+            building.buildingWeb = dict[@"buildingWeb"];
             [buildings addObject:building];
         }
 

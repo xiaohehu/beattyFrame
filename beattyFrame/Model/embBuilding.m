@@ -18,6 +18,9 @@
     [aCoder encodeObject:self.buildingSite forKey:@"buildingSite"];
     [aCoder encodeObject:self.buildingSiteCaption forKey:@"buildingSiteCaption"];
     [aCoder encodeObject:self.buildingGallery forKey:@"buildingGallery"];
+    [aCoder encodeObject:self.buildingWeb forKey:@"buildingWeb"];
+    [aCoder encodeObject:self.buildingData forKey:@"buildingStats"];
+
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -30,10 +33,12 @@
         _buildingSite = [aDecoder decodeObjectForKey:@"buildingSite"];
         _buildingSiteCaption = [aDecoder decodeObjectForKey:@"buildingSiteCaption"];
         _buildingGallery = [aDecoder decodeObjectForKey:@"buildingGallery"];
+        _buildingWeb = [aDecoder decodeObjectForKey:@"buildingWeb"];
+        _buildingData = [aDecoder decodeObjectForKey:@"buildingStats"];
     }
     return self;
 }
-- (id)initWithImage:(NSString*)buildingImage title:(NSString*)buildingTitle state:(NSString*)buildingSiteCaption caption:(NSString*)buildingSite background:(NSString*)buildingGallery
+- (id)initWithImage:(NSString*)buildingImage title:(NSString*)buildingTitle state:(NSString*)buildingSiteCaption caption:(NSString*)buildingSite background:(NSString*)buildingGallery buildingWeb:(NSString*)buildingWeb buildingData:(NSString*)buildingData
 {
     self = [super init];
     if (self)
@@ -43,7 +48,8 @@
         _buildingSite = buildingSite;
         _buildingSiteCaption = buildingSiteCaption;
         _buildingGallery = buildingGallery;
-
+        _buildingData = buildingData;
+        _buildingWeb = buildingWeb;
     }
     return self;
 }
