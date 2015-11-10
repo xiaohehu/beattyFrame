@@ -58,6 +58,19 @@
     
     [self createHeaderViewWithText:@"Overlays" atFrame:CGRectMake(15, 160, 150, 40)];
     [self createHeaderViewWithText:@"Parking" atFrame:CGRectMake(15, 410, 150, 40)];
+    
+    UIButton *uib_sectionTitle = [UIButton buttonWithType:UIButtonTypeCustom];
+    uib_sectionTitle.backgroundColor = [UIColor themeRed];
+    [uib_sectionTitle setTitle:@"Masterplan" forState:UIControlStateNormal];
+    [uib_sectionTitle setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [uib_sectionTitle.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:25.0]];
+    [uib_sectionTitle sizeToFit];
+    uib_sectionTitle.userInteractionEnabled = NO;
+    CGRect frame = uib_sectionTitle.frame;
+    frame.size.width += 38;
+    uib_sectionTitle.frame = frame;
+    [self.view addSubview:uib_sectionTitle];
+
 }
 
 -(void)createHeaderViewWithText:(NSString*)text atFrame:(CGRect)frame
@@ -219,7 +232,7 @@
 
 - (void)createTopButtons {
     uib_close = [UIButton buttonWithType:UIButtonTypeCustom];
-    uib_close.frame = CGRectMake(uiv_container.frame.origin.x+uiv_container.frame.size.width - 15, uiv_container.frame.origin.y - 15, 30, 30);
+    uib_close.frame = CGRectMake(957, 0, 57, 57);
     [uib_close setImage:[UIImage imageNamed:@"grfx_closeBtn.png"] forState:UIControlStateNormal];
     uib_close.backgroundColor = [UIColor clearColor];
     [uib_close addTarget:self action:@selector(closeThisView:) forControlEvents:UIControlEventTouchUpInside];
