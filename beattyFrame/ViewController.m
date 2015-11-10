@@ -143,14 +143,6 @@ static float    menuButtonSize = 50.0;
     
     [[NSUserDefaults standardUserDefaults] setValue:@"loadFilm" forKey:@"loadIntroMove"];
     self.view.backgroundColor = [UIColor whiteColor];
-//    NSArray *fontFamilies = [UIFont familyNames];
-//    
-//    for (int i = 0; i < [fontFamilies count]; i++)
-//    {
-//        NSString *fontFamily = [fontFamilies objectAtIndex:i];
-//        NSArray *fontNames = [UIFont fontNamesForFamilyName:[fontFamilies objectAtIndex:i]];
-//        NSLog (@"%@: %@", fontFamily, fontNames);
-//    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -167,13 +159,6 @@ static float    menuButtonSize = 50.0;
         NSLog(@"Set to nil");
     }
     NSString *url = [[NSBundle mainBundle] pathForResource:@"hp_ipad_logo_intro" ofType:@"mov"];
-//    introAvPlayer = [AVPlayer playerWithURL:[NSURL fileURLWithPath:url]];
-//    introAvPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:introAvPlayer];
-//    introAvPlayerLayer.frame = self.view.bounds;
-//    introAvPlayerLayer.backgroundColor = [UIColor greenColor].CGColor;//[UIColor colorWithRed:255.0/255.0 green:2.0/255.0 blue:1.0/255.0 alpha:1.0].CGColor;
-//    [self.view.layer addSublayer: introAvPlayerLayer];
-//    [introAvPlayer play];
-    
     AVAsset *avAsset = [AVAsset assetWithURL:[NSURL fileURLWithPath:url]];
     AVPlayerItem *avPlayerItem =[[AVPlayerItem alloc]initWithAsset:avAsset];
     introAvPlayer = [[AVPlayer alloc]initWithPlayerItem:avPlayerItem];
@@ -181,12 +166,7 @@ static float    menuButtonSize = 50.0;
     [introAvPlayerLayer setFrame:self.view.bounds];
     introAvPlayerLayer.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:2.0/255.0 blue:1.0/255.0 alpha:1.0].CGColor;
     [self.view.layer addSublayer:introAvPlayerLayer];
-//    [introAvPlayer seekToTime:kCMTimeZero];
-    
     [introAvPlayer play];
-    
-    
-    
     
     // Add obersver when the movie reaches end
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -393,17 +373,6 @@ static float    menuButtonSize = 50.0;
     [self tapMenuButtonClose:nil];
     [self performSelector:@selector(createIntroMovie) withObject:nil afterDelay:0.33];
     [self loadSite360:uib_site360];
-//    [UIView animateWithDuration:0.33 delay:0.33 options:0 animations:^(void){
-//        uiiv_initImage.alpha = 1.0;
-//    } completion:^(BOOL finished){
-//
-//        [UIView animateWithDuration:0.5 delay:2.0 options:0 animations:^(void){
-//            uiiv_initImage.alpha = 0.0;
-//        } completion:^(BOOL finished){
-//            
-//        }];
-//        
-//    }];
 }
 
 #pragma mark Highlight selected side menu buttons
@@ -475,7 +444,6 @@ static float    menuButtonSize = 50.0;
     [UIView animateWithDuration:0.33 animations:^(void){
         buildingVC.view.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished){
-//        currentViewController = buildingVC;
     }];
 }
 
@@ -564,7 +532,6 @@ static float    menuButtonSize = 50.0;
     viewController.view.frame = self.view.bounds;
     [self addChildViewController:viewController];
     viewController.view.alpha = 0.0;
-//    [uiv_vcBigContainer addSubview: viewController.view];
     [uiv_vcBigContainer insertSubview:viewController.view belowSubview:uib_sectionTitle];
     /*
      * Check current view controller
@@ -600,8 +567,6 @@ static float    menuButtonSize = 50.0;
     
     masterplanVC = [[MasterplanParkingViewController alloc] init];
     masterplanVC.view.frame = self.view.bounds;
-//    masterplanVC.preloadSitePlan = NO;
-//    masterplanVC.loadWithAnimation = YES;
     [self addChildViewController: masterplanVC];
     [self.view addSubview: masterplanVC.view];
 }
@@ -611,17 +576,6 @@ static float    menuButtonSize = 50.0;
     masterplanVC = [[MasterplanParkingViewController alloc] init];
     masterplanVC.view.frame = self.view.bounds;
     [self presentViewController:masterplanVC animated:YES completion:^(void){  }];
-    
-    NSLog(@"loadMasterPlan");
-    
-////    if ([sender tag]%2 != 0) {
-////        masterplanVC.preloadSitePlan = YES;
-////    }
-////    masterplanVC.loadWithAnimation = YES;
-//    [self addChildViewController: summary];
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.33 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-//        [self.view addSubview: masterplanVC.view];
-//    });
 }
 
 - (IBAction)loadSummary:(id)sender {
@@ -630,17 +584,6 @@ static float    menuButtonSize = 50.0;
     summary = [storyboard instantiateViewControllerWithIdentifier:@"SummaryViewController"];
     [self presentViewController:summary animated:YES completion:nil];
 }
-
-//
-//- (IBAction)loadSummaryOnly:(id)sender {
-//    [self tapMenuButtonClose:nil];
-//    summary = [[SummaryViewController alloc] init];
-//    summary.view.frame = self.view.bounds;
-//    [self addChildViewController: summary];
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.33 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-//        [self.view addSubview: summary.view];
-//    });
-//}
 
 /*
  * Remove Summary/Master_Plan view controller by recveiving the NSNotification
@@ -706,26 +649,6 @@ static float    menuButtonSize = 50.0;
     NSLog(@"loadKeypad");
     TipsViewController* vc = [TipsViewController new];
     [self presentViewController:vc animated:YES completion:nil];
-    
-//    CGRect VIEWRECT = CGRectMake(0, 0, 366, 544);
-//    
-//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"tutorial" bundle:nil];
-//    [sb instantiateInitialViewController];
-//    UINavigationController *vc = [sb instantiateViewControllerWithIdentifier:@"NavController"];
-//    
-//    vc.view.frame = VIEWRECT;
-//    [self.view addSubview:vc.view];
-//    [self addChildViewController:vc];
-//    [vc didMoveToParentViewController:self];
-    
-    //CGRect VIEWRECT = CGRectMake(0, 0, 366, 544);
-    
-//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"tutorial" bundle:nil];
-//    [sb instantiateInitialViewController];
-//    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"TutorialsListController"];
-//    vc.view.frame = VIEWRECT;
-//    //vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-//    [self.view addSubview:vc.view];
 }
 
 #pragma mark - Mail Sending
