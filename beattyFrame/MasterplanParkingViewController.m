@@ -11,32 +11,17 @@
 #import "ButtonStack.h"
 #import "UIColor+Extensions.h"
 
-@interface MasterplanParkingViewController ()<ButtonStackDelegate> {
-    // Basic UI elements
-    UIView                  *uiv_container;
-    UIButton                *uib_summary;
-    UIButton                *uib_sitePlan;
-    UIView                  *uiv_buttonHighlight;
+@interface MasterplanParkingViewController ()<ButtonStackDelegate>
+{
     UIButton                *uib_close;
-    // Summary view UI elements
-    UIImageView             *uiiv_leftSummary;
-    UIImageView             *uiiv_rightSummary;
-    // Site Plan view UI elements
-    UIView                  *uiv_sitePlanContainer;
-    UIView                  *uiv_buttonPanel;
     ebZoomingScrollView     *uis_zoomSitePlan;
-    NSArray                 *arr_optionColors;
-    NSMutableArray          *arr_siteOptions;
-    NSMutableArray          *arr_siteOverlay;
-    
-    //ButtonStack         *overlayMenu;
-    NSArray             *arr_OverlayData;
-    NSArray             *arr_OverlayParkData;
-    NSDictionary        *menuData;
-    UIImageView         *overlayAsset;
-    UIImageView         *overlayAssetParking;
-    int                 overlayMenuIndex;
-    int                 overlayParkingMenuIndex;
+    NSArray                 *arr_OverlayData;
+    NSArray                 *arr_OverlayParkData;
+    NSDictionary            *menuData;
+    UIImageView             *overlayAsset;
+    UIImageView             *overlayAssetParking;
+    int                     overlayMenuIndex;
+    int                     overlayParkingMenuIndex;
 }
 
 @property (nonatomic, strong) ebZoomingScrollView			*zoomingScroll;
