@@ -221,7 +221,7 @@ static float    menuButtonSize = 50.0;
     [self.view addSubview:uiv_vcBigContainer];
     
     // UiView used to tap close side menu
-    uiv_vcCover.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.5];
+    uiv_vcCover.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.75];
     UITapGestureRecognizer *tapCover = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapMenuButtonClose:)];
     uiv_vcCover.userInteractionEnabled = YES;
     [uiv_vcCover addGestureRecognizer: tapCover];
@@ -269,6 +269,7 @@ static float    menuButtonSize = 50.0;
     uib_help = [UIButton buttonWithType:UIButtonTypeCustom];
     UIImage *help = [UIImage imageNamed:@"ui_tips.png"];
     uib_help.frame = CGRectMake(self.view.bounds.size.width / 2.8, self.view.bounds.size.height / 2.20, help.size.height, help.size.width);
+    
     [uib_help setImage:[UIImage imageNamed:@"ui_tips.png"] forState:UIControlStateNormal];
     [uib_help addTarget:self action:@selector(loadHelp:) forControlEvents:UIControlEventTouchUpInside];
     //[self.view addSubview: uib_menuButton];
@@ -276,7 +277,6 @@ static float    menuButtonSize = 50.0;
 
     uib_help.transform = CGAffineTransformMakeTranslation(0.0, 50.0);
     uib_help.alpha=0.0;
-
 }
 
 - (void)groupSideMenuButtons {
