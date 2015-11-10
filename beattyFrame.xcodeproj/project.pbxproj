@@ -489,6 +489,7 @@
 		881D14241BF17D9600693C62 /* grfx_siteMap_overlay_parking_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D141C1BF17D9600693C62 /* grfx_siteMap_overlay_parking_03@2x.png */; };
 		881D14251BF17D9600693C62 /* grfx_siteMap_overlay_parking_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D141D1BF17D9600693C62 /* grfx_siteMap_overlay_parking_04.png */; };
 		881D14261BF17D9600693C62 /* grfx_siteMap_overlay_parking_04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D141E1BF17D9600693C62 /* grfx_siteMap_overlay_parking_04@2x.png */; };
+		881D14281BF1971B00693C62 /* hp_ipad_logo_intro.mov in Resources */ = {isa = PBXBuildFile; fileRef = 881D14271BF1971B00693C62 /* hp_ipad_logo_intro.mov */; };
 		887647A41BA32FD8002D4183 /* grfx-city-base-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647861BA32FD8002D4183 /* grfx-city-base-map.png */; };
 		887647A51BA32FD8002D4183 /* grfx-city-base-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */; };
 		887647A61BA32FD8002D4183 /* grfx-site-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647881BA32FD8002D4183 /* grfx-site-marker.png */; };
@@ -1724,6 +1725,7 @@
 		881D141C1BF17D9600693C62 /* grfx_siteMap_overlay_parking_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_siteMap_overlay_parking_03@2x.png"; sourceTree = "<group>"; };
 		881D141D1BF17D9600693C62 /* grfx_siteMap_overlay_parking_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_siteMap_overlay_parking_04.png; sourceTree = "<group>"; };
 		881D141E1BF17D9600693C62 /* grfx_siteMap_overlay_parking_04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_siteMap_overlay_parking_04@2x.png"; sourceTree = "<group>"; };
+		881D14271BF1971B00693C62 /* hp_ipad_logo_intro.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = hp_ipad_logo_intro.mov; sourceTree = "<group>"; };
 		887647861BA32FD8002D4183 /* grfx-city-base-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-city-base-map.png"; sourceTree = "<group>"; };
 		887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-city-base-map@2x.png"; sourceTree = "<group>"; };
 		887647881BA32FD8002D4183 /* grfx-site-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-site-marker.png"; sourceTree = "<group>"; };
@@ -2567,6 +2569,7 @@
 		822822881B836F83004154E7 /* film */ = {
 			isa = PBXGroup;
 			children = (
+				881D14271BF1971B00693C62 /* hp_ipad_logo_intro.mov */,
 				822822891B836F83004154E7 /* 2015_08_14_ipad_logo_intro.mov */,
 				823464B11B90E450005DA3E0 /* 2015_08_14_ipad_logo_intro.m4v */,
 			);
@@ -5121,6 +5124,7 @@
 				8892EDB21BC2092B00347146 /* phase_d_base_00037.png in Resources */,
 				824D2BCB1B62D02100E5F5A5 /* share_lifestyle01.jpg.jpg in Resources */,
 				8892EB961BC2082C00347146 /* phase_c_base_00045.jpg in Resources */,
+				881D14281BF1971B00693C62 /* hp_ipad_logo_intro.mov in Resources */,
 				8228236A1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot08.jpg in Resources */,
 				881D14201BF17D9600693C62 /* grfx_siteMap_overlay_parking_01@2x.png in Resources */,
 				8892EA7E1BC2082C00347146 /* phase_a_base_00053.jpg in Resources */,

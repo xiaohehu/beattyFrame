@@ -166,7 +166,7 @@ static float    menuButtonSize = 50.0;
         introAvPlayer = nil;
         NSLog(@"Set to nil");
     }
-    NSString *url = [[NSBundle mainBundle] pathForResource:@"2015_08_14_ipad_logo_intro" ofType:@"m4v"];
+    NSString *url = [[NSBundle mainBundle] pathForResource:@"hp_ipad_logo_intro" ofType:@"mov"];
 //    introAvPlayer = [AVPlayer playerWithURL:[NSURL fileURLWithPath:url]];
 //    introAvPlayerLayer = [AVPlayerLayer playerLayerWithPlayer:introAvPlayer];
 //    introAvPlayerLayer.frame = self.view.bounds;
