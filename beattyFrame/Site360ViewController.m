@@ -47,13 +47,17 @@ static float bottomMenuHeight  = 37.0;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeBuilding:) name:@"removeBuilding" object:nil];
     self.view.backgroundColor = [UIColor whiteColor];
     [self appInit];
+    NSLog(@"viewDidLoad");
 
-    
+    [self createBottomMenu];
+
     //[self tapBottomButton:btn];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self createBottomMenu];
+    
+    NSLog(@"viewWillAppear");
+    
     [self performSelector:@selector(tapBottomButton:) withObject:arr_menuButton[3] afterDelay:1.0];
 }
 
@@ -125,6 +129,7 @@ static float bottomMenuHeight  = 37.0;
 }
 
 - (void)createBottomMenu {
+    
     arr_menuButton = [[NSMutableArray alloc] init];
     CGRect buttonFrame = CGRectZero;
     for (int i = 0 ; i < phaseNumber; i++) {

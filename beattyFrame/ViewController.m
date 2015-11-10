@@ -453,10 +453,7 @@ static float    menuButtonSize = 50.0;
 #pragma mark Load/Remove view controller
 
 - (void)loadBuildingVC:(NSNotification *)notification {
-    
-    
-    
-    
+
     NSDictionary* userInfo = notification.userInfo;
     NSNumber* total = (NSNumber*)userInfo[@"buildingindex"];
     NSLog (@"Successfully received test notification! %i", total.intValue);
