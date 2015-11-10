@@ -9,10 +9,7 @@
 #import "MasterplanParkingViewController.h"
 #import "ebZoomingScrollView.h"
 #import "ButtonStack.h"
-
-static float containerWidth = 896.0;
-static float containerHeight = 709.0;
-static float topButtonHeight = 38.0;
+#import "UIColor+Extensions.h"
 
 @interface MasterplanParkingViewController ()<ButtonStackDelegate> {
     // Basic UI elements
@@ -34,9 +31,12 @@ static float topButtonHeight = 38.0;
     
     //ButtonStack         *overlayMenu;
     NSArray             *arr_OverlayData;
+    NSArray             *arr_OverlayParkData;
     NSDictionary        *menuData;
     UIImageView         *overlayAsset;
+    UIImageView         *overlayAssetParking;
     int                 overlayMenuIndex;
+    int                 overlayParkingMenuIndex;
 }
 
 @property (nonatomic, strong) ebZoomingScrollView			*zoomingScroll;
@@ -50,110 +50,157 @@ static float topButtonHeight = 38.0;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.7];
-    
+    [self createBGContent];
     [self prepareData];
-    [self createContainer];
     [self createTopButtons];
-   // [self createSummaryContent];
-    //[self createSitePlanView];
-    [self createButtonStack:1 atFrame:CGRectMake(15, 100, 0, 0)];
-    [self createButtonStack:0 atFrame:CGRectMake(730, 100, 0, 0)];
+    [self createButtonStack:1 atFrame:CGRectMake(15, 200, 0, 0)];
+    [self createButtonStack:0 atFrame:CGRectMake(15, 450, 0, 0)];
+    
+    [self createHeaderViewWithText:@"Overlays" atFrame:CGRectMake(15, 160, 150, 40)];
+    [self createHeaderViewWithText:@"Parking" atFrame:CGRectMake(15, 410, 150, 40)];
 }
 
-- (void)prepareData {
-        
+-(void)createHeaderViewWithText:(NSString*)text atFrame:(CGRect)frame
+{
+    UIView *header = [[UIView alloc] initWithFrame:frame];
+    [header setBackgroundColor:[UIColor themeRed]];
+    [self.view addSubview:header];
+    
+    UILabel *lbl1 = [[UILabel alloc] init];
+    [lbl1 setFrame:CGRectMake(0, 0, 150, 40)];
+    lbl1.backgroundColor=[UIColor clearColor];
+    lbl1.textColor=[UIColor whiteColor];
+    [lbl1 setTextAlignment:NSTextAlignmentCenter];
+    lbl1.text= text;
+    [header addSubview:lbl1];
+}
+
+- (void)createBGContent {
+    if (!_zoomingScroll) {
+        CGRect theFrame = self.view.bounds;
+        _zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
+        [self.view addSubview:_zoomingScroll];
+        _zoomingScroll.backgroundColor = [UIColor clearColor];
+        _zoomingScroll.delegate=self;
+        _zoomingScroll.blurView.image = [UIImage imageNamed:@"grfx_siteplan.jpg"];
+    }
+}
+
+- (void)prepareData
+{
     NSString *textPath = [[NSBundle mainBundle] pathForResource:@"masterplanstack" ofType:@"json"];
     
     NSError *error;
     NSString *content = [NSString stringWithContentsOfFile:textPath encoding:NSUTF8StringEncoding error:&error];  //error checking omitted
     NSData *jsonData = [content dataUsingEncoding:NSUTF8StringEncoding];
     menuData = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
-    
-    NSLog(@"menuData %@", menuData);
 }
 
 #pragma mark - menu for overlays
 -(void)createButtonStack:(int)index atFrame:(CGRect)frame
 {
-//    NSMutableArray *d = [[NSMutableArray alloc] init];
-//    for (NSArray *menuAsset in menuData )
-//    {
-//        [d addObject:menuAsset];
-//        NSLog(@"createButtonStack %@", menuAsset);
-//    }
-//    // sort them alphabetically
-//    //[d sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-//    
-//    arr_OverlayData = menuData[d[index]];
-//    
-//    NSMutableArray *overlayAssets = [[NSMutableArray alloc] init];
-//    for ( NSDictionary *menuAsset in arr_OverlayData )
-//    {
-//        [overlayAssets addObject:menuAsset[@"name"]];
-//    }
-//    
-//    if (overlayMenu) {
-//        [overlayMenu removeFromSuperview];
-//    }
-    
     NSMutableArray *d = [[NSMutableArray alloc] init];
     for (NSArray *menuAsset in menuData )
     {
         [d addObject:menuAsset];
-        NSLog(@"%@", menuAsset);
-    }
-    // sort them alphabetically
-    //[d sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-    
-    arr_OverlayData = menuData[d[index]];
-    
-    NSMutableArray *overlayAssets = [[NSMutableArray alloc] init];
-    for ( NSDictionary *menuAsset in arr_OverlayData )
-    {
-        [overlayAssets addObject:menuAsset[@"name"]];
+        NSLog(@"menuasset %@", menuAsset);
     }
     
-//    if (overlayMenu) {
-//        [overlayMenu removeFromSuperview];
-//    }
+    if (index == 0) {
+        arr_OverlayData = menuData[d[index]];
+        NSMutableArray *overlayAssets = [[NSMutableArray alloc] init];
+        for ( NSDictionary *menuAsset in arr_OverlayData )
+        {
+            [overlayAssets addObject:menuAsset[@"name"]];
+        }
+        
+        ButtonStack *overlayMenu = [[ButtonStack alloc] initWithFrame:CGRectZero];
+        overlayMenu.tag = index;
+        overlayMenu.delegate = self;
+        [overlayMenu setupfromArray:overlayAssets maxWidth:frame];
+        [overlayMenu setBackgroundColor:[UIColor whiteColor]];
+        overlayMenu.layer.borderWidth = 1;
+        overlayMenu.layer.borderColor = [UIColor lightGrayColor].CGColor;
+        [self.view addSubview:overlayMenu];
+        
+    } else {
+        arr_OverlayParkData = menuData[d[index]];
+        NSMutableArray *overlayAssets = [[NSMutableArray alloc] init];
+        for ( NSDictionary *menuAsset in arr_OverlayParkData )
+        {
+            [overlayAssets addObject:menuAsset[@"name"]];
+        }
 
-    
-    ButtonStack *overlayMenu = [[ButtonStack alloc] initWithFrame:CGRectZero];
-    overlayMenu.tag = index;
-    overlayMenu.delegate = self;
-    [overlayMenu setupfromArray:overlayAssets maxWidth:frame];
-    [overlayMenu setBackgroundColor:[UIColor whiteColor]];
-    overlayMenu.layer.borderWidth = 1;
-    overlayMenu.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    [uiv_container addSubview:overlayMenu];
+        ButtonStack *overlayMenu = [[ButtonStack alloc] initWithFrame:CGRectZero];
+        overlayMenu.tag = index;
+        overlayMenu.delegate = self;
+        [overlayMenu setupfromArray:overlayAssets maxWidth:frame];
+        [overlayMenu setBackgroundColor:[UIColor whiteColor]];
+        overlayMenu.layer.borderWidth = 1;
+        overlayMenu.layer.borderColor = [UIColor lightGrayColor].CGColor;
+        [self.view addSubview:overlayMenu];
+    }
 }
 
 - (void)buttonStack:(ButtonStack *)buttonStack selectedIndex:(int)index
 {
-    NSLog(@"tapped %d", index);
-    if ( ! overlayAsset) {
-        overlayAsset = [[UIImageView alloc] initWithFrame:_zoomingScroll.frame];
-        [_zoomingScroll.blurView addSubview:overlayAsset];
-        overlayMenuIndex = -1;
-    }
+    NSString *imgNm;
     
-    NSString *imgNm = [arr_OverlayData[index] objectForKey:@"overlay"];
-    
-    if (index != overlayMenuIndex) {
+    if (buttonStack.tag == 1) {
+        NSLog(@"park tag %li", (long)buttonStack.tag);
         
-        UIImage * toImage = [UIImage imageNamed:imgNm];
-        [UIView transitionWithView:self.view
-                          duration:0.23f
-                           options:UIViewAnimationOptionTransitionCrossDissolve
-                        animations:^{
-                            overlayAsset.image = toImage;
-                        } completion:NULL];
+        imgNm = [arr_OverlayParkData[index] objectForKey:@"overlay"];
+
+        if ( ! overlayAssetParking) {
+            overlayAssetParking = [[UIImageView alloc] initWithFrame:_zoomingScroll.frame];
+            [_zoomingScroll.blurView addSubview:overlayAssetParking];
+            overlayParkingMenuIndex = -1;
+        }
         
-        //overlayAsset.image = [UIImage imageNamed:imgNm];
-        overlayMenuIndex = index;
-    } else {
-        [self clearOverlayData];
+        if (index != overlayParkingMenuIndex) {
+            
+            UIImage * toImage = [UIImage imageNamed:imgNm];
+            [UIView transitionWithView:self.view
+                              duration:0.23f
+                               options:UIViewAnimationOptionTransitionCrossDissolve
+                            animations:^{
+                                overlayAssetParking.image = toImage;
+                            } completion:NULL];
+            overlayParkingMenuIndex = index;
+        } else {
+            [self clearParkingOverlayData];
+        }
+
+    } else if (buttonStack.tag == 0) {
+        NSLog(@"other tag %li", (long)buttonStack.tag);
+        imgNm = [arr_OverlayData[index] objectForKey:@"overlay"];
+
+        if ( ! overlayAsset) {
+            overlayAsset = [[UIImageView alloc] initWithFrame:_zoomingScroll.frame];
+            [_zoomingScroll.blurView addSubview:overlayAsset];
+            overlayMenuIndex = -1;
+        }
+        if (index != overlayMenuIndex) {
+            
+            UIImage * toImage = [UIImage imageNamed:imgNm];
+            [UIView transitionWithView:self.view
+                              duration:0.23f
+                               options:UIViewAnimationOptionTransitionCrossDissolve
+                            animations:^{
+                                overlayAsset.image = toImage;
+                            } completion:NULL];
+            overlayMenuIndex = index;
+        } else {
+            [self clearOverlayData];
+        }
     }
+}
+
+-(void)clearParkingOverlayData
+{
+    [overlayAssetParking removeFromSuperview];
+    overlayAssetParking = nil;
+    overlayParkingMenuIndex = -1;
 }
 
 -(void)clearOverlayData
@@ -161,49 +208,6 @@ static float topButtonHeight = 38.0;
     [overlayAsset removeFromSuperview];
     overlayAsset = nil;
     overlayMenuIndex = -1;
-    
-//    for (UIView *key in self.view.subviews) {
-//        if ([key  isKindOfClass:[KeyOverlay class]])
-//            [key removeFromSuperview];
-//    }
-    
-//    for (UIView *key in [_zoomingScroll.blurView subviews]) {
-//        if ([key  isKindOfClass:[KeyOverlay class]])
-//            [key removeFromSuperview];
-//    }
-}
-
-
-- (void)viewWillAppear:(BOOL)animated {
-//    if (preloadSitePlan) {
-//        uiv_buttonHighlight.transform = CGAffineTransformMakeTranslation(containerWidth/2, 0.0);
-//        uiiv_leftSummary.transform = CGAffineTransformMakeTranslation(-uiiv_leftSummary.frame.size.width, 0.0);
-//        uiiv_rightSummary.transform = CGAffineTransformMakeTranslation(uiiv_rightSummary.frame.size.width, 0.0);
-//    }
-//    if (loadWithAnimation) {
-//        self.view.backgroundColor = [UIColor clearColor];
-//        uiv_container.transform = CGAffineTransformMakeTranslation(0, self.view.bounds.size.height);
-//        uib_close.transform = CGAffineTransformMakeTranslation(0, self.view.bounds.size.height);
-//    }
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-//    if (loadWithAnimation) {
-//        CGFloat duration = 0.8f;
-//        CGFloat damping = 0.75;
-//        CGFloat velocity = 0.5;
-//        [UIView animateWithDuration:0.2 animations:^(void){
-//            self.view.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.7];
-//        } completion:^(BOOL finished){
-//            
-//            [UIView animateWithDuration:duration delay:0.5 usingSpringWithDamping:damping initialSpringVelocity:velocity options:0 animations:^{
-//                uiv_container.transform = CGAffineTransformIdentity;
-//                uib_close.transform = CGAffineTransformIdentity;
-//            } completion:^(BOOL finished){
-//                
-//            }];
-//        }];
-//    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -212,45 +216,8 @@ static float topButtonHeight = 38.0;
 }
 
 #pragma mark - Create UI elements
-- (void)createContainer {
-    /*
-     * Contianer of all centent
-     */
-    uiv_container = [UIView new];
-    uiv_container.frame = CGRectMake((self.view.frame.size.width-containerWidth)/2, (self.view.frame.size.height-containerHeight)/2, containerWidth, containerHeight);
-    uiv_container.backgroundColor = [UIColor whiteColor];
-    uiv_container.layer.borderWidth = 1.0;
-    uiv_container.layer.borderColor = [UIColor whiteColor].CGColor;
-    uiv_container.clipsToBounds = YES;
-    [self.view addSubview: uiv_container];
-}
 
 - (void)createTopButtons {
-//    uib_summary = [UIButton buttonWithType:UIButtonTypeCustom];
-//    uib_summary.frame = CGRectMake(0.0, 0.0, containerWidth/2, topButtonHeight);
-//    uib_summary.backgroundColor = [UIColor whiteColor];
-//    [uib_summary setTitle:@"Master Plan" forState:UIControlStateNormal];
-//    [uib_summary setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//    [uib_summary.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:20.0]];
-//    uib_summary.tag = 1;
-//    [uib_summary addTarget:self action:@selector(tapSitePlan:) forControlEvents:UIControlEventTouchUpInside];
-//    [uiv_container addSubview: uib_summary];
-//    
-//    uib_sitePlan = [UIButton buttonWithType:UIButtonTypeCustom];
-//    uib_sitePlan.frame = CGRectMake(containerWidth/2, 0.0, containerWidth/2, topButtonHeight);
-//    uib_sitePlan.backgroundColor = [UIColor whiteColor];
-//    [uib_sitePlan setTitle:@"Parking" forState:UIControlStateNormal];
-//    [uib_sitePlan setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//    [uib_sitePlan.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:20.0]];
-//    uib_sitePlan.tag = 2;
-//    [uib_sitePlan addTarget:self action:@selector(tapSummary:) forControlEvents:UIControlEventTouchUpInside];
-//    [uiv_container addSubview: uib_sitePlan];
-//    
-//    uiv_buttonHighlight = [UIView new];
-//    uiv_buttonHighlight.frame = CGRectMake(4.0, uib_sitePlan.frame.size.height-6, uib_sitePlan.frame.size.width-8, 5);
-//    uiv_buttonHighlight.backgroundColor = [UIColor colorWithRed:216.0/255.0 green:35.0/255.0 blue:42.0/255.0 alpha:1.0];
-//    [uiv_container addSubview: uiv_buttonHighlight];
-    
     uib_close = [UIButton buttonWithType:UIButtonTypeCustom];
     uib_close.frame = CGRectMake(uiv_container.frame.origin.x+uiv_container.frame.size.width - 15, uiv_container.frame.origin.y - 15, 30, 30);
     [uib_close setImage:[UIImage imageNamed:@"grfx_closeBtn.png"] forState:UIControlStateNormal];
@@ -259,184 +226,8 @@ static float topButtonHeight = 38.0;
     [self.view addSubview:uib_close];
 }
 
-- (void)createSummaryContent {
-//    uiiv_leftSummary = [UIImageView new];
-//    uiiv_rightSummary = [UIImageView new];
-//    /*
-//     * Change scale according device is retina or not
-//     */
-//    float scale = 1.0;
-//    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]
-//        && [[UIScreen mainScreen] scale] == 2.0) {
-//        // Retina
-//        scale = 2.0;
-//    }
-//    
-//    /*
-//     * Split the summary image vertically
-//     * 2 UIImageView added to view
-//     */
-//    UIImage *summary = [UIImage imageNamed:@"grfx_siteplan.jpg"];
-//    CGImageRef tmpImageRef = summary.CGImage;
-//    CGImageRef left_summaryRef = CGImageCreateWithImageInRect(tmpImageRef, CGRectMake(0.0, 0.0, summary.size.width/2 * scale, summary.size.height*scale));
-//    CGImageRef right_summaryRef = CGImageCreateWithImageInRect(tmpImageRef, CGRectMake(summary.size.width/2*scale, 0.0, summary.size.width/2*scale, summary.size.height*scale));
-//    
-//    UIImage *left_summary = [UIImage imageWithCGImage:left_summaryRef scale:scale orientation:UIImageOrientationUp];
-//    UIImage *right_summary = [UIImage imageWithCGImage:right_summaryRef];
-//    
-//    [uiiv_leftSummary setImage: left_summary];
-//    uiiv_leftSummary.frame = CGRectMake(0.0, topButtonHeight, containerWidth/2, (containerHeight-topButtonHeight));
-//    [uiiv_rightSummary setImage: right_summary];
-//    uiiv_rightSummary.frame = CGRectMake(containerWidth/2, topButtonHeight, containerWidth/2, (containerHeight-topButtonHeight));
-//    [uiv_container addSubview: uiiv_leftSummary];
-//    [uiv_container addSubview: uiiv_rightSummary];
-//    
-//    [self loadParkingView];
-}
-
-//-(void)loadParkingView
-//{
-//
-//}
-//
-//-(void)createSitePlanView {
-//    uiv_sitePlanContainer = [UIView new];
-//    uiv_sitePlanContainer.frame = CGRectMake(0, topButtonHeight, containerWidth, containerHeight-topButtonHeight);
-//    uiv_sitePlanContainer.backgroundColor = [UIColor clearColor];
-//    [uiv_container insertSubview:uiv_sitePlanContainer belowSubview:uiiv_leftSummary];
-//    
-//    
-//    uis_zoomSitePlan = [[ebZoomingScrollView alloc] initWithFrame:uiv_sitePlanContainer.bounds image:[UIImage imageNamed:@"grfx_summary.jpg"] shouldZoom:YES];
-//    uis_zoomSitePlan.backgroundColor = [UIColor whiteColor];
-//    [uiv_sitePlanContainer addSubview: uis_zoomSitePlan];
-//    
-////    uiv_buttonPanel = [UIView new];
-////    uiv_buttonPanel.frame = CGRectMake(19, 228, 200, 186);
-////    uiv_buttonPanel.backgroundColor = [UIColor clearColor];
-////    uiv_buttonPanel.layer.borderWidth = 2.0;
-////    uiv_buttonPanel.layer.borderColor = [UIColor lightGrayColor].CGColor;
-////    [uiv_sitePlanContainer addSubview: uiv_buttonPanel];
-//    /*
-//     * Needed data to create site plan's control panel
-//     */
-//    NSArray *arr_names = @[@"Office",
-//                           @"Retail",
-//                           @"Residential",
-//                           @"Hotel",
-//                           @"Green Space"];
-//    arr_optionColors = @[[UIColor redColor],
-//                         [UIColor greenColor],
-//                         [UIColor blueColor],
-//                         [UIColor yellowColor],
-//                         [UIColor brownColor]];
-//    NSArray *overlayImageNames = @[@"office.png",
-//                                   @"retail.png",
-//                                   @"residential.png",
-//                                   @"hotel.png",
-//                                   @"greenspace.png"];
-//    
-//    arr_siteOverlay = [[NSMutableArray alloc] init];
-//    for (int i = 0; i < overlayImageNames.count; i++) {
-//        UIImageView *uiiv_overlay = [[UIImageView alloc] initWithImage:[UIImage imageNamed:overlayImageNames[i]]];
-//        uiiv_overlay.frame = uiv_sitePlanContainer.bounds;
-//        [arr_siteOverlay addObject:uiiv_overlay];
-//    }
-//    arr_siteOptions = [[NSMutableArray alloc] init];
-//    //[self createSitePlanButtons:arr_names andColors:arr_optionColors];
-//}
-//
-//- (void)createSitePlanButtons:(NSArray *)arr_names andColors:(NSArray *)arr_colors {
-//    for (int i = 0; i < 5; i++) {
-//        // UIButton create
-//        UIButton *button = [UIButton buttonWithType: UIButtonTypeCustom];
-//        button.frame = CGRectMake(0.0, i * 37.0, uiv_buttonPanel.frame.size.width, 37.0);
-//        button.backgroundColor = [UIColor whiteColor];
-//        button.layer.borderColor = [UIColor whiteColor].CGColor;
-//        button.layer.borderWidth = 1.0;
-//        [button setTitle:arr_names[i] forState:UIControlStateNormal];
-//        [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-//        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-//        button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-//        [button.titleLabel setFont:[UIFont systemFontOfSize:15.0]];
-//        button.contentEdgeInsets = UIEdgeInsetsMake(0, 35, 0, 0);
-//        button.tag = i;
-//        // Left bar
-//        UIView *uiv_bar = [[UIView alloc] initWithFrame:CGRectMake(2.0, 0.0, 5.0, button.frame.size.height)];
-//        uiv_bar.backgroundColor = arr_colors[i];
-//        uiv_bar.tag = 10;
-//        uiv_bar.alpha = 0.7;
-//        [button addSubview: uiv_bar];
-//        // Dot next to button title
-//        UIView *uiv_dot = [[UIView alloc] initWithFrame:CGRectMake(15.0, (button.frame.size.height-5)/2, 5, 5)];
-//        uiv_dot.layer.cornerRadius = 2.5;
-//        uiv_dot.backgroundColor = arr_colors[i];
-//        uiv_dot.tag = 20;
-//        uiv_dot.alpha = 0.7;
-//        [button addSubview:uiv_dot];
-//        [button addTarget:self action:@selector(tapSiteOptions:) forControlEvents:UIControlEventTouchUpInside];
-//        [arr_siteOptions addObject:button];
-//        [uiv_buttonPanel addSubview: button];
-//    }
-//}
-//
-//#pragma mark - Interaction
-//
-//- (void)tapSummary:(id)sender {
-//    
-//    [UIView animateWithDuration:0.5 animations:^(void){
-//        uiv_sitePlanContainer.transform = CGAffineTransformMakeScale(0.7, 0.7);
-//        uiv_sitePlanContainer.alpha = 0.0;
-//        uiv_buttonHighlight.transform = CGAffineTransformIdentity;
-//        uiiv_rightSummary.transform = CGAffineTransformIdentity;
-//        uiiv_leftSummary.transform = CGAffineTransformIdentity;
-//    } completion:^(BOOL finished){
-//
-//    }];
-//}
-//
-//- (void)tapSitePlan:(id)sender {
-//    
-//    uiv_sitePlanContainer.alpha = 0.0;
-//    uiv_sitePlanContainer.transform = CGAffineTransformMakeScale(0.7, 0.7);
-//    [uis_zoomSitePlan resetScroll];
-//    [UIView animateWithDuration:0.33 animations:^(void){
-//        uiv_buttonHighlight.transform = CGAffineTransformMakeTranslation(containerWidth/2, 0.0);
-//        uiiv_leftSummary.transform = CGAffineTransformMakeTranslation(-uiiv_leftSummary.frame.size.width, 0.0);
-//        uiiv_rightSummary.transform = CGAffineTransformMakeTranslation(uiiv_rightSummary.frame.size.width, 0.0);
-//        uiv_sitePlanContainer.transform = CGAffineTransformIdentity;
-//        uiv_sitePlanContainer.alpha = 1.0;
-//    } completion:^(BOOL finished){
-//        
-//    }];
-//}
-//
-//- (void)tapSiteOptions:(id)sender {
-//    
-//    UIButton *tappedButton = sender;
-//    
-//    if (tappedButton.selected) {
-//        tappedButton.selected = NO;
-//        [tappedButton viewWithTag:10].alpha = 0.7;
-//        [tappedButton viewWithTag:20].backgroundColor = arr_optionColors[tappedButton.tag];
-//        tappedButton.backgroundColor = [UIColor whiteColor];
-//        UIImageView *overlay = arr_siteOverlay[tappedButton.tag];
-//        [overlay removeFromSuperview];
-//    } else {
-//        tappedButton.selected = YES;
-//        [tappedButton viewWithTag:10].alpha = 1.0;
-//        [tappedButton viewWithTag:20].backgroundColor = [UIColor whiteColor];
-//        tappedButton.backgroundColor = arr_optionColors[tappedButton.tag];
-//        UIImageView *overlay = arr_siteOverlay[tappedButton.tag];
-//        [uis_zoomSitePlan.blurView addSubview: overlay];
-//    }
-//}
-
 - (void)closeThisView:(id)sender {
-    [UIView animateWithDuration:0.33 animations:^(void){
-        self.view.alpha = 0.0;
-    } completion:^(BOOL finished){
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"RemoveSummary" object:nil];
-    }];
+    [self dismissViewControllerAnimated:YES completion:^{}];
 }
 
 @end

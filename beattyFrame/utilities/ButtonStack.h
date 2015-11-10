@@ -23,5 +23,5 @@
 
 - (id)initWithFrame:(CGRect)frame;
 - (void)setupfromArray:(NSArray *)btnArray maxWidth:(CGRect)maxW;
-
+-(void)setCenter;
 @end

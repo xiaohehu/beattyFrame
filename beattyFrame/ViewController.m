@@ -107,7 +107,7 @@ static float    menuButtonSize = 50.0;
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor redColor];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeSummary:) name:@"RemoveSummeary" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadMasterPlanInSite360:) name:@"loadMasterPlan" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadMasterPlan:) name:@"loadMasterPlan" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadSummary:) name:@"loadSummary" object:nil];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setEmailDataObject:) name:@"emailData" object:nil];
@@ -613,14 +613,18 @@ static float    menuButtonSize = 50.0;
     [self tapMenuButtonClose:nil];
     masterplanVC = [[MasterplanParkingViewController alloc] init];
     masterplanVC.view.frame = self.view.bounds;
-//    if ([sender tag]%2 != 0) {
-//        masterplanVC.preloadSitePlan = YES;
-//    }
-//    masterplanVC.loadWithAnimation = YES;
-    [self addChildViewController: summary];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.33 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        [self.view addSubview: masterplanVC.view];
-    });
+    [self presentViewController:masterplanVC animated:YES completion:^(void){  }];
+    
+    NSLog(@"loadMasterPlan");
+    
+////    if ([sender tag]%2 != 0) {
+////        masterplanVC.preloadSitePlan = YES;
+////    }
+////    masterplanVC.loadWithAnimation = YES;
+//    [self addChildViewController: summary];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.33 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+//        [self.view addSubview: masterplanVC.view];
+//    });
 }
 
 - (IBAction)loadSummary:(id)sender {

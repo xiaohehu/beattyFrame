@@ -169,11 +169,6 @@ static float bottomMenuHeight  = 37.0;
     
     [uib_Masterplan setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [uib_Masterplan.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
-    [uib_Masterplan addTarget:self action:@selector(tapMasterMenu:) forControlEvents:UIControlEventTouchUpInside];
-
-    [uib_Parking setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [uib_Parking.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
-    [uib_Parking addTarget:self action:@selector(tapMasterMenu:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void)addButtonHighlightViewTo:(UIView*)container
@@ -186,20 +181,20 @@ static float bottomMenuHeight  = 37.0;
 }
 
 - (IBAction)tapMasterMenu:(id)sender {
-    
-    if ([arr_highlightViews count] == 1) {
-        [self addButtonHighlightViewTo:uiv_masterContainer];
-    }
-
-    UIButton *tappedButton = sender;
-    NSLog(@"tapMasterMenu %li",(long)tappedButton.tag);
-    
-    UIView *selctedView = arr_highlightViews[1];
-    CGRect indicatorFrame = selctedView.frame;
-    
-    [UIView animateWithDuration:0.33 animations:^(void){
-        selctedView.frame = CGRectMake(tappedButton.frame.origin.x, indicatorFrame.origin.y, tappedButton.frame.size.width, indicatorFrame.size.height);
-    }];
+//    
+//    if ([arr_highlightViews count] == 1) {
+//        [self addButtonHighlightViewTo:uiv_masterContainer];
+//    }
+//
+//    UIButton *tappedButton = sender;
+//    NSLog(@"tapMasterMenu %li",(long)tappedButton.tag);
+//    
+//    UIView *selctedView = arr_highlightViews[1];
+//    CGRect indicatorFrame = selctedView.frame;
+//    
+//    [UIView animateWithDuration:0.33 animations:^(void){
+//        selctedView.frame = CGRectMake(tappedButton.frame.origin.x, indicatorFrame.origin.y, tappedButton.frame.size.width, indicatorFrame.size.height);
+//    }];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"loadMasterPlan" object:nil];
 }

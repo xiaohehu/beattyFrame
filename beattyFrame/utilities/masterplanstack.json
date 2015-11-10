@@ -24,19 +24,19 @@
     "parking": [
                 {
                 "name": "Phase 1 Parking",
-                "overlay": "grfx_siteMap_overlay_corp_neighbors.png",
+                "overlay": "grfx_siteMap_overlay_parking_01.png",
                 },
                 {
                 "name": "Phase 2 Parking",
-                "overlay": "grfx_siteMap_overlay_corp_neighbors.png",
+                "overlay": "grfx_siteMap_overlay_parking_02.png",
                 },
                 {
                 "name": "Phase 3 Parking",
-                "overlay": "grfx_siteMap_overlay_corp_neighbors.png",
+                "overlay": "grfx_siteMap_overlay_parking_03.png",
                 },
                 {
                 "name": "Phase 4 Parking",
-                "overlay": "grfx_siteMap_overlay_corp_neighbors.png",
+                "overlay": "grfx_siteMap_overlay_parking_04.png",
                 }
             ]
 }

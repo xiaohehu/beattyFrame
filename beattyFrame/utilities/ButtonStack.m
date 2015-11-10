@@ -105,10 +105,14 @@
 
         }
     }
-    
+
+
+}
+
+-(void)setCenter
+{
     NSLog(@"_imageViews %li", _imageViews.count);
     [self setCenter:CGPointMake(self.center.x, 768/2)];
-
 }
 
 -(void)selectOverlay:(id)sender

@@ -481,6 +481,14 @@
 		881D140F1BF1373300693C62 /* ParkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881D140D1BF1373300693C62 /* ParkingViewController.xib */; };
 		881D14111BF13D2000693C62 /* phase_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 881D14101BF13D2000693C62 /* phase_data.json */; };
 		881D14131BF13F2F00693C62 /* masterplanstack.json in Resources */ = {isa = PBXBuildFile; fileRef = 881D14121BF13F2F00693C62 /* masterplanstack.json */; };
+		881D141F1BF17D9600693C62 /* grfx_siteMap_overlay_parking_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D14171BF17D9600693C62 /* grfx_siteMap_overlay_parking_01.png */; };
+		881D14201BF17D9600693C62 /* grfx_siteMap_overlay_parking_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D14181BF17D9600693C62 /* grfx_siteMap_overlay_parking_01@2x.png */; };
+		881D14211BF17D9600693C62 /* grfx_siteMap_overlay_parking_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D14191BF17D9600693C62 /* grfx_siteMap_overlay_parking_02.png */; };
+		881D14221BF17D9600693C62 /* grfx_siteMap_overlay_parking_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D141A1BF17D9600693C62 /* grfx_siteMap_overlay_parking_02@2x.png */; };
+		881D14231BF17D9600693C62 /* grfx_siteMap_overlay_parking_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D141B1BF17D9600693C62 /* grfx_siteMap_overlay_parking_03.png */; };
+		881D14241BF17D9600693C62 /* grfx_siteMap_overlay_parking_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D141C1BF17D9600693C62 /* grfx_siteMap_overlay_parking_03@2x.png */; };
+		881D14251BF17D9600693C62 /* grfx_siteMap_overlay_parking_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D141D1BF17D9600693C62 /* grfx_siteMap_overlay_parking_04.png */; };
+		881D14261BF17D9600693C62 /* grfx_siteMap_overlay_parking_04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 881D141E1BF17D9600693C62 /* grfx_siteMap_overlay_parking_04@2x.png */; };
 		887647A41BA32FD8002D4183 /* grfx-city-base-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647861BA32FD8002D4183 /* grfx-city-base-map.png */; };
 		887647A51BA32FD8002D4183 /* grfx-city-base-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */; };
 		887647A61BA32FD8002D4183 /* grfx-site-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647881BA32FD8002D4183 /* grfx-site-marker.png */; };
@@ -1708,6 +1716,14 @@
 		881D140D1BF1373300693C62 /* ParkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingViewController.xib; sourceTree = "<group>"; };
 		881D14101BF13D2000693C62 /* phase_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phase_data.json; sourceTree = "<group>"; };
 		881D14121BF13F2F00693C62 /* masterplanstack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = masterplanstack.json; path = utilities/masterplanstack.json; sourceTree = "<group>"; };
+		881D14171BF17D9600693C62 /* grfx_siteMap_overlay_parking_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_siteMap_overlay_parking_01.png; sourceTree = "<group>"; };
+		881D14181BF17D9600693C62 /* grfx_siteMap_overlay_parking_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_siteMap_overlay_parking_01@2x.png"; sourceTree = "<group>"; };
+		881D14191BF17D9600693C62 /* grfx_siteMap_overlay_parking_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_siteMap_overlay_parking_02.png; sourceTree = "<group>"; };
+		881D141A1BF17D9600693C62 /* grfx_siteMap_overlay_parking_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_siteMap_overlay_parking_02@2x.png"; sourceTree = "<group>"; };
+		881D141B1BF17D9600693C62 /* grfx_siteMap_overlay_parking_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_siteMap_overlay_parking_03.png; sourceTree = "<group>"; };
+		881D141C1BF17D9600693C62 /* grfx_siteMap_overlay_parking_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_siteMap_overlay_parking_03@2x.png"; sourceTree = "<group>"; };
+		881D141D1BF17D9600693C62 /* grfx_siteMap_overlay_parking_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_siteMap_overlay_parking_04.png; sourceTree = "<group>"; };
+		881D141E1BF17D9600693C62 /* grfx_siteMap_overlay_parking_04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_siteMap_overlay_parking_04@2x.png"; sourceTree = "<group>"; };
 		887647861BA32FD8002D4183 /* grfx-city-base-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-city-base-map.png"; sourceTree = "<group>"; };
 		887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-city-base-map@2x.png"; sourceTree = "<group>"; };
 		887647881BA32FD8002D4183 /* grfx-site-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-site-marker.png"; sourceTree = "<group>"; };
@@ -2966,6 +2982,7 @@
 		824D27871B5FE0D300E5F5A5 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				881D14161BF17D9600693C62 /* masterplan */,
 				8819D7C91BB8515400015AF5 /* gallery_share */,
 				822822C41B862A0A004154E7 /* tmp_gallery */,
 				822822881B836F83004154E7 /* film */,
@@ -3520,6 +3537,22 @@
 				8819D81C1BB8515400015AF5 /* thumb_generic.png */,
 			);
 			path = thumbs;
+			sourceTree = "<group>";
+		};
+		881D14161BF17D9600693C62 /* masterplan */ = {
+			isa = PBXGroup;
+			children = (
+				881D14171BF17D9600693C62 /* grfx_siteMap_overlay_parking_01.png */,
+				881D14181BF17D9600693C62 /* grfx_siteMap_overlay_parking_01@2x.png */,
+				881D14191BF17D9600693C62 /* grfx_siteMap_overlay_parking_02.png */,
+				881D141A1BF17D9600693C62 /* grfx_siteMap_overlay_parking_02@2x.png */,
+				881D141B1BF17D9600693C62 /* grfx_siteMap_overlay_parking_03.png */,
+				881D141C1BF17D9600693C62 /* grfx_siteMap_overlay_parking_03@2x.png */,
+				881D141D1BF17D9600693C62 /* grfx_siteMap_overlay_parking_04.png */,
+				881D141E1BF17D9600693C62 /* grfx_siteMap_overlay_parking_04@2x.png */,
+			);
+			name = masterplan;
+			path = src/masterplan;
 			sourceTree = "<group>";
 		};
 		887647851BA32FD8002D4183 /* city */ = {
@@ -4547,6 +4580,7 @@
 				8892EB9C1BC2082C00347146 /* phase_c_base_00051.jpg in Resources */,
 				822823881B862A0A004154E7 /* Design Update.pdf in Resources */,
 				8892EB0D1BC2082C00347146 /* phase_b_base_00052.jpg in Resources */,
+				881D14211BF17D9600693C62 /* grfx_siteMap_overlay_parking_02.png in Resources */,
 				8892ED931BC2092B00347146 /* phase_d_base_00022.jpg in Resources */,
 				8892EA4F1BC2082C00347146 /* phase_a_base_00006.jpg in Resources */,
 				8892EADD1BC2082C00347146 /* phase_b_base_00004.jpg in Resources */,
@@ -4597,6 +4631,7 @@
 				8892ED9A1BC2092B00347146 /* phase_d_base_00025.png in Resources */,
 				881D13FF1BF01A6B00693C62 /* grfx_bldg_stats_07.png in Resources */,
 				8892EA741BC2082C00347146 /* phase_a_base_00043.jpg in Resources */,
+				881D14221BF17D9600693C62 /* grfx_siteMap_overlay_parking_02@2x.png in Resources */,
 				8892EB3A1BC2082C00347146 /* phase_b_color_00025.jpg in Resources */,
 				8892EA9A1BC2082C00347146 /* phase_d_color_00009.jpg in Resources */,
 				8228236B1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View01_051215.jpg in Resources */,
@@ -4720,6 +4755,7 @@
 				8228236D1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View03_051215.jpg in Resources */,
 				822822C11B86169A004154E7 /* grfx_sharePDF.png in Resources */,
 				88E074621B98CFE600E0982A /* tutorial.storyboard in Resources */,
+				881D14231BF17D9600693C62 /* grfx_siteMap_overlay_parking_03.png in Resources */,
 				8892EB9E1BC2082C00347146 /* phase_c_base_00053.jpg in Resources */,
 				82A1286D1B66668800564266 /* fact-grid-04-lg@2x.png in Resources */,
 				8892EA8B1BC2082C00347146 /* phase_a_base_00066.jpg in Resources */,
@@ -4743,6 +4779,7 @@
 				8228239C1B862A0A004154E7 /* arch_01.jpg in Resources */,
 				8892EDE31BC2092B00347146 /* phase_d_base_00062.jpg in Resources */,
 				822823EC1B862A0A004154E7 /* thumb_strorefronts.jpg in Resources */,
+				881D141F1BF17D9600693C62 /* grfx_siteMap_overlay_parking_01.png in Resources */,
 				824D2BAB1B62D02100E5F5A5 /* share_0336 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				8892ED9D1BC2092B00347146 /* phase_d_base_00027.jpg in Resources */,
 				887647B81BA32FD8002D4183 /* grfx_regionalMap_base_map.png in Resources */,
@@ -4864,6 +4901,7 @@
 				8892EDFB1BC2092B00347146 /* phase_d_color_00003.png in Resources */,
 				8819D81D1BB8515400015AF5 /* Central_Plaza.jpg in Resources */,
 				889F07E51BB2CADA00CBD979 /* grfx_siteMap_overlay_arts_culture@2x.png in Resources */,
+				881D14261BF17D9600693C62 /* grfx_siteMap_overlay_parking_04@2x.png in Resources */,
 				8892EA7C1BC2082C00347146 /* phase_a_base_00051.jpg in Resources */,
 				824D2BD51B62D02100E5F5A5 /* share_Picture 024.jpg.jpg in Resources */,
 				8892ED731BC2092B00347146 /* phase_d_base_00006.jpg in Resources */,
@@ -4913,6 +4951,7 @@
 				8892EAE81BC2082C00347146 /* phase_b_base_00015.jpg in Resources */,
 				8892EBAF1BC2082C00347146 /* phase_c_base_00070.jpg in Resources */,
 				822822A31B83D5AB004154E7 /* grfx_expand.png in Resources */,
+				881D14251BF17D9600693C62 /* grfx_siteMap_overlay_parking_04.png in Resources */,
 				8892EB0B1BC2082C00347146 /* phase_b_base_00050.jpg in Resources */,
 				8892EDF31BC2092B00347146 /* phase_d_base_00070.jpg in Resources */,
 				8892EB931BC2082C00347146 /* phase_c_base_00042.jpg in Resources */,
@@ -5033,6 +5072,7 @@
 				8892EB0E1BC2082C00347146 /* phase_b_base_00053.jpg in Resources */,
 				8892EB7C1BC2082C00347146 /* phase_c_base_00019.jpg in Resources */,
 				8892EA821BC2082C00347146 /* phase_a_base_00057.jpg in Resources */,
+				881D14241BF17D9600693C62 /* grfx_siteMap_overlay_parking_03@2x.png in Resources */,
 				8892ED811BC2092B00347146 /* phase_d_base_00013.jpg in Resources */,
 				8892EDDD1BC2092B00347146 /* phase_d_base_00059.jpg in Resources */,
 				8882337C1BA1BBDD0019FD75 /* grfx_mapMenuBtnSel.png in Resources */,
@@ -5082,6 +5122,7 @@
 				824D2BCB1B62D02100E5F5A5 /* share_lifestyle01.jpg.jpg in Resources */,
 				8892EB961BC2082C00347146 /* phase_c_base_00045.jpg in Resources */,
 				8228236A1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot08.jpg in Resources */,
+				881D14201BF17D9600693C62 /* grfx_siteMap_overlay_parking_01@2x.png in Resources */,
 				8892EA7E1BC2082C00347146 /* phase_a_base_00053.jpg in Resources */,
 				8892EB0A1BC2082C00347146 /* phase_b_base_00049.jpg in Resources */,
 				8228237D1B862A0A004154E7 /* 150512_BC_PresTemplate_ProgressR3_LR 2.pdf in Resources */,
