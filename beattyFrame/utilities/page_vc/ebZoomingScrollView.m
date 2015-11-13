@@ -83,14 +83,14 @@
     if (closeBtn != NO) {
         UIButton *h = [UIButton buttonWithType:UIButtonTypeCustom];
 		//h.frame = CGRectMake([self superview].frame.size.width-20-33, 20, 33, 33);
-		h.frame = CGRectMake(_uiv_windowComparisonContainer.frame.size.width-104, 20, 84, 24);
-		[h setBackgroundImage:[UIImage imageNamed:@"grfx_close_button_2"] forState:UIControlStateNormal];
+		h.frame = CGRectMake(_uiv_windowComparisonContainer.frame.size.width-50, 8, 46, 30);
+		[h setImage:[UIImage imageNamed:@"grfx_closeBtn.png"] forState:UIControlStateNormal];
 		[h setTitle:@"CLOSE" forState:UIControlStateNormal];
 		[h setTitleColor:[UIColor colorWithRed:210.0/255.0 green:70.0/255.0 blue:39.0/255.0 alpha:1.0] forState:UIControlStateNormal];
 		[h.titleLabel setFont:[UIFont fontWithName:@"DINPro-CondBlack" size:18]];		//set their selector using add selector
 		[h addTarget:self action:@selector(removeRenderScroll:) forControlEvents:UIControlEventTouchUpInside];
 		[_uiv_windowComparisonContainer insertSubview:h aboveSubview:self];
-		[self addSubview:h];
+		//[self addSubview:h];
     }
 }
 
@@ -211,6 +211,7 @@
 #pragma mark - Delegate methods
 -(void)didRemove {
     [delegate didRemove:self];
+    [self removeFromSuperview];
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView

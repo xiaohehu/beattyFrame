@@ -506,6 +506,9 @@
 		8843A27C1BF58DA800C1C1D5 /* grfx_siteMap_overlay_retail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8843A27A1BF58DA800C1C1D5 /* grfx_siteMap_overlay_retail@2x.png */; };
 		8843A27F1BF58E0500C1C1D5 /* grfx_cityMap_overlay_corp_neighbors.png in Resources */ = {isa = PBXBuildFile; fileRef = 8843A27D1BF58E0500C1C1D5 /* grfx_cityMap_overlay_corp_neighbors.png */; };
 		8843A2801BF58E0500C1C1D5 /* grfx_cityMap_overlay_corp_neighbors@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8843A27E1BF58E0500C1C1D5 /* grfx_cityMap_overlay_corp_neighbors@2x.png */; };
+		8843A2861BF5953700C1C1D5 /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8843A2851BF5953700C1C1D5 /* MapViewAnnotation.m */; };
+		8843A2891BF5A35E00C1C1D5 /* map_apple_offline@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8843A2871BF5A35E00C1C1D5 /* map_apple_offline@2x.jpg */; };
+		8843A28A1BF5A35E00C1C1D5 /* map_apple_offline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8843A2881BF5A35E00C1C1D5 /* map_apple_offline.jpg */; };
 		887647A41BA32FD8002D4183 /* grfx-city-base-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647861BA32FD8002D4183 /* grfx-city-base-map.png */; };
 		887647A51BA32FD8002D4183 /* grfx-city-base-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */; };
 		887647A61BA32FD8002D4183 /* grfx-site-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 887647881BA32FD8002D4183 /* grfx-site-marker.png */; };
@@ -1758,6 +1761,10 @@
 		8843A27A1BF58DA800C1C1D5 /* grfx_siteMap_overlay_retail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grfx_siteMap_overlay_retail@2x.png"; path = "beattyFrame/src/grfx/Location/site/grfx_siteMap_overlay_retail@2x.png"; sourceTree = SOURCE_ROOT; };
 		8843A27D1BF58E0500C1C1D5 /* grfx_cityMap_overlay_corp_neighbors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grfx_cityMap_overlay_corp_neighbors.png; sourceTree = "<group>"; };
 		8843A27E1BF58E0500C1C1D5 /* grfx_cityMap_overlay_corp_neighbors@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx_cityMap_overlay_corp_neighbors@2x.png"; sourceTree = "<group>"; };
+		8843A2841BF5953700C1C1D5 /* MapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewAnnotation.h; path = utilities/MapViewAnnotation.h; sourceTree = "<group>"; };
+		8843A2851BF5953700C1C1D5 /* MapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewAnnotation.m; path = utilities/MapViewAnnotation.m; sourceTree = "<group>"; };
+		8843A2871BF5A35E00C1C1D5 /* map_apple_offline@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "map_apple_offline@2x.jpg"; sourceTree = "<group>"; };
+		8843A2881BF5A35E00C1C1D5 /* map_apple_offline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map_apple_offline.jpg; sourceTree = "<group>"; };
 		887647861BA32FD8002D4183 /* grfx-city-base-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-city-base-map.png"; sourceTree = "<group>"; };
 		887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-city-base-map@2x.png"; sourceTree = "<group>"; };
 		887647881BA32FD8002D4183 /* grfx-site-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-site-marker.png"; sourceTree = "<group>"; };
@@ -3091,6 +3098,8 @@
 		824D27A11B61467700E5F5A5 /* utiliites */ = {
 			isa = PBXGroup;
 			children = (
+				8843A2841BF5953700C1C1D5 /* MapViewAnnotation.h */,
+				8843A2851BF5953700C1C1D5 /* MapViewAnnotation.m */,
 				881D14121BF13F2F00693C62 /* masterplanstack.json */,
 				888233821BA214930019FD75 /* buttonstack.json */,
 				888233731BA0B0600019FD75 /* ButtonStack.h */,
@@ -3603,6 +3612,8 @@
 		887647851BA32FD8002D4183 /* city */ = {
 			isa = PBXGroup;
 			children = (
+				8843A2871BF5A35E00C1C1D5 /* map_apple_offline@2x.jpg */,
+				8843A2881BF5A35E00C1C1D5 /* map_apple_offline.jpg */,
 				887647861BA32FD8002D4183 /* grfx-city-base-map.png */,
 				887647871BA32FD8002D4183 /* grfx-city-base-map@2x.png */,
 				887647881BA32FD8002D4183 /* grfx-site-marker.png */,
@@ -4609,6 +4620,7 @@
 				8228228A1B836F83004154E7 /* 2015_08_14_ipad_logo_intro.mov in Resources */,
 				8819D84F1BB8515400015AF5 /* image001.png in Resources */,
 				82A128771B66668800564266 /* fact-grid-06-sm@2x.png in Resources */,
+				8843A2891BF5A35E00C1C1D5 /* map_apple_offline@2x.jpg in Resources */,
 				822823DC1B862A0A004154E7 /* thumb_film6.jpg in Resources */,
 				824D2BD41B62D02100E5F5A5 /* share_Pg 9  0251 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				8892EB8B1BC2082C00347146 /* phase_c_base_00034.jpg in Resources */,
@@ -4993,6 +5005,7 @@
 				88E0745D1B98CFB400E0982A /* icon_0003.png in Resources */,
 				8892ED741BC2092B00347146 /* phase_d_base_00006.png in Resources */,
 				8843A27F1BF58E0500C1C1D5 /* grfx_cityMap_overlay_corp_neighbors.png in Resources */,
+				8843A28A1BF5A35E00C1C1D5 /* map_apple_offline.jpg in Resources */,
 				82CA34341B6C02C40065E31E /* grfx_ecoDistrict.jpg in Resources */,
 				8819D8431BB8515400015AF5 /* H and S Formal - 25.jpg in Resources */,
 				887647B71BA32FD8002D4183 /* grfx-site-marker@2x.png in Resources */,
@@ -5687,6 +5700,7 @@
 				82A128B91B69164100564266 /* supportingModelController.m in Sources */,
 				822822BB1B851E44004154E7 /* SettingViewController.m in Sources */,
 				822822A81B84F783004154E7 /* buildingModelController.m in Sources */,
+				8843A2861BF5953700C1C1D5 /* MapViewAnnotation.m in Sources */,
 				822822801B822243004154E7 /* sponsorDataViewController.m in Sources */,
 				887648111BA35914002D4183 /* PersistencyManager.m in Sources */,
 				82A128BC1B6916BF00564266 /* ebZoomingScrollView.m in Sources */,

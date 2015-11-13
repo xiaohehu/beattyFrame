@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkNetworkStatus:) name:kReachabilityChangedNotification object:nil];
     
     
     internetReachable = [Reachability reachabilityForInternetConnection];
@@ -29,7 +29,7 @@
     
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"loadIntroMove"];
     [[NSUserDefaults standardUserDefaults] synchronize];
-    
+        
     return YES;
 }
 

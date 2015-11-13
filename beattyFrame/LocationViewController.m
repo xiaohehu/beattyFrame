@@ -11,11 +11,16 @@
 #import "UIColor+Extensions.h"
 #import "ButtonStack.h"
 #import "KeyOverlay.h"
+#import "AppDelegate.h"
+#import "MapViewAnnotation.h"
+#import <MapKit/MapKit.h>
+
+#define METERS_PER_MILE 109.344
 
 static float    bottomWidth = 236;
 static float    bottomHeight = 37;
 
-@interface LocationViewController () <ButtonStackDelegate>
+@interface LocationViewController () <ButtonStackDelegate,MKMapViewDelegate>
 {
     UIView              *uiv_bottomMenu;
     UIView              *uiv_menuIndicator;
@@ -28,10 +33,14 @@ static float    bottomHeight = 37;
     int                 mapIndex;
     NSArray             *arr_OverlayData;
     NSDictionary        *menuData;
+    IBOutlet        UIButton            *uib_appleMap;
 }
 
 @property (nonatomic, strong) ebZoomingScrollView			*zoomingScroll;
-
+@property (nonatomic, retain) AppDelegate *appDelegate;
+@property (nonatomic, strong) UIButton                      *uib_appleMap;
+@property (nonatomic, strong) MKMapView                     *mapView;
+@property (nonatomic, strong) UIView                        *uiv_mapContainer;
 @end
 
 @implementation LocationViewController
@@ -45,6 +54,13 @@ static float    bottomHeight = 37;
     [self prepareData];
     [self loadZoomingScrollView];
     [self createBottomMenu];
+    
+    _appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+
+    //uib_appleMap.backgroundColor = [UIColor whiteColor];
+    [uib_appleMap setTitle:@"Apple Map" forState:UIControlStateNormal];
+    [uib_appleMap setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [uib_appleMap.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -177,7 +193,7 @@ static float    bottomHeight = 37;
     uiiv_tmpMap = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"grfx_areaMap.jpg"]];;
     uiiv_tmpMap.frame = self.view.bounds;
     uiiv_tmpMap.alpha = 0.0;
-    [self.view addSubview: uiiv_tmpMap];
+    [self.view insertSubview: uiiv_tmpMap belowSubview:_uib_appleMap];
 }
 
 #pragma mark - menu @ bottom
@@ -237,8 +253,10 @@ static float    bottomHeight = 37;
     // create logo hotspot
     if ([sender tag] == 1) {
         [self createLogoPinForMapAtRect:(CGPointMake(548,333))];
+        _uib_appleMap.hidden = NO;
     } else if ([sender tag] == 2) {
         [self createLogoPinForMapAtRect:(CGPointMake(159,582))];
+        _uib_appleMap.hidden = YES;
     }
     
     UIButton *tappedButton = sender;
@@ -267,5 +285,115 @@ static float    bottomHeight = 37;
     [keyOverlay setKeyImage:key];
     [_zoomingScroll.blurView addSubview:keyOverlay];
 }
+
+-(IBAction)loadAppleMap
+{
+    NSLog(@"loadAppleMap");
+    
+    
+    
+    if ([_appDelegate.isWirelessAvailable isEqualToString:@"NO"]) {
+        NSLog(@"Wireless NO");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network Offline"
+                                                        message:@"A network connection is required to view the live map. A static map has been loaded instead. Please check your internet connection and try again."
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        
+        [self initOfflineMapView];
+        
+        
+        [alert show];
+    } else if ([_appDelegate.isWirelessAvailable isEqualToString:@"YES"]) {
+        NSLog(@"Wireless YES");
+    
+        
+        
+        [_uib_appleMap setSelected:YES];
+        [self initMapView];
+        CLLocationCoordinate2D zoomLocation;
+        zoomLocation.latitude = 39.280328;
+        zoomLocation.longitude= -76.599012;
+    
+    
+//    MKCoordinateSpan span; span.latitudeDelta = .001;
+//    span.longitudeDelta = .001;
+//    //the .001 here represents the actual height and width delta
+//    MKCoordinateRegion region;
+//    region.center = zoomLocation; region.span = span;
+//    [_mapView setRegion:region animated:TRUE];
+    
+        // 2
+        //MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 1,1);
+
+        // 3
+        //[_mapView setRegion:viewRegion animated:NO];
+    
+    
+        MapViewAnnotation *newAnnotation = [[MapViewAnnotation alloc] initWithTitle:@"Harbor Point" andCoordinate:zoomLocation];
+        [self.mapView addAnnotation:newAnnotation];
+
+    }
+}
+
+-(void)initOfflineMapView
+{
+    _uiv_mapContainer = [[UIView alloc] initWithFrame:self.view.bounds];
+    
+    CGRect theFrame = self.view.bounds;
+    _zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
+    [self.view addSubview:_zoomingScroll];
+    _zoomingScroll.backgroundColor = [UIColor clearColor];
+    _zoomingScroll.delegate=self;
+    _zoomingScroll.closeBtn = YES;
+    _zoomingScroll.blurView.image = [UIImage imageNamed:@"map_apple_offline.jpg"];
+    [_uiv_mapContainer addSubview: _mapView];
+    [self.view insertSubview:_uiv_mapContainer belowSubview:_uib_appleMap];
+}
+
+-(void)didRemove:(ebZoomingScrollView *)didRemove
+{
+    [_uiv_mapContainer removeFromSuperview];
+    _mapView=nil;
+    overlayMenu.hidden = NO;
+    
+}
+
+
+-(void)initMapView
+{
+    if (_mapView) {
+        [self didRemove:nil];
+        return;
+    }
+    
+    overlayMenu.hidden = YES;
+    _uiv_mapContainer = [[UIView alloc] initWithFrame:self.view.bounds];
+    _mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
+    _mapView.delegate = self;
+    _mapView.mapType = MKMapTypeStandard;
+    
+    [_uiv_mapContainer addSubview: _mapView];
+    [self.view insertSubview:_uiv_mapContainer belowSubview:_uib_appleMap];
+}
+
+
+- (void)mapView:(MKMapView *)mv didAddAnnotationViews:(NSArray *)views
+{
+    MKAnnotationView *annotationView = [views objectAtIndex:0];
+    id <MKAnnotation> mp = [annotationView annotation];
+    MKCoordinateRegion region;
+    
+    region = MKCoordinateRegionMakeWithDistance([mp coordinate], 55000, 55000);
+    
+    [mv setRegion:region animated:YES];
+    [mv selectAnnotation:mp animated:YES];
+}
+//- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+//{
+//    _mapView.centerCoordinate =
+//    userLocation.location.coordinate;
+//}
+
 
 @end

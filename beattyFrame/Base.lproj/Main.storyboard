@@ -680,7 +680,7 @@
                                     <rect key="frame" x="664" y="709" width="340" height="37"/>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37F-iI-gZi">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="37F-iI-gZi">
                                 <rect key="frame" x="476" y="689" width="134" height="77"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnU-s8-eV5">
@@ -1068,12 +1068,42 @@
                     <view key="view" contentMode="scaleToFill" id="c5d-qp-8QI">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odn-JR-8vV">
+                                <rect key="frame" x="20" y="20" width="94" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.8036167622" green="0.0" blue="0.018651708959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Apple Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="910" y="20" width="94" height="37"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loadAppleMap" destination="aH8-aO-6yG" eventType="touchUpInside" id="O3c-NE-uCH"/>
+                                    <action selector="tapSummaryButton:" destination="ejP-5U-I7s" eventType="touchUpInside" id="YDF-ZF-HQs"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Odn-JR-8vV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="Odn-JR-8vV"/>
+                            </mask>
+                        </variation>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="uib_appleMap" destination="Odn-JR-8vV" id="rum-Th-8IG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tq7-eS-UKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1136,6 +1166,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3cf-Xi-1NB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="N3Q-46-MOw">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF4-Ui-663" userLabel="Close">
