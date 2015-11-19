@@ -130,6 +130,16 @@ static float    bottomHeight = 37;
     keyOverlay = [[KeyOverlay alloc] initWithFrame:CGRectMake(600, 350, key.size.width, key.size.height)];
     [keyOverlay setKeyImage:key];
     [self.view addSubview:keyOverlay];
+    
+    //grfx_cityMap_overlay_legend_light_rail.png
+}
+
+-(void)createKeyForCity
+{
+    UIImage*key = [UIImage imageNamed:@"grfx_cityMap_overlay_legend_light_rail.png"];
+    KeyOverlay *keyOverlay = [[KeyOverlay alloc] initWithFrame:CGRectMake(20, 620, key.size.width, key.size.height)];
+    [keyOverlay setKeyImage:key];
+    [self.view addSubview:keyOverlay];
 }
 
 - (void)buttonStack:(ButtonStack *)buttonStack selectedIndex:(int)index
@@ -139,6 +149,13 @@ static float    bottomHeight = 37;
         overlayAsset = [[UIImageView alloc] initWithFrame:_zoomingScroll.frame];
         [_zoomingScroll.blurView addSubview:overlayAsset];
         overlayMenuIndex = -1;
+    }
+    
+    // if mapIndex and overlayIndex
+    if (( mapIndex == 1 ) && ( index == 0 )) {
+        [self createKeyForCity];
+    } else {
+        [self clearKeys];
     }
     
     NSString *imgNm = [arr_OverlayData[index] objectForKey:@"overlay"];
@@ -152,11 +169,10 @@ static float    bottomHeight = 37;
                         animations:^{
                             overlayAsset.image = toImage;
                         } completion:NULL];
-        
-        //overlayAsset.image = [UIImage imageNamed:imgNm];
         overlayMenuIndex = index;
     } else {
         [self clearOverlayData];
+        [self clearKeys];
     }
 }
 
@@ -165,7 +181,10 @@ static float    bottomHeight = 37;
     [overlayAsset removeFromSuperview];
     overlayAsset = nil;
     overlayMenuIndex = -1;
-    
+}
+
+-(void)clearKeys
+{
     for (UIView *key in self.view.subviews) {
         if ([key  isKindOfClass:[KeyOverlay class]])
             [key removeFromSuperview];
@@ -176,7 +195,6 @@ static float    bottomHeight = 37;
             [key removeFromSuperview];
     }
 }
-
 
 #pragma mark - maps
 - (void)loadZoomingScrollView {
@@ -242,6 +260,7 @@ static float    bottomHeight = 37;
 - (void)tapBottomMenu:(id)sender {
     
     [self clearOverlayData];
+    [self clearKeys];
 
     if ([sender tag] !=2) {
         [self createButtonStack: (int)[sender tag] ];

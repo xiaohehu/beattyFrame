@@ -80,7 +80,7 @@
         [self.view addSubview:_zoomingScroll];
         _zoomingScroll.backgroundColor = [UIColor clearColor];
         _zoomingScroll.delegate=self;
-        _zoomingScroll.blurView.image = [UIImage imageNamed:@"grfx_siteplan.jpg"];
+        _zoomingScroll.blurView.image = [UIImage imageNamed:@"grfx_siteplan.png"];
     }
 }
 

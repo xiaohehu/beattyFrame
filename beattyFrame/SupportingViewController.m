@@ -133,7 +133,7 @@ static int      gridViewIndex = kEcoIndex;
                                       direction:UIPageViewControllerNavigationDirectionForward
                                        animated:NO
                                      completion:nil];
-    [self setGridSwipeArea];
+    //[self setGridSwipeArea];
 
 }
 
@@ -168,7 +168,7 @@ static int      gridViewIndex = kEcoIndex;
     currentPageIndex = (int)[self.modelController indexOfViewController:theCurrentViewController];
     [self checkCurrentIndexPosition];
     
-    [self setGridSwipeArea];
+    //[self setGridSwipeArea];
 }
 
 - (void)checkCurrentIndexPosition {

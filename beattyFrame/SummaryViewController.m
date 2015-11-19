@@ -33,7 +33,7 @@
 
 - (void)createSummaryContent {
     UIImageView *uiiv_Summary = [UIImageView new];
-    UIImage *summary = [UIImage imageNamed:@"grfx_summary.jpg"];
+    UIImage *summary = [UIImage imageNamed:@"grfx_summary.png"];
     [uiiv_Summary setImage: summary];
     uiiv_Summary.frame = self.view.bounds;
     [self.view insertSubview: uiiv_Summary atIndex:0];

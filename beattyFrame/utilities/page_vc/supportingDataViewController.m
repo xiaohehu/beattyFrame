@@ -40,14 +40,14 @@ static int gridViewIndex = kEcoIndex;
 #pragma mark - LAYOUT FLOOR PLAN DATA
 -(void)loadDataAndView
 {
-    if (vcIndex == animationViewIndex) { // Load the animated grids view
-        animationView *animation = [[animationView alloc] initWithFrame:self.view.bounds];
-        [self.view addSubview: animation];
-    } else if (vcIndex == gridViewIndex) { // Load the animated grids view
-        gridEcoView *animation = [[gridEcoView alloc] initWithFrame:self.view.bounds];
-        [self.view addSubview: animation];
-    } else {
-        
+//    if (vcIndex == animationViewIndex) { // Load the animated grids view
+//        animationView *animation = [[animationView alloc] initWithFrame:self.view.bounds];
+//        [self.view addSubview: animation];
+//    } else if (vcIndex == gridViewIndex) { // Load the animated grids view
+//        gridEcoView *animation = [[gridEcoView alloc] initWithFrame:self.view.bounds];
+//        [self.view addSubview: animation];
+//    } else {
+    
         if (!_zoomingScroll) {
             CGRect theFrame = self.view.bounds;
             _zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
@@ -57,7 +57,7 @@ static int gridViewIndex = kEcoIndex;
         }
         [self loadInImge:_dict[@"image"]];
         
-    }
+//    }
 
 }
 

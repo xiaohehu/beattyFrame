@@ -14,7 +14,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>grfx_bldg_stats_01.png</string>
+		<string>parcel-panel-parcel-1.png</string>
 		<key>buildingWeb</key>
 		<string>http://1305dockstreet.com</string>
 	</dict>
@@ -30,7 +30,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>grfx_bldg_stats_02.png</string>
+		<string>parcel-panel-exelon.png</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -44,7 +44,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>grfx_bldg_stats_03.png</string>
+		<string>parcel-panel-parcel-4.png</string>
 		<key>buildingWeb</key>
 		<string>http://1305dockstreet.com</string>
 	</dict>
@@ -60,7 +60,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>grfx_bldg_stats_04.png</string>
+		<string>parcel-panel-point-st.png</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -74,7 +74,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>grfx_bldg_stats_05.png</string>
+		<string>parcel-panel-thames-street-wharf.png</string>
 		<key>buildingWeb</key>
 		<string>http://www.neoscape.com</string>
 	</dict>
@@ -90,7 +90,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>grfx_bldg_stats_06.png</string>
+		<string>parcel-panel-wills-wharf.png</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -104,7 +104,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>grfx_bldg_stats_07.png</string>
+		<string>parcel-panel-parcel-3.png</string>
 		<key>buildingWeb</key>
 		<string>http://1305dockstreet.com</string>
 	</dict>
@@ -120,7 +120,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>grfx_bldg_stats_08.png</string>
+		<string>parcel-panel-point-park.png</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -134,7 +134,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>grfx_bldg_stats_09.png</string>
+		<string>parcel-panel-central-plaza.png</string>
 		<key>buildingWeb</key>
 		<string>http://1305dockstreet.com</string>
 	</dict>
