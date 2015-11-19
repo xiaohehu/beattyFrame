@@ -21,6 +21,7 @@
         self.label.backgroundColor = [UIColor clearColor];
         self.label.numberOfLines = 1;
         [self addSubview:self.label];
+        NSLog(@"label %@",self.label.text);
     }
     return self;
 }

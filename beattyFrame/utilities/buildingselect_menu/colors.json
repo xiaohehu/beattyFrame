@@ -1,0 +1,512 @@
+[
+	{
+			"id": "6037",
+			"name": "Temperate Taupe",
+			"color_type": {
+				"rgb": [
+					"192",
+					"179",
+					"171"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "7733",
+			"name": "Bamboo Shoot",
+			"color_type": {
+				"rgb": [
+				  "178",
+				  "165",
+				  "124"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "6277",
+			"name": "Special Gray",
+			"color_type": {
+				"rgb": [
+				  "126",
+				  "122",
+				  "127"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "7010",
+			"name": "White Duck",
+			"color_type": {
+				"rgb": [
+				  "230",
+				  "224",
+				  "211"
+				]
+			},
+			"systems": [
+				"Liveable Luxe",
+				"Perfect Whites"
+				]
+	},
+	{
+			"id": "7644",
+			"name": "Gateway Gray",
+			"color_type": {
+				"rgb": [
+				  "179",
+				  "173",
+				  "159"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "7018",
+			"name": "Dovetail",
+			"color_type": {
+				"rgb": [
+				  "145",
+				  "140",
+				  "133"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "6284",
+			"name": "Plum Dandy",
+			"color_type": {
+				"rgb": [
+				  "143",
+				  "107",
+				  "123"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "7036",
+			"name": "Accessible Beige",
+			"color_type": {
+				"rgb": [
+				  "209",
+				  "201",
+				  "184"
+				]
+			},
+			"systems": [
+				"Neutral Nuance",
+				"Liveable Luxe",
+				"Color Pizzazz",
+				"Coastal Cool"
+				]
+	},
+	{
+			"id": "7020",
+			"name": "Black Fox",
+			"color_type": {
+				"rgb": [
+				  "78",
+				  "72",
+				  "65"
+				]
+			},
+			"systems": [
+				"Liveable Luxe",
+				"Color Pizzazz"
+				]
+	},
+	{
+			"id": "6045",
+			"name": "Emerging Taupe",
+			"color_type": {
+				"rgb": [
+				  "185",
+				  "163",
+				  "151"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "6536",
+			"name": "Searching Blue",
+			"color_type": {
+				"rgb": [
+				  "112",
+				  "125",
+				  "155"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "6191",
+			"name": "Contented",
+			"color_type": {
+				"rgb": [
+				  "189",
+				  "194",
+				  "180"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "6271",
+			"name": "Expressive Plum",
+			"color_type": {
+				"rgb": [
+				  "108",
+				  "92",
+				  "100"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "7727",
+			"name": "Koi Pond",
+			"color_type": {
+				"rgb": [
+				  "186",
+				  "180",
+				  "149"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "7621",
+			"name": "Silvermist",
+			"color_type": {
+				"rgb": [
+				  "177",
+				  "185",
+				  "179"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "7016",
+			"name": "Mindful Gray",
+			"color_type": {
+				"rgb": [
+				  "188",
+				  "184",
+				  "174"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "7004",
+			"name": "Snowbound",
+			"color_type": {
+				"rgb": [
+				  "238",
+				  "235",
+				  "229"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "6258",
+			"name": "Tricorn Black",
+			"color_type": {
+				"rgb": [
+				  "45",
+				  "45",
+				  "46"
+				]
+			},
+			"systems": [
+				"Traditional Twist",
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "6177",
+			"name": "Softened Green",
+			"color_type": {
+				"rgb": [
+				  "186",
+				  "191",
+				  "168"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+	{
+			"id": "6004",
+			"name": "Mink",
+			"color_type": {
+				"rgb": [
+				  "134",
+				  "126",
+				  "121"
+				]
+			},
+			"systems": [
+				"Liveable Luxe"
+				]
+	},
+ 	{
+			"id": "6258",
+			"name": "Tricorn Black",
+			"color_type": {
+				"rgb": [
+					"45",
+					"45",
+					"46"
+				]
+			},
+			"systems": [
+				"Traditional Twist",
+				]
+	},
+  	{
+			"id": "6105",
+			"name": "Divine White",
+			"color_type": {
+				"rgb": [
+					"231",
+					"222",
+					"206"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+ 	{
+			"id": "6119",
+			"name": "Antique White",
+			"color_type": {
+				"rgb": [
+					"231",
+					"222",
+					"199"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+	{
+			"id": "6133",
+			"name": "Muslin",
+			"color_type": {
+				"rgb": [
+					"232",
+					"225",
+					"201"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+	{
+			"id": "6385",
+			"name": "Dover White",
+			"color_type": {
+				"rgb": [
+					"239",
+					"236",
+					"221"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+	{
+			"id": "7005",
+			"name": "Pure White",
+			"color_type": {
+				"rgb": [
+					"238",
+					"237",
+					"231"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+	{
+			"id": "7008",
+			"name": "Alabaster",
+			"color_type": {
+				"rgb": [
+					"238",
+					"235",
+					"225"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+	{
+			"id": "7010",
+			"name": "White Duck",
+			"color_type": {
+				"rgb": [
+					"230",
+					"224",
+					"211"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+	{
+			"id": "7011",
+			"name": "Natural Choice",
+			"color_type": {
+				"rgb": [
+					"227",
+					"222",
+					"208"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+	{
+			"id": "7012",
+			"name": "Creamy",
+			"color_type": {
+				"rgb": [
+					"238",
+					"234",
+					"220"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+	{
+			"id": "7042",
+			"name": "Shoji White",
+			"color_type": {
+				"rgb": [
+					"230",
+					"224",
+					"211"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+	{
+			"id": "7049",
+			"name": "Nuance",
+			"color_type": {
+				"rgb": [
+					"226",
+					"225",
+					"214"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+	{
+			"id": "7063",
+			"name": "Nebulous White",
+			"color_type": {
+				"rgb": [
+					"222",
+					"224",
+					"220"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+	{
+			"id": "7551",
+			"name": "Greek Villa",
+			"color_type": {
+				"rgb": [
+					"239",
+					"236",
+					"227"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+		{
+			"id": "7567",
+			"name": "Natural Tan",
+			"color_type": {
+				"rgb": [
+					"219",
+					"210",
+					"196"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+	{
+			"id": "7636",
+			"name": "Origami White",
+			"color_type": {
+				"rgb": [
+					"230",
+					"226",
+					"219"
+				]
+			},
+			"systems": [
+				"Perfect Whites",
+				]
+	},
+]
