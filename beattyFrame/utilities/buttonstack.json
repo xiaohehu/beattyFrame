@@ -34,10 +34,6 @@
 				"name": "Arts & Culture",
 				"overlay": "grfx_cityMap_overlay_arts_culture.png",
 				},
-                 {
-                 "name": "Corporate Neighbors",
-                 "overlay": "grfx_cityMap_overlay_corp_neighbors.png",
-                 },
 				{
 				"name": "Universities",
 				"overlay": "grfx_cityMap_overlay_institutions.png",
