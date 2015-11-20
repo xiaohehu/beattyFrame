@@ -58,10 +58,9 @@ static float    bottomHeight = 37;
     
     _appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
 
-    //uib_appleMap.backgroundColor = [UIColor whiteColor];
-    [uib_appleMap setTitle:@"Apple Map" forState:UIControlStateNormal];
-    [uib_appleMap setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [uib_appleMap.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
+    [_uib_appleMap setTitle:@"Apple Maps" forState:UIControlStateNormal];
+    [uib_appleMap setTitleColor:[UIColor themeRed] forState:UIControlStateNormal];
+    [_uib_appleMap sizeToFit];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -328,7 +327,10 @@ static float    bottomHeight = 37;
 {
     NSLog(@"loadAppleMap");
     
-    
+    [_uib_appleMap setTitle:@"Close Apple Maps" forState:UIControlStateNormal];
+    [uib_appleMap setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    [_uib_appleMap sizeToFit];
+
     
     if ([_appDelegate.isWirelessAvailable isEqualToString:@"NO"]) {
         NSLog(@"Wireless NO");
@@ -344,29 +346,13 @@ static float    bottomHeight = 37;
         [alert show];
     } else if ([_appDelegate.isWirelessAvailable isEqualToString:@"YES"]) {
         NSLog(@"Wireless YES");
-    
-        
         
         [_uib_appleMap setSelected:YES];
+        
         [self initMapView];
         CLLocationCoordinate2D zoomLocation;
         zoomLocation.latitude = 39.280328;
         zoomLocation.longitude= -76.599012;
-    
-    
-//    MKCoordinateSpan span; span.latitudeDelta = .001;
-//    span.longitudeDelta = .001;
-//    //the .001 here represents the actual height and width delta
-//    MKCoordinateRegion region;
-//    region.center = zoomLocation; region.span = span;
-//    [_mapView setRegion:region animated:TRUE];
-    
-        // 2
-        //MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 1,1);
-
-        // 3
-        //[_mapView setRegion:viewRegion animated:NO];
-    
     
         MapViewAnnotation *newAnnotation = [[MapViewAnnotation alloc] initWithTitle:@"Harbor Point" andCoordinate:zoomLocation];
         [self.mapView addAnnotation:newAnnotation];
@@ -395,6 +381,11 @@ static float    bottomHeight = 37;
     _mapView=nil;
     overlayMenu.hidden = NO;
     
+    [_uib_appleMap setSelected:NO];
+    
+    [_uib_appleMap setTitle:@"Apple Maps" forState:UIControlStateNormal];
+    [uib_appleMap setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    [_uib_appleMap sizeToFit];
 }
 
 
