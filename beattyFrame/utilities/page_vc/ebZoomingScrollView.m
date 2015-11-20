@@ -8,6 +8,7 @@
 
 #import "ebZoomingScrollView.h"
 #import "KeyOverlay.h"
+#import "ImageOverlay.h"
 
 @interface ebZoomingScrollView () <UIScrollViewDelegate>
 
@@ -217,7 +218,7 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     for (UIView *dropPinView in _blurView.subviews) {
-        if ([dropPinView isKindOfClass:[KeyOverlay class]]) {
+        if ( [dropPinView isKindOfClass:[KeyOverlay class]] || [dropPinView isKindOfClass:[ImageOverlay class]]) {
                 CGRect oldFrame = dropPinView.frame;
                 dropPinView.frame = oldFrame;
                 dropPinView.transform = CGAffineTransformMakeScale(1.0/_scrollView.zoomScale, 1.0/_scrollView.zoomScale);

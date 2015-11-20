@@ -293,6 +293,7 @@
 		82CA34211B6BE2960065E31E /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CA34201B6BE2960065E31E /* LocationViewController.m */; };
 		880F23DE1BFFA34B001EA4E9 /* grfx-partners.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F23DC1BFFA34B001EA4E9 /* grfx-partners.png */; };
 		880F23DF1BFFA34B001EA4E9 /* grfx-partners@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F23DD1BFFA34B001EA4E9 /* grfx-partners@2x.png */; };
+		880F23E21BFFABD4001EA4E9 /* ImageOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 880F23E11BFFABD4001EA4E9 /* ImageOverlay.m */; };
 		8819D81D1BB8515400015AF5 /* Central_Plaza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CD1BB8515400015AF5 /* Central_Plaza.jpg */; };
 		8819D81E1BB8515400015AF5 /* Central_Plaza@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */; };
 		8819D81F1BB8515400015AF5 /* Harbor_Point_Park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */; };
@@ -1494,6 +1495,8 @@
 		82CA34201B6BE2960065E31E /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		880F23DC1BFFA34B001EA4E9 /* grfx-partners.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-partners.png"; sourceTree = "<group>"; };
 		880F23DD1BFFA34B001EA4E9 /* grfx-partners@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-partners@2x.png"; sourceTree = "<group>"; };
+		880F23E01BFFABD4001EA4E9 /* ImageOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageOverlay.h; path = utilities/ImageOverlay.h; sourceTree = "<group>"; };
+		880F23E11BFFABD4001EA4E9 /* ImageOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageOverlay.m; path = utilities/ImageOverlay.m; sourceTree = "<group>"; };
 		8819D7CD1BB8515400015AF5 /* Central_Plaza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Central_Plaza.jpg; sourceTree = "<group>"; };
 		8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Central_Plaza@2x.jpg"; sourceTree = "<group>"; };
 		8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Harbor_Point_Park.jpg; sourceTree = "<group>"; };
@@ -2961,6 +2964,8 @@
 				888233741BA0B0600019FD75 /* ButtonStack.m */,
 				887647D41BA33651002D4183 /* KeyOverlay.h */,
 				887647D51BA33651002D4183 /* KeyOverlay.m */,
+				880F23E01BFFABD4001EA4E9 /* ImageOverlay.h */,
+				880F23E11BFFABD4001EA4E9 /* ImageOverlay.m */,
 				88E0742F1B98CFB400E0982A /* TutorialCard */,
 				822822B51B851E44004154E7 /* setting */,
 				82A128B31B69164100564266 /* page_vc */,
@@ -5522,6 +5527,7 @@
 				88E074531B98CFB400E0982A /* ModelController.m in Sources */,
 				88E074501B98CFB400E0982A /* FLAnimatedImage.m in Sources */,
 				881D140A1BF111DA00693C62 /* MasterplanParkingViewController.m in Sources */,
+				880F23E21BFFABD4001EA4E9 /* ImageOverlay.m in Sources */,
 				822822BA1B851E44004154E7 /* SettingTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

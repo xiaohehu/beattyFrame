@@ -11,6 +11,7 @@
 #import "UIColor+Extensions.h"
 #import "ButtonStack.h"
 #import "KeyOverlay.h"
+#import "ImageOverlay.h"
 #import "AppDelegate.h"
 #import "MapViewAnnotation.h"
 #import <MapKit/MapKit.h>
@@ -158,6 +159,8 @@ static float    bottomHeight = 37;
         [self clearKeys];
     }
     
+    
+    
     NSString *imgNm = [arr_OverlayData[index] objectForKey:@"overlay"];
     
     if (index != overlayMenuIndex) {
@@ -192,6 +195,14 @@ static float    bottomHeight = 37;
     
     for (UIView *key in [_zoomingScroll.blurView subviews]) {
         if ([key  isKindOfClass:[KeyOverlay class]])
+            [key removeFromSuperview];
+    }
+}
+
+-(void)clearLogoOverlay
+{
+    for (UIView *key in [_zoomingScroll.blurView subviews]) {
+        if ([key  isKindOfClass:[ImageOverlay class]])
             [key removeFromSuperview];
     }
 }
@@ -269,14 +280,7 @@ static float    bottomHeight = 37;
         [self createKeyForMap];
     }
     
-    // create logo hotspot
-    if ([sender tag] == 1) {
-        [self createLogoPinForMapAtRect:(CGPointMake(548,333))];
-        _uib_appleMap.hidden = NO;
-    } else if ([sender tag] == 2) {
-        [self createLogoPinForMapAtRect:(CGPointMake(159,582))];
-        _uib_appleMap.hidden = YES;
-    }
+    [self clearLogoOverlay];
     
     UIButton *tappedButton = sender;
     
@@ -294,15 +298,30 @@ static float    bottomHeight = 37;
         _zoomingScroll.blurView.image = [UIImage imageNamed:arr_mapImageNames[tappedButton.tag]];
         _zoomingScroll.blurView.alpha = 1.0;
         uiiv_tmpMap.alpha = 0.0;
+        
+        // create logo hotspot
+        if ([sender tag] == 1) {
+            [self createLogoPinForMapAtRect:(CGPointMake(548,333))];
+            _uib_appleMap.hidden = NO;
+        } else if ([sender tag] == 2) {
+            [self createLogoPinForMapAtRect:(CGPointMake(159,582))];
+            _uib_appleMap.hidden = YES;
+        }
+
     }];
 }
 
 -(void)createLogoPinForMapAtRect:(CGPoint)point
 {
     UIImage*key = [UIImage imageNamed:@"grfx-site-marker.png"];
-    KeyOverlay *keyOverlay = [[KeyOverlay alloc] initWithFrame:CGRectMake(point.x, point.y, key.size.width, key.size.height)];
+    ImageOverlay *keyOverlay = [[ImageOverlay alloc] initWithFrame:CGRectMake(point.x, point.y, key.size.width, key.size.height)];
+    keyOverlay.alpha = 0.0;
     [keyOverlay setKeyImage:key];
     [_zoomingScroll.blurView addSubview:keyOverlay];
+    
+    [UIView animateWithDuration:0.33 animations:^(void) {
+        keyOverlay.alpha = 1.0;
+    }];
 }
 
 -(IBAction)loadAppleMap
