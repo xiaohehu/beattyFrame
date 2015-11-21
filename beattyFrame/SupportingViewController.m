@@ -54,7 +54,7 @@ static int      gridViewIndex = kEcoIndex;
 - (void)viewWillAppear:(BOOL)animated {
     [self initPageView:pageIndex];
     [self createBottomMenu];
-    [self createPageNumLabel];
+    //[self createPageNumLabel];
     [self checkCurrentIndexPosition];
 }
 

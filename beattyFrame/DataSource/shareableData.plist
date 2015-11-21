@@ -43,7 +43,7 @@
 					<string>Central Plaza</string>
 					<string>Harbor Point Park</string>
 					<string>Parcel 01</string>
-					<string>Parcel 02 - Excelon</string>
+					<string>Parcel 02 - Exelon</string>
 					<string>Parcel 03</string>
 					<string>Parcel 04</string>
 					<string>Point Street Apartment</string>
@@ -316,30 +316,30 @@
 				<string></string>
 				<key>assets</key>
 				<array>
-                    <string>BeattyDev@gmail.com_20150521_084823.pdf</string>
-                    <string>Harbor Point 2.0_sml.pdf</string>
-                    <string>Harbor Point 2.0-4.pdf</string>
-                    <string>Harbor Point 2.0.pdf</string>
-                    <string>Harbor_Point_Leasing_Brochure_sml.pdf</string>
-                    <string>Point Street_UDARP 03_01-21-15 AM Mod_sml.pdf</string>
+					<string>BeattyDev@gmail.com_20150521_084823.pdf</string>
+					<string>Harbor Point 2.0_sml.pdf</string>
+					<string>Harbor Point 2.0-4.pdf</string>
+					<string>Harbor Point 2.0.pdf</string>
+					<string>Harbor_Point_Leasing_Brochure_sml.pdf</string>
+					<string>Point Street_UDARP 03_01-21-15 AM Mod_sml.pdf</string>
 				</array>
-                <key>thumbs</key>
-                <array>
-                    <string>share_BeattyDev@gmail.com_20150521_084823.jpg</string>
-                    <string>share_Harbor Point 2.0_sml.jpg</string>
-                    <string>share_Harbor Point 2.0-4.jpg</string>
-                    <string>share_Harbor Point 2.0.jpg</string>
-                    <string>share_Harbor_Point_Leasing_Brochure_sml.jpg</string>
-                    <string>share_Point Street_UDARP 03_01-21-15 AM Mod_sml.jpg</string>
-                </array>
+				<key>thumbs</key>
+				<array>
+					<string>share_BeattyDev@gmail.com_20150521_084823.jpg</string>
+					<string>share_Harbor Point 2.0_sml.jpg</string>
+					<string>share_Harbor Point 2.0-4.jpg</string>
+					<string>share_Harbor Point 2.0.jpg</string>
+					<string>share_Harbor_Point_Leasing_Brochure_sml.jpg</string>
+					<string>share_Point Street_UDARP 03_01-21-15 AM Mod_sml.jpg</string>
+				</array>
 				<key>captions</key>
 				<array>
-                    <string>BeattyDev@gmail.com_20150521_084823.pdf</string>
-                    <string>Harbor Point 2.0_sml.pdf</string>
-                    <string>Harbor Point 2.0-4.pdf</string>
-                    <string>Harbor Point 2.0.pdf</string>
-                    <string>Harbor_Point_Leasing_Brochure_sml.pdf</string>
-                    <string>Point Street_UDARP 03_01-21-15 AM Mod_sml.pdf</string>
+					<string>BeattyDev@gmail.com_20150521_084823.pdf</string>
+					<string>Harbor Point 2.0_sml.pdf</string>
+					<string>Harbor Point 2.0-4.pdf</string>
+					<string>Harbor Point 2.0.pdf</string>
+					<string>Harbor_Point_Leasing_Brochure_sml.pdf</string>
+					<string>Point Street_UDARP 03_01-21-15 AM Mod_sml.pdf</string>
 				</array>
 			</dict>
 		</array>

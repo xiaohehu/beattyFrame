@@ -450,7 +450,7 @@ static float    menuButtonSize = 50.0;
 - (void)removeBuildingVC:(NSNotification *)notification {
     
     [self updateSubTitle:@"Site 360"];
-    
+
     [UIView animateWithDuration:0.33 animations:^(void){
         buildingVC.view.transform = CGAffineTransformMakeTranslation(0, self.view.bounds.size.height);
     } completion:^(BOOL finished){
@@ -468,6 +468,10 @@ static float    menuButtonSize = 50.0;
 }
 
 - (IBAction)loadSite360:(id)sender {
+    
+    [self updateSectionTitle:@"Harbor Point"];
+    [self updateSubTitle:@"Site 360°"];
+
     UIButton *tappedButton = sender;
     [self highlightTheButton:tappedButton withAnimation:YES];
     Site360ViewController *site360 = [self.storyboard instantiateViewControllerWithIdentifier:@"Site360ViewController"];
@@ -506,7 +510,7 @@ static float    menuButtonSize = 50.0;
     
     sectionIndex = 30;
     
-    [self updateSectionTitle:@"Sponsorship"];
+    [self updateSectionTitle:@"Partners"];
     
     UIButton *tappedButton = sender;
     [self highlightTheButton:tappedButton withAnimation:YES];
