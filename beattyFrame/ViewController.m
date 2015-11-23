@@ -383,6 +383,7 @@ static float    menuButtonSize = 50.0;
 - (void)highlightTheButton:(UIButton *)theButton withAnimation:(BOOL)animation{
     for (UIButton *btn in arr_sideMenuBttuons) {
         [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        //[btn setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
     }
     /*
      * Get the selected button's frame to move the highlight view
@@ -401,6 +402,7 @@ static float    menuButtonSize = 50.0;
         uiv_buutonHighlight.frame = frame;
         [theButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
+    //[theButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 5, 0, 0)];
 }
 
 /*
