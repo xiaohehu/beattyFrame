@@ -235,7 +235,7 @@ static float    menuButtonSize = 50.0;
     uib_subTitle = [UIButton buttonWithType:UIButtonTypeCustom];
     uib_subTitle.frame = CGRectMake(0.0, uib_sectionTitle.frame.size.height + 2, 50, 32);
     uib_subTitle.backgroundColor = [UIColor themeRed];
-    [uib_subTitle setTitle:@"Site 360" forState:UIControlStateNormal];
+    [uib_subTitle setTitle:@"Site 360°" forState:UIControlStateNormal];
     [uib_subTitle setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [uib_subTitle.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:18.0]];
     [uib_subTitle sizeToFit];
@@ -403,6 +403,8 @@ static float    menuButtonSize = 50.0;
         [theButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
     //[theButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 5, 0, 0)];
+    //uiv_buutonHighlight.frame = CGRectOffset(uiv_buutonHighlight.frame, uiv_buutonHighlight.frame.origin.x+5, uiv_buutonHighlight.frame.origin.y);
+
 }
 
 /*
