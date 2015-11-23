@@ -23,6 +23,13 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar
+     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

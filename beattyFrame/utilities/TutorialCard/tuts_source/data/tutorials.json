@@ -4,7 +4,7 @@
                 "sectionTitle": "Harbor Point",
                 "tutorials": [
                     {
- 						"Title": "Site °360",
+ 						"Title": "Site 360°",
   						"Subtitle": "Rotating the view",
     					"GIF": "tut_gallery_scroll",
     					"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec neque vel erat eleifend tempor. Integer pellentesque tempor mauris, at rutrum elit sagittis nec. Mauris ut ante in leo ornare cursus. Integer vulputate eros vitae venenatis efficitur. Quisque ac dui urna. Praesent porttitor arcu vitae cursus eleifend. Sed auctor scelerisque dui, eget dapibus velit pretium a. Etiam ultrices cursus mi at posuere. Curabitur id laoreet orci. Ut lacinia nec orci eu convallis. Curabitur dolor massa, elementum in magna at, malesuada semper metus. Vivamus iaculis, orci a auctor cursus, nulla tortor laoreet nulla, eu placerat mi velit non quam. Aliquam sit amet congue justo. Quisque consectetur tincidunt nunc eget dictum. Morbi efficitur congue erat, ut posuere sapien facilisis at. Praesent at purus sed ligula dignissim consectetur ut sit amet ex.",
@@ -12,7 +12,7 @@
     					"Icontype": "pinch"
                     },
                     {
-    					"Title": "Site °360",
+    					"Title": "Site 360°",
     					"Subtitle": "Panning the view",
     					"GIF": "tut_map_zoom",
     					"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec neque vel erat eleifend tempor. Integer pellentesque tempor mauris, at rutrum elit sagittis nec. Mauris ut ante in leo ornare cursus. Integer vulputate eros vitae venenatis efficitur. Quisque ac dui urna. Praesent porttitor arcu vitae cursus eleifend. Sed auctor scelerisque dui, eget dapibus velit pretium a. Etiam ultrices cursus mi at posuere. Curabitur id laoreet orci. Ut lacinia nec orci eu convallis.",

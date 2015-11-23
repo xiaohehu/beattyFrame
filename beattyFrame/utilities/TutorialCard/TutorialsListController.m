@@ -30,6 +30,8 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
 -(void)viewDidLoad
@@ -142,13 +144,18 @@
     [userDefaults setInteger:index forKey:@"saverows"];
     [userDefaults synchronize];
     
-    [self madeSelection:indexPath];
+    //NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+    TutsTableCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    NSLog(@"%@", cell.nameLabel.text);
+    [self performSegueWithIdentifier:@"DetailSegue" sender:cell];
+    
+    //[self madeSelection:indexPath];
 }
 
 - (void)madeSelection:(NSIndexPath*)rrow
 {
     row = rrow;
-    [self performSegueWithIdentifier:@"DetailSegue" sender:nil];
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -158,6 +165,26 @@
         ContainerViewController *detailVC = [segue destinationViewController];
         detailVC.indexPath = row;
         [detailVC loadPage:(int)row.row];
+        
+        UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 150, 40.0)];
+        titleView.backgroundColor = [UIColor clearColor];
+        
+        // Get the value of cell.textlabel.text
+        TutsTableCell *cell = (TutsTableCell *)sender;
+        NSString *text = cell.nameLabel.text;
+        
+        UILabel *titleLabel = [[UILabel alloc] init];
+        titleLabel.text = text;
+        titleLabel.font = [UIFont fontWithName:@"GoodPro-Book" size:22.0];
+        titleLabel.frame = CGRectMake(0, 7, 125, 30);
+        titleLabel.textAlignment = NSTextAlignmentCenter;
+        titleLabel.textColor = [UIColor whiteColor];
+        [titleView addSubview:titleLabel];
+        [titleLabel sizeToFit];
+        [titleLabel setCenter:CGPointMake(titleView.frame.size.width / 2, titleView.frame.size.height / 2)];
+
+        
+        detailVC.navigationItem.titleView = titleView;
         
         _secData = [[NSMutableArray alloc] init];
         for (int i=0; i < [[_tutorials[0] objectForKey:@"tutorials"]count]; i++) {

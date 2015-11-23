@@ -9,6 +9,7 @@
 #import "ContainerViewController.h"
 #import "TutorialPageViewController.h"
 #import "ModelController.h"
+#import "Tutorial.h"
 
 @interface ContainerViewController () <UIGestureRecognizerDelegate> {
     UIView *helpHolder;
@@ -29,8 +30,10 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    //[self.navigationController setNavigationBarHidden:NO animated:YES];
     self.automaticallyAdjustsScrollViewInsets = NO;
+    [self.navigationController.navigationBar
+     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
 }
 
 - (void)viewDidLoad
@@ -53,7 +56,7 @@
     
     [self addChildViewController:self.pageViewController];
     [self.view addSubview:self.pageViewController.view];
-   
+    
    [self.pageViewController didMoveToParentViewController:self];
 }
 
