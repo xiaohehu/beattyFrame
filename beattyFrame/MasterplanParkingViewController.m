@@ -23,6 +23,7 @@
     int                     overlayMenuIndex;
     int                     overlayParkingMenuIndex;
     ButtonStack *overlayMenu;
+    UIImageView *parcelNames;
 }
 
 @property (nonatomic, strong) ebZoomingScrollView			*zoomingScroll;
@@ -83,6 +84,10 @@
         _zoomingScroll.backgroundColor = [UIColor clearColor];
         _zoomingScroll.delegate=self;
         _zoomingScroll.blurView.image = [UIImage imageNamed:@"master-plan-default.png"];
+        
+        //master-plan-parcel-names.png
+        parcelNames = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"master-plan-parcel-names.png"]];
+        [_zoomingScroll.blurView insertSubview:parcelNames atIndex:10];
     }
 }
 
@@ -174,16 +179,21 @@
     NSString *imgNm;
     
     if (buttonStack.tag == 1) {
-        NSLog(@"park tag %li", (long)buttonStack.tag);
+        NSLog(@"park tag %i", index);
         
         imgNm = [arr_OverlayParkData[index] objectForKey:@"overlay"];
 
         if ( ! overlayAssetParking) {
             overlayAssetParking = [[UIImageView alloc] initWithFrame:_zoomingScroll.frame];
-            [_zoomingScroll.blurView addSubview:overlayAssetParking];
             overlayParkingMenuIndex = -1;
         }
         
+        if (index > 4) {
+            [_zoomingScroll.blurView insertSubview:overlayAssetParking aboveSubview:parcelNames];
+        } else {
+            [_zoomingScroll.blurView insertSubview:overlayAssetParking belowSubview:parcelNames];
+        }
+
         if (index != overlayParkingMenuIndex) {
             
             UIImage * toImage = [UIImage imageNamed:imgNm];
@@ -199,27 +209,27 @@
         }
 
     } else if (buttonStack.tag == 0) {
-        NSLog(@"other tag %li", (long)buttonStack.tag);
-        imgNm = [arr_OverlayData[index] objectForKey:@"overlay"];
-
-        if ( ! overlayAsset) {
-            overlayAsset = [[UIImageView alloc] initWithFrame:_zoomingScroll.frame];
-            [_zoomingScroll.blurView addSubview:overlayAsset];
-            overlayMenuIndex = -1;
-        }
-        if (index != overlayMenuIndex) {
-            
-            UIImage * toImage = [UIImage imageNamed:imgNm];
-            [UIView transitionWithView:self.view
-                              duration:0.23f
-                               options:UIViewAnimationOptionTransitionCrossDissolve
-                            animations:^{
-                                overlayAsset.image = toImage;
-                            } completion:NULL];
-            overlayMenuIndex = index;
-        } else {
-            [self clearOverlayData];
-        }
+//        NSLog(@"other tag %li", (long)buttonStack.tag);
+//        imgNm = [arr_OverlayData[index] objectForKey:@"overlay"];
+//
+//        if ( ! overlayAsset) {
+//            overlayAsset = [[UIImageView alloc] initWithFrame:_zoomingScroll.frame];
+//            [_zoomingScroll.blurView insertSubview:overlayAsset belowSubview:parcelNames];
+//            overlayMenuIndex = -1;
+//        }
+//        if (index != overlayMenuIndex) {
+//            
+//            UIImage * toImage = [UIImage imageNamed:imgNm];
+//            [UIView transitionWithView:self.view
+//                              duration:0.23f
+//                               options:UIViewAnimationOptionTransitionCrossDissolve
+//                            animations:^{
+//                                overlayAsset.image = toImage;
+//                            } completion:NULL];
+//            overlayMenuIndex = index;
+//        } else {
+//            [self clearOverlayData];
+//        }
     }
 }
 
