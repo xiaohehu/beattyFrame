@@ -22,6 +22,7 @@
     UIImageView             *overlayAssetParking;
     int                     overlayMenuIndex;
     int                     overlayParkingMenuIndex;
+    ButtonStack *overlayMenu;
 }
 
 @property (nonatomic, strong) ebZoomingScrollView			*zoomingScroll;
@@ -38,11 +39,11 @@
     [self createBGContent];
     [self prepareData];
     [self createTopButtons];
-    [self createButtonStack:1 atFrame:CGRectMake(15, 200, 0, 0)];
-    [self createButtonStack:0 atFrame:CGRectMake(15, 450, 0, 0)];
+    [self createButtonStack:1 atFrame:CGRectMake(15, 250, 195, 0) withHeader:@"Overlays"];
+    //[self createButtonStack:0 atFrame:CGRectMake(15, 450, 0, 0)];
     
-    [self createHeaderViewWithText:@"Overlays" atFrame:CGRectMake(15, 160, 150, 40)];
-    [self createHeaderViewWithText:@"Parking" atFrame:CGRectMake(15, 410, 150, 40)];
+    [self createHeaderViewWithText:@"Overlays" atFrame:CGRectMake(15, 220, 195, 30)];
+    //[self createHeaderViewWithText:@"Parking" atFrame:CGRectMake(15, 410, 150, 40)];
     
     UIButton *uib_sectionTitle = [UIButton buttonWithType:UIButtonTypeCustom];
     uib_sectionTitle.backgroundColor = [UIColor themeRed];
@@ -61,16 +62,17 @@
 -(void)createHeaderViewWithText:(NSString*)text atFrame:(CGRect)frame
 {
     UIView *header = [[UIView alloc] initWithFrame:frame];
-    [header setBackgroundColor:[UIColor themeRed]];
+    [header setBackgroundColor:[UIColor lightGrayColor]];
     [self.view addSubview:header];
     
-    UILabel *lbl1 = [[UILabel alloc] init];
-    [lbl1 setFrame:CGRectMake(0, 0, 150, 40)];
+    UILabel *lbl1 = [[UILabel alloc] initWithFrame:CGRectZero];
+    [header addSubview:lbl1];
+    [lbl1 setFrame:CGRectMake(15, 0, 150, 30)];
+    [lbl1 setFont:[UIFont fontWithName:@"GoodPro-Book" size:16.0]];
     lbl1.backgroundColor=[UIColor clearColor];
     lbl1.textColor=[UIColor whiteColor];
-    [lbl1 setTextAlignment:NSTextAlignmentCenter];
+    [lbl1 setTextAlignment:NSTextAlignmentLeft];
     lbl1.text= text;
-    [header addSubview:lbl1];
 }
 
 - (void)createBGContent {
@@ -95,7 +97,7 @@
 }
 
 #pragma mark - menu for overlays
--(void)createButtonStack:(int)index atFrame:(CGRect)frame
+-(void)createButtonStack:(int)index atFrame:(CGRect)frame withHeader:(NSString*)text
 {
     NSMutableArray *d = [[NSMutableArray alloc] init];
     for (NSArray *menuAsset in menuData )
@@ -112,7 +114,7 @@
             [overlayAssets addObject:menuAsset[@"name"]];
         }
         
-        ButtonStack *overlayMenu = [[ButtonStack alloc] initWithFrame:CGRectZero];
+        overlayMenu = [[ButtonStack alloc] initWithFrame:CGRectZero];
         overlayMenu.tag = index;
         overlayMenu.delegate = self;
         [overlayMenu setupfromArray:overlayAssets maxWidth:frame];
@@ -123,16 +125,17 @@
         
     } else {
         arr_OverlayParkData = menuData[d[index]];
-        NSMutableArray *overlayAssets = [[NSMutableArray alloc] init];
-        for ( NSDictionary *menuAsset in arr_OverlayParkData )
-        {
-            [overlayAssets addObject:menuAsset[@"name"]];
-        }
+        //NSMutableArray *overlayAssets = [[NSMutableArray alloc] init];
+//        for ( NSDictionary *menuAsset in arr_OverlayParkData )
+//        {
+//            [overlayAssets addObject:menuAsset[@"name"]];
+//            //[overlayAssets addObject:menuAsset[@"subtitle"]];
+//        }
 
-        ButtonStack *overlayMenu = [[ButtonStack alloc] initWithFrame:CGRectZero];
+        overlayMenu = [[ButtonStack alloc] initWithFrame:CGRectZero];
         overlayMenu.tag = index;
         overlayMenu.delegate = self;
-        [overlayMenu setupfromArray:overlayAssets maxWidth:frame];
+        [overlayMenu setupfromArray:arr_OverlayParkData maxWidth:frame];
         [overlayMenu setBackgroundColor:[UIColor whiteColor]];
         overlayMenu.layer.borderWidth = 1;
         overlayMenu.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -142,6 +145,32 @@
 
 - (void)buttonStack:(ButtonStack *)buttonStack selectedIndex:(int)index
 {
+    UIColor *selectedColor;
+
+    switch (index) {
+        case 0:
+            selectedColor = [UIColor darkGrayColor];
+            break;
+        case 1:
+            selectedColor = [UIColor colorWithRed:0.42 green:0.7 blue:0.9 alpha:1];
+            break;
+        case 2:
+            selectedColor = [UIColor colorWithRed:0.96 green:0.65 blue:0.14 alpha:1];
+            break;
+        case 3:
+            selectedColor = [UIColor colorWithRed:0.85 green:0.32 blue:0.32 alpha:1];
+            break;
+        case 4:
+            selectedColor = [UIColor colorWithRed:0.55 green:0.4 blue:0.65 alpha:1];
+            break;
+        default:
+            selectedColor = [UIColor colorWithRed:0.5 green:0.64 blue:0.8 alpha:1];
+            break;
+    }
+    
+    [buttonStack setSelectedButtonColor:selectedColor];
+
+    
     NSString *imgNm;
     
     if (buttonStack.tag == 1) {

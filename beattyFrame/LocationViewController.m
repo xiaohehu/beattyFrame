@@ -98,12 +98,12 @@ static float    bottomHeight = 37;
     //[d sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     
     arr_OverlayData = menuData[d[index]];
-    
-    NSMutableArray *overlayAssets = [[NSMutableArray alloc] init];
-    for ( NSDictionary *menuAsset in arr_OverlayData )
-    {
-        [overlayAssets addObject:menuAsset[@"name"]];
-    }
+//    
+//    NSMutableArray *overlayAssets = [[NSMutableArray alloc] init];
+//    for ( NSDictionary *menuAsset in arr_OverlayData )
+//    {
+//        [overlayAssets addObject:menuAsset[@"name"]];
+//    }
 
     if (overlayMenu) {
         [overlayMenu removeFromSuperview];
@@ -111,7 +111,7 @@ static float    bottomHeight = 37;
     
     overlayMenu = [[ButtonStack alloc] initWithFrame:CGRectZero];
     overlayMenu.delegate = self;
-    [overlayMenu setupfromArray:overlayAssets maxWidth:CGRectMake(15,100,0,0)];
+    [overlayMenu setupfromArray:arr_OverlayData maxWidth:CGRectMake(15,100,150,0)];
     [overlayMenu setCenter];
     [overlayMenu setBackgroundColor:[UIColor whiteColor]];
     overlayMenu.layer.borderWidth = 1;
@@ -158,7 +158,7 @@ static float    bottomHeight = 37;
         [self clearKeys];
     }
     
-    
+    [buttonStack setSelectedButtonColor:[UIColor themeRed]];
     
     NSString *imgNm = [arr_OverlayData[index] objectForKey:@"overlay"];
     

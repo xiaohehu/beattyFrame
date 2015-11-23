@@ -24,4 +24,5 @@
 - (id)initWithFrame:(CGRect)frame;
 - (void)setupfromArray:(NSArray *)btnArray maxWidth:(CGRect)maxW;
 -(void)setCenter;
+-(void)setSelectedButtonColor:(UIColor*)bgColor;
 @end

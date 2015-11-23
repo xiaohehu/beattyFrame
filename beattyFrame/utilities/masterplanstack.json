@@ -1,24 +1,44 @@
 {
     "site": [
-				{
+             {
+             "name": "All",
+             "subtitle": "4.5 ACRES",
+             "overlay": "master-plan-all-uses.png",
+             },
+             {
 				"name": "Office",
+                "subtitle": "1.6MM SF",
 				"overlay": "master-plan-overlay-office.png",
 				},
              	{
 				"name": "Retail",
+                "subtitle": "200,000 SF",
 				"overlay": "master-plan-overlay-retail.png",
 				},
 				{
 				"name": "Residential",
+                "subtitle": "914,000 SF",
 				"overlay": "master-plan-overlay-residential.png",
 				},
 				{
 				"name": "Hotel",
+                "subtitle": "220,000 SF",
 				"overlay": "master-plan-overlay-hotel.png",
                  },
                  {
-                 "name": "All",
-                 "overlay": "master-plan-all-uses.png",
+                 "name": "Parking",
+                 "subtitle": "Phase 1",
+                 "overlay": "parking-phase-1.png",
+                 },
+                 {
+                 "name": "Parking",
+                 "subtitle": "Phase 2",
+                 "overlay": "parking-phase-2.png",
+                 },
+                 {
+                 "name": "Parking",
+                 "subtitle": "Phase 3",
+                 "overlay": "parking-phase-3.png",
                  }
             ],
     "parking": [
