@@ -484,7 +484,7 @@ static float    menuButtonSize = 50.0;
 }
 - (IBAction)loadOpportunities:(id)sender {
     UIAlertView *message = [[UIAlertView alloc] initWithTitle:nil
-                                                      message:@"The Playground is coming soon"
+                                                      message:@"Coming soon"
                                                      delegate:nil
                                             cancelButtonTitle:@"OK"
                                             otherButtonTitles:nil];
