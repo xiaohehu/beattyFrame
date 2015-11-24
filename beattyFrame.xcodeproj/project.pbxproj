@@ -628,6 +628,7 @@
 		883D786C1C04DE21004B0136 /* phase_b_color_00071.png in Resources */ = {isa = PBXBuildFile; fileRef = 883D78231C04DE21004B0136 /* phase_b_color_00071.png */; };
 		883D786D1C04DE21004B0136 /* phase_b_color_00072.png in Resources */ = {isa = PBXBuildFile; fileRef = 883D78241C04DE21004B0136 /* phase_b_color_00072.png */; };
 		883D78701C04E88E004B0136 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 883D786F1C04E88E004B0136 /* UIImage+Resize.m */; };
+		883D78721C04F288004B0136 /* Brochure_Cover_Page_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 883D78711C04F288004B0136 /* Brochure_Cover_Page_01.jpg */; };
 		8843A2861BF5953700C1C1D5 /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8843A2851BF5953700C1C1D5 /* MapViewAnnotation.m */; };
 		8861DD221BFD55CC006A7D13 /* grfx-arrow-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 8861DCEB1BFD55CC006A7D13 /* grfx-arrow-right.png */; };
 		8861DD231BFD55CC006A7D13 /* grfx-arrow-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8861DCEC1BFD55CC006A7D13 /* grfx-arrow-right@2x.png */; };
@@ -1876,6 +1877,7 @@
 		883D78241C04DE21004B0136 /* phase_b_color_00072.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phase_b_color_00072.png; sourceTree = "<group>"; };
 		883D786E1C04E88E004B0136 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Resize.h"; path = "utilities/UIImage+Resize.h"; sourceTree = "<group>"; };
 		883D786F1C04E88E004B0136 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Resize.m"; path = "utilities/UIImage+Resize.m"; sourceTree = "<group>"; };
+		883D78711C04F288004B0136 /* Brochure_Cover_Page_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Brochure_Cover_Page_01.jpg; sourceTree = "<group>"; };
 		8843A2841BF5953700C1C1D5 /* MapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewAnnotation.h; path = utilities/MapViewAnnotation.h; sourceTree = "<group>"; };
 		8843A2851BF5953700C1C1D5 /* MapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewAnnotation.m; path = utilities/MapViewAnnotation.m; sourceTree = "<group>"; };
 		8861DCEB1BFD55CC006A7D13 /* grfx-arrow-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-arrow-right.png"; sourceTree = "<group>"; };
@@ -3644,6 +3646,7 @@
 		8861DD591BFD55E5006A7D13 /* grfx */ = {
 			isa = PBXGroup;
 			children = (
+				883D78711C04F288004B0136 /* Brochure_Cover_Page_01.jpg */,
 				8861DD671BFD55E5006A7D13 /* grfx_initImage.jpg */,
 				8861DD681BFD55E5006A7D13 /* grfx_initImage@2x.jpg */,
 				8861DE581BFD5CDC006A7D13 /* grfx_summary.png */,
@@ -4552,6 +4555,7 @@
 				8892EA561BC2082C00347146 /* phase_a_base_00013.jpg in Resources */,
 				8819D8551BB8515400015AF5 /* Exelon office and apartment plans 2-14-13.pdf in Resources */,
 				8861DE851BFD6108006A7D13 /* siteplan_10.png in Resources */,
+				883D78721C04F288004B0136 /* Brochure_Cover_Page_01.jpg in Resources */,
 				8861DD4E1BFD55CC006A7D13 /* grfx_web_arrow@2x.png in Resources */,
 				883D78281C04DE21004B0136 /* phase_b_color_00003.png in Resources */,
 				8861DE3C1BFD5844006A7D13 /* parcel-panel-point-park@2x.png in Resources */,
