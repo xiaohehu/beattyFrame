@@ -67,7 +67,7 @@
 			<array>
 				<string>RGB A 255 255 1  255</string>
 				<string>RGB A 136 0 0  255</string>
-				<string>RGB A 0 136 0  255</string>
+				<string>RGB A 150 0 255  255</string>
 				<string>RGB A 0 136 0  255</string>
 				<string>RGB A 104 216 130  255</string>
 				<string>RGB A 0 138 122  255</string>
@@ -80,7 +80,7 @@
 			<array>
 				<string>RGB A 255 255 1  255</string>
 				<string>RGB A 255 255 1  255</string>
-				<string>RGB A 0 136 0  255</string>
+				<string>RGB A 150 0 255  255</string>
 				<string>RGB A 0 136 0  255</string>
 				<string>RGB A 104 216 130  255</string>
 				<string>RGB A 0 138 122  255</string>
@@ -93,7 +93,7 @@
 			<array>
 				<string>RGB A 255 255 1  255</string>
 				<string>RGB A 136 0 0  255</string>
-				<string>RGB A 0 136 0  255</string>
+				<string>RGB A 150 0 255  255</string>
 				<string>RGB A 0 136 0  255</string>
 				<string>RGB A 104 216 130  255</string>
 				<string>RGB A 0 138 122  255</string>

@@ -15,6 +15,7 @@
 #import "UIImage+ScaleToFit.h"
 //#import "TLSpringFlowLayout.h"
 #import "UIColor+Extensions.h"
+#import "UIImage+Resize.h"
 
 //#import "UIColor+Extensions.h"
 
@@ -277,7 +278,7 @@
         NSDictionary *itemDic = [[NSDictionary alloc] initWithDictionary:[secInfo objectAtIndex:i]];
         typeOfCell = [itemDic objectForKey:@"albumtype"];
         
-        NSMutableArray *imgArray = [[NSMutableArray alloc] initWithArray:[itemDic objectForKey:@"thumbs"]];
+        NSMutableArray *imgArray = [[NSMutableArray alloc] initWithArray:[itemDic objectForKey:@"assets"]];
         NSMutableArray *capArray = [[NSMutableArray alloc] initWithArray:[itemDic objectForKey:@"captions"]];
         [totalImg addObjectsFromArray:imgArray];
         [totalCap addObjectsFromArray:capArray];
@@ -287,8 +288,30 @@
     cell.titleLabel.font = [UIFont fontWithName:@"GoodPro-Book" size:11];
     
     //cell.cellThumb.image = [UIImage imageNamed:[totalImg objectAtIndex:indexPath.row]];
-    cell.cellThumb.image = [UIImage imageNamed:@"thumb_generic.png"];
-    [cell.cellThumb setContentMode:UIViewContentModeScaleAspectFit];
+    //cell.cellThumb.image = [UIImage imageNamed:@"thumb_generic.png"];
+    //[cell.cellThumb setContentMode:UIViewContentModeScaleAspectFit];
+    
+    //cell.cellThumb.image = [UIImage imageNamed:@"thumb_generic.png"];
+    
+    //dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    NSLog(@"image looking for: %@",typeOfCell);
+
+    
+    if ([typeOfCell isEqualToString:@"pdf"] ) {
+        
+        cell.cellThumb.image = [UIImage imageNamed:@"thumb_generic.png"];
+
+    } else {
+                
+        UIImage * thumb = [UIImage imageNamed:[totalImg objectAtIndex:indexPath.row]];
+        //        cell.cellThumb.image = thumb;
+        // });
+        //dispatch_async(dispatch_get_main_queue(), ^{
+        cell.cellThumb.image = [self resizeImage:thumb withMaxDimension:120];
+        //[collectionView reloadData];
+        //});
+    }
+    
     
     if (isShare) {
         NSNumber *selSection = [NSNumber numberWithInt:(int)indexPath.section];
@@ -323,6 +346,32 @@
     
     return cell;
 }
+
+- (UIImage *)resizeImage:(UIImage *)image
+        withMaxDimension:(CGFloat)maxDimension
+{
+    if (fmax(image.size.width, image.size.height) <= maxDimension) {
+        return image;
+    }
+    
+    CGFloat aspect = image.size.width / image.size.height;
+    CGSize newSize;
+    
+    if (image.size.width > image.size.height) {
+        newSize = CGSizeMake(maxDimension, maxDimension / aspect);
+    } else {
+        newSize = CGSizeMake(maxDimension * aspect, maxDimension);
+    }
+    
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 1.0);
+    CGRect newImageRect = CGRectMake(0.0, 0.0, newSize.width, newSize.height);
+    [image drawInRect:newImageRect];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
+
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -640,7 +689,7 @@
      webLinkBody = [NSString stringWithFormat:@"Thank you for visiting The Ritz-Carlton Residences, Long Island, North Hills%@<br /><br />%@", greetingName,formattedWeb];
      */
     
-    webLinkBody = [NSString stringWithFormat:@"Thank you for your interest in Ballston Quarter."];
+    webLinkBody = [NSString stringWithFormat:@"Thank you for your interest in Harbor Point."];
     
     if (isPDF) {
         // inserted cover page to array
@@ -703,7 +752,7 @@
         //		if (self.user.email) {
         //			emailData.to = @[sendEmail];
         //		}
-        emailData.subject = @"Greetings from Ballston Quarter";
+        emailData.subject = @"Greetings from Harbor Point";
         emailData.body = webLinkBody;
         emailData.attachment = attachmentData;
         emailData.optionsAlert=NO;
