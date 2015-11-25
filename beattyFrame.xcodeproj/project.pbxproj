@@ -332,6 +332,11 @@
 		880F242F1BFFBD23001EA4E9 /* parking-phase-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F24091BFFBD23001EA4E9 /* parking-phase-2@2x.png */; };
 		880F24301BFFBD23001EA4E9 /* parking-phase-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F240A1BFFBD23001EA4E9 /* parking-phase-3.png */; };
 		880F24311BFFBD23001EA4E9 /* parking-phase-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F240B1BFFBD23001EA4E9 /* parking-phase-3@2x.png */; };
+		88161C4E1C05B40700080E01 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 88161C4B1C05B40700080E01 /* art.scnassets */; };
+		88161C4F1C05B40700080E01 /* PlaygroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88161C4D1C05B40700080E01 /* PlaygroundViewController.m */; };
+		88161C541C05B42800080E01 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88161C511C05B42800080E01 /* GameObject.m */; };
+		88161C551C05B42800080E01 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 88161C531C05B42800080E01 /* GameScene.m */; };
+		88161C571C05B54500080E01 /* playground.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88161C561C05B54500080E01 /* playground.xcassets */; };
 		8819D81D1BB8515400015AF5 /* Central_Plaza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CD1BB8515400015AF5 /* Central_Plaza.jpg */; };
 		8819D81E1BB8515400015AF5 /* Central_Plaza@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */; };
 		8819D81F1BB8515400015AF5 /* Harbor_Point_Park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */; };
@@ -629,6 +634,14 @@
 		883D786D1C04DE21004B0136 /* phase_b_color_00072.png in Resources */ = {isa = PBXBuildFile; fileRef = 883D78241C04DE21004B0136 /* phase_b_color_00072.png */; };
 		883D78701C04E88E004B0136 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 883D786F1C04E88E004B0136 /* UIImage+Resize.m */; };
 		883D78721C04F288004B0136 /* Brochure_Cover_Page_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 883D78711C04F288004B0136 /* Brochure_Cover_Page_01.jpg */; };
+		883D78761C055D5C004B0136 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883D78741C055D5C004B0136 /* SettingsViewController.m */; };
+		883D78771C055D5C004B0136 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883D78751C055D5C004B0136 /* SettingsViewController.xib */; };
+		883D787A1C055E08004B0136 /* settings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 883D78781C055E08004B0136 /* settings.jpg */; };
+		883D787B1C055E08004B0136 /* settings@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 883D78791C055E08004B0136 /* settings@2x.jpg */; };
+		883D787E1C055FB3004B0136 /* UIApplication+AppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 883D787D1C055FB3004B0136 /* UIApplication+AppVersion.m */; };
+		883D78821C056ABF004B0136 /* Neoscape_BeattyDevelopment_Aerial01_FINAL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 883D787F1C056ABF004B0136 /* Neoscape_BeattyDevelopment_Aerial01_FINAL.jpg */; };
+		883D78831C056ABF004B0136 /* Neoscape_BeattyDevelopment_Aerial02_FINAL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 883D78801C056ABF004B0136 /* Neoscape_BeattyDevelopment_Aerial02_FINAL.jpg */; };
+		883D78841C056ABF004B0136 /* Neoscape_BeattyDevelopment_HarborView_FINAL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 883D78811C056ABF004B0136 /* Neoscape_BeattyDevelopment_HarborView_FINAL.jpg */; };
 		8843A2861BF5953700C1C1D5 /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8843A2851BF5953700C1C1D5 /* MapViewAnnotation.m */; };
 		8861DD221BFD55CC006A7D13 /* grfx-arrow-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 8861DCEB1BFD55CC006A7D13 /* grfx-arrow-right.png */; };
 		8861DD231BFD55CC006A7D13 /* grfx-arrow-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8861DCEC1BFD55CC006A7D13 /* grfx-arrow-right@2x.png */; };
@@ -1578,6 +1591,14 @@
 		880F24091BFFBD23001EA4E9 /* parking-phase-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parking-phase-2@2x.png"; sourceTree = "<group>"; };
 		880F240A1BFFBD23001EA4E9 /* parking-phase-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parking-phase-3.png"; sourceTree = "<group>"; };
 		880F240B1BFFBD23001EA4E9 /* parking-phase-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parking-phase-3@2x.png"; sourceTree = "<group>"; };
+		88161C4B1C05B40700080E01 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		88161C4C1C05B40700080E01 /* PlaygroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaygroundViewController.h; sourceTree = "<group>"; };
+		88161C4D1C05B40700080E01 /* PlaygroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaygroundViewController.m; sourceTree = "<group>"; };
+		88161C501C05B42800080E01 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObject.h; path = utilities/GameObject.h; sourceTree = "<group>"; };
+		88161C511C05B42800080E01 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameObject.m; path = utilities/GameObject.m; sourceTree = "<group>"; };
+		88161C521C05B42800080E01 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = utilities/GameScene.h; sourceTree = "<group>"; };
+		88161C531C05B42800080E01 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = utilities/GameScene.m; sourceTree = "<group>"; };
+		88161C561C05B54500080E01 /* playground.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = playground.xcassets; sourceTree = "<group>"; };
 		8819D7CD1BB8515400015AF5 /* Central_Plaza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Central_Plaza.jpg; sourceTree = "<group>"; };
 		8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Central_Plaza@2x.jpg"; sourceTree = "<group>"; };
 		8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Harbor_Point_Park.jpg; sourceTree = "<group>"; };
@@ -1878,6 +1899,16 @@
 		883D786E1C04E88E004B0136 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Resize.h"; path = "utilities/UIImage+Resize.h"; sourceTree = "<group>"; };
 		883D786F1C04E88E004B0136 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Resize.m"; path = "utilities/UIImage+Resize.m"; sourceTree = "<group>"; };
 		883D78711C04F288004B0136 /* Brochure_Cover_Page_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Brochure_Cover_Page_01.jpg; sourceTree = "<group>"; };
+		883D78731C055D5C004B0136 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		883D78741C055D5C004B0136 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		883D78751C055D5C004B0136 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		883D78781C055E08004B0136 /* settings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = settings.jpg; sourceTree = "<group>"; };
+		883D78791C055E08004B0136 /* settings@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "settings@2x.jpg"; sourceTree = "<group>"; };
+		883D787C1C055FB3004B0136 /* UIApplication+AppVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+AppVersion.h"; path = "utilities/UIApplication+AppVersion.h"; sourceTree = "<group>"; };
+		883D787D1C055FB3004B0136 /* UIApplication+AppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+AppVersion.m"; path = "utilities/UIApplication+AppVersion.m"; sourceTree = "<group>"; };
+		883D787F1C056ABF004B0136 /* Neoscape_BeattyDevelopment_Aerial01_FINAL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Neoscape_BeattyDevelopment_Aerial01_FINAL.jpg; sourceTree = "<group>"; };
+		883D78801C056ABF004B0136 /* Neoscape_BeattyDevelopment_Aerial02_FINAL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Neoscape_BeattyDevelopment_Aerial02_FINAL.jpg; sourceTree = "<group>"; };
+		883D78811C056ABF004B0136 /* Neoscape_BeattyDevelopment_HarborView_FINAL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Neoscape_BeattyDevelopment_HarborView_FINAL.jpg; sourceTree = "<group>"; };
 		8843A2841BF5953700C1C1D5 /* MapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewAnnotation.h; path = utilities/MapViewAnnotation.h; sourceTree = "<group>"; };
 		8843A2851BF5953700C1C1D5 /* MapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewAnnotation.m; path = utilities/MapViewAnnotation.m; sourceTree = "<group>"; };
 		8861DCEB1BFD55CC006A7D13 /* grfx-arrow-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-arrow-right.png"; sourceTree = "<group>"; };
@@ -2629,6 +2660,9 @@
 		822822B51B851E44004154E7 /* setting */ = {
 			isa = PBXGroup;
 			children = (
+				883D78731C055D5C004B0136 /* SettingsViewController.h */,
+				883D78741C055D5C004B0136 /* SettingsViewController.m */,
+				883D78751C055D5C004B0136 /* SettingsViewController.xib */,
 				822822B61B851E44004154E7 /* SettingTableViewController.h */,
 				822822B71B851E44004154E7 /* SettingTableViewController.m */,
 				822822B81B851E44004154E7 /* SettingViewController.h */,
@@ -2976,6 +3010,10 @@
 				88E074631B98D12C00E0982A /* TipsViewController.h */,
 				88E074641B98D12C00E0982A /* TipsViewController.m */,
 				88E074651B98D12C00E0982A /* TipsViewController.xib */,
+				88161C561C05B54500080E01 /* playground.xcassets */,
+				88161C4B1C05B40700080E01 /* art.scnassets */,
+				88161C4C1C05B40700080E01 /* PlaygroundViewController.h */,
+				88161C4D1C05B40700080E01 /* PlaygroundViewController.m */,
 				824D272F1B5D7E6700E5F5A5 /* Main.storyboard */,
 				824D27A11B61467700E5F5A5 /* utiliites */,
 				824D27871B5FE0D300E5F5A5 /* src */,
@@ -3040,6 +3078,10 @@
 		824D27A11B61467700E5F5A5 /* utiliites */ = {
 			isa = PBXGroup;
 			children = (
+				88161C501C05B42800080E01 /* GameObject.h */,
+				88161C511C05B42800080E01 /* GameObject.m */,
+				88161C521C05B42800080E01 /* GameScene.h */,
+				88161C531C05B42800080E01 /* GameScene.m */,
 				8892084B1BFE32E0007C88FF /* buildingselect_menu */,
 				8843A2841BF5953700C1C1D5 /* MapViewAnnotation.h */,
 				8843A2851BF5953700C1C1D5 /* MapViewAnnotation.m */,
@@ -3084,6 +3126,8 @@
 				8251FF9A1B7E7C9C0021C1BA /* xhWebViewController.m */,
 				8251FFAC1B7E845C0021C1BA /* Reachability.h */,
 				8251FFAD1B7E845C0021C1BA /* Reachability.m */,
+				883D787C1C055FB3004B0136 /* UIApplication+AppVersion.h */,
+				883D787D1C055FB3004B0136 /* UIApplication+AppVersion.m */,
 				883D786E1C04E88E004B0136 /* UIImage+Resize.h */,
 				883D786F1C04E88E004B0136 /* UIImage+Resize.m */,
 			);
@@ -3362,6 +3406,9 @@
 		8819D7DF1BB8515400015AF5 /* 02_Site */ = {
 			isa = PBXGroup;
 			children = (
+				883D787F1C056ABF004B0136 /* Neoscape_BeattyDevelopment_Aerial01_FINAL.jpg */,
+				883D78801C056ABF004B0136 /* Neoscape_BeattyDevelopment_Aerial02_FINAL.jpg */,
+				883D78811C056ABF004B0136 /* Neoscape_BeattyDevelopment_HarborView_FINAL.jpg */,
 			);
 			path = 02_Site;
 			sourceTree = "<group>";
@@ -3646,6 +3693,8 @@
 		8861DD591BFD55E5006A7D13 /* grfx */ = {
 			isa = PBXGroup;
 			children = (
+				883D78781C055E08004B0136 /* settings.jpg */,
+				883D78791C055E08004B0136 /* settings@2x.jpg */,
 				883D78711C04F288004B0136 /* Brochure_Cover_Page_01.jpg */,
 				8861DD671BFD55E5006A7D13 /* grfx_initImage.jpg */,
 				8861DD681BFD55E5006A7D13 /* grfx_initImage@2x.jpg */,
@@ -4602,12 +4651,14 @@
 				8892EB7A1BC2082C00347146 /* phase_c_base_00017.jpg in Resources */,
 				883D77121C04DD65004B0136 /* phase_c_color_00018.png in Resources */,
 				8892EAF31BC2082C00347146 /* phase_b_base_00026.jpg in Resources */,
+				883D78841C056ABF004B0136 /* Neoscape_BeattyDevelopment_HarborView_FINAL.jpg in Resources */,
 				883D78381C04DE21004B0136 /* phase_b_color_00019.png in Resources */,
 				824D2B471B62B5C600E5F5A5 /* EMBSPSectionHeader.xib in Resources */,
 				8861DDCB1BFD55E6006A7D13 /* grfx_initImage@2x.jpg in Resources */,
 				822823851B862A0A004154E7 /* BCLP DEV_ 05-01-2015..pdf in Resources */,
 				822823D61B862A0A004154E7 /* thumb_exterior.jpg in Resources */,
 				8861DE6C1BFD5F1C006A7D13 /* supporting-stories-eco-district@2x.png in Resources */,
+				88161C4E1C05B40700080E01 /* art.scnassets in Resources */,
 				883D770A1C04DD65004B0136 /* phase_c_color_00010.png in Resources */,
 				8861DDEF1BFD55E6006A7D13 /* grfx_siteMap_overlay_parking_04@2x.png in Resources */,
 				8892EA5C1BC2082C00347146 /* phase_a_base_00019.jpg in Resources */,
@@ -4654,6 +4705,8 @@
 				8892EB851BC2082C00347146 /* phase_c_base_00028.jpg in Resources */,
 				822823E21B862A0A004154E7 /* thumb_leasing.jpg in Resources */,
 				822823CC1B862A0A004154E7 /* Picture 024.jpg in Resources */,
+				883D78831C056ABF004B0136 /* Neoscape_BeattyDevelopment_Aerial02_FINAL.jpg in Resources */,
+				883D78821C056ABF004B0136 /* Neoscape_BeattyDevelopment_Aerial01_FINAL.jpg in Resources */,
 				8892EDBB1BC2092B00347146 /* phase_d_base_00042.jpg in Resources */,
 				883D77191C04DD65004B0136 /* phase_c_color_00025.png in Resources */,
 				8892EB9C1BC2082C00347146 /* phase_c_base_00051.jpg in Resources */,
@@ -4674,6 +4727,7 @@
 				8892EE2B1BC2092B00347146 /* phase_d_color_00051.png in Resources */,
 				8228237E1B862A0A004154E7 /* 150604_BallstonQuarter_DiningGallery_R4.pdf in Resources */,
 				8892EADE1BC2082C00347146 /* phase_b_base_00005.jpg in Resources */,
+				88161C571C05B54500080E01 /* playground.xcassets in Resources */,
 				8861DD441BFD55CC006A7D13 /* grfx_resartBtn@2x.png in Resources */,
 				8861DDFF1BFD55E6006A7D13 /* grfx_siteMap_overlay_access@2x.png in Resources */,
 				824D2BC01B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View04_051215.jpg.jpg in Resources */,
@@ -5210,6 +5264,7 @@
 				8819D8211BB8515400015AF5 /* Parcel_01.jpg in Resources */,
 				824D2B301B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg in Resources */,
 				8892EB731BC2082C00347146 /* phase_c_base_00010.jpg in Resources */,
+				883D787A1C055E08004B0136 /* settings.jpg in Resources */,
 				822823771B862A0A004154E7 /* View 2 - Wilson.jpg in Resources */,
 				8892EA5E1BC2082C00347146 /* phase_a_base_00021.jpg in Resources */,
 				822823641B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot02.jpg in Resources */,
@@ -5224,6 +5279,7 @@
 				883D77C71C04DE14004B0136 /* phase_a_color_00052.png in Resources */,
 				883D77091C04DD65004B0136 /* phase_c_color_00009.png in Resources */,
 				8892ED951BC2092B00347146 /* phase_d_base_00023.jpg in Resources */,
+				883D787B1C055E08004B0136 /* settings@2x.jpg in Resources */,
 				8892EE0C1BC2092B00347146 /* phase_d_color_00020.png in Resources */,
 				822823C61B862A0A004154E7 /* Picture 051.jpg in Resources */,
 				883D77C61C04DE14004B0136 /* phase_a_color_00051.png in Resources */,
@@ -5621,6 +5677,7 @@
 				883D78541C04DE21004B0136 /* phase_b_color_00047.png in Resources */,
 				8892EB8F1BC2082C00347146 /* phase_c_base_00038.jpg in Resources */,
 				8892EAF61BC2082C00347146 /* phase_b_base_00029.jpg in Resources */,
+				883D78771C055D5C004B0136 /* SettingsViewController.xib in Resources */,
 				883D779C1C04DE14004B0136 /* phase_a_color_00009.png in Resources */,
 				883D78401C04DE21004B0136 /* phase_b_color_00027.png in Resources */,
 				824D2BBE1B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View02_051215.jpg.jpg in Resources */,
@@ -5682,6 +5739,7 @@
 				822822AE1B84F993004154E7 /* buildingDataViewController.m in Sources */,
 				88E074541B98CFB400E0982A /* Tutorial.m in Sources */,
 				8228227D1B822134004154E7 /* sponsorshipModelController.m in Sources */,
+				88161C551C05B42800080E01 /* GameScene.m in Sources */,
 				822822831B82290C004154E7 /* SponsorshipViewController.m in Sources */,
 				824D2B461B62B5C600E5F5A5 /* EMBSPSectionHeader.m in Sources */,
 				887647D61BA33651002D4183 /* KeyOverlay.m in Sources */,
@@ -5698,6 +5756,7 @@
 				889F07C01BB1E67600CBD979 /* gridEcoView.m in Sources */,
 				824D272B1B5D7E6700E5F5A5 /* AppDelegate.m in Sources */,
 				824D279D1B613EC500E5F5A5 /* Site360ViewController.m in Sources */,
+				88161C4F1C05B40700080E01 /* PlaygroundViewController.m in Sources */,
 				824D27281B5D7E6700E5F5A5 /* main.m in Sources */,
 				824D2B1B1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m in Sources */,
 				82A128B91B69164100564266 /* supportingModelController.m in Sources */,
@@ -5709,6 +5768,7 @@
 				82A128BC1B6916BF00564266 /* ebZoomingScrollView.m in Sources */,
 				824D2B3B1B62B57D00E5F5A5 /* UIImage+ScaleToFit.m in Sources */,
 				824D2B181B616DCD00E5F5A5 /* GalleryViewController.m in Sources */,
+				883D78761C055D5C004B0136 /* SettingsViewController.m in Sources */,
 				824D2B3A1B62B57D00E5F5A5 /* TLSpringFlowLayout.m in Sources */,
 				824D2B481B62B5C600E5F5A5 /* EMBSPSupplementaryView.m in Sources */,
 				82115DED1B70036100A36684 /* BuildingViewController.m in Sources */,
@@ -5717,6 +5777,7 @@
 				82A128301B66657C00564266 /* animationView.m in Sources */,
 				88E074661B98D12C00E0982A /* TipsViewController.m in Sources */,
 				888233751BA0B0600019FD75 /* ButtonStack.m in Sources */,
+				88161C541C05B42800080E01 /* GameObject.m in Sources */,
 				881D140E1BF1373300693C62 /* ParkingViewController.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
 				889208531BFE32E0007C88FF /* CVCell.m in Sources */,
@@ -5735,6 +5796,7 @@
 				881D140A1BF111DA00693C62 /* MasterplanParkingViewController.m in Sources */,
 				880F23E21BFFABD4001EA4E9 /* ImageOverlay.m in Sources */,
 				822822BA1B851E44004154E7 /* SettingTableViewController.m in Sources */,
+				883D787E1C055FB3004B0136 /* UIApplication+AppVersion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

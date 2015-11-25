@@ -25,6 +25,9 @@
 					<string>Point_Street_Apt.jpg</string>
 					<string>Thames_Street_Wharf.jpg</string>
 					<string>Wills_Street_Wharf.jpg</string>
+                    <string>Neoscape_BeattyDevelopment_Aerial02_FINAL.jpg</string>
+                    <string>Neoscape_BeattyDevelopment_HarborView_FINAL.jpg</string>
+                    <string>Neoscape_BeattyDevelopment_Aerial01_FINAL.jpg</string>
 				</array>
 				<key>thumbs</key>
 				<array>
@@ -37,6 +40,9 @@
 					<string>share_Point_Street_Apt.jpg</string>
 					<string>share_Thames_Street_Wharf.jpg</string>
 					<string>share_Wills_Street_Wharf.jpg</string>
+                    <string>share_Wills_Street_Wharf.jpg</string>
+                    <string>share_Wills_Street_Wharf.jpg</string>
+                    <string>share_Wills_Street_Wharf.jpg</string>
 				</array>
 				<key>captions</key>
 				<array>
@@ -49,6 +55,9 @@
 					<string>Point Street Apartment</string>
 					<string>Thames Street Wharf</string>
 					<string>Wills Street Wharf</string>
+                    <string>Aerial</string>
+                    <string>Harbor View</string>
+                    <string>Aerial</string>
 				</array>
 			</dict>
 		</array>

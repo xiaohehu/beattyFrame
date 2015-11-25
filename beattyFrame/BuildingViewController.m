@@ -294,7 +294,7 @@
 - (void)loadGallery {
     GalleryViewController *gallery = [self.storyboard instantiateViewControllerWithIdentifier:@"GalleryViewController"];
     [self presentViewController:gallery animated:YES completion:^(void){
-        [gallery scrollToIndex:currentPageIndex];
+        //[gallery scrollToIndex:currentPageIndex];
     }];
 }
 

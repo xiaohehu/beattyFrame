@@ -21,11 +21,12 @@
 #import <AVFoundation/AVPlayerItem.h>
 #import <AVFoundation/AVFoundation.h>
 #import "xhWebViewController.h"
-#import "SettingViewController.h"
+#import "SettingsViewController.h"
 #import "TipsViewController.h"
 #import "TutorialsListController.h"
 #import "LibraryAPI.h"
 #import "embBuilding.h"
+#import "PlaygroundViewController.h"
 #import "MasterplanParkingViewController.h"
 
 
@@ -482,14 +483,16 @@ static float    menuButtonSize = 50.0;
     [self fadeInNewViewController:site360];
     [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
 }
-- (IBAction)loadOpportunities:(id)sender {
-    UIAlertView *message = [[UIAlertView alloc] initWithTitle:nil
-                                                      message:@"Coming soon"
-                                                     delegate:nil
-                                            cancelButtonTitle:@"OK"
-                                            otherButtonTitles:nil];
-    [message show];
 
+- (IBAction)loadOpportunities:(id)sender {
+    
+    [self updateSubTitle:@"Development Opportunities"];
+    
+    UIButton *tappedButton = sender;
+    [self highlightTheButton:tappedButton withAnimation:YES];
+    PlaygroundViewController *sponsorship = [self.storyboard instantiateViewControllerWithIdentifier:@"PlaygroundViewController"];
+    [self fadeInNewViewController:sponsorship];
+    [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
 }
 
 /*
@@ -620,9 +623,8 @@ static float    menuButtonSize = 50.0;
 }
 
 - (IBAction)loadSetting:(id)sender {
-    SettingViewController *settingVC = [[SettingViewController alloc] init];
-    settingVC.view.frame = self.view.bounds;
-    [self presentViewController:settingVC animated:YES completion:^(void){  }];
+    SettingsViewController* vc = [SettingsViewController new];
+    [self presentViewController:vc animated:YES completion:^{}];
 }
 
 - (IBAction)loadHelp:(id)sender {
