@@ -207,7 +207,7 @@
     UIButton *uib_gallery = [UIButton buttonWithType:UIButtonTypeCustom];
     uib_gallery.frame = CGRectMake((uiiv_viewImage.frame.size.width - 10), uiv_bar.frame.origin.y + 1, 45, 45);
     uib_gallery.tag = 0;
-    [uib_gallery setImage:[UIImage imageNamed:@"grfx_buildingGallery.jpg"] forState:UIControlStateNormal];
+    [uib_gallery setImage:[UIImage imageNamed:@"grfx_menuGallery.jpg"] forState:UIControlStateNormal];
     [uib_gallery addTarget:self action:@selector(tapMenuButton:) forControlEvents:UIControlEventTouchUpInside];
     [uiv_buildingMenu addSubview: uib_gallery ];
     

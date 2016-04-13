@@ -644,8 +644,6 @@
 		8843A2861BF5953700C1C1D5 /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8843A2851BF5953700C1C1D5 /* MapViewAnnotation.m */; };
 		8861DD221BFD55CC006A7D13 /* grfx-arrow-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 8861DCEB1BFD55CC006A7D13 /* grfx-arrow-right.png */; };
 		8861DD231BFD55CC006A7D13 /* grfx-arrow-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8861DCEC1BFD55CC006A7D13 /* grfx-arrow-right@2x.png */; };
-		8861DD241BFD55CC006A7D13 /* grfx_buildingGallery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8861DCED1BFD55CC006A7D13 /* grfx_buildingGallery.jpg */; };
-		8861DD251BFD55CC006A7D13 /* grfx_buildingGallery@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8861DCEE1BFD55CC006A7D13 /* grfx_buildingGallery@2x.jpg */; };
 		8861DD261BFD55CC006A7D13 /* grfx_buildingIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8861DCEF1BFD55CC006A7D13 /* grfx_buildingIcon.jpg */; };
 		8861DD271BFD55CC006A7D13 /* grfx_buildingList.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8861DCF01BFD55CC006A7D13 /* grfx_buildingList.jpg */; };
 		8861DD281BFD55CC006A7D13 /* grfx_buildingList@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8861DCF11BFD55CC006A7D13 /* grfx_buildingList@2x.jpg */; };
@@ -1906,8 +1904,6 @@
 		8843A2851BF5953700C1C1D5 /* MapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewAnnotation.m; path = utilities/MapViewAnnotation.m; sourceTree = "<group>"; };
 		8861DCEB1BFD55CC006A7D13 /* grfx-arrow-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-arrow-right.png"; sourceTree = "<group>"; };
 		8861DCEC1BFD55CC006A7D13 /* grfx-arrow-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-arrow-right@2x.png"; sourceTree = "<group>"; };
-		8861DCED1BFD55CC006A7D13 /* grfx_buildingGallery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grfx_buildingGallery.jpg; sourceTree = "<group>"; };
-		8861DCEE1BFD55CC006A7D13 /* grfx_buildingGallery@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx_buildingGallery@2x.jpg"; sourceTree = "<group>"; };
 		8861DCEF1BFD55CC006A7D13 /* grfx_buildingIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grfx_buildingIcon.jpg; sourceTree = "<group>"; };
 		8861DCF01BFD55CC006A7D13 /* grfx_buildingList.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grfx_buildingList.jpg; sourceTree = "<group>"; };
 		8861DCF11BFD55CC006A7D13 /* grfx_buildingList@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx_buildingList@2x.jpg"; sourceTree = "<group>"; };
@@ -3623,8 +3619,6 @@
 			children = (
 				8861DCEB1BFD55CC006A7D13 /* grfx-arrow-right.png */,
 				8861DCEC1BFD55CC006A7D13 /* grfx-arrow-right@2x.png */,
-				8861DCED1BFD55CC006A7D13 /* grfx_buildingGallery.jpg */,
-				8861DCEE1BFD55CC006A7D13 /* grfx_buildingGallery@2x.jpg */,
 				8861DCEF1BFD55CC006A7D13 /* grfx_buildingIcon.jpg */,
 				8861DCF01BFD55CC006A7D13 /* grfx_buildingList.jpg */,
 				8861DCF11BFD55CC006A7D13 /* grfx_buildingList@2x.jpg */,
@@ -5155,7 +5149,6 @@
 				8892EA511BC2082C00347146 /* phase_a_base_00008.jpg in Resources */,
 				883D782A1C04DE21004B0136 /* phase_b_color_00005.png in Resources */,
 				880F24131BFFBD23001EA4E9 /* master-plan-all-uses@2x.png in Resources */,
-				8861DD251BFD55CC006A7D13 /* grfx_buildingGallery@2x.jpg in Resources */,
 				822823721B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View08_050715.jpg in Resources */,
 				822823C31B862A0A004154E7 /* Picture 038.jpg in Resources */,
 				8892EDA31BC2092B00347146 /* phase_d_base_00030.jpg in Resources */,
@@ -5607,7 +5600,6 @@
 				8819D85A1BB8515400015AF5 /* BeattyDev@gmail.com_20150521_084823.pdf in Resources */,
 				8861DDD91BFD55E6006A7D13 /* grfx_cityMap_overlay_arts_culture@2x.png in Resources */,
 				883D77371C04DD65004B0136 /* phase_c_color_00055.png in Resources */,
-				8861DD241BFD55CC006A7D13 /* grfx_buildingGallery.jpg in Resources */,
 				8861DDD61BFD55E6006A7D13 /* grfx_cityMap_overlay_access.png in Resources */,
 				8861DDFE1BFD55E6006A7D13 /* grfx_siteMap_overlay_access.png in Resources */,
 				824D2BEF1B62D02100E5F5A5 /* share_View 2 - Wilson.jpg.jpg in Resources */,
