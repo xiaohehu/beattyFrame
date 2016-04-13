@@ -278,37 +278,60 @@ static float bottomMenuHeight  = 37.0;
     incomingColor = [NSString stringWithFormat:@"RGB A %i %i %i  %i",red,green,blue,alpha];
     NSLog(@"\n\nincomingColor %@", incomingColor);
     
-    //	UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Get The Color Value"
-    //													  message:incomingColor
-    //													 delegate:nil
-    //											cancelButtonTitle:@"OK"
-    //											otherButtonTitles:nil];
-    //	[message show];
+    NSInteger redValue = -1;
+    NSInteger greenValue = -1;
+    NSInteger blueValue = -1;
     
-    // namesarray is created in viewdidload
-    //NSString *t = [NSString stringWithFormat:@"\nRGB A %i %i %i  %i",red,green,blue,alpha];
-    //NSArray* results = [namesArray[0] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF.type LIKE[cd] %@", t]];
+    for (NSString *rgba in namesArray) {
+        
+        NSArray *array = [rgba componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        array = [array filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF != ''"]];
+        
+        redValue = [array[2] integerValue];
+        greenValue = [array[3] integerValue];
+        blueValue = [array[4] integerValue];
+        
+        NSUInteger index;
+        NSString *answer = nil;
+    
+        if ( (labs(red - redValue) < 2) && (labs(green - greenValue) < 2) && (labs(blue - blueValue) < 2) ) {
+            
+            index = [namesArray indexOfObject:rgba];
+            answer = [namesArray objectAtIndex:index];
+            currentIndex = index;
+            
+            isColorEligible = YES;
+            //answer = [namesArray objectAtIndex:index];
+            //currentIndex = index;
+            isColorPicked=YES;
+            NSDictionary* userInfo = @{@"buildingindex": @(index)};
+            
+            // Need to add userInfo to trach the index of building
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"loadBuilding" object:nil userInfo:userInfo];
 
-    
-    NSLog(@"namesArray %ld",[namesArray indexOfObject:incomingColor]);
-    
-    NSString *answer = nil;
-    NSUInteger index = [namesArray indexOfObject:incomingColor];
-    if (index != NSNotFound) {
-        isColorEligible = YES;
-        answer = [namesArray objectAtIndex:index];
-        currentIndex = index;
-        isColorPicked=YES;
-        
-        NSDictionary* userInfo = @{@"buildingindex": @(index)};
-        
-        // Need to add userInfo to trach the index of building
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"loadBuilding" object:nil userInfo:userInfo];
-        
-    } else {
-        isColorEligible = NO;
-        isColorPicked=NO;
+        } else {
+            isColorEligible = NO;
+            isColorPicked=NO;
+        }
     }
+    
+//    NSString *answer = nil;
+//    NSUInteger index = [namesArray indexOfObject:incomingColor];
+//    if (index != NSNotFound) {
+//        isColorEligible = YES;
+//        answer = [namesArray objectAtIndex:index];
+//        currentIndex = index;
+//        isColorPicked=YES;
+//        
+//        NSDictionary* userInfo = @{@"buildingindex": @(index)};
+//        
+//        // Need to add userInfo to trach the index of building
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"loadBuilding" object:nil userInfo:userInfo];
+//        
+//    } else {
+//        isColorEligible = NO;
+//        isColorPicked=NO;
+//    }
 }
 
 #pragma mark - controls/gestures on BG
@@ -459,10 +482,10 @@ static float bottomMenuHeight  = 37.0;
             deviceType = arr_deviceTypes[0];
         } else {
             NSLog(@"not sim 8");
-            deviceType = arr_deviceTypes[2];
+            deviceType = arr_deviceTypes[0];
         }
         
-    } else if (SYSTEM_VERSION_LESS_THAN(@"8")) {
+    } else {
         
         osValue = @"7";
         
@@ -471,7 +494,7 @@ static float bottomMenuHeight  = 37.0;
             deviceType = arr_deviceTypes[0];
         } else {
             NSLog(@"not sim 7");
-            deviceType = arr_deviceTypes[1];
+            deviceType = arr_deviceTypes[0];
         }
     }
     
