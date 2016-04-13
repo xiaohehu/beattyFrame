@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
 
@@ -29,7 +31,9 @@
     
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"loadIntroMove"];
     [[NSUserDefaults standardUserDefaults] synchronize];
-        
+    
+    [Fabric with:@[[Crashlytics class]]];
+
     return YES;
 }
 

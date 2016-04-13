@@ -291,6 +291,10 @@
 		82A128BC1B6916BF00564266 /* ebZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A128BB1B6916BF00564266 /* ebZoomingScrollView.m */; };
 		82A128BF1B6916EE00564266 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A128BE1B6916EE00564266 /* UIColor+Extensions.m */; };
 		82CA34211B6BE2960065E31E /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CA34201B6BE2960065E31E /* LocationViewController.m */; };
+		880840C31C8E1F5C00A8B0C0 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880840C11C8E1F5C00A8B0C0 /* Fabric.framework */; };
+		880840C41C8E1F5C00A8B0C0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880840C21C8E1F5C00A8B0C0 /* Crashlytics.framework */; };
+		880840C61C8E205800A8B0C0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 880840C51C8E205800A8B0C0 /* libz.tbd */; };
+		880840C81C8E206A00A8B0C0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 880840C71C8E206A00A8B0C0 /* libc++.tbd */; };
 		880F23DE1BFFA34B001EA4E9 /* grfx-partners.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F23DC1BFFA34B001EA4E9 /* grfx-partners.png */; };
 		880F23DF1BFFA34B001EA4E9 /* grfx-partners@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F23DD1BFFA34B001EA4E9 /* grfx-partners@2x.png */; };
 		880F23E21BFFABD4001EA4E9 /* ImageOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 880F23E11BFFABD4001EA4E9 /* ImageOverlay.m */; };
@@ -1549,6 +1553,10 @@
 		82A128BE1B6916EE00564266 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Extensions.m"; path = "utilities/UIColor+Extensions.m"; sourceTree = "<group>"; };
 		82CA341F1B6BE2960065E31E /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		82CA34201B6BE2960065E31E /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		880840C11C8E1F5C00A8B0C0 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		880840C21C8E1F5C00A8B0C0 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		880840C51C8E205800A8B0C0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		880840C71C8E206A00A8B0C0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		880F23DC1BFFA34B001EA4E9 /* grfx-partners.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-partners.png"; sourceTree = "<group>"; };
 		880F23DD1BFFA34B001EA4E9 /* grfx-partners@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-partners@2x.png"; sourceTree = "<group>"; };
 		880F23E01BFFABD4001EA4E9 /* ImageOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageOverlay.h; path = utilities/ImageOverlay.h; sourceTree = "<group>"; };
@@ -2511,11 +2519,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880840C81C8E206A00A8B0C0 /* libc++.tbd in Frameworks */,
+				880840C61C8E205800A8B0C0 /* libz.tbd in Frameworks */,
 				822822871B83695A004154E7 /* AVFoundation.framework in Frameworks */,
 				824D2B541B62BF4400E5F5A5 /* SystemConfiguration.framework in Frameworks */,
 				824D2B521B62BEB200E5F5A5 /* MessageUI.framework in Frameworks */,
 				824D27A91B61616D00E5F5A5 /* QuartzCore.framework in Frameworks */,
 				824D27A71B61616100E5F5A5 /* CoreGraphics.framework in Frameworks */,
+				880840C31C8E1F5C00A8B0C0 /* Fabric.framework in Frameworks */,
+				880840C41C8E1F5C00A8B0C0 /* Crashlytics.framework in Frameworks */,
 				824D2B1D1B617FBE00E5F5A5 /* XHGalleryUIControls.framework in Frameworks */,
 				824D27A51B61612200E5F5A5 /* UIKit.framework in Frameworks */,
 				824D27A31B61611A00E5F5A5 /* Foundation.framework in Frameworks */,
@@ -2963,9 +2975,13 @@
 		824D27191B5D7E6700E5F5A5 = {
 			isa = PBXGroup;
 			children = (
+				880840C71C8E206A00A8B0C0 /* libc++.tbd */,
+				880840C51C8E205800A8B0C0 /* libz.tbd */,
 				824D27241B5D7E6700E5F5A5 /* beattyFrame */,
 				824D273E1B5D7E6700E5F5A5 /* beattyFrameTests */,
 				824D27231B5D7E6700E5F5A5 /* Products */,
+				880840C11C8E1F5C00A8B0C0 /* Fabric.framework */,
+				880840C21C8E1F5C00A8B0C0 /* Crashlytics.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -4508,6 +4524,7 @@
 				824D271E1B5D7E6700E5F5A5 /* Sources */,
 				824D271F1B5D7E6700E5F5A5 /* Frameworks */,
 				824D27201B5D7E6700E5F5A5 /* Resources */,
+				880840C01C8E1F2900A8B0C0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -5731,6 +5748,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		880840C01C8E1F2900A8B0C0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 697c985324a3aa5652e75aa718397ec06eb30c40 4c466fd8b2d0d3045a7fdfc131b1e16aa518ea04e411793cc236ea91534f2995";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		824D271E1B5D7E6700E5F5A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -5931,6 +5964,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/beattyFrame",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = beattyFrame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -5950,6 +5984,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/beattyFrame",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = beattyFrame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
