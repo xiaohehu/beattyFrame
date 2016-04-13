@@ -39,7 +39,7 @@
     
     self.lastColor = [self getPixelColorAtLocation:point];
     lastPoint = point;
-//    NSLog(@"color %@",lastColor);
+    NSLog(@"color %@",lastColor);
     [pickedColorDelegate pickedColor:(UIColor*)self.lastColor];
 }
 

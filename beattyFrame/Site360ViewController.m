@@ -76,6 +76,7 @@ static float bottomMenuHeight  = 37.0;
 
 - (void)removeBuilding:(NSNotification *)notification {
     isColorPicked = NO;
+    NSLog(@"remove in 360");
 }
 
 -(void)appInit {
@@ -301,11 +302,10 @@ static float bottomMenuHeight  = 37.0;
             currentIndex = index;
             
             isColorEligible = YES;
-            //answer = [namesArray objectAtIndex:index];
-            //currentIndex = index;
             isColorPicked=YES;
-            NSDictionary* userInfo = @{@"buildingindex": @(index)};
             
+            NSDictionary* userInfo = @{@"buildingindex": @(index)};
+            NSLog(@"running twice!");
             // Need to add userInfo to trach the index of building
             [[NSNotificationCenter defaultCenter] postNotificationName:@"loadBuilding" object:nil userInfo:userInfo];
 

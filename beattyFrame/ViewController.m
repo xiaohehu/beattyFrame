@@ -38,7 +38,6 @@ static float    menuButtonSize = 50.0;
 @interface ViewController () <MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>{
 
     SummaryViewController   *summary;
-    BuildingViewController  *buildingVC;
     MasterplanParkingViewController*masterplanVC;
     IBOutlet UIView         *uiv_vcBigContainer;
     IBOutlet UIView         *uiv_sideMenuContainer;
@@ -94,6 +93,7 @@ static float    menuButtonSize = 50.0;
 }
 
 @property (nonatomic, strong)       embEmailData            *receivedData;
+@property (nonatomic, strong)       BuildingViewController  *buildingVC;
 
 @end
 
@@ -430,39 +430,49 @@ static float    menuButtonSize = 50.0;
 
     NSDictionary* userInfo = notification.userInfo;
     NSNumber* total = (NSNumber*)userInfo[@"buildingindex"];
-    NSLog (@"Successfully received test notification! %i", total.intValue);
+    //NSLog (@"Successfully received test notification! %i", total.intValue);
     
     embBuilding *currentBuilding = [[[LibraryAPI sharedInstance] getEvents] objectAtIndex:total.intValue];
     [[LibraryAPI sharedInstance] setCurrentEvent:currentBuilding];
     NSLog(@"loadBuildingVC currentBuilding %@", currentBuilding);
 
-    buildingVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BuildingViewController"];
-    buildingVC.view.frame = self.view.bounds;
-    buildingVC.pageIndex = total.intValue;
-    buildingVC.view.transform = CGAffineTransformMakeTranslation(0, buildingVC.view.frame.size.height);
-    [self addChildViewController:buildingVC];
+    if (! _buildingVC) {
+        
+        NSLog(@"no buildingvc");
 
-    
-    [self updateSubTitle:@"Site 360 - Parcel Detail"];
-    
-    [uiv_vcBigContainer insertSubview:buildingVC.view aboveSubview:currentViewController.view];
-    [UIView animateWithDuration:0.33 animations:^(void){
-        buildingVC.view.transform = CGAffineTransformIdentity;
-    } completion:^(BOOL finished){
-    }];
+        _buildingVC = [self.storyboard instantiateViewControllerWithIdentifier:@"BuildingViewController"];
+        _buildingVC.view.frame = self.view.bounds;
+        _buildingVC.pageIndex = total.intValue;
+        _buildingVC.view.transform = CGAffineTransformMakeTranslation(0, _buildingVC.view.frame.size.height);
+        [self addChildViewController:_buildingVC];
+        
+        [self updateSubTitle:@"Site 360 - Parcel Detail"];
+        
+        [uiv_vcBigContainer insertSubview:_buildingVC.view aboveSubview:currentViewController.view];
+        [_buildingVC didMoveToParentViewController:self];
+        
+        [UIView animateWithDuration:0.33 animations:^(void){
+            _buildingVC.view.transform = CGAffineTransformIdentity;
+        } completion:^(BOOL finished){
+        }];
+        
+    } else {
+        
+        NSLog(@"buildingvc");
+    }
 }
 
 - (void)removeBuildingVC:(NSNotification *)notification {
     
     [self updateSubTitle:@"Site 360"];
-
+    
     [UIView animateWithDuration:0.33 animations:^(void){
-        buildingVC.view.transform = CGAffineTransformMakeTranslation(0, self.view.bounds.size.height);
+        _buildingVC.view.transform = CGAffineTransformMakeTranslation(0, self.view.bounds.size.height);
     } completion:^(BOOL finished){
-        [buildingVC removeFromParentViewController];
-        [buildingVC.view removeFromSuperview];
-        buildingVC = nil;
-        buildingVC.view = nil;
+        [_buildingVC removeFromParentViewController];
+        [_buildingVC.view removeFromSuperview];
+        _buildingVC = nil;
+        _buildingVC.view = nil;
     }];
 }
 

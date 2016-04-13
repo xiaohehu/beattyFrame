@@ -329,6 +329,7 @@
 }
 
 - (IBAction)tapCloseButton:(id)sender {
+    NSLog(@"remove in buildingvc");
     [[NSNotificationCenter defaultCenter] postNotificationName:@"removeBuilding" object:nil];
 }
 
