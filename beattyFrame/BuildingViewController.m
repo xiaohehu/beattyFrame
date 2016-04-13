@@ -211,15 +211,15 @@
     [uib_gallery addTarget:self action:@selector(tapMenuButton:) forControlEvents:UIControlEventTouchUpInside];
     [uiv_buildingMenu addSubview: uib_gallery ];
     
-    UIButton *uib_playground = [UIButton buttonWithType:UIButtonTypeCustom];
-    uib_playground.frame = CGRectMake(uib_gallery.frame.origin.x + 45, uiv_bar.frame.origin.y + 1, 45, 45);
-    uib_playground.tag = 1;
-    [uib_playground setImage:[UIImage imageNamed:@"grfx_buildingPlayground.jpg"] forState:UIControlStateNormal];
-    [uib_playground addTarget:self action:@selector(tapMenuButton:) forControlEvents:UIControlEventTouchUpInside];
-    [uiv_buildingMenu addSubview: uib_playground ];
+//    UIButton *uib_playground = [UIButton buttonWithType:UIButtonTypeCustom];
+//    uib_playground.frame = CGRectMake(uib_gallery.frame.origin.x + 45, uiv_bar.frame.origin.y + 1, 45, 45);
+//    uib_playground.tag = 1;
+//    [uib_playground setImage:[UIImage imageNamed:@"grfx_buildingPlayground.jpg"] forState:UIControlStateNormal];
+//    [uib_playground addTarget:self action:@selector(tapMenuButton:) forControlEvents:UIControlEventTouchUpInside];
+//    [uiv_buildingMenu addSubview: uib_playground ];
 
     _webButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _webButton.frame = CGRectMake(uib_playground.frame.origin.x + 45, uiv_bar.frame.origin.y + 1, 45, 45);
+    _webButton.frame = CGRectMake(uib_gallery.frame.origin.x + 45, uiv_bar.frame.origin.y + 1, 45, 45);
     [_webButton setImage:[UIImage imageNamed:@"grfx_buildingWeb.png"] forState:UIControlStateNormal];
     [_webButton addTarget:self action:@selector(createWebButtonWithAddress:) forControlEvents:UIControlEventTouchUpInside];
     [uiv_buildingMenu addSubview: _webButton];

@@ -26,7 +26,6 @@
 #import "TutorialsListController.h"
 #import "LibraryAPI.h"
 #import "embBuilding.h"
-#import "PlaygroundViewController.h"
 #import "MasterplanParkingViewController.h"
 
 
@@ -494,16 +493,16 @@ static float    menuButtonSize = 50.0;
     [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
 }
 
-- (IBAction)loadOpportunities:(id)sender {
-    
-    [self updateSubTitle:@"Development Opportunities"];
-    
-    UIButton *tappedButton = sender;
-    [self highlightTheButton:tappedButton withAnimation:YES];
-    PlaygroundViewController *sponsorship = [self.storyboard instantiateViewControllerWithIdentifier:@"PlaygroundViewController"];
-    [self fadeInNewViewController:sponsorship];
-    [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
-}
+//- (IBAction)loadOpportunities:(id)sender {
+//    
+//    [self updateSubTitle:@"Development Opportunities"];
+//    
+//    UIButton *tappedButton = sender;
+//    [self highlightTheButton:tappedButton withAnimation:YES];
+//    PlaygroundViewController *sponsorship = [self.storyboard instantiateViewControllerWithIdentifier:@"PlaygroundViewController"];
+//    [self fadeInNewViewController:sponsorship];
+//    [self performSelector:@selector(tapMenuButtonClose:) withObject:nil afterDelay:0.33];
+//}
 
 /*
  * Load Supporting page view controller

@@ -125,7 +125,7 @@
                                                     <action selector="loadMasterPlan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LWv-pp-tgq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yih-w3-nqm">
+                                            <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yih-w3-nqm">
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
@@ -1203,95 +1203,8 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUX-Y6-2ea" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Playground View Controller-->
-        <scene sceneID="NLl-yg-7pG">
-            <objects>
-                <viewController storyboardIdentifier="PlaygroundViewController" id="L3l-dF-Pj5" customClass="PlaygroundViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aRu-63-OHa"/>
-                        <viewControllerLayoutGuide type="bottom" id="2cc-sU-rXn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="R3P-4S-dL3">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W3X-YP-cQx">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                            </sceneKitView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r77-Ce-YKB" userLabel="Control panel">
-                                <rect key="frame" x="20" y="516" width="395" height="232"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="panel edit mode" translatesAutoresizingMaskIntoConstraints="NO" id="S93-p1-NIv">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="232"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7T-AP-kZK">
-                                        <rect key="frame" x="201" y="179" width="179" height="39"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" image="Approve">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tapDoneButton:" destination="L3l-dF-Pj5" eventType="touchUpInside" id="tc5-c5-BNk"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggc-8p-U5R">
-                                        <rect key="frame" x="15" y="179" width="179" height="39"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" image="Trash">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tapDeleteButton:" destination="L3l-dF-Pj5" eventType="touchUpInside" id="Obz-T5-J4X"/>
-                                        </connections>
-                                    </button>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="-11" minValue="-11" maxValue="360" translatesAutoresizingMaskIntoConstraints="NO" id="k0w-X0-U4C">
-                                        <rect key="frame" x="32" y="100" width="326" height="31"/>
-                                        <color key="minimumTrackTintColor" red="0.84968647200000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <action selector="degreeSliderChangeValue:" destination="L3l-dF-Pj5" eventType="valueChanged" id="Fne-ta-K3I"/>
-                                        </connections>
-                                    </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaX-Vi-8U9">
-                                        <rect key="frame" x="176" y="71" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.84968647200000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0f-Lp-RZ3">
-                                <rect key="frame" x="906" y="718" width="98" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" red="0.39434614779999999" green="0.39433437589999998" blue="0.39434105159999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="reset:" destination="L3l-dF-Pj5" eventType="touchUpInside" id="E2h-uB-H6C"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
-                    <connections>
-                        <outlet property="scn_view" destination="W3X-YP-cQx" id="k2A-Qg-HhO"/>
-                        <outlet property="uib_Reset" destination="c0f-Lp-RZ3" id="Hiu-hD-2bL"/>
-                        <outlet property="uil_rotationDegres" destination="NaX-Vi-8U9" id="QT6-1D-CPN"/>
-                        <outlet property="uisld_degreeSlider" destination="k0w-X0-U4C" id="mSS-XZ-63d"/>
-                        <outlet property="uiv_controlPanel" destination="r77-Ce-YKB" id="lKn-P0-6y7"/>
-                        <outlet property="view" destination="R3P-4S-dL3" id="7oS-JL-62h"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cUr-Gj-cxa" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="305" y="375"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="Approve" width="21" height="16"/>
-        <image name="Trash" width="13" height="18"/>
         <image name="grfx_closeBtn.png" width="25" height="25"/>
         <image name="grfx_menuGallery.jpg" width="23" height="19"/>
         <image name="grfx_menuRestart.jpg" width="23" height="14"/>
@@ -1299,7 +1212,6 @@
         <image name="grfx_menuWebcam.jpg" width="18" height="11"/>
         <image name="grfx_shareEmail.png" width="29" height="34"/>
         <image name="grfx_sharePDF.png" width="23" height="39"/>
-        <image name="panel edit mode" width="394" height="232"/>
         <image name="share_but_email_roll.png" width="149" height="762"/>
         <image name="share_but_pdf_roll.png" width="33" height="33"/>
     </resources>
