@@ -1191,6 +1191,8 @@
 		8892EE401BC2092B00347146 /* phase_d_color_00072.png in Resources */ = {isa = PBXBuildFile; fileRef = 8892ED661BC2092B00347146 /* phase_d_color_00072.png */; };
 		889F07BD1BB1E57C00CBD979 /* AnimationIndex.h in Sources */ = {isa = PBXBuildFile; fileRef = 889F07BC1BB1E57C00CBD979 /* AnimationIndex.h */; };
 		889F07C01BB1E67600CBD979 /* gridEcoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 889F07BF1BB1E67600CBD979 /* gridEcoView.m */; };
+		88AA12C41CBEA27900B63F81 /* grfx-icon-gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA12C21CBEA27900B63F81 /* grfx-icon-gallery.png */; };
+		88AA12C51CBEA27900B63F81 /* grfx-icon-gallery@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA12C31CBEA27900B63F81 /* grfx-icon-gallery@2x.png */; };
 		88E0744F1B98CFB400E0982A /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074311B98CFB400E0982A /* ContainerViewController.m */; };
 		88E074501B98CFB400E0982A /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074341B98CFB400E0982A /* FLAnimatedImage.m */; };
 		88E074511B98CFB400E0982A /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074361B98CFB400E0982A /* FLAnimatedImageView.m */; };
@@ -2461,6 +2463,8 @@
 		889F07BE1BB1E67600CBD979 /* gridEcoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gridEcoView.h; path = utilities/gridEcoView.h; sourceTree = "<group>"; };
 		889F07BF1BB1E67600CBD979 /* gridEcoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gridEcoView.m; path = utilities/gridEcoView.m; sourceTree = "<group>"; };
 		889F07C11BB1E69D00CBD979 /* gridEcoViewIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gridEcoViewIndex.h; sourceTree = "<group>"; };
+		88AA12C21CBEA27900B63F81 /* grfx-icon-gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-icon-gallery.png"; sourceTree = "<group>"; };
+		88AA12C31CBEA27900B63F81 /* grfx-icon-gallery@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-icon-gallery@2x.png"; sourceTree = "<group>"; };
 		88E074301B98CFB400E0982A /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
 		88E074311B98CFB400E0982A /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		88E074331B98CFB400E0982A /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
@@ -3617,6 +3621,8 @@
 		8861DCEA1BFD55CC006A7D13 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				88AA12C21CBEA27900B63F81 /* grfx-icon-gallery.png */,
+				88AA12C31CBEA27900B63F81 /* grfx-icon-gallery@2x.png */,
 				8861DCEB1BFD55CC006A7D13 /* grfx-arrow-right.png */,
 				8861DCEC1BFD55CC006A7D13 /* grfx-arrow-right@2x.png */,
 				8861DCEF1BFD55CC006A7D13 /* grfx_buildingIcon.jpg */,
@@ -5096,6 +5102,7 @@
 				8892EB6D1BC2082C00347146 /* phase_c_base_00004.jpg in Resources */,
 				883D77D11C04DE14004B0136 /* phase_a_color_00062.png in Resources */,
 				8861DE021BFD55E6006A7D13 /* grfx_siteMap_overlay_arts_culture.png in Resources */,
+				88AA12C41CBEA27900B63F81 /* grfx-icon-gallery.png in Resources */,
 				883D77431C04DD65004B0136 /* phase_c_color_00067.png in Resources */,
 				824D2BAC1B62D02100E5F5A5 /* share_0364 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				8892EB0C1BC2082C00347146 /* phase_b_base_00051.jpg in Resources */,
@@ -5393,6 +5400,7 @@
 				8819D8531BB8515400015AF5 /* image009.png in Resources */,
 				8861DE5B1BFD5CDC006A7D13 /* grfx_summary@2x.png in Resources */,
 				8892EE2E1BC2092B00347146 /* phase_d_color_00054.png in Resources */,
+				88AA12C51CBEA27900B63F81 /* grfx-icon-gallery@2x.png in Resources */,
 				8819D81E1BB8515400015AF5 /* Central_Plaza@2x.jpg in Resources */,
 				8861DD2A1BFD55CC006A7D13 /* grfx_buildingNext@2x.jpg in Resources */,
 				883D77C31C04DE14004B0136 /* phase_a_color_00048.png in Resources */,
