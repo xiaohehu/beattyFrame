@@ -36,6 +36,9 @@
 + (UIColor *)helpSectionHeaderBlue {
     return [UIColor colorWithRed:150.0/255.0 green:180.0/255.0 blue:188.0/255.0 alpha:1.0];
 }
++ (UIColor *)themeTextGray {
+    return [UIColor colorWithRed:0.38 green:0.39 blue:0.38 alpha:1.00];
+}
 
 + (UIColor *)randomColor {
     return [self colorWithRed:((float)rand() / RAND_MAX)

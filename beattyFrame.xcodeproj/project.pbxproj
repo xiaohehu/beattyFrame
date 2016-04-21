@@ -1193,6 +1193,11 @@
 		889F07C01BB1E67600CBD979 /* gridEcoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 889F07BF1BB1E67600CBD979 /* gridEcoView.m */; };
 		88AA12C41CBEA27900B63F81 /* grfx-icon-gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA12C21CBEA27900B63F81 /* grfx-icon-gallery.png */; };
 		88AA12C51CBEA27900B63F81 /* grfx-icon-gallery@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA12C31CBEA27900B63F81 /* grfx-icon-gallery@2x.png */; };
+		88AA13F81CC7FC8C00B63F81 /* tappableview.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA13F71CC7FC8C00B63F81 /* tappableview.m */; };
+		88AA13FB1CC806B700B63F81 /* Tappable.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA13FA1CC806B700B63F81 /* Tappable.m */; };
+		88AA13FD1CC8236100B63F81 /* neighborhoods.json in Resources */ = {isa = PBXBuildFile; fileRef = 88AA13FC1CC8236100B63F81 /* neighborhoods.json */; };
+		88AA14001CC8381B00B63F81 /* Neighborhoodpanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA13FF1CC8381B00B63F81 /* Neighborhoodpanel.m */; };
+		88AA14031CC8383600B63F81 /* neighborhoodpanelview.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA14021CC8383600B63F81 /* neighborhoodpanelview.m */; };
 		88E0744F1B98CFB400E0982A /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074311B98CFB400E0982A /* ContainerViewController.m */; };
 		88E074501B98CFB400E0982A /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074341B98CFB400E0982A /* FLAnimatedImage.m */; };
 		88E074511B98CFB400E0982A /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074361B98CFB400E0982A /* FLAnimatedImageView.m */; };
@@ -2465,6 +2470,15 @@
 		889F07C11BB1E69D00CBD979 /* gridEcoViewIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gridEcoViewIndex.h; sourceTree = "<group>"; };
 		88AA12C21CBEA27900B63F81 /* grfx-icon-gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-icon-gallery.png"; sourceTree = "<group>"; };
 		88AA12C31CBEA27900B63F81 /* grfx-icon-gallery@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-icon-gallery@2x.png"; sourceTree = "<group>"; };
+		88AA13F61CC7FC8C00B63F81 /* tappableview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tappableview.h; path = utilities/tappableview.h; sourceTree = "<group>"; };
+		88AA13F71CC7FC8C00B63F81 /* tappableview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tappableview.m; path = utilities/tappableview.m; sourceTree = "<group>"; };
+		88AA13F91CC806B700B63F81 /* Tappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tappable.h; path = utilities/Tappable.h; sourceTree = "<group>"; };
+		88AA13FA1CC806B700B63F81 /* Tappable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tappable.m; path = utilities/Tappable.m; sourceTree = "<group>"; };
+		88AA13FC1CC8236100B63F81 /* neighborhoods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = neighborhoods.json; sourceTree = "<group>"; };
+		88AA13FE1CC8381B00B63F81 /* Neighborhoodpanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Neighborhoodpanel.h; path = utilities/Neighborhoodpanel.h; sourceTree = "<group>"; };
+		88AA13FF1CC8381B00B63F81 /* Neighborhoodpanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Neighborhoodpanel.m; path = utilities/Neighborhoodpanel.m; sourceTree = "<group>"; };
+		88AA14011CC8383600B63F81 /* neighborhoodpanelview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neighborhoodpanelview.h; sourceTree = "<group>"; };
+		88AA14021CC8383600B63F81 /* neighborhoodpanelview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = neighborhoodpanelview.m; sourceTree = "<group>"; };
 		88E074301B98CFB400E0982A /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
 		88E074311B98CFB400E0982A /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		88E074331B98CFB400E0982A /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
@@ -3073,6 +3087,14 @@
 		824D27A11B61467700E5F5A5 /* utiliites */ = {
 			isa = PBXGroup;
 			children = (
+				88AA13FE1CC8381B00B63F81 /* Neighborhoodpanel.h */,
+				88AA13FF1CC8381B00B63F81 /* Neighborhoodpanel.m */,
+				88AA14011CC8383600B63F81 /* neighborhoodpanelview.h */,
+				88AA14021CC8383600B63F81 /* neighborhoodpanelview.m */,
+				88AA13F61CC7FC8C00B63F81 /* tappableview.h */,
+				88AA13F71CC7FC8C00B63F81 /* tappableview.m */,
+				88AA13F91CC806B700B63F81 /* Tappable.h */,
+				88AA13FA1CC806B700B63F81 /* Tappable.m */,
 				8892084B1BFE32E0007C88FF /* buildingselect_menu */,
 				8843A2841BF5953700C1C1D5 /* MapViewAnnotation.h */,
 				8843A2851BF5953700C1C1D5 /* MapViewAnnotation.m */,
@@ -3150,6 +3172,7 @@
 				881D14061BF0E1CA00693C62 /* building_data.json */,
 				822822B31B850B55004154E7 /* building_data.plist */,
 				824D2B551B62CF7F00E5F5A5 /* shareableData.plist */,
+				88AA13FC1CC8236100B63F81 /* neighborhoods.json */,
 				824D2B1E1B61857E00E5F5A5 /* photoData.plist */,
 				824D2B141B6169AB00E5F5A5 /* ImageData.plist */,
 				824387501B69414D003AC214 /* supporting_data.plist */,
@@ -4627,6 +4650,7 @@
 				8892EAEC1BC2082C00347146 /* phase_b_base_00019.jpg in Resources */,
 				8892EE251BC2092B00347146 /* phase_d_color_00045.png in Resources */,
 				8892EAEA1BC2082C00347146 /* phase_b_base_00017.jpg in Resources */,
+				88AA13FD1CC8236100B63F81 /* neighborhoods.json in Resources */,
 				824D2BF21B62D02100E5F5A5 /* share_View 6 - no bridge.jpg.jpg in Resources */,
 				8861DE561BFD5CAC006A7D13 /* grfx_siteplan.png in Resources */,
 				8861DD471BFD55CC006A7D13 /* grfx_shareEmail.png in Resources */,
@@ -5760,12 +5784,14 @@
 				824D27281B5D7E6700E5F5A5 /* main.m in Sources */,
 				824D2B1B1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m in Sources */,
 				82A128B91B69164100564266 /* supportingModelController.m in Sources */,
+				88AA13FB1CC806B700B63F81 /* Tappable.m in Sources */,
 				822822BB1B851E44004154E7 /* SettingViewController.m in Sources */,
 				822822A81B84F783004154E7 /* buildingModelController.m in Sources */,
 				8843A2861BF5953700C1C1D5 /* MapViewAnnotation.m in Sources */,
 				822822801B822243004154E7 /* sponsorDataViewController.m in Sources */,
 				887648111BA35914002D4183 /* PersistencyManager.m in Sources */,
 				82A128BC1B6916BF00564266 /* ebZoomingScrollView.m in Sources */,
+				88AA14031CC8383600B63F81 /* neighborhoodpanelview.m in Sources */,
 				824D2B3B1B62B57D00E5F5A5 /* UIImage+ScaleToFit.m in Sources */,
 				824D2B181B616DCD00E5F5A5 /* GalleryViewController.m in Sources */,
 				883D78761C055D5C004B0136 /* SettingsViewController.m in Sources */,
@@ -5782,6 +5808,7 @@
 				889208531BFE32E0007C88FF /* CVCell.m in Sources */,
 				883D78701C04E88E004B0136 /* UIImage+Resize.m in Sources */,
 				889208581BFE6659007C88FF /* CALayer+Additions.m in Sources */,
+				88AA13F81CC7FC8C00B63F81 /* tappableview.m in Sources */,
 				88E074561B98CFB400E0982A /* TutorialsListController.m in Sources */,
 				82A128B81B69164100564266 /* supportingDataViewController.m in Sources */,
 				8251FF9B1B7E7C9C0021C1BA /* xhWebViewController.m in Sources */,
@@ -5793,6 +5820,7 @@
 				88E074531B98CFB400E0982A /* ModelController.m in Sources */,
 				88E074501B98CFB400E0982A /* FLAnimatedImage.m in Sources */,
 				881D140A1BF111DA00693C62 /* MasterplanParkingViewController.m in Sources */,
+				88AA14001CC8381B00B63F81 /* Neighborhoodpanel.m in Sources */,
 				880F23E21BFFABD4001EA4E9 /* ImageOverlay.m in Sources */,
 				822822BA1B851E44004154E7 /* SettingTableViewController.m in Sources */,
 				883D787E1C055FB3004B0136 /* UIApplication+AppVersion.m in Sources */,

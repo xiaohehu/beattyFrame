@@ -1,0 +1,166 @@
+{
+    "site": [
+				{
+				"name": "Central Business District",
+				"desc": "Also known simply as Downtown Baltimore or the CBD, it continues to be a focal point of business in the Baltimore area with over 100,000 employees working in any one of its many high-rise office buildings.  The CBD is also home to Harborplace, a festival marketplace, which is consistently ranked as one of the top tourist destinations in the state of Maryland.  Other popular destinations in the CBD are the National Aquarium, the Maryland Science Center and the U.S.S. Constellation.",
+				"Population":  "6,076",
+				"Avg HH Income":  "$55,475",
+				"Median Age":  "28.9",
+				"center": "415.5,225",
+				},
+             	{
+				"name": "Brewers Hill",
+				"desc": "This growing neighborhood gets its name from 2 former landmark breweries:  National Brewery and The Gunther Brewery, which are now home to mixed-use developments that include apartments, work space and businesses.  A sign high in the air, which features the iconic National Brewery mascot, Natty Boh, distinguishes the area.  Canton Crossing, a large lifestyle center anchored by Harris Teeter and Target, opened in 2013 and serves the established residents as well as the newer residents moving into newly built luxury apartment buildings.",
+				"Population":  "1,507",
+				"Avg HH Income":  "$68,578",
+				"Median Age":  "33.2",
+				"center": "796,326.5",
+				},
+				{
+				"name": "Canton",
+				"desc": "Originally the site of a plantation owned by merchant seaman John O’Donnell in the early 1800’s, Canton became later known as a waterfront industrial center and home to a diverse group of European immigrants from Poland, Germany and Ireland.  Today it is better known for the restaurants and pubs that line O’Donnell Square, The Waterfront Park and Fishing Pier, DuBurns Indoor Soccer Arena and two marinas.  Millennial nightlife seekers flock to “The Square” from nearby luxury apartments and renovated row homes, to enjoy the eclectic mix of drinking and dining options offered.",
+				"Population":  "12,894",
+				"Avg HH Income":  "$101,016",
+				"Median Age":  "34",
+				"center": "729.5,317",
+				},
+				{
+				"name": "Fell’s Point",
+				"desc": "Established in 1763, this charming historic waterfront community is home to over 161 buildings on the National Register, including the oldest standing residence in Baltimore City.  The neighborhood is known for its charming cobblestone streets, and dozens of unique retail boutiques, restaurants and pubs.  The publics square on Broadway hosts several events throughout the year including the Fells Point Fun Festival, which attracts nearly 500,000 people annually.  Fell’s Point is widely recognized as a major tourist destination in Baltimore.",
+				"Population":  "8,392",
+				"Avg HH Income":  "$86,495",
+				"Median Age":  "33.6",
+				"center": "609.5,293",
+				},
+                 {
+                 "name": "Little Italy",
+				"desc": "This area of Baltimore was founded in the mid 1800’s to serve the growing Italian population.  The warm and inviting neighborhood is still home to many people of Italian descent.  Along its row home lined streets you will find more than 20 of Maryland’s favorite Italian restaurants serving up traditional fare from fresh, hand-made pastas to desserts.",
+				"Population":  "572",
+				"Avg HH Income":  "$97,285",
+				"Median Age":  "34.8",
+				"center": "549,260.5",
+                 },
+             	{
+				"name": "Harbor East",
+				"desc": "Harbor East is Baltimore’s newest waterfront community boasting five star restaurants, world-class hotels, chic local boutiques, better national retailers and a Whole Foods Market.  Known as an “eat, sleep, work, play” destination, inside any of the eight buildings that comprise this 12 square block area, you can also find apartments, condominiums, and Fortune 500 companies.   Harbor East holds events throughout the year including fashion shows, live music, and special dining events. ",
+				"Population":  "853",
+				"Avg HH Income":  "$116,268",
+				"Median Age":  "35",
+				"center": "482.5,281.5",
+				},
+				{
+				"name": "Federal Hill",
+				"desc": "Named for the prominent hill that faces the Inner Harbor, Federal Hill is known for its stately, late 19th century brick homes.  The neighborhood is a federal historic district with strict regulations regarding rehabilitations, which has kept the original feel of the community.  A mix of young single professionals, and established families call this neighborhood home.   The area is also home to Cross Street Market, a historic 19th century marketplace where you can shop for produce, fresh meats, seafood, baked goods and fresh flowers.",
+				"Population":  "13,851",
+				"Avg HH Income":  "$103,696",
+				"Median Age":  "32.4",
+				"center": "448.5,358.5",
+				},
+				{
+				"name": "Locust Point",
+				"desc": "Getting its name from the locust trees which once dotted this peninsula gateway to Fort McHenry, Locust Point is known as the home of Under Armour clothing which is housed in the rehabilitated Proctor and Gamble factory.  A new renaissance in this area is evidenced by a circa 1923 grain silo that has been converted into luxury waterfront homes known as Silo Point.  This has resulted in a mix of residents ranging from single professionals to multi-generational families.",
+				"Population":  "3,095",
+				"Avg HH Income":  "$97,313",
+				"Median Age":  "36.3",
+				"center": "575.5,441",
+				},
+                 {
+                 "name": "Otterbein",
+				"desc": "Otterbein is one of Baltimore’s smallest communities and is within walking distance of Camden Yards, the home of the Baltimore Orioles.  The original 198 homes were constructed in the 1840’s and the 1850’s and housed prominent and affluent business people involved in shipbuilding, retail sales and the Baltimore & Ohio Railroad.  A need for war housing during World War II led to overcrowding, poor sanitation and deteriorating physical conditions.  A revitalization occurred in 1975 when the city auctioned off the homes for $1 a piece, leading to the largest urban homesteading project in the history of the United States and helped to return it to its former status as a wealthy enclave.",
+				"Population":  "2,007",
+				"Avg HH Income":  "$69,063",
+				"Median Age":  "54.1",
+				"center": "396,304",
+                 },
+             	{
+				"name": "Ridgely’s Delight",
+				"desc": "Ridgely’s Delight was named for the planation of Colonel Charles Ridgely II.  The majority of the Federal-style, two to three story homes on the quiet, tree-lined streets were built between 1816 and 1875.  They were originally inhabited by craftspeople, but were later home to affluent professionals who used their resources to make the row houses more ornate.  An active community association hosts events throughout the year. ",
+				"Population":  "1,057",
+				"Avg HH Income":  "$65,624",
+				"Median Age":  "28.6",
+				"center": "332.5,274.5",
+				},
+				{
+				"name": "Mount Vernon",
+				"desc": "Mount Vernon is home to some of the most historically significant and well- preserved 19th century architecture on the East Coast of the United States and is designated as a National Landmark Historic District. Also considered the cultural center of Baltimore, it is the home of the world-renowned Peabody Conservatory, the Walters Art Gallery, Spotlighter’s Theater and Center Stage.  Mount Vernon has a rich nightlife with a variety of restaurants, cafes and bars.",
+				"Population":  "11,201",
+				"Avg HH Income":  "$47,694",
+				"Median Age":  "32.5",
+				"center": "429,148",
+				},
+				{
+				"name": "Station North",
+				"desc": "In 2002, Baltimore City designated this area as an Arts and Entertainment District, helping to transform the once impoverished neighborhood into the up-and-coming area it is today.  The area is home to several performing arts theaters including Single Carrot Theater as well as the art house multiplex movie theater, The Charles, which is the anchor venue for the Maryland Film Festival held annually each May.  In 2010 construction began on the new City Arts Apartments, built as affordable housing for artists.",
+				"Population":  "2,582",
+				"Avg HH Income":  "$38,552",
+				"Median Age":  "38.9",
+				"center": "432,6",
+				},
+                 {
+                 "name": "Bolton Hill",
+				"desc": "Bolton Hill is an urban neighborhood of quiet, tree-lined streets lined with townhouses, urban mansions, churches, parks, historic fountains and grand monuments.  The neighborhood is within walking distance of the Meyerhoff Symphony Hall, the Lyric Opera House and the Maryland Institute College of Art (MICA).  Bolton Hill was home to noted writer F. Scott Fitzgerald and former President of the United States, Woodrow Wilson.  With its close proximity to MICA, Bolton Hill is a favorite residential neighborhood for these students.",
+				"Population":  "5,459",
+				"Avg HH Income":  "$60,252",
+				"Median Age":  "32.7",
+				"center": "311.5,40.5",
+                 }
+            ],
+    "city": [
+    			{
+				"name": "Inner Harbor",
+				"desc": "Established in 1763, this charming historic waterfront community is home to over 161 buildings on the National Register, including the oldest standing residence in Baltimore City.  The neighborhood is known for its charming cobblestone streets, and dozens of unique retail boutiques, restaurants and pubs.  The publics square on Broadway hosts several events throughout the year including the Fells Point Fun Festival, which attracts nearly 500,000 people annually.  Fell’s Point is widely recognized as a major tourist destination in Baltimore.",
+				"Population":  "8,392",
+				"Avg HH Income":  "$86,495",
+				"Median Age":  "33.6",
+				"center": "32.5,86.5",
+				},
+				{
+				"name": "Fell’s Point",
+				"desc": "Established in 1763, this charming historic waterfront community is home to over 161 buildings on the National Register, including the oldest standing residence in Baltimore City.  The neighborhood is known for its charming cobblestone streets, and dozens of unique retail boutiques, restaurants and pubs.  The publics square on Broadway hosts several events throughout the year including the Fells Point Fun Festival, which attracts nearly 500,000 people annually.  Fell’s Point is widely recognized as a major tourist destination in Baltimore.",
+				"Population":  "8,392",
+				"Avg HH Income":  "$86,495",
+				"Median Age":  "33.6",
+				"center": "711.5,282",
+				},
+                 {
+                 "name": "Little Italy",
+				"desc": "This area of Baltimore was founded in the mid 1800’s to serve the growing Italian population.  The warm and inviting neighborhood is still home to many people of Italian descent.  Along its row home lined streets you will find more than 20 of Maryland’s favorite Italian restaurants serving up traditional fare from fresh, hand-made pastas to desserts.",
+				"Population":  "572",
+				"Avg HH Income":  "$97,285",
+				"Median Age":  "34.8",
+				"center": "435,76.5",
+                 },
+             	{
+				"name": "Harbor East",
+				"desc": "Harbor East is Baltimore’s newest waterfront community boasting five star restaurants, world-class hotels, chic local boutiques, better national retailers and a Whole Foods Market.  Known as an “eat, sleep, work, play” destination, inside any of the eight buildings that comprise this 12 square block area, you can also find apartments, condominiums, and Fortune 500 companies.   Harbor East holds events throughout the year including fashion shows, live music, and special dining events. ",
+				"Population":  "853",
+				"Avg HH Income":  "$116,268",
+				"Median Age":  "35",
+				"center": "425,237.5",
+				},
+				{
+				"name": "Federal Hill",
+				"desc": "Named for the prominent hill that faces the Inner Harbor, Federal Hill is known for its stately, late 19th century brick homes.  The neighborhood is a federal historic district with strict regulations regarding rehabilitations, which has kept the original feel of the community.  A mix of young single professionals, and established families call this neighborhood home.   The area is also home to Cross Street Market, a historic 19th century marketplace where you can shop for produce, fresh meats, seafood, baked goods and fresh flowers.",
+				"Population":  "13,851",
+				"Avg HH Income":  "$103,696",
+				"Median Age":  "32.4",
+				"center": "117,472",
+				},
+				{
+				"name": "Locust Point",
+				"desc": "Getting its name from the locust trees which once dotted this peninsula gateway to Fort McHenry, Locust Point is known as the home of Under Armour clothing which is housed in the rehabilitated Proctor and Gamble factory.  A new renaissance in this area is evidenced by a circa 1923 grain silo that has been converted into luxury waterfront homes known as Silo Point.  This has resulted in a mix of residents ranging from single professionals to multi-generational families.",
+				"Population":  "3,095",
+				"Avg HH Income":  "$97,313",
+				"Median Age":  "36.3",
+				"center": "728,690",
+				}
+            ]
+}
+
+
+
+
+
+
+
+

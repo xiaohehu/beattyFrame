@@ -15,13 +15,15 @@
 #import "AppDelegate.h"
 #import "MapViewAnnotation.h"
 #import <MapKit/MapKit.h>
+#import "tappableview.h"
+#import "neighborhoodpanelview.h"
 
 #define METERS_PER_MILE 109.344
 
 static float    bottomWidth = 236;
 static float    bottomHeight = 37;
 
-@interface LocationViewController () <ButtonStackDelegate,MKMapViewDelegate>
+@interface LocationViewController () <ButtonStackDelegate, MKMapViewDelegate, tapviewDeleagte>
 {
     UIView              *uiv_bottomMenu;
     UIView              *uiv_menuIndicator;
@@ -34,14 +36,21 @@ static float    bottomHeight = 37;
     int                 mapIndex;
     NSArray             *arr_OverlayData;
     NSDictionary        *menuData;
-    IBOutlet        UIButton            *uib_appleMap;
+    
+    NSArray             *neighborhoodData;
+    NSInteger           incomingIndex;
+    
+    IBOutlet            UIButton            *uib_appleMap;
 }
 
 @property (nonatomic, strong) ebZoomingScrollView			*zoomingScroll;
-@property (nonatomic, retain) AppDelegate *appDelegate;
+@property (nonatomic, retain) AppDelegate                   *appDelegate;
 @property (nonatomic, strong) UIButton                      *uib_appleMap;
 @property (nonatomic, strong) MKMapView                     *mapView;
 @property (nonatomic, strong) UIView                        *uiv_mapContainer;
+@property (nonatomic, strong) tappableview                  *tview;
+@property (nonatomic, strong) neighborhoodpanelview         *npview;
+
 @end
 
 @implementation LocationViewController
@@ -145,20 +154,25 @@ static float    bottomHeight = 37;
 - (void)buttonStack:(ButtonStack *)buttonStack selectedIndex:(int)index
 {
     NSLog(@"tapped %d", index);
+    [self clearKeys];
+    [self clearOverlayData];
+    [buttonStack setSelectedButtonColor:[UIColor themeRed]];
+
+    
+    // if mapIndex and overlayIndex
+    if (( mapIndex == 1 ) && ( index == 0 )) {
+        [self createKeyForCity];
+    } else if ((( mapIndex == 1 ) && ( index == 1 )) || (( mapIndex == 0 ) && ( index == 1 ))) {
+        [self addNeighborhoods];
+        return;
+    }
+    
     if ( ! overlayAsset) {
         overlayAsset = [[UIImageView alloc] initWithFrame:_zoomingScroll.frame];
         [_zoomingScroll.blurView addSubview:overlayAsset];
         overlayMenuIndex = -1;
     }
-    
-    // if mapIndex and overlayIndex
-    if (( mapIndex == 1 ) && ( index == 0 )) {
-        [self createKeyForCity];
-    } else {
-        [self clearKeys];
-    }
-    
-    [buttonStack setSelectedButtonColor:[UIColor themeRed]];
+
     
     NSString *imgNm = [arr_OverlayData[index] objectForKey:@"overlay"];
     
@@ -194,6 +208,21 @@ static float    bottomHeight = 37;
     
     for (UIView *key in [_zoomingScroll.blurView subviews]) {
         if ([key  isKindOfClass:[KeyOverlay class]])
+            [key removeFromSuperview];
+    }
+    
+    if (_tview) {
+        [_tview removeFromSuperview];
+        _tview=nil;
+    }
+    
+    if (_npview) {
+        [_npview removeFromSuperview];
+        _npview=nil;
+    }
+    
+    for (UIView *key in [_zoomingScroll.blurView subviews]) {
+        if ([key  isKindOfClass:[tappableview class]])
             [key removeFromSuperview];
     }
 }
@@ -418,11 +447,77 @@ static float    bottomHeight = 37;
     [mv setRegion:region animated:YES];
     [mv selectAnnotation:mp animated:YES];
 }
-//- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
-//{
-//    _mapView.centerCoordinate =
-//    userLocation.location.coordinate;
-//}
 
+-(void)addNeighborhoods
+{
+    NSString *textPath = [[NSBundle mainBundle] pathForResource:@"neighborhoods" ofType:@"json"];
+    
+    NSError *error;
+    NSString *content = [NSString stringWithContentsOfFile:textPath encoding:NSUTF8StringEncoding error:&error];  //error checking omitted
+    NSData *jsonData = [content dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *maps = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
+    
+    NSString*maptype;
+    if (mapIndex == 0) {
+        maptype = @"city";
+    } else {
+        maptype = @"site";
+    }
+    neighborhoodData = maps[maptype];
+    
+    int i = 0;
+    for (NSDictionary *dict in neighborhoodData) {
+        
+        NSString *txt = dict[@"center"];
+        NSArray *xy = [txt componentsSeparatedByString:@","];
+        CGFloat viewX = [xy[0] floatValue];
+        CGFloat viewY = [xy[1] floatValue];
+        
+        _tview = [[tappableview alloc] initWithFrame:CGRectMake(viewX, viewY, 64, 64) title:dict[@"name"] tag:i++];
+        _tview.delegate = self;
+        [_zoomingScroll.blurView addSubview:_tview];
+    }
+}
+
+-(void)tappedView:(NSInteger)index
+{
+    if (_npview) {
+        [_npview removeFromSuperview];
+        _npview = nil;
+    }
+    
+    if (incomingIndex == index) {
+        NSLog(@"already selected %ld", index);
+        for (UIView *key in [_zoomingScroll.blurView subviews]) {
+            if ([key  isKindOfClass:[tappableview class]])
+                [(tappableview*)key setSelected:NO];
+        }
+    } else {
+        
+        for (UIView *key in [_zoomingScroll.blurView subviews]) {
+            if ([key  isKindOfClass:[tappableview class]])
+                [(tappableview*)key setSelected:YES];
+        }
+        
+        NSDictionary *selectedDict = neighborhoodData[index];
+        
+        if (! _npview) {
+            _npview = [[neighborhoodpanelview alloc] initWithFrame:CGRectMake(670, 440, 308, 224) title:selectedDict[@"name"] pop:selectedDict[@"Population"] inc:selectedDict[@"Avg HH Income"] age:selectedDict[@"Median Age"]];
+            [self.view addSubview:_npview];
+            incomingIndex = index;
+        }
+        
+        UITextView *txtview = [[UITextView alloc] initWithFrame:CGRectMake(15, 120, _npview.frame.size.width-30,  98)];
+        txtview.textContainerInset = UIEdgeInsetsZero;
+        txtview.textContainer.lineFragmentPadding = 0;
+        txtview.editable = NO;
+        txtview.selectable = NO;
+        txtview.font = [UIFont fontWithName:@"GoodPro" size:15];
+        [txtview setTextColor:[UIColor themeTextGray]];
+        txtview.text = selectedDict[@"desc"];
+        [_npview addSubview:txtview];
+        
+    }
+}
 
 @end
