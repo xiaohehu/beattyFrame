@@ -136,7 +136,7 @@ static float    bottomHeight = 37;
     [self.view addSubview:keyOverlay];
     
     key = [UIImage imageNamed:@"grfx_regionalMap_overlay_stats.png"];
-    keyOverlay = [[KeyOverlay alloc] initWithFrame:CGRectMake(600, 350, key.size.width, key.size.height)];
+    keyOverlay = [[KeyOverlay alloc] initWithFrame:CGRectMake(630, 390, key.size.width, key.size.height)];
     [keyOverlay setKeyImage:key];
     [self.view addSubview:keyOverlay];
     
