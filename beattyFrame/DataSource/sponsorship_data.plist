@@ -15,12 +15,22 @@
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>sponsorship_01.png</string>
+		<string>grfx-jll.jpg</string>
 		<key>title</key>
-		<string>Trends</string>
+		<string>History</string>
 		<key>webaddress</key>
 		<array>
-			<string>http://www.exeloncorp.com/Pages/home.aspx</string>
+			<string>http://jll.com</string>
+		</array>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>grfx-klnb.jpg</string>
+		<key>title</key>
+		<string>History</string>
+		<key>webaddress</key>
+		<array>
+			<string>http://klnb.com</string>
 		</array>
 	</dict>
 </array>

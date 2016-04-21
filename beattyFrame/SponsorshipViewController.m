@@ -10,7 +10,7 @@
 #import "UIColor+Extensions.h"
 #import "sponsorshipModelController.h"
 #import "sponsorDataViewController.h"
-static CGFloat  bottomMenuWidth = 460;
+static CGFloat  bottomMenuWidth = 350;
 static CGFloat  bottomMenuHeight = 37;
 @interface SponsorshipViewController () <UIPageViewControllerDelegate, UIGestureRecognizerDelegate>
 {
@@ -40,10 +40,10 @@ static CGFloat  bottomMenuHeight = 37;
     
     _modelController = [[sponsorshipModelController alloc] init];
     [self prepareData];
+    [self initPageView:pageIndex];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self initPageView:pageIndex];
     [self createBottomMenu];
     //[self createPageNumLabel];
     [self checkCurrentIndexPosition];
@@ -60,15 +60,18 @@ static CGFloat  bottomMenuHeight = 37;
     
     arr_menuTitles = @[
                        @"Beatty Development Group",
-                       @"Current & Future Tenants"
+                       @"JLL",
+                       @"KLNB",
                        ];
     arr_lastIndex = @[
                       @0,
-                      @1
+                      @1,
+                      @2
                       ];
     arr_firstIndex = @[
                        @0,
-                       @1
+                       @1,
+                       @2
                        ];
 }
 

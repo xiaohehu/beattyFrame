@@ -27,7 +27,7 @@
 #import "LibraryAPI.h"
 #import "embBuilding.h"
 #import "MasterplanParkingViewController.h"
-
+#import "CurrentFutureViewController.h"
 
 static float    sideMenuWidth = 235.0;
 static float    menuButtonSize = 50.0;
@@ -37,6 +37,7 @@ static float    menuButtonSize = 50.0;
 @interface ViewController () <MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>{
 
     SummaryViewController   *summary;
+    CurrentFutureViewController *cfvc;
     MasterplanParkingViewController*masterplanVC;
     IBOutlet UIView         *uiv_vcBigContainer;
     IBOutlet UIView         *uiv_sideMenuContainer;
@@ -67,7 +68,6 @@ static float    menuButtonSize = 50.0;
     __weak IBOutlet UIButton *uib_summary;
     __weak IBOutlet UIButton *uib_masterPlan;
     __weak IBOutlet UIButton *uib_parking;
-    __weak IBOutlet UIButton *uib_development;
     
     // Location & Access
     __weak IBOutlet UIButton *uib_location;
@@ -82,6 +82,7 @@ static float    menuButtonSize = 50.0;
     // Sponsorship
     __weak IBOutlet UIButton *uib_developGroup;
     __weak IBOutlet UIButton *uib_financial;
+    __weak IBOutlet UIButton *uib_retail;
     __weak IBOutlet UIButton *uib_currentFutureTrends;
     
     NSArray                  *arr_sideMenuBttuons;
@@ -248,7 +249,7 @@ static float    menuButtonSize = 50.0;
     // UIButton control open/close HELP
     uib_help = [UIButton buttonWithType:UIButtonTypeCustom];
     UIImage *help = [UIImage imageNamed:@"ui_tips.png"];
-    uib_help.frame = CGRectMake(self.view.bounds.size.width / 2.8, self.view.bounds.size.height / 2.20, help.size.height, help.size.width);
+    uib_help.frame = CGRectMake(20, self.view.bounds.size.height - 80, help.size.height, help.size.width);
     
     [uib_help setImage:[UIImage imageNamed:@"ui_tips.png"] forState:UIControlStateNormal];
     [uib_help addTarget:self action:@selector(loadHelp:) forControlEvents:UIControlEventTouchUpInside];
@@ -264,8 +265,6 @@ static float    menuButtonSize = 50.0;
                             uib_site360,
                             uib_summary,
                             uib_masterPlan,
-                            uib_parking,
-                            uib_development,
                             uib_location,
                             uib_history,
                             uib_trends,
@@ -273,7 +272,8 @@ static float    menuButtonSize = 50.0;
                             uib_factsFigures,
                             uib_ecoDistrict,
                             uib_developGroup,
-                            uib_currentFutureTrends
+                            uib_financial,
+                            uib_retail,
                             ];
 }
 
@@ -603,6 +603,13 @@ static float    menuButtonSize = 50.0;
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     summary = [storyboard instantiateViewControllerWithIdentifier:@"SummaryViewController"];
     [self presentViewController:summary animated:YES completion:nil];
+}
+
+- (IBAction)loadCurrent:(id)sender {
+    [self tapMenuButtonClose:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    cfvc = [storyboard instantiateViewControllerWithIdentifier:@"CurrentFutureViewController"];
+    [self presentViewController:cfvc animated:YES completion:nil];
 }
 
 /*

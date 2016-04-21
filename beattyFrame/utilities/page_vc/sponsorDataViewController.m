@@ -82,12 +82,14 @@
         NSLog(@"width: %0.1f", idealFrame.size.width);
         
         
-        webButton.frame = CGRectMake(174, 625 + (i * 30), idealFrame.size.width + webButtonImage.size.width + padding , idealFrame.size.height);
+        webButton.frame = CGRectMake(174 + (i * 200), 675 , idealFrame.size.width + webButtonImage.size.width + padding , idealFrame.size.height);
         
         [webButton addTarget:self action:@selector(createWebButtonWithAddress:) forControlEvents:UIControlEventTouchUpInside];
         
         [webButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-        [webButton setImage:[UIImage imageNamed:@"grfx_web_arrow.png"] forState:UIControlStateNormal];
+        [webButton.imageView setContentMode:UIViewContentModeScaleAspectFit];
+        
+        [webButton setImage:webButtonImage forState:UIControlStateNormal];
         
         [webButton setTitle:text forState:UIControlStateNormal];
         

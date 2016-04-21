@@ -1198,6 +1198,13 @@
 		88AA13FD1CC8236100B63F81 /* neighborhoods.json in Resources */ = {isa = PBXBuildFile; fileRef = 88AA13FC1CC8236100B63F81 /* neighborhoods.json */; };
 		88AA14001CC8381B00B63F81 /* Neighborhoodpanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA13FF1CC8381B00B63F81 /* Neighborhoodpanel.m */; };
 		88AA14031CC8383600B63F81 /* neighborhoodpanelview.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AA14021CC8383600B63F81 /* neighborhoodpanelview.m */; };
+		88C60B8E1CC952E70079B81F /* grfx-jll.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88C60B8C1CC952E70079B81F /* grfx-jll.jpg */; };
+		88C60B8F1CC952E70079B81F /* grfx-jll@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88C60B8D1CC952E70079B81F /* grfx-jll@2x.jpg */; };
+		88C60B921CC9573D0079B81F /* grfx-klnb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88C60B901CC9573D0079B81F /* grfx-klnb.jpg */; };
+		88C60B931CC9573D0079B81F /* grfx-klnb@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88C60B911CC9573D0079B81F /* grfx-klnb@2x.jpg */; };
+		88C60B961CC95F130079B81F /* CurrentFutureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C60B951CC95F130079B81F /* CurrentFutureViewController.m */; };
+		88C60B991CC960C80079B81F /* grfx-partners-tenants.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C60B971CC960C80079B81F /* grfx-partners-tenants.png */; };
+		88C60B9A1CC960C80079B81F /* grfx-partners-tenants@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C60B981CC960C80079B81F /* grfx-partners-tenants@2x.png */; };
 		88E0744F1B98CFB400E0982A /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074311B98CFB400E0982A /* ContainerViewController.m */; };
 		88E074501B98CFB400E0982A /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074341B98CFB400E0982A /* FLAnimatedImage.m */; };
 		88E074511B98CFB400E0982A /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074361B98CFB400E0982A /* FLAnimatedImageView.m */; };
@@ -2479,6 +2486,14 @@
 		88AA13FF1CC8381B00B63F81 /* Neighborhoodpanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Neighborhoodpanel.m; path = utilities/Neighborhoodpanel.m; sourceTree = "<group>"; };
 		88AA14011CC8383600B63F81 /* neighborhoodpanelview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neighborhoodpanelview.h; sourceTree = "<group>"; };
 		88AA14021CC8383600B63F81 /* neighborhoodpanelview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = neighborhoodpanelview.m; sourceTree = "<group>"; };
+		88C60B8C1CC952E70079B81F /* grfx-jll.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx-jll.jpg"; sourceTree = "<group>"; };
+		88C60B8D1CC952E70079B81F /* grfx-jll@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx-jll@2x.jpg"; sourceTree = "<group>"; };
+		88C60B901CC9573D0079B81F /* grfx-klnb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx-klnb.jpg"; sourceTree = "<group>"; };
+		88C60B911CC9573D0079B81F /* grfx-klnb@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "grfx-klnb@2x.jpg"; sourceTree = "<group>"; };
+		88C60B941CC95F130079B81F /* CurrentFutureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentFutureViewController.h; sourceTree = "<group>"; };
+		88C60B951CC95F130079B81F /* CurrentFutureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentFutureViewController.m; sourceTree = "<group>"; };
+		88C60B971CC960C80079B81F /* grfx-partners-tenants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-partners-tenants.png"; sourceTree = "<group>"; };
+		88C60B981CC960C80079B81F /* grfx-partners-tenants@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-partners-tenants@2x.png"; sourceTree = "<group>"; };
 		88E074301B98CFB400E0982A /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
 		88E074311B98CFB400E0982A /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		88E074331B98CFB400E0982A /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
@@ -3016,6 +3031,8 @@
 				8243874E1B6929A1003AC214 /* SupportingViewController.m */,
 				822822811B82290C004154E7 /* SponsorshipViewController.h */,
 				822822821B82290C004154E7 /* SponsorshipViewController.m */,
+				88C60B941CC95F130079B81F /* CurrentFutureViewController.h */,
+				88C60B951CC95F130079B81F /* CurrentFutureViewController.m */,
 				82CA341F1B6BE2960065E31E /* LocationViewController.h */,
 				82CA34201B6BE2960065E31E /* LocationViewController.m */,
 				82115DEB1B70036100A36684 /* BuildingViewController.h */,
@@ -3822,8 +3839,14 @@
 			children = (
 				880F23DC1BFFA34B001EA4E9 /* grfx-partners.png */,
 				880F23DD1BFFA34B001EA4E9 /* grfx-partners@2x.png */,
+				88C60B8C1CC952E70079B81F /* grfx-jll.jpg */,
+				88C60B8D1CC952E70079B81F /* grfx-jll@2x.jpg */,
+				88C60B901CC9573D0079B81F /* grfx-klnb.jpg */,
+				88C60B911CC9573D0079B81F /* grfx-klnb@2x.jpg */,
 				8861DDB11BFD55E6006A7D13 /* sponsorship_01.png */,
 				8861DDB21BFD55E6006A7D13 /* sponsorship_01@2x.png */,
+				88C60B971CC960C80079B81F /* grfx-partners-tenants.png */,
+				88C60B981CC960C80079B81F /* grfx-partners-tenants@2x.png */,
 			);
 			path = sponsorship;
 			sourceTree = "<group>";
@@ -5071,6 +5094,7 @@
 				8819D84B1BB8515400015AF5 /* H and S Formal - 66.jpg in Resources */,
 				883D77271C04DD65004B0136 /* phase_c_color_00039.png in Resources */,
 				889208491BFE2C48007C88FF /* 1305-DockSt.jpg in Resources */,
+				88C60B921CC9573D0079B81F /* grfx-klnb.jpg in Resources */,
 				8861DD331BFD55CC006A7D13 /* grfx_expand.png in Resources */,
 				880F24231BFFBD23001EA4E9 /* _parking_nav_mock.jpg.__180__xx__180__1447964706 in Resources */,
 				88E0745D1B98CFB400E0982A /* icon_0003.png in Resources */,
@@ -5264,6 +5288,7 @@
 				8228237D1B862A0A004154E7 /* 150512_BC_PresTemplate_ProgressR3_LR 2.pdf in Resources */,
 				822823D31B862A0A004154E7 /* thumb_dining_gallery.jpg in Resources */,
 				883D78251C04DE21004B0136 /* phase_b_color_00000.png in Resources */,
+				88C60B991CC960C80079B81F /* grfx-partners-tenants.png in Resources */,
 				880F24111BFFBD23001EA4E9 /* grfx-menu-usage@2x.png in Resources */,
 				824D2BE81B62D02100E5F5A5 /* share_street01.jpg.jpg in Resources */,
 				8861DE301BFD5844006A7D13 /* parcel-panel-central-plaza.png in Resources */,
@@ -5473,6 +5498,7 @@
 				8892EB1E1BC2082C00347146 /* phase_b_base_00069.jpg in Resources */,
 				880F241F1BFFBD23001EA4E9 /* master-plan-parcel-names@2x.png in Resources */,
 				8892EAE51BC2082C00347146 /* phase_b_base_00012.jpg in Resources */,
+				88C60B8E1CC952E70079B81F /* grfx-jll.jpg in Resources */,
 				8861DD301BFD55CC006A7D13 /* grfx_buildingWeb@2x.png in Resources */,
 				8892ED671BC2092B00347146 /* phase_d_base_00000.jpg in Resources */,
 				883D77291C04DD65004B0136 /* phase_c_color_00041.png in Resources */,
@@ -5498,6 +5524,7 @@
 				822823AE1B862A0A004154E7 /* store06.jpg in Resources */,
 				8228237B1B862A0A004154E7 /* View 8 - Plaza.jpg in Resources */,
 				8892EA811BC2082C00347146 /* phase_a_base_00056.jpg in Resources */,
+				88C60B9A1CC960C80079B81F /* grfx-partners-tenants@2x.png in Resources */,
 				8892EE141BC2092B00347146 /* phase_d_color_00028.png in Resources */,
 				887647FB1BA35247002D4183 /* Parcel_02-Excelon@2x.jpg in Resources */,
 				880F24161BFFBD23001EA4E9 /* master-plan-overlay-hotel.png in Resources */,
@@ -5697,9 +5724,11 @@
 				8892EB7B1BC2082C00347146 /* phase_c_base_00018.jpg in Resources */,
 				8892EDCF1BC2092B00347146 /* phase_d_base_00052.jpg in Resources */,
 				8892EA841BC2082C00347146 /* phase_a_base_00059.jpg in Resources */,
+				88C60B8F1CC952E70079B81F /* grfx-jll@2x.jpg in Resources */,
 				883D77C11C04DE14004B0136 /* phase_a_color_00046.png in Resources */,
 				880F240E1BFFBD23001EA4E9 /* grfx-master-plan-nav-bttn-selected.png in Resources */,
 				8892EA601BC2082C00347146 /* phase_a_base_00023.jpg in Resources */,
+				88C60B931CC9573D0079B81F /* grfx-klnb@2x.jpg in Resources */,
 				8892EDB11BC2092B00347146 /* phase_d_base_00037.jpg in Resources */,
 				8819D8411BB8515400015AF5 /* H and S Formal - 19.jpg in Resources */,
 				883D77A71C04DE14004B0136 /* phase_a_color_00020.png in Resources */,
@@ -5806,6 +5835,7 @@
 				881D140E1BF1373300693C62 /* ParkingViewController.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
 				889208531BFE32E0007C88FF /* CVCell.m in Sources */,
+				88C60B961CC95F130079B81F /* CurrentFutureViewController.m in Sources */,
 				883D78701C04E88E004B0136 /* UIImage+Resize.m in Sources */,
 				889208581BFE6659007C88FF /* CALayer+Additions.m in Sources */,
 				88AA13F81CC7FC8C00B63F81 /* tappableview.m in Sources */,
