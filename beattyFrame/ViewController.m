@@ -508,11 +508,14 @@ static float    menuButtonSize = 50.0;
  * Load Supporting page view controller
  * Accroding to selected button's tag load correct page
  */
-- (IBAction)loadSupporting:(id)sender {
-    
+- (IBAction)loadSupporting:(id)sender
+{
+    UIButton*selectedBtn = (UIButton*)sender;
+
     sectionIndex = 20;
     
     [self updateSectionTitle:@"Supporting Stories"];
+    [self updateSubTitle:selectedBtn.titleLabel.text];
     
     UIButton *tappedButton = sender;
     [self highlightTheButton:tappedButton withAnimation:YES];

@@ -96,40 +96,40 @@ static int      gridViewIndex = kEcoIndex;
 }
 
 # pragma mark - View Controller Data
-- (void)prepareData {
-    arr_menuButton = [[NSMutableArray alloc] init];
-    arr_menuTitles = [[NSMutableArray alloc] init];
-
-    NSArray *raw = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"supporting_data" ofType:@"plist"]] copy];
-
-    for (NSDictionary*rawDictEach in raw) {
-        [arr_menuTitles addObject:rawDictEach[@"title"]];
-    }
-    
-    NSLog(@"pageIndex %i",pageIndex);
-    
-//    arr_menuTitles = @[
-//                       @"History",
-//                       @"Trends",
-//                       @"Lifestyle & Culture",
-//                       @"Facts & Figures",
-//                       @"Eco-District"
+//- (void)prepareData {
+//    arr_menuButton = [[NSMutableArray alloc] init];
+//    arr_menuTitles = [[NSMutableArray alloc] init];
+//
+//    NSArray *raw = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"supporting_data" ofType:@"plist"]] copy];
+//
+//    for (NSDictionary*rawDictEach in raw) {
+//        [arr_menuTitles addObject:rawDictEach[@"title"]];
+//    }
+//    
+//    NSLog(@"pageIndex %i",pageIndex);
+//    
+////    arr_menuTitles = @[
+////                       @"History",
+////                       @"Trends",
+////                       @"Lifestyle & Culture",
+////                       @"Facts & Figures",
+////                       @"Eco-District"
+////                       ];
+//    arr_lastIndex = @[
+//                      @0,
+//                      @1,
+//                      @2,
+//                      @3,
+//                      @4
+//                      ];
+//    arr_firstIndex = @[
+//                       @0,
+//                       @1,
+//                       @2,
+//                       @3,
+//                       @4
 //                       ];
-    arr_lastIndex = @[
-                      @0,
-                      @1,
-                      @2,
-                      @3,
-                      @4
-                      ];
-    arr_firstIndex = @[
-                       @0,
-                       @1,
-                       @2,
-                       @3,
-                       @4
-                       ];
-}
+//}
 # pragma mark - UIPageView Controller
 /*
  * Init page view controller
@@ -205,7 +205,7 @@ static int      gridViewIndex = kEcoIndex;
         }
     }
     [self highlightButton:arr_menuButton[arrayIndex]];
-    [self updatePageNumLabelText];
+    //[self updatePageNumLabelText];
 }
 
 - (supportingModelController *)modelController
@@ -220,30 +220,30 @@ static int      gridViewIndex = kEcoIndex;
 
 #pragma mark - Bottom Menu
 
-- (void)createPageNumLabel {
-    uil_pageNum = [[UILabel alloc] initWithFrame:CGRectMake(25.0, 709, 100, 37)];
-    uil_pageNum.backgroundColor = [UIColor themeRed];
-    [uil_pageNum setText:@"of"];
-    [uil_pageNum setTextColor:[UIColor whiteColor]];
-    [uil_pageNum setTextAlignment:NSTextAlignmentCenter];
-    [uil_pageNum setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
-    [self.view addSubview: uil_pageNum];
-}
+//- (void)createPageNumLabel {
+//    uil_pageNum = [[UILabel alloc] initWithFrame:CGRectMake(25.0, 709, 100, 37)];
+//    uil_pageNum.backgroundColor = [UIColor themeRed];
+//    [uil_pageNum setText:@"of"];
+//    [uil_pageNum setTextColor:[UIColor whiteColor]];
+//    [uil_pageNum setTextAlignment:NSTextAlignmentCenter];
+//    [uil_pageNum setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
+//    [self.view addSubview: uil_pageNum];
+//}
 
-- (void)updatePageNumLabelText {
-    int arrayIndex = 0;
-    for (int i = 0; i < arr_lastIndex.count; i++) {
-        if (currentPageIndex <= [arr_lastIndex[i] integerValue]) {
-            arrayIndex = i;
-            break;
-        }
-    }
-    
-    int totalPage = [arr_lastIndex[arrayIndex] integerValue] - [arr_firstIndex[arrayIndex] integerValue] + 1;
-    int currPage = totalPage - ([arr_lastIndex[arrayIndex] integerValue] - currentPageIndex);
-    NSString *label_text = [NSString stringWithFormat:@"%i of %i", currPage, totalPage];
-    [uil_pageNum setText:label_text];
-}
+//- (void)updatePageNumLabelText {
+//    int arrayIndex = 0;
+//    for (int i = 0; i < arr_lastIndex.count; i++) {
+//        if (currentPageIndex <= [arr_lastIndex[i] integerValue]) {
+//            arrayIndex = i;
+//            break;
+//        }
+//    }
+//    
+//    int totalPage = [arr_lastIndex[arrayIndex] integerValue] - [arr_firstIndex[arrayIndex] integerValue] + 1;
+//    int currPage = totalPage - ([arr_lastIndex[arrayIndex] integerValue] - currentPageIndex);
+//    NSString *label_text = [NSString stringWithFormat:@"%i of %i", currPage, totalPage];
+//    [uil_pageNum setText:label_text];
+//}
 
 - (void)createBottomMenu {
     uiv_bottomMenu = [[UIView alloc] initWithFrame:CGRectMake((self.view.bounds.size.width - bottomMenuWidth)/2, self.view.bounds.size.height - 22 - bottomMenuHeight, bottomMenuWidth, bottomMenuHeight)];
@@ -296,7 +296,7 @@ static int      gridViewIndex = kEcoIndex;
     [UIView animateWithDuration:0.33 animations:^(void){
         uiv_bottomHighlightView.frame = tappedButton.frame;
     }];
-    [self updateMainMenuHighlightButton];
+    //[self updateMainMenuHighlightButton];
 }
 
 - (void)tapBottomButton:(id)sender {
@@ -304,7 +304,7 @@ static int      gridViewIndex = kEcoIndex;
     UIButton *tappedButton = sender;
     currentPageIndex = [arr_firstIndex[tappedButton.tag] integerValue];
     [self loadPage: currentPageIndex];
-    [self updatePageNumLabelText];
+//    [self updatePageNumLabelText];
 }
 
 - (void)updateMainMenuHighlightButton {

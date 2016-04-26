@@ -30,7 +30,7 @@
     if (self) {
         //_pages = pages;
         _pageData = [NSArray arrayWithArray:pages][0];
-        NSLog(@"_pages %@",_pageData);
+        //NSLog(@"_pages %@",_pageData);
     }
     return self;
 }
@@ -50,7 +50,7 @@
 - (supportingDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
 {
     
-    NSLog(@"%ld [self.pageData count]",[self.pageData count]);
+    //NSLog(@"%ld [self.pageData count]",[self.pageData count]);
 
     // Return the data view controller for the given index.
     if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
@@ -61,7 +61,7 @@
     // Create a new view controller and pass suitable data.
     supportingDataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"supportingDataViewController"];
     dataViewController.dataObject = self.pageData[index];
-    NSLog(@"self.pageData[index] %@",self.pageData[index]);
+    //NSLog(@"self.pageData[index] %@",self.pageData[index]);
 
     dataViewController.vcIndex = index;
     return dataViewController;
