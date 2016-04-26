@@ -336,6 +336,10 @@
 		880F242F1BFFBD23001EA4E9 /* parking-phase-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F24091BFFBD23001EA4E9 /* parking-phase-2@2x.png */; };
 		880F24301BFFBD23001EA4E9 /* parking-phase-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F240A1BFFBD23001EA4E9 /* parking-phase-3.png */; };
 		880F24311BFFBD23001EA4E9 /* parking-phase-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F240B1BFFBD23001EA4E9 /* parking-phase-3@2x.png */; };
+		880FDB901CCFFF4300B0110C /* parcel-panel-1305-dock-st.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB8C1CCFFF4300B0110C /* parcel-panel-1305-dock-st.png */; };
+		880FDB911CCFFF4300B0110C /* parcel-panel-1305-dock-st@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB8D1CCFFF4300B0110C /* parcel-panel-1305-dock-st@2x.png */; };
+		880FDB921CCFFF4300B0110C /* parcel-panel-1405-point.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB8E1CCFFF4300B0110C /* parcel-panel-1405-point.png */; };
+		880FDB931CCFFF4300B0110C /* parcel-panel-1405-point@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB8F1CCFFF4300B0110C /* parcel-panel-1405-point@2x.png */; };
 		8819D81D1BB8515400015AF5 /* Central_Plaza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CD1BB8515400015AF5 /* Central_Plaza.jpg */; };
 		8819D81E1BB8515400015AF5 /* Central_Plaza@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */; };
 		8819D81F1BB8515400015AF5 /* Harbor_Point_Park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */; };
@@ -1604,6 +1608,10 @@
 		880F24091BFFBD23001EA4E9 /* parking-phase-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parking-phase-2@2x.png"; sourceTree = "<group>"; };
 		880F240A1BFFBD23001EA4E9 /* parking-phase-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parking-phase-3.png"; sourceTree = "<group>"; };
 		880F240B1BFFBD23001EA4E9 /* parking-phase-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parking-phase-3@2x.png"; sourceTree = "<group>"; };
+		880FDB8C1CCFFF4300B0110C /* parcel-panel-1305-dock-st.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parcel-panel-1305-dock-st.png"; sourceTree = "<group>"; };
+		880FDB8D1CCFFF4300B0110C /* parcel-panel-1305-dock-st@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parcel-panel-1305-dock-st@2x.png"; sourceTree = "<group>"; };
+		880FDB8E1CCFFF4300B0110C /* parcel-panel-1405-point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parcel-panel-1405-point.png"; sourceTree = "<group>"; };
+		880FDB8F1CCFFF4300B0110C /* parcel-panel-1405-point@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parcel-panel-1405-point@2x.png"; sourceTree = "<group>"; };
 		8819D7CD1BB8515400015AF5 /* Central_Plaza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Central_Plaza.jpg; sourceTree = "<group>"; };
 		8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Central_Plaza@2x.jpg"; sourceTree = "<group>"; };
 		8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Harbor_Point_Park.jpg; sourceTree = "<group>"; };
@@ -2594,6 +2602,10 @@
 				887647F51BA35247002D4183 /* Parcel_03@2x.jpg */,
 				887647EE1BA35247002D4183 /* Parcel_04.jpg */,
 				887647EF1BA35247002D4183 /* Parcel_04@2x.jpg */,
+				880FDB8C1CCFFF4300B0110C /* parcel-panel-1305-dock-st.png */,
+				880FDB8D1CCFFF4300B0110C /* parcel-panel-1305-dock-st@2x.png */,
+				880FDB8E1CCFFF4300B0110C /* parcel-panel-1405-point.png */,
+				880FDB8F1CCFFF4300B0110C /* parcel-panel-1405-point@2x.png */,
 				8861DE1C1BFD5844006A7D13 /* parcel-panel-central-plaza.png */,
 				8861DE1D1BFD5844006A7D13 /* parcel-panel-central-plaza@2x.png */,
 				8861DE1E1BFD5844006A7D13 /* parcel-panel-dock-st.png */,
@@ -4634,6 +4646,7 @@
 				880F24211BFFBD23001EA4E9 /* master-plan-roads@2x.png in Resources */,
 				8819D8221BB8515400015AF5 /* Parcel_01@2x.jpg in Resources */,
 				883D78431C04DE21004B0136 /* phase_b_color_00030.png in Resources */,
+				880FDB911CCFFF4300B0110C /* parcel-panel-1305-dock-st@2x.png in Resources */,
 				8892EB131BC2082C00347146 /* phase_b_base_00058.jpg in Resources */,
 				8892EB1D1BC2082C00347146 /* phase_b_base_00068.jpg in Resources */,
 				8892EDFF1BC2092B00347146 /* phase_d_color_00007.png in Resources */,
@@ -5109,6 +5122,7 @@
 				8861DD401BFD55CC006A7D13 /* grfx_menuSettings@2x.jpg in Resources */,
 				880F24171BFFBD23001EA4E9 /* master-plan-overlay-hotel@2x.png in Resources */,
 				883D783D1C04DE21004B0136 /* phase_b_color_00024.png in Resources */,
+				880FDB931CCFFF4300B0110C /* parcel-panel-1405-point@2x.png in Resources */,
 				8892EB0B1BC2082C00347146 /* phase_b_base_00050.jpg in Resources */,
 				883D78631C04DE21004B0136 /* phase_b_color_00062.png in Resources */,
 				883D77321C04DD65004B0136 /* phase_c_color_00050.png in Resources */,
@@ -5251,6 +5265,7 @@
 				8819D8491BB8515400015AF5 /* H and S Formal - 48.jpg in Resources */,
 				822823AB1B862A0A004154E7 /* store03.jpg in Resources */,
 				8228238E1B862A0A004154E7 /* Leasing_Page_2.jpg in Resources */,
+				880FDB901CCFFF4300B0110C /* parcel-panel-1305-dock-st.png in Resources */,
 				883D77181C04DD65004B0136 /* phase_c_color_00024.png in Resources */,
 				8892EE101BC2092B00347146 /* phase_d_color_00024.png in Resources */,
 				824D2B2A1B6186FA00E5F5A5 /* Lobby Entry and Restuarant.jpg in Resources */,
@@ -5529,6 +5544,7 @@
 				887647FB1BA35247002D4183 /* Parcel_02-Excelon@2x.jpg in Resources */,
 				880F24161BFFBD23001EA4E9 /* master-plan-overlay-hotel.png in Resources */,
 				8892EA4A1BC2082C00347146 /* phase_a_base_00001.jpg in Resources */,
+				880FDB921CCFFF4300B0110C /* parcel-panel-1405-point.png in Resources */,
 				883D782F1C04DE21004B0136 /* phase_b_color_00010.png in Resources */,
 				883D773C1C04DD65004B0136 /* phase_c_color_00060.png in Resources */,
 				824D2BA71B62D02100E5F5A5 /* share_0005 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
