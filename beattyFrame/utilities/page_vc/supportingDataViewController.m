@@ -7,7 +7,7 @@
 //
 
 #import "supportingDataViewController.h"
-#import "ebZoomingScrollView.h"
+#import "ebUIViewWithInteractiveScrollView.h"
 #import "UIColor+Extensions.h"
 #import "animationView.h"
 #import "AnimationIndex.h"
@@ -21,8 +21,8 @@ static int gridViewIndex = kEcoIndex;
 
 }
 
-@property (nonatomic, strong) ebZoomingScrollView			*zoomingScroll;
-@property (nonatomic, strong) NSDictionary                  *dict;
+@property (nonatomic, strong) ebUIViewWithInteractiveScrollView			*zoomingScroll;
+@property (nonatomic, strong) NSDictionary                              *dict;
 
 
 @end
@@ -51,12 +51,13 @@ static int gridViewIndex = kEcoIndex;
     
         if (!_zoomingScroll) {
             CGRect theFrame = self.view.bounds;
-            _zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
+            //_zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
+            _zoomingScroll = [[ebUIViewWithInteractiveScrollView alloc] initWithFrame:theFrame image:[UIImage imageNamed:_dict[@"image"]] overlay:_dict[@"source"] overlayTwo:nil shouldZoom:YES];
             [self.view addSubview:_zoomingScroll];
             _zoomingScroll.backgroundColor = [UIColor clearColor];
             _zoomingScroll.delegate=self;
         }
-        [self loadInImge:_dict[@"image"]];
+        //[self loadInImge:_dict[@"image"]];
         
 //    }
 

@@ -6,6 +6,8 @@
 		<dict>
 			<key>image</key>
 			<string>supporting-stories-urban-renaissance.png</string>
+			<key>source</key>
+			<string>supporting-stories-getting-to-work.png</string>
 			<key>title</key>
 			<string>Urban Renaissance A</string>
 		</dict>

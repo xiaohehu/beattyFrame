@@ -340,6 +340,7 @@
 		880FDB911CCFFF4300B0110C /* parcel-panel-1305-dock-st@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB8D1CCFFF4300B0110C /* parcel-panel-1305-dock-st@2x.png */; };
 		880FDB921CCFFF4300B0110C /* parcel-panel-1405-point.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB8E1CCFFF4300B0110C /* parcel-panel-1405-point.png */; };
 		880FDB931CCFFF4300B0110C /* parcel-panel-1405-point@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB8F1CCFFF4300B0110C /* parcel-panel-1405-point@2x.png */; };
+		880FDB961CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 880FDB941CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.m */; };
 		8819D81D1BB8515400015AF5 /* Central_Plaza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CD1BB8515400015AF5 /* Central_Plaza.jpg */; };
 		8819D81E1BB8515400015AF5 /* Central_Plaza@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */; };
 		8819D81F1BB8515400015AF5 /* Harbor_Point_Park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */; };
@@ -1612,6 +1613,8 @@
 		880FDB8D1CCFFF4300B0110C /* parcel-panel-1305-dock-st@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parcel-panel-1305-dock-st@2x.png"; sourceTree = "<group>"; };
 		880FDB8E1CCFFF4300B0110C /* parcel-panel-1405-point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parcel-panel-1405-point.png"; sourceTree = "<group>"; };
 		880FDB8F1CCFFF4300B0110C /* parcel-panel-1405-point@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parcel-panel-1405-point@2x.png"; sourceTree = "<group>"; };
+		880FDB941CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ebUIViewWithInteractiveScrollView.m; path = utilities/ebUIViewWithInteractiveScrollView.m; sourceTree = "<group>"; };
+		880FDB951CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ebUIViewWithInteractiveScrollView.h; path = utilities/ebUIViewWithInteractiveScrollView.h; sourceTree = "<group>"; };
 		8819D7CD1BB8515400015AF5 /* Central_Plaza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Central_Plaza.jpg; sourceTree = "<group>"; };
 		8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Central_Plaza@2x.jpg"; sourceTree = "<group>"; };
 		8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Harbor_Point_Park.jpg; sourceTree = "<group>"; };
@@ -3116,6 +3119,8 @@
 		824D27A11B61467700E5F5A5 /* utiliites */ = {
 			isa = PBXGroup;
 			children = (
+				880FDB951CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.h */,
+				880FDB941CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.m */,
 				88AA13FE1CC8381B00B63F81 /* Neighborhoodpanel.h */,
 				88AA13FF1CC8381B00B63F81 /* Neighborhoodpanel.m */,
 				88AA14011CC8383600B63F81 /* neighborhoodpanelview.h */,
@@ -5857,6 +5862,7 @@
 				88AA13F81CC7FC8C00B63F81 /* tappableview.m in Sources */,
 				88E074561B98CFB400E0982A /* TutorialsListController.m in Sources */,
 				82A128B81B69164100564266 /* supportingDataViewController.m in Sources */,
+				880FDB961CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.m in Sources */,
 				8251FF9B1B7E7C9C0021C1BA /* xhWebViewController.m in Sources */,
 				88E074551B98CFB400E0982A /* TutorialPageViewController.m in Sources */,
 				88E0744F1B98CFB400E0982A /* ContainerViewController.m in Sources */,
