@@ -34,6 +34,7 @@ static int gridViewIndex = kEcoIndex;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     _dict = self.dataObject;
+    NSLog(@"%@ _dict",_dict);
     [self loadDataAndView];
 }
 

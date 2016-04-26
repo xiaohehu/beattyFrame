@@ -24,26 +24,45 @@
 
 @implementation supportingModelController
 
-- (id)init
+-(id)initWithArray:(NSArray*)pages
 {
     self = [super init];
     if (self) {
-		// Create the data model.
-		_pageData = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"supporting_data" ofType:@"plist"]] copy];
+        //_pages = pages;
+        _pageData = [NSArray arrayWithArray:pages][0];
+        NSLog(@"_pages %@",_pageData);
     }
     return self;
 }
 
+//- (id)init
+//{
+//    self = [super init];
+//    if (self) {
+//		// Create the data model.
+//		//_pageData = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"supporting_data" ofType:@"plist"]] copy];
+//        _pageData = [NSArray arrayWithArray:_pages];
+//        NSLog(@"_pageData %@",_pageData);
+//    }
+//    return self;
+//}
+
 - (supportingDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
-{   
+{
+    
+    NSLog(@"%ld [self.pageData count]",[self.pageData count]);
+
     // Return the data view controller for the given index.
     if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
         return nil;
     }
     
+    
     // Create a new view controller and pass suitable data.
     supportingDataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"supportingDataViewController"];
     dataViewController.dataObject = self.pageData[index];
+    NSLog(@"self.pageData[index] %@",self.pageData[index]);
+
     dataViewController.vcIndex = index;
     return dataViewController;
 }

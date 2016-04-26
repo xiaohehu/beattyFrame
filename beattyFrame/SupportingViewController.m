@@ -10,7 +10,6 @@
 #import "supportingModelController.h"
 #import "supportingDataViewController.h"
 #import "UIColor+Extensions.h"
-//#import "animationView.h"
 #import "xhPageViewController.h"
 #import "AnimationIndex.h"
 #import "gridEcoViewIndex.h"
@@ -30,6 +29,7 @@ static int      gridViewIndex = kEcoIndex;
     NSArray         *arr_lastIndex;
     NSArray         *arr_firstIndex;
     int             currentPageIndex;
+    NSArray         *raw;
 }
 
 @property (readonly, strong, nonatomic) supportingModelController		*modelController;
@@ -47,11 +47,36 @@ static int      gridViewIndex = kEcoIndex;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _modelController = [[supportingModelController alloc] init];
-    [self prepareData];
+    arr_menuButton = [[NSMutableArray alloc] init];
+    arr_menuTitles = [[NSMutableArray alloc] init];
+    
+    raw = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"supporting_data" ofType:@"plist"]] copy];
+    
+    _modelController.pages = raw[pageIndex];
+    
+    for (NSDictionary*rawDictEach in raw[pageIndex]) {
+        [arr_menuTitles addObject:rawDictEach[@"title"]];
+    }
+    
+    arr_lastIndex = @[
+                      @0,
+                      @1,
+                      @2,
+                      @3,
+                      @4
+                      ];
+    arr_firstIndex = @[
+                       @0,
+                       @1,
+                       @2,
+                       @3,
+                       @4
+                       ];
+    NSLog(@"viewDidLoad");
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"viewWillAppear");
     [self initPageView:pageIndex];
     [self createBottomMenu];
     //[self createPageNumLabel];
@@ -188,7 +213,7 @@ static int      gridViewIndex = kEcoIndex;
     // Return the model controller object, creating it if necessary.
     // In more complex implementations, the model controller may be passed to the view controller.
     if (!_modelController) {
-        _modelController = [[supportingModelController alloc] init];
+        _modelController = [[supportingModelController alloc] initWithArray:raw];
     }
     return _modelController;
 }
