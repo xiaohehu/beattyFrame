@@ -15,8 +15,6 @@
 		<string>gallery name</string>
 		<key>buildingStats</key>
 		<string>parcel-panel-parcel-1.png</string>
-		<key>buildingWeb</key>
-		<string>http://1305dockstreet.com</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -44,7 +42,9 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>parcel-panel-dock-st.png</string>
+		<string>parcel-panel-1305-dock-st.png</string>
+		<key>buildingWeb</key>
+		<string>http://www.1305DockStreet.com</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -59,8 +59,6 @@
 		<string>gallery name</string>
 		<key>buildingStats</key>
 		<string>parcel-panel-parcel-4.png</string>
-		<key>buildingWeb</key>
-		<string>http://1305dockstreet.com</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -74,7 +72,9 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>parcel-panel-point-st.png</string>
+		<string>parcel-panel-1405-point.png</string>
+		<key>buildingWeb</key>
+		<string>http://www.1405Point.com</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -89,8 +89,6 @@
 		<string>gallery name</string>
 		<key>buildingStats</key>
 		<string>parcel-panel-thames-street-wharf.png</string>
-		<key>buildingWeb</key>
-		<string>http://www.neoscape.com</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -119,8 +117,6 @@
 		<string>gallery name</string>
 		<key>buildingStats</key>
 		<string>parcel-panel-parcel-3.png</string>
-		<key>buildingWeb</key>
-		<string>http://1305dockstreet.com</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -149,8 +145,6 @@
 		<string>gallery name</string>
 		<key>buildingStats</key>
 		<string>parcel-panel-central-plaza.png</string>
-		<key>buildingWeb</key>
-		<string>http://1305dockstreet.com</string>
 	</dict>
 </array>
 </plist>
