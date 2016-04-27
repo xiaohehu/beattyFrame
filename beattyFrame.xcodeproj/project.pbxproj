@@ -341,6 +341,8 @@
 		880FDB921CCFFF4300B0110C /* parcel-panel-1405-point.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB8E1CCFFF4300B0110C /* parcel-panel-1405-point.png */; };
 		880FDB931CCFFF4300B0110C /* parcel-panel-1405-point@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB8F1CCFFF4300B0110C /* parcel-panel-1405-point@2x.png */; };
 		880FDB961CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 880FDB941CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.m */; };
+		880FDB991CD14A0800B0110C /* grfx-partners-jll.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB971CD14A0800B0110C /* grfx-partners-jll.png */; };
+		880FDB9A1CD14A0800B0110C /* grfx-partners-jll@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB981CD14A0800B0110C /* grfx-partners-jll@2x.png */; };
 		8819D81D1BB8515400015AF5 /* Central_Plaza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CD1BB8515400015AF5 /* Central_Plaza.jpg */; };
 		8819D81E1BB8515400015AF5 /* Central_Plaza@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */; };
 		8819D81F1BB8515400015AF5 /* Harbor_Point_Park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */; };
@@ -1615,6 +1617,8 @@
 		880FDB8F1CCFFF4300B0110C /* parcel-panel-1405-point@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parcel-panel-1405-point@2x.png"; sourceTree = "<group>"; };
 		880FDB941CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ebUIViewWithInteractiveScrollView.m; path = utilities/ebUIViewWithInteractiveScrollView.m; sourceTree = "<group>"; };
 		880FDB951CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ebUIViewWithInteractiveScrollView.h; path = utilities/ebUIViewWithInteractiveScrollView.h; sourceTree = "<group>"; };
+		880FDB971CD14A0800B0110C /* grfx-partners-jll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-partners-jll.png"; sourceTree = "<group>"; };
+		880FDB981CD14A0800B0110C /* grfx-partners-jll@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-partners-jll@2x.png"; sourceTree = "<group>"; };
 		8819D7CD1BB8515400015AF5 /* Central_Plaza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Central_Plaza.jpg; sourceTree = "<group>"; };
 		8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Central_Plaza@2x.jpg"; sourceTree = "<group>"; };
 		8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Harbor_Point_Park.jpg; sourceTree = "<group>"; };
@@ -3856,6 +3860,8 @@
 			children = (
 				880F23DC1BFFA34B001EA4E9 /* grfx-partners.png */,
 				880F23DD1BFFA34B001EA4E9 /* grfx-partners@2x.png */,
+				880FDB971CD14A0800B0110C /* grfx-partners-jll.png */,
+				880FDB981CD14A0800B0110C /* grfx-partners-jll@2x.png */,
 				88C60B8C1CC952E70079B81F /* grfx-jll.jpg */,
 				88C60B8D1CC952E70079B81F /* grfx-jll@2x.jpg */,
 				88C60B901CC9573D0079B81F /* grfx-klnb.jpg */,
@@ -4870,6 +4876,7 @@
 				8892EBA11BC2082C00347146 /* phase_c_base_00056.jpg in Resources */,
 				824D27311B5D7E6700E5F5A5 /* Main.storyboard in Resources */,
 				8892EDC51BC2092B00347146 /* phase_d_base_00047.jpg in Resources */,
+				880FDB9A1CD14A0800B0110C /* grfx-partners-jll@2x.png in Resources */,
 				824D2BED1B62D02100E5F5A5 /* share_View 11 - Mews.jpg.jpg in Resources */,
 				8892EDC71BC2092B00347146 /* phase_d_base_00048.jpg in Resources */,
 				824D2BC91B62D02100E5F5A5 /* share_inspi05.jpg.jpg in Resources */,
@@ -5710,6 +5717,7 @@
 				824D2BBD1B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View01_051215.jpg.jpg in Resources */,
 				8819D8291BB8515400015AF5 /* Point_Street_Apt.jpg in Resources */,
 				822823E01B862A0A004154E7 /* thumb_inspiration.jpg in Resources */,
+				880FDB991CD14A0800B0110C /* grfx-partners-jll.png in Resources */,
 				8861DE001BFD55E6006A7D13 /* grfx_siteMap_overlay_access_legend.png in Resources */,
 				880F24221BFFBD23001EA4E9 /* _parking_nav_mock.jpg.__128__xx__128__1447964706 in Resources */,
 				8861DE441BFD593C006A7D13 /* grfx_cityMap_overlay_legend_light_rail.png in Resources */,
