@@ -38,7 +38,7 @@
 				"Population":  "572",
 				"Avg HH Income":  "$97,285",
 				"Median Age":  "34.8",
-				"center": "537.5,269",
+				"center": "549,260.5",
                  },
              	{
 				"name": "Harbor East",
@@ -46,7 +46,7 @@
 				"Population":  "853",
 				"Avg HH Income":  "$116,268",
 				"Median Age":  "35",
-				"center": "495.5,295",
+				"center": "482.5,281.5",
 				},
 				{
 				"name": "Federal Hill",
@@ -108,11 +108,11 @@
     "city": [
     			{
 				"name": "Inner Harbor",
-                 "desc": "Also known simply as Downtown Baltimore or the CBD, it continues to be a focal point of business in the Baltimore area with over 100,000 employees working in any one of its many high-rise office buildings.  The CBD is also home to Harborplace, a festival marketplace, which is consistently ranked as one of the top tourist destinations in the state of Maryland.  Other popular destinations in the CBD are the National Aquarium, the Maryland Science Center and the U.S.S. Constellation.",
-                 "Population":  "6,076",
-                 "Avg HH Income":  "$55,475",
-                 "Median Age":  "28.9",
-                 "center": "32.5,86.5",
+				"desc": "Established in 1763, this charming historic waterfront community is home to over 161 buildings on the National Register, including the oldest standing residence in Baltimore City.  The neighborhood is known for its charming cobblestone streets, and dozens of unique retail boutiques, restaurants and pubs.  The publics square on Broadway hosts several events throughout the year including the Fells Point Fun Festival, which attracts nearly 500,000 people annually.  Fell’s Point is widely recognized as a major tourist destination in Baltimore.",
+				"Population":  "8,392",
+				"Avg HH Income":  "$86,495",
+				"Median Age":  "33.6",
+				"center": "32.5,86.5",
 				},
 				{
 				"name": "Fell’s Point",

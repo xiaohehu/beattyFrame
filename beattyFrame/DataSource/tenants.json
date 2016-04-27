@@ -1,0 +1,57 @@
+{
+    "office": [
+               {
+               "name": "Central Business District",
+               "desc": "Also known simply as Downtown Baltimore or the CBD, it continues to be a focal point of business in the Baltimore area with over 100,000 employees working in any one of its many high-rise office buildings.  The CBD is also home to Harborplace, a festival marketplace, which is consistently ranked as one of the top tourist destinations in the state of Maryland.  Other popular destinations in the CBD are the National Aquarium, the Maryland Science Center and the U.S.S. Constellation.",
+               "logo":  "parks.png",
+               },
+               {
+               "name": "Brewers Hill",
+               "desc": "This growing neighborhood gets its name from 2 former landmark breweries:  National Brewery and The Gunther Brewery, which are now home to mixed-use developments that include apartments, work space and businesses.  A sign high in the air, which features the iconic National Brewery mascot, Natty Boh, distinguishes the area.  Canton Crossing, a large lifestyle center anchored by Harris Teeter and Target, opened in 2013 and serves the established residents as well as the newer residents moving into newly built luxury apartment buildings.",
+               "logo":  "parks.png",
+               },
+               {
+               "name": "Canton",
+               "desc": "Originally the site of a plantation owned by merchant seaman John O’Donnell in the early 1800’s, Canton became later known as a waterfront industrial center and home to a diverse group of European immigrants from Poland, Germany and Ireland.  Today it is better known for the restaurants and pubs that line O’Donnell Square, The Waterfront Park and Fishing Pier, DuBurns Indoor Soccer Arena and two marinas.  Millennial nightlife seekers flock to “The Square” from nearby luxury apartments and renovated row homes, to enjoy the eclectic mix of drinking and dining options offered.",
+               "logo":  "parks.png",
+               },
+               {
+               "name": "Fell’s Point",
+               "desc": "Established in 1763, this charming historic waterfront community is home to over 161 buildings on the National Register, including the oldest standing residence in Baltimore City.  The neighborhood is known for its charming cobblestone streets, and dozens of unique retail boutiques, restaurants and pubs.  The publics square on Broadway hosts several events throughout the year including the Fells Point Fun Festival, which attracts nearly 500,000 people annually.  Fell’s Point is widely recognized as a major tourist destination in Baltimore.",
+               "logo":  "parks.png",
+               },
+               {
+               "name": "Little Italy",
+               "desc": "This area of Baltimore was founded in the mid 1800’s to serve the growing Italian population.  The warm and inviting neighborhood is still home to many people of Italian descent.  Along its row home lined streets you will find more than 20 of Maryland’s favorite Italian restaurants serving up traditional fare from fresh, hand-made pastas to desserts.",
+               "logo":  "parks.png",
+               }
+               ],
+    "retail": [
+               {
+               "name": "Harbor East",
+               "desc": "Harbor East is Baltimore’s newest waterfront community boasting five star restaurants, world-class hotels, chic local boutiques, better national retailers and a Whole Foods Market.  Known as an “eat, sleep, work, play” destination, inside any of the eight buildings that comprise this 12 square block area, you can also find apartments, condominiums, and Fortune 500 companies.   Harbor East holds events throughout the year including fashion shows, live music, and special dining events. ",
+               "logo":  "parks.png",
+               
+               },
+               {
+               "name": "Federal Hill",
+               "desc": "Named for the prominent hill that faces the Inner Harbor, Federal Hill is known for its stately, late 19th century brick homes.  The neighborhood is a federal historic district with strict regulations regarding rehabilitations, which has kept the original feel of the community.  A mix of young single professionals, and established families call this neighborhood home.   The area is also home to Cross Street Market, a historic 19th century marketplace where you can shop for produce, fresh meats, seafood, baked goods and fresh flowers.",
+               "logo":  "parks.png",
+               
+               },
+               {
+               "name": "Locust Point",
+               "desc": "Getting its name from the locust trees which once dotted this peninsula gateway to Fort McHenry, Locust Point is known as the home of Under Armour clothing which is housed in the rehabilitated Proctor and Gamble factory.  A new renaissance in this area is evidenced by a circa 1923 grain silo that has been converted into luxury waterfront homes known as Silo Point.  This has resulted in a mix of residents ranging from single professionals to multi-generational families.",
+               "logo":  "parks.png",
+               
+               }
+               ]
+}
+
+
+
+
+
+
+
+

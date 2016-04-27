@@ -346,6 +346,10 @@
 		880FDB9D1CD14FCE00B0110C /* brownfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB9B1CD14FCE00B0110C /* brownfield.png */; };
 		880FDB9E1CD14FCE00B0110C /* brownfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB9C1CD14FCE00B0110C /* brownfield@2x.png */; };
 		880FDBA01CD16D4100B0110C /* parks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 880FDB9F1CD16D4100B0110C /* parks.jpg */; };
+		880FDBA21CD1752C00B0110C /* grfx-partners-tenant-outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 880FDBA11CD1752C00B0110C /* grfx-partners-tenant-outline.png */; };
+		880FDBA41CD1768300B0110C /* tenants.json in Resources */ = {isa = PBXBuildFile; fileRef = 880FDBA31CD1768300B0110C /* tenants.json */; };
+		880FDBA81CD1839500B0110C /* CardCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 880FDBA61CD1839500B0110C /* CardCollectionCell.m */; };
+		880FDBA91CD1839500B0110C /* CardCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880FDBA71CD1839500B0110C /* CardCollectionCell.xib */; };
 		8819D81D1BB8515400015AF5 /* Central_Plaza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CD1BB8515400015AF5 /* Central_Plaza.jpg */; };
 		8819D81E1BB8515400015AF5 /* Central_Plaza@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */; };
 		8819D81F1BB8515400015AF5 /* Harbor_Point_Park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */; };
@@ -1625,6 +1629,11 @@
 		880FDB9B1CD14FCE00B0110C /* brownfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brownfield.png; path = src/brownfield.png; sourceTree = "<group>"; };
 		880FDB9C1CD14FCE00B0110C /* brownfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brownfield@2x.png"; path = "src/brownfield@2x.png"; sourceTree = "<group>"; };
 		880FDB9F1CD16D4100B0110C /* parks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = parks.jpg; path = src/parks.jpg; sourceTree = "<group>"; };
+		880FDBA11CD1752C00B0110C /* grfx-partners-tenant-outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grfx-partners-tenant-outline.png"; sourceTree = "<group>"; };
+		880FDBA31CD1768300B0110C /* tenants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tenants.json; sourceTree = "<group>"; };
+		880FDBA51CD1839500B0110C /* CardCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCollectionCell.h; path = utilities/CardCollectionCell.h; sourceTree = "<group>"; };
+		880FDBA61CD1839500B0110C /* CardCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCollectionCell.m; path = utilities/CardCollectionCell.m; sourceTree = "<group>"; };
+		880FDBA71CD1839500B0110C /* CardCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardCollectionCell.xib; path = utilities/CardCollectionCell.xib; sourceTree = "<group>"; };
 		8819D7CD1BB8515400015AF5 /* Central_Plaza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Central_Plaza.jpg; sourceTree = "<group>"; };
 		8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Central_Plaza@2x.jpg"; sourceTree = "<group>"; };
 		8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Harbor_Point_Park.jpg; sourceTree = "<group>"; };
@@ -3132,6 +3141,9 @@
 		824D27A11B61467700E5F5A5 /* utiliites */ = {
 			isa = PBXGroup;
 			children = (
+				880FDBA51CD1839500B0110C /* CardCollectionCell.h */,
+				880FDBA61CD1839500B0110C /* CardCollectionCell.m */,
+				880FDBA71CD1839500B0110C /* CardCollectionCell.xib */,
 				880FDB951CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.h */,
 				880FDB941CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.m */,
 				88AA13FE1CC8381B00B63F81 /* Neighborhoodpanel.h */,
@@ -3220,6 +3232,7 @@
 				822822B31B850B55004154E7 /* building_data.plist */,
 				824D2B551B62CF7F00E5F5A5 /* shareableData.plist */,
 				88AA13FC1CC8236100B63F81 /* neighborhoods.json */,
+				880FDBA31CD1768300B0110C /* tenants.json */,
 				824D2B1E1B61857E00E5F5A5 /* photoData.plist */,
 				824D2B141B6169AB00E5F5A5 /* ImageData.plist */,
 				824387501B69414D003AC214 /* supporting_data.plist */,
@@ -3871,6 +3884,7 @@
 				880F23DD1BFFA34B001EA4E9 /* grfx-partners@2x.png */,
 				880FDB971CD14A0800B0110C /* grfx-partners-jll.png */,
 				880FDB981CD14A0800B0110C /* grfx-partners-jll@2x.png */,
+				880FDBA11CD1752C00B0110C /* grfx-partners-tenant-outline.png */,
 				88C60B8C1CC952E70079B81F /* grfx-jll.jpg */,
 				88C60B8D1CC952E70079B81F /* grfx-jll@2x.jpg */,
 				88C60B901CC9573D0079B81F /* grfx-klnb.jpg */,
@@ -4789,6 +4803,7 @@
 				824D2BB21B62D02100E5F5A5 /* share_arch_06.jpg.jpg in Resources */,
 				8892ED9B1BC2092B00347146 /* phase_d_base_00026.jpg in Resources */,
 				8861DD491BFD55CC006A7D13 /* grfx_sharePDF.png in Resources */,
+				880FDBA91CD1839500B0110C /* CardCollectionCell.xib in Resources */,
 				822823C01B862A0A004154E7 /* Picture 031.jpg in Resources */,
 				8861DD291BFD55CC006A7D13 /* grfx_buildingNext.jpg in Resources */,
 				824D2BB81B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot04.jpg.jpg in Resources */,
@@ -5572,6 +5587,7 @@
 				824D2BA71B62D02100E5F5A5 /* share_0005 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				887647FF1BA35247002D4183 /* Point_Street_Apt@2x.jpg in Resources */,
 				883D78341C04DE21004B0136 /* phase_b_color_00015.png in Resources */,
+				880FDBA41CD1768300B0110C /* tenants.json in Resources */,
 				8892EB871BC2082C00347146 /* phase_c_base_00030.jpg in Resources */,
 				883D77201C04DD65004B0136 /* phase_c_color_00032.png in Resources */,
 				824D2B2F1B6186FA00E5F5A5 /* Victory Center_Highway View.jpg in Resources */,
@@ -5596,6 +5612,7 @@
 				8861DE841BFD6108006A7D13 /* siteplan_09.png in Resources */,
 				8892EDAF1BC2092B00347146 /* phase_d_base_00036.jpg in Resources */,
 				883D77011C04DD65004B0136 /* phase_c_color_00001.png in Resources */,
+				880FDBA21CD1752C00B0110C /* grfx-partners-tenant-outline.png in Resources */,
 				883D77231C04DD65004B0136 /* phase_c_color_00035.png in Resources */,
 				883D78411C04DE21004B0136 /* phase_b_color_00028.png in Resources */,
 				8819D83F1BB8515400015AF5 /* H and S Formal - 1.jpg in Resources */,
@@ -5883,6 +5900,7 @@
 				88E074561B98CFB400E0982A /* TutorialsListController.m in Sources */,
 				82A128B81B69164100564266 /* supportingDataViewController.m in Sources */,
 				880FDB961CD01E3000B0110C /* ebUIViewWithInteractiveScrollView.m in Sources */,
+				880FDBA81CD1839500B0110C /* CardCollectionCell.m in Sources */,
 				8251FF9B1B7E7C9C0021C1BA /* xhWebViewController.m in Sources */,
 				88E074551B98CFB400E0982A /* TutorialPageViewController.m in Sources */,
 				88E0744F1B98CFB400E0982A /* ContainerViewController.m in Sources */,
