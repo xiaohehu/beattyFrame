@@ -8,22 +8,12 @@
 
 #import "supportingDataViewController.h"
 #import "ebUIViewWithInteractiveScrollView.h"
-#import "UIColor+Extensions.h"
-#import "animationView.h"
-#import "AnimationIndex.h"
-#import "gridEcoViewIndex.h"
-#import "gridEcoView.h"
+#import "xhWebViewController.h"
 
-static int animationViewIndex = kAnimationIndex;
-static int gridViewIndex = kEcoIndex;
-
-@interface supportingDataViewController () {
-
-}
+@interface supportingDataViewController ()
 
 @property (nonatomic, strong) ebUIViewWithInteractiveScrollView			*zoomingScroll;
 @property (nonatomic, strong) NSDictionary                              *dict;
-
 
 @end
 
@@ -32,35 +22,24 @@ static int gridViewIndex = kEcoIndex;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     _dict = self.dataObject;
-    NSLog(@"%@ _dict",_dict);
     [self loadDataAndView];
 }
 
 #pragma mark - LAYOUT FLOOR PLAN DATA
 -(void)loadDataAndView
 {
-//    if (vcIndex == animationViewIndex) { // Load the animated grids view
-//        animationView *animation = [[animationView alloc] initWithFrame:self.view.bounds];
-//        [self.view addSubview: animation];
-//    } else if (vcIndex == gridViewIndex) { // Load the animated grids view
-//        gridEcoView *animation = [[gridEcoView alloc] initWithFrame:self.view.bounds];
-//        [self.view addSubview: animation];
-//    } else {
+    if (!_zoomingScroll) {
+        CGRect theFrame = self.view.bounds;
+        _zoomingScroll = [[ebUIViewWithInteractiveScrollView alloc] initWithFrame:theFrame image:[UIImage imageNamed:_dict[@"image"]] overlay:_dict[@"source"] overlayTwo:nil shouldZoom:YES];
+        [self.view addSubview:_zoomingScroll];
+        _zoomingScroll.backgroundColor = [UIColor clearColor];
+        _zoomingScroll.delegate=self;
+    }
     
-        if (!_zoomingScroll) {
-            CGRect theFrame = self.view.bounds;
-            //_zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
-            _zoomingScroll = [[ebUIViewWithInteractiveScrollView alloc] initWithFrame:theFrame image:[UIImage imageNamed:_dict[@"image"]] overlay:_dict[@"source"] overlayTwo:nil shouldZoom:YES];
-            [self.view addSubview:_zoomingScroll];
-            _zoomingScroll.backgroundColor = [UIColor clearColor];
-            _zoomingScroll.delegate=self;
-        }
-        //[self loadInImge:_dict[@"image"]];
-        
-//    }
-
+    if ([_dict objectForKey:@"buildingWeb"]) {
+        [self createWebButton];
+    }
 }
 
 -(void)loadInImge:(NSString *)imageName
@@ -75,26 +54,42 @@ static int gridViewIndex = kEcoIndex;
     }];
 }
 
+-(void)createWebButton
+{
+    NSArray*arr = [_dict objectForKey:@"buildingWeb"];
+    
+    for (int i = 0; i < arr.count; i++)
+    {
+        UIButton *webButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        NSString *text = arr[i];
+        
+        webButton.frame = CGRectMake(485 , 500 + (i * 30) , 180 , 40);
+        
+        [webButton addTarget:self action:@selector(createWebButtonWithAddress:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [webButton setTitle:text forState:UIControlStateNormal];
+        [webButton setTitleColor:[UIColor clearColor] forState:UIControlStateNormal];
+
+        webButton.showsTouchWhenHighlighted = YES;
+        webButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        [_zoomingScroll.blurView addSubview:webButton];
+    }
+}
+
+-(void)createWebButtonWithAddress:(UIButton*)address
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    xhWebViewController *vc = (xhWebViewController*)[mainStoryboard instantiateViewControllerWithIdentifier:@"xhWebViewController"];
+    [vc socialButton:address.titleLabel.text];
+    vc.modalPresentationStyle = UIModalPresentationCurrentContext;
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 #pragma mark - BOILERPLATE
 - (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-
-}
+{   [super viewWillAppear:animated];   }
 
 - (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+{   [super didReceiveMemoryWarning];   }
 
 @end

@@ -57,7 +57,6 @@ static int      gridViewIndex = kEcoIndex;
     raw = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"supporting_data" ofType:@"plist"]] copy];
     
     NSLog(@"data for pages %@", raw[pageIndex]);
-
     
     _modelController.pages = raw[pageIndex];
     
@@ -73,14 +72,15 @@ static int      gridViewIndex = kEcoIndex;
 - (void)viewWillAppear:(BOOL)animated {
     NSLog(@"viewWillAppear");
     [self initPageView:0];
-    [self createBottomMenu];
-    //[self createPageNumLabel];
-    //[self checkCurrentIndexPosition];
-    [self highlightButton:arr_menuButton[0]];
-
 }
 
-- (void)viewDidAppear:(BOOL)animated {
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if(arr_lastIndex.count != 1){
+        [self createBottomMenu];
+        [self highlightButton:arr_menuButton[0]];
+    }
     
 //    for (UIGestureRecognizer *gesture in self.view.gestureRecognizers) {
 //        gesture.delegate = self;

@@ -39,6 +39,7 @@
 			[_scrollView setBackgroundColor:[UIColor clearColor]];
 			[self addSubview:_scrollView];
 			_blurView = [[UIImageView alloc] initWithFrame:self.bounds];
+            [_blurView setUserInteractionEnabled:YES];
 			[_blurView setContentMode:UIViewContentModeScaleAspectFit];
 			_blurView.image = thisImage;
 			_firstImg = _blurView.image;
