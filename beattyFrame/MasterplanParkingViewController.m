@@ -46,18 +46,26 @@
     [self createHeaderViewWithText:@"Overlays" atFrame:CGRectMake(15, 220, 195, 30)];
     //[self createHeaderViewWithText:@"Parking" atFrame:CGRectMake(15, 410, 150, 40)];
     
-    UIButton *uib_sectionTitle = [UIButton buttonWithType:UIButtonTypeCustom];
-    uib_sectionTitle.backgroundColor = [UIColor themeRed];
-    [uib_sectionTitle setTitle:@"Masterplan" forState:UIControlStateNormal];
-    [uib_sectionTitle setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [uib_sectionTitle.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:25.0]];
-    [uib_sectionTitle sizeToFit];
-    uib_sectionTitle.userInteractionEnabled = NO;
-    CGRect frame = uib_sectionTitle.frame;
-    frame.size.width += 38;
-    uib_sectionTitle.frame = frame;
-    [self.view addSubview:uib_sectionTitle];
-
+    if ([self.parentViewController isKindOfClass:[UINavigationController class]]) {
+        NSLog(@"from summary");
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+        self.navigationItem.title = @"Master Plan Detail";
+        [overlayMenu setSelectedButton:_index];
+    } else {
+        UIButton *uib_sectionTitle = [UIButton buttonWithType:UIButtonTypeCustom];
+        uib_sectionTitle.backgroundColor = [UIColor themeRed];
+        [uib_sectionTitle setTitle:@"Masterplan" forState:UIControlStateNormal];
+        [uib_sectionTitle setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [uib_sectionTitle.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:25.0]];
+        [uib_sectionTitle sizeToFit];
+        uib_sectionTitle.userInteractionEnabled = NO;
+        CGRect frame = uib_sectionTitle.frame;
+        frame.size.width += 38;
+        uib_sectionTitle.frame = frame;
+        [self.view addSubview:uib_sectionTitle];
+    }
+    
+    NSLog(@"index %i",_index);
 }
 
 -(void)createHeaderViewWithText:(NSString*)text atFrame:(CGRect)frame
@@ -130,13 +138,6 @@
         
     } else {
         arr_OverlayParkData = menuData[d[index]];
-        //NSMutableArray *overlayAssets = [[NSMutableArray alloc] init];
-//        for ( NSDictionary *menuAsset in arr_OverlayParkData )
-//        {
-//            [overlayAssets addObject:menuAsset[@"name"]];
-//            //[overlayAssets addObject:menuAsset[@"subtitle"]];
-//        }
-
         overlayMenu = [[ButtonStack alloc] initWithFrame:CGRectZero];
         overlayMenu.tag = index;
         overlayMenu.delegate = self;
@@ -207,29 +208,6 @@
         } else {
             [self clearParkingOverlayData];
         }
-
-    } else if (buttonStack.tag == 0) {
-//        NSLog(@"other tag %li", (long)buttonStack.tag);
-//        imgNm = [arr_OverlayData[index] objectForKey:@"overlay"];
-//
-//        if ( ! overlayAsset) {
-//            overlayAsset = [[UIImageView alloc] initWithFrame:_zoomingScroll.frame];
-//            [_zoomingScroll.blurView insertSubview:overlayAsset belowSubview:parcelNames];
-//            overlayMenuIndex = -1;
-//        }
-//        if (index != overlayMenuIndex) {
-//            
-//            UIImage * toImage = [UIImage imageNamed:imgNm];
-//            [UIView transitionWithView:self.view
-//                              duration:0.23f
-//                               options:UIViewAnimationOptionTransitionCrossDissolve
-//                            animations:^{
-//                                overlayAsset.image = toImage;
-//                            } completion:NULL];
-//            overlayMenuIndex = index;
-//        } else {
-//            [self clearOverlayData];
-//        }
     }
 }
 

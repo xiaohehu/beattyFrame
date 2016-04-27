@@ -1102,6 +1102,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grfx_summary.png" translatesAutoresizingMaskIntoConstraints="NO" id="rah-xg-nQu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                </variation>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF4-Ui-663" userLabel="Close">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="grfx_closeBtn.png">
@@ -1115,25 +1121,147 @@
                                     <action selector="tapCloseButton:" destination="CeG-kc-ZJW" eventType="touchUpInside" id="pr5-Ge-lG5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCP-bb-xY0">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="240" y="411" width="131" height="131"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loadMasterPlan:" destination="hXN-dx-tnY" eventType="touchUpInside" id="4Xj-Gd-3hL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3V-RD-u7U">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="379" y="411" width="131" height="131"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loadMasterPlan:" destination="hXN-dx-tnY" eventType="touchUpInside" id="TrJ-gd-VO9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCk-27-1rq">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="518" y="411" width="131" height="131"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loadPark:" destination="hXN-dx-tnY" eventType="touchUpInside" id="nkg-0D-NHH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93n-hH-OiU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="657" y="411" width="131" height="131"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loadMasterPlan:" destination="hXN-dx-tnY" eventType="touchUpInside" id="Ihi-zD-JI3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeQ-ff-UX3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="240" y="550" width="131" height="131"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loadMasterPlan:" destination="hXN-dx-tnY" eventType="touchUpInside" id="HCB-uV-euV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kko-j4-4cl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="379" y="550" width="131" height="131"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loadMasterPlan:" destination="hXN-dx-tnY" eventType="touchUpInside" id="Ban-gF-qFW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4S-XN-aHg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="518" y="550" width="131" height="131"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loadMasterPlan:" destination="hXN-dx-tnY" eventType="touchUpInside" id="gWv-xU-94S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oS-g2-znb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="657" y="550" width="131" height="131"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejf-ID-1kb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="748" y="641" width="40" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loadBrownfield:" destination="hXN-dx-tnY" eventType="touchUpInside" id="zam-zF-4K3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="rah-xg-nQu"/>
                                 <exclude reference="xF4-Ui-663"/>
+                                <exclude reference="ZCP-bb-xY0"/>
+                                <exclude reference="V3V-RD-u7U"/>
+                                <exclude reference="HCk-27-1rq"/>
+                                <exclude reference="93n-hH-OiU"/>
+                                <exclude reference="TeQ-ff-UX3"/>
+                                <exclude reference="kko-j4-4cl"/>
+                                <exclude reference="W4S-XN-aHg"/>
+                                <exclude reference="8oS-g2-znb"/>
+                                <exclude reference="Ejf-ID-1kb"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
+                                <include reference="rah-xg-nQu"/>
                                 <include reference="xF4-Ui-663"/>
+                                <include reference="ZCP-bb-xY0"/>
+                                <include reference="V3V-RD-u7U"/>
+                                <include reference="HCk-27-1rq"/>
+                                <include reference="93n-hH-OiU"/>
+                                <include reference="TeQ-ff-UX3"/>
+                                <include reference="kko-j4-4cl"/>
+                                <include reference="W4S-XN-aHg"/>
+                                <include reference="8oS-g2-znb"/>
+                                <include reference="Ejf-ID-1kb"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="DA9-hJ-0pu"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <segue destination="YfE-oq-Ylf" kind="push" identifier="MasterplanParkingViewController" id="yOy-BZ-tWh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1O-8v-s0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1891.5" y="-764.25"/>
+            <point key="canvasLocation" x="3642" y="-776.25"/>
+        </scene>
+        <!--Masterplan Parking View Controller-->
+        <scene sceneID="KeG-cn-QR6">
+            <objects>
+                <viewController storyboardIdentifier="MasterplanParking" id="YfE-oq-Ylf" customClass="MasterplanParkingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5FW-KY-gyy"/>
+                        <viewControllerLayoutGuide type="bottom" id="hQt-Jm-uIa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EG5-7R-V38">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k0W-wY-tix"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fb0-Wm-ayG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4443.75" y="-776.25"/>
         </scene>
         <!--Sponsor Data View Controller-->
         <scene sceneID="YfS-Hv-lCf">
@@ -1248,6 +1376,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EuN-yr-i7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lq7-Ba-L7B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="maU-sa-8wa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gJm-yG-n5O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hXN-dx-tnY" kind="relationship" relationship="rootViewController" id="m55-bS-ZQf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qFP-wX-xmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2883" y="-776.25"/>
+        </scene>
     </scenes>
     <resources>
         <image name="grfx-icon-gallery.png" width="21" height="21"/>
@@ -1257,6 +1403,7 @@
         <image name="grfx_menuWebcam.jpg" width="18" height="11"/>
         <image name="grfx_shareEmail.png" width="29" height="34"/>
         <image name="grfx_sharePDF.png" width="23" height="39"/>
+        <image name="grfx_summary.png" width="1024" height="768"/>
         <image name="share_but_email_roll.png" width="149" height="762"/>
         <image name="share_but_pdf_roll.png" width="33" height="33"/>
     </resources>

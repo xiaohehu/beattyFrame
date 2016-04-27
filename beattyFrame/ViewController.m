@@ -596,16 +596,19 @@ static float    menuButtonSize = 50.0;
 
 - (IBAction)loadMasterPlan:(id)sender {
     [self tapMenuButtonClose:nil];
-    masterplanVC = [[MasterplanParkingViewController alloc] init];
-    masterplanVC.view.frame = self.view.bounds;
-    [self presentViewController:masterplanVC animated:YES completion:^(void){  }];
+    //masterplanVC = [[MasterplanParkingViewController alloc] init];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    masterplanVC = [storyboard instantiateViewControllerWithIdentifier:@"MasterplanParking"];
+    [self presentViewController:masterplanVC animated:YES completion:nil];
 }
 
 - (IBAction)loadSummary:(id)sender {
     [self tapMenuButtonClose:nil];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     summary = [storyboard instantiateViewControllerWithIdentifier:@"SummaryViewController"];
-    [self presentViewController:summary animated:YES completion:nil];
+    UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:summary];
+    navC.navigationBarHidden = YES;
+    [self presentViewController:navC animated:YES completion:nil];
 }
 
 - (IBAction)loadCurrent:(id)sender {

@@ -87,12 +87,15 @@
 		//h.frame = CGRectMake([self superview].frame.size.width-20-33, 20, 33, 33);
 		h.frame = CGRectMake(_uiv_windowComparisonContainer.frame.size.width-50, 8, 46, 30);
 		[h setImage:[UIImage imageNamed:@"grfx_closeBtn.png"] forState:UIControlStateNormal];
-		[h setTitle:@"CLOSE" forState:UIControlStateNormal];
+		//[h setTitle:@"CLOSE" forState:UIControlStateNormal];
 		[h setTitleColor:[UIColor colorWithRed:210.0/255.0 green:70.0/255.0 blue:39.0/255.0 alpha:1.0] forState:UIControlStateNormal];
 		[h.titleLabel setFont:[UIFont fontWithName:@"DINPro-CondBlack" size:18]];		//set their selector using add selector
 		[h addTarget:self action:@selector(removeRenderScroll:) forControlEvents:UIControlEventTouchUpInside];
 		[_uiv_windowComparisonContainer insertSubview:h aboveSubview:self];
-		//[self addSubview:h];
+        h.alpha = 0.0;
+        [UIView animateWithDuration:0.33 delay:0.75 options:0 animations:^{
+            h.alpha = 1.0;
+        } completion:^(BOOL finished){ }];
     }
 }
 

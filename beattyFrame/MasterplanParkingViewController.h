@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MasterplanParkingViewController : UIViewController
-
+@property (nonatomic) int index;
 @end

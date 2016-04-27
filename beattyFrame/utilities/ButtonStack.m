@@ -146,6 +146,13 @@
 
 }
 
+-(void)setSelectedButton:(int)index
+{
+    NSLog(@"setSelectedButton %i",index);
+    UIButton *btn = btns[index];
+    [btn sendActionsForControlEvents:UIControlEventTouchUpInside];
+}
+
 -(void)setCenter
 {
     [self setCenter:CGPointMake(self.center.x, 768/2)];

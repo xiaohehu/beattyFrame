@@ -8,16 +8,27 @@
 
 #import "SummaryViewController.h"
 #import "UIColor+Extensions.h"
+#import "ebZoomingScrollView.h"
+#import "MasterplanParkingViewController.h"
+
+@interface SummaryViewController () <ebZoomingScrollViewDelegate>
+@property (nonatomic, strong) ebZoomingScrollView *zoomingScroll;
+@property (nonatomic, strong) MasterplanParkingViewController *mpvc;
+@end
 
 @implementation SummaryViewController
 
 #pragma mark - View controller life-cycle
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.7];
-    [self createSummaryContent];
-    
     UIButton *uib_sectionTitle = [UIButton buttonWithType:UIButtonTypeCustom];
     uib_sectionTitle.backgroundColor = [UIColor themeRed];
     [uib_sectionTitle setTitle:@"Summary" forState:UIControlStateNormal];
@@ -31,18 +42,108 @@
     [self.view addSubview:uib_sectionTitle];
 }
 
-- (void)createSummaryContent {
-    UIImageView *uiiv_Summary = [UIImageView new];
-    UIImage *summary = [UIImage imageNamed:@"grfx_summary.png"];
-    [uiiv_Summary setImage: summary];
-    uiiv_Summary.frame = self.view.bounds;
-    [self.view insertSubview: uiiv_Summary atIndex:0];
-}
-
 - (IBAction)tapCloseButton:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^(void){
     }];
 }
+
+-(IBAction)loadMasterPlan:(id)sender
+{
+    [self performSegueWithIdentifier:@"MasterplanParkingViewController" sender:sender];
+    
+    //    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    MasterplanParkingViewController* controller = [storyboard instantiateViewControllerWithIdentifier:@"MasterplanParkingViewController"];
+//    [self.navigationController pushViewController:controller animated:YES];
+//
+    //UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+   // MasterplanParkingViewController *vc = (MasterplanParkingViewController*)[mainStoryboard instantiateViewControllerWithIdentifier:@"MasterplanParkingViewController"];
+    
+//    UINavigationController *navC = [[UINavigationController alloc] init];
+//    [navC addChildViewController:vc];
+//    [navC pushViewController:vc animated:YES];
+//    NSLog(@"loadMasterPlan");
+//    MasterplanParkingViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MasterplanParking"];
+//    NSLog(@"Unable to write PDF to %@", vc);
+//
+//    UINavigationController * navigation = [[UINavigationController alloc] init];
+//    [navigation pushViewController:vc animated:YES];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+//    if ([[segue destinationViewController] isEqualToString:@"MasterplanParkingViewController"])
+//    {
+//        MasterplanParkingViewController *vc = [segue destinationViewController];
+//        vc.index = 33;
+//    }
+    
+    if([[segue identifier] isEqualToString:@"MasterplanParkingViewController"]){
+        MasterplanParkingViewController *vc = [segue destinationViewController];
+        vc.index = [sender tag];
+    }
+}
+
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+////    if ([[segue identifier] isEqualToString:@"MasterplanParkingViewController"])
+////    {
+////        MasterplanParkingViewController *translationQuizAssociateVC = [segue destinationViewController];
+////    }
+//////    if([segue.identifier isEqualToString:@"MasterplanParkingViewController"])
+//////    {
+//////        MasterplanParkingViewController *addCustomerViewController = segue.destinationViewController;
+//////        //addCustomerViewController.delegate = self;
+//////    }
+//}
+
+-(IBAction)loadBrownfield:(id)sender
+{
+    if (!_zoomingScroll) {
+        CGRect theFrame = self.view.bounds;
+        _zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
+        _zoomingScroll.closeBtn = YES;
+        [self.view addSubview:_zoomingScroll];
+        _zoomingScroll.backgroundColor = [UIColor clearColor];
+        _zoomingScroll.delegate=self;
+        [self loadInImge:@"brownfield.png"];
+    }
+}
+
+-(IBAction)loadPark:(id)sender
+{
+    if (!_zoomingScroll) {
+        CGRect theFrame = self.view.bounds;
+        _zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
+        _zoomingScroll.closeBtn = YES;
+        [self.view addSubview:_zoomingScroll];
+        _zoomingScroll.backgroundColor = [UIColor clearColor];
+        _zoomingScroll.delegate=self;
+        [self loadInImge:@"parks.jpg"];
+    }
+}
+
+
+
+-(void)loadInImge:(NSString *)imageName
+{
+    [UIView animateWithDuration:0.0 animations:^{
+        _zoomingScroll.blurView.alpha = 0.0;
+        _zoomingScroll.transform = CGAffineTransformMakeScale(0.8, 0.8);
+    } completion:^(BOOL finished){
+        _zoomingScroll.blurView.image = [UIImage imageNamed:imageName];
+        [UIView animateWithDuration:0.3 animations:^{
+            _zoomingScroll.blurView.alpha = 1.0;
+            _zoomingScroll.transform = CGAffineTransformIdentity;
+        }];
+    }];
+}
+
+
+-(void)didRemove:(ebZoomingScrollView *)customClass
+{
+    _zoomingScroll=nil;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
