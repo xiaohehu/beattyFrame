@@ -38,7 +38,7 @@
 				"Population":  "572",
 				"Avg HH Income":  "$97,285",
 				"Median Age":  "34.8",
-				"center": "549,260.5",
+				"center": "537.5,269",
                  },
              	{
 				"name": "Harbor East",
@@ -46,7 +46,7 @@
 				"Population":  "853",
 				"Avg HH Income":  "$116,268",
 				"Median Age":  "35",
-				"center": "482.5,281.5",
+				"center": "495.5,295",
 				},
 				{
 				"name": "Federal Hill",
@@ -112,7 +112,7 @@
                  "Population":  "6,076",
                  "Avg HH Income":  "$55,475",
                  "Median Age":  "28.9",
-                 "center": "415.5,225",
+                 "center": "32.5,86.5",
 				},
 				{
 				"name": "Fell’s Point",
