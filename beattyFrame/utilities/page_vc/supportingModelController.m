@@ -29,8 +29,8 @@
     self = [super init];
     if (self) {
         //_pages = pages;
-        _pageData = [NSArray arrayWithArray:pages][0];
-        //NSLog(@"_pages %@",_pageData);
+        _pageData = [NSArray arrayWithArray:pages];
+        NSLog(@"_pages %@",_pageData);
     }
     return self;
 }

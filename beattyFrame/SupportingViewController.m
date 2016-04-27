@@ -14,7 +14,7 @@
 #import "AnimationIndex.h"
 #import "gridEcoViewIndex.h"
 
-static CGFloat  bottomMenuWidth = 728;
+//static CGFloat  bottomMenuWidth = 728;
 static CGFloat  bottomMenuHeight = 37;
 static int      animationViewIndex = kAnimationIndex;
 static int      gridViewIndex = kEcoIndex;
@@ -26,8 +26,8 @@ static int      gridViewIndex = kEcoIndex;
     UILabel         *uil_pageNum;
     NSMutableArray  *arr_menuTitles;
     NSMutableArray  *arr_menuButton;
-    NSArray         *arr_lastIndex;
-    NSArray         *arr_firstIndex;
+    NSMutableArray  *arr_lastIndex;
+    NSMutableArray  *arr_firstIndex;
     int             currentPageIndex;
     NSArray         *raw;
 }
@@ -44,43 +44,40 @@ static int      gridViewIndex = kEcoIndex;
 
 # pragma mark - View Controller Lift-cycle
 - (void)viewDidLoad {
+    
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     arr_menuButton = [[NSMutableArray alloc] init];
     arr_menuTitles = [[NSMutableArray alloc] init];
-    
+    arr_lastIndex = [[NSMutableArray alloc] init];
+    arr_firstIndex = [[NSMutableArray alloc] init];
+
     raw = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"supporting_data" ofType:@"plist"]] copy];
+    
+    NSLog(@"data for pages %@", raw[pageIndex]);
+
     
     _modelController.pages = raw[pageIndex];
     
+    int i = -1;
     for (NSDictionary*rawDictEach in raw[pageIndex]) {
         [arr_menuTitles addObject:rawDictEach[@"title"]];
+        i++;
+        [arr_lastIndex addObject:[NSNumber numberWithInt:i]];
+        [arr_firstIndex addObject:[NSNumber numberWithInt:i]];
     }
-    
-    arr_lastIndex = @[
-                      @0,
-                      @1,
-                      @2,
-                      @3,
-                      @4
-                      ];
-    arr_firstIndex = @[
-                       @0,
-                       @1,
-                       @2,
-                       @3,
-                       @4
-                       ];
-    NSLog(@"viewDidLoad");
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     NSLog(@"viewWillAppear");
-    [self initPageView:pageIndex];
+    [self initPageView:0];
     [self createBottomMenu];
     //[self createPageNumLabel];
-    [self checkCurrentIndexPosition];
+    //[self checkCurrentIndexPosition];
+    [self highlightButton:arr_menuButton[0]];
+
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -213,7 +210,7 @@ static int      gridViewIndex = kEcoIndex;
     // Return the model controller object, creating it if necessary.
     // In more complex implementations, the model controller may be passed to the view controller.
     if (!_modelController) {
-        _modelController = [[supportingModelController alloc] initWithArray:raw];
+        _modelController = [[supportingModelController alloc] initWithArray:raw[pageIndex]];
     }
     return _modelController;
 }
@@ -246,7 +243,8 @@ static int      gridViewIndex = kEcoIndex;
 //}
 
 - (void)createBottomMenu {
-    uiv_bottomMenu = [[UIView alloc] initWithFrame:CGRectMake((self.view.bounds.size.width - bottomMenuWidth)/2, self.view.bounds.size.height - 22 - bottomMenuHeight, bottomMenuWidth, bottomMenuHeight)];
+    uiv_bottomMenu = [[UIView alloc] initWithFrame:CGRectZero];
+    //uiv_bottomMenu = [[UIView alloc] initWithFrame:CGRectMake((self.view.bounds.size.width - bottomMenuWidth)/2, self.view.bounds.size.height - 22 - bottomMenuHeight, bottomMenuWidth, bottomMenuHeight)]
     uiv_bottomMenu.clipsToBounds = YES;
     uiv_bottomMenu.backgroundColor = [UIColor whiteColor];
     [self.view addSubview: uiv_bottomMenu];
@@ -255,9 +253,11 @@ static int      gridViewIndex = kEcoIndex;
     uiv_bottomHighlightView.backgroundColor = [UIColor themeRed];
     [uiv_bottomMenu addSubview: uiv_bottomHighlightView];
     
+    CGFloat totalWidth = 0;
+
     for (int i = 0 ; i < arr_menuTitles.count; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [button setTitle:arr_menuTitles[i] forState:UIControlStateNormal];
+        [button setTitle:[NSString stringWithFormat:@"Page %i",i + 1] forState:UIControlStateNormal];
         [button sizeToFit];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
@@ -265,6 +265,8 @@ static int      gridViewIndex = kEcoIndex;
         button.backgroundColor = [UIColor whiteColor];
         CGRect frame = button.frame;
         frame.size.width += 19;
+        totalWidth = totalWidth + frame.size.width;
+
         frame.size.height = bottomMenuHeight;
         button.frame = frame;
         [button setContentEdgeInsets:UIEdgeInsetsMake(0, 3, 0, 0)];
@@ -272,6 +274,7 @@ static int      gridViewIndex = kEcoIndex;
         [button addTarget:self action:@selector(tapBottomButton:) forControlEvents:UIControlEventTouchUpInside];
         [arr_menuButton addObject: button];
     }
+    
     for (int i = 0; i < arr_menuButton.count; i++) {
         UIButton *uib_cur = arr_menuButton[i];
         if (i > 0) {
@@ -281,7 +284,11 @@ static int      gridViewIndex = kEcoIndex;
             uib_cur.frame = frame;
         }
         [uiv_bottomMenu addSubview: uib_cur];
+        
     }
+    
+    uiv_bottomMenu.frame = CGRectMake((self.view.bounds.size.width - totalWidth)/2, self.view.bounds.size.height - 22 - bottomMenuHeight, totalWidth, bottomMenuHeight);
+
 }
 
 - (void)highlightButton:(id)sender {

@@ -209,7 +209,7 @@ static float bottomMenuHeight  = 37.0;
 - (void)tapBottomButton:(id)sender {
     UIButton *tappedButton = sender;
     
-    NSLog(@"tappedButton %li",(long)tappedButton.tag);
+    //NSLog(@"tappedButton %li",(long)tappedButton.tag);
     
     //CGRect indicatorFrame = uiv_buttonIndicator.frame;
     

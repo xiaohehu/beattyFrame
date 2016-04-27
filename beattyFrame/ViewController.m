@@ -513,7 +513,7 @@ static float    menuButtonSize = 50.0;
     UIButton*selectedBtn = (UIButton*)sender;
 
     sectionIndex = 20;
-    
+        
     [self updateSectionTitle:@"Supporting Stories"];
     [self updateSubTitle:selectedBtn.titleLabel.text];
     

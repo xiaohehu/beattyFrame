@@ -23,38 +23,16 @@
 			<key>title</key>
 			<string>Thriving Baltimore</string>
 		</dict>
-		<dict>
-			<key>image</key>
-			<string>supporting-stories-cultural-hub.png</string>
-			<key>title</key>
-			<string>Cultural Hub</string>
-		</dict>
-		<dict>
-			<key>image</key>
-			<string>supporting-stories-eco-district.png</string>
-			<key>title</key>
-			<string>Eco-District</string>
-		</dict>
 	</array>
 	<array>
 		<dict>
 			<key>image</key>
-			<string>supporting-stories-urban-renaissance.png</string>
+			<string>supporting-stories-thriving-baltimore.png</string>
 			<key>title</key>
 			<string>Urban Renaissance B</string>
 		</dict>
-		<dict>
-			<key>image</key>
-			<string>supporting-stories-getting-to-work.png</string>
-			<key>title</key>
-			<string>Getting To Work</string>
-		</dict>
-		<dict>
-			<key>image</key>
-			<string>supporting-stories-thriving-baltimore.png</string>
-			<key>title</key>
-			<string>Thriving Baltimore</string>
-		</dict>
+	</array>
+	<array>
 		<dict>
 			<key>image</key>
 			<string>supporting-stories-cultural-hub.png</string>
@@ -69,44 +47,6 @@
 		</dict>
 	</array>
 	<array>
-		<dict>
-			<key>image</key>
-			<string>supporting-stories-urban-renaissance.png</string>
-			<key>title</key>
-			<string>Urban Renaissance C</string>
-		</dict>
-		<dict>
-			<key>image</key>
-			<string>supporting-stories-getting-to-work.png</string>
-			<key>title</key>
-			<string>Getting To Work</string>
-		</dict>
-		<dict>
-			<key>image</key>
-			<string>supporting-stories-thriving-baltimore.png</string>
-			<key>title</key>
-			<string>Thriving Baltimore</string>
-		</dict>
-		<dict>
-			<key>image</key>
-			<string>supporting-stories-cultural-hub.png</string>
-			<key>title</key>
-			<string>Cultural Hub</string>
-		</dict>
-		<dict>
-			<key>image</key>
-			<string>supporting-stories-eco-district.png</string>
-			<key>title</key>
-			<string>Eco-District</string>
-		</dict>
-	</array>
-	<array>
-		<dict>
-			<key>image</key>
-			<string>supporting-stories-urban-renaissance.png</string>
-			<key>title</key>
-			<string>Urban Renaissance D</string>
-		</dict>
 		<dict>
 			<key>image</key>
 			<string>supporting-stories-getting-to-work.png</string>
@@ -150,18 +90,6 @@
 			<string>supporting-stories-thriving-baltimore.png</string>
 			<key>title</key>
 			<string>Thriving Baltimore</string>
-		</dict>
-		<dict>
-			<key>image</key>
-			<string>supporting-stories-cultural-hub.png</string>
-			<key>title</key>
-			<string>Cultural Hub</string>
-		</dict>
-		<dict>
-			<key>image</key>
-			<string>supporting-stories-eco-district.png</string>
-			<key>title</key>
-			<string>Eco-District</string>
 		</dict>
 	</array>
 </array>
