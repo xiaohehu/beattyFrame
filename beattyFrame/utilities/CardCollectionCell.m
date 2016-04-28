@@ -12,10 +12,7 @@
 
 -(void)awakeFromNib
 {
-//    CALayer *layer = [self layer];
-//    [layer setCornerRadius:5];
-//    [layer setRasterizationScale:[[UIScreen mainScreen] scale]];
-//    [layer setShouldRasterize:YES];
+    //[_desc setFont:[UIFont boldSystemFontOfSize:45]];
 }
 
 

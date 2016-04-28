@@ -10,11 +10,17 @@
 #import "UIColor+Extensions.h"
 #import "CardCollectionCell.h"
 
+static CGFloat  bottomMenuHeight = 37;
+
 @interface CurrentFutureViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 {
     int                 tenantTypeIndex;
     NSArray             *tenantData;
     IBOutlet UICollectionView    *collectionview;
+    NSDictionary *tenantDict;
+    UIView *uiv_bottomMenu;
+    UIView *uiv_bottomHighlightView;
+    NSMutableArray *arr_menuButton;
 }
 
 @end
@@ -31,8 +37,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.7];
-    [self createSummaryContent];
     
     UIButton *uib_sectionTitle = [UIButton buttonWithType:UIButtonTypeCustom];
     uib_sectionTitle.backgroundColor = [UIColor themeRed];
@@ -46,33 +50,40 @@
     uib_sectionTitle.frame = frame;
     [self.view addSubview:uib_sectionTitle];
     
+    // data
     NSString *textPath = [[NSBundle mainBundle] pathForResource:@"tenants" ofType:@"json"];
-    
     NSError *error;
     NSString *content = [NSString stringWithContentsOfFile:textPath encoding:NSUTF8StringEncoding error:&error];  //error checking omitted
     NSData *jsonData = [content dataUsingEncoding:NSUTF8StringEncoding];
-    NSDictionary *maps = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
+    tenantDict = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
     
-    NSString*tenantType;
-    if (tenantTypeIndex == 0) {
-        tenantType = @"office";
-    } else {
-        tenantType = @"retail";
-    }
-    tenantData = maps[tenantType];
+    [self setTenantTypeData:@"office"];
+    
+    [self createBottomMenu];
 }
 
-- (void)createSummaryContent {
-    UIImageView *uiiv_Summary = [UIImageView new];
-    UIImage *summary = [UIImage imageNamed:@"grfx-partners-tenants.png"];
-    [uiiv_Summary setImage: summary];
-    uiiv_Summary.frame = self.view.bounds;
-    [self.view insertSubview: uiiv_Summary atIndex:0];
+-(void)setTenantTypeData:(NSString*)keyname
+{
+    tenantData = nil;
+    tenantData = tenantDict[keyname];
+    [collectionview reloadData];
 }
 
 - (IBAction)tapCloseButton:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^(void){
     }];
+}
+
+- (IBAction)tapDisplayType:(id)sender {
+    
+    NSString*tenantType;
+    if ([sender tag] == 0) {
+        tenantType = @"office";
+    } else {
+        tenantType = @"retail";
+    }
+    
+    [self setTenantTypeData:tenantType];
 }
 
 #pragma mark - Collection View
@@ -83,7 +94,6 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-
     return tenantData.count;
 }
 
@@ -92,15 +102,93 @@
     CardCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CardCollectionCell" forIndexPath:indexPath];
     NSDictionary *tempDic = [[NSDictionary alloc] initWithDictionary:[tenantData objectAtIndex:indexPath.row]];
     cell.name.text = tempDic[@"name"];
-    cell.desc.text = tempDic[@"desc"];
     cell.logo.image = [UIImage imageNamed:tempDic[@"logo"]];
-    
+    cell.desc.text = tempDic[@"desc"];
+    [cell.desc setFont:[UIFont systemFontOfSize:13]];
+    cell.desc.textColor = [UIColor themeTextGray];
+    cell.desc.textContainerInset = UIEdgeInsetsMake(0, 0, 5, 0);
+    cell.desc.textContainer.lineFragmentPadding = 0;
     return cell;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     return CGSizeMake(310, 220);
+}
+
+-(void)createBottomMenu
+{
+    arr_menuButton = [NSMutableArray new];
+
+    uiv_bottomMenu = [[UIView alloc] initWithFrame:CGRectZero];
+    uiv_bottomMenu.clipsToBounds = YES;
+    uiv_bottomMenu.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview: uiv_bottomMenu];
+    
+    uiv_bottomHighlightView = [[UIView alloc] initWithFrame:CGRectZero];
+    uiv_bottomHighlightView.backgroundColor = [UIColor themeRed];
+    [uiv_bottomMenu addSubview: uiv_bottomHighlightView];
+    
+    CGFloat totalWidth = 0;
+    
+    NSArray *arr_menuTitles = @[
+                                @"Office",
+                                @"Retail",
+                                ];
+    
+    for (int i = 0 ; i < arr_menuTitles.count; i++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        [button setTitle:arr_menuTitles[i] forState:UIControlStateNormal];
+        [button sizeToFit];
+        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+        [button.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:15.0]];
+        button.backgroundColor = [UIColor whiteColor];
+        CGRect frame = button.frame;
+        frame.size.width += 19;
+        totalWidth = totalWidth + frame.size.width;
+        
+        frame.size.height = bottomMenuHeight;
+        button.frame = frame;
+        [button setContentEdgeInsets:UIEdgeInsetsMake(0, 3, 0, 0)];
+        button.tag = i;
+        [button addTarget:self action:@selector(tapBottomButton:) forControlEvents:UIControlEventTouchUpInside];
+        [arr_menuButton addObject: button];
+    }
+    
+    for (int i = 0; i < arr_menuButton.count; i++) {
+        UIButton *uib_cur = arr_menuButton[i];
+        if (i > 0) {
+            UIButton *uib_pre = arr_menuButton[i-1];
+            CGRect frame = uib_cur.frame;
+            frame.origin.x = uib_pre.frame.origin.x + uib_pre.frame.size.width;
+            uib_cur.frame = frame;
+        }
+        [uiv_bottomMenu addSubview: uib_cur];
+        
+    }
+    uiv_bottomMenu.frame = CGRectMake((self.view.bounds.size.width - totalWidth)/2, 22 + bottomMenuHeight, totalWidth, bottomMenuHeight);
+    
+    [self highlightButton:arr_menuButton[0]];
+}
+
+- (void)highlightButton:(id)sender {
+    UIButton *tappedButton = sender;
+    for (UIButton *btn in arr_menuButton) {
+        btn.selected = NO;
+        btn.backgroundColor = [UIColor clearColor];
+    }
+    tappedButton.selected = YES;
+    uiv_bottomHighlightView.backgroundColor = [UIColor themeRed];
+    [UIView animateWithDuration:0.33 animations:^(void){
+        uiv_bottomHighlightView.frame = tappedButton.frame;
+    }];
+}
+
+-(void)tapBottomButton:(id)sender
+{
+    [self highlightButton:sender];
+    [self tapDisplayType:sender];
 }
 
 - (void)didReceiveMemoryWarning {
