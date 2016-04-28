@@ -29,6 +29,7 @@
             <string>GoodPro-Book</string>
             <string>GoodPro-Book</string>
             <string>GoodPro-Book</string>
+            <string>GoodPro-Book</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -1118,7 +1119,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="tapCloseButton:" destination="hXN-dx-tnY" eventType="touchUpInside" id="R3e-SY-05D"/>
-                                    <action selector="tapCloseButton:" destination="CeG-kc-ZJW" eventType="touchUpInside" id="pr5-Ge-lG5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCP-bb-xY0">
@@ -1199,6 +1199,17 @@
                                     <action selector="loadBrownfield:" destination="hXN-dx-tnY" eventType="touchUpInside" id="zam-zF-4K3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwZ-bE-9ag">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.13725490196078433" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="25"/>
+                                <state key="normal" title="Summary">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="40"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -1214,6 +1225,7 @@
                                 <exclude reference="W4S-XN-aHg"/>
                                 <exclude reference="8oS-g2-znb"/>
                                 <exclude reference="Ejf-ID-1kb"/>
+                                <exclude reference="cwZ-bE-9ag"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -1229,10 +1241,12 @@
                                 <include reference="W4S-XN-aHg"/>
                                 <include reference="8oS-g2-znb"/>
                                 <include reference="Ejf-ID-1kb"/>
+                                <include reference="cwZ-bE-9ag"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="DA9-hJ-0pu"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
@@ -1241,7 +1255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1O-8v-s0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3937" y="-793"/>
+            <point key="canvasLocation" x="3936.75" y="-793.5"/>
         </scene>
         <!--Masterplan Parking View Controller-->
         <scene sceneID="KeG-cn-QR6">

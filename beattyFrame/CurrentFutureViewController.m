@@ -203,11 +203,9 @@ static CGFloat  bottomMenuHeight = 37;
 - (void)didSwipe:(UISwipeGestureRecognizer*)swipe{
     
     if (swipe.direction == UISwipeGestureRecognizerDirectionRight) {
-        NSLog(@"Swipe Left");
         [self setTenantTypeData:@"office"];
         [self highlightButton:arr_menuButton[0]];
     } else if (swipe.direction == UISwipeGestureRecognizerDirectionLeft) {
-        NSLog(@"Swipe Right");
         [self setTenantTypeData:@"retail"];
         [self highlightButton:arr_menuButton[1]];
     }

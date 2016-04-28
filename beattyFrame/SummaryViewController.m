@@ -27,19 +27,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.7];
-    UIButton *uib_sectionTitle = [UIButton buttonWithType:UIButtonTypeCustom];
-    uib_sectionTitle.backgroundColor = [UIColor themeRed];
-    [uib_sectionTitle setTitle:@"Summary" forState:UIControlStateNormal];
-    [uib_sectionTitle setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [uib_sectionTitle.titleLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:25.0]];
-    [uib_sectionTitle sizeToFit];
-    uib_sectionTitle.userInteractionEnabled = NO;
-    CGRect frame = uib_sectionTitle.frame;
-    frame.size.width += 38;
-    uib_sectionTitle.frame = frame;
-    [self.view addSubview:uib_sectionTitle];
 }
 
 - (IBAction)tapCloseButton:(id)sender {
@@ -50,51 +37,15 @@
 -(IBAction)loadMasterPlan:(id)sender
 {
     [self performSegueWithIdentifier:@"MasterplanParkingViewController" sender:sender];
-    
-    //    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    MasterplanParkingViewController* controller = [storyboard instantiateViewControllerWithIdentifier:@"MasterplanParkingViewController"];
-//    [self.navigationController pushViewController:controller animated:YES];
-//
-    //UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-   // MasterplanParkingViewController *vc = (MasterplanParkingViewController*)[mainStoryboard instantiateViewControllerWithIdentifier:@"MasterplanParkingViewController"];
-    
-//    UINavigationController *navC = [[UINavigationController alloc] init];
-//    [navC addChildViewController:vc];
-//    [navC pushViewController:vc animated:YES];
-//    NSLog(@"loadMasterPlan");
-//    MasterplanParkingViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MasterplanParking"];
-//    NSLog(@"Unable to write PDF to %@", vc);
-//
-//    UINavigationController * navigation = [[UINavigationController alloc] init];
-//    [navigation pushViewController:vc animated:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-//    if ([[segue destinationViewController] isEqualToString:@"MasterplanParkingViewController"])
-//    {
-//        MasterplanParkingViewController *vc = [segue destinationViewController];
-//        vc.index = 33;
-//    }
-    
     if([[segue identifier] isEqualToString:@"MasterplanParkingViewController"]){
         MasterplanParkingViewController *vc = [segue destinationViewController];
-        vc.index = [sender tag];
+        vc.index = (int)[sender tag];
     }
 }
-
-//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-////    if ([[segue identifier] isEqualToString:@"MasterplanParkingViewController"])
-////    {
-////        MasterplanParkingViewController *translationQuizAssociateVC = [segue destinationViewController];
-////    }
-//////    if([segue.identifier isEqualToString:@"MasterplanParkingViewController"])
-//////    {
-//////        MasterplanParkingViewController *addCustomerViewController = segue.destinationViewController;
-//////        //addCustomerViewController.delegate = self;
-//////    }
-//}
 
 -(IBAction)loadBrownfield:(id)sender
 {
@@ -122,8 +73,6 @@
     }
 }
 
-
-
 -(void)loadInImge:(NSString *)imageName
 {
     [UIView animateWithDuration:0.0 animations:^{
@@ -138,12 +87,10 @@
     }];
 }
 
-
 -(void)didRemove:(ebZoomingScrollView *)customClass
 {
     _zoomingScroll=nil;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
