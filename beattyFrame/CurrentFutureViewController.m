@@ -60,6 +60,15 @@ static CGFloat  bottomMenuHeight = 37;
     [self setTenantTypeData:@"office"];
     
     [self createBottomMenu];
+    
+    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)];
+    swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:swipeLeft];
+    
+    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self  action:@selector(didSwipe:)];
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeRight];
+
 }
 
 -(void)setTenantTypeData:(NSString*)keyname
@@ -189,6 +198,19 @@ static CGFloat  bottomMenuHeight = 37;
 {
     [self highlightButton:sender];
     [self tapDisplayType:sender];
+}
+
+- (void)didSwipe:(UISwipeGestureRecognizer*)swipe{
+    
+    if (swipe.direction == UISwipeGestureRecognizerDirectionRight) {
+        NSLog(@"Swipe Left");
+        [self setTenantTypeData:@"office"];
+        [self highlightButton:arr_menuButton[0]];
+    } else if (swipe.direction == UISwipeGestureRecognizerDirectionLeft) {
+        NSLog(@"Swipe Right");
+        [self setTenantTypeData:@"retail"];
+        [self highlightButton:arr_menuButton[1]];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
