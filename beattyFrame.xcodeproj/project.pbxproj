@@ -1201,6 +1201,8 @@
 		8892EE3E1BC2092B00347146 /* phase_d_color_00070.png in Resources */ = {isa = PBXBuildFile; fileRef = 8892ED641BC2092B00347146 /* phase_d_color_00070.png */; };
 		8892EE3F1BC2092B00347146 /* phase_d_color_00071.png in Resources */ = {isa = PBXBuildFile; fileRef = 8892ED651BC2092B00347146 /* phase_d_color_00071.png */; };
 		8892EE401BC2092B00347146 /* phase_d_color_00072.png in Resources */ = {isa = PBXBuildFile; fileRef = 8892ED661BC2092B00347146 /* phase_d_color_00072.png */; };
+		889E49FE1CD3E00D007F6886 /* Recording #1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 889E49FC1CD3E00D007F6886 /* Recording #1.gif */; };
+		889E49FF1CD3E00D007F6886 /* Recording #2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 889E49FD1CD3E00D007F6886 /* Recording #2.gif */; };
 		889F07BD1BB1E57C00CBD979 /* AnimationIndex.h in Sources */ = {isa = PBXBuildFile; fileRef = 889F07BC1BB1E57C00CBD979 /* AnimationIndex.h */; };
 		889F07C01BB1E67600CBD979 /* gridEcoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 889F07BF1BB1E67600CBD979 /* gridEcoView.m */; };
 		88AA12C41CBEA27900B63F81 /* grfx-icon-gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA12C21CBEA27900B63F81 /* grfx-icon-gallery.png */; };
@@ -2496,6 +2498,8 @@
 		8892ED641BC2092B00347146 /* phase_d_color_00070.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phase_d_color_00070.png; sourceTree = "<group>"; };
 		8892ED651BC2092B00347146 /* phase_d_color_00071.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phase_d_color_00071.png; sourceTree = "<group>"; };
 		8892ED661BC2092B00347146 /* phase_d_color_00072.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phase_d_color_00072.png; sourceTree = "<group>"; };
+		889E49FC1CD3E00D007F6886 /* Recording #1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Recording #1.gif"; sourceTree = "<group>"; };
+		889E49FD1CD3E00D007F6886 /* Recording #2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Recording #2.gif"; sourceTree = "<group>"; };
 		889F07BC1BB1E57C00CBD979 /* AnimationIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationIndex.h; path = beattyFrame/DataSource/AnimationIndex.h; sourceTree = SOURCE_ROOT; };
 		889F07BE1BB1E67600CBD979 /* gridEcoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gridEcoView.h; path = utilities/gridEcoView.h; sourceTree = "<group>"; };
 		889F07BF1BB1E67600CBD979 /* gridEcoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gridEcoView.m; path = utilities/gridEcoView.m; sourceTree = "<group>"; };
@@ -4553,6 +4557,8 @@
 		88E074431B98CFB400E0982A /* gifs */ = {
 			isa = PBXGroup;
 			children = (
+				889E49FC1CD3E00D007F6886 /* Recording #1.gif */,
+				889E49FD1CD3E00D007F6886 /* Recording #2.gif */,
 				88E074441B98CFB400E0982A /* tut_gallery_scroll.gif */,
 				88E074451B98CFB400E0982A /* tut_map_zoom.gif */,
 			);
@@ -4653,6 +4659,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889E49FE1CD3E00D007F6886 /* Recording #1.gif in Resources */,
 				8892EA4B1BC2082C00347146 /* phase_a_base_00002.jpg in Resources */,
 				883D77B01C04DE14004B0136 /* phase_a_color_00029.png in Resources */,
 				8819D8581BB8515400015AF5 /* Point St. Permit Set without Landscape(Resubmission) (dragged).pdf in Resources */,
@@ -5302,6 +5309,7 @@
 				8892EDB51BC2092B00347146 /* phase_d_base_00039.jpg in Resources */,
 				883D77A81C04DE14004B0136 /* phase_a_color_00021.png in Resources */,
 				883D78461C04DE21004B0136 /* phase_b_color_00033.png in Resources */,
+				889E49FF1CD3E00D007F6886 /* Recording #2.gif in Resources */,
 				883D77171C04DD65004B0136 /* phase_c_color_00023.png in Resources */,
 				8892EE3D1BC2092B00347146 /* phase_d_color_00069.png in Resources */,
 				8861DE6E1BFD5F1C006A7D13 /* supporting-stories-cultural-hub@2x.png in Resources */,

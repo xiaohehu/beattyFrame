@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *uitv_description;
 @property (weak, nonatomic) IBOutlet UILabel *uil_tip;
 @property (weak, nonatomic) IBOutlet UILabel *uil_numbering;
+@property (weak, nonatomic) IBOutlet UILabel *uil_note;
 
 @property (strong, nonatomic) id dataObject;
 @property NSNumber *pageIndex;

@@ -34,6 +34,9 @@
 {
     [super viewDidLoad];
     
+    NSLog(@"self.dataObject = %@", self.dataObject);
+
+    
     // Set Data
     _tutorial = self.dataObject;
     _uil_Title.text = [self.dataObject objectForKey:@"Title"];
@@ -41,6 +44,9 @@
     _uitv_description.text = [self.dataObject objectForKey:@"Description"];
     [_uitv_description setContentOffset:CGPointZero animated:YES];
     _uil_tip.text = [self.dataObject objectForKey:@"Tip"];
+
+    if ( ! [self.dataObject objectForKey:@"Tip"])
+        _uil_note.hidden = YES;
     
     // GIF
     NSString *pathForGif = [[NSBundle mainBundle] pathForResource: [self.dataObject objectForKey:@"GIF"] ofType: @"gif"];

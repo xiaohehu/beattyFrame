@@ -52,6 +52,11 @@
         for (int i=0; i < [[_sectionData[loadrows] objectForKey:@"tutorials"]count]; i++) {
             [_pageData addObject:[_sectionData[loadrows] objectForKey:@"tutorials"][i]];
         }
+        
+        NSLog(@"_pageData = %@", _pageData);
+
+        //[_secData addObject:[_tutorials[indexPath.section] objectForKey:@"tutorials"][indexPath.row]];
+
     }
     return self;
 }

@@ -1,11 +1,38 @@
 {
         "helpsystem": [
+           {
+           "sectionTitle": "Main Menu",
+           "tutorials": [
+                         {
+                         "Title": "Opening & closing the menu",
+                         "Subtitle": "1sdsdf001",
+                         "GIF": "Recording #1",
+                         "Description": "Tap the red circle with the + sign to open the Main Menu. Tap a subtitle to load a new section.\nTap the X or anywhere outside of the Main Menu to close.",
+                         "Tip": "The red highlight shows your current section",
+                         "Icontype": "tap"
+                         },
+                         {
+                         "Title": "Reset the app",
+                         "Subtitle": "1sdsdf001",
+                         "GIF": "Recording #2",
+                         "Description": "Open the Main Menu by tapping the + sign and then tap the 'arrows' icon in the bottom right.",
+                         "Icontype": "tap"
+                         },
+                         {
+                         "Title": "View Tips",
+                         "Subtitle": "1sdsdf001",
+                         "GIF": "tut_map_zoom",
+                         "Description": "Open the Main Menu by tapping the + sign and then tap the Tips icon in the lower left.",
+                         "Icontype": "tap"
+                         }
+                         ]
+           },
             {
                 "sectionTitle": "Harbor Point",
                 "tutorials": [
                     {
  						"Title": "Site 360°",
-  						"Subtitle": "Rotating the view",
+  						"Subtitle": "Rotating the View",
     					"GIF": "tut_gallery_scroll",
     					"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec neque vel erat eleifend tempor. Integer pellentesque tempor mauris, at rutrum elit sagittis nec. Mauris ut ante in leo ornare cursus. Integer vulputate eros vitae venenatis efficitur. Quisque ac dui urna. Praesent porttitor arcu vitae cursus eleifend. Sed auctor scelerisque dui, eget dapibus velit pretium a. Etiam ultrices cursus mi at posuere. Curabitur id laoreet orci. Ut lacinia nec orci eu convallis. Curabitur dolor massa, elementum in magna at, malesuada semper metus. Vivamus iaculis, orci a auctor cursus, nulla tortor laoreet nulla, eu placerat mi velit non quam. Aliquam sit amet congue justo. Quisque consectetur tincidunt nunc eget dictum. Morbi efficitur congue erat, ut posuere sapien facilisis at. Praesent at purus sed ligula dignissim consectetur ut sit amet ex.",
     					"Tip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -13,8 +40,8 @@
                     },
                     {
     					"Title": "Site 360°",
-    					"Subtitle": "Panning the view",
-    					"GIF": "tut_map_zoom",
+    					"Subtitle": "Exploring the Buildings",
+    					"GIF": "Recording #2",
     					"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec neque vel erat eleifend tempor. Integer pellentesque tempor mauris, at rutrum elit sagittis nec. Mauris ut ante in leo ornare cursus. Integer vulputate eros vitae venenatis efficitur. Quisque ac dui urna. Praesent porttitor arcu vitae cursus eleifend. Sed auctor scelerisque dui, eget dapibus velit pretium a. Etiam ultrices cursus mi at posuere. Curabitur id laoreet orci. Ut lacinia nec orci eu convallis.",
     					"Tip": "Duis nec elit mattis, placerat nunc eu, fringilla arcu.",
     					"Icontype": "swipe"
@@ -22,7 +49,7 @@
                     {
    						"Title": "Summary",
     					"Subtitle": "1sdsdf001",
-    					"GIF": "tut_gallery_scroll",
+    					"GIF": "Recording #1",
     					"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec neque vel erat eleifend tempor. Integer pellentesque tempor mauris, at rutrum elit sagittis nec. Mauris ut ante in leo ornare cursus. Integer vulputate eros vitae venenatis efficitur. Quisque ac dui urna. Praesent porttitor arcu vitae cursus eleifend.",
     					"Tip": "Curabitur lacinia augue in lectus cursus, quis viverra turpis semper.",
     					"Icontype": "tap"
@@ -36,7 +63,7 @@
     					"Icontype": "pinch"
                     },
                     {
-   						"Title": "Playground",
+   						"Title": "Main Menu",
     					"Subtitle": "1sdsdf001",
     					"GIF": "tut_gallery_scroll",
     					"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec neque vel erat eleifend tempor. Integer pellentesque tempor mauris, at rutrum elit sagittis nec. Mauris ut ante in leo ornare cursus. Integer vulputate eros vitae venenatis efficitur. Quisque ac dui urna. Praesent porttitor arcu vitae cursus eleifend. Sed auctor scelerisque dui, eget dapibus velit pretium a. Etiam ultrices cursus mi at posuere. Curabitur id laoreet orci.",

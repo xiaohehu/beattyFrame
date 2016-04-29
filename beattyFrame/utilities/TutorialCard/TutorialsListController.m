@@ -144,34 +144,35 @@
     [userDefaults setInteger:index forKey:@"saverows"];
     [userDefaults synchronize];
     
-    //NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
     TutsTableCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     NSLog(@"%@", cell.nameLabel.text);
     [self performSegueWithIdentifier:@"DetailSegue" sender:cell];
-    
-    //[self madeSelection:indexPath];
-}
-
-- (void)madeSelection:(NSIndexPath*)rrow
-{
-    row = rrow;
-
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"DetailSegue"]) {
         
-        ContainerViewController *detailVC = [segue destinationViewController];
-        detailVC.indexPath = row;
-        [detailVC loadPage:(int)row.row];
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         
+        ContainerViewController *detailVC = [segue destinationViewController];
+        detailVC.indexPath = indexPath;
+        [detailVC loadPage:(int)indexPath.row];
+        
+        _secData = [[NSMutableArray alloc] init];
+        [_secData addObject:[_tutorials[indexPath.section] objectForKey:@"tutorials"][indexPath.row]];
+        detailVC.data = _secData;
+        
+        NSLog(@"_secData %@", _secData);
+
         UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 150, 40.0)];
         titleView.backgroundColor = [UIColor clearColor];
         
         // Get the value of cell.textlabel.text
-        TutsTableCell *cell = (TutsTableCell *)sender;
-        NSString *text = cell.nameLabel.text;
+        //TutsTableCell *cell = (TutsTableCell *)sender;
+        // NSString *text = cell.nameLabel.text;
+        
+        NSString *text = [_tutorials[indexPath.section] objectForKey:@"sectionTitle"];
         
         UILabel *titleLabel = [[UILabel alloc] init];
         titleLabel.text = text;
@@ -182,15 +183,8 @@
         [titleView addSubview:titleLabel];
         [titleLabel sizeToFit];
         [titleLabel setCenter:CGPointMake(titleView.frame.size.width / 2, titleView.frame.size.height / 2)];
-
         
         detailVC.navigationItem.titleView = titleView;
-        
-        _secData = [[NSMutableArray alloc] init];
-        for (int i=0; i < [[_tutorials[0] objectForKey:@"tutorials"]count]; i++) {
-            [_secData addObject:[_tutorials[0] objectForKey:@"tutorials"][i]];
-        }
-        detailVC.data = _secData;
     }
 }
 
