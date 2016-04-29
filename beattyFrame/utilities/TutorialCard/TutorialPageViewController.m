@@ -42,6 +42,8 @@
     _uil_Title.text = [self.dataObject objectForKey:@"Title"];
     _uil_Subtitle.text = [self.dataObject objectForKey:@"Subtitle"];
     _uitv_description.text = [self.dataObject objectForKey:@"Description"];
+    _uitv_description.textContainer.lineFragmentPadding = 0;
+    _uitv_description.textContainerInset = UIEdgeInsetsMake(5, 0, 0, 0);
     [_uitv_description setContentOffset:CGPointZero animated:YES];
     _uil_tip.text = [self.dataObject objectForKey:@"Tip"];
 

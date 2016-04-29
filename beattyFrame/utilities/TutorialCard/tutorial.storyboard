@@ -114,11 +114,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkq-WQ-kXZ" userLabel="View - data">
                                 <rect key="frame" x="10" y="371" width="580" height="219"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNC-Gr-kAk">
+                                        <rect key="frame" x="19" y="8" width="540" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqD-aR-oCM">
-                                        <rect key="frame" x="19" y="8" width="540" height="140"/>
+                                        <rect key="frame" x="19" y="28" width="540" height="120"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="140" id="4ER-l5-OPP"/>
+                                            <constraint firstAttribute="height" constant="120" id="4ER-l5-OPP"/>
                                         </constraints>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="14"/>
@@ -170,10 +176,14 @@
                                     <constraint firstAttribute="trailing" secondItem="LqD-aR-oCM" secondAttribute="trailing" constant="21" id="2NI-QK-8fv"/>
                                     <constraint firstAttribute="bottom" secondItem="6VJ-MW-yTa" secondAttribute="bottom" constant="12" id="2UY-Ze-eGo"/>
                                     <constraint firstItem="5mw-dx-xE0" firstAttribute="top" secondItem="LqD-aR-oCM" secondAttribute="bottom" constant="8" symbolic="YES" id="70g-nc-HwB"/>
-                                    <constraint firstItem="LqD-aR-oCM" firstAttribute="top" secondItem="xkq-WQ-kXZ" secondAttribute="topMargin" id="9JD-nr-0pe"/>
+                                    <constraint firstItem="5mw-dx-xE0" firstAttribute="top" secondItem="lNC-Gr-kAk" secondAttribute="bottom" constant="127" id="7hq-OM-5IF"/>
+                                    <constraint firstItem="LqD-aR-oCM" firstAttribute="top" secondItem="xkq-WQ-kXZ" secondAttribute="topMargin" constant="20" id="9JD-nr-0pe"/>
                                     <constraint firstItem="6VJ-MW-yTa" firstAttribute="centerX" secondItem="5mw-dx-xE0" secondAttribute="centerX" id="N8n-Fh-UXO"/>
                                     <constraint firstAttribute="trailing" secondItem="5mw-dx-xE0" secondAttribute="trailing" id="PdW-NS-L4P"/>
+                                    <constraint firstAttribute="trailing" secondItem="lNC-Gr-kAk" secondAttribute="trailing" constant="21" id="S5B-S7-u6X"/>
+                                    <constraint firstItem="lNC-Gr-kAk" firstAttribute="top" secondItem="xkq-WQ-kXZ" secondAttribute="top" constant="8" id="VWx-ab-1DP"/>
                                     <constraint firstItem="LqD-aR-oCM" firstAttribute="leading" secondItem="xkq-WQ-kXZ" secondAttribute="leading" constant="19" id="dQN-HD-Xh4"/>
+                                    <constraint firstItem="lNC-Gr-kAk" firstAttribute="leading" secondItem="xkq-WQ-kXZ" secondAttribute="leading" constant="19" id="giB-1a-Mx5"/>
                                     <constraint firstAttribute="bottom" secondItem="5mw-dx-xE0" secondAttribute="bottom" constant="31" id="hdM-MY-199"/>
                                     <constraint firstItem="5mw-dx-xE0" firstAttribute="leading" secondItem="xkq-WQ-kXZ" secondAttribute="leading" id="sGq-4P-1JQ"/>
                                     <constraint firstItem="6VJ-MW-yTa" firstAttribute="top" secondItem="5mw-dx-xE0" secondAttribute="bottom" constant="2" id="xpD-pl-cGH"/>
@@ -195,6 +205,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="uiiv_tutorial" destination="OYB-ey-sdy" id="jeO-qf-Xfh"/>
+                        <outlet property="uil_Title" destination="lNC-Gr-kAk" id="0Gb-a5-b2D"/>
                         <outlet property="uil_note" destination="xJ3-FR-feY" id="I2n-An-aBV"/>
                         <outlet property="uil_numbering" destination="6VJ-MW-yTa" id="Rm3-Hx-Mkx"/>
                         <outlet property="uil_tip" destination="9tI-Ow-e5U" id="0CL-Va-zaF"/>
