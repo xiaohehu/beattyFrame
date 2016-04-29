@@ -39,7 +39,6 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.7];
     [self createBGContent];
     [self prepareData];
-    [self createTopButtons];
     [self createButtonStack:1 atFrame:CGRectMake(15, 250, 195, 0) withHeader:@"Overlays"];
     //[self createButtonStack:0 atFrame:CGRectMake(15, 450, 0, 0)];
     
@@ -50,7 +49,11 @@
         NSLog(@"from summary");
         [self.navigationController setNavigationBarHidden:NO animated:YES];
         self.navigationItem.title = @"Master Plan Detail";
+        [self.navigationController.navigationBar
+         setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
         [overlayMenu setSelectedButton:_index];
+        self.navigationController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(closeThisView:)];
+
     } else {
         UIButton *uib_sectionTitle = [UIButton buttonWithType:UIButtonTypeCustom];
         uib_sectionTitle.backgroundColor = [UIColor themeRed];
@@ -63,6 +66,8 @@
         frame.size.width += 38;
         uib_sectionTitle.frame = frame;
         [self.view addSubview:uib_sectionTitle];
+        
+        [self createTopButtons];
     }
     
     NSLog(@"index %i",_index);

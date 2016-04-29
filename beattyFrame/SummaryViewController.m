@@ -44,6 +44,9 @@
     if([[segue identifier] isEqualToString:@"MasterplanParkingViewController"]){
         MasterplanParkingViewController *vc = [segue destinationViewController];
         vc.index = (int)[sender tag];
+        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+        [[UINavigationBar appearance] setBarTintColor:[UIColor themeRed]];
+        [[UINavigationBar appearance] setTranslucent:NO];
     }
 }
 
