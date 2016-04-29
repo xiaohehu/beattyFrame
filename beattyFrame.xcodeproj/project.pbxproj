@@ -420,8 +420,6 @@
 		8819D8601BB8515400015AF5 /* thumb_generic.png in Resources */ = {isa = PBXBuildFile; fileRef = 8819D81C1BB8515400015AF5 /* thumb_generic.png */; };
 		881D14071BF0E1CA00693C62 /* building_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 881D14061BF0E1CA00693C62 /* building_data.json */; };
 		881D140A1BF111DA00693C62 /* MasterplanParkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881D14091BF111DA00693C62 /* MasterplanParkingViewController.m */; };
-		881D140E1BF1373300693C62 /* ParkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881D140C1BF1373300693C62 /* ParkingViewController.m */; };
-		881D140F1BF1373300693C62 /* ParkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881D140D1BF1373300693C62 /* ParkingViewController.xib */; };
 		881D14111BF13D2000693C62 /* phase_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 881D14101BF13D2000693C62 /* phase_data.json */; };
 		881D14131BF13F2F00693C62 /* masterplanstack.json in Resources */ = {isa = PBXBuildFile; fileRef = 881D14121BF13F2F00693C62 /* masterplanstack.json */; };
 		881D14281BF1971B00693C62 /* hp_ipad_logo_intro.mov in Resources */ = {isa = PBXBuildFile; fileRef = 881D14271BF1971B00693C62 /* hp_ipad_logo_intro.mov */; };
@@ -1705,9 +1703,6 @@
 		881D14061BF0E1CA00693C62 /* building_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = building_data.json; sourceTree = "<group>"; };
 		881D14081BF111DA00693C62 /* MasterplanParkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterplanParkingViewController.h; sourceTree = "<group>"; };
 		881D14091BF111DA00693C62 /* MasterplanParkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterplanParkingViewController.m; sourceTree = "<group>"; };
-		881D140B1BF1373300693C62 /* ParkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingViewController.h; sourceTree = "<group>"; };
-		881D140C1BF1373300693C62 /* ParkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingViewController.m; sourceTree = "<group>"; };
-		881D140D1BF1373300693C62 /* ParkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingViewController.xib; sourceTree = "<group>"; };
 		881D14101BF13D2000693C62 /* phase_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phase_data.json; sourceTree = "<group>"; };
 		881D14121BF13F2F00693C62 /* masterplanstack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = masterplanstack.json; path = utilities/masterplanstack.json; sourceTree = "<group>"; };
 		881D14271BF1971B00693C62 /* hp_ipad_logo_intro.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = hp_ipad_logo_intro.mov; sourceTree = "<group>"; };
@@ -3052,9 +3047,6 @@
 				824D272D1B5D7E6700E5F5A5 /* ViewController.m */,
 				881D14081BF111DA00693C62 /* MasterplanParkingViewController.h */,
 				881D14091BF111DA00693C62 /* MasterplanParkingViewController.m */,
-				881D140B1BF1373300693C62 /* ParkingViewController.h */,
-				881D140C1BF1373300693C62 /* ParkingViewController.m */,
-				881D140D1BF1373300693C62 /* ParkingViewController.xib */,
 				824D27801B5EE77E00E5F5A5 /* SummaryViewController.h */,
 				824D27811B5EE77E00E5F5A5 /* SummaryViewController.m */,
 				824D279B1B613EC500E5F5A5 /* Site360ViewController.h */,
@@ -5802,7 +5794,6 @@
 				8861DD281BFD55CC006A7D13 /* grfx_buildingList@2x.jpg in Resources */,
 				8892EB011BC2082C00347146 /* phase_b_base_00040.jpg in Resources */,
 				883D782C1C04DE21004B0136 /* phase_b_color_00007.png in Resources */,
-				881D140F1BF1373300693C62 /* ParkingViewController.xib in Resources */,
 				8892EB6A1BC2082C00347146 /* phase_c_base_00001.jpg in Resources */,
 				8819D8241BB8515400015AF5 /* Parcel_02-Excelon@2x.jpg in Resources */,
 				8819D8571BB8515400015AF5 /* Point St. Permit Set without Landscape(Resubmission) (dragged) 1.pdf in Resources */,
@@ -5890,7 +5881,6 @@
 				82A128301B66657C00564266 /* animationView.m in Sources */,
 				88E074661B98D12C00E0982A /* TipsViewController.m in Sources */,
 				888233751BA0B0600019FD75 /* ButtonStack.m in Sources */,
-				881D140E1BF1373300693C62 /* ParkingViewController.m in Sources */,
 				824D27821B5EE77E00E5F5A5 /* SummaryViewController.m in Sources */,
 				889208531BFE32E0007C88FF /* CVCell.m in Sources */,
 				88C60B961CC95F130079B81F /* CurrentFutureViewController.m in Sources */,
