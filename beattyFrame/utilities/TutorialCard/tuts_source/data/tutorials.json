@@ -1,30 +1,47 @@
 {
         "helpsystem": [
            {
-           "sectionTitle": "Main Menu",
+           "sectionTitle": "Quick Tutorial",
            "tutorials": [
+                         {
+                         "Title": "Using the Tip Menu",
+                         "Subtitle": "1sdsdf001",
+                         "GIF": "mm-tips",
+                         "Description": "\n• Open the Main Menu by tapping the + sign and then tap the Tips icon in the lower left.\n• Swipe up and down to move around the list\n• Tap a row to see details.\n• When viewing a tip detail swipe left and right to see the other tips in the section.",
+                         "Tip": "The red highlight shows your current section",
+                         "Icontype": "tap"
+                         },
                          {
                          "Title": "Opening & closing the menu",
                          "Subtitle": "1sdsdf001",
-                         "GIF": "Recording #1",
-                         "Description": "Tap the red circle with the + sign to open the Main Menu. Tap a subtitle to load a new section.\nTap the X or anywhere outside of the Main Menu to close.",
+                         "GIF": "Recording #2",
+                         "Description": "• Tap the red circle with the + sign to open the Main Menu.\n• Tap a subtitle to load a new section.\n• Tap the X or anywhere outside of the Main Menu to close.",
                          "Tip": "The red highlight shows your current section",
                          "Icontype": "tap"
                          },
                          {
                          "Title": "Reset the app",
                          "Subtitle": "1sdsdf001",
-                         "GIF": "Recording #2",
-                         "Description": "Open the Main Menu by tapping the + sign and then tap the 'arrows' icon in the bottom right.",
+                         "GIF": "mm-restart",
+                         "Description": "\n• Open the Main Menu by tapping the + sign and then tap the 'arrows' icon in the bottom right.",
                          "Icontype": "tap"
                          },
                          {
-                         "Title": "View Tips",
-                         "Subtitle": "1sdsdf001",
-                         "GIF": "tut_map_zoom",
-                         "Description": "Open the Main Menu by tapping the + sign and then tap the Tips icon in the lower left.",
-                         "Icontype": "tap"
-                         }
+                         "Title": "Rotating the View",
+                         "Subtitle": "",
+                         "GIF": "site360-spin",
+                         "Description": "Drag left and right to spin the view.\n• Pinch and zoom with two fingers.",
+                         "Tip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                         "Icontype": "pinch"
+                         },
+                         {
+                         "Title": "Exploring the Buildings",
+                         "Subtitle": "",
+                         "GIF": "site360-select",
+                         "Description": "Tap a building to jump into a detailed view with additional data.\n• Swipe to load the next building or tap the arrows in the toolbox.\n• Tap the three lines in the corner to jump to another building quickly.\n• Tap the grid to open the gallery.",
+                         "Tip": "Duis nec elit mattis, placerat nunc eu, fringilla arcu.",
+                         "Icontype": "swipe"
+                         },
                          ]
            },
             {

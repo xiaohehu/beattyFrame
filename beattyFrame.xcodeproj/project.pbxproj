@@ -1203,6 +1203,10 @@
 		8892EE401BC2092B00347146 /* phase_d_color_00072.png in Resources */ = {isa = PBXBuildFile; fileRef = 8892ED661BC2092B00347146 /* phase_d_color_00072.png */; };
 		889E49FE1CD3E00D007F6886 /* Recording #1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 889E49FC1CD3E00D007F6886 /* Recording #1.gif */; };
 		889E49FF1CD3E00D007F6886 /* Recording #2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 889E49FD1CD3E00D007F6886 /* Recording #2.gif */; };
+		889E4A021CD40471007F6886 /* site360-select.gif in Resources */ = {isa = PBXBuildFile; fileRef = 889E4A001CD40471007F6886 /* site360-select.gif */; };
+		889E4A031CD40471007F6886 /* site360-spin.gif in Resources */ = {isa = PBXBuildFile; fileRef = 889E4A011CD40471007F6886 /* site360-spin.gif */; };
+		889E4A051CD40914007F6886 /* mm-restart.gif in Resources */ = {isa = PBXBuildFile; fileRef = 889E4A041CD40914007F6886 /* mm-restart.gif */; };
+		889E4A071CD40A9A007F6886 /* mm-tips.gif in Resources */ = {isa = PBXBuildFile; fileRef = 889E4A061CD40A9A007F6886 /* mm-tips.gif */; };
 		889F07BD1BB1E57C00CBD979 /* AnimationIndex.h in Sources */ = {isa = PBXBuildFile; fileRef = 889F07BC1BB1E57C00CBD979 /* AnimationIndex.h */; };
 		889F07C01BB1E67600CBD979 /* gridEcoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 889F07BF1BB1E67600CBD979 /* gridEcoView.m */; };
 		88AA12C41CBEA27900B63F81 /* grfx-icon-gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA12C21CBEA27900B63F81 /* grfx-icon-gallery.png */; };
@@ -2500,6 +2504,10 @@
 		8892ED661BC2092B00347146 /* phase_d_color_00072.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phase_d_color_00072.png; sourceTree = "<group>"; };
 		889E49FC1CD3E00D007F6886 /* Recording #1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Recording #1.gif"; sourceTree = "<group>"; };
 		889E49FD1CD3E00D007F6886 /* Recording #2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Recording #2.gif"; sourceTree = "<group>"; };
+		889E4A001CD40471007F6886 /* site360-select.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "site360-select.gif"; sourceTree = "<group>"; };
+		889E4A011CD40471007F6886 /* site360-spin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "site360-spin.gif"; sourceTree = "<group>"; };
+		889E4A041CD40914007F6886 /* mm-restart.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "mm-restart.gif"; sourceTree = "<group>"; };
+		889E4A061CD40A9A007F6886 /* mm-tips.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "mm-tips.gif"; sourceTree = "<group>"; };
 		889F07BC1BB1E57C00CBD979 /* AnimationIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationIndex.h; path = beattyFrame/DataSource/AnimationIndex.h; sourceTree = SOURCE_ROOT; };
 		889F07BE1BB1E67600CBD979 /* gridEcoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gridEcoView.h; path = utilities/gridEcoView.h; sourceTree = "<group>"; };
 		889F07BF1BB1E67600CBD979 /* gridEcoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gridEcoView.m; path = utilities/gridEcoView.m; sourceTree = "<group>"; };
@@ -4557,6 +4565,10 @@
 		88E074431B98CFB400E0982A /* gifs */ = {
 			isa = PBXGroup;
 			children = (
+				889E4A041CD40914007F6886 /* mm-restart.gif */,
+				889E4A061CD40A9A007F6886 /* mm-tips.gif */,
+				889E4A001CD40471007F6886 /* site360-select.gif */,
+				889E4A011CD40471007F6886 /* site360-spin.gif */,
 				889E49FC1CD3E00D007F6886 /* Recording #1.gif */,
 				889E49FD1CD3E00D007F6886 /* Recording #2.gif */,
 				88E074441B98CFB400E0982A /* tut_gallery_scroll.gif */,
@@ -5146,6 +5158,7 @@
 				88C60B921CC9573D0079B81F /* grfx-klnb.jpg in Resources */,
 				8861DD331BFD55CC006A7D13 /* grfx_expand.png in Resources */,
 				880F24231BFFBD23001EA4E9 /* _parking_nav_mock.jpg.__180__xx__180__1447964706 in Resources */,
+				889E4A051CD40914007F6886 /* mm-restart.gif in Resources */,
 				88E0745D1B98CFB400E0982A /* icon_0003.png in Resources */,
 				8819D8431BB8515400015AF5 /* H and S Formal - 25.jpg in Resources */,
 				822823821B862A0A004154E7 /* Ballston_Existing_Lease_Plan_mh.pdf in Resources */,
@@ -5378,6 +5391,7 @@
 				8892ED851BC2092B00347146 /* phase_d_base_00015.jpg in Resources */,
 				8892EB721BC2082C00347146 /* phase_c_base_00009.jpg in Resources */,
 				883D77BB1C04DE14004B0136 /* phase_a_color_00040.png in Resources */,
+				889E4A031CD40471007F6886 /* site360-spin.gif in Resources */,
 				8892EA691BC2082C00347146 /* phase_a_base_00032.jpg in Resources */,
 				880F241A1BFFBD23001EA4E9 /* master-plan-overlay-residential.png in Resources */,
 				8892EA6B1BC2082C00347146 /* phase_a_base_00034.jpg in Resources */,
@@ -5607,6 +5621,7 @@
 				8819D8361BB8515400015AF5 /* Central Plaza 1.jpg in Resources */,
 				822823C71B862A0A004154E7 /* Picture 056.jpg in Resources */,
 				8861DD351BFD55CC006A7D13 /* grfx_mapMenuBtnDef.png in Resources */,
+				889E4A021CD40471007F6886 /* site360-select.gif in Resources */,
 				883D78601C04DE21004B0136 /* phase_b_color_00059.png in Resources */,
 				824D2BD01B62D02100E5F5A5 /* share_market_interior03.jpg.jpg in Resources */,
 				8861DE841BFD6108006A7D13 /* siteplan_09.png in Resources */,
@@ -5766,6 +5781,7 @@
 				8892ED691BC2092B00347146 /* phase_d_base_00001.jpg in Resources */,
 				889208521BFE32E0007C88FF /* colors.json in Resources */,
 				883D77401C04DD65004B0136 /* phase_c_color_00064.png in Resources */,
+				889E4A071CD40A9A007F6886 /* mm-tips.gif in Resources */,
 				8819D83C1BB8515400015AF5 /* Lounge_R01.jpg in Resources */,
 				8892EDE11BC2092B00347146 /* phase_d_base_00061.jpg in Resources */,
 				883D78541C04DE21004B0136 /* phase_b_color_00047.png in Resources */,
