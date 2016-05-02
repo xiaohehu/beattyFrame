@@ -2,32 +2,36 @@
     "office": [
                {
                "name": "Exelon",
-               "desc": "Also known simply as Downtown Baltimore or the CBD, it continues to be a focal point of business in the Baltimore area with over 100,000 employees working in any one of its many high-rise office buildings.  The CBD is also home to Harborplace, a festival marketplace, which is consistently ranked as one of the top tourist destinations in the state of Maryland.  Other popular destinations in the CBD are the National Aquarium, the Maryland Science Center and the U.S.S. Constellation.",
-               "logo":  "tenant-logo-exelon",
-               },
-               {
-               "name": "Morgan Stanley",
-               "desc": "This growing neighborhood gets its name from 2 former landmark breweries:  National Brewery and The Gunther Brewery, which are now home to mixed-use developments that include apartments, work space and businesses.  A sign high in the air, which features the iconic National Brewery mascot, Natty Boh, distinguishes the area.  Canton Crossing, a large lifestyle center anchored by Harris Teeter and Target, opened in 2013 and serves the established residents as well as the newer residents moving into newly built luxury apartment buildings.",
-               "logo":  "tenant-logo-morgan-stanley",
+               "desc": "Harbor Point serves as the Regional headquarters for Exelon Corporation (NYSE:  EXC), the nation’s leading competitive energy provider. A Fortune 150 Company with approximately $34.5 billion in annual revenue, Exelon has business activities in 48 states, the District of Columbia and Canada. The Exelon building also houses the corporate headquarters for Exelon’s Constellation Energy business unit, which provides energy products and services to approximately 100,000 business and public sector customers and 1 million residential customers.",
+               "logo": "tenant-logo-exelon",
                },
                {
                "name": "Johns Hopkins Medicine",
-               "desc": "Originally the site of a plantation owned by merchant seaman John O’Donnell in the early 1800’s, Canton became later known as a waterfront industrial center and home to a diverse group of European immigrants from Poland, Germany and Ireland.  Today it is better known for the restaurants and pubs that line O’Donnell Square, The Waterfront Park and Fishing Pier, DuBurns Indoor Soccer Arena and two marinas.  Millennial nightlife seekers flock to “The Square” from nearby luxury apartments and renovated row homes, to enjoy the eclectic mix of drinking and dining options offered.",
-               "logo":  "tenant-logo-johns-hopkins",
-               }
+               "desc": "JHMI is the international arm of Johns Hopkins Medicine, a $7.7 billion integrated global health enterprise and one of the leading health care systems in the United States.  JHMI also provides personalized, culturally appropriate care for patients traveling to Johns Hopkins Hospital from outside Maryland and the United States, and for local patients with interpretation needs.",
+               "logo": "tenant-logo-johns-hopkins",
+               },
+               {
+               "name": "Morgan Stanley",
+               "desc": "A global financial services firm and a market leader in securities, asset management and credit services, Morgan Stanley operates in 42 countries and has more than 1300 offices.  The Harbor Point facility is the largest North American office outside of the New York headquarters, and focuses on Operations, Finance, Legal and Compliance and Technology.",
+               "logo":  "tenant-logo-morgan-stanley",
+               },
                ],
     "retail": [
+    			{
+               "name": "Honeygrow",
+               "desc": "A Philadelphia-based quick serve restaurant that emphasizes honest eating and growing local. The eatery serves premium made-to-order stir-frys, salads, and smoothies.",
+               "logo": "tenant-logo-honeygrow",
+               },
                {
                "name": "West Elm",
-               "desc": "Harbor East is Baltimore’s newest waterfront community boasting five star restaurants, world-class hotels, chic local boutiques, better national retailers and a Whole Foods Market.  Known as an “eat, sleep, work, play” destination, inside any of the eight buildings that comprise this 12 square block area, you can also find apartments, condominiums, and Fortune 500 companies.   Harbor East holds events throughout the year including fashion shows, live music, and special dining events. ",
-               "logo":  "tenant-logo-west-elm",
+               "desc": "Launched in 2002, West Elm is a member of the Williams-Sonoma, Inc. portfolio of brands (NYSE: WSM) and is a leader in authentic and approachable home furnishings, accessories and textiles.",
+               "logo": "tenant-logo-west-elm",
                
                },
                {
-               "name": "Honeygrow",
-               "desc": "Named for the prominent hill that faces the Inner Harbor, Federal Hill is known for its stately, late 19th century brick homes.  The neighborhood is a federal historic district with strict regulations regarding rehabilitations, which has kept the original feel of the community.  A mix of young single professionals, and established families call this neighborhood home.   The area is also home to Cross Street Market, a historic 19th century marketplace where you can shop for produce, fresh meats, seafood, baked goods and fresh flowers.",
-               "logo":  "tenant-logo-honeygrow",
-               
+               "name": "CorePower Yoga",
+               "desc": "A Denver-based yoga company that offers a variety of yoga class styles as well as a number of additional cross-training opportunities.",
+               "logo": "tenant-logo-corepower-yoga",
                }
                ]
 }
