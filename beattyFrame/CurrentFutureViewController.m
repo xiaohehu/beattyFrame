@@ -21,7 +21,12 @@ static CGFloat  bottomMenuHeight = 37;
     UIView *uiv_bottomMenu;
     UIView *uiv_bottomHighlightView;
     NSMutableArray *arr_menuButton;
+    __strong IBOutlet UIView *uiv_companyDetail;
+    __strong IBOutlet UIImageView *uiiiv_logo;
+    __strong IBOutlet UILabel *uil_companyName;
 }
+
+@property (nonatomic, retain) IBOutlet UITextView *uittv_desc;
 
 @end
 
@@ -68,6 +73,8 @@ static CGFloat  bottomMenuHeight = 37;
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self  action:@selector(didSwipe:)];
     swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRight];
+    
+    uiv_companyDetail.hidden = YES;
 
 }
 
@@ -122,7 +129,26 @@ static CGFloat  bottomMenuHeight = 37;
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(310, 220);
+    return CGSizeMake(310, 150);
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *tempDic = [[NSDictionary alloc] initWithDictionary:[tenantData objectAtIndex:indexPath.row]];
+    [self loadDetail:tempDic];
+}
+
+-(void)loadDetail:(NSDictionary*)tempDic
+{
+    uiv_companyDetail.hidden = NO;
+    uil_companyName.text = tempDic[@"name"];
+    uiiiv_logo.image = [UIImage imageNamed:tempDic[@"logo"]];
+    _uittv_desc.text = tempDic[@"desc"];
+}
+
+-(IBAction)hideDetail:(id)sender
+{
+    uiv_companyDetail.hidden = YES;
 }
 
 -(void)createBottomMenu

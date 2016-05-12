@@ -17,16 +17,16 @@
                },
                ],
     "retail": [
-    			{
-               "name": "Honeygrow",
-               "desc": "A Philadelphia-based quick serve restaurant that emphasizes honest eating and growing local. The eatery serves premium made-to-order stir-frys, salads, and smoothies.",
-               "logo": "tenant-logo-honeygrow",
-               },
                {
                "name": "West Elm",
                "desc": "Launched in 2002, West Elm is a member of the Williams-Sonoma, Inc. portfolio of brands (NYSE: WSM) and is a leader in authentic and approachable home furnishings, accessories and textiles.",
                "logo": "tenant-logo-west-elm",
                
+               },
+    			{
+               "name": "Honeygrow",
+               "desc": "A Philadelphia-based quick serve restaurant that emphasizes honest eating and growing local. The eatery serves premium made-to-order stir-frys, salads, and smoothies.",
+               "logo": "tenant-logo-honeygrow",
                },
                {
                "name": "CorePower Yoga",

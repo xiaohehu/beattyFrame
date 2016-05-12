@@ -756,7 +756,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="137" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7yu-iT-pPW" userLabel="thumb">
@@ -1695,7 +1695,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="220"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grfx-partners-tenant-outline.png" translatesAutoresizingMaskIntoConstraints="NO" id="GKt-fW-aMX">
@@ -1759,18 +1759,94 @@
                                     <outlet property="delegate" destination="cow-I1-Igm" id="Oax-vL-SnN"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeR-xQ-N3I">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0b-Ez-o3E">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <color key="barTintColor" red="0.84705883264541626" green="0.13725490868091583" blue="0.16470588743686676" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="Tenant Detail" id="lQS-0e-I0U">
+                                                <barButtonItem key="rightBarButtonItem" style="plain" id="aEm-co-Cw2">
+                                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="77A-Ae-sQb">
+                                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Close">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="hideDetail:" destination="cow-I1-Igm" eventType="touchUpInside" id="RLX-qJ-uOp"/>
+                                                        </connections>
+                                                    </button>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="512" height="44"/>
+                                        </variation>
+                                    </navigationBar>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg2-dD-V0U">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="18" y="217" width="478" height="166"/>
+                                        </variation>
+                                    </textView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIt-aP-cac">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="18" y="217" width="478" height="46"/>
+                                        </variation>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ui_tips_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="HQh-uf-DJ5">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="18" y="51" width="477" height="158"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="E0b-Ez-o3E"/>
+                                        <exclude reference="xg2-dD-V0U"/>
+                                        <exclude reference="sIt-aP-cac"/>
+                                        <exclude reference="HQh-uf-DJ5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="256" y="308" width="512" height="391"/>
+                                    <mask key="subviews">
+                                        <include reference="E0b-Ez-o3E"/>
+                                        <include reference="xg2-dD-V0U"/>
+                                        <include reference="sIt-aP-cac"/>
+                                        <include reference="HQh-uf-DJ5"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="MK5-6a-HJ7"/>
                                 <exclude reference="svz-RW-jk0"/>
+                                <exclude reference="SeR-xQ-N3I"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
                                 <include reference="MK5-6a-HJ7"/>
                                 <include reference="svz-RW-jk0"/>
+                                <include reference="SeR-xQ-N3I"/>
                             </mask>
                         </variation>
                     </view>
@@ -1778,6 +1854,10 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="collectionview" destination="svz-RW-jk0" id="nbM-lj-n1q"/>
+                        <outlet property="uiiiv_logo" destination="HQh-uf-DJ5" id="avL-mx-663"/>
+                        <outlet property="uil_companyName" destination="sIt-aP-cac" id="sAW-6X-j3b"/>
+                        <outlet property="uittv_desc" destination="xg2-dD-V0U" id="Gfn-ui-PT0"/>
+                        <outlet property="uiv_companyDetail" destination="SeR-xQ-N3I" id="7Tw-1j-Ckv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EuN-yr-i7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1805,7 +1885,7 @@
     </scenes>
     <resources>
         <image name="grfx-icon-gallery.png" width="21" height="21"/>
-        <image name="grfx-partners-tenant-outline.png" width="312" height="221"/>
+        <image name="grfx-partners-tenant-outline.png" width="312" height="152"/>
         <image name="grfx_closeBtn.png" width="25" height="25"/>
         <image name="grfx_menuRestart.jpg" width="23" height="14"/>
         <image name="grfx_menuSettings.jpg" width="24" height="21"/>
@@ -1815,5 +1895,6 @@
         <image name="grfx_summary.png" width="1024" height="768"/>
         <image name="share_but_email_roll.png" width="149" height="762"/>
         <image name="share_but_pdf_roll.png" width="33" height="33"/>
+        <image name="ui_tips_icon.png" width="17" height="27"/>
     </resources>
 </document>
