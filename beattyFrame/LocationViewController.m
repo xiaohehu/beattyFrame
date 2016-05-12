@@ -20,7 +20,7 @@
 
 #define METERS_PER_MILE 109.344
 
-static float    bottomWidth = 236;
+static float    bottomWidth = 200;
 static float    bottomHeight = 37;
 
 @interface LocationViewController () <ButtonStackDelegate, MKMapViewDelegate, tapviewDeleagte>
@@ -41,6 +41,8 @@ static float    bottomHeight = 37;
     NSInteger           incomingIndex;
     
     IBOutlet            UIButton            *uib_appleMap;
+    NSMutableArray             *arr_locationBtns;
+
 }
 
 @property (nonatomic, strong) ebZoomingScrollView			*zoomingScroll;
@@ -120,7 +122,7 @@ static float    bottomHeight = 37;
     
     overlayMenu = [[ButtonStack alloc] initWithFrame:CGRectZero];
     overlayMenu.delegate = self;
-    [overlayMenu setupfromArray:arr_OverlayData maxWidth:CGRectMake(15,100,150,0)];
+    [overlayMenu setupfromArray:arr_OverlayData maxWidth:CGRectMake(0,100,bottomWidth,0)];
     [overlayMenu setCenter];
     [overlayMenu setBackgroundColor:[UIColor whiteColor]];
     overlayMenu.layer.borderWidth = 1;
@@ -131,7 +133,7 @@ static float    bottomHeight = 37;
 -(void)createKeyForMap
 {
     UIImage*key = [UIImage imageNamed:@"grfx_regionalMap_overlay_key.png"];
-    KeyOverlay *keyOverlay = [[KeyOverlay alloc] initWithFrame:CGRectMake(20, 320, key.size.width, key.size.height)];
+    KeyOverlay *keyOverlay = [[KeyOverlay alloc] initWithFrame:CGRectMake(0, uiv_bottomMenu.frame.origin.y + bottomHeight + 5, key.size.width, key.size.height)];
     [keyOverlay setKeyImage:key];
     [self.view addSubview:keyOverlay];
     
@@ -139,8 +141,6 @@ static float    bottomHeight = 37;
     keyOverlay = [[KeyOverlay alloc] initWithFrame:CGRectMake(630, 390, key.size.width, key.size.height)];
     [keyOverlay setKeyImage:key];
     [self.view addSubview:keyOverlay];
-    
-    //grfx_cityMap_overlay_legend_light_rail.png
 }
 
 -(void)createKeyForCity
@@ -255,16 +255,22 @@ static float    bottomHeight = 37;
 
 #pragma mark - menu @ bottom
 - (void)createBottomMenu {
-    uiv_bottomMenu = [[UIView alloc] initWithFrame:CGRectMake((self.view.frame.size.width - bottomWidth)/2, self.view.frame.size.height - 22 - bottomHeight, bottomWidth, bottomHeight)];
+    uiv_bottomMenu = [[UIView alloc] initWithFrame:CGRectMake(overlayMenu.frame.origin.x, 250, bottomWidth, bottomHeight)];
     uiv_bottomMenu.backgroundColor = [UIColor whiteColor];
     uiv_bottomMenu.layer.borderWidth = 1.0;
     uiv_bottomMenu.layer.borderColor = [UIColor grayColor].CGColor;
     [self.view addSubview: uiv_bottomMenu];
     
+    CGFloat buttonWidth = 67;
+
+    uiv_menuIndicator = [[UIView alloc] initWithFrame:CGRectMake(0, 0, buttonWidth, bottomHeight)];
+    uiv_menuIndicator.backgroundColor = [UIColor themeRed];
+    [uiv_bottomMenu addSubview: uiv_menuIndicator];
+    
     NSArray *arr_menuTitles = @[
                                 @"Site",
                                 @"City",
-                                @"Regional"
+                                @"Regional",
                                 ];
     [self createBottomButtons:arr_menuTitles];
 }
@@ -273,8 +279,9 @@ static float    bottomHeight = 37;
 
 - (void)createBottomButtons:(NSArray *)titles {
     
-    CGFloat buttonWidth = 78;
+    arr_locationBtns = [NSMutableArray new];
     
+    CGFloat buttonWidth = 67;
     for (int i = 0; i < titles.count; i++) {
         UIButton *button = [UIButton buttonWithType: UIButtonTypeCustom];
         button.frame = CGRectMake(1 + i * buttonWidth, 0, buttonWidth, bottomHeight);
@@ -284,15 +291,17 @@ static float    bottomHeight = 37;
         button.tag = i;
         [button addTarget:self action:@selector(tapBottomMenu:) forControlEvents:UIControlEventTouchUpInside];
         [uiv_bottomMenu addSubview: button];
+        [arr_locationBtns addObject:button];
         
         if (i == 0) {
             [self tapBottomMenu:button];
         }
     }
     
-    uiv_menuIndicator = [[UIView alloc] initWithFrame:CGRectMake(0, bottomHeight-4, buttonWidth, 4)];
-    uiv_menuIndicator.backgroundColor = [UIColor themeRed];
-    [uiv_bottomMenu addSubview: uiv_menuIndicator];
+    uiv_bottomMenu.frame = CGRectMake(overlayMenu.frame.origin.x,
+                                  overlayMenu.frame.origin.y - bottomHeight,
+                                  bottomWidth,
+                                  bottomHeight);
     
 }
 
@@ -308,9 +317,21 @@ static float    bottomHeight = 37;
         [self createKeyForMap];
     }
     
+    uiv_bottomMenu.frame = CGRectMake(overlayMenu.frame.origin.x,
+                                      overlayMenu.frame.origin.y - bottomHeight,
+                                      bottomWidth,
+                                      bottomHeight);
+    
     [self clearLogoOverlay];
     
     UIButton *tappedButton = sender;
+    
+    for (UIButton *btn in arr_locationBtns){
+        [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    }
+    
+    [tappedButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+
     
     mapIndex = (int)[sender tag];
     NSLog(@"mapIndex %d",mapIndex);
@@ -318,7 +339,7 @@ static float    bottomHeight = 37;
     CGRect frame = uiv_menuIndicator.frame;
     uiiv_tmpMap.image = [UIImage imageNamed:arr_mapImageNames[tappedButton.tag]];
     [UIView animateWithDuration:0.33 animations:^(void){
-        uiv_menuIndicator.frame = CGRectMake(tappedButton.frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
+        uiv_menuIndicator.frame = CGRectMake(tappedButton.frame.origin.x, frame.origin.y, 65, frame.size.height);
         _zoomingScroll.blurView.alpha = 0.0;
         uiiv_tmpMap.alpha = 1.0;
     } completion:^(BOOL finished){
@@ -337,6 +358,9 @@ static float    bottomHeight = 37;
         }
 
     }];
+    
+
+    
 }
 
 -(void)createLogoPinForMapAtRect:(CGPoint)point
