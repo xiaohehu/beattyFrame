@@ -529,7 +529,7 @@ static float    menuButtonSize = 50.0;
     
     sectionIndex = 30;
     
-    [self updateSectionTitle:@"Partners"];
+    [self updateSectionTitle:@"Project Team"];
     
     UIButton *tappedButton = sender;
     [self highlightTheButton:tappedButton withAnimation:YES];
