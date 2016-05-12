@@ -10,8 +10,9 @@
 #import "ebZoomingScrollView.h"
 #import "ButtonStack.h"
 #import "UIColor+Extensions.h"
+#import "xhWebViewController.h"
 
-@interface MasterplanParkingViewController ()<ButtonStackDelegate>
+@interface MasterplanParkingViewController ()<ButtonStackDelegate, UIPopoverPresentationControllerDelegate>
 {
     UIButton                *uib_close;
     ebZoomingScrollView     *uis_zoomSitePlan;
@@ -24,6 +25,7 @@
     int                     overlayParkingMenuIndex;
     ButtonStack *overlayMenu;
     UIImageView *parcelNames;
+    __weak IBOutlet UIButton *uib_parking;
 }
 
 @property (nonatomic, strong) ebZoomingScrollView			*zoomingScroll;
@@ -71,6 +73,8 @@
     }
     
     NSLog(@"index %i",_index);
+    
+    [self.view bringSubviewToFront:uib_parking];
 }
 
 -(void)createHeaderViewWithText:(NSString*)text atFrame:(CGRect)frame
@@ -95,6 +99,7 @@
         _zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
         [self.view addSubview:_zoomingScroll];
         _zoomingScroll.backgroundColor = [UIColor clearColor];
+        _zoomingScroll.alpha = 1.0;
         _zoomingScroll.delegate=self;
         _zoomingScroll.blurView.image = [UIImage imageNamed:@"master-plan-default.png"];
         
@@ -249,5 +254,23 @@
 - (void)closeThisView:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{}];
 }
+
+-(IBAction)createWebButtonWithAddress:(UIButton*)address
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"parkingpopover"];
+    controller.preferredContentSize = CGSizeMake(300, 347);
+
+    controller.modalPresentationStyle = UIModalPresentationPopover;
+    [self presentViewController:controller animated:YES completion:nil];
+    
+    UIPopoverPresentationController *popController = [controller popoverPresentationController];
+    popController.permittedArrowDirections = UIPopoverArrowDirectionAny;
+    popController.sourceView = self.view;
+    popController.sourceRect = address.frame;
+    popController.delegate = self;
+}
+
+
 
 @end

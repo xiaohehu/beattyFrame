@@ -832,6 +832,7 @@
 		887648151BA3598A002D4183 /* embBuilding.m in Sources */ = {isa = PBXBuildFile; fileRef = 887648141BA3598A002D4183 /* embBuilding.m */; };
 		888233751BA0B0600019FD75 /* ButtonStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 888233741BA0B0600019FD75 /* ButtonStack.m */; };
 		888233831BA214930019FD75 /* buttonstack.json in Resources */ = {isa = PBXBuildFile; fileRef = 888233821BA214930019FD75 /* buttonstack.json */; };
+		888787181CE525FB00557B05 /* ParkingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888787171CE525FB00557B05 /* ParkingTableViewController.m */; };
 		889208491BFE2C48007C88FF /* 1305-DockSt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 889208471BFE2C48007C88FF /* 1305-DockSt.jpg */; };
 		8892084A1BFE2C48007C88FF /* 1305-DockSt@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 889208481BFE2C48007C88FF /* 1305-DockSt@2x.jpg */; };
 		889208521BFE32E0007C88FF /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 8892084C1BFE32E0007C88FF /* colors.json */; };
@@ -2123,6 +2124,8 @@
 		888233731BA0B0600019FD75 /* ButtonStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonStack.h; path = utilities/ButtonStack.h; sourceTree = "<group>"; };
 		888233741BA0B0600019FD75 /* ButtonStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonStack.m; path = utilities/ButtonStack.m; sourceTree = "<group>"; };
 		888233821BA214930019FD75 /* buttonstack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = buttonstack.json; path = utilities/buttonstack.json; sourceTree = "<group>"; };
+		888787161CE525FB00557B05 /* ParkingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingTableViewController.h; sourceTree = "<group>"; };
+		888787171CE525FB00557B05 /* ParkingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingTableViewController.m; sourceTree = "<group>"; };
 		889208471BFE2C48007C88FF /* 1305-DockSt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1305-DockSt.jpg"; sourceTree = "<group>"; };
 		889208481BFE2C48007C88FF /* 1305-DockSt@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1305-DockSt@2x.jpg"; sourceTree = "<group>"; };
 		8892084C1BFE32E0007C88FF /* colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
@@ -3059,6 +3062,8 @@
 				88C60B951CC95F130079B81F /* CurrentFutureViewController.m */,
 				82CA341F1B6BE2960065E31E /* LocationViewController.h */,
 				82CA34201B6BE2960065E31E /* LocationViewController.m */,
+				888787161CE525FB00557B05 /* ParkingTableViewController.h */,
+				888787171CE525FB00557B05 /* ParkingTableViewController.m */,
 				82115DEB1B70036100A36684 /* BuildingViewController.h */,
 				82115DEC1B70036100A36684 /* BuildingViewController.m */,
 				88E074631B98D12C00E0982A /* TipsViewController.h */,
@@ -5860,6 +5865,7 @@
 				82A128B91B69164100564266 /* supportingModelController.m in Sources */,
 				88AA13FB1CC806B700B63F81 /* Tappable.m in Sources */,
 				822822BB1B851E44004154E7 /* SettingViewController.m in Sources */,
+				888787181CE525FB00557B05 /* ParkingTableViewController.m in Sources */,
 				822822A81B84F783004154E7 /* buildingModelController.m in Sources */,
 				8843A2861BF5953700C1C1D5 /* MapViewAnnotation.m in Sources */,
 				822822801B822243004154E7 /* sponsorDataViewController.m in Sources */,
