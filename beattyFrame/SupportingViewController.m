@@ -257,7 +257,11 @@ static int      gridViewIndex = kEcoIndex;
 
     for (int i = 0 ; i < arr_menuTitles.count; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [button setTitle:[NSString stringWithFormat:@"Page %i",i + 1] forState:UIControlStateNormal];
+        
+        [button setTitle:arr_menuTitles[i] forState:UIControlStateNormal];
+
+        
+        //[button setTitle:[NSString stringWithFormat:@"Page %i",i + 1] forState:UIControlStateNormal];
         [button sizeToFit];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];

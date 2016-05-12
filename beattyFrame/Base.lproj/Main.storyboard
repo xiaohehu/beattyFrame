@@ -238,12 +238,12 @@
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
-                                                <state key="normal" title="Residential Boom">
+                                                <state key="normal" title="Booming Neighborhoods">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="0.0" y="70" width="93" height="25"/>
+                                                    <rect key="frame" x="0.0" y="69" width="128" height="27"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="loadSupporting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IwE-a1-YS3"/>
@@ -268,12 +268,12 @@
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
-                                                <state key="normal" title="Thriving Economy">
+                                                <state key="normal" title="Prosperous Workforce">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="0.0" y="119" width="95" height="27"/>
+                                                    <rect key="frame" x="0.0" y="119" width="117" height="27"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="loadSupporting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lJX-AW-oPY"/>
@@ -283,12 +283,12 @@
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="13"/>
-                                                <state key="normal" title="Higher Learning">
+                                                <state key="normal" title="Scholastic Powerhouse">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                    <rect key="frame" x="0.0" y="145" width="83" height="27"/>
+                                                    <rect key="frame" x="0.0" y="145" width="120" height="27"/>
                                                 </variation>
                                                 <connections>
                                                     <action selector="loadSupporting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4z-bz-KB5"/>
@@ -1266,6 +1266,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hQt-Jm-uIa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EG5-7R-V38">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1403,7 +1404,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PH-pq-vLy">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                         <rect key="frame" x="25" y="115" width="260" height="25"/>
