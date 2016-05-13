@@ -2,7 +2,7 @@
     "site": [
 				{
 				"name": "Access",
-				"overlay": "grfx_siteMap_overlay_access.png",
+				"overlay": "grfx_siteMap_overlay_access",
 				},
              	{
 				"name": "Neighborhoods",
@@ -18,7 +18,7 @@
 				},
                  {
                  "name": "Retail",
-                 "overlay": "grfx_siteMap_overlay_retail.png",
+                 "overlay": "grfx_siteMap_overlay_retail",
                  }
             ],
     "city": [
@@ -36,7 +36,7 @@
 				},
 				{
 				"name": "Universities",
-				"overlay": "grfx_cityMap_overlay_institutions.png",
+				"overlay": "grfx_cityMap_overlay_universities",
 				}
             ]
 }

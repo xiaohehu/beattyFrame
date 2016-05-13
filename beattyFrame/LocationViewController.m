@@ -84,8 +84,8 @@ static float    bottomHeight = 37;
 - (void)prepareData {
     arr_mapImageNames = @[
                           @"grfx_siteMap_base_map.png",
-                          @"grfx-city-base-map.png",
-                          @"grfx_regionalMap_base_map.png"
+                          @"grfx-city-base-map",
+                          @"grfx_regionalMap_overlay_access"
                           ];
     
     NSString *textPath = [[NSBundle mainBundle] pathForResource:@"buttonstack" ofType:@"json"];
@@ -137,7 +137,7 @@ static float    bottomHeight = 37;
     [keyOverlay setKeyImage:key];
     [self.view addSubview:keyOverlay];
     
-    key = [UIImage imageNamed:@"grfx_regionalMap_overlay_stats.png"];
+    key = [UIImage imageNamed:@"grfx_regionalMap_overlay_stats"];
     keyOverlay = [[KeyOverlay alloc] initWithFrame:CGRectMake(630, 390, key.size.width, key.size.height)];
     [keyOverlay setKeyImage:key];
     [self.view addSubview:keyOverlay];

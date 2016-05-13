@@ -14,7 +14,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>parcel-panel-parcel-1.png</string>
+		<string>parcel-panel-parcel-1</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -28,7 +28,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>parcel-panel-exelon.png</string>
+		<string>parcel-panel-exelon</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -42,7 +42,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>parcel-panel-1305-dock-st.png</string>
+		<string>parcel-panel-1305-dock-st</string>
 		<key>buildingWeb</key>
 		<string>http://www.1305DockStreet.com</string>
 	</dict>
@@ -58,7 +58,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>parcel-panel-parcel-4.png</string>
+		<string>parcel-panel-parcel-4</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -72,7 +72,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>parcel-panel-1405-point.png</string>
+		<string>parcel-panel-1405-point</string>
 		<key>buildingWeb</key>
 		<string>http://www.1405Point.com</string>
 	</dict>
@@ -88,7 +88,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>parcel-panel-thames-street-wharf.png</string>
+		<string>parcel-panel-thames-street-wharf</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -102,7 +102,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>parcel-panel-wills-wharf.png</string>
+		<string>parcel-panel-wills-wharf</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -116,7 +116,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>parcel-panel-parcel-3.png</string>
+		<string>parcel-panel-parcel-3</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -130,7 +130,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>parcel-panel-point-park.png</string>
+		<string>parcel-panel-harbor-point-park</string>
 	</dict>
 	<dict>
 		<key>buildingImage</key>
@@ -144,7 +144,7 @@
 		<key>buildingGallery</key>
 		<string>gallery name</string>
 		<key>buildingStats</key>
-		<string>parcel-panel-central-plaza.png</string>
+		<string>parcel-panel-central-plaza</string>
 	</dict>
 </array>
 </plist>
