@@ -50,17 +50,22 @@
     }
 }
 
+-(IBAction)exit:(UIStoryboardSegue*)seque
+{
+    
+}
+
 -(IBAction)loadBrownfield:(id)sender
 {
-    if (!_zoomingScroll) {
-        CGRect theFrame = self.view.bounds;
-        _zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
-        _zoomingScroll.closeBtn = YES;
-        [self.view addSubview:_zoomingScroll];
-        _zoomingScroll.backgroundColor = [UIColor clearColor];
-        _zoomingScroll.delegate=self;
-        [self loadInImge:@"brownfield.png"];
-    }
+//    if (!_zoomingScroll) {
+//        CGRect theFrame = self.view.bounds;
+//        _zoomingScroll = [[ebZoomingScrollView alloc] initWithFrame:theFrame image:nil shouldZoom:YES];
+//        _zoomingScroll.closeBtn = YES;
+//        [self.view addSubview:_zoomingScroll];
+//        _zoomingScroll.backgroundColor = [UIColor clearColor];
+//        _zoomingScroll.delegate=self;
+//        [self loadInImge:@"brownfield.png"];
+//    }
 }
 
 -(IBAction)loadPark:(id)sender

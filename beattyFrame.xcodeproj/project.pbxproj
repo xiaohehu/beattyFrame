@@ -354,16 +354,8 @@
 		8819D81E1BB8515400015AF5 /* Central_Plaza@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */; };
 		8819D81F1BB8515400015AF5 /* Harbor_Point_Park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */; };
 		8819D8201BB8515400015AF5 /* Harbor_Point_Park@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7D01BB8515400015AF5 /* Harbor_Point_Park@2x.jpg */; };
-		8819D8211BB8515400015AF5 /* Parcel_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7D11BB8515400015AF5 /* Parcel_01.jpg */; };
-		8819D8221BB8515400015AF5 /* Parcel_01@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7D21BB8515400015AF5 /* Parcel_01@2x.jpg */; };
-		8819D8231BB8515400015AF5 /* Parcel_02-Excelon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7D31BB8515400015AF5 /* Parcel_02-Excelon.jpg */; };
-		8819D8241BB8515400015AF5 /* Parcel_02-Excelon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7D41BB8515400015AF5 /* Parcel_02-Excelon@2x.jpg */; };
 		8819D8251BB8515400015AF5 /* Parcel_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7D51BB8515400015AF5 /* Parcel_03.jpg */; };
 		8819D8261BB8515400015AF5 /* Parcel_03@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7D61BB8515400015AF5 /* Parcel_03@2x.jpg */; };
-		8819D8271BB8515400015AF5 /* Parcel_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7D71BB8515400015AF5 /* Parcel_04.jpg */; };
-		8819D8281BB8515400015AF5 /* Parcel_04@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7D81BB8515400015AF5 /* Parcel_04@2x.jpg */; };
-		8819D8291BB8515400015AF5 /* Point_Street_Apt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7D91BB8515400015AF5 /* Point_Street_Apt.jpg */; };
-		8819D82A1BB8515400015AF5 /* Point_Street_Apt@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7DA1BB8515400015AF5 /* Point_Street_Apt@2x.jpg */; };
 		8819D82B1BB8515400015AF5 /* Thames_Street_Wharf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7DB1BB8515400015AF5 /* Thames_Street_Wharf.jpg */; };
 		8819D82C1BB8515400015AF5 /* Thames_Street_Wharf@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7DC1BB8515400015AF5 /* Thames_Street_Wharf@2x.jpg */; };
 		8819D82D1BB8515400015AF5 /* Wills_Street_Wharf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8819D7DD1BB8515400015AF5 /* Wills_Street_Wharf.jpg */; };
@@ -1636,16 +1628,8 @@
 		8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Central_Plaza@2x.jpg"; sourceTree = "<group>"; };
 		8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Harbor_Point_Park.jpg; sourceTree = "<group>"; };
 		8819D7D01BB8515400015AF5 /* Harbor_Point_Park@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Harbor_Point_Park@2x.jpg"; sourceTree = "<group>"; };
-		8819D7D11BB8515400015AF5 /* Parcel_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Parcel_01.jpg; sourceTree = "<group>"; };
-		8819D7D21BB8515400015AF5 /* Parcel_01@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Parcel_01@2x.jpg"; sourceTree = "<group>"; };
-		8819D7D31BB8515400015AF5 /* Parcel_02-Excelon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Parcel_02-Excelon.jpg"; sourceTree = "<group>"; };
-		8819D7D41BB8515400015AF5 /* Parcel_02-Excelon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Parcel_02-Excelon@2x.jpg"; sourceTree = "<group>"; };
 		8819D7D51BB8515400015AF5 /* Parcel_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Parcel_03.jpg; sourceTree = "<group>"; };
 		8819D7D61BB8515400015AF5 /* Parcel_03@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Parcel_03@2x.jpg"; sourceTree = "<group>"; };
-		8819D7D71BB8515400015AF5 /* Parcel_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Parcel_04.jpg; sourceTree = "<group>"; };
-		8819D7D81BB8515400015AF5 /* Parcel_04@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Parcel_04@2x.jpg"; sourceTree = "<group>"; };
-		8819D7D91BB8515400015AF5 /* Point_Street_Apt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Point_Street_Apt.jpg; sourceTree = "<group>"; };
-		8819D7DA1BB8515400015AF5 /* Point_Street_Apt@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Point_Street_Apt@2x.jpg"; sourceTree = "<group>"; };
 		8819D7DB1BB8515400015AF5 /* Thames_Street_Wharf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thames_Street_Wharf.jpg; sourceTree = "<group>"; };
 		8819D7DC1BB8515400015AF5 /* Thames_Street_Wharf@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Thames_Street_Wharf@2x.jpg"; sourceTree = "<group>"; };
 		8819D7DD1BB8515400015AF5 /* Wills_Street_Wharf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wills_Street_Wharf.jpg; sourceTree = "<group>"; };
@@ -3454,16 +3438,8 @@
 				8819D7CE1BB8515400015AF5 /* Central_Plaza@2x.jpg */,
 				8819D7CF1BB8515400015AF5 /* Harbor_Point_Park.jpg */,
 				8819D7D01BB8515400015AF5 /* Harbor_Point_Park@2x.jpg */,
-				8819D7D11BB8515400015AF5 /* Parcel_01.jpg */,
-				8819D7D21BB8515400015AF5 /* Parcel_01@2x.jpg */,
-				8819D7D31BB8515400015AF5 /* Parcel_02-Excelon.jpg */,
-				8819D7D41BB8515400015AF5 /* Parcel_02-Excelon@2x.jpg */,
 				8819D7D51BB8515400015AF5 /* Parcel_03.jpg */,
 				8819D7D61BB8515400015AF5 /* Parcel_03@2x.jpg */,
-				8819D7D71BB8515400015AF5 /* Parcel_04.jpg */,
-				8819D7D81BB8515400015AF5 /* Parcel_04@2x.jpg */,
-				8819D7D91BB8515400015AF5 /* Point_Street_Apt.jpg */,
-				8819D7DA1BB8515400015AF5 /* Point_Street_Apt@2x.jpg */,
 				8819D7DB1BB8515400015AF5 /* Thames_Street_Wharf.jpg */,
 				8819D7DC1BB8515400015AF5 /* Thames_Street_Wharf@2x.jpg */,
 				8819D7DD1BB8515400015AF5 /* Wills_Street_Wharf.jpg */,
@@ -4673,7 +4649,6 @@
 				8892EA5B1BC2082C00347146 /* phase_a_base_00018.jpg in Resources */,
 				8819D8591BB8515400015AF5 /* 2015.06.18 Wills Street Package .pdf in Resources */,
 				880F24211BFFBD23001EA4E9 /* master-plan-roads@2x.png in Resources */,
-				8819D8221BB8515400015AF5 /* Parcel_01@2x.jpg in Resources */,
 				883D78431C04DE21004B0136 /* phase_b_color_00030.png in Resources */,
 				880FDB911CCFFF4300B0110C /* parcel-panel-1305-dock-st@2x.png in Resources */,
 				8892EB131BC2082C00347146 /* phase_b_base_00058.jpg in Resources */,
@@ -4853,7 +4828,6 @@
 				822822B21B850AC6004154E7 /* grfx_building1@2x.jpg in Resources */,
 				883D77A61C04DE14004B0136 /* phase_a_color_00019.png in Resources */,
 				8892EA631BC2082C00347146 /* phase_a_base_00026.jpg in Resources */,
-				8819D82A1BB8515400015AF5 /* Point_Street_Apt@2x.jpg in Resources */,
 				881D14071BF0E1CA00693C62 /* building_data.json in Resources */,
 				8861DD221BFD55CC006A7D13 /* grfx-arrow-right.png in Resources */,
 				883D77D01C04DE14004B0136 /* phase_a_color_00061.png in Resources */,
@@ -4912,7 +4886,6 @@
 				883D77C21C04DE14004B0136 /* phase_a_color_00047.png in Resources */,
 				8892EE2D1BC2092B00347146 /* phase_d_color_00053.png in Resources */,
 				8892EBA91BC2082C00347146 /* phase_c_base_00064.jpg in Resources */,
-				8819D8271BB8515400015AF5 /* Parcel_04.jpg in Resources */,
 				883D785E1C04DE21004B0136 /* phase_b_color_00057.png in Resources */,
 				883D785F1C04DE21004B0136 /* phase_b_color_00058.png in Resources */,
 				8861DE041BFD55E6006A7D13 /* grfx_siteMap_overlay_corp_neighbors.png in Resources */,
@@ -4970,7 +4943,6 @@
 				8892EAFE1BC2082C00347146 /* phase_b_base_00037.jpg in Resources */,
 				883D77A51C04DE14004B0136 /* phase_a_color_00018.png in Resources */,
 				883D770E1C04DD65004B0136 /* phase_c_color_00014.png in Resources */,
-				8819D8231BB8515400015AF5 /* Parcel_02-Excelon.jpg in Resources */,
 				883D77951C04DE14004B0136 /* phase_a_color_00002.png in Resources */,
 				883D77391C04DD65004B0136 /* phase_c_color_00057.png in Resources */,
 				8892EA8A1BC2082C00347146 /* phase_a_base_00065.jpg in Resources */,
@@ -5343,7 +5315,6 @@
 				8892EAE91BC2082C00347146 /* phase_b_base_00016.jpg in Resources */,
 				8892EB811BC2082C00347146 /* phase_c_base_00024.jpg in Resources */,
 				883D77AB1C04DE14004B0136 /* phase_a_color_00024.png in Resources */,
-				8819D8211BB8515400015AF5 /* Parcel_01.jpg in Resources */,
 				824D2B301B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg in Resources */,
 				8892EB731BC2082C00347146 /* phase_c_base_00010.jpg in Resources */,
 				883D787A1C055E08004B0136 /* settings.jpg in Resources */,
@@ -5395,7 +5366,6 @@
 				82115DE61B6FB14400A36684 /* GoodPro-CondLight.otf in Resources */,
 				8892EE221BC2092B00347146 /* phase_d_color_00042.png in Resources */,
 				8861DD531BFD55CC006A7D13 /* ui_tips.png in Resources */,
-				8819D8281BB8515400015AF5 /* Parcel_04@2x.jpg in Resources */,
 				883D771F1C04DD65004B0136 /* phase_c_color_00031.png in Resources */,
 				8861DDDA1BFD55E6006A7D13 /* grfx_cityMap_overlay_corp_neighbors.png in Resources */,
 				883D77DB1C04DE14004B0136 /* phase_a_color_00072.png in Resources */,
@@ -5737,7 +5707,6 @@
 				8892EE281BC2092B00347146 /* phase_d_color_00048.png in Resources */,
 				883D77411C04DD65004B0136 /* phase_c_color_00065.png in Resources */,
 				824D2BBD1B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View01_051215.jpg.jpg in Resources */,
-				8819D8291BB8515400015AF5 /* Point_Street_Apt.jpg in Resources */,
 				822823E01B862A0A004154E7 /* thumb_inspiration.jpg in Resources */,
 				880FDB991CD14A0800B0110C /* grfx-partners-jll.png in Resources */,
 				8861DE001BFD55E6006A7D13 /* grfx_siteMap_overlay_access_legend.png in Resources */,
@@ -5796,7 +5765,6 @@
 				8892EB011BC2082C00347146 /* phase_b_base_00040.jpg in Resources */,
 				883D782C1C04DE21004B0136 /* phase_b_color_00007.png in Resources */,
 				8892EB6A1BC2082C00347146 /* phase_c_base_00001.jpg in Resources */,
-				8819D8241BB8515400015AF5 /* Parcel_02-Excelon@2x.jpg in Resources */,
 				8819D8571BB8515400015AF5 /* Point St. Permit Set without Landscape(Resubmission) (dragged) 1.pdf in Resources */,
 				824D2B321B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg in Resources */,
 				8861DE6D1BFD5F1C006A7D13 /* supporting-stories-eco-district.png in Resources */,

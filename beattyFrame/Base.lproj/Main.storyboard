@@ -33,6 +33,7 @@
             <string>GoodPro-Book</string>
             <string>GoodPro-Book</string>
             <string>GoodPro-Book</string>
+            <string>GoodPro-Book</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -728,7 +729,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFB-Y9-ifH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="531.75" y="888"/>
+            <point key="canvasLocation" x="594.75" y="1723.5"/>
         </scene>
         <!--Gallery View Controller-->
         <scene sceneID="lRr-7H-nx7">
@@ -981,6 +982,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQy-23-0Ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1305.75" y="447"/>
         </scene>
         <!--Supporting Data View Controller-->
         <scene sceneID="ev1-lP-VlW">
@@ -1001,7 +1003,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CfE-KR-wXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346.5" y="1055.25"/>
+            <point key="canvasLocation" x="-891" y="1092"/>
         </scene>
         <!--Supporting View Controller-->
         <scene sceneID="PYk-Va-9Qe">
@@ -1067,7 +1069,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tq7-eS-UKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="234" y="1827"/>
+            <point key="canvasLocation" x="-270" y="1738.5"/>
         </scene>
         <!--Building View Controller-->
         <scene sceneID="C8j-pZ-Jyc">
@@ -1221,6 +1223,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="loadBrownfield:" destination="hXN-dx-tnY" eventType="touchUpInside" id="zam-zF-4K3"/>
+                                    <segue destination="bsL-tx-Uhf" kind="presentation" id="qgT-TW-r3C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwZ-bE-9ag">
@@ -1278,6 +1281,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1O-8v-s0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2vs-9M-d2A" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3936.75" y="-793.5"/>
         </scene>
@@ -1347,7 +1351,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fb0-Wm-ayG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5097.75" y="-794.25"/>
+            <point key="canvasLocation" x="4797.75" y="-793.5"/>
         </scene>
         <!--Parking Table View Controller-->
         <scene sceneID="4nw-TE-e3Z">
@@ -1585,7 +1589,110 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iH2-3k-kXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5977" y="-794"/>
+            <point key="canvasLocation" x="5331.75" y="-776.25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t3M-6E-ESA">
+            <objects>
+                <viewController storyboardIdentifier="brownfield" id="bsL-tx-Uhf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1BU-KA-ErQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="BzP-Ed-VJS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jpu-GX-Gjd">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brownfield.png" translatesAutoresizingMaskIntoConstraints="NO" id="XtI-eU-bFY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="498" height="768"/>
+                                </variation>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E3E-q5-nP1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">For 140 years, the 27-acre parcel now known as Harbor Point was the site of The Baltimore Chrome Works Facility, the world’s largest processor of chrome ore.  When operations ceased in 1985, the community was left with a vacant site containing chromium-contaminated soil and groundwater that was leaching into the Baltimore Harbor.
+ 
+In 1989, a Consent Decree between the U.S. Department of Justice, U.S. Environmental Protection Agency (EPA), Maryland Department of the Environment (MDE) and Allied Signal, then owner of the site, was put into place that governed the remediation and future redevelopment of the site.  Working closely with EPA and MDE, Allied (now Honeywell), conducted a privately funded $110 million demolition and containment effort that was completed in 1999.
+
+Today, Beatty Development is leading Harbor Point’s renaissance, transforming the City’s once vacant brownfields site into a flourishing and healthy, mixed-use, walk-able community.  The redevelopment will bring quality-of-life enhancements (such as the 9.5 acres of parks and open space) to Baltimore, while also creating a premier site for business expansion.  Significantly, the project will finalize the Inner Harbor to Canton section of the city’s renowned Waterfront Promenade, a seven-mile public walkway at the water’s edge.  
+
+The remediation and redevelopment of Harbor Point represents a major win for the city of Baltimore.  Mayor Stephanie Rawlings Blake stated, “Like the Inner Harbor revitalization effort of 30 years ago, the Harbor Point project represents a once-in-a-generation opportunity to grow Baltimore by attracting new jobs, new residents, new tax revenue, and new public amenities.  In total, more than a third of the development will be public park space that all of Baltimore’s residents can enjoy.” 
+
+Fortune 500 companies and national retailers alike now call Harbor Point home.  New York-based Morgan Stanley opened its 1,000+ employee Baltimore office at Harbor Point in 2010, followed by Johns Hopkins Medicine International.  Exelon Corporation will open its regional headquarters at Harbor Point in 2016, as will Constellation Energy who will relocate their corporate headquarters to the site.  West Elm chose the Exelon Building at Harbor Point for its first Baltimore store. 
+
+These companies believe that they will not only play a vital role in the revitalization of this waterfront neighborhood, but of Baltimore as a whole, helping to define a new city center and destination. 
+
+</mutableString>
+                                <color key="textColor" red="0.39434614779999999" green="0.39433437589999998" blue="0.39434105159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="517" y="46" width="487" height="754"/>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Remediation and Redevelopment of Harbor Point" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOO-HS-Pbn">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.39434614779999999" green="0.39433437589999998" blue="0.39434105159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="517" y="17" width="442" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZS-sa-fLA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" image="grfx_closeBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="967" y="0.0" width="57" height="57"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tapCloseButton:" destination="A9H-hM-v0d" eventType="touchUpInside" id="lME-HA-3Bl"/>
+                                    <segue destination="2vs-9M-d2A" kind="unwind" unwindAction="exit:" id="9Rv-fW-pFo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2Q-rv-eQb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.13725490200000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GoodPro-Book" family="GoodPro" pointSize="25"/>
+                                <state key="normal" title="Harbor Point">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="40"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="XtI-eU-bFY"/>
+                                <exclude reference="E3E-q5-nP1"/>
+                                <exclude reference="jOO-HS-Pbn"/>
+                                <exclude reference="6ZS-sa-fLA"/>
+                                <exclude reference="K2Q-rv-eQb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="XtI-eU-bFY"/>
+                                <include reference="E3E-q5-nP1"/>
+                                <include reference="jOO-HS-Pbn"/>
+                                <include reference="6ZS-sa-fLA"/>
+                                <include reference="K2Q-rv-eQb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mB5-41-RJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3156.75" y="-1037.25"/>
         </scene>
         <!--Sponsor Data View Controller-->
         <scene sceneID="YfS-Hv-lCf">
@@ -1620,6 +1727,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uf9-QI-JEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1221.75" y="-210"/>
         </scene>
         <!--Xh Web View Controller-->
         <scene sceneID="Ji6-Y6-bqd">
@@ -1880,10 +1988,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qFP-wX-xmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2883" y="-776.25"/>
+            <point key="canvasLocation" x="3078.75" y="-781.5"/>
         </scene>
     </scenes>
     <resources>
+        <image name="brownfield.png" width="498" height="768"/>
         <image name="grfx-icon-gallery.png" width="21" height="21"/>
         <image name="grfx-partners-tenant-outline.png" width="312" height="152"/>
         <image name="grfx_closeBtn.png" width="25" height="25"/>
