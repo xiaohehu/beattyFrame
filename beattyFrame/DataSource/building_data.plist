@@ -8,7 +8,7 @@
 		<key>buildingTitle</key>
 		<string>Parcel 1</string>
 		<key>buildingSite</key>
-		<string>siteplan_01.png</string>
+		<string>siteplan_p1</string>
 		<key>buildingSiteCaption</key>
 		<string>View from NW</string>
 		<key>buildingGallery</key>
@@ -22,7 +22,7 @@
 		<key>buildingTitle</key>
 		<string>Exelon</string>
 		<key>buildingSite</key>
-		<string>siteplan_03.png</string>
+		<string>siteplan_exelon</string>
 		<key>buildingSiteCaption</key>
 		<string>View from SW</string>
 		<key>buildingGallery</key>
@@ -52,7 +52,7 @@
 		<key>buildingTitle</key>
 		<string>Parcel 4</string>
 		<key>buildingSite</key>
-		<string>siteplan_06.png</string>
+		<string>siteplan_p4</string>
 		<key>buildingSiteCaption</key>
 		<string>View from SW</string>
 		<key>buildingGallery</key>
@@ -64,9 +64,9 @@
 		<key>buildingImage</key>
 		<string>Point_Street_Apt.jpg</string>
 		<key>buildingTitle</key>
-		<string>Point Street Apt.</string>
+		<string>1405 Point</string>
 		<key>buildingSite</key>
-		<string>siteplan_05.png</string>
+		<string>siteplan_pointst</string>
 		<key>buildingSiteCaption</key>
 		<string>View from SE</string>
 		<key>buildingGallery</key>
@@ -82,7 +82,7 @@
 		<key>buildingTitle</key>
 		<string>Thames Street Wharf</string>
 		<key>buildingSite</key>
-		<string>siteplan_02.png</string>
+		<string>siteplan_thamesst</string>
 		<key>buildingSiteCaption</key>
 		<string>View from NE</string>
 		<key>buildingGallery</key>
@@ -94,9 +94,9 @@
 		<key>buildingImage</key>
 		<string>Wills_Street_Wharf.jpg</string>
 		<key>buildingTitle</key>
-		<string>Wills Street Wharf</string>
+		<string>Wills Wharf</string>
 		<key>buildingSite</key>
-		<string>siteplan_07.png</string>
+		<string>siteplan_willsst</string>
 		<key>buildingSiteCaption</key>
 		<string>View from S</string>
 		<key>buildingGallery</key>
@@ -110,7 +110,7 @@
 		<key>buildingTitle</key>
 		<string>Parcel 3</string>
 		<key>buildingSite</key>
-		<string>siteplan_09.png</string>
+		<string>siteplan_p3</string>
 		<key>buildingSiteCaption</key>
 		<string>View from N</string>
 		<key>buildingGallery</key>
@@ -124,7 +124,7 @@
 		<key>buildingTitle</key>
 		<string>Harbor Point Park</string>
 		<key>buildingSite</key>
-		<string>siteplan_08.png</string>
+		<string>siteplan_hppark</string>
 		<key>buildingSiteCaption</key>
 		<string>View from W</string>
 		<key>buildingGallery</key>
@@ -138,7 +138,7 @@
 		<key>buildingTitle</key>
 		<string>Central Plaza</string>
 		<key>buildingSite</key>
-		<string>siteplan_04.png</string>
+		<string>siteplan_centralplaza</string>
 		<key>buildingSiteCaption</key>
 		<string>View from E</string>
 		<key>buildingGallery</key>

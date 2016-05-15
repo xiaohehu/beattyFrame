@@ -66,7 +66,6 @@
     // Do any additional setup after loading the view.
     
     _modelController = [[buildingModelController alloc] init];
-    
     [self prepareData];
 }
 
@@ -186,16 +185,16 @@
 - (void)createMenuItems
 {
     uiiv_viewImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:currentBuilding.buildingSite]];
-    uiiv_viewImage.frame = CGRectMake(0.0, 0.0, uiiv_viewImage.frame.size.width, uiiv_viewImage.frame.size.height);
+    uiiv_viewImage.frame = CGRectMake(10.0, 10.0, 113, 86);
     [uiv_buildingMenu addSubview: uiiv_viewImage];
     
-    uil_viewLabel = [[UILabel alloc] initWithFrame:CGRectMake(11.0, 108.0, 111, 22)];
+    uil_viewLabel = [[UILabel alloc] initWithFrame:CGRectMake(11.0, 95.0, 111, 22)];
     [uil_viewLabel setText:currentBuilding.buildingSiteCaption];
     [uil_viewLabel setFont:[UIFont fontWithName:@"GoodPro-Book" size:14.0]];
     uil_viewLabel.backgroundColor =  [UIColor clearColor];
     [uiv_buildingMenu addSubview: uil_viewLabel];
     
-    uil_buildingName = [[UILabel alloc] initWithFrame:CGRectMake(uiiv_viewImage.frame.origin.x+uiiv_viewImage.frame.size.width, 2.0, 202, 47)];
+    uil_buildingName = [[UILabel alloc] initWithFrame:CGRectMake(uiiv_viewImage.frame.origin.x+uiiv_viewImage.frame.size.width+10, 2.0, 202, 47)];
     [uil_buildingName setText:currentBuilding.buildingTitle];
     uil_buildingName.backgroundColor = [UIColor clearColor];
     [uiv_buildingMenu addSubview: uil_buildingName];
@@ -205,7 +204,7 @@
     [uiv_buildingMenu addSubview: uiv_bar];
     
     UIButton *uib_gallery = [UIButton buttonWithType:UIButtonTypeCustom];
-    uib_gallery.frame = CGRectMake((uiiv_viewImage.frame.size.width - 10), uiv_bar.frame.origin.y + 1, 45, 45);
+    uib_gallery.frame = CGRectMake((uiiv_viewImage.frame.size.width + 10), uiv_bar.frame.origin.y + 1, 45, 45);
     uib_gallery.tag = 0;
     [uib_gallery setImage:[UIImage imageNamed:@"grfx-icon-gallery.png"] forState:UIControlStateNormal];
     [uib_gallery addTarget:self action:@selector(tapMenuButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -222,10 +221,11 @@
     _webButton.frame = CGRectMake(uib_gallery.frame.origin.x + 45, uiv_bar.frame.origin.y + 1, 45, 45);
     [_webButton setImage:[UIImage imageNamed:@"grfx_buildingWeb.png"] forState:UIControlStateNormal];
     [_webButton addTarget:self action:@selector(createWebButtonWithAddress:) forControlEvents:UIControlEventTouchUpInside];
+    _webButton.hidden = YES;
     [uiv_buildingMenu addSubview: _webButton];
     
     UIButton *uib_Pre = [UIButton buttonWithType:UIButtonTypeCustom];
-    uib_Pre.frame = CGRectMake(_webButton.frame.origin.x + 45, uiv_bar.frame.origin.y + 1, 45, 45);
+    uib_Pre.frame = CGRectMake(_webButton.frame.origin.x + 95, uiv_bar.frame.origin.y + 1, 45, 45);
     uib_Pre.tag = 2;
     [uib_Pre setImage:[UIImage imageNamed:@"grfx_buildingPre.jpg"] forState:UIControlStateNormal];
     [uib_Pre addTarget:self action:@selector(tapMenuButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -400,6 +400,8 @@
                                       direction:UIPageViewControllerNavigationDirectionForward
                                        animated:NO
                                      completion:nil];
+    
+    
 }
 
 - (void)pageViewController:(UIPageViewController *)pvc didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed
