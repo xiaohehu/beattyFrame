@@ -4845,9 +4845,9 @@
 				880F23DD1BFFA34B001EA4E9 /* grfx-partners@2x.png */,
 				880FDB971CD14A0800B0110C /* grfx-partners-jll.png */,
 				880FDB981CD14A0800B0110C /* grfx-partners-jll@2x.png */,
-				880FDBA11CD1752C00B0110C /* grfx-partners-tenant-outline.png */,
 				882C8AD61CD7E39A002DE1AD /* grfx-partners-klnb.png */,
 				882C8AD71CD7E39A002DE1AD /* grfx-partners-klnb@2x.png */,
+				880FDBA11CD1752C00B0110C /* grfx-partners-tenant-outline.png */,
 			);
 			path = sponsorship;
 			sourceTree = "<group>";

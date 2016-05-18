@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>image</key>
-		<string>grfx-partners.png</string>
+		<string>grfx-partners-beatty</string>
 		<key>title</key>
 		<string>History</string>
 		<key>webaddress</key>
@@ -15,7 +15,7 @@
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>grfx-partners-jll.png</string>
+		<string>grfx-partners-jll</string>
 		<key>title</key>
 		<string>History</string>
 		<key>webaddress</key>
@@ -25,7 +25,7 @@
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>grfx-partners-klnb.png</string>
+		<string>grfx-partners-klnb</string>
 		<key>title</key>
 		<string>History</string>
 		<key>webaddress</key>

@@ -79,39 +79,39 @@
 				<string>Aerial Photos</string>
 				<key>assets</key>
 				<array>
-					<string>15-0202_overall south west.jpg</string>
-					<string>0119 Exelon c1 6t.jpeg</string>
-					<string>1119 Exelon c2 5t.jpg</string>
-					<string>Exelon - LEVEL 1 - D1-D4.jpeg</string>
-					<string>Exelon Level 2 P1-P8.jpeg</string>
-					<string>Exelon-Retail-View-3.tif</string>
-					<string>Lobby_R01.jpg</string>
-					<string>Neoscape_BeattyDevelopmentHarbor Point_ExcelonRetail_FINAL.tif</string>
-					<string>View02_Final.jpg</string>
+                    <string>15-0202_overall south west.jpg</string>
+                    <string>0119 Exelon c1 6t.jpeg</string>
+                    <string>1119 Exelon c2 5t.jpg</string>
+                    <string>Exelon-Retail-View-3.tif</string>
+                    <string>Lobby_R01.jpg</string>
+                    <string>Neoscape_BeattyDevelopmentHarbor Point_ExcelonRetail_FINAL.jpg</string>
+                    <string>View02_Final.jpg</string>
+                    <string>Exelon - LEVEL 1 - D1-D4.jpeg</string>
+                    <string>Exelon Level 2 P1-P8.jpeg</string>
 				</array>
 				<key>thumbs</key>
 				<array>
-					<string>15-0202_overall south west.jpg</string>
-					<string>0119 Exelon c1 6t.jpeg</string>
-					<string>1119 Exelon c2 5t.jpg</string>
-					<string>Exelon - LEVEL 1 - D1-D4.jpeg</string>
-					<string>Exelon Level 2 P1-P8.jpeg</string>
-					<string>Exelon-Retail-View-3.tif</string>
-					<string>Lobby_R01.jpg</string>
-					<string>Neoscape_BeattyDevelopmentHarbor Point_ExcelonRetail_FINAL.tif</string>
-					<string>View02_Final.jpg</string>
+                    <string>15-0202_overall south west.jpg</string>
+                    <string>0119 Exelon c1 6t.jpeg</string>
+                    <string>1119 Exelon c2 5t.jpg</string>
+                    <string>Exelon-Retail-View-3.tif</string>
+                    <string>Lobby_R01.jpg</string>
+                    <string>Neoscape_BeattyDevelopmentHarbor Point_ExcelonRetail_FINAL.jpg</string>
+                    <string>View02_Final.jpg</string>
+                    <string>Exelon - LEVEL 1 - D1-D4.jpeg</string>
+                    <string>Exelon Level 2 P1-P8.jpeg</string>
 				</array>
 				<key>captions</key>
 				<array>
-					<string>15-0202_overall south west.jpg</string>
-					<string>0119 Exelon c1 6t.jpeg</string>
-					<string>1119 Exelon c2 5t.jpg</string>
-					<string>Exelon - LEVEL 1 - D1-D4.jpeg</string>
-					<string>Exelon Level 2 P1-P8.jpeg</string>
-					<string>Exelon-Retail-View-3.tif</string>
-					<string>Lobby_R01.jpg</string>
-					<string>Neoscape_BeattyDevelopmentHarbor Point_ExcelonRetail_FINAL.tif</string>
-					<string>View02_Final.jpg</string>
+                    <string>15-0202_overall south west.jpg</string>
+                    <string>0119 Exelon c1 6t.jpeg</string>
+                    <string>1119 Exelon c2 5t.jpg</string>
+                    <string>Exelon-Retail-View-3.tif</string>
+                    <string>Lobby_R01.jpg</string>
+                    <string>Neoscape_BeattyDevelopmentHarbor Point_ExcelonRetail_FINAL.jpg</string>
+                    <string>View02_Final.jpg</string>
+                    <string>Exelon - LEVEL 1 - D1-D4.jpeg</string>
+                    <string>Exelon Level 2 P1-P8.jpeg</string>
 				</array>
 			</dict>
 		</array>
@@ -167,41 +167,41 @@
 				<key>assets</key>
 				<array>
 					<string>parcel 4 drawing shot a.jpg</string>
+                    <string>parcel 4 shot b.jpg</string>
+                    <string>parcel 4 shot c.jpg</string>
+                    <string>Parcel 4 floorplan.jpeg</string>
 					<string>Parcel 4 floorplan 2.jpeg</string>
 					<string>Parcel 4 floorplan 3.jpeg</string>
 					<string>Parcel 4 floorplan 4.jpeg</string>
 					<string>Parcel 4 floorplan 5.jpeg</string>
 					<string>Parcel 4 floorplan 6.jpeg</string>
 					<string>Parcel 4 floorplan 7.jpeg</string>
-					<string>Parcel 4 floorplan.jpeg</string>
-					<string>parcel 4 shot b.jpg</string>
-					<string>parcel 4 shot c.jpg</string>
 				</array>
 				<key>thumbs</key>
 				<array>
-					<string>parcel 4 drawing shot a.jpg</string>
-					<string>Parcel 4 floorplan 2.jpeg</string>
-					<string>Parcel 4 floorplan 3.jpeg</string>
-					<string>Parcel 4 floorplan 4.jpeg</string>
-					<string>Parcel 4 floorplan 5.jpeg</string>
-					<string>Parcel 4 floorplan 6.jpeg</string>
-					<string>Parcel 4 floorplan 7.jpeg</string>
-					<string>Parcel 4 floorplan.jpeg</string>
-					<string>parcel 4 shot b.jpg</string>
-					<string>parcel 4 shot c.jpg</string>
+                    <string>parcel 4 drawing shot a.jpg</string>
+                    <string>parcel 4 shot b.jpg</string>
+                    <string>parcel 4 shot c.jpg</string>
+                    <string>Parcel 4 floorplan.jpeg</string>
+                    <string>Parcel 4 floorplan 2.jpeg</string>
+                    <string>Parcel 4 floorplan 3.jpeg</string>
+                    <string>Parcel 4 floorplan 4.jpeg</string>
+                    <string>Parcel 4 floorplan 5.jpeg</string>
+                    <string>Parcel 4 floorplan 6.jpeg</string>
+                    <string>Parcel 4 floorplan 7.jpeg</string>
 				</array>
 				<key>captions</key>
 				<array>
-					<string>parcel 4 drawing shot a.jpg</string>
-					<string>Parcel 4 floorplan 2.jpeg</string>
-					<string>Parcel 4 floorplan 3.jpeg</string>
-					<string>Parcel 4 floorplan 4.jpeg</string>
-					<string>Parcel 4 floorplan 5.jpeg</string>
-					<string>Parcel 4 floorplan 6.jpeg</string>
-					<string>Parcel 4 floorplan 7.jpeg</string>
-					<string>Parcel 4 floorplan.jpeg</string>
-					<string>parcel 4 shot b.jpg</string>
-					<string>parcel 4 shot c.jpg</string>
+                    <string>parcel 4 drawing shot a.jpg</string>
+                    <string>parcel 4 shot b.jpg</string>
+                    <string>parcel 4 shot c.jpg</string>
+                    <string>Parcel 4 floorplan.jpeg</string>
+                    <string>Parcel 4 floorplan 2.jpeg</string>
+                    <string>Parcel 4 floorplan 3.jpeg</string>
+                    <string>Parcel 4 floorplan 4.jpeg</string>
+                    <string>Parcel 4 floorplan 5.jpeg</string>
+                    <string>Parcel 4 floorplan 6.jpeg</string>
+                    <string>Parcel 4 floorplan 7.jpeg</string>
 				</array>
 			</dict>
 		</array>
@@ -220,105 +220,105 @@
 				<string>Aerial Photos</string>
 				<key>assets</key>
 				<array>
-					<string>C01.jpg</string>
-					<string>C02[1].jpg</string>
-					<string>c03_B CROPPED - revised with corner windows.jpg</string>
-					<string>Point St 2nd level.jpeg</string>
-					<string>Point Street 1st level.jpeg</string>
-					<string>Point Street Landscape.png</string>
-					<string>Point Street Plaza Plan.png</string>
-					<string>Point Street Plaza.png</string>
-					<string>Point Street_Design Development_Final_01.15.2015 2.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 3.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 4.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 5.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 6.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 7.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 8.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 9.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 10.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 11.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 12.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 13.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 14.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 15.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 16.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 17.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 18.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 19.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 20.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 21.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 22.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 23.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015.jpeg</string>
+                    <string>C01.jpg</string>
+                    <string>C02[1].jpg</string>
+                    <string>c03_B CROPPED - revised with corner windows.jpg</string>
+                    <string>Point Street Landscape.png</string>
+                    <string>Point Street Plaza Plan.png</string>
+                    <string>Point Street Plaza.png</string>
+                    <string>Point St 2nd level.jpeg</string>
+                    <string>Point Street 1st level.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 2.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 3.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 4.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 5.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 6.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 7.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 8.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 9.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 10.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 11.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 12.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 13.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 14.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 15.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 16.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 17.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 18.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 19.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 20.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 21.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 22.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 23.jpeg</string>
 				</array>
 				<key>thumbs</key>
 				<array>
-					<string>C01.jpg</string>
-					<string>C02[1].jpg</string>
-					<string>c03_B CROPPED - revised with corner windows.jpg</string>
-					<string>Point St 2nd level.jpeg</string>
-					<string>Point Street 1st level.jpeg</string>
-					<string>Point Street Landscape.png</string>
-					<string>Point Street Plaza Plan.png</string>
-					<string>Point Street Plaza.png</string>
-					<string>Point Street_Design Development_Final_01.15.2015 2.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 3.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 4.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 5.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 6.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 7.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 8.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 9.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 10.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 11.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 12.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 13.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 14.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 15.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 16.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 17.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 18.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 19.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 20.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 21.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 22.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 23.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015.jpeg</string>
+                    <string>C01.jpg</string>
+                    <string>C02[1].jpg</string>
+                    <string>c03_B CROPPED - revised with corner windows.jpg</string>
+                    <string>Point Street Landscape.png</string>
+                    <string>Point Street Plaza Plan.png</string>
+                    <string>Point Street Plaza.png</string>
+                    <string>Point St 2nd level.jpeg</string>
+                    <string>Point Street 1st level.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 2.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 3.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 4.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 5.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 6.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 7.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 8.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 9.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 10.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 11.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 12.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 13.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 14.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 15.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 16.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 17.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 18.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 19.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 20.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 21.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 22.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 23.jpeg</string>
 				</array>
 				<key>captions</key>
 				<array>
-					<string>C01.jpg</string>
-					<string>C02[1].jpg</string>
-					<string>c03_B CROPPED - revised with corner windows.jpg</string>
-					<string>Point St 2nd level.jpeg</string>
-					<string>Point Street 1st level.jpeg</string>
-					<string>Point Street Landscape.png</string>
-					<string>Point Street Plaza Plan.png</string>
-					<string>Point Street Plaza.png</string>
-					<string>Point Street_Design Development_Final_01.15.2015 2.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 3.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 4.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 5.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 6.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 7.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 8.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 9.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 10.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 11.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 12.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 13.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 14.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 15.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 16.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 17.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 18.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 19.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 20.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 21.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 22.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015 23.jpeg</string>
-					<string>Point Street_Design Development_Final_01.15.2015.jpeg</string>
+                    <string>C01.jpg</string>
+                    <string>C02[1].jpg</string>
+                    <string>c03_B CROPPED - revised with corner windows.jpg</string>
+                    <string>Point Street Landscape.png</string>
+                    <string>Point Street Plaza Plan.png</string>
+                    <string>Point Street Plaza.png</string>
+                    <string>Point St 2nd level.jpeg</string>
+                    <string>Point Street 1st level.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 2.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 3.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 4.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 5.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 6.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 7.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 8.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 9.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 10.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 11.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 12.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 13.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 14.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 15.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 16.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 17.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 18.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 19.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 20.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 21.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 22.jpeg</string>
+                    <string>Point Street_Design Development_Final_01.15.2015 23.jpeg</string>
 				</array>
 			</dict>
 		</array>
@@ -388,267 +388,264 @@
 				<string>Aerial Photos</string>
 				<key>assets</key>
 				<array>
-					<string>2_12a Wills Plot 2.jpeg</string>
-					<string>2_12a Wills Plot 3.jpeg</string>
-					<string>2_12a Wills Plot 4.jpeg</string>
-					<string>2_12a Wills Plot 5.jpeg</string>
-					<string>2_12a Wills Plot 6.jpeg</string>
-					<string>2_12a Wills Plot 7.jpeg</string>
-					<string>2_12a Wills Plot 8.jpeg</string>
-					<string>2_12a Wills Plot 9.jpeg</string>
-					<string>2_12a Wills Plot 10.jpeg</string>
-					<string>2_12a Wills Plot 11.jpeg</string>
-					<string>2_12a Wills Plot 12.jpeg</string>
-					<string>2_12a Wills Plot 13.jpeg</string>
-					<string>2_12a Wills Plot 14.jpeg</string>
-					<string>2_12a Wills Plot 15.jpeg</string>
-					<string>2_12a Wills Plot 16.jpeg</string>
-					<string>2_12a Wills Plot 17.jpeg</string>
-					<string>2_12a Wills Plot 18.jpeg</string>
-					<string>2_12a Wills Plot 19.jpeg</string>
-					<string>2_12a Wills Plot 20.jpeg</string>
-					<string>2_12a Wills Plot 21.jpeg</string>
-					<string>2_12a Wills Plot 22.jpeg</string>
-					<string>2_12a Wills Plot 23.jpeg</string>
-					<string>2_12a Wills Plot.jpeg</string>
-					<string>0504 Wills Wharf c1 OP1 3t.jpg</string>
-					<string>0504 Wills Wharf c1 OP2 3t.jpg</string>
-					<string>0928+LI+Copier+c1+4t (1).jpg</string>
-					<string>0928+LI+Copier+c2+3t (1).jpg</string>
-					<string>Canopy Brochure 2.jpeg</string>
-					<string>Canopy Brochure 3.jpeg</string>
-					<string>Canopy Brochure 4.jpeg</string>
-					<string>Canopy Brochure 5.jpeg</string>
-					<string>Canopy Brochure 6.jpeg</string>
-					<string>Canopy Brochure 7.jpeg</string>
-					<string>Canopy Brochure 8.jpeg</string>
-					<string>Canopy Brochure 9.jpeg</string>
-					<string>Canopy Brochure 10.jpeg</string>
-					<string>Canopy Brochure 11.jpeg</string>
-					<string>Canopy Brochure 12.jpeg</string>
-					<string>Canopy Brochure 13.jpeg</string>
-					<string>Canopy Brochure 14.jpeg</string>
-					<string>Canopy Brochure 15.jpeg</string>
-					<string>Canopy Brochure 16.jpeg</string>
-					<string>Canopy Brochure 17.jpeg</string>
-					<string>Canopy Brochure 18.jpeg</string>
-					<string>Canopy Brochure 19.jpeg</string>
-					<string>Canopy Brochure.jpeg</string>
-					<string>EZ Info Sheet 2014 V2 PDF 2.jpeg</string>
-					<string>EZ Info Sheet 2014 V2 PDF.jpeg</string>
-					<string>F-OFFICE-ENTRY-1 copy.jpg</string>
-					<string>F-OFFICE-ENTRY-2 copy.jpg</string>
-					<string>Harbor Point Flyer - Print 2.jpeg</string>
-					<string>Harbor Point Flyer - Print 3.jpeg</string>
-					<string>Harbor Point Flyer - Print 4.jpeg</string>
-					<string>Harbor Point Flyer - Print 5.jpeg</string>
-					<string>Harbor Point Flyer - Print 6.jpeg</string>
-					<string>Harbor Point Flyer - Print 7.jpeg</string>
-					<string>Harbor Point Flyer - Print 8.jpeg</string>
-					<string>Harbor Point Flyer - Print 9.jpeg</string>
-					<string>Harbor Point Flyer - Print 10.jpeg</string>
-					<string>Harbor Point Flyer - Print.jpeg</string>
-					<string>Hotel-final-Canopy-signage.jpg</string>
-					<string>I2411 Canopy Baltimore - Bar MD05.jpg</string>
-					<string>I2411 Canopy Baltimore - King Guestroom MD05_PS_FINAL.jpg</string>
-					<string>I2411 Canopy Baltimore - Restaurant MD04.jpg</string>
-					<string>I2411 Canopy Baltimore - Retreat MD03.jpg</string>
-					<string>Maryland Financing  Incentives120915 (3) 2.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 3.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 4.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 5.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 6.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 7.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 8.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 9.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 10.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 11.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 12.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3).jpeg</string>
-					<string>New Folder With Items</string>
-					<string>PLAZA BIRD EYE VIEW-2.jpg</string>
-					<string>PLAZA-birds eye view copy.jpg</string>
-					<string>VIEW-South-Far View-Phase-2.jpg</string>
-					<string>VIEW-South-Far View.jpg</string>
-					<string>Wills Wharf-Retail LOD.jpeg</string>
-					<string>WILLS-South-Close View-Phase2.jpg</string>
-					<string>WILLS-South-Close View.jpg</string>
+                    <string>0504 Wills Wharf c1 OP1 3t.jpg</string>
+                    <string>0504 Wills Wharf c1 OP2 3t.jpg</string>
+                    <string>0928+LI+Copier+c1+4t (1).jpg</string>
+                    <string>0928+LI+Copier+c2+3t (1).jpg</string>
+                    <string>F-OFFICE-ENTRY-1 copy.jpg</string>
+                    <string>F-OFFICE-ENTRY-2 copy.jpg</string>
+                    <string>I2411 Canopy Baltimore - Bar MD05.jpg</string>
+                    <string>I2411 Canopy Baltimore - King Guestroom MD05_PS_FINAL.jpg</string>
+                    <string>I2411 Canopy Baltimore - Restaurant MD04.jpg</string>
+                    <string>I2411 Canopy Baltimore - Retreat MD03.jpg</string>
+                    <string>PLAZA BIRD EYE VIEW-2.jpg</string>
+                    <string>PLAZA-birds eye view copy.jpg</string>
+                    <string>VIEW-South-Far View-Phase-2.jpg</string>
+                    <string>VIEW-South-Far View.jpg</string>
+                    <string>WILLS-South-Close View-Phase2.jpg</string>
+                    <string>WILLS-South-Close View.jpg</string>
+                    <string>Canopy Brochure.jpeg</string>
+                    <string>Canopy Brochure 2.jpeg</string>
+                    <string>Canopy Brochure 3.jpeg</string>
+                    <string>Canopy Brochure 4.jpeg</string>
+                    <string>Canopy Brochure 5.jpeg</string>
+                    <string>Canopy Brochure 6.jpeg</string>
+                    <string>Canopy Brochure 7.jpeg</string>
+                    <string>Canopy Brochure 8.jpeg</string>
+                    <string>Canopy Brochure 9.jpeg</string>
+                    <string>Canopy Brochure 10.jpeg</string>
+                    <string>Canopy Brochure 11.jpeg</string>
+                    <string>Canopy Brochure 12.jpeg</string>
+                    <string>Canopy Brochure 13.jpeg</string>
+                    <string>Canopy Brochure 14.jpeg</string>
+                    <string>Canopy Brochure 15.jpeg</string>
+                    <string>Canopy Brochure 16.jpeg</string>
+                    <string>Canopy Brochure 17.jpeg</string>
+                    <string>Canopy Brochure 18.jpeg</string>
+                    <string>Canopy Brochure 19.jpeg</string>
+                    <string>EZ Info Sheet 2014 V2 PDF.jpeg</string>
+                    <string>EZ Info Sheet 2014 V2 PDF 2.jpeg</string>
+                    <string>Harbor Point Flyer - Print.jpeg</string>
+                    <string>Harbor Point Flyer - Print 2.jpeg</string>
+                    <string>Harbor Point Flyer - Print 3.jpeg</string>
+                    <string>Harbor Point Flyer - Print 4.jpeg</string>
+                    <string>Harbor Point Flyer - Print 5.jpeg</string>
+                    <string>Harbor Point Flyer - Print 6.jpeg</string>
+                    <string>Harbor Point Flyer - Print 7.jpeg</string>
+                    <string>Harbor Point Flyer - Print 8.jpeg</string>
+                    <string>Harbor Point Flyer - Print 9.jpeg</string>
+                    <string>Harbor Point Flyer - Print 10.jpeg</string>
+                    <string>Hotel-final-Canopy-signage.jpg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 2.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 3.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 4.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 5.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 6.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 7.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 8.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 9.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 10.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 11.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 12.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3).jpeg</string>
+                    <string>2_12a Wills Plot.jpeg</string>
+                    <string>2_12a Wills Plot 2.jpeg</string>
+                    <string>2_12a Wills Plot 3.jpeg</string>
+                    <string>2_12a Wills Plot 4.jpeg</string>
+                    <string>2_12a Wills Plot 5.jpeg</string>
+                    <string>2_12a Wills Plot 6.jpeg</string>
+                    <string>2_12a Wills Plot 7.jpeg</string>
+                    <string>2_12a Wills Plot 8.jpeg</string>
+                    <string>2_12a Wills Plot 9.jpeg</string>
+                    <string>2_12a Wills Plot 10.jpeg</string>
+                    <string>2_12a Wills Plot 11.jpeg</string>
+                    <string>2_12a Wills Plot 12.jpeg</string>
+                    <string>2_12a Wills Plot 13.jpeg</string>
+                    <string>2_12a Wills Plot 14.jpeg</string>
+                    <string>2_12a Wills Plot 15.jpeg</string>
+                    <string>2_12a Wills Plot 16.jpeg</string>
+                    <string>2_12a Wills Plot 17.jpeg</string>
+                    <string>2_12a Wills Plot 18.jpeg</string>
+                    <string>2_12a Wills Plot 19.jpeg</string>
+                    <string>2_12a Wills Plot 20.jpeg</string>
+                    <string>2_12a Wills Plot 21.jpeg</string>
+                    <string>2_12a Wills Plot 22.jpeg</string>
+                    <string>2_12a Wills Plot 23.jpeg</string>
+                    <string>Wills Wharf-Retail LOD.jpeg</string>
 				</array>
 				<key>thumbs</key>
 				<array>
-					<string>2_12a Wills Plot 2.jpeg</string>
-					<string>2_12a Wills Plot 3.jpeg</string>
-					<string>2_12a Wills Plot 4.jpeg</string>
-					<string>2_12a Wills Plot 5.jpeg</string>
-					<string>2_12a Wills Plot 6.jpeg</string>
-					<string>2_12a Wills Plot 7.jpeg</string>
-					<string>2_12a Wills Plot 8.jpeg</string>
-					<string>2_12a Wills Plot 9.jpeg</string>
-					<string>2_12a Wills Plot 10.jpeg</string>
-					<string>2_12a Wills Plot 11.jpeg</string>
-					<string>2_12a Wills Plot 12.jpeg</string>
-					<string>2_12a Wills Plot 13.jpeg</string>
-					<string>2_12a Wills Plot 14.jpeg</string>
-					<string>2_12a Wills Plot 15.jpeg</string>
-					<string>2_12a Wills Plot 16.jpeg</string>
-					<string>2_12a Wills Plot 17.jpeg</string>
-					<string>2_12a Wills Plot 18.jpeg</string>
-					<string>2_12a Wills Plot 19.jpeg</string>
-					<string>2_12a Wills Plot 20.jpeg</string>
-					<string>2_12a Wills Plot 21.jpeg</string>
-					<string>2_12a Wills Plot 22.jpeg</string>
-					<string>2_12a Wills Plot 23.jpeg</string>
-					<string>2_12a Wills Plot.jpeg</string>
-					<string>0504 Wills Wharf c1 OP1 3t.jpg</string>
-					<string>0504 Wills Wharf c1 OP2 3t.jpg</string>
-					<string>0928+LI+Copier+c1+4t (1).jpg</string>
-					<string>0928+LI+Copier+c2+3t (1).jpg</string>
-					<string>Canopy Brochure 2.jpeg</string>
-					<string>Canopy Brochure 3.jpeg</string>
-					<string>Canopy Brochure 4.jpeg</string>
-					<string>Canopy Brochure 5.jpeg</string>
-					<string>Canopy Brochure 6.jpeg</string>
-					<string>Canopy Brochure 7.jpeg</string>
-					<string>Canopy Brochure 8.jpeg</string>
-					<string>Canopy Brochure 9.jpeg</string>
-					<string>Canopy Brochure 10.jpeg</string>
-					<string>Canopy Brochure 11.jpeg</string>
-					<string>Canopy Brochure 12.jpeg</string>
-					<string>Canopy Brochure 13.jpeg</string>
-					<string>Canopy Brochure 14.jpeg</string>
-					<string>Canopy Brochure 15.jpeg</string>
-					<string>Canopy Brochure 16.jpeg</string>
-					<string>Canopy Brochure 17.jpeg</string>
-					<string>Canopy Brochure 18.jpeg</string>
-					<string>Canopy Brochure 19.jpeg</string>
-					<string>Canopy Brochure.jpeg</string>
-					<string>EZ Info Sheet 2014 V2 PDF 2.jpeg</string>
-					<string>EZ Info Sheet 2014 V2 PDF.jpeg</string>
-					<string>F-OFFICE-ENTRY-1 copy.jpg</string>
-					<string>F-OFFICE-ENTRY-2 copy.jpg</string>
-					<string>Harbor Point Flyer - Print 2.jpeg</string>
-					<string>Harbor Point Flyer - Print 3.jpeg</string>
-					<string>Harbor Point Flyer - Print 4.jpeg</string>
-					<string>Harbor Point Flyer - Print 5.jpeg</string>
-					<string>Harbor Point Flyer - Print 6.jpeg</string>
-					<string>Harbor Point Flyer - Print 7.jpeg</string>
-					<string>Harbor Point Flyer - Print 8.jpeg</string>
-					<string>Harbor Point Flyer - Print 9.jpeg</string>
-					<string>Harbor Point Flyer - Print 10.jpeg</string>
-					<string>Harbor Point Flyer - Print.jpeg</string>
-					<string>Hotel-final-Canopy-signage.jpg</string>
-					<string>I2411 Canopy Baltimore - Bar MD05.jpg</string>
-					<string>I2411 Canopy Baltimore - King Guestroom MD05_PS_FINAL.jpg</string>
-					<string>I2411 Canopy Baltimore - Restaurant MD04.jpg</string>
-					<string>I2411 Canopy Baltimore - Retreat MD03.jpg</string>
-					<string>Maryland Financing  Incentives120915 (3) 2.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 3.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 4.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 5.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 6.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 7.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 8.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 9.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 10.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 11.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 12.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3).jpeg</string>
-					<string>New Folder With Items</string>
-					<string>PLAZA BIRD EYE VIEW-2.jpg</string>
-					<string>PLAZA-birds eye view copy.jpg</string>
-					<string>VIEW-South-Far View-Phase-2.jpg</string>
-					<string>VIEW-South-Far View.jpg</string>
-					<string>Wills Wharf-Retail LOD.jpeg</string>
-					<string>WILLS-South-Close View-Phase2.jpg</string>
-					<string>WILLS-South-Close View.jpg</string>
+                    <string>0504 Wills Wharf c1 OP1 3t.jpg</string>
+                    <string>0504 Wills Wharf c1 OP2 3t.jpg</string>
+                    <string>0928+LI+Copier+c1+4t (1).jpg</string>
+                    <string>0928+LI+Copier+c2+3t (1).jpg</string>
+                    <string>F-OFFICE-ENTRY-1 copy.jpg</string>
+                    <string>F-OFFICE-ENTRY-2 copy.jpg</string>
+                    <string>I2411 Canopy Baltimore - Bar MD05.jpg</string>
+                    <string>I2411 Canopy Baltimore - King Guestroom MD05_PS_FINAL.jpg</string>
+                    <string>I2411 Canopy Baltimore - Restaurant MD04.jpg</string>
+                    <string>I2411 Canopy Baltimore - Retreat MD03.jpg</string>
+                    <string>PLAZA BIRD EYE VIEW-2.jpg</string>
+                    <string>PLAZA-birds eye view copy.jpg</string>
+                    <string>VIEW-South-Far View-Phase-2.jpg</string>
+                    <string>VIEW-South-Far View.jpg</string>
+                    <string>WILLS-South-Close View-Phase2.jpg</string>
+                    <string>WILLS-South-Close View.jpg</string>
+                    <string>Canopy Brochure.jpeg</string>
+                    <string>Canopy Brochure 2.jpeg</string>
+                    <string>Canopy Brochure 3.jpeg</string>
+                    <string>Canopy Brochure 4.jpeg</string>
+                    <string>Canopy Brochure 5.jpeg</string>
+                    <string>Canopy Brochure 6.jpeg</string>
+                    <string>Canopy Brochure 7.jpeg</string>
+                    <string>Canopy Brochure 8.jpeg</string>
+                    <string>Canopy Brochure 9.jpeg</string>
+                    <string>Canopy Brochure 10.jpeg</string>
+                    <string>Canopy Brochure 11.jpeg</string>
+                    <string>Canopy Brochure 12.jpeg</string>
+                    <string>Canopy Brochure 13.jpeg</string>
+                    <string>Canopy Brochure 14.jpeg</string>
+                    <string>Canopy Brochure 15.jpeg</string>
+                    <string>Canopy Brochure 16.jpeg</string>
+                    <string>Canopy Brochure 17.jpeg</string>
+                    <string>Canopy Brochure 18.jpeg</string>
+                    <string>Canopy Brochure 19.jpeg</string>
+                    <string>EZ Info Sheet 2014 V2 PDF.jpeg</string>
+                    <string>EZ Info Sheet 2014 V2 PDF 2.jpeg</string>
+                    <string>Harbor Point Flyer - Print.jpeg</string>
+                    <string>Harbor Point Flyer - Print 2.jpeg</string>
+                    <string>Harbor Point Flyer - Print 3.jpeg</string>
+                    <string>Harbor Point Flyer - Print 4.jpeg</string>
+                    <string>Harbor Point Flyer - Print 5.jpeg</string>
+                    <string>Harbor Point Flyer - Print 6.jpeg</string>
+                    <string>Harbor Point Flyer - Print 7.jpeg</string>
+                    <string>Harbor Point Flyer - Print 8.jpeg</string>
+                    <string>Harbor Point Flyer - Print 9.jpeg</string>
+                    <string>Harbor Point Flyer - Print 10.jpeg</string>
+                    <string>Hotel-final-Canopy-signage.jpg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 2.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 3.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 4.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 5.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 6.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 7.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 8.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 9.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 10.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 11.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 12.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3).jpeg</string>
+                    <string>2_12a Wills Plot.jpeg</string>
+                    <string>2_12a Wills Plot 2.jpeg</string>
+                    <string>2_12a Wills Plot 3.jpeg</string>
+                    <string>2_12a Wills Plot 4.jpeg</string>
+                    <string>2_12a Wills Plot 5.jpeg</string>
+                    <string>2_12a Wills Plot 6.jpeg</string>
+                    <string>2_12a Wills Plot 7.jpeg</string>
+                    <string>2_12a Wills Plot 8.jpeg</string>
+                    <string>2_12a Wills Plot 9.jpeg</string>
+                    <string>2_12a Wills Plot 10.jpeg</string>
+                    <string>2_12a Wills Plot 11.jpeg</string>
+                    <string>2_12a Wills Plot 12.jpeg</string>
+                    <string>2_12a Wills Plot 13.jpeg</string>
+                    <string>2_12a Wills Plot 14.jpeg</string>
+                    <string>2_12a Wills Plot 15.jpeg</string>
+                    <string>2_12a Wills Plot 16.jpeg</string>
+                    <string>2_12a Wills Plot 17.jpeg</string>
+                    <string>2_12a Wills Plot 18.jpeg</string>
+                    <string>2_12a Wills Plot 19.jpeg</string>
+                    <string>2_12a Wills Plot 20.jpeg</string>
+                    <string>2_12a Wills Plot 21.jpeg</string>
+                    <string>2_12a Wills Plot 22.jpeg</string>
+                    <string>2_12a Wills Plot 23.jpeg</string>
+                    <string>Wills Wharf-Retail LOD.jpeg</string>
 				</array>
 				<key>captions</key>
 				<array>
-					<string>2_12a Wills Plot 2.jpeg</string>
-					<string>2_12a Wills Plot 3.jpeg</string>
-					<string>2_12a Wills Plot 4.jpeg</string>
-					<string>2_12a Wills Plot 5.jpeg</string>
-					<string>2_12a Wills Plot 6.jpeg</string>
-					<string>2_12a Wills Plot 7.jpeg</string>
-					<string>2_12a Wills Plot 8.jpeg</string>
-					<string>2_12a Wills Plot 9.jpeg</string>
-					<string>2_12a Wills Plot 10.jpeg</string>
-					<string>2_12a Wills Plot 11.jpeg</string>
-					<string>2_12a Wills Plot 12.jpeg</string>
-					<string>2_12a Wills Plot 13.jpeg</string>
-					<string>2_12a Wills Plot 14.jpeg</string>
-					<string>2_12a Wills Plot 15.jpeg</string>
-					<string>2_12a Wills Plot 16.jpeg</string>
-					<string>2_12a Wills Plot 17.jpeg</string>
-					<string>2_12a Wills Plot 18.jpeg</string>
-					<string>2_12a Wills Plot 19.jpeg</string>
-					<string>2_12a Wills Plot 20.jpeg</string>
-					<string>2_12a Wills Plot 21.jpeg</string>
-					<string>2_12a Wills Plot 22.jpeg</string>
-					<string>2_12a Wills Plot 23.jpeg</string>
-					<string>2_12a Wills Plot.jpeg</string>
-					<string>0504 Wills Wharf c1 OP1 3t.jpg</string>
-					<string>0504 Wills Wharf c1 OP2 3t.jpg</string>
-					<string>0928+LI+Copier+c1+4t (1).jpg</string>
-					<string>0928+LI+Copier+c2+3t (1).jpg</string>
-					<string>Canopy Brochure 2.jpeg</string>
-					<string>Canopy Brochure 3.jpeg</string>
-					<string>Canopy Brochure 4.jpeg</string>
-					<string>Canopy Brochure 5.jpeg</string>
-					<string>Canopy Brochure 6.jpeg</string>
-					<string>Canopy Brochure 7.jpeg</string>
-					<string>Canopy Brochure 8.jpeg</string>
-					<string>Canopy Brochure 9.jpeg</string>
-					<string>Canopy Brochure 10.jpeg</string>
-					<string>Canopy Brochure 11.jpeg</string>
-					<string>Canopy Brochure 12.jpeg</string>
-					<string>Canopy Brochure 13.jpeg</string>
-					<string>Canopy Brochure 14.jpeg</string>
-					<string>Canopy Brochure 15.jpeg</string>
-					<string>Canopy Brochure 16.jpeg</string>
-					<string>Canopy Brochure 17.jpeg</string>
-					<string>Canopy Brochure 18.jpeg</string>
-					<string>Canopy Brochure 19.jpeg</string>
-					<string>Canopy Brochure.jpeg</string>
-					<string>EZ Info Sheet 2014 V2 PDF 2.jpeg</string>
-					<string>EZ Info Sheet 2014 V2 PDF.jpeg</string>
-					<string>F-OFFICE-ENTRY-1 copy.jpg</string>
-					<string>F-OFFICE-ENTRY-2 copy.jpg</string>
-					<string>Harbor Point Flyer - Print 2.jpeg</string>
-					<string>Harbor Point Flyer - Print 3.jpeg</string>
-					<string>Harbor Point Flyer - Print 4.jpeg</string>
-					<string>Harbor Point Flyer - Print 5.jpeg</string>
-					<string>Harbor Point Flyer - Print 6.jpeg</string>
-					<string>Harbor Point Flyer - Print 7.jpeg</string>
-					<string>Harbor Point Flyer - Print 8.jpeg</string>
-					<string>Harbor Point Flyer - Print 9.jpeg</string>
-					<string>Harbor Point Flyer - Print 10.jpeg</string>
-					<string>Harbor Point Flyer - Print.jpeg</string>
-					<string>Hotel-final-Canopy-signage.jpg</string>
-					<string>I2411 Canopy Baltimore - Bar MD05.jpg</string>
-					<string>I2411 Canopy Baltimore - King Guestroom MD05_PS_FINAL.jpg</string>
-					<string>I2411 Canopy Baltimore - Restaurant MD04.jpg</string>
-					<string>I2411 Canopy Baltimore - Retreat MD03.jpg</string>
-					<string>Maryland Financing  Incentives120915 (3) 2.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 3.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 4.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 5.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 6.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 7.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 8.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 9.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 10.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 11.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3) 12.jpeg</string>
-					<string>Maryland Financing  Incentives120915 (3).jpeg</string>
-					<string>New Folder With Items</string>
-					<string>PLAZA BIRD EYE VIEW-2.jpg</string>
-					<string>PLAZA-birds eye view copy.jpg</string>
-					<string>VIEW-South-Far View-Phase-2.jpg</string>
-					<string>VIEW-South-Far View.jpg</string>
-					<string>Wills Wharf-Retail LOD.jpeg</string>
-					<string>WILLS-South-Close View-Phase2.jpg</string>
-					<string>WILLS-South-Close View.jpg</string>
+                    <string>0504 Wills Wharf c1 OP1 3t.jpg</string>
+                    <string>0504 Wills Wharf c1 OP2 3t.jpg</string>
+                    <string>0928+LI+Copier+c1+4t (1).jpg</string>
+                    <string>0928+LI+Copier+c2+3t (1).jpg</string>
+                    <string>F-OFFICE-ENTRY-1 copy.jpg</string>
+                    <string>F-OFFICE-ENTRY-2 copy.jpg</string>
+                    <string>I2411 Canopy Baltimore - Bar MD05.jpg</string>
+                    <string>I2411 Canopy Baltimore - King Guestroom MD05_PS_FINAL.jpg</string>
+                    <string>I2411 Canopy Baltimore - Restaurant MD04.jpg</string>
+                    <string>I2411 Canopy Baltimore - Retreat MD03.jpg</string>
+                    <string>PLAZA BIRD EYE VIEW-2.jpg</string>
+                    <string>PLAZA-birds eye view copy.jpg</string>
+                    <string>VIEW-South-Far View-Phase-2.jpg</string>
+                    <string>VIEW-South-Far View.jpg</string>
+                    <string>WILLS-South-Close View-Phase2.jpg</string>
+                    <string>WILLS-South-Close View.jpg</string>
+                    <string>Canopy Brochure.jpeg</string>
+                    <string>Canopy Brochure 2.jpeg</string>
+                    <string>Canopy Brochure 3.jpeg</string>
+                    <string>Canopy Brochure 4.jpeg</string>
+                    <string>Canopy Brochure 5.jpeg</string>
+                    <string>Canopy Brochure 6.jpeg</string>
+                    <string>Canopy Brochure 7.jpeg</string>
+                    <string>Canopy Brochure 8.jpeg</string>
+                    <string>Canopy Brochure 9.jpeg</string>
+                    <string>Canopy Brochure 10.jpeg</string>
+                    <string>Canopy Brochure 11.jpeg</string>
+                    <string>Canopy Brochure 12.jpeg</string>
+                    <string>Canopy Brochure 13.jpeg</string>
+                    <string>Canopy Brochure 14.jpeg</string>
+                    <string>Canopy Brochure 15.jpeg</string>
+                    <string>Canopy Brochure 16.jpeg</string>
+                    <string>Canopy Brochure 17.jpeg</string>
+                    <string>Canopy Brochure 18.jpeg</string>
+                    <string>Canopy Brochure 19.jpeg</string>
+                    <string>EZ Info Sheet 2014 V2 PDF.jpeg</string>
+                    <string>EZ Info Sheet 2014 V2 PDF 2.jpeg</string>
+                    <string>Harbor Point Flyer - Print.jpeg</string>
+                    <string>Harbor Point Flyer - Print 2.jpeg</string>
+                    <string>Harbor Point Flyer - Print 3.jpeg</string>
+                    <string>Harbor Point Flyer - Print 4.jpeg</string>
+                    <string>Harbor Point Flyer - Print 5.jpeg</string>
+                    <string>Harbor Point Flyer - Print 6.jpeg</string>
+                    <string>Harbor Point Flyer - Print 7.jpeg</string>
+                    <string>Harbor Point Flyer - Print 8.jpeg</string>
+                    <string>Harbor Point Flyer - Print 9.jpeg</string>
+                    <string>Harbor Point Flyer - Print 10.jpeg</string>
+                    <string>Hotel-final-Canopy-signage.jpg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 2.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 3.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 4.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 5.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 6.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 7.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 8.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 9.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 10.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 11.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3) 12.jpeg</string>
+                    <string>Maryland Financing  Incentives120915 (3).jpeg</string>
+                    <string>2_12a Wills Plot.jpeg</string>
+                    <string>2_12a Wills Plot 2.jpeg</string>
+                    <string>2_12a Wills Plot 3.jpeg</string>
+                    <string>2_12a Wills Plot 4.jpeg</string>
+                    <string>2_12a Wills Plot 5.jpeg</string>
+                    <string>2_12a Wills Plot 6.jpeg</string>
+                    <string>2_12a Wills Plot 7.jpeg</string>
+                    <string>2_12a Wills Plot 8.jpeg</string>
+                    <string>2_12a Wills Plot 9.jpeg</string>
+                    <string>2_12a Wills Plot 10.jpeg</string>
+                    <string>2_12a Wills Plot 11.jpeg</string>
+                    <string>2_12a Wills Plot 12.jpeg</string>
+                    <string>2_12a Wills Plot 13.jpeg</string>
+                    <string>2_12a Wills Plot 14.jpeg</string>
+                    <string>2_12a Wills Plot 15.jpeg</string>
+                    <string>2_12a Wills Plot 16.jpeg</string>
+                    <string>2_12a Wills Plot 17.jpeg</string>
+                    <string>2_12a Wills Plot 18.jpeg</string>
+                    <string>2_12a Wills Plot 19.jpeg</string>
+                    <string>2_12a Wills Plot 20.jpeg</string>
+                    <string>2_12a Wills Plot 21.jpeg</string>
+                    <string>2_12a Wills Plot 22.jpeg</string>
+                    <string>2_12a Wills Plot 23.jpeg</string>
+                    <string>Wills Wharf-Retail LOD.jpeg</string>
 				</array>
 			</dict>
 		</array>
@@ -667,42 +664,42 @@
 				<string>Aerial Photos</string>
 				<key>assets</key>
 				<array>
-					<string>parcel 2 shot a.jpg</string>
-					<string>Parcel 3 2.jpeg</string>
-					<string>Parcel 3 3.jpeg</string>
-					<string>Parcel 3 4.jpeg</string>
-					<string>Parcel 3 5.jpeg</string>
-					<string>parcel 3 shot b.jpg</string>
-					<string>parcel 3 shot c.jpg</string>
-					<string>Parcel 3.1.png</string>
-					<string>Parcel 3.jpeg</string>
-					<string>Parcel 3.png</string>
+                    <string>parcel 2 shot a.jpg</string>
+                    <string>parcel 3 shot b.jpg</string>
+                    <string>parcel 3 shot c.jpg</string>
+                    <string>Parcel 3.png</string>
+                    <string>Parcel 3.1.png</string>
+                    <string>Parcel 3.jpeg</string>
+                    <string>Parcel 3 2.jpeg</string>
+                    <string>Parcel 3 3.jpeg</string>
+                    <string>Parcel 3 4.jpeg</string>
+                    <string>Parcel 3 5.jpeg</string>
 				</array>
 				<key>thumbs</key>
 				<array>
-					<string>parcel 2 shot a.jpg</string>
-					<string>Parcel 3 2.jpeg</string>
-					<string>Parcel 3 3.jpeg</string>
-					<string>Parcel 3 4.jpeg</string>
-					<string>Parcel 3 5.jpeg</string>
-					<string>parcel 3 shot b.jpg</string>
-					<string>parcel 3 shot c.jpg</string>
-					<string>Parcel 3.1.png</string>
-					<string>Parcel 3.jpeg</string>
-					<string>Parcel 3.png</string>
+                    <string>parcel 2 shot a.jpg</string>
+                    <string>parcel 3 shot b.jpg</string>
+                    <string>parcel 3 shot c.jpg</string>
+                    <string>Parcel 3.png</string>
+                    <string>Parcel 3.1.png</string>
+                    <string>Parcel 3.jpeg</string>
+                    <string>Parcel 3 2.jpeg</string>
+                    <string>Parcel 3 3.jpeg</string>
+                    <string>Parcel 3 4.jpeg</string>
+                    <string>Parcel 3 5.jpeg</string>
 				</array>
 				<key>captions</key>
 				<array>
-					<string>parcel 2 shot a.jpg</string>
-					<string>Parcel 3 2.jpeg</string>
-					<string>Parcel 3 3.jpeg</string>
-					<string>Parcel 3 4.jpeg</string>
-					<string>Parcel 3 5.jpeg</string>
-					<string>parcel 3 shot b.jpg</string>
-					<string>parcel 3 shot c.jpg</string>
-					<string>Parcel 3.1.png</string>
-					<string>Parcel 3.jpeg</string>
-					<string>Parcel 3.png</string>
+                    <string>parcel 2 shot a.jpg</string>
+                    <string>parcel 3 shot b.jpg</string>
+                    <string>parcel 3 shot c.jpg</string>
+                    <string>Parcel 3.png</string>
+                    <string>Parcel 3.1.png</string>
+                    <string>Parcel 3.jpeg</string>
+                    <string>Parcel 3 2.jpeg</string>
+                    <string>Parcel 3 3.jpeg</string>
+                    <string>Parcel 3 4.jpeg</string>
+                    <string>Parcel 3 5.jpeg</string>
 				</array>
 			</dict>
 		</array>
@@ -754,45 +751,45 @@
 				<string>Aerial Photos</string>
 				<key>assets</key>
 				<array>
-					<string>Parcel 1 2.jpeg</string>
-					<string>Parcel 1 3.jpeg</string>
-					<string>Parcel 1 4.jpeg</string>
-					<string>Parcel 1 5.jpeg</string>
-					<string>parcel 1 shot a.jpg</string>
-					<string>parcel 1 shot b.jpg</string>
-					<string>Parcel 1.1.png</string>
-					<string>Parcel 1.2.png</string>
-					<string>Parcel 1.3.png</string>
-					<string>Parcel 1.4.png</string>
-					<string>Parcel 1.jpeg</string>
+                    <string>Parcel 1.1.png</string>
+                    <string>Parcel 1.2.png</string>
+                    <string>Parcel 1.3.png</string>
+                    <string>Parcel 1.4.png</string>
+                    <string>parcel 1 shot a.jpg</string>
+                    <string>parcel 1 shot b.jpg</string>
+                    <string>Parcel 1.jpeg</string>
+                    <string>Parcel 1 2.jpeg</string>
+                    <string>Parcel 1 3.jpeg</string>
+                    <string>Parcel 1 4.jpeg</string>
+                    <string>Parcel 1 5.jpeg</string>
 				</array>
 				<key>thumbs</key>
 				<array>
-					<string>Parcel 1 2.jpeg</string>
-					<string>Parcel 1 3.jpeg</string>
-					<string>Parcel 1 4.jpeg</string>
-					<string>Parcel 1 5.jpeg</string>
-					<string>parcel 1 shot a.jpg</string>
-					<string>parcel 1 shot b.jpg</string>
-					<string>Parcel 1.1.png</string>
-					<string>Parcel 1.2.png</string>
-					<string>Parcel 1.3.png</string>
-					<string>Parcel 1.4.png</string>
-					<string>Parcel 1.jpeg</string>
+                    <string>Parcel 1.1.png</string>
+                    <string>Parcel 1.2.png</string>
+                    <string>Parcel 1.3.png</string>
+                    <string>Parcel 1.4.png</string>
+                    <string>parcel 1 shot a.jpg</string>
+                    <string>parcel 1 shot b.jpg</string>
+                    <string>Parcel 1.jpeg</string>
+                    <string>Parcel 1 2.jpeg</string>
+                    <string>Parcel 1 3.jpeg</string>
+                    <string>Parcel 1 4.jpeg</string>
+                    <string>Parcel 1 5.jpeg</string>
 				</array>
 				<key>captions</key>
 				<array>
-					<string>Parcel 1 2.jpeg</string>
-					<string>Parcel 1 3.jpeg</string>
-					<string>Parcel 1 4.jpeg</string>
-					<string>Parcel 1 5.jpeg</string>
-					<string>parcel 1 shot a.jpg</string>
-					<string>parcel 1 shot b.jpg</string>
-					<string>Parcel 1.1.png</string>
-					<string>Parcel 1.2.png</string>
-					<string>Parcel 1.3.png</string>
-					<string>Parcel 1.4.png</string>
-					<string>Parcel 1.jpeg</string>
+                    <string>Parcel 1.1.png</string>
+                    <string>Parcel 1.2.png</string>
+                    <string>Parcel 1.3.png</string>
+                    <string>Parcel 1.4.png</string>
+                    <string>parcel 1 shot a.jpg</string>
+                    <string>parcel 1 shot b.jpg</string>
+                    <string>Parcel 1.jpeg</string>
+                    <string>Parcel 1 2.jpeg</string>
+                    <string>Parcel 1 3.jpeg</string>
+                    <string>Parcel 1 4.jpeg</string>
+                    <string>Parcel 1 5.jpeg</string>
 				</array>
 			</dict>
 		</array>
@@ -811,24 +808,24 @@
 				<string>Aerial Photos</string>
 				<key>assets</key>
 				<array>
-					<string>Central Plaza 1.png</string>
-					<string>Central Plaza 2.png</string>
-					<string>Central Plaza3.png</string>
-					<string>Neoscape_BeattyDevelopmentHarbor Point_CentralPlaza_FINAL.jpg</string>
+                    <string>Neoscape_BeattyDevelopmentHarbor Point_CentralPlaza_FINAL.jpg</string>
+                    <string>Central Plaza 1.png</string>
+                    <string>Central Plaza 2.png</string>
+                    <string>Central Plaza3.png</string>
 				</array>
 				<key>thumbs</key>
 				<array>
-					<string>Central Plaza 1.png</string>
-					<string>Central Plaza 2.png</string>
-					<string>Central Plaza3.png</string>
-					<string>Neoscape_BeattyDevelopmentHarbor Point_CentralPlaza_FINAL.jpg</string>
+                    <string>Neoscape_BeattyDevelopmentHarbor Point_CentralPlaza_FINAL.jpg</string>
+                    <string>Central Plaza 1.png</string>
+                    <string>Central Plaza 2.png</string>
+                    <string>Central Plaza3.png</string>
 				</array>
 				<key>captions</key>
 				<array>
-					<string>Central Plaza 1.png</string>
-					<string>Central Plaza 2.png</string>
-					<string>Central Plaza3.png</string>
-					<string>Neoscape_BeattyDevelopmentHarbor Point_CentralPlaza_FINAL.jpg</string>
+                    <string>Neoscape_BeattyDevelopmentHarbor Point_CentralPlaza_FINAL.jpg</string>
+                    <string>Central Plaza 1.png</string>
+                    <string>Central Plaza 2.png</string>
+                    <string>Central Plaza3.png</string>
 				</array>
 			</dict>
 		</array>

@@ -3,56 +3,56 @@
              {
              "name": "All",
              "subtitle": "4.5 ACRES",
-             "overlay": "master-plan-all-uses.png",
+             "overlay": "master-plan-all",
              },
              {
 				"name": "Office",
                 "subtitle": "1.6MM SF",
-				"overlay": "master-plan-overlay-office.png",
+				"overlay": "master-plan-overlay-office",
 				},
              	{
 				"name": "Retail",
                 "subtitle": "200,000 SF",
-				"overlay": "master-plan-overlay-retail.png",
+				"overlay": "master-plan-overlay-retail",
 				},
 				{
 				"name": "Residential",
                 "subtitle": "914,000 SF",
-				"overlay": "master-plan-overlay-residential.png",
+				"overlay": "master-plan-overlay-residential",
 				},
 				{
 				"name": "Hotel",
                 "subtitle": "220,000 SF",
-				"overlay": "master-plan-overlay-hotel.png",
+				"overlay": "master-plan-overlay-hotel",
                  },
                  {
                  "name": "Parking",
                  "subtitle": "Phase 1",
-                 "overlay": "parking-phase-1.png",
+                 "overlay": "parking-phase-1",
                  },
                  {
                  "name": "Parking",
                  "subtitle": "Phase 2",
-                 "overlay": "parking-phase-2.png",
+                 "overlay": "parking-phase-2",
                  },
                  {
                  "name": "Parking",
                  "subtitle": "Phase 3",
-                 "overlay": "parking-phase-3.png",
+                 "overlay": "parking-phase-3",
                  }
             ],
     "parking": [
                 {
                 "name": "Phase 1 Parking",
-                "overlay": "parking-phase-1.png",
+                "overlay": "parking-phase-1",
                 },
                 {
                 "name": "Phase 2 Parking",
-                "overlay": "parking-phase-2.png",
+                "overlay": "parking-phase-2",
                 },
                 {
                 "name": "Phase 3 Parking",
-                "overlay": "parking-phase-3.png",
+                "overlay": "parking-phase-3",
                 }
             ]
 }
