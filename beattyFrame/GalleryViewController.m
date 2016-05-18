@@ -219,6 +219,18 @@
         NSDictionary *itemDic = [[NSDictionary alloc] initWithDictionary:secInfo[i]];
         typeOfFile = [itemDic objectForKey:@"albumtype"];
         NSMutableArray *imgArray = [[NSMutableArray alloc] initWithArray:[itemDic objectForKey:@"assets"]];
+        
+        NSEnumerator *enumerator = [imgArray objectEnumerator];
+        id imagePath;
+
+        if ( ! [typeOfFile isEqualToString:@"pdf"] ) {
+            while (imagePath = [enumerator nextObject]) {
+                if ([[imagePath pathExtension] isEqualToString:@"pdf"]) {
+                    [imgArray removeObject:imagePath];
+                }
+            }
+        }
+        
         sumOfImg = sumOfImg + (int)[imgArray count];
     }
     return sumOfImg;
@@ -280,21 +292,37 @@
         
         NSMutableArray *imgArray = [[NSMutableArray alloc] initWithArray:[itemDic objectForKey:@"assets"]];
         NSMutableArray *capArray = [[NSMutableArray alloc] initWithArray:[itemDic objectForKey:@"captions"]];
+        
+        NSEnumerator *enumerator = [imgArray objectEnumerator];
+        id imagePath;
+        
+        if ( ! [typeOfCell isEqualToString:@"pdf"] ) {
+            while (imagePath = [enumerator nextObject]) {
+                if ([[imagePath pathExtension] isEqualToString:@"pdf"]) {
+                    [imgArray removeObject:imagePath];
+                }
+            }
+        }
+
         [totalImg addObjectsFromArray:imgArray];
         [totalCap addObjectsFromArray:capArray];
     }
+
     cell.backgroundColor = [UIColor clearColor];
     [cell.titleLabel setText:[totalCap objectAtIndex:indexPath.row]];
     cell.titleLabel.font = [UIFont fontWithName:@"GoodPro-Book" size:11];
+
+    
+    
     
     //cell.cellThumb.image = [UIImage imageNamed:[totalImg objectAtIndex:indexPath.row]];
     //cell.cellThumb.image = [UIImage imageNamed:@"thumb_generic.png"];
-    //[cell.cellThumb setContentMode:UIViewContentModeScaleAspectFit];
+    //[cell.cellThumb setContentMode:UIViewContentModeScaleAspectFill];
     
     //cell.cellThumb.image = [UIImage imageNamed:@"thumb_generic.png"];
     
     //dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    NSLog(@"image looking for: %@",typeOfCell);
+    //NSLog(@"image looking for: %@",typeOfCell);
 
     
     if ([typeOfCell isEqualToString:@"pdf"] ) {
@@ -302,6 +330,8 @@
         cell.cellThumb.image = [UIImage imageNamed:@"thumb_generic.png"];
 
     } else {
+        
+        NSLog(@"indexPath.row %ld", (long)indexPath.row);
                 
         UIImage * thumb = [UIImage imageNamed:[totalImg objectAtIndex:indexPath.row]];
         //        cell.cellThumb.image = thumb;
@@ -439,8 +469,8 @@
         [collectionView reloadData];
         
     } else {
-        NSArray *images = [NSArray new];
-        NSArray *captions = [NSArray new];
+        NSMutableArray *images = [NSMutableArray new];
+        NSMutableArray *captions = [NSMutableArray new];
         NSDictionary *ggallDict = [arr_AlbumData objectAtIndex:indexPath.section];
         NSArray *ggalleryArray = [ggallDict objectForKey:@"sectioninfo"];
         
@@ -452,7 +482,26 @@
             captions = [itemDic objectForKey:@"captions"];
         }     
         
-        
+//        NSEnumerator *enumerator = [images objectEnumerator];
+//        id imagePath;
+//        //NSString *newImageName;
+//        
+////        NSMutableArray *noPDFsimageNames = [[NSMutableArray alloc] init];
+//        
+//        while (imagePath = [enumerator nextObject]) {
+//            //Remove the file extension
+//            if ([[imagePath pathExtension] isEqualToString:@"pdf"]) {
+//                [images removeObject:imagePath];
+//                NSUInteger path = [images indexOfObject:imagePath];
+//                [captions removeObjectAtIndex:12];
+//            }
+////            newImageName = [imagePath stringByDeletingPathExtension];
+////            [noPDFsimageNames addObject:newImageName];
+//        }
+//        
+//        NSLog(@"\n\n%@\n\n", images);
+//        NSLog(@"\n\n%@\n\n", captions);
+
         NSMutableArray *galleryData = [NSMutableArray new];
         
         for (int i = 0; i < images.count; i++) {
