@@ -749,7 +749,7 @@ static float    menuButtonSize = 50.0;
                     
                     NSString *mimeType;
                     // Determine the MIME type
-                    if ([[file pathExtension] isEqualToString:@"jpg"]) {
+                    if (([[file pathExtension] isEqualToString:@"jpg"]) || ([[file pathExtension] isEqualToString:@"jpeg"])) {
                         mimeType = @"image/jpeg";
                     } else if ([[file pathExtension] isEqualToString:@"png"]) {
                         mimeType = @"image/png";
@@ -765,6 +765,8 @@ static float    menuButtonSize = 50.0;
                     } else if ([[file pathExtension] isEqualToString:@"com"]) {
                         mimeType = @"text/plain";
                     }
+                    
+                    NSLog(@"mimeType %@",mimeType);
                     
                     filePath= [[NSBundle mainBundle] pathForResource:justFileName ofType:[file pathExtension]];
                     

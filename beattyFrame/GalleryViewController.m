@@ -331,7 +331,7 @@
 
     } else {
         
-        NSLog(@"indexPath.row %ld", (long)indexPath.row);
+        //NSLog(@"indexPath.row %ld", (long)indexPath.row);
                 
         UIImage * thumb = [UIImage imageNamed:[totalImg objectAtIndex:indexPath.row]];
         //        cell.cellThumb.image = thumb;
@@ -527,23 +527,40 @@
 -(CGFloat)byteSizeOfFile
 {
     NSString		*linkText = assetName;
-    NSData			*imgData;
-    UIImage			*pngImage;
+//    NSData			*imgData;
+    //UIImage			*pngImage;
+    long long fileSize;
     
     // if cell == existing documents, calculate that size
     //	if ([linkText containsString:@".pdf"]) {
-    if ([linkText rangeOfString:@".pdf"].length > 0) {
-        NSString *imagePath = [[NSBundle mainBundle] pathForResource:linkText ofType:nil];
-        imgData = [NSData dataWithContentsOfFile:imagePath];
-    } else {
-        NSString *justFileName = [[linkText lastPathComponent] stringByDeletingPathExtension];
-        NSString *imagePath = [[NSBundle mainBundle] pathForResource:justFileName ofType:@"jpg"];
-        pngImage = [UIImage imageWithImage:[UIImage imageWithContentsOfFile:imagePath] scaledToWidth:1100];
-        UIImage *t = [UIImage imageWithContentsOfFile:imagePath];
-        imgData = UIImagePNGRepresentation(t);
-    }
+//    if ([linkText rangeOfString:@".pdf"].length > 0) {
+//        NSString *imagePath = [[NSBundle mainBundle] pathForResource:linkText ofType:nil];
+//        imgData = [NSData dataWithContentsOfFile:imagePath];
+//    } else {
     
-    CGFloat bytesString = [imgData length];
+        
+        
+        NSString *justFileName = [[linkText lastPathComponent] stringByDeletingPathExtension];
+        NSString *imagePath = [[NSBundle mainBundle] pathForResource:justFileName ofType:[linkText pathExtension]];
+        NSLog(@"imagePath\n\n%@\n\n", imagePath);
+        
+        fileSize = [[[NSFileManager defaultManager] attributesOfItemAtPath:imagePath error:nil][NSFileSize] longLongValue];
+    
+        //pngImage = [UIImage imageByScalingAndCroppingForSize:CGSizeMake(1100, 850) image:[UIImage imageWithContentsOfFile:imagePath]];
+        //pngImage = [UIImage scaleImage:[UIImage imageWithContentsOfFile:imagePath] toSize:CGSizeMake(1100, 850)];
+        //pngImage = [UIImage imageWithImage:[UIImage imageWithContentsOfFile:imagePath] scaledToWidth:1100];
+        //UIImage *t = pngImage;
+        //UIImage *t = [UIImage imageWithContentsOfFile:imagePath];
+        //imgData = UIImageJPEGRepresentation(t, 9);
+        
+//        NSString *justFileName = [[linkText lastPathComponent] stringByDeletingPathExtension];
+//        NSString *imagePath = [[NSBundle mainBundle] pathForResource:justFileName ofType:@"jpg"];
+//        pngImage = [UIImage imageWithImage:[UIImage imageWithContentsOfFile:imagePath] scaledToWidth:1100];
+//        UIImage *t = [UIImage imageWithContentsOfFile:imagePath];
+//        imgData = UIImagePNGRepresentation(t);
+//    }
+    
+    long bytesString = fileSize;
     
     return bytesString;
 }
@@ -593,40 +610,29 @@
 
 -(void)updateProgress
 {
-    float percentDone = 0;
-    UIColor *spaceleft = [UIColor redColor];
-    if ((totalBhytes/1000 > 500) && (totalBhytes/1000 < 2500)) {
-        percentDone = .20;
-    } else if ((totalBhytes/1000 > 2500) && (totalBhytes/1000 < 5000)) {
-        percentDone = .40;
-    } else if ((totalBhytes/1000 > 5000) && (totalBhytes/1000 < 7500)) {
-        percentDone = .60;
-    } else if ((totalBhytes/1000 > 7500) && (totalBhytes/1000 < 10000)) {
-        percentDone = .80;
-        spaceleft = [UIColor redColor];
-    } else if ((totalBhytes/1000 > 10000)) {
-        spaceleft = [UIColor redColor];
-        percentDone = 1;
-    }
-    
-    NSLog(@"percentDone: %f",percentDone);
+   UIColor *spaceleft = [UIColor redColor];
+   double percentDone = ((double)totalBhytes / 10000)*.001;
+   if ((percentDone > 0.9) && (percentDone < 1.0))  {
+      spaceleft = [UIColor redColor];
+      [upperRect setBackgroundColor:[UIColor orangeColor]];
+   } else if (percentDone > 1.0) {
+      percentDone = 1;
+      [upperRect setBackgroundColor:[UIColor redColor]];
+   } else {
+      [upperRect setBackgroundColor:[UIColor selectedBlue]];
+      spaceleft = [UIColor selectedBlue];
+   }
     
     CGRect rect = CGRectMake(20, 50, 430, 5);
-    
     upperRect.frame = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width * percentDone, rect.size.height );
-    
     lowerRect.frame = CGRectMake(rect.origin.x + (rect.size.width * percentDone), rect.origin.y, rect.size.width*(1-percentDone), rect.size.height );
     lowerRect.alpha = 1.0;
     upperRect.alpha = 1.0      ;
-    
-    [upperRect setBackgroundColor:[UIColor selectedBlue]];
     [lowerRect setBackgroundColor:[UIColor whiteColor]];
-    
     [uiv_sharePanel addSubview: lowerRect];
     [uiv_sharePanel addSubview: upperRect];
     
     NSString *sttring = [NSByteCountFormatter stringFromByteCount:totalBhytes countStyle:NSByteCountFormatterCountStyleFile];
-    
     uil_totalSize.text = [NSString stringWithFormat:@"Size: %@",sttring];
 }
 

@@ -434,7 +434,6 @@
 		88314F0B1CECDC50007685BB /* 15-0202_overall south west.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88314DE91CECDC50007685BB /* 15-0202_overall south west.jpg */; };
 		88314F0C1CECDC50007685BB /* Exelon - LEVEL 1 - D1-D4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 88314DEA1CECDC50007685BB /* Exelon - LEVEL 1 - D1-D4.jpeg */; };
 		88314F0D1CECDC50007685BB /* Exelon Level 2 P1-P8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 88314DEB1CECDC50007685BB /* Exelon Level 2 P1-P8.jpeg */; };
-		88314F0E1CECDC50007685BB /* Exelon-Retail-View-3.tif in Resources */ = {isa = PBXBuildFile; fileRef = 88314DEC1CECDC50007685BB /* Exelon-Retail-View-3.tif */; };
 		88314F0F1CECDC50007685BB /* Lobby_R01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88314DED1CECDC50007685BB /* Lobby_R01.jpg */; };
 		88314F111CECDC50007685BB /* View02_Final.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88314DF01CECDC50007685BB /* View02_Final.jpg */; };
 		88314F121CECDC50007685BB /* 0119 Exelon c1 6t.jpeg.__128__xx__128__1463170860 in Resources */ = {isa = PBXBuildFile; fileRef = 88314DF31CECDC50007685BB /* 0119 Exelon c1 6t.jpeg.__128__xx__128__1463170860 */; };
@@ -1091,6 +1090,7 @@
 		887648101BA35914002D4183 /* LibraryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8876480C1BA35914002D4183 /* LibraryAPI.m */; };
 		887648111BA35914002D4183 /* PersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8876480E1BA35914002D4183 /* PersistencyManager.m */; };
 		887648151BA3598A002D4183 /* embBuilding.m in Sources */ = {isa = PBXBuildFile; fileRef = 887648141BA3598A002D4183 /* embBuilding.m */; };
+		887FE9161D074C2500950DD9 /* Exelon-Retail-View-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 887FE9151D074C2500950DD9 /* Exelon-Retail-View-3.jpg */; };
 		888233751BA0B0600019FD75 /* ButtonStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 888233741BA0B0600019FD75 /* ButtonStack.m */; };
 		888233831BA214930019FD75 /* buttonstack.json in Resources */ = {isa = PBXBuildFile; fileRef = 888233821BA214930019FD75 /* buttonstack.json */; };
 		888787181CE525FB00557B05 /* ParkingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888787171CE525FB00557B05 /* ParkingTableViewController.m */; };
@@ -1705,7 +1705,7 @@
 		824D27A81B61616D00E5F5A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		824D2B141B6169AB00E5F5A5 /* ImageData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageData.plist; sourceTree = "<group>"; };
 		824D2B161B616DCD00E5F5A5 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
-		824D2B171B616DCD00E5F5A5 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		824D2B171B616DCD00E5F5A5 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
 		824D2B191B6179AF00E5F5A5 /* GalleryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionViewCell.h; sourceTree = "<group>"; };
 		824D2B1A1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionViewCell.m; sourceTree = "<group>"; };
 		824D2B1C1B617FBE00E5F5A5 /* XHGalleryUIControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XHGalleryUIControls.framework; sourceTree = "<group>"; };
@@ -1978,7 +1978,6 @@
 		88314DE91CECDC50007685BB /* 15-0202_overall south west.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "15-0202_overall south west.jpg"; sourceTree = "<group>"; };
 		88314DEA1CECDC50007685BB /* Exelon - LEVEL 1 - D1-D4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Exelon - LEVEL 1 - D1-D4.jpeg"; sourceTree = "<group>"; };
 		88314DEB1CECDC50007685BB /* Exelon Level 2 P1-P8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Exelon Level 2 P1-P8.jpeg"; sourceTree = "<group>"; };
-		88314DEC1CECDC50007685BB /* Exelon-Retail-View-3.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Exelon-Retail-View-3.tif"; sourceTree = "<group>"; };
 		88314DED1CECDC50007685BB /* Lobby_R01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lobby_R01.jpg; sourceTree = "<group>"; };
 		88314DF01CECDC50007685BB /* View02_Final.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = View02_Final.jpg; sourceTree = "<group>"; };
 		88314DF31CECDC50007685BB /* 0119 Exelon c1 6t.jpeg.__128__xx__128__1463170860 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0119 Exelon c1 6t.jpeg.__128__xx__128__1463170860"; sourceTree = "<group>"; };
@@ -2643,6 +2642,7 @@
 		8876480E1BA35914002D4183 /* PersistencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistencyManager.m; sourceTree = "<group>"; };
 		887648131BA3598A002D4183 /* embBuilding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = embBuilding.h; path = Model/embBuilding.h; sourceTree = "<group>"; };
 		887648141BA3598A002D4183 /* embBuilding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = embBuilding.m; path = Model/embBuilding.m; sourceTree = "<group>"; };
+		887FE9151D074C2500950DD9 /* Exelon-Retail-View-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Exelon-Retail-View-3.jpg"; sourceTree = "<group>"; };
 		888233731BA0B0600019FD75 /* ButtonStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonStack.h; path = utilities/ButtonStack.h; sourceTree = "<group>"; };
 		888233741BA0B0600019FD75 /* ButtonStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonStack.m; path = utilities/ButtonStack.m; sourceTree = "<group>"; };
 		888233821BA214930019FD75 /* buttonstack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = buttonstack.json; path = utilities/buttonstack.json; sourceTree = "<group>"; };
@@ -4148,7 +4148,7 @@
 				88314DE91CECDC50007685BB /* 15-0202_overall south west.jpg */,
 				88314DEA1CECDC50007685BB /* Exelon - LEVEL 1 - D1-D4.jpeg */,
 				88314DEB1CECDC50007685BB /* Exelon Level 2 P1-P8.jpeg */,
-				88314DEC1CECDC50007685BB /* Exelon-Retail-View-3.tif */,
+				887FE9151D074C2500950DD9 /* Exelon-Retail-View-3.jpg */,
 				88314DED1CECDC50007685BB /* Lobby_R01.jpg */,
 				8831500A1CECEB41007685BB /* Neoscape_BeattyDevelopmentHarbor Point_ExcelonRetail_FINAL.jpg */,
 				88314DEF1CECDC50007685BB /* New Folder With Items */,
@@ -6894,7 +6894,6 @@
 				8892EDBD1BC2092B00347146 /* phase_d_base_00043.jpg in Resources */,
 				824D2BE21B62D02100E5F5A5 /* share_store02.jpg.jpg in Resources */,
 				822823CB1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg in Resources */,
-				88314F0E1CECDC50007685BB /* Exelon-Retail-View-3.tif in Resources */,
 				8892EADF1BC2082C00347146 /* phase_b_base_00006.jpg in Resources */,
 				8892EE371BC2092B00347146 /* phase_d_color_00063.png in Resources */,
 				824D2BD91B62D02100E5F5A5 /* share_Picture 035.jpg.jpg in Resources */,
@@ -7013,6 +7012,7 @@
 				88314F0D1CECDC50007685BB /* Exelon Level 2 P1-P8.jpeg in Resources */,
 				88314F171CECDC50007685BB /* Apartment Entrance_20160321-2.jpg.__800__xx__600__1463173230 in Resources */,
 				824D2BCA1B62D02100E5F5A5 /* share_inspi06.jpg.jpg in Resources */,
+				887FE9161D074C2500950DD9 /* Exelon-Retail-View-3.jpg in Resources */,
 				8892EAE11BC2082C00347146 /* phase_b_base_00008.jpg in Resources */,
 				8861DD281BFD55CC006A7D13 /* grfx_buildingList@2x.jpg in Resources */,
 				88314FCA1CECDC50007685BB /* PLAZA BIRD EYE VIEW-2.jpg in Resources */,
