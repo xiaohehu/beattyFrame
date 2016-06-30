@@ -33,134 +33,6 @@
 		822822B41B850B55004154E7 /* building_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 822822B31B850B55004154E7 /* building_data.plist */; };
 		822822BA1B851E44004154E7 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822822B71B851E44004154E7 /* SettingTableViewController.m */; };
 		822822BB1B851E44004154E7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822822B91B851E44004154E7 /* SettingViewController.m */; };
-		822823631B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822C71B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot01.jpg */; };
-		822823641B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822C81B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot02.jpg */; };
-		822823651B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822C91B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot03.jpg */; };
-		822823661B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822CA1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot04.jpg */; };
-		822823671B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822CB1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot05.jpg */; };
-		822823681B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822CC1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot06.jpg */; };
-		822823691B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822CD1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot07.jpg */; };
-		8228236A1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822CE1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot08.jpg */; };
-		8228236B1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View01_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D01B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View01_051215.jpg */; };
-		8228236C1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View02_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D11B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View02_051215.jpg */; };
-		8228236D1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View03_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D21B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View03_051215.jpg */; };
-		8228236E1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View04_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D31B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View04_051215.jpg */; };
-		8228236F1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View05_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D41B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View05_051215.jpg */; };
-		822823701B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View06_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D51B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View06_051215.jpg */; };
-		822823711B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View07_050715.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D61B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View07_050715.jpg */; };
-		822823721B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View08_050715.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D71B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View08_050715.jpg */; };
-		822823731B862A0A004154E7 /* View 1 - Corner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D81B862A0A004154E7 /* View 1 - Corner.jpg */; };
-		822823741B862A0A004154E7 /* View 10- Mews.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822D91B862A0A004154E7 /* View 10- Mews.jpg */; };
-		822823751B862A0A004154E7 /* View 11 - Mews.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822DA1B862A0A004154E7 /* View 11 - Mews.jpg */; };
-		822823761B862A0A004154E7 /* View 12 - N Randolph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822DB1B862A0A004154E7 /* View 12 - N Randolph.jpg */; };
-		822823771B862A0A004154E7 /* View 2 - Wilson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822DC1B862A0A004154E7 /* View 2 - Wilson.jpg */; };
-		822823781B862A0A004154E7 /* View 5 - Plaza - no bridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822DD1B862A0A004154E7 /* View 5 - Plaza - no bridge.jpg */; };
-		822823791B862A0A004154E7 /* View 6 - no bridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822DE1B862A0A004154E7 /* View 6 - no bridge.jpg */; };
-		8228237A1B862A0A004154E7 /* View 7 - N Stuart - no bridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822DF1B862A0A004154E7 /* View 7 - N Stuart - no bridge.jpg */; };
-		8228237B1B862A0A004154E7 /* View 8 - Plaza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822E01B862A0A004154E7 /* View 8 - Plaza.jpg */; };
-		8228237C1B862A0A004154E7 /* View 9 - Interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822E11B862A0A004154E7 /* View 9 - Interior.jpg */; };
-		8228237D1B862A0A004154E7 /* 150512_BC_PresTemplate_ProgressR3_LR 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E31B862A0A004154E7 /* 150512_BC_PresTemplate_ProgressR3_LR 2.pdf */; };
-		8228237E1B862A0A004154E7 /* 150604_BallstonQuarter_DiningGallery_R4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E41B862A0A004154E7 /* 150604_BallstonQuarter_DiningGallery_R4.pdf */; };
-		8228237F1B862A0A004154E7 /* 2015_04_06-ESCALATORS AXON .pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E51B862A0A004154E7 /* 2015_04_06-ESCALATORS AXON .pdf */; };
-		822823801B862A0A004154E7 /* Ballston Center Mall Permanent 11x17.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E61B862A0A004154E7 /* Ballston Center Mall Permanent 11x17.pdf */; };
-		822823811B862A0A004154E7 /* ballston leasing book with cards-2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E71B862A0A004154E7 /* ballston leasing book with cards-2.pdf */; };
-		822823821B862A0A004154E7 /* Ballston_Existing_Lease_Plan_mh.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E81B862A0A004154E7 /* Ballston_Existing_Lease_Plan_mh.pdf */; };
-		822823831B862A0A004154E7 /* Ballston_Presentation_072414-low res.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822E91B862A0A004154E7 /* Ballston_Presentation_072414-low res.pdf */; };
-		822823841B862A0A004154E7 /* BallstonSDPackage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822EA1B862A0A004154E7 /* BallstonSDPackage.pdf */; };
-		822823851B862A0A004154E7 /* BCLP DEV_ 05-01-2015..pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822EB1B862A0A004154E7 /* BCLP DEV_ 05-01-2015..pdf */; };
-		822823861B862A0A004154E7 /* BCLP DEV_ 07-09-2015.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822EC1B862A0A004154E7 /* BCLP DEV_ 07-09-2015.pdf */; };
-		822823871B862A0A004154E7 /* BCLP DEV_MNSP01 SPACE PLAN 11 25 14-mh.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822ED1B862A0A004154E7 /* BCLP DEV_MNSP01 SPACE PLAN 11 25 14-mh.pdf */; };
-		822823881B862A0A004154E7 /* Design Update.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 822822EE1B862A0A004154E7 /* Design Update.pdf */; };
-		822823891B862A0A004154E7 /* Existing_Page_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F01B862A0A004154E7 /* Existing_Page_1.jpg */; };
-		8228238A1B862A0A004154E7 /* Existing_Page_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F11B862A0A004154E7 /* Existing_Page_2.jpg */; };
-		8228238B1B862A0A004154E7 /* Existing_Page_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F21B862A0A004154E7 /* Existing_Page_3.jpg */; };
-		8228238C1B862A0A004154E7 /* Existing_Page_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F31B862A0A004154E7 /* Existing_Page_4.jpg */; };
-		8228238D1B862A0A004154E7 /* Leasing_Page_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F51B862A0A004154E7 /* Leasing_Page_1.jpg */; };
-		8228238E1B862A0A004154E7 /* Leasing_Page_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F61B862A0A004154E7 /* Leasing_Page_2.jpg */; };
-		8228238F1B862A0A004154E7 /* Leasing_Page_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F71B862A0A004154E7 /* Leasing_Page_3.jpg */; };
-		822823901B862A0A004154E7 /* Leasing_Page_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822822F81B862A0A004154E7 /* Leasing_Page_4.jpg */; };
-		8228239C1B862A0A004154E7 /* arch_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823071B862A0A004154E7 /* arch_01.jpg */; };
-		8228239D1B862A0A004154E7 /* arch_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823081B862A0A004154E7 /* arch_02.jpg */; };
-		8228239E1B862A0A004154E7 /* arch_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823091B862A0A004154E7 /* arch_03.jpg */; };
-		8228239F1B862A0A004154E7 /* arch_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228230A1B862A0A004154E7 /* arch_04.jpg */; };
-		822823A01B862A0A004154E7 /* arch_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228230B1B862A0A004154E7 /* arch_05.jpg */; };
-		822823A11B862A0A004154E7 /* arch_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228230C1B862A0A004154E7 /* arch_06.jpg */; };
-		822823A21B862A0A004154E7 /* inspi01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228230E1B862A0A004154E7 /* inspi01.jpg */; };
-		822823A31B862A0A004154E7 /* inspi02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228230F1B862A0A004154E7 /* inspi02.jpg */; };
-		822823A41B862A0A004154E7 /* inspi03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823101B862A0A004154E7 /* inspi03.jpg */; };
-		822823A51B862A0A004154E7 /* inspi04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823111B862A0A004154E7 /* inspi04.jpg */; };
-		822823A61B862A0A004154E7 /* inspi05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823121B862A0A004154E7 /* inspi05.jpg */; };
-		822823A71B862A0A004154E7 /* inspi06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823131B862A0A004154E7 /* inspi06.jpg */; };
-		822823A81B862A0A004154E7 /* lifestyle01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823141B862A0A004154E7 /* lifestyle01.jpg */; };
-		822823A91B862A0A004154E7 /* store01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823161B862A0A004154E7 /* store01.jpg */; };
-		822823AA1B862A0A004154E7 /* store02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823171B862A0A004154E7 /* store02.jpg */; };
-		822823AB1B862A0A004154E7 /* store03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823181B862A0A004154E7 /* store03.jpg */; };
-		822823AC1B862A0A004154E7 /* store04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823191B862A0A004154E7 /* store04.jpg */; };
-		822823AD1B862A0A004154E7 /* store05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228231A1B862A0A004154E7 /* store05.jpg */; };
-		822823AE1B862A0A004154E7 /* store06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228231B1B862A0A004154E7 /* store06.jpg */; };
-		822823AF1B862A0A004154E7 /* store07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228231C1B862A0A004154E7 /* store07.jpg */; };
-		822823B01B862A0A004154E7 /* street01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228231E1B862A0A004154E7 /* street01.jpg */; };
-		822823B11B862A0A004154E7 /* street02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228231F1B862A0A004154E7 /* street02.jpg */; };
-		822823B21B862A0A004154E7 /* street03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823201B862A0A004154E7 /* street03.jpg */; };
-		822823B31B862A0A004154E7 /* market_exterior01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823221B862A0A004154E7 /* market_exterior01.jpg */; };
-		822823B41B862A0A004154E7 /* market_exterior02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823231B862A0A004154E7 /* market_exterior02.jpg */; };
-		822823B51B862A0A004154E7 /* market_interior01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823241B862A0A004154E7 /* market_interior01.jpg */; };
-		822823B61B862A0A004154E7 /* market_interior02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823251B862A0A004154E7 /* market_interior02.jpg */; };
-		822823B71B862A0A004154E7 /* market_interior03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823261B862A0A004154E7 /* market_interior03.jpg */; };
-		822823B81B862A0A004154E7 /* Ballston aerial01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823291B862A0A004154E7 /* Ballston aerial01.jpg */; };
-		822823B91B862A0A004154E7 /* Ballston Aerial02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228232A1B862A0A004154E7 /* Ballston Aerial02.jpg */; };
-		822823BA1B862A0A004154E7 /* 0160 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228232D1B862A0A004154E7 /* 0160 BCM (c) 2014 David Galen.jpg */; };
-		822823BB1B862A0A004154E7 /* 0336 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228232E1B862A0A004154E7 /* 0336 BCM (c) 2014 David Galen.jpg */; };
-		822823BC1B862A0A004154E7 /* 0364 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228232F1B862A0A004154E7 /* 0364 BCM (c) 2014 David Galen.jpg */; };
-		822823BD1B862A0A004154E7 /* Pg 2A  0225 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823301B862A0A004154E7 /* Pg 2A  0225 BCM (c) 2014 David Galen.jpg */; };
-		822823BE1B862A0A004154E7 /* Pg 5B  0420 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823311B862A0A004154E7 /* Pg 5B  0420 BCM (c) 2014 David Galen.jpg */; };
-		822823BF1B862A0A004154E7 /* Pg 9  0251 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823321B862A0A004154E7 /* Pg 9  0251 BCM (c) 2014 David Galen.jpg */; };
-		822823C01B862A0A004154E7 /* Picture 031.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823331B862A0A004154E7 /* Picture 031.jpg */; };
-		822823C11B862A0A004154E7 /* Picture 035.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823341B862A0A004154E7 /* Picture 035.jpg */; };
-		822823C21B862A0A004154E7 /* Picture 036.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823351B862A0A004154E7 /* Picture 036.jpg */; };
-		822823C31B862A0A004154E7 /* Picture 038.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823361B862A0A004154E7 /* Picture 038.jpg */; };
-		822823C41B862A0A004154E7 /* Picture 049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823371B862A0A004154E7 /* Picture 049.jpg */; };
-		822823C51B862A0A004154E7 /* Picture 050.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823381B862A0A004154E7 /* Picture 050.jpg */; };
-		822823C61B862A0A004154E7 /* Picture 051.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823391B862A0A004154E7 /* Picture 051.jpg */; };
-		822823C71B862A0A004154E7 /* Picture 056.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228233A1B862A0A004154E7 /* Picture 056.jpg */; };
-		822823C81B862A0A004154E7 /* 0005 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228233C1B862A0A004154E7 /* 0005 BCM (c) 2014 David Galen.jpg */; };
-		822823C91B862A0A004154E7 /* 0027 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228233D1B862A0A004154E7 /* 0027 BCM (c) 2014 David Galen.jpg */; };
-		822823CA1B862A0A004154E7 /* 0099 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228233E1B862A0A004154E7 /* 0099 BCM (c) 2014 David Galen.jpg */; };
-		822823CB1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228233F1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg */; };
-		822823CC1B862A0A004154E7 /* Picture 024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823401B862A0A004154E7 /* Picture 024.jpg */; };
-		822823CD1B862A0A004154E7 /* Picture 030.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823411B862A0A004154E7 /* Picture 030.jpg */; };
-		822823CE1B862A0A004154E7 /* Picture 041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823421B862A0A004154E7 /* Picture 041.jpg */; };
-		822823CF1B862A0A004154E7 /* thumb_3D.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823441B862A0A004154E7 /* thumb_3D.jpg */; };
-		822823D01B862A0A004154E7 /* thumb_arch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823451B862A0A004154E7 /* thumb_arch.jpg */; };
-		822823D11B862A0A004154E7 /* thumb_architecture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823461B862A0A004154E7 /* thumb_architecture.jpg */; };
-		822823D21B862A0A004154E7 /* thumb_design.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823471B862A0A004154E7 /* thumb_design.jpg */; };
-		822823D31B862A0A004154E7 /* thumb_dining_gallery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823481B862A0A004154E7 /* thumb_dining_gallery.jpg */; };
-		822823D41B862A0A004154E7 /* thumb_escalator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823491B862A0A004154E7 /* thumb_escalator.jpg */; };
-		822823D51B862A0A004154E7 /* thumb_existing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228234A1B862A0A004154E7 /* thumb_existing.jpg */; };
-		822823D61B862A0A004154E7 /* thumb_exterior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228234B1B862A0A004154E7 /* thumb_exterior.jpg */; };
-		822823D71B862A0A004154E7 /* thumb_film1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228234C1B862A0A004154E7 /* thumb_film1.jpg */; };
-		822823D81B862A0A004154E7 /* thumb_film2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228234D1B862A0A004154E7 /* thumb_film2.jpg */; };
-		822823D91B862A0A004154E7 /* thumb_film3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228234E1B862A0A004154E7 /* thumb_film3.jpg */; };
-		822823DA1B862A0A004154E7 /* thumb_film4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228234F1B862A0A004154E7 /* thumb_film4.jpg */; };
-		822823DB1B862A0A004154E7 /* thumb_film5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823501B862A0A004154E7 /* thumb_film5.jpg */; };
-		822823DC1B862A0A004154E7 /* thumb_film6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823511B862A0A004154E7 /* thumb_film6.jpg */; };
-		822823DD1B862A0A004154E7 /* thumb_film7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823521B862A0A004154E7 /* thumb_film7.jpg */; };
-		822823DE1B862A0A004154E7 /* thumb_film8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823531B862A0A004154E7 /* thumb_film8.jpg */; };
-		822823DF1B862A0A004154E7 /* thumb_film_full.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823541B862A0A004154E7 /* thumb_film_full.jpg */; };
-		822823E01B862A0A004154E7 /* thumb_inspiration.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823551B862A0A004154E7 /* thumb_inspiration.jpg */; };
-		822823E11B862A0A004154E7 /* thumb_interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823561B862A0A004154E7 /* thumb_interior.jpg */; };
-		822823E21B862A0A004154E7 /* thumb_leasing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823571B862A0A004154E7 /* thumb_leasing.jpg */; };
-		822823E31B862A0A004154E7 /* thumb_lifeStyle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823581B862A0A004154E7 /* thumb_lifeStyle.jpg */; };
-		822823E41B862A0A004154E7 /* thumb_market.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823591B862A0A004154E7 /* thumb_market.jpg */; };
-		822823E51B862A0A004154E7 /* thumb_market_exterior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228235A1B862A0A004154E7 /* thumb_market_exterior.jpg */; };
-		822823E61B862A0A004154E7 /* thumb_market_interior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228235B1B862A0A004154E7 /* thumb_market_interior.jpg */; };
-		822823E71B862A0A004154E7 /* thumb_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228235C1B862A0A004154E7 /* thumb_photo.jpg */; };
-		822823E81B862A0A004154E7 /* thumb_presentation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228235D1B862A0A004154E7 /* thumb_presentation.jpg */; };
-		822823E91B862A0A004154E7 /* thumb_sdpackage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228235E1B862A0A004154E7 /* thumb_sdpackage.jpg */; };
-		822823EA1B862A0A004154E7 /* thumb_spacePlan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8228235F1B862A0A004154E7 /* thumb_spacePlan.jpg */; };
-		822823EB1B862A0A004154E7 /* thumb_street.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823601B862A0A004154E7 /* thumb_street.jpg */; };
-		822823EC1B862A0A004154E7 /* thumb_strorefronts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823611B862A0A004154E7 /* thumb_strorefronts.jpg */; };
-		822823ED1B862A0A004154E7 /* thumb_vegas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 822823621B862A0A004154E7 /* thumb_vegas.jpg */; };
 		823464B21B90E487005DA3E0 /* 2015_08_14_ipad_logo_intro.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 823464B11B90E450005DA3E0 /* 2015_08_14_ipad_logo_intro.m4v */; };
 		8243874F1B6929A1003AC214 /* SupportingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8243874E1B6929A1003AC214 /* SupportingViewController.m */; };
 		824387511B69414D003AC214 /* supporting_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824387501B69414D003AC214 /* supporting_data.plist */; };
@@ -184,15 +56,6 @@
 		824D2B1B1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B1A1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m */; };
 		824D2B1D1B617FBE00E5F5A5 /* XHGalleryUIControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824D2B1C1B617FBE00E5F5A5 /* XHGalleryUIControls.framework */; };
 		824D2B1F1B61857E00E5F5A5 /* photoData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B1E1B61857E00E5F5A5 /* photoData.plist */; };
-		824D2B2A1B6186FA00E5F5A5 /* Lobby Entry and Restuarant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B211B6186FA00E5F5A5 /* Lobby Entry and Restuarant.jpg */; };
-		824D2B2B1B6186FA00E5F5A5 /* Lobby View.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B221B6186FA00E5F5A5 /* Lobby View.jpg */; };
-		824D2B2C1B6186FA00E5F5A5 /* Southeast View of Victory Center.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B231B6186FA00E5F5A5 /* Southeast View of Victory Center.jpg */; };
-		824D2B2D1B6186FA00E5F5A5 /* Soutwest View of Victory Center.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B241B6186FA00E5F5A5 /* Soutwest View of Victory Center.jpg */; };
-		824D2B2E1B6186FA00E5F5A5 /* Victory Center 02 W Hotel View.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B251B6186FA00E5F5A5 /* Victory Center 02 W Hotel View.jpg */; };
-		824D2B2F1B6186FA00E5F5A5 /* Victory Center_Highway View.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B261B6186FA00E5F5A5 /* Victory Center_Highway View.jpg */; };
-		824D2B301B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B271B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg */; };
-		824D2B311B6186FA00E5F5A5 /* View 04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B281B6186FA00E5F5A5 /* View 04.jpg */; };
-		824D2B321B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 824D2B291B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg */; };
 		824D2B351B6286AA00E5F5A5 /* embEmailData.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B341B6286AA00E5F5A5 /* embEmailData.m */; };
 		824D2B3A1B62B57D00E5F5A5 /* TLSpringFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B371B62B57D00E5F5A5 /* TLSpringFlowLayout.m */; };
 		824D2B3B1B62B57D00E5F5A5 /* UIImage+ScaleToFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D2B391B62B57D00E5F5A5 /* UIImage+ScaleToFit.m */; };
@@ -1546,134 +1409,6 @@
 		822822B71B851E44004154E7 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
 		822822B81B851E44004154E7 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		822822B91B851E44004154E7 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		822822C71B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot01.jpg; sourceTree = "<group>"; };
-		822822C81B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot02.jpg; sourceTree = "<group>"; };
-		822822C91B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot03.jpg; sourceTree = "<group>"; };
-		822822CA1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot04.jpg; sourceTree = "<group>"; };
-		822822CB1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot05.jpg; sourceTree = "<group>"; };
-		822822CC1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot06.jpg; sourceTree = "<group>"; };
-		822822CD1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot07.jpg; sourceTree = "<group>"; };
-		822822CE1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BallstonCommon_LivingRenderingStills_Shot08.jpg; sourceTree = "<group>"; };
-		822822D01B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View01_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View01_051215.jpg"; sourceTree = "<group>"; };
-		822822D11B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View02_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View02_051215.jpg"; sourceTree = "<group>"; };
-		822822D21B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View03_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View03_051215.jpg"; sourceTree = "<group>"; };
-		822822D31B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View04_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View04_051215.jpg"; sourceTree = "<group>"; };
-		822822D41B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View05_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View05_051215.jpg"; sourceTree = "<group>"; };
-		822822D51B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View06_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View06_051215.jpg"; sourceTree = "<group>"; };
-		822822D61B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View07_050715.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View07_050715.jpg"; sourceTree = "<group>"; };
-		822822D71B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View08_050715.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "final\\BallstonCommon_LivingRendering_View08_050715.jpg"; sourceTree = "<group>"; };
-		822822D81B862A0A004154E7 /* View 1 - Corner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 1 - Corner.jpg"; sourceTree = "<group>"; };
-		822822D91B862A0A004154E7 /* View 10- Mews.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 10- Mews.jpg"; sourceTree = "<group>"; };
-		822822DA1B862A0A004154E7 /* View 11 - Mews.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 11 - Mews.jpg"; sourceTree = "<group>"; };
-		822822DB1B862A0A004154E7 /* View 12 - N Randolph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 12 - N Randolph.jpg"; sourceTree = "<group>"; };
-		822822DC1B862A0A004154E7 /* View 2 - Wilson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 2 - Wilson.jpg"; sourceTree = "<group>"; };
-		822822DD1B862A0A004154E7 /* View 5 - Plaza - no bridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 5 - Plaza - no bridge.jpg"; sourceTree = "<group>"; };
-		822822DE1B862A0A004154E7 /* View 6 - no bridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 6 - no bridge.jpg"; sourceTree = "<group>"; };
-		822822DF1B862A0A004154E7 /* View 7 - N Stuart - no bridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 7 - N Stuart - no bridge.jpg"; sourceTree = "<group>"; };
-		822822E01B862A0A004154E7 /* View 8 - Plaza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 8 - Plaza.jpg"; sourceTree = "<group>"; };
-		822822E11B862A0A004154E7 /* View 9 - Interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 9 - Interior.jpg"; sourceTree = "<group>"; };
-		822822E31B862A0A004154E7 /* 150512_BC_PresTemplate_ProgressR3_LR 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "150512_BC_PresTemplate_ProgressR3_LR 2.pdf"; sourceTree = "<group>"; };
-		822822E41B862A0A004154E7 /* 150604_BallstonQuarter_DiningGallery_R4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 150604_BallstonQuarter_DiningGallery_R4.pdf; sourceTree = "<group>"; };
-		822822E51B862A0A004154E7 /* 2015_04_06-ESCALATORS AXON .pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2015_04_06-ESCALATORS AXON .pdf"; sourceTree = "<group>"; };
-		822822E61B862A0A004154E7 /* Ballston Center Mall Permanent 11x17.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Ballston Center Mall Permanent 11x17.pdf"; sourceTree = "<group>"; };
-		822822E71B862A0A004154E7 /* ballston leasing book with cards-2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ballston leasing book with cards-2.pdf"; sourceTree = "<group>"; };
-		822822E81B862A0A004154E7 /* Ballston_Existing_Lease_Plan_mh.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Ballston_Existing_Lease_Plan_mh.pdf; sourceTree = "<group>"; };
-		822822E91B862A0A004154E7 /* Ballston_Presentation_072414-low res.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Ballston_Presentation_072414-low res.pdf"; sourceTree = "<group>"; };
-		822822EA1B862A0A004154E7 /* BallstonSDPackage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BallstonSDPackage.pdf; sourceTree = "<group>"; };
-		822822EB1B862A0A004154E7 /* BCLP DEV_ 05-01-2015..pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "BCLP DEV_ 05-01-2015..pdf"; sourceTree = "<group>"; };
-		822822EC1B862A0A004154E7 /* BCLP DEV_ 07-09-2015.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "BCLP DEV_ 07-09-2015.pdf"; sourceTree = "<group>"; };
-		822822ED1B862A0A004154E7 /* BCLP DEV_MNSP01 SPACE PLAN 11 25 14-mh.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "BCLP DEV_MNSP01 SPACE PLAN 11 25 14-mh.pdf"; sourceTree = "<group>"; };
-		822822EE1B862A0A004154E7 /* Design Update.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Design Update.pdf"; sourceTree = "<group>"; };
-		822822F01B862A0A004154E7 /* Existing_Page_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Existing_Page_1.jpg; sourceTree = "<group>"; };
-		822822F11B862A0A004154E7 /* Existing_Page_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Existing_Page_2.jpg; sourceTree = "<group>"; };
-		822822F21B862A0A004154E7 /* Existing_Page_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Existing_Page_3.jpg; sourceTree = "<group>"; };
-		822822F31B862A0A004154E7 /* Existing_Page_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Existing_Page_4.jpg; sourceTree = "<group>"; };
-		822822F51B862A0A004154E7 /* Leasing_Page_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Leasing_Page_1.jpg; sourceTree = "<group>"; };
-		822822F61B862A0A004154E7 /* Leasing_Page_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Leasing_Page_2.jpg; sourceTree = "<group>"; };
-		822822F71B862A0A004154E7 /* Leasing_Page_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Leasing_Page_3.jpg; sourceTree = "<group>"; };
-		822822F81B862A0A004154E7 /* Leasing_Page_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Leasing_Page_4.jpg; sourceTree = "<group>"; };
-		822823071B862A0A004154E7 /* arch_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch_01.jpg; sourceTree = "<group>"; };
-		822823081B862A0A004154E7 /* arch_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch_02.jpg; sourceTree = "<group>"; };
-		822823091B862A0A004154E7 /* arch_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch_03.jpg; sourceTree = "<group>"; };
-		8228230A1B862A0A004154E7 /* arch_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch_04.jpg; sourceTree = "<group>"; };
-		8228230B1B862A0A004154E7 /* arch_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch_05.jpg; sourceTree = "<group>"; };
-		8228230C1B862A0A004154E7 /* arch_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch_06.jpg; sourceTree = "<group>"; };
-		8228230E1B862A0A004154E7 /* inspi01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inspi01.jpg; sourceTree = "<group>"; };
-		8228230F1B862A0A004154E7 /* inspi02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inspi02.jpg; sourceTree = "<group>"; };
-		822823101B862A0A004154E7 /* inspi03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inspi03.jpg; sourceTree = "<group>"; };
-		822823111B862A0A004154E7 /* inspi04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inspi04.jpg; sourceTree = "<group>"; };
-		822823121B862A0A004154E7 /* inspi05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inspi05.jpg; sourceTree = "<group>"; };
-		822823131B862A0A004154E7 /* inspi06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inspi06.jpg; sourceTree = "<group>"; };
-		822823141B862A0A004154E7 /* lifestyle01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lifestyle01.jpg; sourceTree = "<group>"; };
-		822823161B862A0A004154E7 /* store01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store01.jpg; sourceTree = "<group>"; };
-		822823171B862A0A004154E7 /* store02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store02.jpg; sourceTree = "<group>"; };
-		822823181B862A0A004154E7 /* store03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store03.jpg; sourceTree = "<group>"; };
-		822823191B862A0A004154E7 /* store04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store04.jpg; sourceTree = "<group>"; };
-		8228231A1B862A0A004154E7 /* store05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store05.jpg; sourceTree = "<group>"; };
-		8228231B1B862A0A004154E7 /* store06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store06.jpg; sourceTree = "<group>"; };
-		8228231C1B862A0A004154E7 /* store07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store07.jpg; sourceTree = "<group>"; };
-		8228231E1B862A0A004154E7 /* street01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = street01.jpg; sourceTree = "<group>"; };
-		8228231F1B862A0A004154E7 /* street02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = street02.jpg; sourceTree = "<group>"; };
-		822823201B862A0A004154E7 /* street03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = street03.jpg; sourceTree = "<group>"; };
-		822823221B862A0A004154E7 /* market_exterior01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = market_exterior01.jpg; sourceTree = "<group>"; };
-		822823231B862A0A004154E7 /* market_exterior02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = market_exterior02.jpg; sourceTree = "<group>"; };
-		822823241B862A0A004154E7 /* market_interior01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = market_interior01.jpg; sourceTree = "<group>"; };
-		822823251B862A0A004154E7 /* market_interior02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = market_interior02.jpg; sourceTree = "<group>"; };
-		822823261B862A0A004154E7 /* market_interior03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = market_interior03.jpg; sourceTree = "<group>"; };
-		822823291B862A0A004154E7 /* Ballston aerial01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ballston aerial01.jpg"; sourceTree = "<group>"; };
-		8228232A1B862A0A004154E7 /* Ballston Aerial02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ballston Aerial02.jpg"; sourceTree = "<group>"; };
-		8228232D1B862A0A004154E7 /* 0160 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0160 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
-		8228232E1B862A0A004154E7 /* 0336 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0336 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
-		8228232F1B862A0A004154E7 /* 0364 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0364 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
-		822823301B862A0A004154E7 /* Pg 2A  0225 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pg 2A  0225 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
-		822823311B862A0A004154E7 /* Pg 5B  0420 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pg 5B  0420 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
-		822823321B862A0A004154E7 /* Pg 9  0251 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pg 9  0251 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
-		822823331B862A0A004154E7 /* Picture 031.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 031.jpg"; sourceTree = "<group>"; };
-		822823341B862A0A004154E7 /* Picture 035.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 035.jpg"; sourceTree = "<group>"; };
-		822823351B862A0A004154E7 /* Picture 036.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 036.jpg"; sourceTree = "<group>"; };
-		822823361B862A0A004154E7 /* Picture 038.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 038.jpg"; sourceTree = "<group>"; };
-		822823371B862A0A004154E7 /* Picture 049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 049.jpg"; sourceTree = "<group>"; };
-		822823381B862A0A004154E7 /* Picture 050.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 050.jpg"; sourceTree = "<group>"; };
-		822823391B862A0A004154E7 /* Picture 051.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 051.jpg"; sourceTree = "<group>"; };
-		8228233A1B862A0A004154E7 /* Picture 056.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 056.jpg"; sourceTree = "<group>"; };
-		8228233C1B862A0A004154E7 /* 0005 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0005 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
-		8228233D1B862A0A004154E7 /* 0027 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0027 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
-		8228233E1B862A0A004154E7 /* 0099 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0099 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
-		8228233F1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pg 7D  0075 BCM (c) 2014 David Galen.jpg"; sourceTree = "<group>"; };
-		822823401B862A0A004154E7 /* Picture 024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 024.jpg"; sourceTree = "<group>"; };
-		822823411B862A0A004154E7 /* Picture 030.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 030.jpg"; sourceTree = "<group>"; };
-		822823421B862A0A004154E7 /* Picture 041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Picture 041.jpg"; sourceTree = "<group>"; };
-		822823441B862A0A004154E7 /* thumb_3D.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_3D.jpg; sourceTree = "<group>"; };
-		822823451B862A0A004154E7 /* thumb_arch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_arch.jpg; sourceTree = "<group>"; };
-		822823461B862A0A004154E7 /* thumb_architecture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_architecture.jpg; sourceTree = "<group>"; };
-		822823471B862A0A004154E7 /* thumb_design.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_design.jpg; sourceTree = "<group>"; };
-		822823481B862A0A004154E7 /* thumb_dining_gallery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_dining_gallery.jpg; sourceTree = "<group>"; };
-		822823491B862A0A004154E7 /* thumb_escalator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_escalator.jpg; sourceTree = "<group>"; };
-		8228234A1B862A0A004154E7 /* thumb_existing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_existing.jpg; sourceTree = "<group>"; };
-		8228234B1B862A0A004154E7 /* thumb_exterior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_exterior.jpg; sourceTree = "<group>"; };
-		8228234C1B862A0A004154E7 /* thumb_film1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film1.jpg; sourceTree = "<group>"; };
-		8228234D1B862A0A004154E7 /* thumb_film2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film2.jpg; sourceTree = "<group>"; };
-		8228234E1B862A0A004154E7 /* thumb_film3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film3.jpg; sourceTree = "<group>"; };
-		8228234F1B862A0A004154E7 /* thumb_film4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film4.jpg; sourceTree = "<group>"; };
-		822823501B862A0A004154E7 /* thumb_film5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film5.jpg; sourceTree = "<group>"; };
-		822823511B862A0A004154E7 /* thumb_film6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film6.jpg; sourceTree = "<group>"; };
-		822823521B862A0A004154E7 /* thumb_film7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film7.jpg; sourceTree = "<group>"; };
-		822823531B862A0A004154E7 /* thumb_film8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film8.jpg; sourceTree = "<group>"; };
-		822823541B862A0A004154E7 /* thumb_film_full.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_film_full.jpg; sourceTree = "<group>"; };
-		822823551B862A0A004154E7 /* thumb_inspiration.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_inspiration.jpg; sourceTree = "<group>"; };
-		822823561B862A0A004154E7 /* thumb_interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_interior.jpg; sourceTree = "<group>"; };
-		822823571B862A0A004154E7 /* thumb_leasing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_leasing.jpg; sourceTree = "<group>"; };
-		822823581B862A0A004154E7 /* thumb_lifeStyle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_lifeStyle.jpg; sourceTree = "<group>"; };
-		822823591B862A0A004154E7 /* thumb_market.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_market.jpg; sourceTree = "<group>"; };
-		8228235A1B862A0A004154E7 /* thumb_market_exterior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_market_exterior.jpg; sourceTree = "<group>"; };
-		8228235B1B862A0A004154E7 /* thumb_market_interior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_market_interior.jpg; sourceTree = "<group>"; };
-		8228235C1B862A0A004154E7 /* thumb_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_photo.jpg; sourceTree = "<group>"; };
-		8228235D1B862A0A004154E7 /* thumb_presentation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_presentation.jpg; sourceTree = "<group>"; };
-		8228235E1B862A0A004154E7 /* thumb_sdpackage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_sdpackage.jpg; sourceTree = "<group>"; };
-		8228235F1B862A0A004154E7 /* thumb_spacePlan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_spacePlan.jpg; sourceTree = "<group>"; };
-		822823601B862A0A004154E7 /* thumb_street.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_street.jpg; sourceTree = "<group>"; };
-		822823611B862A0A004154E7 /* thumb_strorefronts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_strorefronts.jpg; sourceTree = "<group>"; };
-		822823621B862A0A004154E7 /* thumb_vegas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumb_vegas.jpg; sourceTree = "<group>"; };
 		823464B11B90E450005DA3E0 /* 2015_08_14_ipad_logo_intro.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2015_08_14_ipad_logo_intro.m4v; sourceTree = "<group>"; };
 		8243874D1B6929A1003AC214 /* SupportingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportingViewController.h; sourceTree = "<group>"; };
 		8243874E1B6929A1003AC214 /* SupportingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportingViewController.m; sourceTree = "<group>"; };
@@ -1710,15 +1445,6 @@
 		824D2B1A1B6179AF00E5F5A5 /* GalleryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionViewCell.m; sourceTree = "<group>"; };
 		824D2B1C1B617FBE00E5F5A5 /* XHGalleryUIControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XHGalleryUIControls.framework; sourceTree = "<group>"; };
 		824D2B1E1B61857E00E5F5A5 /* photoData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = photoData.plist; sourceTree = "<group>"; };
-		824D2B211B6186FA00E5F5A5 /* Lobby Entry and Restuarant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lobby Entry and Restuarant.jpg"; sourceTree = "<group>"; };
-		824D2B221B6186FA00E5F5A5 /* Lobby View.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lobby View.jpg"; sourceTree = "<group>"; };
-		824D2B231B6186FA00E5F5A5 /* Southeast View of Victory Center.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Southeast View of Victory Center.jpg"; sourceTree = "<group>"; };
-		824D2B241B6186FA00E5F5A5 /* Soutwest View of Victory Center.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Soutwest View of Victory Center.jpg"; sourceTree = "<group>"; };
-		824D2B251B6186FA00E5F5A5 /* Victory Center 02 W Hotel View.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Victory Center 02 W Hotel View.jpg"; sourceTree = "<group>"; };
-		824D2B261B6186FA00E5F5A5 /* Victory Center_Highway View.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Victory Center_Highway View.jpg"; sourceTree = "<group>"; };
-		824D2B271B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Victory Center_Street View-1.jpg"; sourceTree = "<group>"; };
-		824D2B281B6186FA00E5F5A5 /* View 04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 04.jpg"; sourceTree = "<group>"; };
-		824D2B291B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View of Victory Center and Dart Transit System.jpg"; sourceTree = "<group>"; };
 		824D2B331B6286AA00E5F5A5 /* embEmailData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = embEmailData.h; path = utilities/embEmailData.h; sourceTree = "<group>"; };
 		824D2B341B6286AA00E5F5A5 /* embEmailData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = embEmailData.m; path = utilities/embEmailData.m; sourceTree = "<group>"; };
 		824D2B361B62B57D00E5F5A5 /* TLSpringFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLSpringFlowLayout.h; path = utilities/TLSpringFlowLayout.h; sourceTree = "<group>"; };
@@ -3248,294 +2974,6 @@
 			path = utilities/setting;
 			sourceTree = "<group>";
 		};
-		822822C41B862A0A004154E7 /* tmp_gallery */ = {
-			isa = PBXGroup;
-			children = (
-				822822C51B862A0A004154E7 /* Gallery */,
-			);
-			name = tmp_gallery;
-			path = src/tmp_gallery;
-			sourceTree = "<group>";
-		};
-		822822C51B862A0A004154E7 /* Gallery */ = {
-			isa = PBXGroup;
-			children = (
-				822822C61B862A0A004154E7 /* 3D */,
-				822822CF1B862A0A004154E7 /* Architecture */,
-				822822E21B862A0A004154E7 /* Documents */,
-				822822F91B862A0A004154E7 /* film */,
-				822823051B862A0A004154E7 /* look_book */,
-				822823211B862A0A004154E7 /* market */,
-				822823271B862A0A004154E7 /* Photograph */,
-				822823441B862A0A004154E7 /* thumb_3D.jpg */,
-				822823451B862A0A004154E7 /* thumb_arch.jpg */,
-				822823461B862A0A004154E7 /* thumb_architecture.jpg */,
-				822823471B862A0A004154E7 /* thumb_design.jpg */,
-				822823481B862A0A004154E7 /* thumb_dining_gallery.jpg */,
-				822823491B862A0A004154E7 /* thumb_escalator.jpg */,
-				8228234A1B862A0A004154E7 /* thumb_existing.jpg */,
-				8228234B1B862A0A004154E7 /* thumb_exterior.jpg */,
-				8228234C1B862A0A004154E7 /* thumb_film1.jpg */,
-				8228234D1B862A0A004154E7 /* thumb_film2.jpg */,
-				8228234E1B862A0A004154E7 /* thumb_film3.jpg */,
-				8228234F1B862A0A004154E7 /* thumb_film4.jpg */,
-				822823501B862A0A004154E7 /* thumb_film5.jpg */,
-				822823511B862A0A004154E7 /* thumb_film6.jpg */,
-				822823521B862A0A004154E7 /* thumb_film7.jpg */,
-				822823531B862A0A004154E7 /* thumb_film8.jpg */,
-				822823541B862A0A004154E7 /* thumb_film_full.jpg */,
-				822823551B862A0A004154E7 /* thumb_inspiration.jpg */,
-				822823561B862A0A004154E7 /* thumb_interior.jpg */,
-				822823571B862A0A004154E7 /* thumb_leasing.jpg */,
-				822823581B862A0A004154E7 /* thumb_lifeStyle.jpg */,
-				822823591B862A0A004154E7 /* thumb_market.jpg */,
-				8228235A1B862A0A004154E7 /* thumb_market_exterior.jpg */,
-				8228235B1B862A0A004154E7 /* thumb_market_interior.jpg */,
-				8228235C1B862A0A004154E7 /* thumb_photo.jpg */,
-				8228235D1B862A0A004154E7 /* thumb_presentation.jpg */,
-				8228235E1B862A0A004154E7 /* thumb_sdpackage.jpg */,
-				8228235F1B862A0A004154E7 /* thumb_spacePlan.jpg */,
-				822823601B862A0A004154E7 /* thumb_street.jpg */,
-				822823611B862A0A004154E7 /* thumb_strorefronts.jpg */,
-				822823621B862A0A004154E7 /* thumb_vegas.jpg */,
-			);
-			path = Gallery;
-			sourceTree = "<group>";
-		};
-		822822C61B862A0A004154E7 /* 3D */ = {
-			isa = PBXGroup;
-			children = (
-				822822C71B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot01.jpg */,
-				822822C81B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot02.jpg */,
-				822822C91B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot03.jpg */,
-				822822CA1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot04.jpg */,
-				822822CB1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot05.jpg */,
-				822822CC1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot06.jpg */,
-				822822CD1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot07.jpg */,
-				822822CE1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot08.jpg */,
-			);
-			path = 3D;
-			sourceTree = "<group>";
-		};
-		822822CF1B862A0A004154E7 /* Architecture */ = {
-			isa = PBXGroup;
-			children = (
-				822822D01B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View01_051215.jpg */,
-				822822D11B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View02_051215.jpg */,
-				822822D21B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View03_051215.jpg */,
-				822822D31B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View04_051215.jpg */,
-				822822D41B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View05_051215.jpg */,
-				822822D51B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View06_051215.jpg */,
-				822822D61B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View07_050715.jpg */,
-				822822D71B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View08_050715.jpg */,
-				822822D81B862A0A004154E7 /* View 1 - Corner.jpg */,
-				822822D91B862A0A004154E7 /* View 10- Mews.jpg */,
-				822822DA1B862A0A004154E7 /* View 11 - Mews.jpg */,
-				822822DB1B862A0A004154E7 /* View 12 - N Randolph.jpg */,
-				822822DC1B862A0A004154E7 /* View 2 - Wilson.jpg */,
-				822822DD1B862A0A004154E7 /* View 5 - Plaza - no bridge.jpg */,
-				822822DE1B862A0A004154E7 /* View 6 - no bridge.jpg */,
-				822822DF1B862A0A004154E7 /* View 7 - N Stuart - no bridge.jpg */,
-				822822E01B862A0A004154E7 /* View 8 - Plaza.jpg */,
-				822822E11B862A0A004154E7 /* View 9 - Interior.jpg */,
-			);
-			path = Architecture;
-			sourceTree = "<group>";
-		};
-		822822E21B862A0A004154E7 /* Documents */ = {
-			isa = PBXGroup;
-			children = (
-				822822E31B862A0A004154E7 /* 150512_BC_PresTemplate_ProgressR3_LR 2.pdf */,
-				822822E41B862A0A004154E7 /* 150604_BallstonQuarter_DiningGallery_R4.pdf */,
-				822822E51B862A0A004154E7 /* 2015_04_06-ESCALATORS AXON .pdf */,
-				822822E61B862A0A004154E7 /* Ballston Center Mall Permanent 11x17.pdf */,
-				822822E71B862A0A004154E7 /* ballston leasing book with cards-2.pdf */,
-				822822E81B862A0A004154E7 /* Ballston_Existing_Lease_Plan_mh.pdf */,
-				822822E91B862A0A004154E7 /* Ballston_Presentation_072414-low res.pdf */,
-				822822EA1B862A0A004154E7 /* BallstonSDPackage.pdf */,
-				822822EB1B862A0A004154E7 /* BCLP DEV_ 05-01-2015..pdf */,
-				822822EC1B862A0A004154E7 /* BCLP DEV_ 07-09-2015.pdf */,
-				822822ED1B862A0A004154E7 /* BCLP DEV_MNSP01 SPACE PLAN 11 25 14-mh.pdf */,
-				822822EE1B862A0A004154E7 /* Design Update.pdf */,
-				822822EF1B862A0A004154E7 /* existing */,
-				822822F41B862A0A004154E7 /* leasing */,
-			);
-			path = Documents;
-			sourceTree = "<group>";
-		};
-		822822EF1B862A0A004154E7 /* existing */ = {
-			isa = PBXGroup;
-			children = (
-				822822F01B862A0A004154E7 /* Existing_Page_1.jpg */,
-				822822F11B862A0A004154E7 /* Existing_Page_2.jpg */,
-				822822F21B862A0A004154E7 /* Existing_Page_3.jpg */,
-				822822F31B862A0A004154E7 /* Existing_Page_4.jpg */,
-			);
-			path = existing;
-			sourceTree = "<group>";
-		};
-		822822F41B862A0A004154E7 /* leasing */ = {
-			isa = PBXGroup;
-			children = (
-				822822F51B862A0A004154E7 /* Leasing_Page_1.jpg */,
-				822822F61B862A0A004154E7 /* Leasing_Page_2.jpg */,
-				822822F71B862A0A004154E7 /* Leasing_Page_3.jpg */,
-				822822F81B862A0A004154E7 /* Leasing_Page_4.jpg */,
-			);
-			path = leasing;
-			sourceTree = "<group>";
-		};
-		822822F91B862A0A004154E7 /* film */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = film;
-			sourceTree = "<group>";
-		};
-		822823051B862A0A004154E7 /* look_book */ = {
-			isa = PBXGroup;
-			children = (
-				822823061B862A0A004154E7 /* Architecture */,
-				8228230D1B862A0A004154E7 /* Inspiration */,
-				822823141B862A0A004154E7 /* lifestyle01.jpg */,
-				822823151B862A0A004154E7 /* Storefronts */,
-				8228231D1B862A0A004154E7 /* Streetscape */,
-			);
-			path = look_book;
-			sourceTree = "<group>";
-		};
-		822823061B862A0A004154E7 /* Architecture */ = {
-			isa = PBXGroup;
-			children = (
-				822823071B862A0A004154E7 /* arch_01.jpg */,
-				822823081B862A0A004154E7 /* arch_02.jpg */,
-				822823091B862A0A004154E7 /* arch_03.jpg */,
-				8228230A1B862A0A004154E7 /* arch_04.jpg */,
-				8228230B1B862A0A004154E7 /* arch_05.jpg */,
-				8228230C1B862A0A004154E7 /* arch_06.jpg */,
-			);
-			path = Architecture;
-			sourceTree = "<group>";
-		};
-		8228230D1B862A0A004154E7 /* Inspiration */ = {
-			isa = PBXGroup;
-			children = (
-				8228230E1B862A0A004154E7 /* inspi01.jpg */,
-				8228230F1B862A0A004154E7 /* inspi02.jpg */,
-				822823101B862A0A004154E7 /* inspi03.jpg */,
-				822823111B862A0A004154E7 /* inspi04.jpg */,
-				822823121B862A0A004154E7 /* inspi05.jpg */,
-				822823131B862A0A004154E7 /* inspi06.jpg */,
-			);
-			path = Inspiration;
-			sourceTree = "<group>";
-		};
-		822823151B862A0A004154E7 /* Storefronts */ = {
-			isa = PBXGroup;
-			children = (
-				822823161B862A0A004154E7 /* store01.jpg */,
-				822823171B862A0A004154E7 /* store02.jpg */,
-				822823181B862A0A004154E7 /* store03.jpg */,
-				822823191B862A0A004154E7 /* store04.jpg */,
-				8228231A1B862A0A004154E7 /* store05.jpg */,
-				8228231B1B862A0A004154E7 /* store06.jpg */,
-				8228231C1B862A0A004154E7 /* store07.jpg */,
-			);
-			path = Storefronts;
-			sourceTree = "<group>";
-		};
-		8228231D1B862A0A004154E7 /* Streetscape */ = {
-			isa = PBXGroup;
-			children = (
-				8228231E1B862A0A004154E7 /* street01.jpg */,
-				8228231F1B862A0A004154E7 /* street02.jpg */,
-				822823201B862A0A004154E7 /* street03.jpg */,
-			);
-			path = Streetscape;
-			sourceTree = "<group>";
-		};
-		822823211B862A0A004154E7 /* market */ = {
-			isa = PBXGroup;
-			children = (
-				822823221B862A0A004154E7 /* market_exterior01.jpg */,
-				822823231B862A0A004154E7 /* market_exterior02.jpg */,
-				822823241B862A0A004154E7 /* market_interior01.jpg */,
-				822823251B862A0A004154E7 /* market_interior02.jpg */,
-				822823261B862A0A004154E7 /* market_interior03.jpg */,
-			);
-			path = market;
-			sourceTree = "<group>";
-		};
-		822823271B862A0A004154E7 /* Photograph */ = {
-			isa = PBXGroup;
-			children = (
-				822823281B862A0A004154E7 /* aerial */,
-				8228232B1B862A0A004154E7 /* David */,
-				8228232C1B862A0A004154E7 /* exteriors */,
-				8228233B1B862A0A004154E7 /* interiors */,
-				822823431B862A0A004154E7 /* photo */,
-			);
-			path = Photograph;
-			sourceTree = "<group>";
-		};
-		822823281B862A0A004154E7 /* aerial */ = {
-			isa = PBXGroup;
-			children = (
-				822823291B862A0A004154E7 /* Ballston aerial01.jpg */,
-				8228232A1B862A0A004154E7 /* Ballston Aerial02.jpg */,
-			);
-			path = aerial;
-			sourceTree = "<group>";
-		};
-		8228232B1B862A0A004154E7 /* David */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = David;
-			sourceTree = "<group>";
-		};
-		8228232C1B862A0A004154E7 /* exteriors */ = {
-			isa = PBXGroup;
-			children = (
-				8228232D1B862A0A004154E7 /* 0160 BCM (c) 2014 David Galen.jpg */,
-				8228232E1B862A0A004154E7 /* 0336 BCM (c) 2014 David Galen.jpg */,
-				8228232F1B862A0A004154E7 /* 0364 BCM (c) 2014 David Galen.jpg */,
-				822823301B862A0A004154E7 /* Pg 2A  0225 BCM (c) 2014 David Galen.jpg */,
-				822823311B862A0A004154E7 /* Pg 5B  0420 BCM (c) 2014 David Galen.jpg */,
-				822823321B862A0A004154E7 /* Pg 9  0251 BCM (c) 2014 David Galen.jpg */,
-				822823331B862A0A004154E7 /* Picture 031.jpg */,
-				822823341B862A0A004154E7 /* Picture 035.jpg */,
-				822823351B862A0A004154E7 /* Picture 036.jpg */,
-				822823361B862A0A004154E7 /* Picture 038.jpg */,
-				822823371B862A0A004154E7 /* Picture 049.jpg */,
-				822823381B862A0A004154E7 /* Picture 050.jpg */,
-				822823391B862A0A004154E7 /* Picture 051.jpg */,
-				8228233A1B862A0A004154E7 /* Picture 056.jpg */,
-			);
-			path = exteriors;
-			sourceTree = "<group>";
-		};
-		8228233B1B862A0A004154E7 /* interiors */ = {
-			isa = PBXGroup;
-			children = (
-				8228233C1B862A0A004154E7 /* 0005 BCM (c) 2014 David Galen.jpg */,
-				8228233D1B862A0A004154E7 /* 0027 BCM (c) 2014 David Galen.jpg */,
-				8228233E1B862A0A004154E7 /* 0099 BCM (c) 2014 David Galen.jpg */,
-				8228233F1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg */,
-				822823401B862A0A004154E7 /* Picture 024.jpg */,
-				822823411B862A0A004154E7 /* Picture 030.jpg */,
-				822823421B862A0A004154E7 /* Picture 041.jpg */,
-			);
-			path = interiors;
-			sourceTree = "<group>";
-		};
-		822823431B862A0A004154E7 /* photo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = photo;
-			sourceTree = "<group>";
-		};
 		824D27191B5D7E6700E5F5A5 = {
 			isa = PBXGroup;
 			children = (
@@ -3648,8 +3086,6 @@
 				8861DD591BFD55E5006A7D13 /* grfx */,
 				824D27AC1B61671500E5F5A5 /* phasesframes */,
 				824D2B571B62D02100E5F5A5 /* share_thumb */,
-				822822C41B862A0A004154E7 /* tmp_gallery */,
-				824D2B201B6186F900E5F5A5 /* tmp_photo */,
 				8861DCEA1BFD55CC006A7D13 /* ui */,
 			);
 			name = src;
@@ -3757,23 +3193,6 @@
 				82115DEE1B7004A300A36684 /* colors.plist */,
 			);
 			path = DataSource;
-			sourceTree = "<group>";
-		};
-		824D2B201B6186F900E5F5A5 /* tmp_photo */ = {
-			isa = PBXGroup;
-			children = (
-				824D2B211B6186FA00E5F5A5 /* Lobby Entry and Restuarant.jpg */,
-				824D2B221B6186FA00E5F5A5 /* Lobby View.jpg */,
-				824D2B231B6186FA00E5F5A5 /* Southeast View of Victory Center.jpg */,
-				824D2B241B6186FA00E5F5A5 /* Soutwest View of Victory Center.jpg */,
-				824D2B251B6186FA00E5F5A5 /* Victory Center 02 W Hotel View.jpg */,
-				824D2B261B6186FA00E5F5A5 /* Victory Center_Highway View.jpg */,
-				824D2B271B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg */,
-				824D2B281B6186FA00E5F5A5 /* View 04.jpg */,
-				824D2B291B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg */,
-			);
-			name = tmp_photo;
-			path = src/tmp_photo;
 			sourceTree = "<group>";
 		};
 		824D2B571B62D02100E5F5A5 /* share_thumb */ = {
@@ -5627,8 +5046,6 @@
 				8892EA4B1BC2082C00347146 /* phase_a_base_00002.jpg in Resources */,
 				883D77B01C04DE14004B0136 /* phase_a_color_00029.png in Resources */,
 				8819D8581BB8515400015AF5 /* Point St. Permit Set without Landscape(Resubmission) (dragged).pdf in Resources */,
-				822823871B862A0A004154E7 /* BCLP DEV_MNSP01 SPACE PLAN 11 25 14-mh.pdf in Resources */,
-				822823741B862A0A004154E7 /* View 10- Mews.jpg in Resources */,
 				88314EFD1CECDC50007685BB /* 0119 Exelon c1 6t.jpeg.__128__xx__128__1455303301 in Resources */,
 				824D2BF31B62D02100E5F5A5 /* share_View 7 - N Stuart - no bridge.jpg.jpg in Resources */,
 				883D772D1C04DD65004B0136 /* phase_c_color_00045.png in Resources */,
@@ -5636,7 +5053,6 @@
 				8819D8301BB8515400015AF5 /* 2015-3-1-First Finance-OPT-2-Water-Red brick.jpg in Resources */,
 				8861DE3B1BFD5844006A7D13 /* parcel-panel-point-park.png in Resources */,
 				8892EA681BC2082C00347146 /* phase_a_base_00031.jpg in Resources */,
-				822823AC1B862A0A004154E7 /* store04.jpg in Resources */,
 				883D78641C04DE21004B0136 /* phase_b_color_00063.png in Resources */,
 				8892EB771BC2082C00347146 /* phase_c_base_00014.jpg in Resources */,
 				8892EA5B1BC2082C00347146 /* phase_a_base_00018.jpg in Resources */,
@@ -5666,12 +5082,9 @@
 				8892EA571BC2082C00347146 /* phase_a_base_00014.jpg in Resources */,
 				8892EBA31BC2082C00347146 /* phase_c_base_00058.jpg in Resources */,
 				88314F891CECDC50007685BB /* 2_12a Wills Plot 18.jpeg in Resources */,
-				822823751B862A0A004154E7 /* View 11 - Mews.jpg in Resources */,
 				8892EE361BC2092B00347146 /* phase_d_color_00062.png in Resources */,
 				883D78661C04DE21004B0136 /* phase_b_color_00065.png in Resources */,
-				822823A21B862A0A004154E7 /* inspi01.jpg in Resources */,
 				88314F561CECDC50007685BB /* Point Street_Design Development_Final_01.15.2015 7.jpeg in Resources */,
-				822823D91B862A0A004154E7 /* thumb_film3.jpg in Resources */,
 				8892EE0E1BC2092B00347146 /* phase_d_color_00022.png in Resources */,
 				88314FD91CECDC50007685BB /* Parcel 3.png.__128__xx__128__1463172581 in Resources */,
 				8892EDA91BC2092B00347146 /* phase_d_base_00033.jpg in Resources */,
@@ -5692,7 +5105,6 @@
 				8819D8421BB8515400015AF5 /* H and S Formal - 20.jpg in Resources */,
 				8861DE0A1BFD55E6006A7D13 /* main_bg.jpg in Resources */,
 				880F242D1BFFBD23001EA4E9 /* parking-phase-1@2x.png in Resources */,
-				824D2B311B6186FA00E5F5A5 /* View 04.jpg in Resources */,
 				883D77161C04DD65004B0136 /* phase_c_color_00022.png in Resources */,
 				8861DDF31BFD55E6006A7D13 /* grfx-site-marker@2x.png in Resources */,
 				8861DDE51BFD55E6006A7D13 /* grfx_cityMap_overlay_neighbor@2x.png in Resources */,
@@ -5720,8 +5132,6 @@
 				883D78381C04DE21004B0136 /* phase_b_color_00019.png in Resources */,
 				824D2B471B62B5C600E5F5A5 /* EMBSPSectionHeader.xib in Resources */,
 				8861DDCB1BFD55E6006A7D13 /* grfx_initImage@2x.jpg in Resources */,
-				822823851B862A0A004154E7 /* BCLP DEV_ 05-01-2015..pdf in Resources */,
-				822823D61B862A0A004154E7 /* thumb_exterior.jpg in Resources */,
 				8861DE6C1BFD5F1C006A7D13 /* supporting-stories-eco-district@2x.png in Resources */,
 				883D770A1C04DD65004B0136 /* phase_c_color_00010.png in Resources */,
 				8861DDEF1BFD55E6006A7D13 /* grfx_siteMap_overlay_parking_04@2x.png in Resources */,
@@ -5731,14 +5141,12 @@
 				88314F4C1CECDC50007685BB /* Point Street_Design Development_Final_01.15.2015 19.jpeg in Resources */,
 				824D2BEB1B62D02100E5F5A5 /* share_View 1 - Corner.jpg.jpg in Resources */,
 				8861DE811BFD6108006A7D13 /* siteplan_06.png in Resources */,
-				822823681B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot06.jpg in Resources */,
 				880F24291BFFBD23001EA4E9 /* parking-phase-3@2x.png.__128__xx__128__1447964555 in Resources */,
 				8892EB111BC2082C00347146 /* phase_b_base_00056.jpg in Resources */,
 				883150091CECDC50007685BB /* Neoscape_BeattyDevelopmentHarbor Point_CentralPlaza_FINAL.jpg in Resources */,
 				824D2BAF1B62D02100E5F5A5 /* share_arch_03.jpg.jpg in Resources */,
 				8861DE311BFD5844006A7D13 /* parcel-panel-central-plaza@2x.png in Resources */,
 				824D2BD71B62D02100E5F5A5 /* share_Picture 030.jpg.jpg in Resources */,
-				822823C41B862A0A004154E7 /* Picture 049.jpg in Resources */,
 				8892EE0A1BC2092B00347146 /* phase_d_color_00018.png in Resources */,
 				823464B21B90E487005DA3E0 /* 2015_08_14_ipad_logo_intro.m4v in Resources */,
 				88314EFE1CECDC50007685BB /* 0119 Exelon c1 6t.jpeg.__800__xx__600__1455303301 in Resources */,
@@ -5750,22 +5158,18 @@
 				8892EA731BC2082C00347146 /* phase_a_base_00042.jpg in Resources */,
 				883D784D1C04DE21004B0136 /* phase_b_color_00040.png in Resources */,
 				88314F581CECDC50007685BB /* Point Street_Design Development_Final_01.15.2015 9.jpeg in Resources */,
-				822823B51B862A0A004154E7 /* market_interior01.jpg in Resources */,
-				822823B21B862A0A004154E7 /* street03.jpg in Resources */,
 				883D77BD1C04DE14004B0136 /* phase_a_color_00042.png in Resources */,
 				8892EB1C1BC2082C00347146 /* phase_b_base_00067.jpg in Resources */,
 				8228228A1B836F83004154E7 /* 2015_08_14_ipad_logo_intro.mov in Resources */,
 				8861DD271BFD55CC006A7D13 /* grfx_buildingList.jpg in Resources */,
 				883150071CECDC50007685BB /* Central Plaza 2.png in Resources */,
 				8819D84F1BB8515400015AF5 /* image001.png in Resources */,
-				822823DC1B862A0A004154E7 /* thumb_film6.jpg in Resources */,
 				8861DE3D1BFD5844006A7D13 /* parcel-panel-point-st.png in Resources */,
 				883D77CB1C04DE14004B0136 /* phase_a_color_00056.png in Resources */,
 				8861DE411BFD5844006A7D13 /* parcel-panel-wills-wharf.png in Resources */,
 				824D2BD41B62D02100E5F5A5 /* share_Pg 9  0251 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				8892EB8B1BC2082C00347146 /* phase_c_base_00034.jpg in Resources */,
 				88314F2E1CECDC50007685BB /* parcel 4 shot c.jpg in Resources */,
-				822823D51B862A0A004154E7 /* thumb_existing.jpg in Resources */,
 				88314FE31CECDC50007685BB /* Parcel 3.jpeg in Resources */,
 				8892EE001BC2092B00347146 /* phase_d_color_00008.png in Resources */,
 				8892EE241BC2092B00347146 /* phase_d_color_00044.png in Resources */,
@@ -5776,15 +5180,12 @@
 				88314F681CECDC50007685BB /* 0504 Wills Wharf c1 OP2 3t.jpg.__800__xx__600__1463172097 in Resources */,
 				8861DE6B1BFD5F1C006A7D13 /* supporting-stories-getting-to-work.png in Resources */,
 				8892EB851BC2082C00347146 /* phase_c_base_00028.jpg in Resources */,
-				822823E21B862A0A004154E7 /* thumb_leasing.jpg in Resources */,
-				822823CC1B862A0A004154E7 /* Picture 024.jpg in Resources */,
 				883D78831C056ABF004B0136 /* Neoscape_BeattyDevelopment_Aerial02_FINAL.jpg in Resources */,
 				883D78821C056ABF004B0136 /* Neoscape_BeattyDevelopment_Aerial01_FINAL.jpg in Resources */,
 				8892EDBB1BC2092B00347146 /* phase_d_base_00042.jpg in Resources */,
 				88314FC71CECDC50007685BB /* Maryland Financing  Incentives120915 (3) 8.jpeg in Resources */,
 				883D77191C04DD65004B0136 /* phase_c_color_00025.png in Resources */,
 				8892EB9C1BC2082C00347146 /* phase_c_base_00051.jpg in Resources */,
-				822823881B862A0A004154E7 /* Design Update.pdf in Resources */,
 				8892EB0D1BC2082C00347146 /* phase_b_base_00052.jpg in Resources */,
 				8892ED931BC2092B00347146 /* phase_d_base_00022.jpg in Resources */,
 				8892EA4F1BC2082C00347146 /* phase_a_base_00006.jpg in Resources */,
@@ -5792,20 +5193,17 @@
 				8892EADD1BC2082C00347146 /* phase_b_base_00004.jpg in Resources */,
 				880F24251BFFBD23001EA4E9 /* parking-phase-1@2x.png.__128__xx__128__1447964506 in Resources */,
 				8892EB7F1BC2082C00347146 /* phase_c_base_00022.jpg in Resources */,
-				822823AD1B862A0A004154E7 /* store05.jpg in Resources */,
 				824D2BB21B62D02100E5F5A5 /* share_arch_06.jpg.jpg in Resources */,
 				8892ED9B1BC2092B00347146 /* phase_d_base_00026.jpg in Resources */,
 				8861DD491BFD55CC006A7D13 /* grfx_sharePDF.png in Resources */,
 				880FDBA91CD1839500B0110C /* CardCollectionCell.xib in Resources */,
 				88314F2B1CECDC50007685BB /* Parcel 4 floorplan 7.jpeg in Resources */,
-				822823C01B862A0A004154E7 /* Picture 031.jpg in Resources */,
 				88314F971CECDC50007685BB /* 2_12a Wills Plot.jpeg in Resources */,
 				88314F931CECDC50007685BB /* 2_12a Wills Plot 6.jpeg in Resources */,
 				8861DD291BFD55CC006A7D13 /* grfx_buildingNext.jpg in Resources */,
 				88314F6F1CECDC50007685BB /* 0928+LI+Copier+c2+3t (1).jpg.__180__xx__180__1455223828 in Resources */,
 				824D2BB81B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot04.jpg.jpg in Resources */,
 				8892EE2B1BC2092B00347146 /* phase_d_color_00051.png in Resources */,
-				8228237E1B862A0A004154E7 /* 150604_BallstonQuarter_DiningGallery_R4.pdf in Resources */,
 				88314F871CECDC50007685BB /* 2_12a Wills Plot 16.jpeg in Resources */,
 				8892EADE1BC2082C00347146 /* phase_b_base_00005.jpg in Resources */,
 				88314F5C1CECDC50007685BB /* Thames Street 3.jpg in Resources */,
@@ -5818,7 +5216,6 @@
 				883D77A31C04DE14004B0136 /* phase_a_color_00016.png in Resources */,
 				88314FEC1CECDC50007685BB /* parcel 1 shot a.jpg.__800__xx__600__1455912377 in Resources */,
 				88314F3B1CECDC50007685BB /* C01.jpg in Resources */,
-				822823A51B862A0A004154E7 /* inspi04.jpg in Resources */,
 				88E074581B98CFB400E0982A /* tut_gallery_scroll.gif in Resources */,
 				8861DE3F1BFD5844006A7D13 /* parcel-panel-thames-street-wharf.png in Resources */,
 				88314F241CECDC50007685BB /* parcel 4 shot c.jpg.__800__xx__600__1455912422 in Resources */,
@@ -5855,7 +5252,6 @@
 				8861DE7D1BFD6108006A7D13 /* siteplan_02.png in Resources */,
 				883D773F1C04DD65004B0136 /* phase_c_color_00063.png in Resources */,
 				88314F861CECDC50007685BB /* 2_12a Wills Plot 15.jpeg in Resources */,
-				8228236B1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View01_051215.jpg in Resources */,
 				8892EE171BC2092B00347146 /* phase_d_color_00031.png in Resources */,
 				8861DE031BFD55E6006A7D13 /* grfx_siteMap_overlay_arts_culture@2x.png in Resources */,
 				8892EE081BC2092B00347146 /* phase_d_color_00016.png in Resources */,
@@ -5899,22 +5295,14 @@
 				88314FB91CECDC50007685BB /* Hotel-final-Canopy-signage.jpg in Resources */,
 				88314FB61CECDC50007685BB /* Harbor Point Flyer - Print 8.jpeg in Resources */,
 				8861DDD21BFD55E6006A7D13 /* grfx-site-marker.png in Resources */,
-				822823BA1B862A0A004154E7 /* 0160 BCM (c) 2014 David Galen.jpg in Resources */,
 				88314F361CECDC50007685BB /* Point Street Landscape.png.__128__xx__128__1463171643 in Resources */,
 				8892EDFC1BC2092B00347146 /* phase_d_color_00004.png in Resources */,
-				822823901B862A0A004154E7 /* Leasing_Page_4.jpg in Resources */,
 				88314F051CECDC50007685BB /* View01_Final.jpg.__128__xx__128__1455224308 in Resources */,
-				822823C21B862A0A004154E7 /* Picture 036.jpg in Resources */,
 				889208541BFE32E0007C88FF /* CVCell.xib in Resources */,
 				883D78311C04DE21004B0136 /* phase_b_color_00012.png in Resources */,
 				88314FAB1CECDC50007685BB /* EZ Info Sheet 2014 V2 PDF 2.jpeg in Resources */,
 				8892EAFC1BC2082C00347146 /* phase_b_base_00035.jpg in Resources */,
-				822823781B862A0A004154E7 /* View 5 - Plaza - no bridge.jpg in Resources */,
 				8892EA611BC2082C00347146 /* phase_a_base_00024.jpg in Resources */,
-				822823ED1B862A0A004154E7 /* thumb_vegas.jpg in Resources */,
-				822823B11B862A0A004154E7 /* street02.jpg in Resources */,
-				822823841B862A0A004154E7 /* BallstonSDPackage.pdf in Resources */,
-				822823DB1B862A0A004154E7 /* thumb_film5.jpg in Resources */,
 				8892EBA11BC2082C00347146 /* phase_c_base_00056.jpg in Resources */,
 				824D27311B5D7E6700E5F5A5 /* Main.storyboard in Resources */,
 				8892EDC51BC2092B00347146 /* phase_d_base_00047.jpg in Resources */,
@@ -5924,14 +5312,12 @@
 				8892EDC71BC2092B00347146 /* phase_d_base_00048.jpg in Resources */,
 				824D2BC91B62D02100E5F5A5 /* share_inspi05.jpg.jpg in Resources */,
 				8819D8481BB8515400015AF5 /* H and S Formal - 47.jpg in Resources */,
-				822823CD1B862A0A004154E7 /* Picture 030.jpg in Resources */,
 				88314F781CECDC50007685BB /* I2411 Canopy Baltimore - Restaurant MD04.jpg.__128__xx__128__1463172067 in Resources */,
 				8892EB981BC2082C00347146 /* phase_c_base_00047.jpg in Resources */,
 				88314FEF1CECDC50007685BB /* Parcel 1.1.png.__128__xx__128__1463172922 in Resources */,
 				8861DD4A1BFD55CC006A7D13 /* grfx_sharePDF@2x.png in Resources */,
 				88314FDD1CECDC50007685BB /* Parcel 3 3.jpeg in Resources */,
 				8892ED6B1BC2092B00347146 /* phase_d_base_00002.jpg in Resources */,
-				8228236E1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View04_051215.jpg in Resources */,
 				824D2BD21B62D02100E5F5A5 /* share_Pg 5B  0420 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				8892EB701BC2082C00347146 /* phase_c_base_00007.jpg in Resources */,
 				880F241C1BFFBD23001EA4E9 /* master-plan-overlay-retail.png in Resources */,
@@ -5949,7 +5335,6 @@
 				883D77481C04DD65004B0136 /* phase_c_color_00072.png in Resources */,
 				8861DE571BFD5CAC006A7D13 /* grfx_siteplan@2x.png in Resources */,
 				88314FCB1CECDC50007685BB /* PLAZA-birds eye view copy.jpg in Resources */,
-				822823661B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot04.jpg in Resources */,
 				8861DE091BFD55E6006A7D13 /* grfx_siteMap_overlay_retail@2x.png in Resources */,
 				883D770B1C04DD65004B0136 /* phase_c_color_00011.png in Resources */,
 				88314FBD1CECDC50007685BB /* I2411 Canopy Baltimore - Retreat MD03.jpg in Resources */,
@@ -5989,19 +5374,14 @@
 				883D77D21C04DE14004B0136 /* phase_a_color_00063.png in Resources */,
 				82115DE21B6FB14400A36684 /* GoodPro-Black.otf in Resources */,
 				8892EBAA1BC2082C00347146 /* phase_c_base_00065.jpg in Resources */,
-				822823801B862A0A004154E7 /* Ballston Center Mall Permanent 11x17.pdf in Resources */,
 				88314FE81CECDC50007685BB /* Neoscape_BeattyDevelopmentHarbor Point_Aerial01_FINAL.jpg in Resources */,
-				822823D41B862A0A004154E7 /* thumb_escalator.jpg in Resources */,
 				883D785A1C04DE21004B0136 /* phase_b_color_00053.png in Resources */,
 				8892EE061BC2092B00347146 /* phase_d_color_00014.png in Resources */,
 				88314F801CECDC50007685BB /* 0928+LI+Copier+c2+3t (1).jpg in Resources */,
-				822823BF1B862A0A004154E7 /* Pg 9  0251 BCM (c) 2014 David Galen.jpg in Resources */,
 				8819D85E1BB8515400015AF5 /* Harbor_Point_Leasing_Brochure_sml.pdf in Resources */,
-				822823A41B862A0A004154E7 /* inspi03.jpg in Resources */,
 				8892084A1BFE2C48007C88FF /* 1305-DockSt@2x.jpg in Resources */,
 				883D77081C04DD65004B0136 /* phase_c_color_00008.png in Resources */,
 				88314FB21CECDC50007685BB /* Harbor Point Flyer - Print 4.jpeg in Resources */,
-				8228236D1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View03_051215.jpg in Resources */,
 				88314F761CECDC50007685BB /* I2411 Canopy Baltimore - King Guestroom MD05_PS_FINAL.jpg.__800__xx__600__1463172078 in Resources */,
 				88E074621B98CFE600E0982A /* tutorial.storyboard in Resources */,
 				8892EB9E1BC2082C00347146 /* phase_c_base_00053.jpg in Resources */,
@@ -6021,11 +5401,8 @@
 				883D77991C04DE14004B0136 /* phase_a_color_00006.png in Resources */,
 				8892ED971BC2092B00347146 /* phase_d_base_00024.jpg in Resources */,
 				88314FC11CECDC50007685BB /* Maryland Financing  Incentives120915 (3) 2.jpeg in Resources */,
-				822823D21B862A0A004154E7 /* thumb_design.jpg in Resources */,
 				88314F7F1CECDC50007685BB /* 0928+LI+Copier+c1+4t (1).jpg in Resources */,
-				8228239C1B862A0A004154E7 /* arch_01.jpg in Resources */,
 				8892EDE31BC2092B00347146 /* phase_d_base_00062.jpg in Resources */,
-				822823EC1B862A0A004154E7 /* thumb_strorefronts.jpg in Resources */,
 				8861DDE11BFD55E6006A7D13 /* grfx_cityMap_overlay_institutions@2x.png in Resources */,
 				88314F141CECDC50007685BB /* 1119 Exelon c2 5t.jpg.__128__xx__128__1463170862 in Resources */,
 				883D770C1C04DD65004B0136 /* phase_c_color_00012.png in Resources */,
@@ -6046,7 +5423,6 @@
 				88314F601CECDC50007685BB /* thames.st.out.n2.jpg in Resources */,
 				824D2BE91B62D02100E5F5A5 /* share_street02.jpg.jpg in Resources */,
 				883D78591C04DE21004B0136 /* phase_b_color_00052.png in Resources */,
-				822823A81B862A0A004154E7 /* lifestyle01.jpg in Resources */,
 				824D2BD11B62D02100E5F5A5 /* share_Pg 2A  0225 BCM (c) 2014 David Galen.jpg.jpg in Resources */,
 				883D77151C04DD65004B0136 /* phase_c_color_00021.png in Resources */,
 				8892EE1A1BC2092B00347146 /* phase_d_color_00034.png in Resources */,
@@ -6054,16 +5430,12 @@
 				8892EB951BC2082C00347146 /* phase_c_base_00044.jpg in Resources */,
 				883D785C1C04DE21004B0136 /* phase_b_color_00055.png in Resources */,
 				88314F901CECDC50007685BB /* 2_12a Wills Plot 3.jpeg in Resources */,
-				822823761B862A0A004154E7 /* View 12 - N Randolph.jpg in Resources */,
 				8892EA651BC2082C00347146 /* phase_a_base_00028.jpg in Resources */,
 				8819D8391BB8515400015AF5 /* Exelon-Retail-View-2.jpg in Resources */,
 				88314F4F1CECDC50007685BB /* Point Street_Design Development_Final_01.15.2015 21.jpeg in Resources */,
 				8892EDAB1BC2092B00347146 /* phase_d_base_00034.jpg in Resources */,
-				822823B01B862A0A004154E7 /* street01.jpg in Resources */,
 				88314FAF1CECDC50007685BB /* Harbor Point Flyer - Print 10.jpeg in Resources */,
 				8892EAFD1BC2082C00347146 /* phase_b_base_00036.jpg in Resources */,
-				822823B61B862A0A004154E7 /* market_interior02.jpg in Resources */,
-				824D2B2B1B6186FA00E5F5A5 /* Lobby View.jpg in Resources */,
 				887648071BA35247002D4183 /* Parcel_03@2x.jpg in Resources */,
 				883D77C51C04DE14004B0136 /* phase_a_color_00050.png in Resources */,
 				8892EA4E1BC2082C00347146 /* phase_a_base_00005.jpg in Resources */,
@@ -6077,7 +5449,6 @@
 				88314FF81CECDC50007685BB /* parcel 1 shot b.jpg in Resources */,
 				883D77211C04DD65004B0136 /* phase_c_color_00033.png in Resources */,
 				8892EA701BC2082C00347146 /* phase_a_base_00039.jpg in Resources */,
-				822823631B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot01.jpg in Resources */,
 				8892EE031BC2092B00347146 /* phase_d_color_00011.png in Resources */,
 				824D2BF11B62D02100E5F5A5 /* share_View 5 - Plaza - no bridge.jpg.jpg in Resources */,
 				8819D82C1BB8515400015AF5 /* Thames_Street_Wharf@2x.jpg in Resources */,
@@ -6101,26 +5472,21 @@
 				8819D84D1BB8515400015AF5 /* H and S Formal - 72.jpg in Resources */,
 				8892EB791BC2082C00347146 /* phase_c_base_00016.jpg in Resources */,
 				8892EE3F1BC2092B00347146 /* phase_d_color_00071.png in Resources */,
-				822823651B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot03.jpg in Resources */,
 				8892EAFB1BC2082C00347146 /* phase_b_base_00034.jpg in Resources */,
 				88314F6B1CECDC50007685BB /* 0928+LI+Copier+c1+4t (1).jpg.__180__xx__180__1455223831 in Resources */,
 				883D77BF1C04DE14004B0136 /* phase_a_color_00044.png in Resources */,
 				8892EBA21BC2082C00347146 /* phase_c_base_00057.jpg in Resources */,
 				88314F701CECDC50007685BB /* 0928+LI+Copier+c2+3t (1).jpg.__800__xx__600__1455223828 in Resources */,
-				822823AA1B862A0A004154E7 /* store02.jpg in Resources */,
-				822823CF1B862A0A004154E7 /* thumb_3D.jpg in Resources */,
 				8892EB921BC2082C00347146 /* phase_c_base_00041.jpg in Resources */,
 				880F24181BFFBD23001EA4E9 /* master-plan-overlay-office.png in Resources */,
 				88314F181CECDC50007685BB /* Lobby_R01.jpg.__128__xx__128__1463170868 in Resources */,
 				8892EE261BC2092B00347146 /* phase_d_color_00046.png in Resources */,
 				8892EE301BC2092B00347146 /* phase_d_color_00056.png in Resources */,
-				822823DD1B862A0A004154E7 /* thumb_film7.jpg in Resources */,
 				824D27361B5D7E6700E5F5A5 /* LaunchScreen.xib in Resources */,
 				883D784B1C04DE21004B0136 /* phase_b_color_00038.png in Resources */,
 				88314F1A1CECDC50007685BB /* 0119 Exelon c1 6t.jpeg in Resources */,
 				8861DE351BFD5844006A7D13 /* parcel-panel-parcel-1.png in Resources */,
 				883D78501C04DE21004B0136 /* phase_b_color_00043.png in Resources */,
-				822823C51B862A0A004154E7 /* Picture 050.jpg in Resources */,
 				8892EA801BC2082C00347146 /* phase_a_base_00055.jpg in Resources */,
 				8892EB971BC2082C00347146 /* phase_c_base_00046.jpg in Resources */,
 				8861DDCA1BFD55E6006A7D13 /* grfx_initImage.jpg in Resources */,
@@ -6133,17 +5499,14 @@
 				880F240C1BFFBD23001EA4E9 /* grfx-master-plan-nav-bttn-nrm.png in Resources */,
 				8861DDF51BFD55E6006A7D13 /* grfx_regionalMap_base_map@2x.png in Resources */,
 				82115DE41B6FB14400A36684 /* GoodPro-CondBlack.otf in Resources */,
-				822823E61B862A0A004154E7 /* thumb_market_interior.jpg in Resources */,
 				8892EA6D1BC2082C00347146 /* phase_a_base_00036.jpg in Resources */,
 				88314F491CECDC50007685BB /* Point Street_Design Development_Final_01.15.2015 16.jpeg in Resources */,
 				883D78331C04DE21004B0136 /* phase_b_color_00014.png in Resources */,
 				883150031CECDC50007685BB /* Central Plaza3.png.__800__xx__600__1455224493 in Resources */,
 				8861DE871BFD6108006A7D13 /* siteplan_12.png in Resources */,
 				883D78511C04DE21004B0136 /* phase_b_color_00044.png in Resources */,
-				822823701B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View06_051215.jpg in Resources */,
 				883D78481C04DE21004B0136 /* phase_b_color_00035.png in Resources */,
 				8892EDB91BC2092B00347146 /* phase_d_base_00041.jpg in Resources */,
-				822823C81B862A0A004154E7 /* 0005 BCM (c) 2014 David Galen.jpg in Resources */,
 				883D772F1C04DD65004B0136 /* phase_c_color_00047.png in Resources */,
 				8892EA711BC2082C00347146 /* phase_a_base_00040.jpg in Resources */,
 				8892ED8F1BC2092B00347146 /* phase_d_base_00020.jpg in Resources */,
@@ -6163,12 +5526,10 @@
 				8892EDE51BC2092B00347146 /* phase_d_base_00063.jpg in Resources */,
 				8892EDC31BC2092B00347146 /* phase_d_base_00046.jpg in Resources */,
 				8861DDEE1BFD55E6006A7D13 /* grfx_siteMap_overlay_parking_04.png in Resources */,
-				822823A91B862A0A004154E7 /* store01.jpg in Resources */,
 				8892EAFF1BC2082C00347146 /* phase_b_base_00038.jpg in Resources */,
 				883D77C41C04DE14004B0136 /* phase_a_color_00049.png in Resources */,
 				8819D85F1BB8515400015AF5 /* Point Street_UDARP 03_01-21-15 AM Mod_sml.pdf in Resources */,
 				88314F641CECDC50007685BB /* 0504 Wills Wharf c1 OP1 3t.jpg.__128__xx__128__1463172090 in Resources */,
-				822823791B862A0A004154E7 /* View 6 - no bridge.jpg in Resources */,
 				88314FEE1CECDC50007685BB /* parcel 1 shot b.jpg.__800__xx__600__1455912381 in Resources */,
 				88314F2A1CECDC50007685BB /* Parcel 4 floorplan 6.jpeg in Resources */,
 				8892EB191BC2082C00347146 /* phase_b_base_00064.jpg in Resources */,
@@ -6196,15 +5557,12 @@
 				8892EE311BC2092B00347146 /* phase_d_color_00057.png in Resources */,
 				824D2BDF1B62D02100E5F5A5 /* share_Picture 051.jpg.jpg in Resources */,
 				8819D83D1BB8515400015AF5 /* H and S Formal - 105.jpg in Resources */,
-				822823CE1B862A0A004154E7 /* Picture 041.jpg in Resources */,
 				824D2BF51B62D02100E5F5A5 /* share_View 9 - Interior.jpg.jpg in Resources */,
 				8819D84E1BB8515400015AF5 /* H and S Formal - 91.jpg in Resources */,
-				8228236F1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View05_051215.jpg in Resources */,
 				883D770F1C04DD65004B0136 /* phase_c_color_00015.png in Resources */,
 				8892EDF51BC2092B00347146 /* phase_d_base_00071.jpg in Resources */,
 				8892EB901BC2082C00347146 /* phase_c_base_00039.jpg in Resources */,
 				883D784A1C04DE21004B0136 /* phase_b_color_00037.png in Resources */,
-				822823DF1B862A0A004154E7 /* thumb_film_full.jpg in Resources */,
 				8892EDFA1BC2092B00347146 /* phase_d_color_00002.png in Resources */,
 				8892EB081BC2082C00347146 /* phase_b_base_00047.jpg in Resources */,
 				824D2BC71B62D02100E5F5A5 /* share_inspi03.jpg.jpg in Resources */,
@@ -6220,7 +5578,6 @@
 				889E4A051CD40914007F6886 /* mm-restart.gif in Resources */,
 				88E0745D1B98CFB400E0982A /* icon_0003.png in Resources */,
 				8819D8431BB8515400015AF5 /* H and S Formal - 25.jpg in Resources */,
-				822823821B862A0A004154E7 /* Ballston_Existing_Lease_Plan_mh.pdf in Resources */,
 				8892ED8B1BC2092B00347146 /* phase_d_base_00018.jpg in Resources */,
 				88314FD71CECDC50007685BB /* Parcel 3.1.png.__128__xx__128__1463172580 in Resources */,
 				8892EDA11BC2092B00347146 /* phase_d_base_00029.jpg in Resources */,
@@ -6239,7 +5596,6 @@
 				8892EDF31BC2092B00347146 /* phase_d_base_00070.jpg in Resources */,
 				883D782B1C04DE21004B0136 /* phase_b_color_00006.png in Resources */,
 				8892EB931BC2082C00347146 /* phase_c_base_00042.jpg in Resources */,
-				822823D71B862A0A004154E7 /* thumb_film1.jpg in Resources */,
 				824D2B1F1B61857E00E5F5A5 /* photoData.plist in Resources */,
 				88314FD41CECDC50007685BB /* parcel 3 shot b.jpg.__800__xx__600__1455912404 in Resources */,
 				8892EB8A1BC2082C00347146 /* phase_c_base_00033.jpg in Resources */,
@@ -6249,34 +5605,27 @@
 				8861DD4F1BFD55CC006A7D13 /* share_but_email.png in Resources */,
 				8861DDFD1BFD55E6006A7D13 /* grfx_siteMap_base_map@2x.png in Resources */,
 				824D2BB31B62D02100E5F5A5 /* share_Ballston aerial01.jpg.jpg in Resources */,
-				822823A31B862A0A004154E7 /* inspi02.jpg in Resources */,
 				883D77441C04DD65004B0136 /* phase_c_color_00068.png in Resources */,
 				88314FFD1CECDC50007685BB /* Parcel 1.jpeg in Resources */,
 				8892EA4C1BC2082C00347146 /* phase_a_base_00003.jpg in Resources */,
 				8892EE191BC2092B00347146 /* phase_d_color_00033.png in Resources */,
 				88314FF31CECDC50007685BB /* Parcel 1 2.jpeg in Resources */,
 				883D77031C04DD65004B0136 /* phase_c_color_00003.png in Resources */,
-				8228237F1B862A0A004154E7 /* 2015_04_06-ESCALATORS AXON .pdf in Resources */,
 				824D2BDC1B62D02100E5F5A5 /* share_Picture 041.jpg.jpg in Resources */,
-				822823671B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot05.jpg in Resources */,
 				8861DDEA1BFD55E6006A7D13 /* grfx_siteMap_overlay_parking_02.png in Resources */,
 				8861DE481BFD5946006A7D13 /* grfx_cityMap_overlay_universities.png in Resources */,
 				8861DE7E1BFD6108006A7D13 /* siteplan_03.png in Resources */,
 				824D2BDB1B62D02100E5F5A5 /* share_Picture 038.jpg.jpg in Resources */,
 				88314F5B1CECDC50007685BB /* Thames Street 1.jpg in Resources */,
 				8892EA641BC2082C00347146 /* phase_a_base_00027.jpg in Resources */,
-				822823711B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View07_050715.jpg in Resources */,
 				881D14131BF13F2F00693C62 /* masterplanstack.json in Resources */,
 				88314FB41CECDC50007685BB /* Harbor Point Flyer - Print 6.jpeg in Resources */,
 				8892EB6B1BC2082C00347146 /* phase_c_base_00002.jpg in Resources */,
 				8892EAE31BC2082C00347146 /* phase_b_base_00010.jpg in Resources */,
 				8892EA891BC2082C00347146 /* phase_a_base_00064.jpg in Resources */,
-				822823BE1B862A0A004154E7 /* Pg 5B  0420 BCM (c) 2014 David Galen.jpg in Resources */,
 				88314F6D1CECDC50007685BB /* 0928+LI+Copier+c2+3t (1).jpg.__1280__xx__800__1455223828 in Resources */,
 				8892EA881BC2082C00347146 /* phase_a_base_00063.jpg in Resources */,
-				822823D11B862A0A004154E7 /* thumb_architecture.jpg in Resources */,
 				8892EA8F1BC2082C00347146 /* phase_a_base_00070.jpg in Resources */,
-				822823731B862A0A004154E7 /* View 1 - Corner.jpg in Resources */,
 				883D77A91C04DE14004B0136 /* phase_a_color_00022.png in Resources */,
 				8892EB801BC2082C00347146 /* phase_c_base_00023.jpg in Resources */,
 				8892EB6D1BC2082C00347146 /* phase_c_base_00004.jpg in Resources */,
@@ -6294,15 +5643,12 @@
 				8892EB6C1BC2082C00347146 /* phase_c_base_00003.jpg in Resources */,
 				8892EBB01BC2082C00347146 /* phase_c_base_00071.jpg in Resources */,
 				824D2BB71B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot03.jpg.jpg in Resources */,
-				8228238A1B862A0A004154E7 /* Existing_Page_2.jpg in Resources */,
 				88314F401CECDC50007685BB /* Point Street Landscape.png in Resources */,
 				8819D8401BB8515400015AF5 /* H and S Formal - 16.jpg in Resources */,
-				8228236C1B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View02_051215.jpg in Resources */,
 				88314F161CECDC50007685BB /* Apartment Entrance_20160321-2.jpg.__128__xx__128__1463173230 in Resources */,
 				8892ED7F1BC2092B00347146 /* phase_d_base_00012.jpg in Resources */,
 				8819D8371BB8515400015AF5 /* Central Plaza 2.jpg in Resources */,
 				8861DDF71BFD55E6006A7D13 /* grfx_regionalMap_overlay_access@2x.png in Resources */,
-				822823EB1B862A0A004154E7 /* thumb_street.jpg in Resources */,
 				883D77AD1C04DE14004B0136 /* phase_a_color_00026.png in Resources */,
 				824D2BDE1B62D02100E5F5A5 /* share_Picture 050.jpg.jpg in Resources */,
 				8861DE7F1BFD6108006A7D13 /* siteplan_04.png in Resources */,
@@ -6319,7 +5665,6 @@
 				880F24261BFFBD23001EA4E9 /* parking-phase-2.png.__128__xx__128__1447964613 in Resources */,
 				8892EE231BC2092B00347146 /* phase_d_color_00043.png in Resources */,
 				8892EA7B1BC2082C00347146 /* phase_a_base_00050.jpg in Resources */,
-				822823BB1B862A0A004154E7 /* 0336 BCM (c) 2014 David Galen.jpg in Resources */,
 				883D77461C04DD65004B0136 /* phase_c_color_00070.png in Resources */,
 				8892EDC91BC2092B00347146 /* phase_d_base_00049.jpg in Resources */,
 				8892EA781BC2082C00347146 /* phase_a_base_00047.jpg in Resources */,
@@ -6337,21 +5682,16 @@
 				88314F8B1CECDC50007685BB /* 2_12a Wills Plot 2.jpeg in Resources */,
 				88314FC61CECDC50007685BB /* Maryland Financing  Incentives120915 (3) 7.jpeg in Resources */,
 				8892EB171BC2082C00347146 /* phase_b_base_00062.jpg in Resources */,
-				822823E31B862A0A004154E7 /* thumb_lifeStyle.jpg in Resources */,
 				883D772C1C04DD65004B0136 /* phase_c_color_00044.png in Resources */,
 				8892EB9D1BC2082C00347146 /* phase_c_base_00052.jpg in Resources */,
 				8892EB7D1BC2082C00347146 /* phase_c_base_00020.jpg in Resources */,
-				822823E51B862A0A004154E7 /* thumb_market_exterior.jpg in Resources */,
 				883D771A1C04DD65004B0136 /* phase_c_color_00026.png in Resources */,
 				8892EA511BC2082C00347146 /* phase_a_base_00008.jpg in Resources */,
 				88314EFF1CECDC50007685BB /* 1119 Exelon c2 5t.jpg.__128__xx__128__1456352305 in Resources */,
 				883D782A1C04DE21004B0136 /* phase_b_color_00005.png in Resources */,
 				880F24131BFFBD23001EA4E9 /* master-plan-all-uses@2x.png in Resources */,
 				88314FA11CECDC50007685BB /* Canopy Brochure 19.jpeg in Resources */,
-				822823721B862A0A004154E7 /* final\BallstonCommon_LivingRendering_View08_050715.jpg in Resources */,
-				822823C31B862A0A004154E7 /* Picture 038.jpg in Resources */,
 				8892EDA31BC2092B00347146 /* phase_d_base_00030.jpg in Resources */,
-				822823C91B862A0A004154E7 /* 0027 BCM (c) 2014 David Galen.jpg in Resources */,
 				883D779B1C04DE14004B0136 /* phase_a_color_00008.png in Resources */,
 				8892EADB1BC2082C00347146 /* phase_b_base_00002.jpg in Resources */,
 				8861DD481BFD55CC006A7D13 /* grfx_shareEmail@2x.png in Resources */,
@@ -6360,10 +5700,8 @@
 				883D77D91C04DE14004B0136 /* phase_a_color_00070.png in Resources */,
 				82115DF31B7012A600A36684 /* grfx_building.jpg in Resources */,
 				883150041CECDC50007685BB /* Neoscape_BeattyDevelopmentHarbor Point_CentralPlaza_FINAL.jpg.__128__xx__128__1463172969 in Resources */,
-				822823AF1B862A0A004154E7 /* store07.jpg in Resources */,
 				88314F3E1CECDC50007685BB /* Point St 2nd level.jpeg in Resources */,
 				88314F501CECDC50007685BB /* Point Street_Design Development_Final_01.15.2015 22.jpeg in Resources */,
-				822823A11B862A0A004154E7 /* arch_06.jpg in Resources */,
 				883150021CECDC50007685BB /* Central Plaza3.png.__128__xx__128__1455224493 in Resources */,
 				824D2BC31B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View07_050715.jpg.jpg in Resources */,
 				883D783B1C04DE21004B0136 /* phase_b_color_00022.png in Resources */,
@@ -6378,7 +5716,6 @@
 				8892EDDD1BC2092B00347146 /* phase_d_base_00059.jpg in Resources */,
 				8819D81F1BB8515400015AF5 /* Harbor_Point_Park.jpg in Resources */,
 				883D78471C04DE21004B0136 /* phase_b_color_00034.png in Resources */,
-				822823B81B862A0A004154E7 /* Ballston aerial01.jpg in Resources */,
 				8892EA661BC2082C00347146 /* phase_a_base_00029.jpg in Resources */,
 				8861DD361BFD55CC006A7D13 /* grfx_mapMenuBtnDef@2x.png in Resources */,
 				8892EDCB1BC2092B00347146 /* phase_d_base_00050.jpg in Resources */,
@@ -6400,12 +5737,9 @@
 				880F242F1BFFBD23001EA4E9 /* parking-phase-2@2x.png in Resources */,
 				8892EA721BC2082C00347146 /* phase_a_base_00041.jpg in Resources */,
 				8819D8491BB8515400015AF5 /* H and S Formal - 48.jpg in Resources */,
-				822823AB1B862A0A004154E7 /* store03.jpg in Resources */,
-				8228238E1B862A0A004154E7 /* Leasing_Page_2.jpg in Resources */,
 				880FDB901CCFFF4300B0110C /* parcel-panel-1305-dock-st.png in Resources */,
 				883D77181C04DD65004B0136 /* phase_c_color_00024.png in Resources */,
 				8892EE101BC2092B00347146 /* phase_d_color_00024.png in Resources */,
-				824D2B2A1B6186FA00E5F5A5 /* Lobby Entry and Restuarant.jpg in Resources */,
 				883D785D1C04DE21004B0136 /* phase_b_color_00056.png in Resources */,
 				8892EDB51BC2092B00347146 /* phase_d_base_00039.jpg in Resources */,
 				88314F6E1CECDC50007685BB /* 0928+LI+Copier+c2+3t (1).jpg.__128__xx__128__1455223828 in Resources */,
@@ -6420,11 +5754,9 @@
 				8861DD3A1BFD55CC006A7D13 /* grfx_menuGallery@2x.jpg in Resources */,
 				883D77941C04DE14004B0136 /* phase_a_color_00001.png in Resources */,
 				88314FB51CECDC50007685BB /* Harbor Point Flyer - Print 7.jpeg in Resources */,
-				8228239E1B862A0A004154E7 /* arch_03.jpg in Resources */,
 				88314FB31CECDC50007685BB /* Harbor Point Flyer - Print 5.jpeg in Resources */,
 				88314F1F1CECDC50007685BB /* parcel 4 drawing shot a.jpg.__800__xx__600__1455912419 in Resources */,
 				88314F821CECDC50007685BB /* 2_12a Wills Plot 11.jpeg in Resources */,
-				822823691B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot07.jpg in Resources */,
 				88314F6C1CECDC50007685BB /* 0928+LI+Copier+c1+4t (1).jpg.__800__xx__600__1455223831 in Resources */,
 				883D77B31C04DE14004B0136 /* phase_a_color_00032.png in Resources */,
 				88314F7E1CECDC50007685BB /* 0504 Wills Wharf c1 OP2 3t.jpg in Resources */,
@@ -6433,8 +5765,6 @@
 				883D773A1C04DD65004B0136 /* phase_c_color_00058.png in Resources */,
 				824D2BBC1B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot08.jpg.jpg in Resources */,
 				8861DE401BFD5844006A7D13 /* parcel-panel-thames-street-wharf@2x.png in Resources */,
-				8228238C1B862A0A004154E7 /* Existing_Page_4.jpg in Resources */,
-				8228237A1B862A0A004154E7 /* View 7 - N Stuart - no bridge.jpg in Resources */,
 				883D77B41C04DE14004B0136 /* phase_a_color_00033.png in Resources */,
 				88314FA81CECDC50007685BB /* Canopy Brochure 8.jpeg in Resources */,
 				824D2BCB1B62D02100E5F5A5 /* share_lifestyle01.jpg.jpg in Resources */,
@@ -6445,7 +5775,6 @@
 				88314F8C1CECDC50007685BB /* 2_12a Wills Plot 20.jpeg in Resources */,
 				881D14281BF1971B00693C62 /* hp_ipad_logo_intro.mov in Resources */,
 				88314FAE1CECDC50007685BB /* F-OFFICE-ENTRY-2 copy.jpg in Resources */,
-				8228236A1B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot08.jpg in Resources */,
 				88314F081CECDC50007685BB /* View02_Final.jpg.__800__xx__600__1455224314 in Resources */,
 				8861DDD81BFD55E6006A7D13 /* grfx_cityMap_overlay_arts_culture.png in Resources */,
 				8892EA7E1BC2082C00347146 /* phase_a_base_00053.jpg in Resources */,
@@ -6453,8 +5782,6 @@
 				883D77041C04DD65004B0136 /* phase_c_color_00004.png in Resources */,
 				88314F1D1CECDC50007685BB /* Lobby_R01.jpg in Resources */,
 				8892EB0A1BC2082C00347146 /* phase_b_base_00049.jpg in Resources */,
-				8228237D1B862A0A004154E7 /* 150512_BC_PresTemplate_ProgressR3_LR 2.pdf in Resources */,
-				822823D31B862A0A004154E7 /* thumb_dining_gallery.jpg in Resources */,
 				883D78251C04DE21004B0136 /* phase_b_color_00000.png in Resources */,
 				880F24111BFFBD23001EA4E9 /* grfx-menu-usage@2x.png in Resources */,
 				824D2BE81B62D02100E5F5A5 /* share_street01.jpg.jpg in Resources */,
@@ -6464,18 +5791,14 @@
 				8892EAE91BC2082C00347146 /* phase_b_base_00016.jpg in Resources */,
 				8892EB811BC2082C00347146 /* phase_c_base_00024.jpg in Resources */,
 				883D77AB1C04DE14004B0136 /* phase_a_color_00024.png in Resources */,
-				824D2B301B6186FA00E5F5A5 /* Victory Center_Street View-1.jpg in Resources */,
 				88314F261CECDC50007685BB /* Parcel 4 floorplan 2.jpeg in Resources */,
 				8892EB731BC2082C00347146 /* phase_c_base_00010.jpg in Resources */,
 				883D787A1C055E08004B0136 /* settings.jpg in Resources */,
 				88314FEB1CECDC50007685BB /* parcel 1 shot a.jpg.__128__xx__128__1455912377 in Resources */,
-				822823771B862A0A004154E7 /* View 2 - Wilson.jpg in Resources */,
 				8892EA5E1BC2082C00347146 /* phase_a_base_00021.jpg in Resources */,
-				822823641B862A0A004154E7 /* BallstonCommon_LivingRenderingStills_Shot02.jpg in Resources */,
 				8819D8561BB8515400015AF5 /* A101-C - 1st Floor (Garage Level) Plan-2nd Floor (Park Level) (1).pdf in Resources */,
 				8861DE491BFD5946006A7D13 /* grfx_cityMap_overlay_universities@2x.png in Resources */,
 				881D14111BF13D2000693C62 /* phase_data.json in Resources */,
-				8228238D1B862A0A004154E7 /* Leasing_Page_1.jpg in Resources */,
 				887647FA1BA35247002D4183 /* Parcel_02-Excelon.jpg in Resources */,
 				88314FED1CECDC50007685BB /* parcel 1 shot b.jpg.__128__xx__128__1455912381 in Resources */,
 				8861DDF81BFD55E6006A7D13 /* grfx_regionalMap_overlay_key.png in Resources */,
@@ -6492,7 +5815,6 @@
 				883D787B1C055E08004B0136 /* settings@2x.jpg in Resources */,
 				8892EE0C1BC2092B00347146 /* phase_d_color_00020.png in Resources */,
 				88314F541CECDC50007685BB /* Point Street_Design Development_Final_01.15.2015 5.jpeg in Resources */,
-				822823C61B862A0A004154E7 /* Picture 051.jpg in Resources */,
 				883D77C61C04DE14004B0136 /* phase_a_color_00051.png in Resources */,
 				8892ED711BC2092B00347146 /* phase_d_base_00005.jpg in Resources */,
 				824D2BF01B62D02100E5F5A5 /* share_View 4 from bridge.jpg.jpg in Resources */,
@@ -6512,11 +5834,8 @@
 				8892EB001BC2082C00347146 /* phase_b_base_00039.jpg in Resources */,
 				8861DE2E1BFD5844006A7D13 /* parcel-panel-wills-wharf@2x.png in Resources */,
 				8861DE361BFD5844006A7D13 /* parcel-panel-parcel-1@2x.png in Resources */,
-				822823A01B862A0A004154E7 /* arch_05.jpg in Resources */,
-				822823B71B862A0A004154E7 /* market_interior03.jpg in Resources */,
 				883D77421C04DD65004B0136 /* phase_c_color_00066.png in Resources */,
 				8861DD501BFD55CC006A7D13 /* share_but_email@2x.png in Resources */,
-				8228238B1B862A0A004154E7 /* Existing_Page_3.jpg in Resources */,
 				88314F731CECDC50007685BB /* I2411 Canopy Baltimore - Bar MD05.jpg.__800__xx__600__1463172081 in Resources */,
 				880F24271BFFBD23001EA4E9 /* parking-phase-2@2x.png.__128__xx__128__1447964539 in Resources */,
 				883D784F1C04DE21004B0136 /* phase_b_color_00042.png in Resources */,
@@ -6543,12 +5862,9 @@
 				8892EA491BC2082C00347146 /* phase_a_base_00000.jpg in Resources */,
 				8819D8321BB8515400015AF5 /* Apartment_R01.jpg in Resources */,
 				824D2BC61B62D02100E5F5A5 /* share_inspi02.jpg.jpg in Resources */,
-				8228237C1B862A0A004154E7 /* View 9 - Interior.jpg in Resources */,
-				822823B41B862A0A004154E7 /* market_exterior02.jpg in Resources */,
 				8892EA8C1BC2082C00347146 /* phase_a_base_00067.jpg in Resources */,
 				88314F811CECDC50007685BB /* 2_12a Wills Plot 10.jpeg in Resources */,
 				88E074601B98CFB400E0982A /* TutsTableCell.xib in Resources */,
-				822823861B862A0A004154E7 /* BCLP DEV_ 07-09-2015.pdf in Resources */,
 				883D77961C04DE14004B0136 /* phase_a_color_00003.png in Resources */,
 				8892EAEE1BC2082C00347146 /* phase_b_base_00021.jpg in Resources */,
 				88314F311CECDC50007685BB /* C01.jpg.__800__xx__600__1455223731 in Resources */,
@@ -6561,7 +5877,6 @@
 				8892ED7B1BC2092B00347146 /* phase_d_base_00010.jpg in Resources */,
 				880F24311BFFBD23001EA4E9 /* parking-phase-3@2x.png in Resources */,
 				88314F291CECDC50007685BB /* Parcel 4 floorplan 5.jpeg in Resources */,
-				824D2B2C1B6186FA00E5F5A5 /* Southeast View of Victory Center.jpg in Resources */,
 				8892EDCD1BC2092B00347146 /* phase_d_base_00051.jpg in Resources */,
 				8892EE181BC2092B00347146 /* phase_d_color_00032.png in Resources */,
 				824D2BDA1B62D02100E5F5A5 /* share_Picture 036.jpg.jpg in Resources */,
@@ -6569,7 +5884,6 @@
 				883D77A11C04DE14004B0136 /* phase_a_color_00014.png in Resources */,
 				883D77361C04DD65004B0136 /* phase_c_color_00054.png in Resources */,
 				883D77B71C04DE14004B0136 /* phase_a_color_00036.png in Resources */,
-				822823BD1B862A0A004154E7 /* Pg 2A  0225 BCM (c) 2014 David Galen.jpg in Resources */,
 				88314F5F1CECDC50007685BB /* thames.st.out.b.jpg in Resources */,
 				8892EB1F1BC2082C00347146 /* phase_b_base_00070.jpg in Resources */,
 				8892EDD31BC2092B00347146 /* phase_d_base_00054.jpg in Resources */,
@@ -6583,7 +5897,6 @@
 				8819D83E1BB8515400015AF5 /* H and S Formal - 106.jpg in Resources */,
 				887647F81BA35247002D4183 /* Thames_Street_Wharf.jpg in Resources */,
 				8861DE691BFD5F1C006A7D13 /* supporting-stories-thriving-baltimore.png in Resources */,
-				822823811B862A0A004154E7 /* ballston leasing book with cards-2.pdf in Resources */,
 				8861DDED1BFD55E6006A7D13 /* grfx_siteMap_overlay_parking_03@2x.png in Resources */,
 				8861DE011BFD55E6006A7D13 /* grfx_siteMap_overlay_access_legend@2x.png in Resources */,
 				822822B41B850B55004154E7 /* building_data.plist in Resources */,
@@ -6625,7 +5938,6 @@
 				8892EB021BC2082C00347146 /* phase_b_base_00041.jpg in Resources */,
 				8819D84C1BB8515400015AF5 /* H and S Formal - 67.jpg in Resources */,
 				883D77131C04DD65004B0136 /* phase_c_color_00019.png in Resources */,
-				824D2B2E1B6186FA00E5F5A5 /* Victory Center 02 W Hotel View.jpg in Resources */,
 				8861DE661BFD5F1C006A7D13 /* supporting-stories-urban-renaissance@2x.png in Resources */,
 				824D2BC41B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View08_050715.jpg.jpg in Resources */,
 				88314F221CECDC50007685BB /* parcel 4 shot b.jpg.__800__xx__600__1455912421 in Resources */,
@@ -6635,8 +5947,6 @@
 				88E074521B98CFB400E0982A /* Info.plist in Resources */,
 				824D2BAD1B62D02100E5F5A5 /* share_arch_01.jpg.jpg in Resources */,
 				8892EBA61BC2082C00347146 /* phase_c_base_00061.jpg in Resources */,
-				822823B31B862A0A004154E7 /* market_exterior01.jpg in Resources */,
-				8228239F1B862A0A004154E7 /* arch_04.jpg in Resources */,
 				88314F8E1CECDC50007685BB /* 2_12a Wills Plot 22.jpeg in Resources */,
 				8892EE0D1BC2092B00347146 /* phase_d_color_00021.png in Resources */,
 				8819D8441BB8515400015AF5 /* H and S Formal - 26.jpg in Resources */,
@@ -6683,7 +5993,6 @@
 				8892EDD71BC2092B00347146 /* phase_d_base_00056.jpg in Resources */,
 				88314FD21CECDC50007685BB /* parcel 2 shot a.jpg.__800__xx__600__1455912402 in Resources */,
 				88314F9F1CECDC50007685BB /* Canopy Brochure 17.jpeg in Resources */,
-				822823EA1B862A0A004154E7 /* thumb_spacePlan.jpg in Resources */,
 				8892EE271BC2092B00347146 /* phase_d_color_00047.png in Resources */,
 				88314F991CECDC50007685BB /* Canopy Brochure 11.jpeg in Resources */,
 				88314F211CECDC50007685BB /* parcel 4 shot b.jpg.__180__xx__180__1455912421 in Resources */,
@@ -6691,15 +6000,12 @@
 				8892EB201BC2082C00347146 /* phase_b_base_00071.jpg in Resources */,
 				8892EA861BC2082C00347146 /* phase_a_base_00061.jpg in Resources */,
 				880F23DE1BFFA34B001EA4E9 /* grfx-partners.png in Resources */,
-				822823A61B862A0A004154E7 /* inspi05.jpg in Resources */,
 				88314FF61CECDC50007685BB /* Parcel 1 5.jpeg in Resources */,
 				8892EE201BC2092B00347146 /* phase_d_color_00040.png in Resources */,
 				824D27331B5D7E6700E5F5A5 /* Images.xcassets in Resources */,
 				883150061CECDC50007685BB /* Central Plaza 1.png in Resources */,
 				824D2BD61B62D02100E5F5A5 /* share_Picture 030.jpg in Resources */,
-				8228239D1B862A0A004154E7 /* arch_02.jpg in Resources */,
 				88E0745C1B98CFB400E0982A /* icon_0002.png in Resources */,
-				822823DE1B862A0A004154E7 /* thumb_film8.jpg in Resources */,
 				8861DE681BFD5F1C006A7D13 /* supporting-stories-thriving-baltimore@2x.png in Resources */,
 				824D2BBB1B62D02100E5F5A5 /* share_BallstonCommon_LivingRenderingStills_Shot07.jpg.jpg in Resources */,
 				8861DDE61BFD55E6006A7D13 /* map_apple_offline.jpg in Resources */,
@@ -6720,27 +6026,22 @@
 				883D77291C04DD65004B0136 /* phase_c_color_00041.png in Resources */,
 				8861DD4D1BFD55CC006A7D13 /* grfx_web_arrow.png in Resources */,
 				883D77C01C04DE14004B0136 /* phase_a_color_00045.png in Resources */,
-				822823A71B862A0A004154E7 /* inspi06.jpg in Resources */,
 				88314F841CECDC50007685BB /* 2_12a Wills Plot 13.jpeg in Resources */,
 				8861DD411BFD55CC006A7D13 /* grfx_menuWebcam.jpg in Resources */,
 				883D779A1C04DE14004B0136 /* phase_a_color_00007.png in Resources */,
 				8819D85D1BB8515400015AF5 /* Harbor Point 2.0_sml.pdf in Resources */,
-				822823C11B862A0A004154E7 /* Picture 035.jpg in Resources */,
 				8892EDB31BC2092B00347146 /* phase_d_base_00038.jpg in Resources */,
 				824D2B561B62CF7F00E5F5A5 /* shareableData.plist in Resources */,
 				883D783E1C04DE21004B0136 /* phase_b_color_00025.png in Resources */,
 				8892EE161BC2092B00347146 /* phase_d_color_00030.png in Resources */,
 				8892EE0F1BC2092B00347146 /* phase_d_color_00023.png in Resources */,
 				8892EA7F1BC2082C00347146 /* phase_a_base_00054.jpg in Resources */,
-				822823B91B862A0A004154E7 /* Ballston Aerial02.jpg in Resources */,
 				883D77251C04DD65004B0136 /* phase_c_color_00037.png in Resources */,
 				8892EE1F1BC2092B00347146 /* phase_d_color_00039.png in Resources */,
 				82115DE31B6FB14400A36684 /* GoodPro-Book.otf in Resources */,
 				8892ED831BC2092B00347146 /* phase_d_base_00014.jpg in Resources */,
 				88314F471CECDC50007685BB /* Point Street_Design Development_Final_01.15.2015 14.jpeg in Resources */,
 				8892EB061BC2082C00347146 /* phase_b_base_00045.jpg in Resources */,
-				822823AE1B862A0A004154E7 /* store06.jpg in Resources */,
-				8228237B1B862A0A004154E7 /* View 8 - Plaza.jpg in Resources */,
 				8892EA811BC2082C00347146 /* phase_a_base_00056.jpg in Resources */,
 				8892EE141BC2092B00347146 /* phase_d_color_00028.png in Resources */,
 				887647FB1BA35247002D4183 /* Parcel_02-Excelon@2x.jpg in Resources */,
@@ -6757,7 +6058,6 @@
 				8892EB871BC2082C00347146 /* phase_c_base_00030.jpg in Resources */,
 				883D77201C04DD65004B0136 /* phase_c_color_00032.png in Resources */,
 				88314FB81CECDC50007685BB /* Harbor Point Flyer - Print.jpeg in Resources */,
-				824D2B2F1B6186FA00E5F5A5 /* Victory Center_Highway View.jpg in Resources */,
 				883D78361C04DE21004B0136 /* phase_b_color_00017.png in Resources */,
 				8819D8501BB8515400015AF5 /* image002.png in Resources */,
 				88314F0A1CECDC50007685BB /* 1119 Exelon c2 5t.jpg in Resources */,
@@ -6772,9 +6072,7 @@
 				883D78611C04DE21004B0136 /* phase_b_color_00060.png in Resources */,
 				883D77B21C04DE14004B0136 /* phase_a_color_00031.png in Resources */,
 				8819D8201BB8515400015AF5 /* Harbor_Point_Park@2x.jpg in Resources */,
-				822823DA1B862A0A004154E7 /* thumb_film4.jpg in Resources */,
 				8819D8361BB8515400015AF5 /* Central Plaza 1.jpg in Resources */,
-				822823C71B862A0A004154E7 /* Picture 056.jpg in Resources */,
 				88314F631CECDC50007685BB /* 0504 Wills Wharf c1 OP1 3t.jpg.__1280__xx__800__1463172090 in Resources */,
 				8861DD351BFD55CC006A7D13 /* grfx_mapMenuBtnDef.png in Resources */,
 				889E4A021CD40471007F6886 /* site360-select.gif in Resources */,
@@ -6789,7 +6087,6 @@
 				88314F5D1CECDC50007685BB /* Thames Street 5.jpg in Resources */,
 				8819D83F1BB8515400015AF5 /* H and S Formal - 1.jpg in Resources */,
 				883D779E1C04DE14004B0136 /* phase_a_color_00011.png in Resources */,
-				822823E41B862A0A004154E7 /* thumb_market.jpg in Resources */,
 				8892EB761BC2082C00347146 /* phase_c_base_00013.jpg in Resources */,
 				8892EA901BC2082C00347146 /* phase_a_base_00071.jpg in Resources */,
 				88314F961CECDC50007685BB /* 2_12a Wills Plot 9.jpeg in Resources */,
@@ -6808,12 +6105,10 @@
 				883D772B1C04DD65004B0136 /* phase_c_color_00043.png in Resources */,
 				88314F011CECDC50007685BB /* 15-0202_overall south west.jpg.__128__xx__128__1455223599 in Resources */,
 				88314FF21CECDC50007685BB /* Parcel 1.4.png.__128__xx__128__1463172919 in Resources */,
-				822823D01B862A0A004154E7 /* thumb_arch.jpg in Resources */,
 				88314FFF1CECDC50007685BB /* Central Plaza 1.png.__800__xx__600__1455224469 in Resources */,
 				880F242A1BFFBD23001EA4E9 /* parking-phase-3@2x.png.__180__xx__180__1447964555 in Resources */,
 				824D2B151B6169AB00E5F5A5 /* ImageData.plist in Resources */,
 				8861DD581BFD55CC006A7D13 /* ui_tips_menu@2x.png in Resources */,
-				822823BC1B862A0A004154E7 /* 0364 BCM (c) 2014 David Galen.jpg in Resources */,
 				8892EA591BC2082C00347146 /* phase_a_base_00016.jpg in Resources */,
 				8861DDE81BFD55E6006A7D13 /* grfx_siteMap_overlay_parking_01.png in Resources */,
 				8892EAD91BC2082C00347146 /* phase_b_base_00000.jpg in Resources */,
@@ -6828,7 +6123,6 @@
 				883D77101C04DD65004B0136 /* phase_c_color_00016.png in Resources */,
 				8861DD4B1BFD55CC006A7D13 /* grfx_unselectedFrame.png in Resources */,
 				883D782E1C04DE21004B0136 /* phase_b_color_00009.png in Resources */,
-				822823CA1B862A0A004154E7 /* 0099 BCM (c) 2014 David Galen.jpg in Resources */,
 				88314F921CECDC50007685BB /* 2_12a Wills Plot 5.jpeg in Resources */,
 				8892EE291BC2092B00347146 /* phase_d_color_00049.png in Resources */,
 				8819D8601BB8515400015AF5 /* thumb_generic.png in Resources */,
@@ -6870,7 +6164,6 @@
 				883D77AA1C04DE14004B0136 /* phase_a_color_00023.png in Resources */,
 				883D77B61C04DE14004B0136 /* phase_a_color_00035.png in Resources */,
 				8861DD3F1BFD55CC006A7D13 /* grfx_menuSettings.jpg in Resources */,
-				822823D81B862A0A004154E7 /* thumb_film2.jpg in Resources */,
 				88314F041CECDC50007685BB /* Lobby_R01.jpg.__800__xx__600__1455224333 in Resources */,
 				88E074591B98CFB400E0982A /* tut_map_zoom.gif in Resources */,
 				824D2BBF1B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View03_051215.jpg.jpg in Resources */,
@@ -6893,7 +6186,6 @@
 				8892EA831BC2082C00347146 /* phase_a_base_00058.jpg in Resources */,
 				8892EDBD1BC2092B00347146 /* phase_d_base_00043.jpg in Resources */,
 				824D2BE21B62D02100E5F5A5 /* share_store02.jpg.jpg in Resources */,
-				822823CB1B862A0A004154E7 /* Pg 7D  0075 BCM (c) 2014 David Galen.jpg in Resources */,
 				8892EADF1BC2082C00347146 /* phase_b_base_00006.jpg in Resources */,
 				8892EE371BC2092B00347146 /* phase_d_color_00063.png in Resources */,
 				824D2BD91B62D02100E5F5A5 /* share_Picture 035.jpg.jpg in Resources */,
@@ -6912,16 +6204,13 @@
 				882C8AD81CD7E39A002DE1AD /* grfx-partners-klnb.png in Resources */,
 				8892ED6D1BC2092B00347146 /* phase_d_base_00003.jpg in Resources */,
 				8892EBA41BC2082C00347146 /* phase_c_base_00059.jpg in Resources */,
-				822823891B862A0A004154E7 /* Existing_Page_1.jpg in Resources */,
 				880F241E1BFFBD23001EA4E9 /* master-plan-parcel-names.png in Resources */,
 				82115DF41B7012A600A36684 /* grfx_building@2x.jpg in Resources */,
 				8892EDF11BC2092B00347146 /* phase_d_base_00069.jpg in Resources */,
 				883D779D1C04DE14004B0136 /* phase_a_color_00010.png in Resources */,
-				824D2B2D1B6186FA00E5F5A5 /* Soutwest View of Victory Center.jpg in Resources */,
 				88314F8A1CECDC50007685BB /* 2_12a Wills Plot 19.jpeg in Resources */,
 				88314F5E1CECDC50007685BB /* Thames Street 6.jpg in Resources */,
 				8892EADA1BC2082C00347146 /* phase_b_base_00001.jpg in Resources */,
-				822823831B862A0A004154E7 /* Ballston_Presentation_072414-low res.pdf in Resources */,
 				8892EAE21BC2082C00347146 /* phase_b_base_00009.jpg in Resources */,
 				8892EAF51BC2082C00347146 /* phase_b_base_00028.jpg in Resources */,
 				8892EBA71BC2082C00347146 /* phase_c_base_00062.jpg in Resources */,
@@ -6941,7 +6230,6 @@
 				8892EE281BC2092B00347146 /* phase_d_color_00048.png in Resources */,
 				883D77411C04DD65004B0136 /* phase_c_color_00065.png in Resources */,
 				824D2BBD1B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View01_051215.jpg.jpg in Resources */,
-				822823E01B862A0A004154E7 /* thumb_inspiration.jpg in Resources */,
 				880FDB991CD14A0800B0110C /* grfx-partners-jll.png in Resources */,
 				8861DE001BFD55E6006A7D13 /* grfx_siteMap_overlay_access_legend.png in Resources */,
 				88314FBB1CECDC50007685BB /* I2411 Canopy Baltimore - King Guestroom MD05_PS_FINAL.jpg in Resources */,
@@ -6953,7 +6241,6 @@
 				8892EE131BC2092B00347146 /* phase_d_color_00027.png in Resources */,
 				883D772A1C04DD65004B0136 /* phase_c_color_00042.png in Resources */,
 				8892EAE41BC2082C00347146 /* phase_b_base_00011.jpg in Resources */,
-				822823E11B862A0A004154E7 /* thumb_interior.jpg in Resources */,
 				8892EB841BC2082C00347146 /* phase_c_base_00027.jpg in Resources */,
 				8819D8331BB8515400015AF5 /* C01.jpg in Resources */,
 				88314F0C1CECDC50007685BB /* Exelon - LEVEL 1 - D1-D4.jpeg in Resources */,
@@ -6985,8 +6272,6 @@
 				824D2BBE1B62D02100E5F5A5 /* share_final\BallstonCommon_LivingRendering_View02_051215.jpg.jpg in Resources */,
 				88314F691CECDC50007685BB /* 0928+LI+Copier+c1+4t (1).jpg.__1280__xx__800__1455223831 in Resources */,
 				824D2B451B62B5C600E5F5A5 /* EMBSPCell.xib in Resources */,
-				822823E81B862A0A004154E7 /* thumb_presentation.jpg in Resources */,
-				8228238F1B862A0A004154E7 /* Leasing_Page_3.jpg in Resources */,
 				8892EB7B1BC2082C00347146 /* phase_c_base_00018.jpg in Resources */,
 				8892EDCF1BC2092B00347146 /* phase_d_base_00052.jpg in Resources */,
 				8892EA841BC2082C00347146 /* phase_a_base_00059.jpg in Resources */,
@@ -7002,13 +6287,11 @@
 				88314FC51CECDC50007685BB /* Maryland Financing  Incentives120915 (3) 6.jpeg in Resources */,
 				883D77D61C04DE14004B0136 /* phase_a_color_00067.png in Resources */,
 				824D2BE71B62D02100E5F5A5 /* share_store07.jpg.jpg in Resources */,
-				822823E91B862A0A004154E7 /* thumb_sdpackage.jpg in Resources */,
 				8892EE3A1BC2092B00347146 /* phase_d_color_00066.png in Resources */,
 				88314FD81CECDC50007685BB /* Parcel 3.1.png.__800__xx__600__1463172580 in Resources */,
 				88314FFC1CECDC50007685BB /* Parcel 1.4.png in Resources */,
 				883D78551C04DE21004B0136 /* phase_b_color_00048.png in Resources */,
 				88314F031CECDC50007685BB /* Lobby_R01.jpg.__128__xx__128__1455224333 in Resources */,
-				822823E71B862A0A004154E7 /* thumb_photo.jpg in Resources */,
 				88314F0D1CECDC50007685BB /* Exelon Level 2 P1-P8.jpeg in Resources */,
 				88314F171CECDC50007685BB /* Apartment Entrance_20160321-2.jpg.__800__xx__600__1463173230 in Resources */,
 				824D2BCA1B62D02100E5F5A5 /* share_inspi06.jpg.jpg in Resources */,
@@ -7023,7 +6306,6 @@
 				88314FE61CECDC50007685BB /* Neoscape_BeattyDevelopmentHarbor Point_HarborView_FINAL.jpg.__128__xx__128__1463172752 in Resources */,
 				8892EB6A1BC2082C00347146 /* phase_c_base_00001.jpg in Resources */,
 				8819D8571BB8515400015AF5 /* Point St. Permit Set without Landscape(Resubmission) (dragged) 1.pdf in Resources */,
-				824D2B321B6186FA00E5F5A5 /* View of Victory Center and Dart Transit System.jpg in Resources */,
 				8861DE6D1BFD5F1C006A7D13 /* supporting-stories-eco-district.png in Resources */,
 				8861DDFA1BFD55E6006A7D13 /* grfx_regionalMap_overlay_stats.png in Resources */,
 				824D2BCE1B62D02100E5F5A5 /* share_market_interior01.jpg.jpg in Resources */,
