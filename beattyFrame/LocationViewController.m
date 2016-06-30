@@ -380,8 +380,10 @@ static float    bottomHeight = 37;
 {
     NSLog(@"loadAppleMap");
     
-    [self clearKeys];
-    self
+    if (_tview) {
+        [self clearKeys];
+    }
+
     [_uib_appleMap setTitle:@"Close Apple Maps" forState:UIControlStateNormal];
     [uib_appleMap setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [_uib_appleMap sizeToFit];
