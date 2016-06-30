@@ -9,17 +9,7 @@
 #import "tappableview.h"
 #import "Tappable.h"
 
-#ifdef DEBUG
-
-// Something to log your sensitive data here
 #define kcanLabelsBeDragged NO
-
-#else
-
-//
-
-#endif
-
 
 @interface tappableview ()
 @property BOOL isPressed;
