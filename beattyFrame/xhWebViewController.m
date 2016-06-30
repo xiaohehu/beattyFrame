@@ -83,11 +83,11 @@
 																  target:self
 																  action:@selector(webStop)];
 	
-	UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
-																				 target:self
-																				 action:@selector(callOutActSheet)];
+	//UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+	//																			 target:self
+	//																			 action:@selector(callOutActSheet)];
 	
-    NSArray *buttonItems = [NSArray arrayWithObjects:closeButton,flexButton,backButton,forwardButton,refreshButton,stopButton, shareButton,nil];
+    NSArray *buttonItems = [NSArray arrayWithObjects:closeButton,flexButton,backButton,forwardButton,refreshButton,stopButton,nil];
     [toolbar setItems:buttonItems];
     return toolbar;
 }
