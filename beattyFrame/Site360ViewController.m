@@ -49,15 +49,16 @@ static float bottomMenuHeight  = 37.0;
     [self appInit];
     NSLog(@"viewDidLoad");
 
-    [self createBottomMenu];
+    isColorPicked = NO;
 
-    //[self tapBottomButton:btn];
+    [self createBottomMenu];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     
     NSLog(@"viewWillAppear");
-    
+    isColorPicked = NO;
+
     [self performSelector:@selector(tapBottomButton:) withObject:arr_menuButton[3] afterDelay:1.0];
 }
 
@@ -255,7 +256,7 @@ static float bottomMenuHeight  = 37.0;
 #pragma mark - METHODS FOR PICKING BUILDING
 #pragma mark picked color from color
 
-- (void) pickedColor:(UIColor*)color {
+- (void)pickedColor:(UIColor*)color {
     
     if (isColorPicked==YES) {
         return;
