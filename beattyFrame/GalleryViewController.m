@@ -19,7 +19,7 @@
 
 //#import "UIColor+Extensions.h"
 
-@interface GalleryViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, XHGalleryDelegate>
+@interface GalleryViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, XHGalleryDelegate,UIDocumentInteractionControllerDelegate>
 {
     UIButton            *uib_sectionTitle;
    
@@ -58,6 +58,8 @@
     __weak IBOutlet UIView *uiv_preparedFor;
     
     BOOL                isShare;
+   UIDocumentInteractionController *doccontroller;
+
 }
 @property (weak, nonatomic) IBOutlet UICollectionView *uic_collectionView;
 @property (strong, nonatomic)   XHGalleryViewController *gallery;
@@ -310,6 +312,7 @@
 
     cell.backgroundColor = [UIColor clearColor];
     [cell.titleLabel setText:[totalCap objectAtIndex:indexPath.row]];
+   NSLog(@"cap: %@",[totalCap objectAtIndex:indexPath.row]);
     cell.titleLabel.font = [UIFont fontWithName:@"GoodPro-Book" size:11];
 
     
@@ -471,57 +474,54 @@
     } else {
         NSMutableArray *images = [NSMutableArray new];
         NSMutableArray *captions = [NSMutableArray new];
-        NSDictionary *ggallDict = [arr_AlbumData objectAtIndex:indexPath.section];
-        NSArray *ggalleryArray = [ggallDict objectForKey:@"sectioninfo"];
-        
-        for (int i = 0; i < [ggalleryArray count]; i++) {
-            NSDictionary *itemDic = [[NSDictionary alloc] initWithDictionary:ggalleryArray[i]];
-            
-            //Add all items' names into this array
-            images = [itemDic objectForKey:@"assets"];
-            captions = [itemDic objectForKey:@"captions"];
-        }     
-        
-//        NSEnumerator *enumerator = [images objectEnumerator];
-//        id imagePath;
-//        //NSString *newImageName;
-//        
-////        NSMutableArray *noPDFsimageNames = [[NSMutableArray alloc] init];
-//        
-//        while (imagePath = [enumerator nextObject]) {
-//            //Remove the file extension
-//            if ([[imagePath pathExtension] isEqualToString:@"pdf"]) {
-//                [images removeObject:imagePath];
-//                NSUInteger path = [images indexOfObject:imagePath];
-//                [captions removeObjectAtIndex:12];
-//            }
-////            newImageName = [imagePath stringByDeletingPathExtension];
-////            [noPDFsimageNames addObject:newImageName];
-//        }
-//        
-//        NSLog(@"\n\n%@\n\n", images);
-//        NSLog(@"\n\n%@\n\n", captions);
+        NSDictionary *sectionOuterDict = [[arr_AlbumData objectAtIndex:indexPath.section] objectForKey:@"sectioninfo"] [0];
+        //NSArray *assetArray = [sectionOuterDict objectForKey:@"sectioninfo"];
+       NSArray *assetArray = [sectionOuterDict objectForKey:@"assets"];
 
-        NSMutableArray *galleryData = [NSMutableArray new];
-        
-        for (int i = 0; i < images.count; i++) {
-            NSDictionary *gallery_item = @{
-                                           @"caption" : captions[i],
-                                           @"file" : images[i],
-                                           @"type" : @"image"
-                                           };
-            [galleryData addObject: gallery_item];
-        }
-        NSLog(@"\n\n%@\n\n", galleryData);
-        
-        _gallery = [[XHGalleryViewController alloc] init];
-        _gallery.delegate = self;
-        _gallery.startIndex = indexPath.row; 		// Change this value to start with different page
-        _gallery.view.frame = self.view.bounds; 	// Change to load different frame
-        _gallery.arr_rawData = galleryData;//arr_rawData[0];
-        [self addChildViewController: _gallery];
-        [self.view addSubview: _gallery.view];
-    }
+       NSLog(@"sectionOuterDict %@ ",sectionOuterDict);
+       
+       if ([[sectionOuterDict objectForKey:@"albumtype"] isEqualToString:@"pdf"]) {
+          
+          [self viewPDF:assetArray[indexPath.row]];
+          
+       } else {
+          
+          for (int i = 0; i < [assetArray count]; i++) {
+             NSDictionary *itemDic = [[NSDictionary alloc] initWithDictionary:sectionOuterDict];
+             
+             //Add all items' names into this array
+             images = [itemDic objectForKey:@"assets"];
+             captions = [itemDic objectForKey:@"captions"];
+          }
+
+          
+//          for (int i = 0; i < [assetArray count]; i++) {
+//             NSDictionary *itemDic = [[NSDictionary alloc] initWithDictionary:assetArray[i]];
+//             //Add all items' names into this array
+//             images = [itemDic objectForKey:@"assets"];
+//             captions = [itemDic objectForKey:@"captions"];
+//          }
+          
+          NSMutableArray *galleryData = [NSMutableArray new];
+          
+          for (int i = 0; i < images.count; i++) {
+             NSDictionary *gallery_item = @{
+                                            @"caption" : captions[i],
+                                            @"file" : images[i],
+                                            @"type" : @"image"
+                                            };
+             [galleryData addObject: gallery_item];
+          }
+          
+          _gallery = [[XHGalleryViewController alloc] init];
+          _gallery.delegate = self;
+          _gallery.startIndex = indexPath.row; 		// Change this value to start with different page
+          _gallery.view.frame = self.view.bounds; 	// Change to load different frame
+          _gallery.arr_rawData = galleryData;//arr_rawData[0];
+          [self addChildViewController: _gallery];
+          [self.view addSubview: _gallery.view];
+       }
+   }
 }
 
 -(CGFloat)byteSizeOfFile
@@ -1108,6 +1108,36 @@
         NSLog(@"Unable to write PDF to %@. Error: %@", pdfDirectoryString,[error localizedDescription]);
     }
 }
+
+#pragma mark
+#pragma mark PDF Viewer
+
+-(void)viewPDF:(NSString*)thisPDF
+{
+   NSString *fileToOpen = [[NSBundle mainBundle] pathForResource:[thisPDF stringByDeletingPathExtension]  ofType:@"pdf"];
+   NSURL *url = [NSURL fileURLWithPath:fileToOpen];
+   doccontroller = [UIDocumentInteractionController interactionControllerWithURL:url];
+   [self previewDocumentWithURL:url];
+}
+
+- (void)previewDocumentWithURL:(NSURL*)url
+{
+   UIDocumentInteractionController* preview = [UIDocumentInteractionController interactionControllerWithURL:url];
+   preview.delegate = self;
+   [preview presentPreviewAnimated:YES];
+}
+
+//======================================================================
+- (void)documentInteractionControllerDidDismissOptionsMenu:(UIDocumentInteractionController *)controller{
+   [[UIApplication sharedApplication] setStatusBarHidden:YES ];
+}
+
+//===================================================================
+- (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller
+{
+   return self;
+}
+
 
 - (void)didRemoveFromSuperView
 {
