@@ -20,7 +20,7 @@
 @synthesize webView, ebTitle, appDelegate;
 
 - (BOOL)prefersStatusBarHidden {
-    return YES;
+    return NO;
 }
 -(void)viewWillAppear:(BOOL)animated {
 //	[self checkWireless];

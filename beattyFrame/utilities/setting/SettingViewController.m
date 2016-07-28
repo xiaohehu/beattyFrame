@@ -20,7 +20,7 @@
 @implementation SettingViewController
 
 - (BOOL)prefersStatusBarHidden {
-    return YES;
+    return NO;
 }
 
 - (instancetype)init

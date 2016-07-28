@@ -29,7 +29,7 @@
 }
 
 - (BOOL)prefersStatusBarHidden {
-    return YES;
+    return NO;
 }
 
 - (void)viewDidLoad {

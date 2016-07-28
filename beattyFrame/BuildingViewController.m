@@ -58,7 +58,7 @@
 #pragma mark - View Controller Life-cycle
 
 - (BOOL)prefersStatusBarHidden {
-    return YES;
+    return NO;
 }
 
 - (void)viewDidLoad {

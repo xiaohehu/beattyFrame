@@ -71,7 +71,8 @@
 @implementation GalleryViewController
 
 - (BOOL)prefersStatusBarHidden {
-    return YES;
+   
+   return NO;
 }
 
 - (void)viewDidLoad {
@@ -1135,7 +1136,18 @@
 //===================================================================
 - (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller
 {
+   [[UIApplication sharedApplication] setStatusBarHidden:YES];
    return self;
+}
+
+- (void)documentInteractionControllerWillBeginPreview:(UIDocumentInteractionController *)controller
+{
+   [[UIApplication sharedApplication] setStatusBarHidden:YES];
+}
+
+- (void)documentInteractionControllerDidEndPreview:(UIDocumentInteractionController *)controller
+{
+   [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 
 

@@ -100,7 +100,7 @@ static float    menuButtonSize = 50.0;
 @implementation ViewController
 #pragma mark - View Controller Life-cycle
 - (BOOL)prefersStatusBarHidden {
-    return YES;
+    return NO;
 }
 
 - (void)viewDidLoad {
