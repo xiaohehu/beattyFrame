@@ -76,7 +76,9 @@
 				<string>Aerial Photos</string>
 				<key>assets</key>
 				<array>
-					<string>15-0202_overall south west.jpg</string>
+                    <string>15-0202_overall south west.jpg</string>
+                    <string>View 1.jpg</string>
+                    <string>View 2.jpg</string>
 					<string>Exelon-Retail-View-3.jpg</string>
 					<string>Neoscape_BeattyDevelopmentHarbor Point_ExcelonRetail_FINAL.jpg</string>
 					<string>View02_Final.jpg</string>
@@ -85,7 +87,9 @@
 				</array>
 				<key>thumbs</key>
 				<array>
-					<string>15-0202_overall south west.jpg</string>
+                    <string>15-0202_overall south west.jpg</string>
+                    <string>View 1.jpg</string>
+                    <string>View 2.jpg</string>
 					<string>Exelon-Retail-View-3.jpg</string>
 					<string>Neoscape_BeattyDevelopmentHarbor Point_ExcelonRetail_FINAL.jpg</string>
 					<string>View02_Final.jpg</string>
@@ -94,7 +98,9 @@
 				</array>
 				<key>captions</key>
 				<array>
-					<string>Southwest View</string>
+                    <string>Southwest View</string>
+                    <string>View 1</string>
+                    <string>View 2</string>
 					<string></string>
 					<string></string>
 					<string></string>
@@ -119,14 +125,35 @@
 				<key>assets</key>
 				<array>
 					<string>Apartment Entrance_20160321-2.jpg</string>
+                    <string>Bedroom.jpg</string>
+                    <string>Kitchen.jpg</string>
+                    <string>Living Room.jpg</string>
+                    <string>Lobby.jpg</string>
+                    <string>Resident Conference Room.jpg</string>
+                    <string>Resident Lounge 1.jpg</string>
+                    <string>Resident Lounge 2.jpg</string>
 				</array>
 				<key>thumbs</key>
 				<array>
 					<string>Apartment Entrance_20160321-2.jpg</string>
+                    <string>Bedroom.jpg</string>
+                    <string>Kitchen.jpg</string>
+                    <string>Living Room.jpg</string>
+                    <string>Lobby.jpg</string>
+                    <string>Resident Conference Room.jpg</string>
+                    <string>Resident Lounge 1.jpg</string>
+                    <string>Resident Lounge 2.jpg</string>
 				</array>
 				<key>captions</key>
 				<array>
 					<string>Entrance</string>
+                    <string>Bedroom</string>
+                    <string>Kitchen</string>
+                    <string>Living Room</string>
+                    <string>Lobby</string>
+                    <string>Resident Conference Room</string>
+                    <string>Resident Lounge 1</string>
+                    <string>Resident Lounge 2</string>
 				</array>
 			</dict>
 		</array>

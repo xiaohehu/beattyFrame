@@ -2519,6 +2519,24 @@
 		88AAFBDF1D5BBE1F00EE912E /* phase_b_color_00064.png in Resources */ = {isa = PBXBuildFile; fileRef = 883D781C1C04DE21004B0136 /* phase_b_color_00064.png */; };
 		88AAFBE01D5BBE1F00EE912E /* phase_d_color_00013.png in Resources */ = {isa = PBXBuildFile; fileRef = 8892ED2B1BC2092B00347146 /* phase_d_color_00013.png */; };
 		88C60B961CC95F130079B81F /* CurrentFutureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C60B951CC95F130079B81F /* CurrentFutureViewController.m */; };
+		88D9B9061D99A7E400B057AF /* View 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B9041D99A7E400B057AF /* View 1.jpg */; };
+		88D9B9071D99A7E400B057AF /* View 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B9041D99A7E400B057AF /* View 1.jpg */; };
+		88D9B9081D99A7E400B057AF /* View 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B9051D99A7E400B057AF /* View 2.jpg */; };
+		88D9B9091D99A7E400B057AF /* View 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B9051D99A7E400B057AF /* View 2.jpg */; };
+		88D9B9111D99A8C800B057AF /* Bedroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B90A1D99A8C800B057AF /* Bedroom.jpg */; };
+		88D9B9121D99A8C800B057AF /* Bedroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B90A1D99A8C800B057AF /* Bedroom.jpg */; };
+		88D9B9131D99A8C800B057AF /* Kitchen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B90B1D99A8C800B057AF /* Kitchen.jpg */; };
+		88D9B9141D99A8C800B057AF /* Kitchen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B90B1D99A8C800B057AF /* Kitchen.jpg */; };
+		88D9B9151D99A8C800B057AF /* Living Room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B90C1D99A8C800B057AF /* Living Room.jpg */; };
+		88D9B9161D99A8C800B057AF /* Living Room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B90C1D99A8C800B057AF /* Living Room.jpg */; };
+		88D9B9171D99A8C800B057AF /* Lobby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B90D1D99A8C800B057AF /* Lobby.jpg */; };
+		88D9B9181D99A8C800B057AF /* Lobby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B90D1D99A8C800B057AF /* Lobby.jpg */; };
+		88D9B9191D99A8C800B057AF /* Resident Conference Room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B90E1D99A8C800B057AF /* Resident Conference Room.jpg */; };
+		88D9B91A1D99A8C800B057AF /* Resident Conference Room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B90E1D99A8C800B057AF /* Resident Conference Room.jpg */; };
+		88D9B91B1D99A8C800B057AF /* Resident Lounge 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B90F1D99A8C800B057AF /* Resident Lounge 1.jpg */; };
+		88D9B91C1D99A8C800B057AF /* Resident Lounge 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B90F1D99A8C800B057AF /* Resident Lounge 1.jpg */; };
+		88D9B91D1D99A8C800B057AF /* Resident Lounge 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B9101D99A8C800B057AF /* Resident Lounge 2.jpg */; };
+		88D9B91E1D99A8C800B057AF /* Resident Lounge 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D9B9101D99A8C800B057AF /* Resident Lounge 2.jpg */; };
 		88E0744F1B98CFB400E0982A /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074311B98CFB400E0982A /* ContainerViewController.m */; };
 		88E074501B98CFB400E0982A /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074341B98CFB400E0982A /* FLAnimatedImage.m */; };
 		88E074511B98CFB400E0982A /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E074361B98CFB400E0982A /* FLAnimatedImageView.m */; };
@@ -3860,6 +3878,15 @@
 		88AAFBE61D5BBE1F00EE912E /* beattyFrame store-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "beattyFrame store-Info.plist"; path = "/Users/evan.buxton/Documents/_NEOSCAPE_PROJECTS/beattyFrame/beattyFrame store-Info.plist"; sourceTree = "<absolute>"; };
 		88C60B941CC95F130079B81F /* CurrentFutureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentFutureViewController.h; sourceTree = "<group>"; };
 		88C60B951CC95F130079B81F /* CurrentFutureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentFutureViewController.m; sourceTree = "<group>"; };
+		88D9B9041D99A7E400B057AF /* View 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 1.jpg"; sourceTree = "<group>"; };
+		88D9B9051D99A7E400B057AF /* View 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "View 2.jpg"; sourceTree = "<group>"; };
+		88D9B90A1D99A8C800B057AF /* Bedroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bedroom.jpg; sourceTree = "<group>"; };
+		88D9B90B1D99A8C800B057AF /* Kitchen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kitchen.jpg; sourceTree = "<group>"; };
+		88D9B90C1D99A8C800B057AF /* Living Room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Living Room.jpg"; sourceTree = "<group>"; };
+		88D9B90D1D99A8C800B057AF /* Lobby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lobby.jpg; sourceTree = "<group>"; };
+		88D9B90E1D99A8C800B057AF /* Resident Conference Room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Resident Conference Room.jpg"; sourceTree = "<group>"; };
+		88D9B90F1D99A8C800B057AF /* Resident Lounge 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Resident Lounge 1.jpg"; sourceTree = "<group>"; };
+		88D9B9101D99A8C800B057AF /* Resident Lounge 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Resident Lounge 2.jpg"; sourceTree = "<group>"; };
 		88E074301B98CFB400E0982A /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
 		88E074311B98CFB400E0982A /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		88E074331B98CFB400E0982A /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
@@ -4680,6 +4707,8 @@
 		88314DD91CECDC50007685BB /* 01_Exelon_Bldg */ = {
 			isa = PBXGroup;
 			children = (
+				88D9B9041D99A7E400B057AF /* View 1.jpg */,
+				88D9B9051D99A7E400B057AF /* View 2.jpg */,
 				88314DE71CECDC50007685BB /* 0119 Exelon c1 6t.jpeg */,
 				88314DE81CECDC50007685BB /* 1119 Exelon c2 5t.jpg */,
 				88314DE91CECDC50007685BB /* 15-0202_overall south west.jpg */,
@@ -4708,6 +4737,13 @@
 				88314DFC1CECDC50007685BB /* 1119 Exelon c2 5t.jpg */,
 				88314DFD1CECDC50007685BB /* Apartment Entrance_20160321-2.jpg */,
 				88314DFE1CECDC50007685BB /* Lobby_R01.jpg */,
+				88D9B90A1D99A8C800B057AF /* Bedroom.jpg */,
+				88D9B90B1D99A8C800B057AF /* Kitchen.jpg */,
+				88D9B90C1D99A8C800B057AF /* Living Room.jpg */,
+				88D9B90D1D99A8C800B057AF /* Lobby.jpg */,
+				88D9B90E1D99A8C800B057AF /* Resident Conference Room.jpg */,
+				88D9B90F1D99A8C800B057AF /* Resident Lounge 1.jpg */,
+				88D9B9101D99A8C800B057AF /* Resident Lounge 2.jpg */,
 			);
 			path = "02_1305 Dock Street";
 			sourceTree = "<group>";
@@ -6426,6 +6462,7 @@
 				883D784B1C04DE21004B0136 /* phase_b_color_00038.png in Resources */,
 				88314F1A1CECDC50007685BB /* 0119 Exelon c1 6t.jpeg in Resources */,
 				8861DE351BFD5844006A7D13 /* parcel-panel-parcel-1.png in Resources */,
+				88D9B9151D99A8C800B057AF /* Living Room.jpg in Resources */,
 				883D78501C04DE21004B0136 /* phase_b_color_00043.png in Resources */,
 				8892EA801BC2082C00347146 /* phase_a_base_00055.jpg in Resources */,
 				8892EB971BC2082C00347146 /* phase_c_base_00046.jpg in Resources */,
@@ -6458,6 +6495,7 @@
 				8892EE151BC2092B00347146 /* phase_d_color_00029.png in Resources */,
 				883D77111C04DD65004B0136 /* phase_c_color_00017.png in Resources */,
 				880F242C1BFFBD23001EA4E9 /* parking-phase-1.png in Resources */,
+				88D9B9171D99A8C800B057AF /* Lobby.jpg in Resources */,
 				8892EBAC1BC2082C00347146 /* phase_c_base_00067.jpg in Resources */,
 				88314FC21CECDC50007685BB /* Maryland Financing  Incentives120915 (3) 3.jpeg in Resources */,
 				8892EDE51BC2092B00347146 /* phase_d_base_00063.jpg in Resources */,
@@ -6575,6 +6613,7 @@
 				8819D8401BB8515400015AF5 /* H and S Formal - 16.jpg in Resources */,
 				8892ED7F1BC2092B00347146 /* phase_d_base_00012.jpg in Resources */,
 				8819D8371BB8515400015AF5 /* Central Plaza 2.jpg in Resources */,
+				88D9B9061D99A7E400B057AF /* View 1.jpg in Resources */,
 				8861DDF71BFD55E6006A7D13 /* grfx_regionalMap_overlay_access@2x.png in Resources */,
 				883D77AD1C04DE14004B0136 /* phase_a_color_00026.png in Resources */,
 				824D2BDE1B62D02100E5F5A5 /* share_Picture 050.jpg.jpg in Resources */,
@@ -6673,6 +6712,7 @@
 				8861DE6E1BFD5F1C006A7D13 /* supporting-stories-cultural-hub@2x.png in Resources */,
 				883D77A21C04DE14004B0136 /* phase_a_color_00015.png in Resources */,
 				8892EB881BC2082C00347146 /* phase_c_base_00031.jpg in Resources */,
+				88D9B9111D99A8C800B057AF /* Bedroom.jpg in Resources */,
 				8861DD3A1BFD55CC006A7D13 /* grfx_menuGallery@2x.jpg in Resources */,
 				88A0E0321D343E7A00D72B2F /* EZ Info Sheet 2014 V2 PDF.pdf in Resources */,
 				883D77941C04DE14004B0136 /* phase_a_color_00001.png in Resources */,
@@ -6724,6 +6764,7 @@
 				8861DD551BFD55CC006A7D13 /* ui_tips_icon.png in Resources */,
 				883D77C71C04DE14004B0136 /* phase_a_color_00052.png in Resources */,
 				88314F111CECDC50007685BB /* View02_Final.jpg in Resources */,
+				88D9B91B1D99A8C800B057AF /* Resident Lounge 1.jpg in Resources */,
 				88314F281CECDC50007685BB /* Parcel 4 floorplan 4.jpeg in Resources */,
 				88314F3D1CECDC50007685BB /* c03_B CROPPED - revised with corner windows.jpg in Resources */,
 				883D77091C04DD65004B0136 /* phase_c_color_00009.png in Resources */,
@@ -6774,6 +6815,7 @@
 				8892EA491BC2082C00347146 /* phase_a_base_00000.jpg in Resources */,
 				8819D8321BB8515400015AF5 /* Apartment_R01.jpg in Resources */,
 				824D2BC61B62D02100E5F5A5 /* share_inspi02.jpg.jpg in Resources */,
+				88D9B9191D99A8C800B057AF /* Resident Conference Room.jpg in Resources */,
 				8892EA8C1BC2082C00347146 /* phase_a_base_00067.jpg in Resources */,
 				88314F811CECDC50007685BB /* 2_12a Wills Plot 10.jpeg in Resources */,
 				88E074601B98CFB400E0982A /* TutsTableCell.xib in Resources */,
@@ -6816,6 +6858,7 @@
 				88314FFA1CECDC50007685BB /* Parcel 1.2.png in Resources */,
 				883D77DA1C04DE14004B0136 /* phase_a_color_00071.png in Resources */,
 				8892EAEF1BC2082C00347146 /* phase_b_base_00022.jpg in Resources */,
+				88D9B91D1D99A8C800B057AF /* Resident Lounge 2.jpg in Resources */,
 				88314FA51CECDC50007685BB /* Canopy Brochure 5.jpeg in Resources */,
 				8892EAED1BC2082C00347146 /* phase_b_base_00020.jpg in Resources */,
 				883D77061C04DD65004B0136 /* phase_c_color_00006.png in Resources */,
@@ -6825,6 +6868,7 @@
 				8892EDB71BC2092B00347146 /* phase_d_base_00040.jpg in Resources */,
 				8861DE081BFD55E6006A7D13 /* grfx_siteMap_overlay_retail.png in Resources */,
 				824D2BB41B62D02100E5F5A5 /* share_Ballston Aerial02.jpg.jpg in Resources */,
+				88D9B9081D99A7E400B057AF /* View 2.jpg in Resources */,
 				8861DE6A1BFD5F1C006A7D13 /* supporting-stories-getting-to-work@2x.png in Resources */,
 				88314FF91CECDC50007685BB /* Parcel 1.1.png in Resources */,
 				883D77241C04DD65004B0136 /* phase_c_color_00036.png in Resources */,
@@ -7024,6 +7068,7 @@
 				883D782E1C04DE21004B0136 /* phase_b_color_00009.png in Resources */,
 				88314F921CECDC50007685BB /* 2_12a Wills Plot 5.jpeg in Resources */,
 				8892EE291BC2092B00347146 /* phase_d_color_00049.png in Resources */,
+				88D9B9131D99A8C800B057AF /* Kitchen.jpg in Resources */,
 				8819D8601BB8515400015AF5 /* thumb_generic.png in Resources */,
 				88314F951CECDC50007685BB /* 2_12a Wills Plot 8.jpeg in Resources */,
 				8861DE3E1BFD5844006A7D13 /* parcel-panel-point-st@2x.png in Resources */,
@@ -7629,6 +7674,7 @@
 				88AAF89B1D5BBE1F00EE912E /* phase_b_color_00038.png in Resources */,
 				88AAF89C1D5BBE1F00EE912E /* 0119 Exelon c1 6t.jpeg in Resources */,
 				88AAF89D1D5BBE1F00EE912E /* parcel-panel-parcel-1.png in Resources */,
+				88D9B9161D99A8C800B057AF /* Living Room.jpg in Resources */,
 				88AAF89E1D5BBE1F00EE912E /* phase_b_color_00043.png in Resources */,
 				88AAF89F1D5BBE1F00EE912E /* phase_a_base_00055.jpg in Resources */,
 				88AAF8A01D5BBE1F00EE912E /* phase_c_base_00046.jpg in Resources */,
@@ -7661,6 +7707,7 @@
 				88AAF8BD1D5BBE1F00EE912E /* phase_d_color_00029.png in Resources */,
 				88AAF8BE1D5BBE1F00EE912E /* phase_c_color_00017.png in Resources */,
 				88AAF8C01D5BBE1F00EE912E /* parking-phase-1.png in Resources */,
+				88D9B9181D99A8C800B057AF /* Lobby.jpg in Resources */,
 				88AAF8C11D5BBE1F00EE912E /* phase_c_base_00067.jpg in Resources */,
 				88AAF8C21D5BBE1F00EE912E /* Maryland Financing  Incentives120915 (3) 3.jpeg in Resources */,
 				88AAF8C31D5BBE1F00EE912E /* phase_d_base_00063.jpg in Resources */,
@@ -7778,6 +7825,7 @@
 				88AAF93C1D5BBE1F00EE912E /* H and S Formal - 16.jpg in Resources */,
 				88AAF93E1D5BBE1F00EE912E /* phase_d_base_00012.jpg in Resources */,
 				88AAF93F1D5BBE1F00EE912E /* Central Plaza 2.jpg in Resources */,
+				88D9B9071D99A7E400B057AF /* View 1.jpg in Resources */,
 				88AAF9401D5BBE1F00EE912E /* grfx_regionalMap_overlay_access@2x.png in Resources */,
 				88AAF9411D5BBE1F00EE912E /* phase_a_color_00026.png in Resources */,
 				88AAF9421D5BBE1F00EE912E /* share_Picture 050.jpg.jpg in Resources */,
@@ -7876,6 +7924,7 @@
 				88AAF9A51D5BBE1F00EE912E /* supporting-stories-cultural-hub@2x.png in Resources */,
 				88AAF9A61D5BBE1F00EE912E /* phase_a_color_00015.png in Resources */,
 				88AAF9A71D5BBE1F00EE912E /* phase_c_base_00031.jpg in Resources */,
+				88D9B9121D99A8C800B057AF /* Bedroom.jpg in Resources */,
 				88AAF9A81D5BBE1F00EE912E /* grfx_menuGallery@2x.jpg in Resources */,
 				88AAF9A91D5BBE1F00EE912E /* EZ Info Sheet 2014 V2 PDF.pdf in Resources */,
 				88AAF9AA1D5BBE1F00EE912E /* phase_a_color_00001.png in Resources */,
@@ -7927,6 +7976,7 @@
 				88AAF9DE1D5BBE1F00EE912E /* ui_tips_icon.png in Resources */,
 				88AAF9DF1D5BBE1F00EE912E /* phase_a_color_00052.png in Resources */,
 				88AAF9E01D5BBE1F00EE912E /* View02_Final.jpg in Resources */,
+				88D9B91C1D99A8C800B057AF /* Resident Lounge 1.jpg in Resources */,
 				88AAF9E11D5BBE1F00EE912E /* Parcel 4 floorplan 4.jpeg in Resources */,
 				88AAF9E21D5BBE1F00EE912E /* c03_B CROPPED - revised with corner windows.jpg in Resources */,
 				88AAF9E41D5BBE1F00EE912E /* phase_c_color_00009.png in Resources */,
@@ -7977,6 +8027,7 @@
 				88AAFA151D5BBE1F00EE912E /* phase_a_base_00000.jpg in Resources */,
 				88AAFA161D5BBE1F00EE912E /* Apartment_R01.jpg in Resources */,
 				88AAFA171D5BBE1F00EE912E /* share_inspi02.jpg.jpg in Resources */,
+				88D9B91A1D99A8C800B057AF /* Resident Conference Room.jpg in Resources */,
 				88AAFA181D5BBE1F00EE912E /* phase_a_base_00067.jpg in Resources */,
 				88AAFA191D5BBE1F00EE912E /* 2_12a Wills Plot 10.jpeg in Resources */,
 				88AAFA1A1D5BBE1F00EE912E /* TutsTableCell.xib in Resources */,
@@ -8019,6 +8070,7 @@
 				88AAFA421D5BBE1F00EE912E /* Parcel 1.2.png in Resources */,
 				88AAFA431D5BBE1F00EE912E /* phase_a_color_00071.png in Resources */,
 				88AAFA441D5BBE1F00EE912E /* phase_b_base_00022.jpg in Resources */,
+				88D9B91E1D99A8C800B057AF /* Resident Lounge 2.jpg in Resources */,
 				88AAFA451D5BBE1F00EE912E /* Canopy Brochure 5.jpeg in Resources */,
 				88AAFA461D5BBE1F00EE912E /* phase_b_base_00020.jpg in Resources */,
 				88AAFA471D5BBE1F00EE912E /* phase_c_color_00006.png in Resources */,
@@ -8028,6 +8080,7 @@
 				88AAFA4C1D5BBE1F00EE912E /* phase_d_base_00040.jpg in Resources */,
 				88AAFA4D1D5BBE1F00EE912E /* grfx_siteMap_overlay_retail.png in Resources */,
 				88AAFA4E1D5BBE1F00EE912E /* share_Ballston Aerial02.jpg.jpg in Resources */,
+				88D9B9091D99A7E400B057AF /* View 2.jpg in Resources */,
 				88AAFA4F1D5BBE1F00EE912E /* supporting-stories-getting-to-work@2x.png in Resources */,
 				88AAFA501D5BBE1F00EE912E /* Parcel 1.1.png in Resources */,
 				88AAFA511D5BBE1F00EE912E /* phase_c_color_00036.png in Resources */,
@@ -8227,6 +8280,7 @@
 				88AAFB1D1D5BBE1F00EE912E /* phase_b_color_00009.png in Resources */,
 				88AAFB1E1D5BBE1F00EE912E /* 2_12a Wills Plot 5.jpeg in Resources */,
 				88AAFB1F1D5BBE1F00EE912E /* phase_d_color_00049.png in Resources */,
+				88D9B9141D99A8C800B057AF /* Kitchen.jpg in Resources */,
 				88AAFB201D5BBE1F00EE912E /* thumb_generic.png in Resources */,
 				88AAFB211D5BBE1F00EE912E /* 2_12a Wills Plot 8.jpeg in Resources */,
 				88AAFB231D5BBE1F00EE912E /* parcel-panel-point-st@2x.png in Resources */,
