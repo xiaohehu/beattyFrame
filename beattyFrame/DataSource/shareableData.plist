@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>SectionName</key>
-		<string>3D ILLUSTRATIONS</string>
+		<string>Harbor Point</string>
 		<key>sectioninfo</key>
 		<array>
 			<dict>
@@ -64,7 +64,7 @@
 	</dict>
 	<dict>
 		<key>SectionName</key>
-		<string>Exelon</string>
+		<string>Exelon Building</string>
 		<key>sectioninfo</key>
 		<array>
 			<dict>
@@ -187,7 +187,7 @@
 	</dict>
 	<dict>
 		<key>SectionName</key>
-		<string>Point Street Apartments</string>
+		<string>1405 Point</string>
 		<key>sectioninfo</key>
 		<array>
 			<dict>
@@ -348,7 +348,7 @@
 	</dict>
 	<dict>
 		<key>SectionName</key>
-		<string>Wills Street</string>
+		<string>Wills Wharf</string>
 		<key>sectioninfo</key>
 		<array>
 			<dict>
@@ -696,7 +696,7 @@
 	</dict>
 	<dict>
 		<key>SectionName</key>
-		<string>Photos - Construction Aerials</string>
+		<string>Construction - Aerial Views</string>
 		<key>sectioninfo</key>
 		<array>
 			<dict>
@@ -735,7 +735,7 @@
 	</dict>
 	<dict>
 		<key>SectionName</key>
-		<string>Photos - Harbor East</string>
+		<string>Harbor East</string>
 		<key>sectioninfo</key>
 		<array>
 			<dict>
