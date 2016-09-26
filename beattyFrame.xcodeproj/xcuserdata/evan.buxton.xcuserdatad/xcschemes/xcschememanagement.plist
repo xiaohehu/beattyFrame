@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>beattyFrame store.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>beattyFrame.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>824D273A1B5D7E6700E5F5A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88AAF68B1D5BBE1F00EE912E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -46,18 +46,18 @@
 				</array>
 				<key>captions</key>
 				<array>
-                    <string>Central Plaza</string>
-                    <string>Harbor Point Park</string>
-                    <string>Parcel 1</string>
-                    <string>Exelon Building</string>
-                    <string>Parcel 3</string>
-                    <string>Parcel 4</string>
-                    <string>1405 Point</string>
-                    <string>Thames Street Wharf</string>
-                    <string>Wills Wharf</string>
-                    <string>Ariel View 1</string>
-                    <string>Ariel View 2</string>
-                    <string>Harbor View</string>
+					<string>Central Plaza</string>
+					<string>Harbor Point Park</string>
+					<string>Parcel 1</string>
+					<string>Exelon Building</string>
+					<string>Parcel 3</string>
+					<string>Parcel 4</string>
+					<string>1405 Point</string>
+					<string>Thames Street Wharf</string>
+					<string>Wills Wharf</string>
+					<string>Ariel View 1</string>
+					<string>Ariel View 2</string>
+					<string>Harbor View</string>
 				</array>
 			</dict>
 		</array>
@@ -94,12 +94,12 @@
 				</array>
 				<key>captions</key>
 				<array>
-                    <string>Southwest View</string>
-                    <string></string>
-                    <string></string>
-                    <string></string>
-                    <string>Floor Plan Level 1</string>
-                    <string>Floor Plan Level 2</string>
+					<string>Southwest View</string>
+					<string></string>
+					<string></string>
+					<string></string>
+					<string>Floor Plan Level 1</string>
+					<string>Floor Plan Level 2</string>
 				</array>
 			</dict>
 		</array>
@@ -171,16 +171,16 @@
 				</array>
 				<key>captions</key>
 				<array>
-                    <string>View 1</string>
-                    <string>View 2</string>
-                    <string>View 3</string>
-                    <string>Floor Plan Lower Level</string>
-                    <string>Floor Plan Level 2</string>
-                    <string>Floor Plan Level 3-4</string>
-                    <string>Floor Plan Level 5</string>
-                    <string>Floor Plan Level 6</string>
-                    <string>Floor Plan Level 7</string>
-                    <string>Floor Plan Level 8-22</string>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+					<string>Floor Plan Lower Level</string>
+					<string>Floor Plan Level 2</string>
+					<string>Floor Plan Level 3-4</string>
+					<string>Floor Plan Level 5</string>
+					<string>Floor Plan Level 6</string>
+					<string>Floor Plan Level 7</string>
+					<string>Floor Plan Level 8-22</string>
 				</array>
 			</dict>
 		</array>
@@ -263,37 +263,37 @@
 				</array>
 				<key>captions</key>
 				<array>
-                    <string>View 1</string>
-                    <string>View 2</string>
-                    <string>View 3</string>
-                    <string>Plaza 1</string>
-                    <string>Plaza 2</string>
-                    <string>Plaza 3</string>
-                    <string>Floor Plan Level 1</string>
-                    <string>Floor Plan Level 2</string>
-                    <string></string>
-                    <string>Design 1</string>
-                    <string>Design 2</string>
-                    <string>Birds Eye View</string>
-                    <string>Lobby Entrance</string>
-                    <string>Lobby</string>
-                    <string>Entry to Lounge</string>
-                    <string>Lounge 1</string>
-                    <string>Lounge 2</string>
-                    <string>Lounge 3</string>
-                    <string>Lounge 4</string>
-                    <string>Media Lounge</string>
-                    <string>Furnishings</string>
-                    <string>Floor 11</string>
-                    <string>Dining Room</string>
-                    <string>Fitness Center 1</string>
-                    <string>Fitness Center 2</string>
-                    <string>Fitness Center 3</string>
-                    <string></string>
-                    <string>Corridor Design 1</string>
-                    <string>Corridor Design 2</string>
-                    <string>Entry Door Design</string>
-                    <string>Elevator Lobby Design</string>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+					<string>Plaza 1</string>
+					<string>Plaza 2</string>
+					<string>Plaza 3</string>
+					<string>Floor Plan Level 1</string>
+					<string>Floor Plan Level 2</string>
+					<string></string>
+					<string>Design 1</string>
+					<string>Design 2</string>
+					<string>Birds Eye View</string>
+					<string>Lobby Entrance</string>
+					<string>Lobby</string>
+					<string>Entry to Lounge</string>
+					<string>Lounge 1</string>
+					<string>Lounge 2</string>
+					<string>Lounge 3</string>
+					<string>Lounge 4</string>
+					<string>Media Lounge</string>
+					<string>Furnishings</string>
+					<string>Floor 11</string>
+					<string>Dining Room</string>
+					<string>Fitness Center 1</string>
+					<string>Fitness Center 2</string>
+					<string>Fitness Center 3</string>
+					<string></string>
+					<string>Corridor Design 1</string>
+					<string>Corridor Design 2</string>
+					<string>Entry Door Design</string>
+					<string>Elevator Lobby Design</string>
 				</array>
 			</dict>
 		</array>
@@ -334,14 +334,14 @@
 				</array>
 				<key>captions</key>
 				<array>
-                    <string>View 1</string>
-                    <string>View 2</string>
-                    <string>Hallway</string>
-                    <string>Lobby</string>
-                    <string>View 3</string>
-                    <string>View 4</string>
-                    <string>View 5</string>
-                    <string>View 6</string>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>Hallway</string>
+					<string>Lobby</string>
+					<string>View 3</string>
+					<string>View 4</string>
+					<string>View 5</string>
+					<string>View 6</string>
 				</array>
 			</dict>
 		</array>
@@ -468,23 +468,23 @@
 				</array>
 				<key>captions</key>
 				<array>
-					<string>0504 Wills Wharf c1 OP1 3t.jpg</string>
-					<string>0504 Wills Wharf c1 OP2 3t.jpg</string>
-					<string>0928+LI+Copier+c1+4t (1).jpg</string>
-					<string>0928+LI+Copier+c2+3t (1).jpg</string>
-					<string>F-OFFICE-ENTRY-1 copy.jpg</string>
-					<string>F-OFFICE-ENTRY-2 copy.jpg</string>
-					<string>I2411 Canopy Baltimore - Bar MD05.jpg</string>
-					<string>I2411 Canopy Baltimore - King Guestroom MD05_PS_FINAL.jpg</string>
-					<string>I2411 Canopy Baltimore - Restaurant MD04.jpg</string>
-					<string>I2411 Canopy Baltimore - Retreat MD03.jpg</string>
-					<string>PLAZA BIRD EYE VIEW-2.jpg</string>
-					<string>PLAZA-birds eye view copy.jpg</string>
-					<string>VIEW-South-Far View-Phase-2.jpg</string>
-					<string>VIEW-South-Far View.jpg</string>
-					<string>WILLS-South-Close View-Phase2.jpg</string>
-					<string>WILLS-South-Close View.jpg</string>
-					<string>Harbor Point Flyer - Print.jpeg</string>
+                    <string>View 1</string>
+                    <string>View 2</string>
+                    <string>View 3</string>
+                    <string>View 4</string>
+                    <string>Office Entry 1</string>
+                    <string>Office Entry 2</string>
+                    <string>Canopy 1</string>
+                    <string>Canopy 2</string>
+                    <string>Canopy 3</string>
+                    <string>Canopy 4</string>
+                    <string>Birds Eye View 1</string>
+                    <string>Birds Eye View 2</string>
+                    <string>Far South View 1</string>
+                    <string>Far South View 2</string>
+                    <string>South Close View 1</string>
+                    <string>South Close View 2</string>
+                    <string>Harbor Point Flyer - Print.jpeg</string>
 					<string>Harbor Point Flyer - Print 2.jpeg</string>
 					<string>Harbor Point Flyer - Print 3.jpeg</string>
 					<string>Harbor Point Flyer - Print 4.jpeg</string>
@@ -495,30 +495,30 @@
 					<string>Harbor Point Flyer - Print 9.jpeg</string>
 					<string>Harbor Point Flyer - Print 10.jpeg</string>
 					<string>Hotel-final-Canopy-signage.jpg</string>
-					<string>2_12a Wills Plot.jpeg</string>
-					<string>2_12a Wills Plot 2.jpeg</string>
-					<string>2_12a Wills Plot 3.jpeg</string>
-					<string>2_12a Wills Plot 4.jpeg</string>
-					<string>2_12a Wills Plot 5.jpeg</string>
-					<string>2_12a Wills Plot 6.jpeg</string>
-					<string>2_12a Wills Plot 7.jpeg</string>
-					<string>2_12a Wills Plot 8.jpeg</string>
-					<string>2_12a Wills Plot 9.jpeg</string>
-					<string>2_12a Wills Plot 10.jpeg</string>
-					<string>2_12a Wills Plot 11.jpeg</string>
-					<string>2_12a Wills Plot 12.jpeg</string>
-					<string>2_12a Wills Plot 13.jpeg</string>
-					<string>2_12a Wills Plot 14.jpeg</string>
-					<string>2_12a Wills Plot 15.jpeg</string>
-					<string>2_12a Wills Plot 16.jpeg</string>
-					<string>2_12a Wills Plot 17.jpeg</string>
-					<string>2_12a Wills Plot 18.jpeg</string>
-					<string>2_12a Wills Plot 19.jpeg</string>
-					<string>2_12a Wills Plot 20.jpeg</string>
-					<string>2_12a Wills Plot 21.jpeg</string>
-					<string>2_12a Wills Plot 22.jpeg</string>
-					<string>2_12a Wills Plot 23.jpeg</string>
-					<string>Wills Wharf-Retail LOD.jpeg</string>
+					<string>2 12a Wills Plot</string>
+                    <string>Floor Plan Garage</string>
+                    <string>Floor Plan Level 1</string>
+                    <string>Floor Plan Level 2</string>
+                    <string>Floor Plan Level 3</string>
+                    <string>Floor Plan Office Level</string>
+                    <string>Floor Plan Level 9</string>
+                    <string>Floor Plan Penthouse</string>
+                    <string>Roof Construction</string>
+                    <string>West Elevation</string>
+                    <string>East Elevation</string>
+                    <string>North and South Elevations</string>
+                    <string>Enlarged Elevation 1</string>
+                    <string>Enlarged Elevation 2</string>
+                    <string>Enlarged Elevation 3</string>
+                    <string>Enlarged Elevation 4</string>
+                    <string>Enlarged Elevation 5</string>
+                    <string>Building Section 1</string>
+                    <string>Building Section 2</string>
+                    <string>Building Section 3</string>
+                    <string>Building Section 4</string>
+                    <string>Wall Sections 1</string>
+                    <string>Wall Sections 2</string>
+                    <string>Retail</string>
 				</array>
 			</dict>
 		</array>
@@ -557,13 +557,13 @@
 				</array>
 				<key>captions</key>
 				<array>
-                    <string>View 1</string>
-                    <string>View 2</string>
-                    <string>Promenade Level</string>
-                    <string>Plaza Park Level</string>
-                    <string>Pedestal Level</string>
-                    <string>Amenity Level</string>
-                    <string>Tower Levels</string>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>Promenade Level</string>
+					<string>Plaza Park Level</string>
+					<string>Pedestal Level</string>
+					<string>Amenity Level</string>
+					<string>Tower Levels</string>
 				</array>
 			</dict>
 		</array>
@@ -594,9 +594,9 @@
 				</array>
 				<key>captions</key>
 				<array>
-                    <string>View 1</string>
-                    <string>View 2</string>
-                    <string>View 3</string>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
 				</array>
 			</dict>
 		</array>
@@ -643,17 +643,17 @@
 				</array>
 				<key>captions</key>
 				<array>
-                    <string>View 1</string>
-                    <string>View 2</string>
-                    <string>View 3</string>
-                    <string>View 4</string>
-                    <string>Rendering 1</string>
-                    <string>Rendering 2</string>
-                    <string>Garage Level</string>
-                    <string>Plaza Level</string>
-                    <string>Podium Level 2</string>
-                    <string>Podium Levels 3-6</string>
-                    <string>Podium Levels 7+</string>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+					<string>View 4</string>
+					<string>Rendering 1</string>
+					<string>Rendering 2</string>
+					<string>Garage Level</string>
+					<string>Plaza Level</string>
+					<string>Podium Level 2</string>
+					<string>Podium Levels 3-6</string>
+					<string>Podium Levels 7+</string>
 				</array>
 			</dict>
 		</array>
@@ -686,15 +686,15 @@
 				</array>
 				<key>captions</key>
 				<array>
-                    <string>View 1</string>
-                    <string>View 2</string>
-                    <string>View 3</string>
-                <string>View 4</string>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+					<string>View 4</string>
 				</array>
 			</dict>
 		</array>
 	</dict>
-    <dict>
+	<dict>
 		<key>SectionName</key>
 		<string>Photos - Construction Aerials</string>
 		<key>sectioninfo</key>
@@ -724,16 +724,16 @@
 				</array>
 				<key>captions</key>
 				<array>
-                    <string>View 1</string>
-                    <string>View 2</string>
-                    <string>View 3</string>
-                    <string>View 4</string>
-                    <string>View 5</string>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+					<string>View 4</string>
+					<string>View 5</string>
 				</array>
 			</dict>
 		</array>
 	</dict>
-    <dict>
+	<dict>
 		<key>SectionName</key>
 		<string>Photos - Harbor East</string>
 		<key>sectioninfo</key>
@@ -785,27 +785,27 @@
 				</array>
 				<key>captions</key>
 				<array>
-                    <string>View 1</string>
-                    <string>View 2</string>
-                    <string>View 3</string>
-                    <string>View 4</string>
-                    <string>View 5</string>
-                    <string>View 6</string>
-                    <string>View 6</string>
-                    <string>View 7</string>
-                    <string>View 8</string>
-                    <string>View 9</string>
-                    <string>View 10</string>
-                    <string>View 11</string>
-                    <string>View 11</string>
-                    <string>View 12</string>
-                    <string>View 13</string>
-                    <string>View 14</string>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+					<string>View 4</string>
+					<string>View 5</string>
+					<string>View 6</string>
+					<string>View 6</string>
+					<string>View 7</string>
+					<string>View 8</string>
+					<string>View 9</string>
+					<string>View 10</string>
+					<string>View 11</string>
+					<string>View 11</string>
+					<string>View 12</string>
+					<string>View 13</string>
+					<string>View 14</string>
 				</array>
 			</dict>
 		</array>
 	</dict>
-    <dict>
+	<dict>
 		<key>SectionName</key>
 		<string>DOCUMENTS</string>
 		<key>sectioninfo</key>
@@ -825,9 +825,9 @@
 					<string>Harbor Point 2.0.pdf</string>
 					<string>Harbor_Point_Leasing_Brochure_sml.pdf</string>
 					<string>Point Street_UDARP 03_01-21-15 AM Mod_sml.pdf</string>
-                    <string>Canopy Brochure.pdf</string>
-                    <string>EZ Info Sheet 2014 V2 PDF.pdf</string>
-                    <string>Maryland Financing  Incentives120915 (3).pdf</string>
+					<string>Canopy Brochure.pdf</string>
+					<string>EZ Info Sheet 2014 V2 PDF.pdf</string>
+					<string>Maryland Financing  Incentives120915 (3).pdf</string>
 				</array>
 				<key>thumbs</key>
 				<array>
@@ -837,9 +837,9 @@
 					<string>share_Harbor Point 2.0.jpg</string>
 					<string>share_Harbor_Point_Leasing_Brochure_sml.jpg</string>
 					<string>share_Point Street_UDARP 03_01-21-15 AM Mod_sml.jpg</string>
-                    <string>share_Canopy Brochure-1.jpg</string>
-                    <string>share_EZ Info Sheet 2014 V2 PDF-2.jpg</string>
-                    <string>share_Maryland Financing  Incentives120915 (3)-1.jpg</string>
+					<string>share_Canopy Brochure-1.jpg</string>
+					<string>share_EZ Info Sheet 2014 V2 PDF-2.jpg</string>
+					<string>share_Maryland Financing  Incentives120915 (3)-1.jpg</string>
 				</array>
 				<key>captions</key>
 				<array>
@@ -849,9 +849,9 @@
 					<string>Harbor Point 2.0.pdf</string>
 					<string>Harbor_Point_Leasing_Brochure_sml.pdf</string>
 					<string>Point Street_UDARP 03_01-21-15 AM Mod_sml.pdf</string>
-                    <string>Canopy Brochure.pdf</string>
-                    <string>EZ Info Sheet 2014 V2 PDF.pdf</string>
-                    <string>Maryland Financing  Incentives120915 (3).pdf</string>
+					<string>Canopy Brochure.pdf</string>
+					<string>EZ Info Sheet 2014 V2 PDF.pdf</string>
+					<string>Maryland Financing  Incentives120915 (3).pdf</string>
 				</array>
 			</dict>
 		</array>

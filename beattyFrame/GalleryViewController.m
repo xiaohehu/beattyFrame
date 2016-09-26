@@ -16,7 +16,6 @@
 //#import "TLSpringFlowLayout.h"
 #import "UIColor+Extensions.h"
 #import "UIImage+Resize.h"
-
 //#import "UIColor+Extensions.h"
 
 @interface GalleryViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, XHGalleryDelegate,UIDocumentInteractionControllerDelegate>
