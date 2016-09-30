@@ -10988,9 +10988,9 @@
 				INFOPLIST_FILE = beattyFrame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.neoscape.beattyFrame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoenterprise.beattyFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5969d283-a43b-4338-9365-80df97e3d77b";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -11011,9 +11011,9 @@
 				INFOPLIST_FILE = beattyFrame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.neoscape.beattyFrame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoenterprise.beattyFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5969d283-a43b-4338-9365-80df97e3d77b";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = store;
@@ -11155,9 +11155,9 @@
 				INFOPLIST_FILE = beattyFrame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.neoscape.beattyFrame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoenterprise.beattyFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5969d283-a43b-4338-9365-80df97e3d77b";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = b2b;
@@ -11281,9 +11281,9 @@
 				INFOPLIST_FILE = beattyFrame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.neoscape.beattyFrame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoenterprise.beattyFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5969d283-a43b-4338-9365-80df97e3d77b";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = enterprise;
