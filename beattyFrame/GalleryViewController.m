@@ -101,8 +101,14 @@
     [self.view insertSubview:_collectionView belowSubview:uitv_sharedList];
     
     // grab plist of data & Build the array
-    NSString *path = [[NSBundle mainBundle] pathForResource:
-                      @"shareableData" ofType:@"plist"];
+   NSString *path;
+#ifdef B2B
+   path = [[NSBundle mainBundle] pathForResource:@"shareableData"
+                                           ofType:@"plist"];
+#else
+   path = [[NSBundle mainBundle] pathForResource:@"shareableDatapublic"
+                                          ofType:@"plist"];
+#endif
     NSMutableArray *array = [[NSMutableArray alloc] initWithContentsOfFile:path];
     arr_AlbumData = array;
     albumSections = arr_AlbumData;

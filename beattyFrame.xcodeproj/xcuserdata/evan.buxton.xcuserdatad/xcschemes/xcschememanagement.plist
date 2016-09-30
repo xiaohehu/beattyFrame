@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>beattyFrame b2b.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>beattyFrame store.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>824D273A1B5D7E6700E5F5A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>886385461D9C62EB004468FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

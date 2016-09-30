@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>SectionName</key>
+		<string>Harbor Point</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_3D.jpg</string>
+				<key>albumcaption</key>
+				<string>AAC Visitors Profile</string>
+				<key>assets</key>
+				<array>
+					<string>Central_Plaza.jpg</string>
+					<string>Harbor_Point_Park.jpg</string>
+					<string>Parcel_01.jpg</string>
+					<string>Parcel_02-Excelon.jpg</string>
+					<string>Parcel_03.jpg</string>
+					<string>Parcel_04.jpg</string>
+					<string>Point_Street_Apt.jpg</string>
+					<string>Thames_Street_Wharf.jpg</string>
+					<string>Wills_Street_Wharf.jpg</string>
+					<string>Neoscape_BeattyDevelopment_Aerial02_FINAL.jpg</string>
+					<string>Neoscape_BeattyDevelopment_HarborView_FINAL.jpg</string>
+					<string>Neoscape_BeattyDevelopment_Aerial01_FINAL.jpg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>share_Central_Plaza.jpg</string>
+					<string>share_Harbor_Point_Park.jpg</string>
+					<string>share_Parcel_01.jpg</string>
+					<string>share_Parcel_02-Excelon.jpg</string>
+					<string>share_Parcel_03.jpg</string>
+					<string>share_Parcel_04.jpg</string>
+					<string>share_Point_Street_Apt.jpg</string>
+					<string>share_Thames_Street_Wharf.jpg</string>
+					<string>share_Wills_Street_Wharf.jpg</string>
+					<string>share_Wills_Street_Wharf.jpg</string>
+					<string>share_Wills_Street_Wharf.jpg</string>
+					<string>share_Wills_Street_Wharf.jpg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>Central Plaza</string>
+					<string>Harbor Point Park</string>
+					<string>Parcel 1</string>
+					<string>Exelon Building</string>
+					<string>Parcel 3</string>
+					<string>Parcel 4</string>
+					<string>1405 Point</string>
+					<string>Thames Street Wharf</string>
+					<string>Wills Wharf</string>
+					<string>Ariel View 1</string>
+					<string>Ariel View 2</string>
+					<string>Harbor View</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Exelon Building</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>15-0202_overall south west.jpg</string>
+					<string>View 1.jpg</string>
+					<string>View 2.jpg</string>
+					<string>Exelon-Retail-View-3.jpg</string>
+					<string>Neoscape_BeattyDevelopmentHarbor Point_ExcelonRetail_FINAL.jpg</string>
+					<string>View02_Final.jpg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>15-0202_overall south west.jpg</string>
+					<string>View 1.jpg</string>
+					<string>View 2.jpg</string>
+					<string>Exelon-Retail-View-3.jpg</string>
+					<string>Neoscape_BeattyDevelopmentHarbor Point_ExcelonRetail_FINAL.jpg</string>
+					<string>View02_Final.jpg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>Southwest View</string>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string></string>
+					<string></string>
+					<string></string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>1305 Dock Street</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>Apartment Entrance_20160321-2.jpg</string>
+					<string>Bedroom.jpg</string>
+					<string>Kitchen.jpg</string>
+					<string>Living Room.jpg</string>
+					<string>Lobby.jpg</string>
+					<string>Resident Conference Room.jpg</string>
+					<string>Resident Lounge 1.jpg</string>
+					<string>Resident Lounge 2.jpg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>Apartment Entrance_20160321-2.jpg</string>
+					<string>Bedroom.jpg</string>
+					<string>Kitchen.jpg</string>
+					<string>Living Room.jpg</string>
+					<string>Lobby.jpg</string>
+					<string>Resident Conference Room.jpg</string>
+					<string>Resident Lounge 1.jpg</string>
+					<string>Resident Lounge 2.jpg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>Entrance</string>
+					<string>Bedroom</string>
+					<string>Kitchen</string>
+					<string>Living Room</string>
+					<string>Lobby</string>
+					<string>Resident Conference Room</string>
+					<string>Resident Lounge 1</string>
+					<string>Resident Lounge 2</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Parcel 4</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>parcel 4 drawing shot a.jpg</string>
+					<string>parcel 4 shot b.jpg</string>
+					<string>parcel 4 shot c.jpg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>parcel 4 drawing shot a.jpg</string>
+					<string>parcel 4 shot b.jpg</string>
+					<string>parcel 4 shot c.jpg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>1405 Point</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>C01.jpg</string>
+					<string>C02[1].jpg</string>
+					<string>c03_B CROPPED - revised with corner windows.jpg</string>
+					<string>Point Street Landscape.png</string>
+					<string>Point Street Plaza Plan.png</string>
+					<string>Point Street Plaza.png</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>C01.jpg</string>
+					<string>C02[1].jpg</string>
+					<string>c03_B CROPPED - revised with corner windows.jpg</string>
+					<string>Point Street Landscape.png</string>
+					<string>Point Street Plaza Plan.png</string>
+					<string>Point Street Plaza.png</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+					<string>Plaza 1</string>
+					<string>Plaza 2</string>
+					<string>Plaza 3</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Thames Street Wharf</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>1.JPG</string>
+					<string>Thames Street 1.jpg</string>
+					<string>Thames Street 3.jpg</string>
+					<string>Thames Street 5.jpg</string>
+					<string>Thames Street 6.jpg</string>
+					<string>thames.st.out.n2.jpg</string>
+					<string>thames.st.out.q.jpg</string>
+					<string>TSW Grand Opening.jpeg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>1.JPG</string>
+					<string>Thames Street 1.jpg</string>
+					<string>Thames Street 3.jpg</string>
+					<string>Thames Street 5.jpg</string>
+					<string>Thames Street 6.jpg</string>
+					<string>thames.st.out.n2.jpg</string>
+					<string>thames.st.out.q.jpg</string>
+					<string>TSW Grand Opening.jpeg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>Hallway</string>
+					<string>Lobby</string>
+					<string>View 3</string>
+					<string>View 4</string>
+					<string>View 5</string>
+					<string>View 6</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Wills Wharf</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>0504 Wills Wharf c1 OP1 3t.jpg</string>
+					<string>0504 Wills Wharf c1 OP2 3t.jpg</string>
+					<string>0928+LI+Copier+c1+4t (1).jpg</string>
+					<string>0928+LI+Copier+c2+3t (1).jpg</string>
+					<string>F-OFFICE-ENTRY-1 copy.jpg</string>
+					<string>F-OFFICE-ENTRY-2 copy.jpg</string>
+					<string>I2411 Canopy Baltimore - Bar MD05.jpg</string>
+					<string>I2411 Canopy Baltimore - King Guestroom MD05_PS_FINAL.jpg</string>
+					<string>I2411 Canopy Baltimore - Restaurant MD04.jpg</string>
+					<string>I2411 Canopy Baltimore - Retreat MD03.jpg</string>
+					<string>PLAZA BIRD EYE VIEW-2.jpg</string>
+					<string>PLAZA-birds eye view copy.jpg</string>
+					<string>VIEW-South-Far View-Phase-2.jpg</string>
+					<string>VIEW-South-Far View.jpg</string>
+					<string>WILLS-South-Close View-Phase2.jpg</string>
+					<string>WILLS-South-Close View.jpg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>0504 Wills Wharf c1 OP1 3t.jpg</string>
+					<string>0504 Wills Wharf c1 OP2 3t.jpg</string>
+					<string>0928+LI+Copier+c1+4t (1).jpg</string>
+					<string>0928+LI+Copier+c2+3t (1).jpg</string>
+					<string>F-OFFICE-ENTRY-1 copy.jpg</string>
+					<string>F-OFFICE-ENTRY-2 copy.jpg</string>
+					<string>I2411 Canopy Baltimore - Bar MD05.jpg</string>
+					<string>I2411 Canopy Baltimore - King Guestroom MD05_PS_FINAL.jpg</string>
+					<string>I2411 Canopy Baltimore - Restaurant MD04.jpg</string>
+					<string>I2411 Canopy Baltimore - Retreat MD03.jpg</string>
+					<string>PLAZA BIRD EYE VIEW-2.jpg</string>
+					<string>PLAZA-birds eye view copy.jpg</string>
+					<string>VIEW-South-Far View-Phase-2.jpg</string>
+					<string>VIEW-South-Far View.jpg</string>
+					<string>WILLS-South-Close View-Phase2.jpg</string>
+					<string>WILLS-South-Close View.jpg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+					<string>View 4</string>
+					<string>Office Entry 1</string>
+					<string>Office Entry 2</string>
+					<string>Canopy 1</string>
+					<string>Canopy 2</string>
+					<string>Canopy 3</string>
+					<string>Canopy 4</string>
+					<string>Birds Eye View 1</string>
+					<string>Birds Eye View 2</string>
+					<string>Far South View 1</string>
+					<string>Far South View 2</string>
+					<string>South Close View 1</string>
+					<string>South Close View 2</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Parcel 3</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>Parcel 3.png</string>
+					<string>Parcel 3.1.png</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>Parcel 3.png</string>
+					<string>Parcel 3.1.png</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>View 1</string>
+					<string>View 2</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Harbor Point Park</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>Neoscape_BeattyDevelopmentHarbor Point_Aerial01_FINAL.jpg</string>
+					<string>Neoscape_BeattyDevelopmentHarbor Point_HarborView_FINAL.jpg</string>
+					<string>Neoscape_BeattyDevelopmentHarbor Point_ParkAlt View_FINAL.jpg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>Neoscape_BeattyDevelopmentHarbor Point_Aerial01_FINAL.jpg</string>
+					<string>Neoscape_BeattyDevelopmentHarbor Point_HarborView_FINAL.jpg</string>
+					<string>Neoscape_BeattyDevelopmentHarbor Point_ParkAlt View_FINAL.jpg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Parcel 1</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>Parcel 1.1.png</string>
+					<string>Parcel 1.2.png</string>
+					<string>Parcel 1.3.png</string>
+					<string>Parcel 1.4.png</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>Parcel 1.1.png</string>
+					<string>Parcel 1.2.png</string>
+					<string>Parcel 1.3.png</string>
+					<string>Parcel 1.4.png</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+					<string>View 4</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Central Plaza</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>Neoscape_BeattyDevelopmentHarbor Point_CentralPlaza_FINAL.jpg</string>
+					<string>Central Plaza 1.png</string>
+					<string>Central Plaza 2.png</string>
+					<string>Central Plaza3.png</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>Neoscape_BeattyDevelopmentHarbor Point_CentralPlaza_FINAL.jpg</string>
+					<string>Central Plaza 1.png</string>
+					<string>Central Plaza 2.png</string>
+					<string>Central Plaza3.png</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+					<string>View 4</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Construction - Aerial Views</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>image001.png</string>
+					<string>image002.png</string>
+					<string>image003.png</string>
+					<string>image008.png</string>
+					<string>image009.png</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>share_image001.png</string>
+					<string>share_image002.png</string>
+					<string>share_image003.png</string>
+					<string>share_image008.png</string>
+					<string>share_image009.png</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+					<string>View 4</string>
+					<string>View 5</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionName</key>
+		<string>Harbor East</string>
+		<key>sectioninfo</key>
+		<array>
+			<dict>
+				<key>albumtype</key>
+				<string>image</string>
+				<key>albumthumb</key>
+				<string>thumb_photo.jpg</string>
+				<key>albumcaption</key>
+				<string>Aerial Photos</string>
+				<key>assets</key>
+				<array>
+					<string>H and S Formal - 1.jpg</string>
+					<string>H and S Formal - 16.jpg</string>
+					<string>H and S Formal - 19.jpg</string>
+					<string>H and S Formal - 20.jpg</string>
+					<string>H and S Formal - 25.jpg</string>
+					<string>H and S Formal - 26.jpg</string>
+					<string>H and S Formal - 27.jpg</string>
+					<string>H and S Formal - 28.jpg</string>
+					<string>H and S Formal - 44.jpg</string>
+					<string>H and S Formal - 47.jpg</string>
+					<string>H and S Formal - 48.jpg</string>
+					<string>H and S Formal - 63.jpg</string>
+					<string>H and S Formal - 66.jpg</string>
+					<string>H and S Formal - 67.jpg</string>
+					<string>H and S Formal - 72.jpg</string>
+					<string>H and S Formal - 91.jpg</string>
+				</array>
+				<key>thumbs</key>
+				<array>
+					<string>share_H and S Formal - 1.jpg</string>
+					<string>share_H and S Formal - 16.jpg</string>
+					<string>share_H and S Formal - 19.jpg</string>
+					<string>share_H and S Formal - 20.jpg</string>
+					<string>share_H and S Formal - 25.jpg</string>
+					<string>share_H and S Formal - 26.jpg</string>
+					<string>share_H and S Formal - 27.jpg</string>
+					<string>share_H and S Formal - 28.jpg</string>
+					<string>share_H and S Formal - 44.jpg</string>
+					<string>share_H and S Formal - 47.jpg</string>
+					<string>share_H and S Formal - 48.jpg</string>
+					<string>share_H and S Formal - 63.jpg</string>
+					<string>share_H and S Formal - 66.jpg</string>
+					<string>share_H and S Formal - 67.jpg</string>
+					<string>share_H and S Formal - 72.jpg</string>
+					<string>share_H and S Formal - 91.jpg</string>
+				</array>
+				<key>captions</key>
+				<array>
+					<string>View 1</string>
+					<string>View 2</string>
+					<string>View 3</string>
+					<string>View 4</string>
+					<string>View 5</string>
+					<string>View 6</string>
+					<string>View 6</string>
+					<string>View 7</string>
+					<string>View 8</string>
+					<string>View 9</string>
+					<string>View 10</string>
+					<string>View 11</string>
+					<string>View 11</string>
+					<string>View 12</string>
+					<string>View 13</string>
+					<string>View 14</string>
+				</array>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
